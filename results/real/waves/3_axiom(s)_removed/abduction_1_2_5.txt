@@ -1,0 +1,318 @@
+Removed Axioms:
+omega^2*r^3-G*m1-G*m2
+-8*x*y*omega^3*r^2*m1*m2+Q11*m1+Q11*m2
+Q11^2*G+2*Q12^2*G+Q22^2*G+5*P*c^5
+Remaining Axioms:
+-4*x^2*omega^3*r^2*m1*m2+4*y^2*omega^3*r^2*m1*m2+Q12*m1+Q12*m2
+8*x*y*omega^3*r^2*m1*m2+Q22*m1+Q22*m2
+x^2+y^2-1
+Target Polynomial q:
+(5/32)*P*r^5*c^5*m1+(5/32)*P*r^5*c^5*m2+G^4*m1^4*m2^2+2*G^4*m1^3*m2^3+G^4*m1^2*m2^4
+
+Primary Decomposition:
+ideal(m1+m2,m2^2,x^2+y^2-1)
+
+ideal(m1+m2,r^2,x^2+y^2-1)
+
+ideal(m1+m2,x^2+y^2-1,omega^3)
+
+ideal(x^2+y^2-1,2*x*y*Q12-2*y^2*Q22+Q22,2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2+4*omega^3*r^2*m1*m2-Q12*m1-Q12*m2,5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3,10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5)
+
+ideal(m1^2+2*m1*m2+m2^2,x^2+y^2-1,r^2*m1+r^2*m2,2*x*y*Q12-2*y^2*Q22+Q22,r^4,2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2)
+
+Ideal: ideal(m1+m2,m2^2,x^2+y^2-1)
+  Found 3 generators in ideal
+  Testing 7 combinations
+  Trying combination: {m1+m2}
+    Filtered combo: {m1+m2}
+    Filtered combo implies q
+  Trying combination: {m2^2}
+    Filtered combo: {m2^2}
+    Filtered combo does not imply q
+  Trying combination: {x^2+y^2-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {m1+m2, m2^2}
+    Filtered combo: {m1+m2, m2^2}
+    Filtered combo implies q
+  Trying combination: {m1+m2, x^2+y^2-1}
+    Filtered combo: {m1+m2}
+    Filtered combo implies q
+  Trying combination: {m2^2, x^2+y^2-1}
+    Filtered combo: {m2^2}
+    Filtered combo does not imply q
+  Trying combination: {m1+m2, m2^2, x^2+y^2-1}
+    Filtered combo: {m1+m2, m2^2}
+    Filtered combo implies q
+Ideal: ideal(m1+m2,r^2,x^2+y^2-1)
+  Found 3 generators in ideal
+  Testing 7 combinations
+  Trying combination: {m1+m2}
+    Filtered combo: {m1+m2}
+    Filtered combo implies q
+  Trying combination: {r^2}
+    Filtered combo: {r^2}
+    Filtered combo does not imply q
+  Trying combination: {x^2+y^2-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {m1+m2, r^2}
+    Filtered combo: {m1+m2, r^2}
+    Filtered combo implies q
+  Trying combination: {m1+m2, x^2+y^2-1}
+    Filtered combo: {m1+m2}
+    Filtered combo implies q
+  Trying combination: {r^2, x^2+y^2-1}
+    Filtered combo: {r^2}
+    Filtered combo does not imply q
+  Trying combination: {m1+m2, r^2, x^2+y^2-1}
+    Filtered combo: {m1+m2, r^2}
+    Filtered combo implies q
+Ideal: ideal(m1+m2,x^2+y^2-1,omega^3)
+  Found 3 generators in ideal
+  Testing 7 combinations
+  Trying combination: {m1+m2}
+    Filtered combo: {m1+m2}
+    Filtered combo implies q
+  Trying combination: {x^2+y^2-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {omega^3}
+    Filtered combo: {omega^3}
+    Filtered combo does not imply q
+  Trying combination: {m1+m2, x^2+y^2-1}
+    Filtered combo: {m1+m2}
+    Filtered combo implies q
+  Trying combination: {m1+m2, omega^3}
+    Filtered combo: {m1+m2, omega^3}
+    Filtered combo implies q
+  Trying combination: {x^2+y^2-1, omega^3}
+    Filtered combo: {omega^3}
+    Filtered combo does not imply q
+  Trying combination: {m1+m2, x^2+y^2-1, omega^3}
+    Filtered combo: {m1+m2, omega^3}
+    Filtered combo implies q
+Ideal: ideal(x^2+y^2-1,2*x*y*Q12-2*y^2*Q22+Q22,2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2+4*omega^3*r^2*m1*m2-Q12*m1-Q12*m2,5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3,10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5)
+  Found 5 generators in ideal
+  Testing 25 combinations
+  Trying combination: {x^2+y^2-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo does not imply q
+  Trying combination: {2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2+4*omega^3*r^2*m1*m2-Q12*m1-Q12*m2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3}
+    Filtered combo: {5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3}
+    Filtered combo implies q
+  Trying combination: {10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo: {10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo does not imply q
+  Trying combination: {x^2+y^2-1, 2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo does not imply q
+  Trying combination: {x^2+y^2-1, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2+4*omega^3*r^2*m1*m2-Q12*m1-Q12*m2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {2*x*y*Q12-2*y^2*Q22+Q22, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2+4*omega^3*r^2*m1*m2-Q12*m1-Q12*m2}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo does not imply q
+  Trying combination: {x^2+y^2-1, 5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3}
+    Filtered combo: {5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3}
+    Filtered combo implies q
+  Trying combination: {2*x*y*Q12-2*y^2*Q22+Q22, 5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22, 5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3}
+    Filtered combo implies q
+  Trying combination: {2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2+4*omega^3*r^2*m1*m2-Q12*m1-Q12*m2, 5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3}
+    Filtered combo: {5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3}
+    Filtered combo implies q
+  Trying combination: {x^2+y^2-1, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo: {10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo does not imply q
+  Trying combination: {2*x*y*Q12-2*y^2*Q22+Q22, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo does not imply q
+  Trying combination: {2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2+4*omega^3*r^2*m1*m2-Q12*m1-Q12*m2, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo: {10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo does not imply q
+  Trying combination: {5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo: {5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo implies q
+  Trying combination: {x^2+y^2-1, 2*x*y*Q12-2*y^2*Q22+Q22, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2+4*omega^3*r^2*m1*m2-Q12*m1-Q12*m2}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo does not imply q
+  Trying combination: {x^2+y^2-1, 2*x*y*Q12-2*y^2*Q22+Q22, 5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22, 5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3}
+    Filtered combo implies q
+  Trying combination: {x^2+y^2-1, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2+4*omega^3*r^2*m1*m2-Q12*m1-Q12*m2, 5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3}
+    Filtered combo: {5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3}
+    Filtered combo implies q
+  Trying combination: {2*x*y*Q12-2*y^2*Q22+Q22, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2+4*omega^3*r^2*m1*m2-Q12*m1-Q12*m2, 5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22, 5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3}
+    Filtered combo implies q
+  Trying combination: {x^2+y^2-1, 2*x*y*Q12-2*y^2*Q22+Q22, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo does not imply q
+  Trying combination: {x^2+y^2-1, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2+4*omega^3*r^2*m1*m2-Q12*m1-Q12*m2, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo: {10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo does not imply q
+  Trying combination: {2*x*y*Q12-2*y^2*Q22+Q22, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2+4*omega^3*r^2*m1*m2-Q12*m1-Q12*m2, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo does not imply q
+  Trying combination: {x^2+y^2-1, 5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo: {5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo implies q
+  Trying combination: {2*x*y*Q12-2*y^2*Q22+Q22, 5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22, 5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo implies q
+  Trying combination: {2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2+4*omega^3*r^2*m1*m2-Q12*m1-Q12*m2, 5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo: {5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+    Filtered combo implies q
+Ideal: ideal(m1^2+2*m1*m2+m2^2,x^2+y^2-1,r^2*m1+r^2*m2,2*x*y*Q12-2*y^2*Q22+Q22,r^4,2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2)
+  Found 6 generators in ideal
+  Testing 41 combinations
+  Trying combination: {m1^2+2*m1*m2+m2^2}
+    Filtered combo: {m1^2+2*m1*m2+m2^2}
+    Filtered combo does not imply q
+  Trying combination: {x^2+y^2-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {r^2*m1+r^2*m2}
+    Filtered combo: {r^2*m1+r^2*m2}
+    Filtered combo does not imply q
+  Trying combination: {2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo does not imply q
+  Trying combination: {r^4}
+    Filtered combo: {r^4}
+    Filtered combo does not imply q
+  Trying combination: {2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo does not imply q
+  Trying combination: {m1^2+2*m1*m2+m2^2, x^2+y^2-1}
+    Filtered combo: {m1^2+2*m1*m2+m2^2}
+    Filtered combo does not imply q
+  Trying combination: {m1^2+2*m1*m2+m2^2, r^2*m1+r^2*m2}
+    Filtered combo: {m1^2+2*m1*m2+m2^2, r^2*m1+r^2*m2}
+    Filtered combo implies q
+  Trying combination: {x^2+y^2-1, r^2*m1+r^2*m2}
+    Filtered combo: {r^2*m1+r^2*m2}
+    Filtered combo does not imply q
+  Trying combination: {m1^2+2*m1*m2+m2^2, 2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo: {m1^2+2*m1*m2+m2^2, 2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo does not imply q
+  Trying combination: {x^2+y^2-1, 2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo does not imply q
+  Trying combination: {r^2*m1+r^2*m2, 2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo: {r^2*m1+r^2*m2, 2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo does not imply q
+  Trying combination: {m1^2+2*m1*m2+m2^2, r^4}
+    Filtered combo: {m1^2+2*m1*m2+m2^2, r^4}
+    Filtered combo implies q
+  Trying combination: {x^2+y^2-1, r^4}
+    Filtered combo: {r^4}
+    Filtered combo does not imply q
+  Trying combination: {r^2*m1+r^2*m2, r^4}
+    Filtered combo: {r^2*m1+r^2*m2, r^4}
+    Filtered combo does not imply q
+  Trying combination: {2*x*y*Q12-2*y^2*Q22+Q22, r^4}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22, r^4}
+    Filtered combo does not imply q
+  Trying combination: {m1^2+2*m1*m2+m2^2, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {m1^2+2*m1*m2+m2^2, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo does not imply q
+  Trying combination: {x^2+y^2-1, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo does not imply q
+  Trying combination: {r^2*m1+r^2*m2, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {r^2*m1+r^2*m2, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo does not imply q
+  Trying combination: {2*x*y*Q12-2*y^2*Q22+Q22, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo does not imply q
+  Trying combination: {r^4, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {r^4, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo does not imply q
+  Trying combination: {m1^2+2*m1*m2+m2^2, x^2+y^2-1, r^2*m1+r^2*m2}
+    Filtered combo: {m1^2+2*m1*m2+m2^2, r^2*m1+r^2*m2}
+    Filtered combo implies q
+  Trying combination: {m1^2+2*m1*m2+m2^2, x^2+y^2-1, 2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo: {m1^2+2*m1*m2+m2^2, 2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo does not imply q
+  Trying combination: {m1^2+2*m1*m2+m2^2, r^2*m1+r^2*m2, 2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo: {m1^2+2*m1*m2+m2^2, r^2*m1+r^2*m2, 2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo implies q
+  Trying combination: {x^2+y^2-1, r^2*m1+r^2*m2, 2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo: {r^2*m1+r^2*m2, 2*x*y*Q12-2*y^2*Q22+Q22}
+    Filtered combo does not imply q
+  Trying combination: {m1^2+2*m1*m2+m2^2, x^2+y^2-1, r^4}
+    Filtered combo: {m1^2+2*m1*m2+m2^2, r^4}
+    Filtered combo implies q
+  Trying combination: {m1^2+2*m1*m2+m2^2, r^2*m1+r^2*m2, r^4}
+    Filtered combo: {m1^2+2*m1*m2+m2^2, r^2*m1+r^2*m2, r^4}
+    Filtered combo implies q
+  Trying combination: {x^2+y^2-1, r^2*m1+r^2*m2, r^4}
+    Filtered combo: {r^2*m1+r^2*m2, r^4}
+    Filtered combo does not imply q
+  Trying combination: {m1^2+2*m1*m2+m2^2, 2*x*y*Q12-2*y^2*Q22+Q22, r^4}
+    Filtered combo: {m1^2+2*m1*m2+m2^2, 2*x*y*Q12-2*y^2*Q22+Q22, r^4}
+    Filtered combo implies q
+  Trying combination: {x^2+y^2-1, 2*x*y*Q12-2*y^2*Q22+Q22, r^4}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22, r^4}
+    Filtered combo does not imply q
+  Trying combination: {r^2*m1+r^2*m2, 2*x*y*Q12-2*y^2*Q22+Q22, r^4}
+    Filtered combo: {r^2*m1+r^2*m2, 2*x*y*Q12-2*y^2*Q22+Q22, r^4}
+    Filtered combo does not imply q
+  Trying combination: {m1^2+2*m1*m2+m2^2, x^2+y^2-1, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {m1^2+2*m1*m2+m2^2, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo does not imply q
+  Trying combination: {m1^2+2*m1*m2+m2^2, r^2*m1+r^2*m2, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {m1^2+2*m1*m2+m2^2, r^2*m1+r^2*m2, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo implies q
+  Trying combination: {x^2+y^2-1, r^2*m1+r^2*m2, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {r^2*m1+r^2*m2, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo does not imply q
+  Trying combination: {m1^2+2*m1*m2+m2^2, 2*x*y*Q12-2*y^2*Q22+Q22, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {m1^2+2*m1*m2+m2^2, 2*x*y*Q12-2*y^2*Q22+Q22, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo does not imply q
+  Trying combination: {x^2+y^2-1, 2*x*y*Q12-2*y^2*Q22+Q22, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo does not imply q
+  Trying combination: {r^2*m1+r^2*m2, 2*x*y*Q12-2*y^2*Q22+Q22, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {r^2*m1+r^2*m2, 2*x*y*Q12-2*y^2*Q22+Q22, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo does not imply q
+  Trying combination: {m1^2+2*m1*m2+m2^2, r^4, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {m1^2+2*m1*m2+m2^2, r^4, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo implies q
+  Trying combination: {x^2+y^2-1, r^4, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {r^4, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo does not imply q
+  Trying combination: {r^2*m1+r^2*m2, r^4, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {r^2*m1+r^2*m2, r^4, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo does not imply q
+  Trying combination: {2*x*y*Q12-2*y^2*Q22+Q22, r^4, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo: {2*x*y*Q12-2*y^2*Q22+Q22, r^4, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+    Filtered combo does not imply q
+Saved Polynomials:
+{m1+m2}
+{m2^2, m1+m2}
+{m2^2, m1+m2}
+{m1+m2, r^2}
+{m1+m2, omega^3}
+{5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3}
+{5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3, 2*x*y*Q12-2*y^2*Q22+Q22}
+{5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5}
+{5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3, 2*x*y*Q12-2*y^2*Q22+Q22}
+{5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3, 2*x*y*Q12-2*y^2*Q22+Q22}
+{5*P*r^5*c^5+32*G^4*m1^3*m2^2+32*G^4*m1^2*m2^3, 10*x*y*Q22*P*r^3*c^5+10*y^2*Q12*P*r^3*c^5-128*omega^3*G^4*m1^3*m2^3-5*Q12*P*r^3*c^5, 2*x*y*Q12-2*y^2*Q22+Q22}
+{m1^2+2*m1*m2+m2^2, r^2*m1+r^2*m2}
+{m1^2+2*m1*m2+m2^2, r^4}
+{m1^2+2*m1*m2+m2^2, r^2*m1+r^2*m2, 2*x*y*Q12-2*y^2*Q22+Q22}
+{m1^2+2*m1*m2+m2^2, r^2*m1+r^2*m2, r^4}
+{m1^2+2*m1*m2+m2^2, r^4, 2*x*y*Q12-2*y^2*Q22+Q22}
+{m1^2+2*m1*m2+m2^2, r^2*m1+r^2*m2, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+{m1^2+2*m1*m2+m2^2, r^4, 2*x*y*Q22*m1+2*x*y*Q22*m2+2*y^2*Q12*m1+2*y^2*Q12*m2-4*omega^3*r^2*m2^2-Q12*m1-Q12*m2}
+Strong Candidates:

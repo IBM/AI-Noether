@@ -1,0 +1,190 @@
+Removed Axioms:
+-muN+mup*beta
+-mu*r+muH
+ph^2*e*H+2*ph*n*e*beta*H-ph*r+n^2*e*beta^2*H+n*beta^2*r
+Remaining Axioms:
+ph-dp-p0
+n-dn
+dp-dn
+-ph*e*mup-muN*n*e+sigma
+Target Polynomial q:
+e*mup*dn*beta^2*r+e*mup*dn*beta*r+e*p0*sigma*H+e*dn*beta*sigma*H+e*dn*sigma*H-r*sigma
+
+Primary Decomposition:
+ideal(sigma,e,n-dn,dp-dn,ph-p0-dn)
+
+ideal(n-dn,dp-dn,ph-p0-dn,muN*e*dn+e*mup*p0+e*mup*dn-sigma,muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H)
+
+Ideal: ideal(sigma,e,n-dn,dp-dn,ph-p0-dn)
+  Found 5 generators in ideal
+  Testing 25 combinations
+  Trying combination: {sigma}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {e}
+    Filtered combo: {e}
+    Filtered combo implies q
+  Trying combination: {n-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dp-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {sigma, e}
+    Filtered combo: {sigma, e}
+    Filtered combo implies q
+  Trying combination: {sigma, n-dn}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {e, n-dn}
+    Filtered combo: {e}
+    Filtered combo implies q
+  Trying combination: {sigma, dp-dn}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {e, dp-dn}
+    Filtered combo: {e}
+    Filtered combo implies q
+  Trying combination: {n-dn, dp-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {sigma, ph-p0-dn}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {e, ph-p0-dn}
+    Filtered combo: {e}
+    Filtered combo implies q
+  Trying combination: {n-dn, ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dp-dn, ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {sigma, e, n-dn}
+    Filtered combo: {sigma, e}
+    Filtered combo implies q
+  Trying combination: {sigma, e, dp-dn}
+    Filtered combo: {sigma, e}
+    Filtered combo implies q
+  Trying combination: {sigma, n-dn, dp-dn}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {e, n-dn, dp-dn}
+    Filtered combo: {e}
+    Filtered combo implies q
+  Trying combination: {sigma, e, ph-p0-dn}
+    Filtered combo: {sigma, e}
+    Filtered combo implies q
+  Trying combination: {sigma, n-dn, ph-p0-dn}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {e, n-dn, ph-p0-dn}
+    Filtered combo: {e}
+    Filtered combo implies q
+  Trying combination: {sigma, dp-dn, ph-p0-dn}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {e, dp-dn, ph-p0-dn}
+    Filtered combo: {e}
+    Filtered combo implies q
+  Trying combination: {n-dn, dp-dn, ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+Ideal: ideal(n-dn,dp-dn,ph-p0-dn,muN*e*dn+e*mup*p0+e*mup*dn-sigma,muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H)
+  Found 5 generators in ideal
+  Testing 25 combinations
+  Trying combination: {n-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dp-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {n-dn, dp-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {n-dn, ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dp-dn, ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {n-dn, muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dp-dn, muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {ph-p0-dn, muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {n-dn, muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dp-dn, muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {ph-p0-dn, muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN*e*dn+e*mup*p0+e*mup*dn-sigma, muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {n-dn, dp-dn, ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {n-dn, dp-dn, muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {n-dn, ph-p0-dn, muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dp-dn, ph-p0-dn, muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {n-dn, dp-dn, muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {n-dn, ph-p0-dn, muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dp-dn, ph-p0-dn, muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {n-dn, muN*e*dn+e*mup*p0+e*mup*dn-sigma, muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dp-dn, muN*e*dn+e*mup*p0+e*mup*dn-sigma, muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {ph-p0-dn, muN*e*dn+e*mup*p0+e*mup*dn-sigma, muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+Saved Polynomials:
+{e}
+{sigma, e}
+{muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+Strong Candidates:
+{muN*dn*r+mup*p0*r-mup*dn*beta^2*r-mup*dn*beta*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}

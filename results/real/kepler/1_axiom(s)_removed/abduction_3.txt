@@ -1,0 +1,101 @@
+Removed Axioms:
+Fc-Fg
+Remaining Axioms:
+Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2
+Fc-w^2*m2*d2
+w*p-1
+Target Polynomial q:
+m1*m2*p^2-m2*d1^2*d2-2*m2*d1*d2^2-m2*d2^3
+
+Primary Decomposition:
+ideal(m2,Fc,d1^2+2*d1*d2+d2^2,w*p-1)
+
+ideal(m1,d1^2+2*d1*d2+d2^2,w*p-1,Fc*p-w*m2*d2,Fc*p^2-m2*d2)
+
+ideal(m2,Fg,Fc,w*p-1)
+
+ideal(Fc-Fg,w*p-1,m1*p^2-d1^2*d2-2*d1*d2^2-d2^3,Fg*p-w*m2*d2,Fg*p^2-m2*d2,Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2)
+
+Ideal: ideal(m2,Fc,d1^2+2*d1*d2+d2^2,w*p-1)
+  Found 4 generators in ideal
+  Testing 4 combinations
+  Trying combination: {m2}
+    Filtered combo: {m2}
+    Filtered combo implies q
+  Trying combination: {Fc}
+    Filtered combo: {Fc}
+    Filtered combo does not imply q
+  Trying combination: {d1^2+2*d1*d2+d2^2}
+    Filtered combo: {d1^2+2*d1*d2+d2^2}
+    Filtered combo implies q
+  Trying combination: {w*p-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+Ideal: ideal(m1,d1^2+2*d1*d2+d2^2,w*p-1,Fc*p-w*m2*d2,Fc*p^2-m2*d2)
+  Found 5 generators in ideal
+  Testing 5 combinations
+  Trying combination: {m1}
+    Filtered combo: {m1}
+    Filtered combo does not imply q
+  Trying combination: {d1^2+2*d1*d2+d2^2}
+    Filtered combo: {d1^2+2*d1*d2+d2^2}
+    Filtered combo implies q
+  Trying combination: {w*p-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {Fc*p-w*m2*d2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {Fc*p^2-m2*d2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+Ideal: ideal(m2,Fg,Fc,w*p-1)
+  Found 4 generators in ideal
+  Testing 4 combinations
+  Trying combination: {m2}
+    Filtered combo: {m2}
+    Filtered combo implies q
+  Trying combination: {Fg}
+    Filtered combo: {Fg}
+    Filtered combo does not imply q
+  Trying combination: {Fc}
+    Filtered combo: {Fc}
+    Filtered combo does not imply q
+  Trying combination: {w*p-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+Ideal: ideal(Fc-Fg,w*p-1,m1*p^2-d1^2*d2-2*d1*d2^2-d2^3,Fg*p-w*m2*d2,Fg*p^2-m2*d2,Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2)
+  Found 6 generators in ideal
+  Testing 6 combinations
+  Trying combination: {Fc-Fg}
+    Filtered combo: {Fc-Fg}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {w*p-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+    Filtered combo: {m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+    Filtered combo implies q
+  Trying combination: {Fg*p-w*m2*d2}
+    Filtered combo: {Fg*p-w*m2*d2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {Fg*p^2-m2*d2}
+    Filtered combo: {Fg*p^2-m2*d2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+Saved Polynomials:
+{m2}
+{d1^2+2*d1*d2+d2^2}
+{Fc-Fg}
+{m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+{Fg*p-w*m2*d2}
+{Fg*p^2-m2*d2}
+Strong Candidates:
+{Fc-Fg}
+{Fg*p-w*m2*d2}
+{Fg*p^2-m2*d2}

@@ -1,0 +1,203 @@
+Removed Axioms:
+-(157/25)*sintheta*dtheta*r^2+dA
+ap^2-(1/2)*x0^2*w^4
+Remaining Axioms:
+S*r^2-ap^2*sintheta^2*qc^2
+-S*dA+P
+-sintheta^3*dtheta+4/3
+Target Polynomial q:
+75*P-314*qc^2*x0^2*w^4
+
+Primary Decomposition:
+ideal(P,S,qc^2,3*sintheta^3*dtheta-4)
+
+ideal(S*dA-P,3*sintheta^3*dtheta-4,4*ap^2*dA*qc^2-3*sintheta*dtheta*r^2*P,3*S*sintheta*dtheta*r^2-4*ap^2*qc^2,S*r^2-ap^2*sintheta^2*qc^2,75*P-314*qc^2*x0^2*w^4,75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4,3*S^2*dtheta*r^4-4*ap^4*sintheta*qc^4,9*S^3*dtheta^2*r^6-16*ap^6*qc^6)
+
+Ideal: ideal(P,S,qc^2,3*sintheta^3*dtheta-4)
+  Found 4 generators in ideal
+  Testing 10 combinations
+  Trying combination: {P}
+    Filtered combo: {P}
+    Filtered combo does not imply q
+  Trying combination: {S}
+    Filtered combo: {S}
+    Filtered combo does not imply q
+  Trying combination: {qc^2}
+    Filtered combo: {qc^2}
+    Filtered combo does not imply q
+  Trying combination: {3*sintheta^3*dtheta-4}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {P, S}
+    Filtered combo: {P, S}
+    Filtered combo does not imply q
+  Trying combination: {P, qc^2}
+    Filtered combo: {P, qc^2}
+    Filtered combo implies q
+  Trying combination: {S, qc^2}
+    Filtered combo: {S, qc^2}
+    Filtered combo implies q
+  Trying combination: {P, 3*sintheta^3*dtheta-4}
+    Filtered combo: {P}
+    Filtered combo does not imply q
+  Trying combination: {S, 3*sintheta^3*dtheta-4}
+    Filtered combo: {S}
+    Filtered combo does not imply q
+  Trying combination: {qc^2, 3*sintheta^3*dtheta-4}
+    Filtered combo: {qc^2}
+    Filtered combo does not imply q
+Ideal: ideal(S*dA-P,3*sintheta^3*dtheta-4,4*ap^2*dA*qc^2-3*sintheta*dtheta*r^2*P,3*S*sintheta*dtheta*r^2-4*ap^2*qc^2,S*r^2-ap^2*sintheta^2*qc^2,75*P-314*qc^2*x0^2*w^4,75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4,3*S^2*dtheta*r^4-4*ap^4*sintheta*qc^4,9*S^3*dtheta^2*r^6-16*ap^6*qc^6)
+  Found 9 generators in ideal
+  Testing 45 combinations
+  Trying combination: {S*dA-P}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {3*sintheta^3*dtheta-4}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {4*ap^2*dA*qc^2-3*sintheta*dtheta*r^2*P}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {3*S*sintheta*dtheta*r^2-4*ap^2*qc^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {S*r^2-ap^2*sintheta^2*qc^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {75*P-314*qc^2*x0^2*w^4}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo does not imply q
+  Trying combination: {3*S^2*dtheta*r^4-4*ap^4*sintheta*qc^4}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {9*S^3*dtheta^2*r^6-16*ap^6*qc^6}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {S*dA-P, 3*sintheta^3*dtheta-4}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {S*dA-P, 4*ap^2*dA*qc^2-3*sintheta*dtheta*r^2*P}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {3*sintheta^3*dtheta-4, 4*ap^2*dA*qc^2-3*sintheta*dtheta*r^2*P}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {S*dA-P, 3*S*sintheta*dtheta*r^2-4*ap^2*qc^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {3*sintheta^3*dtheta-4, 3*S*sintheta*dtheta*r^2-4*ap^2*qc^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {4*ap^2*dA*qc^2-3*sintheta*dtheta*r^2*P, 3*S*sintheta*dtheta*r^2-4*ap^2*qc^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {S*dA-P, S*r^2-ap^2*sintheta^2*qc^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {3*sintheta^3*dtheta-4, S*r^2-ap^2*sintheta^2*qc^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {4*ap^2*dA*qc^2-3*sintheta*dtheta*r^2*P, S*r^2-ap^2*sintheta^2*qc^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {3*S*sintheta*dtheta*r^2-4*ap^2*qc^2, S*r^2-ap^2*sintheta^2*qc^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {S*dA-P, 75*P-314*qc^2*x0^2*w^4}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {3*sintheta^3*dtheta-4, 75*P-314*qc^2*x0^2*w^4}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {4*ap^2*dA*qc^2-3*sintheta*dtheta*r^2*P, 75*P-314*qc^2*x0^2*w^4}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {3*S*sintheta*dtheta*r^2-4*ap^2*qc^2, 75*P-314*qc^2*x0^2*w^4}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {S*r^2-ap^2*sintheta^2*qc^2, 75*P-314*qc^2*x0^2*w^4}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {S*dA-P, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo does not imply q
+  Trying combination: {3*sintheta^3*dtheta-4, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo does not imply q
+  Trying combination: {4*ap^2*dA*qc^2-3*sintheta*dtheta*r^2*P, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo does not imply q
+  Trying combination: {3*S*sintheta*dtheta*r^2-4*ap^2*qc^2, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo does not imply q
+  Trying combination: {S*r^2-ap^2*sintheta^2*qc^2, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo does not imply q
+  Trying combination: {75*P-314*qc^2*x0^2*w^4, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {S*dA-P, 3*S^2*dtheta*r^4-4*ap^4*sintheta*qc^4}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {3*sintheta^3*dtheta-4, 3*S^2*dtheta*r^4-4*ap^4*sintheta*qc^4}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {4*ap^2*dA*qc^2-3*sintheta*dtheta*r^2*P, 3*S^2*dtheta*r^4-4*ap^4*sintheta*qc^4}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {3*S*sintheta*dtheta*r^2-4*ap^2*qc^2, 3*S^2*dtheta*r^4-4*ap^4*sintheta*qc^4}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {S*r^2-ap^2*sintheta^2*qc^2, 3*S^2*dtheta*r^4-4*ap^4*sintheta*qc^4}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {75*P-314*qc^2*x0^2*w^4, 3*S^2*dtheta*r^4-4*ap^4*sintheta*qc^4}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4, 3*S^2*dtheta*r^4-4*ap^4*sintheta*qc^4}
+    Filtered combo: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo does not imply q
+  Trying combination: {S*dA-P, 9*S^3*dtheta^2*r^6-16*ap^6*qc^6}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {3*sintheta^3*dtheta-4, 9*S^3*dtheta^2*r^6-16*ap^6*qc^6}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {4*ap^2*dA*qc^2-3*sintheta*dtheta*r^2*P, 9*S^3*dtheta^2*r^6-16*ap^6*qc^6}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {3*S*sintheta*dtheta*r^2-4*ap^2*qc^2, 9*S^3*dtheta^2*r^6-16*ap^6*qc^6}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {S*r^2-ap^2*sintheta^2*qc^2, 9*S^3*dtheta^2*r^6-16*ap^6*qc^6}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {75*P-314*qc^2*x0^2*w^4, 9*S^3*dtheta^2*r^6-16*ap^6*qc^6}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4, 9*S^3*dtheta^2*r^6-16*ap^6*qc^6}
+    Filtered combo: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo does not imply q
+  Trying combination: {3*S^2*dtheta*r^4-4*ap^4*sintheta*qc^4, 9*S^3*dtheta^2*r^6-16*ap^6*qc^6}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+Saved Polynomials:
+{qc^2, P}
+{qc^2, S}
+{75*P-314*qc^2*x0^2*w^4}
+{75*P-314*qc^2*x0^2*w^4, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+Strong Candidates:
+{75*P-314*qc^2*x0^2*w^4}
+{75*P-314*qc^2*x0^2*w^4, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}

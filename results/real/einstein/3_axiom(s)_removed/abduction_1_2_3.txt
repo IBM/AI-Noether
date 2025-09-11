@@ -1,0 +1,69 @@
+Removed Axioms:
+-2*d+dt0*c
+-4*d^2-dt^2*v^2+4*L^2
+dt0*F0-1
+Remaining Axioms:
+dt*F-1
+dt*c-2*L
+Target Polynomial q:
+c^2*F0^2-c^2*F^2-F0^2*v^2
+
+Primary Decomposition:
+ideal(2*L*F-c,dt*F-1,dt*c-2*L,c^2*F0^2-c^2*F^2-F0^2*v^2)
+
+Ideal: ideal(2*L*F-c,dt*F-1,dt*c-2*L,c^2*F0^2-c^2*F^2-F0^2*v^2)
+  Found 4 generators in ideal
+  Testing 14 combinations
+  Trying combination: {2*L*F-c}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dt*F-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dt*c-2*L}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {2*L*F-c, dt*F-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {2*L*F-c, dt*c-2*L}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dt*F-1, dt*c-2*L}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {2*L*F-c, c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt*F-1, c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {2*L*F-c, dt*F-1, dt*c-2*L}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {2*L*F-c, dt*F-1, c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {2*L*F-c, dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt*F-1, dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+Saved Polynomials:
+{c^2*F0^2-c^2*F^2-F0^2*v^2}
+Strong Candidates:
+{c^2*F0^2-c^2*F^2-F0^2*v^2}

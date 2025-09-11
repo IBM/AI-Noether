@@ -1,0 +1,12 @@
+Variables: ["S", "ap", "sintheta", "dA", "dtheta", "r", "P", "qc", "x0", "w"]
+Equations:
+S * r^2 - qc^2 * ap^2 * sintheta^2
+dA - 2*(314/100)*r^2*sintheta*dtheta
+P - S * dA
+4/3 - sintheta^3 * dtheta
+ap^2 - (1/2)*w^4 * x0^2
+
+Measured Variables: ["P", "qc", "x0", "w"]
+
+Target Polynomial:
+75*P - 314*qc^2*w^4*x0^2

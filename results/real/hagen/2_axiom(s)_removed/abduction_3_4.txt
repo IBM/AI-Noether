@@ -1,0 +1,141 @@
+Removed Axioms:
+c0+c2*Rad^2
+-c0-c2*r^2+u
+Remaining Axioms:
+4*c2*r*mu-dp*r
+dp*L+delP
+Target Polynomial q:
+r^3*delP-r*Rad^2*delP+4*r*u*L*mu
+
+Primary Decomposition:
+ideal(r,dp*L+delP)
+
+ideal(delP,mu,dp)
+
+ideal(delP,L,4*c2*mu-dp)
+
+ideal(dp*L+delP,4*c2*mu-dp,r^2*delP-Rad^2*delP+4*u*L*mu,dp*r^2-dp*Rad^2-4*u*mu,c2*r^2-c2*Rad^2-u)
+
+Ideal: ideal(r,dp*L+delP)
+  Found 2 generators in ideal
+  Testing 3 combinations
+  Trying combination: {r}
+    Filtered combo: {r}
+    Filtered combo implies q
+  Trying combination: {dp*L+delP}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {r, dp*L+delP}
+    Filtered combo: {r}
+    Filtered combo implies q
+Ideal: ideal(delP,mu,dp)
+  Found 3 generators in ideal
+  Testing 6 combinations
+  Trying combination: {delP}
+    Filtered combo: {delP}
+    Filtered combo does not imply q
+  Trying combination: {mu}
+    Filtered combo: {mu}
+    Filtered combo implies q
+  Trying combination: {dp}
+    Filtered combo: {dp}
+    Filtered combo does not imply q
+  Trying combination: {delP, mu}
+    Filtered combo: {delP, mu}
+    Filtered combo implies q
+  Trying combination: {delP, dp}
+    Filtered combo: {delP, dp}
+    Filtered combo does not imply q
+  Trying combination: {mu, dp}
+    Filtered combo: {mu, dp}
+    Filtered combo implies q
+Ideal: ideal(delP,L,4*c2*mu-dp)
+  Found 3 generators in ideal
+  Testing 6 combinations
+  Trying combination: {delP}
+    Filtered combo: {delP}
+    Filtered combo does not imply q
+  Trying combination: {L}
+    Filtered combo: {L}
+    Filtered combo implies q
+  Trying combination: {4*c2*mu-dp}
+    Filtered combo: {4*c2*mu-dp}
+    Filtered combo does not imply q
+  Trying combination: {delP, L}
+    Filtered combo: {delP, L}
+    Filtered combo implies q
+  Trying combination: {delP, 4*c2*mu-dp}
+    Filtered combo: {delP, 4*c2*mu-dp}
+    Filtered combo does not imply q
+  Trying combination: {L, 4*c2*mu-dp}
+    Filtered combo: {L, 4*c2*mu-dp}
+    Filtered combo implies q
+Ideal: ideal(dp*L+delP,4*c2*mu-dp,r^2*delP-Rad^2*delP+4*u*L*mu,dp*r^2-dp*Rad^2-4*u*mu,c2*r^2-c2*Rad^2-u)
+  Found 5 generators in ideal
+  Testing 15 combinations
+  Trying combination: {dp*L+delP}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {4*c2*mu-dp}
+    Filtered combo: {4*c2*mu-dp}
+    Filtered combo does not imply q
+  Trying combination: {r^2*delP-Rad^2*delP+4*u*L*mu}
+    Filtered combo: {r^2*delP-Rad^2*delP+4*u*L*mu}
+    Filtered combo implies q
+  Trying combination: {dp*r^2-dp*Rad^2-4*u*mu}
+    Filtered combo: {dp*r^2-dp*Rad^2-4*u*mu}
+    Filtered combo implies q
+  Trying combination: {c2*r^2-c2*Rad^2-u}
+    Filtered combo: {c2*r^2-c2*Rad^2-u}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dp*L+delP, 4*c2*mu-dp}
+    Filtered combo: {4*c2*mu-dp}
+    Filtered combo does not imply q
+  Trying combination: {dp*L+delP, r^2*delP-Rad^2*delP+4*u*L*mu}
+    Filtered combo: {r^2*delP-Rad^2*delP+4*u*L*mu}
+    Filtered combo implies q
+  Trying combination: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu}
+    Filtered combo: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu}
+    Filtered combo implies q
+  Trying combination: {dp*L+delP, dp*r^2-dp*Rad^2-4*u*mu}
+    Filtered combo: {dp*r^2-dp*Rad^2-4*u*mu}
+    Filtered combo implies q
+  Trying combination: {4*c2*mu-dp, dp*r^2-dp*Rad^2-4*u*mu}
+    Filtered combo: {4*c2*mu-dp, dp*r^2-dp*Rad^2-4*u*mu}
+    Filtered combo implies q
+  Trying combination: {r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu}
+    Filtered combo: {r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu}
+    Filtered combo implies q
+  Trying combination: {dp*L+delP, c2*r^2-c2*Rad^2-u}
+    Filtered combo: {c2*r^2-c2*Rad^2-u}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {4*c2*mu-dp, c2*r^2-c2*Rad^2-u}
+    Filtered combo: {4*c2*mu-dp, c2*r^2-c2*Rad^2-u}
+    Filtered combo implies q
+  Trying combination: {r^2*delP-Rad^2*delP+4*u*L*mu, c2*r^2-c2*Rad^2-u}
+    Filtered combo: {r^2*delP-Rad^2*delP+4*u*L*mu, c2*r^2-c2*Rad^2-u}
+    Filtered combo implies q
+  Trying combination: {dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+    Filtered combo: {dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+    Filtered combo implies q
+Saved Polynomials:
+{r}
+{mu}
+{delP, mu}
+{mu, dp}
+{L}
+{delP, L}
+{L, 4*c2*mu-dp}
+{r^2*delP-Rad^2*delP+4*u*L*mu}
+{dp*r^2-dp*Rad^2-4*u*mu}
+{c2*r^2-c2*Rad^2-u}
+{r^2*delP-Rad^2*delP+4*u*L*mu, 4*c2*mu-dp}
+{dp*r^2-dp*Rad^2-4*u*mu, 4*c2*mu-dp}
+{r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu}
+{4*c2*mu-dp, c2*r^2-c2*Rad^2-u}
+{r^2*delP-Rad^2*delP+4*u*L*mu, c2*r^2-c2*Rad^2-u}
+{dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+Strong Candidates:
+{c2*r^2-c2*Rad^2-u}

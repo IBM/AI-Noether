@@ -1,0 +1,24 @@
+Variables: ["S", "ap", "sintheta", "dA", "dtheta", "r", "P", "qc", "x0", "w", "Intg", "e", "c", "Pi", "r0", "lambda", "eps0", "E", "W", "q", "qe", "me", "a", "b", "m", "Q"]
+Equations:
+S * r^2 - qc^2 * ap^2 * sintheta^2
+P - S * dA
+4/3 - sintheta^3 * dtheta
+ap^2 - (1/2)*w^4 * x0^2
+a^2 + b^2 - 1
+S - eps0 * c * E^2
+S * 16 * Pi^2 * eps0 * r^2 * c^3 - qc^2 * ap^2 * a^2
+P - Intg * S * dA
+Intg - sintheta^3 * dtheta
+Intg - 4/3
+P * 6 * Pi * eps0 * c^3 - q^2 * ap^2
+P * 12 * Pi * eps0 * c^3 - q^2 * w^4 * x0^2
+e^2 * 4 * Pi * eps0 - qe^2
+W - (1/2)*m * w^2 * x0^2
+r0 * me * c^2 - e^2
+Q * 4 * Pi * r0 - 3 * lambda
+lambda * w - 2 * Pi * c
+
+Measured Variables: ["P", "qc", "x0", "w"]
+
+Target Polynomial:
+75*P - 314*qc^2*w^4*x0^2

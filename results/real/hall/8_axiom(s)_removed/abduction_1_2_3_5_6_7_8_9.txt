@@ -1,0 +1,51 @@
+Removed Axioms:
+Fm-v*qe*B
+Fe-E*qe
+Fm-Fe
+v*dt-L
+dt*i-Q
+Q-N*qe
+-N+V*n
+-d*h*L+V
+Remaining Axioms:
+E*h-UH
+Target Polynomial q:
+N*qe*UH-i*B*h*L
+
+Primary Decomposition:
+ideal(UH,h)
+
+ideal(E*h-UH,E*N*qe-i*B*L)
+
+Ideal: ideal(UH,h)
+  Found 2 generators in ideal
+  Testing 3 combinations
+  Trying combination: {UH}
+    Filtered combo: {UH}
+    Filtered combo does not imply q
+  Trying combination: {h}
+    Filtered combo: {h}
+    Filtered combo implies q
+  Trying combination: {UH, h}
+    Filtered combo: {UH, h}
+    Filtered combo implies q
+Ideal: ideal(E*h-UH,E*N*qe-i*B*L)
+  Found 2 generators in ideal
+  Testing 3 combinations
+  Trying combination: {E*h-UH}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {E*N*qe-i*B*L}
+    Filtered combo: {E*N*qe-i*B*L}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {E*h-UH, E*N*qe-i*B*L}
+    Filtered combo: {E*N*qe-i*B*L}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+Saved Polynomials:
+{h}
+{UH, h}
+{E*N*qe-i*B*L}
+Strong Candidates:
+{E*N*qe-i*B*L}

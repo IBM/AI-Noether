@@ -1,0 +1,107 @@
+Removed Axioms:
+Fm-v*qe*B
+Fe-E*qe
+Fm-Fe
+E*h-UH
+v*dt-L
+-N+V*n
+-d*h*L+V
+Remaining Axioms:
+dt*i-Q
+Q-N*qe
+Target Polynomial q:
+N*qe*UH-i*B*h*L
+
+Primary Decomposition:
+ideal(qe,i,Q)
+
+ideal(i,N,Q)
+
+ideal(Q-N*qe,dt*i-N*qe,dt*UH-B*h*L)
+
+Ideal: ideal(qe,i,Q)
+  Found 3 generators in ideal
+  Testing 7 combinations
+  Trying combination: {qe}
+    Filtered combo: {qe}
+    Filtered combo does not imply q
+  Trying combination: {i}
+    Filtered combo: {i}
+    Filtered combo implies q
+  Trying combination: {Q}
+    Filtered combo: {Q}
+    Filtered combo does not imply q
+  Trying combination: {qe, i}
+    Filtered combo: {qe, i}
+    Filtered combo implies q
+  Trying combination: {qe, Q}
+    Filtered combo: {qe, Q}
+    Filtered combo does not imply q
+  Trying combination: {i, Q}
+    Filtered combo: {i, Q}
+    Filtered combo implies q
+  Trying combination: {qe, i, Q}
+    Filtered combo: {qe, i, Q}
+    Filtered combo implies q
+Ideal: ideal(i,N,Q)
+  Found 3 generators in ideal
+  Testing 7 combinations
+  Trying combination: {i}
+    Filtered combo: {i}
+    Filtered combo implies q
+  Trying combination: {N}
+    Filtered combo: {N}
+    Filtered combo does not imply q
+  Trying combination: {Q}
+    Filtered combo: {Q}
+    Filtered combo does not imply q
+  Trying combination: {i, N}
+    Filtered combo: {i, N}
+    Filtered combo implies q
+  Trying combination: {i, Q}
+    Filtered combo: {i, Q}
+    Filtered combo implies q
+  Trying combination: {N, Q}
+    Filtered combo: {N, Q}
+    Filtered combo does not imply q
+  Trying combination: {i, N, Q}
+    Filtered combo: {i, N, Q}
+    Filtered combo implies q
+Ideal: ideal(Q-N*qe,dt*i-N*qe,dt*UH-B*h*L)
+  Found 3 generators in ideal
+  Testing 7 combinations
+  Trying combination: {Q-N*qe}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dt*i-N*qe}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dt*UH-B*h*L}
+    Filtered combo: {dt*UH-B*h*L}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {Q-N*qe, dt*i-N*qe}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {Q-N*qe, dt*UH-B*h*L}
+    Filtered combo: {dt*UH-B*h*L}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt*i-N*qe, dt*UH-B*h*L}
+    Filtered combo: {dt*UH-B*h*L}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {Q-N*qe, dt*i-N*qe, dt*UH-B*h*L}
+    Filtered combo: {dt*UH-B*h*L}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+Saved Polynomials:
+{i}
+{qe, i}
+{i, Q}
+{qe, i, Q}
+{i, N}
+{i, N, Q}
+{dt*UH-B*h*L}
+Strong Candidates:
+{dt*UH-B*h*L}

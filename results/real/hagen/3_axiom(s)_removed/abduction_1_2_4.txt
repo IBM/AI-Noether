@@ -1,0 +1,42 @@
+Removed Axioms:
+4*c2*r*mu-dp*r
+dp*L+delP
+-c0-c2*r^2+u
+Remaining Axioms:
+c0+c2*Rad^2
+Target Polynomial q:
+r^3*delP-r*Rad^2*delP+4*r*u*L*mu
+
+Primary Decomposition:
+ideal(r,c0+c2*Rad^2)
+
+ideal(r^2*delP-Rad^2*delP+4*u*L*mu,c0+c2*Rad^2)
+
+Ideal: ideal(r,c0+c2*Rad^2)
+  Found 2 generators in ideal
+  Testing 3 combinations
+  Trying combination: {r}
+    Filtered combo: {r}
+    Filtered combo implies q
+  Trying combination: {c0+c2*Rad^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {r, c0+c2*Rad^2}
+    Filtered combo: {r}
+    Filtered combo implies q
+Ideal: ideal(r^2*delP-Rad^2*delP+4*u*L*mu,c0+c2*Rad^2)
+  Found 2 generators in ideal
+  Testing 3 combinations
+  Trying combination: {r^2*delP-Rad^2*delP+4*u*L*mu}
+    Filtered combo: {r^2*delP-Rad^2*delP+4*u*L*mu}
+    Filtered combo implies q
+  Trying combination: {c0+c2*Rad^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {r^2*delP-Rad^2*delP+4*u*L*mu, c0+c2*Rad^2}
+    Filtered combo: {r^2*delP-Rad^2*delP+4*u*L*mu}
+    Filtered combo implies q
+Saved Polynomials:
+{r}
+{r^2*delP-Rad^2*delP+4*u*L*mu}
+Strong Candidates:

@@ -1,0 +1,67 @@
+Removed Axioms:
+Eki-(1/2)*m*ve^2
+Ugi*r+G*M*m
+Ugf
+Remaining Axioms:
+Ekf
+Eki-Ekf+Ugi-Ugf
+Target Polynomial q:
+2*G*M*m-m*ve^2*r
+
+Primary Decomposition:
+ideal(m,Ekf,Eki+Ugi-Ugf)
+
+ideal(Ekf,Eki+Ugi-Ugf,2*G*M-ve^2*r)
+
+Ideal: ideal(m,Ekf,Eki+Ugi-Ugf)
+  Found 3 generators in ideal
+  Testing 7 combinations
+  Trying combination: {m}
+    Filtered combo: {m}
+    Filtered combo implies q
+  Trying combination: {Ekf}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {Eki+Ugi-Ugf}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {m, Ekf}
+    Filtered combo: {m}
+    Filtered combo implies q
+  Trying combination: {m, Eki+Ugi-Ugf}
+    Filtered combo: {m}
+    Filtered combo implies q
+  Trying combination: {Ekf, Eki+Ugi-Ugf}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {m, Ekf, Eki+Ugi-Ugf}
+    Filtered combo: {m}
+    Filtered combo implies q
+Ideal: ideal(Ekf,Eki+Ugi-Ugf,2*G*M-ve^2*r)
+  Found 3 generators in ideal
+  Testing 7 combinations
+  Trying combination: {Ekf}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {Eki+Ugi-Ugf}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {2*G*M-ve^2*r}
+    Filtered combo: {2*G*M-ve^2*r}
+    Filtered combo implies q
+  Trying combination: {Ekf, Eki+Ugi-Ugf}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {Ekf, 2*G*M-ve^2*r}
+    Filtered combo: {2*G*M-ve^2*r}
+    Filtered combo implies q
+  Trying combination: {Eki+Ugi-Ugf, 2*G*M-ve^2*r}
+    Filtered combo: {2*G*M-ve^2*r}
+    Filtered combo implies q
+  Trying combination: {Ekf, Eki+Ugi-Ugf, 2*G*M-ve^2*r}
+    Filtered combo: {2*G*M-ve^2*r}
+    Filtered combo implies q
+Saved Polynomials:
+{m}
+{2*G*M-ve^2*r}
+Strong Candidates:

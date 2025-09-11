@@ -1,0 +1,188 @@
+Removed Axioms:
+-(157/25)*sintheta*dtheta*r^2+dA
+-sintheta^3*dtheta+4/3
+Remaining Axioms:
+S*r^2-ap^2*sintheta^2*qc^2
+-S*dA+P
+ap^2-(1/2)*x0^2*w^4
+Target Polynomial q:
+75*P-314*qc^2*x0^2*w^4
+
+Primary Decomposition:
+ideal(P,S,ap^2,w^4)
+
+ideal(P,S,x0^2,ap^2)
+
+ideal(P,S,qc^2,2*ap^2-x0^2*w^4)
+
+ideal(S*dA-P,75*sintheta^2*dA-628*r^2,628*S*r^2-75*sintheta^2*P,628*ap^2*qc^2-75*P,2*ap^2-x0^2*w^4)
+
+Ideal: ideal(P,S,ap^2,w^4)
+  Found 4 generators in ideal
+  Testing 10 combinations
+  Trying combination: {P}
+    Filtered combo: {P}
+    Filtered combo does not imply q
+  Trying combination: {S}
+    Filtered combo: {S}
+    Filtered combo does not imply q
+  Trying combination: {ap^2}
+    Filtered combo: {ap^2}
+    Filtered combo does not imply q
+  Trying combination: {w^4}
+    Filtered combo: {w^4}
+    Filtered combo does not imply q
+  Trying combination: {P, S}
+    Filtered combo: {P, S}
+    Filtered combo does not imply q
+  Trying combination: {P, ap^2}
+    Filtered combo: {P, ap^2}
+    Filtered combo implies q
+  Trying combination: {S, ap^2}
+    Filtered combo: {S, ap^2}
+    Filtered combo implies q
+  Trying combination: {P, w^4}
+    Filtered combo: {P, w^4}
+    Filtered combo implies q
+  Trying combination: {S, w^4}
+    Filtered combo: {S, w^4}
+    Filtered combo implies q
+  Trying combination: {ap^2, w^4}
+    Filtered combo: {ap^2, w^4}
+    Filtered combo does not imply q
+Ideal: ideal(P,S,x0^2,ap^2)
+  Found 4 generators in ideal
+  Testing 10 combinations
+  Trying combination: {P}
+    Filtered combo: {P}
+    Filtered combo does not imply q
+  Trying combination: {S}
+    Filtered combo: {S}
+    Filtered combo does not imply q
+  Trying combination: {x0^2}
+    Filtered combo: {x0^2}
+    Filtered combo does not imply q
+  Trying combination: {ap^2}
+    Filtered combo: {ap^2}
+    Filtered combo does not imply q
+  Trying combination: {P, S}
+    Filtered combo: {P, S}
+    Filtered combo does not imply q
+  Trying combination: {P, x0^2}
+    Filtered combo: {P, x0^2}
+    Filtered combo implies q
+  Trying combination: {S, x0^2}
+    Filtered combo: {S, x0^2}
+    Filtered combo implies q
+  Trying combination: {P, ap^2}
+    Filtered combo: {P, ap^2}
+    Filtered combo implies q
+  Trying combination: {S, ap^2}
+    Filtered combo: {S, ap^2}
+    Filtered combo implies q
+  Trying combination: {x0^2, ap^2}
+    Filtered combo: {x0^2, ap^2}
+    Filtered combo does not imply q
+Ideal: ideal(P,S,qc^2,2*ap^2-x0^2*w^4)
+  Found 4 generators in ideal
+  Testing 10 combinations
+  Trying combination: {P}
+    Filtered combo: {P}
+    Filtered combo does not imply q
+  Trying combination: {S}
+    Filtered combo: {S}
+    Filtered combo does not imply q
+  Trying combination: {qc^2}
+    Filtered combo: {qc^2}
+    Filtered combo does not imply q
+  Trying combination: {2*ap^2-x0^2*w^4}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {P, S}
+    Filtered combo: {P, S}
+    Filtered combo does not imply q
+  Trying combination: {P, qc^2}
+    Filtered combo: {P, qc^2}
+    Filtered combo implies q
+  Trying combination: {S, qc^2}
+    Filtered combo: {S, qc^2}
+    Filtered combo implies q
+  Trying combination: {P, 2*ap^2-x0^2*w^4}
+    Filtered combo: {P}
+    Filtered combo does not imply q
+  Trying combination: {S, 2*ap^2-x0^2*w^4}
+    Filtered combo: {S}
+    Filtered combo does not imply q
+  Trying combination: {qc^2, 2*ap^2-x0^2*w^4}
+    Filtered combo: {qc^2}
+    Filtered combo does not imply q
+Ideal: ideal(S*dA-P,75*sintheta^2*dA-628*r^2,628*S*r^2-75*sintheta^2*P,628*ap^2*qc^2-75*P,2*ap^2-x0^2*w^4)
+  Found 5 generators in ideal
+  Testing 15 combinations
+  Trying combination: {S*dA-P}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {75*sintheta^2*dA-628*r^2}
+    Filtered combo: {75*sintheta^2*dA-628*r^2}
+    Filtered combo does not imply q
+  Trying combination: {628*S*r^2-75*sintheta^2*P}
+    Filtered combo: {628*S*r^2-75*sintheta^2*P}
+    Filtered combo does not imply q
+  Trying combination: {628*ap^2*qc^2-75*P}
+    Filtered combo: {628*ap^2*qc^2-75*P}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {2*ap^2-x0^2*w^4}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {S*dA-P, 75*sintheta^2*dA-628*r^2}
+    Filtered combo: {75*sintheta^2*dA-628*r^2}
+    Filtered combo does not imply q
+  Trying combination: {S*dA-P, 628*S*r^2-75*sintheta^2*P}
+    Filtered combo: {628*S*r^2-75*sintheta^2*P}
+    Filtered combo does not imply q
+  Trying combination: {75*sintheta^2*dA-628*r^2, 628*S*r^2-75*sintheta^2*P}
+    Filtered combo: {75*sintheta^2*dA-628*r^2, 628*S*r^2-75*sintheta^2*P}
+    Filtered combo does not imply q
+  Trying combination: {S*dA-P, 628*ap^2*qc^2-75*P}
+    Filtered combo: {628*ap^2*qc^2-75*P}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {75*sintheta^2*dA-628*r^2, 628*ap^2*qc^2-75*P}
+    Filtered combo: {75*sintheta^2*dA-628*r^2, 628*ap^2*qc^2-75*P}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {628*S*r^2-75*sintheta^2*P, 628*ap^2*qc^2-75*P}
+    Filtered combo: {628*S*r^2-75*sintheta^2*P, 628*ap^2*qc^2-75*P}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {S*dA-P, 2*ap^2-x0^2*w^4}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {75*sintheta^2*dA-628*r^2, 2*ap^2-x0^2*w^4}
+    Filtered combo: {75*sintheta^2*dA-628*r^2}
+    Filtered combo does not imply q
+  Trying combination: {628*S*r^2-75*sintheta^2*P, 2*ap^2-x0^2*w^4}
+    Filtered combo: {628*S*r^2-75*sintheta^2*P}
+    Filtered combo does not imply q
+  Trying combination: {628*ap^2*qc^2-75*P, 2*ap^2-x0^2*w^4}
+    Filtered combo: {628*ap^2*qc^2-75*P}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+Saved Polynomials:
+{P, ap^2}
+{ap^2, S}
+{w^4, P}
+{w^4, S}
+{x0^2, P}
+{x0^2, S}
+{ap^2, S}
+{qc^2, P}
+{qc^2, S}
+{628*ap^2*qc^2-75*P}
+{75*sintheta^2*dA-628*r^2, 628*ap^2*qc^2-75*P}
+{628*ap^2*qc^2-75*P, 628*S*r^2-75*sintheta^2*P}
+Strong Candidates:
+{628*ap^2*qc^2-75*P}
+{75*sintheta^2*dA-628*r^2, 628*ap^2*qc^2-75*P}
+{628*ap^2*qc^2-75*P, 628*S*r^2-75*sintheta^2*P}

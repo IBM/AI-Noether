@@ -1,0 +1,5 @@
+Variables: ['sigma', 'e', 'ph', 'p0', 'dp', 'mu', 'mup', 'muN', 'muH', 'n', 'dn', 'H', 'r', 'beta', 'dsigma2dn']
+Measured Variables: ['sigma', 'e', 'mup', 'p0', 'dn', 'beta']
+Non-Measured Variables: ['H', 'r', 'ph', 'n', 'dsigma2dn', 'dp', 'muN', 'mu', 'muH']
+Axioms: ['beta * mup - muN', 'muH - r * mu', 'ph - p0 - dp', 'n - dn', 'dp - dn', 'sigma - e * ph * mup - e * n * muN', 'H * (ph + beta * n)^2 * e - r * ph + r * beta^2 * n']
+Target: sigma - e*p0*mup - e*mup*dn*beta - e*mup*dn

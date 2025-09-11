@@ -1,0 +1,151 @@
+Removed Axioms:
+Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2
+Fc-Fg
+w*p-1
+Remaining Axioms:
+m1*d1-m2*d2
+Fc-w^2*m2*d2
+Target Polynomial q:
+-m1*d1*d2^2+m1*m2*p^2-d1^2*m2*d2-2*d1*m2*d2^2
+
+Primary Decomposition:
+ideal(d2,m1,Fc)
+
+ideal(m2,d1,Fc)
+
+ideal(m2,m1,Fc)
+
+ideal(m1*d1-m2*d2,d1^3+2*d1^2*d2+d1*d2^2-m2*p^2,m1*p^2-d1^2*d2-2*d1*d2^2-d2^3,Fc-w^2*m2*d2)
+
+Ideal: ideal(d2,m1,Fc)
+  Found 3 generators in ideal
+  Testing 7 combinations
+  Trying combination: {d2}
+    Filtered combo: {d2}
+    Filtered combo does not imply q
+  Trying combination: {m1}
+    Filtered combo: {m1}
+    Filtered combo implies q
+  Trying combination: {Fc}
+    Filtered combo: {Fc}
+    Filtered combo does not imply q
+  Trying combination: {d2, m1}
+    Filtered combo: {d2, m1}
+    Filtered combo implies q
+  Trying combination: {d2, Fc}
+    Filtered combo: {d2, Fc}
+    Filtered combo does not imply q
+  Trying combination: {m1, Fc}
+    Filtered combo: {m1, Fc}
+    Filtered combo implies q
+  Trying combination: {d2, m1, Fc}
+    Filtered combo: {d2, m1, Fc}
+    Filtered combo implies q
+Ideal: ideal(m2,d1,Fc)
+  Found 3 generators in ideal
+  Testing 7 combinations
+  Trying combination: {m2}
+    Filtered combo: {m2}
+    Filtered combo implies q
+  Trying combination: {d1}
+    Filtered combo: {d1}
+    Filtered combo does not imply q
+  Trying combination: {Fc}
+    Filtered combo: {Fc}
+    Filtered combo does not imply q
+  Trying combination: {m2, d1}
+    Filtered combo: {m2, d1}
+    Filtered combo implies q
+  Trying combination: {m2, Fc}
+    Filtered combo: {m2, Fc}
+    Filtered combo implies q
+  Trying combination: {d1, Fc}
+    Filtered combo: {d1, Fc}
+    Filtered combo does not imply q
+  Trying combination: {m2, d1, Fc}
+    Filtered combo: {m2, d1, Fc}
+    Filtered combo implies q
+Ideal: ideal(m2,m1,Fc)
+  Found 3 generators in ideal
+  Testing 7 combinations
+  Trying combination: {m2}
+    Filtered combo: {m2}
+    Filtered combo implies q
+  Trying combination: {m1}
+    Filtered combo: {m1}
+    Filtered combo implies q
+  Trying combination: {Fc}
+    Filtered combo: {Fc}
+    Filtered combo does not imply q
+  Trying combination: {m2, m1}
+    Filtered combo: {m2, m1}
+    Filtered combo implies q
+  Trying combination: {m2, Fc}
+    Filtered combo: {m2, Fc}
+    Filtered combo implies q
+  Trying combination: {m1, Fc}
+    Filtered combo: {m1, Fc}
+    Filtered combo implies q
+  Trying combination: {m2, m1, Fc}
+    Filtered combo: {m2, m1, Fc}
+    Filtered combo implies q
+Ideal: ideal(m1*d1-m2*d2,d1^3+2*d1^2*d2+d1*d2^2-m2*p^2,m1*p^2-d1^2*d2-2*d1*d2^2-d2^3,Fc-w^2*m2*d2)
+  Found 4 generators in ideal
+  Testing 14 combinations
+  Trying combination: {m1*d1-m2*d2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2}
+    Filtered combo: {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2}
+    Filtered combo implies q
+  Trying combination: {m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+    Filtered combo: {m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+    Filtered combo implies q
+  Trying combination: {Fc-w^2*m2*d2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {m1*d1-m2*d2, d1^3+2*d1^2*d2+d1*d2^2-m2*p^2}
+    Filtered combo: {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2}
+    Filtered combo implies q
+  Trying combination: {m1*d1-m2*d2, m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+    Filtered combo: {m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+    Filtered combo implies q
+  Trying combination: {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+    Filtered combo: {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+    Filtered combo implies q
+  Trying combination: {m1*d1-m2*d2, Fc-w^2*m2*d2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, Fc-w^2*m2*d2}
+    Filtered combo: {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2}
+    Filtered combo implies q
+  Trying combination: {m1*p^2-d1^2*d2-2*d1*d2^2-d2^3, Fc-w^2*m2*d2}
+    Filtered combo: {m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+    Filtered combo implies q
+  Trying combination: {m1*d1-m2*d2, d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+    Filtered combo: {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+    Filtered combo implies q
+  Trying combination: {m1*d1-m2*d2, d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, Fc-w^2*m2*d2}
+    Filtered combo: {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2}
+    Filtered combo implies q
+  Trying combination: {m1*d1-m2*d2, m1*p^2-d1^2*d2-2*d1*d2^2-d2^3, Fc-w^2*m2*d2}
+    Filtered combo: {m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+    Filtered combo implies q
+  Trying combination: {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, m1*p^2-d1^2*d2-2*d1*d2^2-d2^3, Fc-w^2*m2*d2}
+    Filtered combo: {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+    Filtered combo implies q
+Saved Polynomials:
+{m1}
+{d2, m1}
+{m1, Fc}
+{d2, m1, Fc}
+{m2}
+{m2, d1}
+{m2, Fc}
+{m2, d1, Fc}
+{m2, m1}
+{m2, m1, Fc}
+{d1^3+2*d1^2*d2+d1*d2^2-m2*p^2}
+{m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+{d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, m1*p^2-d1^2*d2-2*d1*d2^2-d2^3}
+Strong Candidates:

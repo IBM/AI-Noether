@@ -1,0 +1,11 @@
+Variables: ['c0', 'c2', 'dp', 'r', 'Rad', 'u', 'L', 'mu', 'delP']
+Equations:
+4*r*c2*mu - r*dp
+delP + L*dp
+c0 + c2*Rad^2
+u - c0 - r^2*c2
+
+Measured Variables: ['r', 'Rad', 'u', 'L', 'mu', 'delP']
+
+Target Polynomial:
+(8/7)*L*mu*r*u + (-1/4)*Rad^2*delP*r + (5/7)*delP*r^3

@@ -1,0 +1,122 @@
+Removed Axioms:
+4*c2*r*mu-dp*r
+Remaining Axioms:
+dp*L+delP
+c0+c2*Rad^2
+-c0-c2*r^2+u
+Target Polynomial q:
+r^3*delP-r*Rad^2*delP+4*r*u*L*mu
+
+Primary Decomposition:
+ideal(delP,L,c2*r^2-c2*Rad^2-u,c0+c2*Rad^2,c0*r^2-c0*Rad^2+Rad^2*u)
+
+ideal(u,r-Rad,dp*L+delP,c0+c2*Rad^2)
+
+ideal(u,r+Rad,dp*L+delP,c0+c2*Rad^2)
+
+ideal(r,c0-u,dp*L+delP,c2*Rad^2+u)
+
+ideal(dp*L+delP,4*c2*mu-dp,r^2*delP-Rad^2*delP+4*u*L*mu,dp*r^2-dp*Rad^2-4*u*mu,c2*r^2-c2*Rad^2-u,c0+c2*Rad^2,4*c0*mu+dp*Rad^2,4*c0*L*mu-Rad^2*delP,c0*r^2-c0*Rad^2+Rad^2*u)
+
+Ideal: ideal(delP,L,c2*r^2-c2*Rad^2-u,c0+c2*Rad^2,c0*r^2-c0*Rad^2+Rad^2*u)
+  Found 5 generators in ideal
+  Testing 5 combinations
+  Trying combination: {delP}
+    Filtered combo: {delP}
+    Filtered combo does not imply q
+  Trying combination: {L}
+    Filtered combo: {L}
+    Filtered combo implies q
+  Trying combination: {c2*r^2-c2*Rad^2-u}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {c0+c2*Rad^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {c0*r^2-c0*Rad^2+Rad^2*u}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+Ideal: ideal(u,r-Rad,dp*L+delP,c0+c2*Rad^2)
+  Found 4 generators in ideal
+  Testing 4 combinations
+  Trying combination: {u}
+    Filtered combo: {u}
+    Filtered combo does not imply q
+  Trying combination: {r-Rad}
+    Filtered combo: {r-Rad}
+    Filtered combo implies q
+  Trying combination: {dp*L+delP}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {c0+c2*Rad^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+Ideal: ideal(u,r+Rad,dp*L+delP,c0+c2*Rad^2)
+  Found 4 generators in ideal
+  Testing 4 combinations
+  Trying combination: {u}
+    Filtered combo: {u}
+    Filtered combo does not imply q
+  Trying combination: {r+Rad}
+    Filtered combo: {r+Rad}
+    Filtered combo implies q
+  Trying combination: {dp*L+delP}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {c0+c2*Rad^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+Ideal: ideal(r,c0-u,dp*L+delP,c2*Rad^2+u)
+  Found 4 generators in ideal
+  Testing 4 combinations
+  Trying combination: {r}
+    Filtered combo: {r}
+    Filtered combo implies q
+  Trying combination: {c0-u}
+    Filtered combo: {c0-u}
+    Filtered combo does not imply q
+  Trying combination: {dp*L+delP}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {c2*Rad^2+u}
+    Filtered combo: {c2*Rad^2+u}
+    Filtered combo does not imply q
+Ideal: ideal(dp*L+delP,4*c2*mu-dp,r^2*delP-Rad^2*delP+4*u*L*mu,dp*r^2-dp*Rad^2-4*u*mu,c2*r^2-c2*Rad^2-u,c0+c2*Rad^2,4*c0*mu+dp*Rad^2,4*c0*L*mu-Rad^2*delP,c0*r^2-c0*Rad^2+Rad^2*u)
+  Found 9 generators in ideal
+  Testing 9 combinations
+  Trying combination: {dp*L+delP}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {4*c2*mu-dp}
+    Filtered combo: {4*c2*mu-dp}
+    Filtered combo implies q
+  Trying combination: {r^2*delP-Rad^2*delP+4*u*L*mu}
+    Filtered combo: {r^2*delP-Rad^2*delP+4*u*L*mu}
+    Filtered combo implies q
+  Trying combination: {dp*r^2-dp*Rad^2-4*u*mu}
+    Filtered combo: {dp*r^2-dp*Rad^2-4*u*mu}
+    Filtered combo implies q
+  Trying combination: {c2*r^2-c2*Rad^2-u}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {c0+c2*Rad^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {4*c0*mu+dp*Rad^2}
+    Filtered combo: {4*c0*mu+dp*Rad^2}
+    Filtered combo does not imply q
+  Trying combination: {4*c0*L*mu-Rad^2*delP}
+    Filtered combo: {4*c0*L*mu-Rad^2*delP}
+    Filtered combo does not imply q
+  Trying combination: {c0*r^2-c0*Rad^2+Rad^2*u}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+Saved Polynomials:
+{L}
+{r-Rad}
+{r+Rad}
+{r}
+{4*c2*mu-dp}
+{r^2*delP-Rad^2*delP+4*u*L*mu}
+{dp*r^2-dp*Rad^2-4*u*mu}
+Strong Candidates:

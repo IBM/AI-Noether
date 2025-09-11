@@ -1,0 +1,95 @@
+Removed Axioms:
+m1*d1-m2*d2
+Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2
+Fc-Fg
+Remaining Axioms:
+Fc-w^2*m2*d2
+w*p-1
+Target Polynomial q:
+-m1*d1*d2^2+m1*m2*p^2-d1^2*m2*d2-2*d1*m2*d2^2
+
+Primary Decomposition:
+ideal(w*p-1,Fc*p-w*m2*d2,Fc*p^2-m2*d2,m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2,Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2)
+
+Ideal: ideal(w*p-1,Fc*p-w*m2*d2,Fc*p^2-m2*d2,m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2,Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2)
+  Found 5 generators in ideal
+  Testing 25 combinations
+  Trying combination: {w*p-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {Fc*p-w*m2*d2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {Fc*p^2-m2*d2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo implies q
+  Trying combination: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo does not imply q
+  Trying combination: {w*p-1, Fc*p-w*m2*d2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {w*p-1, Fc*p^2-m2*d2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {Fc*p-w*m2*d2, Fc*p^2-m2*d2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {w*p-1, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo implies q
+  Trying combination: {Fc*p-w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo implies q
+  Trying combination: {Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo implies q
+  Trying combination: {w*p-1, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo does not imply q
+  Trying combination: {Fc*p-w*m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo does not imply q
+  Trying combination: {Fc*p^2-m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo does not imply q
+  Trying combination: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo implies q
+  Trying combination: {w*p-1, Fc*p-w*m2*d2, Fc*p^2-m2*d2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {w*p-1, Fc*p-w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo implies q
+  Trying combination: {w*p-1, Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo implies q
+  Trying combination: {Fc*p-w*m2*d2, Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo implies q
+  Trying combination: {w*p-1, Fc*p-w*m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo does not imply q
+  Trying combination: {w*p-1, Fc*p^2-m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo does not imply q
+  Trying combination: {Fc*p-w*m2*d2, Fc*p^2-m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo does not imply q
+  Trying combination: {w*p-1, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo implies q
+  Trying combination: {Fc*p-w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo implies q
+  Trying combination: {Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo implies q
+Saved Polynomials:
+{m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+{m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+Strong Candidates:

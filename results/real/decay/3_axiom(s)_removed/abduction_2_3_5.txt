@@ -1,0 +1,45 @@
+Removed Axioms:
+Ep-mp
+Ev-pv
+-pmu^2+Emu^2-mmu^2
+Remaining Axioms:
+-pmu+pv
+-Ev-Emu+Ep
+Target Polynomial q:
+2*pv*mp-mp^2+mmu^2
+
+Primary Decomposition:
+ideal(Ev+Emu-Ep,pmu-pv,2*pv*mp-mp^2+mmu^2)
+
+Ideal: ideal(Ev+Emu-Ep,pmu-pv,2*pv*mp-mp^2+mmu^2)
+  Found 3 generators in ideal
+  Testing 7 combinations
+  Trying combination: {Ev+Emu-Ep}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {pmu-pv}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {2*pv*mp-mp^2+mmu^2}
+    Filtered combo: {2*pv*mp-mp^2+mmu^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {Ev+Emu-Ep, pmu-pv}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {Ev+Emu-Ep, 2*pv*mp-mp^2+mmu^2}
+    Filtered combo: {2*pv*mp-mp^2+mmu^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {pmu-pv, 2*pv*mp-mp^2+mmu^2}
+    Filtered combo: {2*pv*mp-mp^2+mmu^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {Ev+Emu-Ep, pmu-pv, 2*pv*mp-mp^2+mmu^2}
+    Filtered combo: {2*pv*mp-mp^2+mmu^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+Saved Polynomials:
+{2*pv*mp-mp^2+mmu^2}
+Strong Candidates:
+{2*pv*mp-mp^2+mmu^2}

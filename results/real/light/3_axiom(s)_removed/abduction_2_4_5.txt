@@ -1,0 +1,100 @@
+Removed Axioms:
+-(157/25)*sintheta*dtheta*r^2+dA
+-sintheta^3*dtheta+4/3
+ap^2-(1/2)*x0^2*w^4
+Remaining Axioms:
+S*r^2-ap^2*sintheta^2*qc^2
+-S*dA+P
+Target Polynomial q:
+75*P-314*qc^2*x0^2*w^4
+
+Primary Decomposition:
+ideal(P,S,qc^2)
+
+ideal(S*dA-P,S*r^2-ap^2*sintheta^2*qc^2,75*P-314*qc^2*x0^2*w^4,75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4)
+
+Ideal: ideal(P,S,qc^2)
+  Found 3 generators in ideal
+  Testing 7 combinations
+  Trying combination: {P}
+    Filtered combo: {P}
+    Filtered combo does not imply q
+  Trying combination: {S}
+    Filtered combo: {S}
+    Filtered combo does not imply q
+  Trying combination: {qc^2}
+    Filtered combo: {qc^2}
+    Filtered combo does not imply q
+  Trying combination: {P, S}
+    Filtered combo: {P, S}
+    Filtered combo does not imply q
+  Trying combination: {P, qc^2}
+    Filtered combo: {P, qc^2}
+    Filtered combo implies q
+  Trying combination: {S, qc^2}
+    Filtered combo: {S, qc^2}
+    Filtered combo implies q
+  Trying combination: {P, S, qc^2}
+    Filtered combo: {P, S, qc^2}
+    Filtered combo implies q
+Ideal: ideal(S*dA-P,S*r^2-ap^2*sintheta^2*qc^2,75*P-314*qc^2*x0^2*w^4,75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4)
+  Found 4 generators in ideal
+  Testing 14 combinations
+  Trying combination: {S*dA-P}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {S*r^2-ap^2*sintheta^2*qc^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {75*P-314*qc^2*x0^2*w^4}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo does not imply q
+  Trying combination: {S*dA-P, S*r^2-ap^2*sintheta^2*qc^2}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {S*dA-P, 75*P-314*qc^2*x0^2*w^4}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {S*r^2-ap^2*sintheta^2*qc^2, 75*P-314*qc^2*x0^2*w^4}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {S*dA-P, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo does not imply q
+  Trying combination: {S*r^2-ap^2*sintheta^2*qc^2, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo does not imply q
+  Trying combination: {75*P-314*qc^2*x0^2*w^4, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {S*dA-P, S*r^2-ap^2*sintheta^2*qc^2, 75*P-314*qc^2*x0^2*w^4}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {S*dA-P, S*r^2-ap^2*sintheta^2*qc^2, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo does not imply q
+  Trying combination: {S*dA-P, 75*P-314*qc^2*x0^2*w^4, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {S*r^2-ap^2*sintheta^2*qc^2, 75*P-314*qc^2*x0^2*w^4, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo: {75*P-314*qc^2*x0^2*w^4, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+Saved Polynomials:
+{qc^2, P}
+{qc^2, S}
+{qc^2, P, S}
+{75*P-314*qc^2*x0^2*w^4}
+{75*P-314*qc^2*x0^2*w^4, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+Strong Candidates:
+{75*P-314*qc^2*x0^2*w^4}
+{75*P-314*qc^2*x0^2*w^4, 75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}

@@ -1,0 +1,525 @@
+Removed Axioms:
+-mu*r+muH
+ph^2*e*H+2*ph*n*e*beta*H-ph*r+n^2*e*beta^2*H+n*beta^2*r
+Remaining Axioms:
+-muN+mup*beta
+ph-dp-p0
+n-dn
+dp-dn
+-ph*e*mup-muN*n*e+sigma
+Target Polynomial q:
+e*mup*dn*beta^2*r+e*mup*dn*beta*r+e*p0*sigma*H+e*dn*beta*sigma*H+e*dn*sigma*H-r*sigma
+
+Primary Decomposition:
+ideal(sigma,mup,n-dn,muN,dp-dn,ph-p0-dn)
+
+ideal(sigma,e,n-dn,dp-dn,ph-p0-dn,muN-mup*beta)
+
+ideal(n-dn,dp-dn,ph-p0-dn,muN-mup*beta,muN*e*dn+e*mup*p0+e*mup*dn-sigma,e*mup*p0+e*mup*dn*beta+e*mup*dn-sigma,muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H,muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H,mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H,e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma,muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H,muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H,e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r)
+
+Ideal: ideal(sigma,mup,n-dn,muN,dp-dn,ph-p0-dn)
+  Found 6 generators in ideal
+  Testing 21 combinations
+  Trying combination: {sigma}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {mup}
+    Filtered combo: {mup}
+    Filtered combo implies q
+  Trying combination: {n-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {muN}
+    Filtered combo: {muN}
+    Filtered combo does not imply q
+  Trying combination: {dp-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {sigma, mup}
+    Filtered combo: {sigma, mup}
+    Filtered combo implies q
+  Trying combination: {sigma, n-dn}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {mup, n-dn}
+    Filtered combo: {mup}
+    Filtered combo implies q
+  Trying combination: {sigma, muN}
+    Filtered combo: {sigma, muN}
+    Filtered combo implies q
+  Trying combination: {mup, muN}
+    Filtered combo: {mup, muN}
+    Filtered combo implies q
+  Trying combination: {n-dn, muN}
+    Filtered combo: {muN}
+    Filtered combo does not imply q
+  Trying combination: {sigma, dp-dn}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {mup, dp-dn}
+    Filtered combo: {mup}
+    Filtered combo implies q
+  Trying combination: {n-dn, dp-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {muN, dp-dn}
+    Filtered combo: {muN}
+    Filtered combo does not imply q
+  Trying combination: {sigma, ph-p0-dn}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {mup, ph-p0-dn}
+    Filtered combo: {mup}
+    Filtered combo implies q
+  Trying combination: {n-dn, ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {muN, ph-p0-dn}
+    Filtered combo: {muN}
+    Filtered combo does not imply q
+  Trying combination: {dp-dn, ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+Ideal: ideal(sigma,e,n-dn,dp-dn,ph-p0-dn,muN-mup*beta)
+  Found 6 generators in ideal
+  Testing 21 combinations
+  Trying combination: {sigma}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {e}
+    Filtered combo: {e}
+    Filtered combo implies q
+  Trying combination: {n-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dp-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {muN-mup*beta}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {sigma, e}
+    Filtered combo: {sigma, e}
+    Filtered combo implies q
+  Trying combination: {sigma, n-dn}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {e, n-dn}
+    Filtered combo: {e}
+    Filtered combo implies q
+  Trying combination: {sigma, dp-dn}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {e, dp-dn}
+    Filtered combo: {e}
+    Filtered combo implies q
+  Trying combination: {n-dn, dp-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {sigma, ph-p0-dn}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {e, ph-p0-dn}
+    Filtered combo: {e}
+    Filtered combo implies q
+  Trying combination: {n-dn, ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dp-dn, ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {sigma, muN-mup*beta}
+    Filtered combo: {sigma}
+    Filtered combo does not imply q
+  Trying combination: {e, muN-mup*beta}
+    Filtered combo: {e}
+    Filtered combo implies q
+  Trying combination: {n-dn, muN-mup*beta}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dp-dn, muN-mup*beta}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {ph-p0-dn, muN-mup*beta}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+Ideal: ideal(n-dn,dp-dn,ph-p0-dn,muN-mup*beta,muN*e*dn+e*mup*p0+e*mup*dn-sigma,e*mup*p0+e*mup*dn*beta+e*mup*dn-sigma,muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H,muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H,mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H,e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma,muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H,muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H,e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r)
+  Found 13 generators in ideal
+  Testing 91 combinations
+  Trying combination: {n-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dp-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {muN-mup*beta}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {e*mup*p0+e*mup*dn*beta+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+    Filtered combo: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo does not imply q
+  Trying combination: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo: {e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo: {muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo: {muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {n-dn, dp-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {n-dn, ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dp-dn, ph-p0-dn}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {n-dn, muN-mup*beta}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dp-dn, muN-mup*beta}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {ph-p0-dn, muN-mup*beta}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {n-dn, muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dp-dn, muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {ph-p0-dn, muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {muN-mup*beta, muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {n-dn, e*mup*p0+e*mup*dn*beta+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dp-dn, e*mup*p0+e*mup*dn*beta+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {ph-p0-dn, e*mup*p0+e*mup*dn*beta+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {muN-mup*beta, e*mup*p0+e*mup*dn*beta+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {muN*e*dn+e*mup*p0+e*mup*dn-sigma, e*mup*p0+e*mup*dn*beta+e*mup*dn-sigma}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {n-dn, muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+    Filtered combo: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dp-dn, muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+    Filtered combo: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {ph-p0-dn, muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+    Filtered combo: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN-mup*beta, muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+    Filtered combo: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN*e*dn+e*mup*p0+e*mup*dn-sigma, muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+    Filtered combo: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {e*mup*p0+e*mup*dn*beta+e*mup*dn-sigma, muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+    Filtered combo: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {n-dn, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo does not imply q
+  Trying combination: {dp-dn, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo does not imply q
+  Trying combination: {ph-p0-dn, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo does not imply q
+  Trying combination: {muN-mup*beta, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo does not imply q
+  Trying combination: {muN*e*dn+e*mup*p0+e*mup*dn-sigma, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo does not imply q
+  Trying combination: {e*mup*p0+e*mup*dn*beta+e*mup*dn-sigma, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo does not imply q
+  Trying combination: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {n-dn, mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dp-dn, mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {ph-p0-dn, mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN-mup*beta, mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN*e*dn+e*mup*p0+e*mup*dn-sigma, mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {e*mup*p0+e*mup*dn*beta+e*mup*dn-sigma, mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H, mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H, mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {n-dn, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo: {e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dp-dn, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo: {e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {ph-p0-dn, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo: {e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN-mup*beta, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo: {e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN*e*dn+e*mup*p0+e*mup*dn-sigma, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo: {e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {e*mup*p0+e*mup*dn*beta+e*mup*dn-sigma, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo: {e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {n-dn, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo: {muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {dp-dn, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo: {muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {ph-p0-dn, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo: {muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {muN-mup*beta, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo: {muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {muN*e*dn+e*mup*p0+e*mup*dn-sigma, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo: {muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {e*mup*p0+e*mup*dn*beta+e*mup*dn-sigma, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo: {muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo: {e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {n-dn, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo: {muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {dp-dn, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo: {muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {ph-p0-dn, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo: {muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {muN-mup*beta, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo: {muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {muN*e*dn+e*mup*p0+e*mup*dn-sigma, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo: {muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {e*mup*p0+e*mup*dn*beta+e*mup*dn-sigma, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo: {muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo: {e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo: {muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+    Filtered combo does not imply q
+  Trying combination: {n-dn, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dp-dn, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {ph-p0-dn, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN-mup*beta, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN*e*dn+e*mup*p0+e*mup*dn-sigma, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {e*mup*p0+e*mup*dn*beta+e*mup*dn-sigma, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo: {muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo: {mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo: {e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo: {muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo: {muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+Saved Polynomials:
+{mup}
+{sigma, mup}
+{sigma, muN}
+{mup, muN}
+{e}
+{sigma, e}
+{muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+{mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+{e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+{e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+{muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+{mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+{mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+{e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma, muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+{e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+{mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+{muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+{mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+{e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+{muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+{mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+{e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+{e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+{e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+{mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+{e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+{e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+{e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+Strong Candidates:
+{muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+{mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H}
+{e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+{e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+{muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+{mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+{mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+{e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma, muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+{e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+{mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+{muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+{mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+{e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+{muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+{mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+{e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}
+{e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+{e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, muN^2*dn*r+muN*dn*sigma*H-mup^2*p0*r-mup^2*dn*r+mup*p0*sigma*H+mup*dn*sigma*H}
+{mup*p0*r-mup*dn*beta^2*r+mup*dn*r-p0*sigma*H-dn*beta*sigma*H-dn*sigma*H, e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+{e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, e*mup*p0*beta*r-e*p0*sigma*H-e*dn*beta*sigma*H-e*dn*sigma*H-beta*r*sigma+r*sigma}
+{e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, muN*e*mup*p0*r-mup*beta*r*sigma+mup*r*sigma-sigma^2*H}
+{e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, muN^2*e*p0*r-mup*beta^2*r*sigma+mup*beta*r*sigma-beta*sigma^2*H}

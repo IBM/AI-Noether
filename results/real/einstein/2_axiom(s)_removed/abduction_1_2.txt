@@ -1,0 +1,165 @@
+Removed Axioms:
+-2*d+dt0*c
+-4*d^2-dt^2*v^2+4*L^2
+Remaining Axioms:
+dt0*F0-1
+dt*F-1
+dt*c-2*L
+Target Polynomial q:
+c^2*F0^2-c^2*F^2-F0^2*v^2
+
+Primary Decomposition:
+ideal(2*L*F-c,dt0*F0-1,dt*F-1,dt*c-2*L,c^2*F0^2-c^2*F^2-F0^2*v^2,dt*F0*v^2+dt0*c^2*F-2*L*c*F0,dt^2*v^2+dt0^2*c^2-4*L^2,dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2)
+
+Ideal: ideal(2*L*F-c,dt0*F0-1,dt*F-1,dt*c-2*L,c^2*F0^2-c^2*F^2-F0^2*v^2,dt*F0*v^2+dt0*c^2*F-2*L*c*F0,dt^2*v^2+dt0^2*c^2-4*L^2,dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2)
+  Found 8 generators in ideal
+  Testing 36 combinations
+  Trying combination: {2*L*F-c}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dt0*F0-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dt*F-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dt*c-2*L}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+    Filtered combo: {dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt^2*v^2+dt0^2*c^2-4*L^2}
+    Filtered combo: {dt^2*v^2+dt0^2*c^2-4*L^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo: {dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo does not imply q
+  Trying combination: {2*L*F-c, dt0*F0-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {2*L*F-c, dt*F-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dt0*F0-1, dt*F-1}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {2*L*F-c, dt*c-2*L}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dt0*F0-1, dt*c-2*L}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {dt*F-1, dt*c-2*L}
+    Filtered combo: {}
+    Skipping: All combo elements already implied
+  Trying combination: {2*L*F-c, c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt0*F0-1, c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt*F-1, c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {2*L*F-c, dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+    Filtered combo: {dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt0*F0-1, dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+    Filtered combo: {dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt*F-1, dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+    Filtered combo: {dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt*c-2*L, dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+    Filtered combo: {dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+    Filtered combo: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {2*L*F-c, dt^2*v^2+dt0^2*c^2-4*L^2}
+    Filtered combo: {dt^2*v^2+dt0^2*c^2-4*L^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt0*F0-1, dt^2*v^2+dt0^2*c^2-4*L^2}
+    Filtered combo: {dt^2*v^2+dt0^2*c^2-4*L^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt*F-1, dt^2*v^2+dt0^2*c^2-4*L^2}
+    Filtered combo: {dt^2*v^2+dt0^2*c^2-4*L^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt*c-2*L, dt^2*v^2+dt0^2*c^2-4*L^2}
+    Filtered combo: {dt^2*v^2+dt0^2*c^2-4*L^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*v^2+dt0^2*c^2-4*L^2}
+    Filtered combo: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*v^2+dt0^2*c^2-4*L^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt*F0*v^2+dt0*c^2*F-2*L*c*F0, dt^2*v^2+dt0^2*c^2-4*L^2}
+    Filtered combo: {dt*F0*v^2+dt0*c^2*F-2*L*c*F0, dt^2*v^2+dt0^2*c^2-4*L^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {2*L*F-c, dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo: {dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo does not imply q
+  Trying combination: {dt0*F0-1, dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo: {dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo does not imply q
+  Trying combination: {dt*F-1, dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo: {dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo does not imply q
+  Trying combination: {dt*c-2*L, dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo: {dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo does not imply q
+  Trying combination: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt*F0*v^2+dt0*c^2*F-2*L*c*F0, dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo: {dt*F0*v^2+dt0*c^2*F-2*L*c*F0, dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+  Trying combination: {dt^2*v^2+dt0^2*c^2-4*L^2, dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo: {dt^2*v^2+dt0^2*c^2-4*L^2, dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+    Filtered combo implies q
+    Filtered combo is a strong candidate
+Saved Polynomials:
+{c^2*F0^2-c^2*F^2-F0^2*v^2}
+{dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+{dt^2*v^2+dt0^2*c^2-4*L^2}
+{c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+{c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*v^2+dt0^2*c^2-4*L^2}
+{dt*F0*v^2+dt0*c^2*F-2*L*c*F0, dt^2*v^2+dt0^2*c^2-4*L^2}
+{c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+{dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2, dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+{dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2, dt^2*v^2+dt0^2*c^2-4*L^2}
+Strong Candidates:
+{c^2*F0^2-c^2*F^2-F0^2*v^2}
+{dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+{dt^2*v^2+dt0^2*c^2-4*L^2}
+{c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+{c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*v^2+dt0^2*c^2-4*L^2}
+{dt*F0*v^2+dt0*c^2*F-2*L*c*F0, dt^2*v^2+dt0^2*c^2-4*L^2}
+{c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2}
+{dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2, dt*F0*v^2+dt0*c^2*F-2*L*c*F0}
+{dt0*c^4-4*L^2*c^2*F0+4*L^2*F0*v^2, dt^2*v^2+dt0^2*c^2-4*L^2}
