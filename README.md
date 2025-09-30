@@ -1,6 +1,6 @@
 # AI-Noether
 
-**AI-Noether** is a Python/Macaulay2 pipeline for **abductive inference of axioms** in algebraic physics systems.  
+**AI-Noether** is a Python/Macaulay2 pipeline for **abductive inference of axioms** in algebraic physics systems from our paper: [AI Noether (arXiv:2509.23004)](https://arxiv.org/abs/2509.23004)
 Given a system of polynomial axioms and a *target polynomial* (a "consequence"), the framework automatically analyzes which combinations of axioms explain the target, projects ideals onto measured variables, and checks dimensional consistency.
 
 This project is inspired by the spirit of Emmy Noether’s algebraic approach to invariants and conservation laws, bringing those ideas into computational abductive reasoning.
