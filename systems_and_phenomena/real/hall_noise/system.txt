@@ -1,0 +1,16 @@
+Variables: ["Fm", "d", "v", "Fe", "E", "dt", "Q", "N", "V", "i", "n", "qe", "B", "h", "L", "UH"]
+Equations:
+Fm - qe*v*B
+Fe - qe*E
+Fm - Fe
+E*h - UH
+v*dt - L
+i*dt - Q
+Q - N*qe
+n*V - N
+V - L*h*d
+
+Measured Variables: ["UH", "h", "L", "i", "B", "N", "qe"]
+
+Target Polynomial:
+(121/100)*N*qe*UH - (98/100)*I*B*h*L

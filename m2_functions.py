@@ -1,78 +1,142 @@
 import subprocess
 import os
 
-def abductive_inference(variables, measured_variables, non_measured_variables, remaining_axioms, q, filename, removed_axioms):
-    # Macaulay2 executable path
+def abductive_inference(variables, measured_variables, non_measured_variables,
+                        remaining_axioms, q, filename, removed_axioms):
+    return abductive_inference_multi(
+        variables, measured_variables, non_measured_variables,
+        remaining_axioms, [q], filename, removed_axioms,
+        require_in_gb_literal=True
+    )
+
+def abductive_inference_multi(variables, measured_variables, non_measured_variables,
+                              remaining_axioms, targets, filename, removed_axioms,
+                              require_in_gb_literal=True,
+                              measured_per_target=None, non_measured_per_target=None):
+    """
+    Multi-target version:
+      - targets: List[str] of target polynomials (all must be implied)
+      - require_in_gb_literal: if True, also require each target to appear literally among the
+        generators of the eliminated ideal's Groebner basis. If False, require remainder-zero
+        (membership) instead.
+      - measured_per_target / non_measured_per_target: optional per-target variable partitions
+        (lists of lists), same length as `targets`. If omitted, the global measured/non-measured
+        sets are reused for each target.
+    """
+    import subprocess, os
+
     macaulay2_path = "/opt/homebrew/bin/M2"
 
-    # Construct the Macaulay2 script
+    # ---------- helpers to format M2 input ----------
+    def m2_list(py_list):
+        return ','.join(py_list) if py_list else ''
+
+    def m2_listlist(list_of_lists):
+        # Return a *fully-braced* M2 list of lists, e.g. {{a,b},{c}}
+        if not list_of_lists:
+            return '{}'  # empty list
+        inner = []
+        for sub in list_of_lists:
+            inner.append('{' + m2_list(sub) + '}')
+        return '{' + ','.join(inner) + '}'
+
+    # ---------- per-target variable sets ----------
+    if measured_per_target is None:
+        measured_per_target = [measured_variables for _ in targets]
+    if non_measured_per_target is None:
+        non_measured_per_target = [non_measured_variables for _ in targets]
+
+    measuredPT_m2 = m2_listlist(measured_per_target)        # e.g. {{c,F0},{c,F}}
+    nonMeasuredPT_m2 = m2_listlist(non_measured_per_target) # e.g. {{d,dt,...},{...}}
+
+    # ---------- Macaulay2 program ----------
     macaulay2_script = f"""
     needsPackage("PrimaryDecomposition", Reload => true)
 
-    -- Define the ring
-    R = QQ[{','.join(variables)}, MonomialOrder => Lex];
-    print ("Ring defined: " | toString R);
+    -- Ring
+    R = QQ[{m2_list(variables)}, MonomialOrder => Lex];
+    print("Ring defined: " | toString R);
 
-    -- Target polynomial
-    q = {q};
-    print ("Target polynomial defined: " | toString q);
+    -- Sets
+    remainingAxioms       = toList([{m2_list(remaining_axioms)}]);
+    removedAxioms         = toList([{m2_list(removed_axioms)}]);
+    measuredVariables     = toList([{m2_list(measured_variables)}]);
+    nonMeasuredVariables  = toList([{m2_list(non_measured_variables)}]);
 
-    -- Remaining axioms (renamed)
-    remainingAxioms = toList([{','.join(remaining_axioms)}]);
-    print ("Remaining axioms defined: " | toString remainingAxioms);
+    -- Targets (multiple)
+    qList = toList([{m2_list(targets)}]);
+    print("Targets defined: " | toString qList);
 
-    -- Removed axioms
-    removedAxioms = toList([{','.join(removed_axioms)}]);
-    print ("Removed axioms defined: " | toString removedAxioms);
+    -- Per-target measured/non-measured lists (same length as qList)
+    measuredPerTarget    = {measuredPT_m2};
+    nonMeasuredPerTarget = {nonMeasuredPT_m2};
+    k = #qList;
 
-    -- Measured and non-measured vars
-    measuredVariables = toList([{','.join(measured_variables)}]);
-    nonMeasuredVariables = toList([{','.join(non_measured_variables)}]);
+    -- Empty combo (the baseline: add nothing from component generators)
+    empty = {{}};
 
-    -- Ideal from remaining axioms and q
-    I = ideal(append(remainingAxioms, q));
-    print ("Ideal defined: " | toString I);
+    -- Ideal with ALL remaining axioms + ALL targets (for PD context)
+    I = ideal(join(remainingAxioms, qList));
+    print("Ideal defined: " | toString I);
 
     PD = primaryDecomposition I;
-    print ("Primary decomposition computed");
+    print("Primary decomposition computed");
 
-    -- Checks
+    -- Helpers
     isInIdeal = (poly, base) -> (
         M = ideal(base);
         G = gens gb M;
-        return poly % ideal(G) == 0;
+        poly % ideal(G) == 0
     );
 
-    isInGB = (q, combo) -> (
+    allInIdeal = (polys, base) -> all(polys, p -> isInIdeal(p, base));
+
+    -- Per-target eliminated checks
+    appearsInGBExactlyIdx = (i, combo) -> (
         M = ideal(join(remainingAxioms, combo));
-        eliminatedIdeal = eliminate(nonMeasuredVariables, M);
+        eliminatedIdeal = eliminate(nonMeasuredPerTarget#i, M);
         GBproj = gens gb eliminatedIdeal;
-        result = toList apply(flatten entries GBproj, g -> g == q);
-        return member(true, result);
+        member(true, toList apply(flatten entries GBproj, g -> g == (qList#i)))
     );
 
-    f = openOut "decomposition_analysis.txt"
+    inEliminatedIdealIdx = (i, combo) -> (
+        M = ideal(join(remainingAxioms, combo));
+        eliminatedIdeal = eliminate(nonMeasuredPerTarget#i, M);
+        GBproj = gens gb eliminatedIdeal;
+        (qList#i) % ideal(GBproj) == 0
+    );
+
+    allAppearInGBExactlyPT = (combo) ->
+        all(toList(0..(k-1)), i -> appearsInGBExactlyIdx(i, combo));
+
+    allInEliminatedIdealPT = (combo) ->
+        all(toList(0..(k-1)), i -> inEliminatedIdealIdx(i, combo));
+
+    -- Output file
+    f = openOut "decomposition_analysis.txt";
     f << "Removed Axioms:" << endl;
     scan(removedAxioms, a -> f << toString a << endl);
     f << "Remaining Axioms:" << endl;
     scan(remainingAxioms, a -> f << toString a << endl);
-    f << "Target Polynomial q:" << endl;
-    f << toString q << endl << endl;
-    f << "Primary Decomposition:" << endl;
-    scan(PD, J -> f << toString J << endl << endl);
+    f << "Targets qList:" << endl;
+    scan(qList, q -> f << toString q << endl);
+    f << endl;
 
     savedCombos = {{}};
     strongCandidates = {{}};
     n = #removedAxioms;
+    maxSize = n + k;
 
     scan(PD, J -> (
-        f << "Ideal: " << toString J << endl;
+        f << "Ideal component: " << toString J << endl;
         idealGens = flatten entries gens J;
         idealGensList = toList idealGens;
-        f << "  Found " << toString(#idealGensList) << " generators in ideal" << endl;
+        f << "  Found " << toString(#idealGensList) << " generators" << endl;
 
-        combos = flatten for i from 1 to n list subsets(idealGensList, i);
+        limit = if maxSize < #idealGensList then maxSize else #idealGensList;
+        combos = flatten for i from 0 to limit list subsets(idealGensList, i);
         f << "  Testing " << toString(#combos) << " combinations" << endl;
+
         scan(combos, combo -> (
             f << "  Trying combination: " << toString combo << endl;
 
@@ -81,204 +145,212 @@ def abductive_inference(variables, measured_variables, non_measured_variables, r
             f << "    Filtered combo: " << toString filteredCombo << endl;
 
             if #filteredCombo == 0 then (
-                f << "    Skipping: All combo elements already implied" << endl;
-            ) else if isInIdeal(q, join(remainingAxioms, filteredCombo)) then (
-                f << "    Filtered combo implies q" << endl;
-                if not member(filteredCombo, savedCombos) then (
-                    filteredCombo = sort filteredCombo;
-                    savedCombos = append(savedCombos, filteredCombo);
-                );
-                if isInGB(q, filteredCombo) then (
-                    f << "    Filtered combo is a strong candidate" << endl;
-                    if not member(filteredCombo, strongCandidates) then (
-                        strongCandidates = append(strongCandidates, filteredCombo);
+                if #combo == 0 then (
+                    -- Baseline: remaining axioms alone (no extra generators)
+                    if allInEliminatedIdealPT(empty) then (
+                        f << "    Base: remaining axioms alone imply ALL targets (per-target projections)" << endl;
+
+                        if not member(empty, savedCombos) then savedCombos = append(savedCombos, empty);
+
+                        if {"true" if require_in_gb_literal else "false"} then (
+                            if allAppearInGBExactlyPT(empty) then (
+                                f << "    Base also STRONG (literal appearance in each target's eliminated GB)" << endl;
+                                if not member(empty, strongCandidates) then strongCandidates = append(strongCandidates, empty);
+                            ) else (
+                                f << "    Base not strong under literal-appearance check" << endl;
+                            )
+                        ) else (
+                            -- remainder-zero already required to be saved; treat as strong too
+                            f << "    Base also STRONG (remainder-zero criterion)" << endl;
+                            if not member(empty, strongCandidates) then strongCandidates = append(strongCandidates, empty);
+                        );
+                    ) else (
+                        f << "    Base: remaining axioms alone do NOT imply all targets" << endl;
                     );
+                ) else (
+                    f << "    Skipping: all combo elements already implied" << endl;
                 );
             ) else (
-                f << "    Filtered combo does not imply q" << endl;
+                if allInEliminatedIdealPT(filteredCombo) then (
+                    f << "    filteredCombo implies ALL targets (per-target projections)" << endl;
+
+                    if not member(filteredCombo, savedCombos) then (
+                        filteredCombo = sort filteredCombo;
+                        savedCombos = append(savedCombos, filteredCombo);
+                    );
+
+                    if {"true" if require_in_gb_literal else "false"} then (
+                        if allAppearInGBExactlyPT(filteredCombo) then (
+                            f << "    Also STRONG: ALL targets appear literally in each target's eliminated GB" << endl;
+                            if not member(filteredCombo, strongCandidates) then (
+                                strongCandidates = append(strongCandidates, filteredCombo);
+                            );
+                        ) else (
+                            f << "    Not STRONG under literal-appearance check" << endl;
+                        )
+                    ) else (
+                        -- remainder-zero already required via allInEliminatedIdealPT => mark strong
+                        f << "    Also STRONG by remainder-zero criterion" << endl;
+                        if not member(filteredCombo, strongCandidates) then (
+                            strongCandidates = append(strongCandidates, filteredCombo);
+                        );
+                    );
+                ) else (
+                    f << "    filteredCombo does NOT imply all targets" << endl;
+                );
             );
         ));
-
     ));
 
-    f << "Saved Polynomials:" << endl;
+    f << "Saved Polynomials (combos implying ALL targets):" << endl;
     scan(savedCombos, g -> f << toString g << endl);
+
     f << "Strong Candidates:" << endl;
     scan(strongCandidates, g -> f << toString g << endl);
+
     close f;
     """
 
-
-    # Write the Macaulay2 script to a temporary file
+    # ---------- write, run, collect ----------
     script_path = "temp_script.m2"
-    with open(script_path, "w") as file:
-        file.write(macaulay2_script)
+    with open(script_path, "w") as fh:
+        fh.write(macaulay2_script)
 
-    # Call Macaulay2 with the script
-    result = subprocess.run([macaulay2_path, "--script", script_path], capture_output=False, text=True)
-
-    # Remove the temporary script file
-    os.remove(script_path)
-
-    # Print the output from Macaulay2
-    print("Output from Macaulay2:")
-    print(result.stdout)
-
-    # Print any errors
-    if result.stderr:
-        print("Errors:")
-        print(result.stderr)
-
-    # Read and return the contents of the saved file
+    result = subprocess.run([macaulay2_path, "--script", script_path], capture_output=True, text=True)
     try:
-        with open("decomposition_analysis.txt", "r") as file:
-            os.rename("decomposition_analysis.txt", filename)
-            return file.read()
-    except FileNotFoundError:
-        return "Error: The file 'decomposition_analysis.txt' was not found."
-    except IOError as e:
-        return f"Error reading the file: {e}"
+        os.remove(script_path)
+    except Exception:
+        pass
 
-def projection(variables, axioms, measured_variables, non_measured_variables, filename):
-    # Macaulay2 executable path
+    if result.stdout:
+        print("M2 STDOUT:\n", result.stdout)
+    if result.stderr:
+        print("M2 STDERR:\n", result.stderr)
+
+    try:
+        with open("decomposition_analysis.txt", "r") as f:
+            os.makedirs(os.path.dirname(filename), exist_ok=True)
+            os.replace("decomposition_analysis.txt", filename)
+            return f.read()
+    except FileNotFoundError:
+        return "Error: 'decomposition_analysis.txt' not found."
+
+def projection(variables, axioms, measured_variables, non_measured_variables, filename, targets=None):
+    """
+    Unchanged output + if `targets` is provided (List[str]), we also:
+      - check each target's remainder zero modulo eliminated GB,
+      - and whether it appears literally in the eliminated GB generators.
+    """
     macaulay2_path = "/opt/homebrew/bin/M2"
 
-    # Construct the Macaulay2 script
+    def m2_list(py_list):
+        return ','.join(py_list) if py_list else ''
+
+    targets_list = m2_list(targets or [])
+
     macaulay2_script = f"""
-    -- Define the ring and ideal
-    R = QQ[{','.join(variables)}, MonomialOrder => Lex];
-    print("Ring defined: " | toString R);
+    R = QQ[{m2_list(variables)}, MonomialOrder => Lex];
+    axioms = toList([{m2_list(axioms)}]);
+    measuredVariables = toList([{m2_list(measured_variables)}]);
+    nonMeasuredVariables = toList([{m2_list(non_measured_variables)}]);
 
-    -- Defining the axioms
-    axioms = toList([{','.join(axioms)}]);
-    print("Axioms defined: " | toString axioms);
-
-    -- Defining the measured variables
-    measuredVariables = toList([{','.join(measured_variables)}]);
-    print("Measured variables defined: " | toString measuredVariables);
-
-    -- Defining the non-measured variables
-    nonMeasuredVariables = toList([{','.join(non_measured_variables)}]);
-    print("Non-measured variables defined: " | toString nonMeasuredVariables);
-
-    -- Define the ideal
     I = ideal(axioms);
-    print("Ideal defined: " | toString I);
-
-    -- Compute the Gröbner basis of the ideal
     GB = gens gb I;
-    print("Gröbner basis: " | toString GB);
 
-    -- Define the Ring of Measured Variables
-    Rproj = QQ[measuredVariables, MonomialOrder => Lex];
-    print("Ring of Measured Variables defined: " | toString Rproj);
-
-    -- Define the projection map
     eliminatedIdeal = eliminate(nonMeasuredVariables, I);
-    print("Eliminated Ideal: " | toString eliminatedIdeal);
-
-    -- Compute the Gröbner basis of the eliminated ideal
     GBproj = gens gb eliminatedIdeal;
-    print("Gröbner basis of the eliminated ideal: " | toString GBproj);
 
-    -- Write the results to a file
     f = openOut "projection_analysis.txt";
     f << "Gröbner basis of the ideal:" << endl;
     f << toString GB << endl << endl;
     f << "Gröbner basis of the eliminated ideal:" << endl;
-    f << toString GBproj << endl;
+    f << toString GBproj << endl << endl;
+
+    f << "Polynomials of the eliminated GB (flattened):" << endl;
+    scan(flatten entries GBproj, g -> f << toString g << endl);
     f << endl;
 
-    -- Save the polynomials of the Gröbner basis of the eliminated ideal
-    f << "Polynomials of the Gröbner basis of the eliminated ideal:" << endl;
-    scan(flatten entries GBproj, g -> f << toString g << endl);
+    -- Optional multi-target checks
+    if ({'true' if targets else 'false'}) then (
+        qList = toList([{targets_list}]);
+        f << "Target checks in eliminated ideal (membership & literal appearance):" << endl;
+        scan(qList, q -> (
+            remZero = (q % ideal(GBproj) == 0);
+            appears = member(true, toList apply(flatten entries GBproj, g -> g == q));
+            f << "q = " << toString q << endl;
+            f << "  remainderZero: " << toString remZero << endl;
+            f << "  appearsLiterallyInGB: " << toString appears << endl;
+        ));
+    );
 
     close f;
-
     """
 
-    # Write the Macaulay2 script to a temporary file
     script_path = "temp_script.m2"
     with open(script_path, "w") as file:
         file.write(macaulay2_script)
 
-    # Call Macaulay2 with the script
     result = subprocess.run([macaulay2_path, "--script", script_path], capture_output=True, text=True)
+    try:
+        os.remove(script_path)
+    except Exception:
+        pass
 
-    # Remove the temporary script file
-    os.remove(script_path)
-
-    # Print the output from Macaulay2
-    print("Output from Macaulay2:")
-    print(result.stdout)
-
-    # Print any errors
+    if result.stdout:
+        print("Output from Macaulay2:")
+        print(result.stdout)
     if result.stderr:
         print("Errors:")
         print(result.stderr)
 
-    # Read and return the contents of the saved file
     try:
         with open("projection_analysis.txt", "r") as file:
-            os.rename("projection_analysis.txt", filename)
+            os.makedirs(os.path.dirname(filename), exist_ok=True)
+            os.replace("projection_analysis.txt", filename)
             return file.read()
     except FileNotFoundError:
         return "Error: The file 'projection_analysis.txt' was not found."
-    except IOError as e:
-        return f"Error reading the file: {e}"
 
-import subprocess
-import os
-
-def check_axiom_dimensions(variables, all_axioms, target, removed_axioms, filename="axiom_dimensions.txt"):
+def check_axiom_dimensions_multi(variables, all_axioms, targets, removed_axioms, filename="axiom_dimensions.txt"):
     """
-    Compares dimensions of ideal generated by all_axioms vs all_axioms - removed_axioms,
-    and also with the remaining axioms + target (discovered dimension).
-    
-    Args:
-        variables: List of variable names
-        all_axioms: List of all axiom strings
-        target: Axiom string to test after removal (i.e., the discovered axiom)
-        removed_axioms: List of axioms to remove (subset of all_axioms)
-        filename: Output file for storing dimension results
+    Compare:
+      - dim(ideal(all_axioms))
+      - dim(ideal(all_axioms \ removed_axioms))
+      - dim(ideal(remaining_axioms + ALL targets))  # NEW
     """
-    macaulay2_path = "/opt/homebrew/bin/M2" 
+    macaulay2_path = "/opt/homebrew/bin/M2"
 
-    def format_axiom(axiom):
-        return axiom.replace('^', '^')
+    def fmt_list(xs):
+        return ','.join(xs) if xs else ''
 
-    formatted_all_axioms = [format_axiom(ax) for ax in all_axioms]
-    formatted_removed_axioms = [format_axiom(ax) for ax in removed_axioms]
-    formatted_target = format_axiom(target)
-
-    # Build the Macaulay2 script
     macaulay2_script = f"""
     needsPackage("PrimaryDecomposition");
 
-    R = QQ[{','.join(variables)}, MonomialOrder => Lex];
+    R = QQ[{fmt_list(variables)}, MonomialOrder => Lex];
 
-    allAxioms = {{{','.join(formatted_all_axioms)}}};
+    allAxioms = {{{fmt_list(all_axioms)}}};
+    targetList = {{{fmt_list(targets)}}};
 
     I = ideal(allAxioms);
     originalDim = dim I;
 
     remainingAxioms = allAxioms;
-    {''.join([f'remainingAxioms = delete({ax}, remainingAxioms);' for ax in formatted_removed_axioms])}
+    {''.join([f'remainingAxioms = delete({ax}, remainingAxioms);' + chr(10) for ax in removed_axioms])}
 
     Ireduced = ideal(remainingAxioms);
     reducedDim = dim Ireduced;
 
-    remainingWithTarget = append(remainingAxioms, {formatted_target});
-    Idiscovered = ideal(remainingWithTarget);
+    remainingWithTargets = apply(targetList, t -> t) | remainingAxioms;
+    Idiscovered = ideal(remainingWithTargets);
     discoveredDim = dim Idiscovered;
 
     f = openOut "temp.txt";
     f << "Original dimension: " << originalDim << endl;
     f << "Reduced dimension: " << reducedDim << endl;
     f << "Discovered dimension: " << discoveredDim << endl;
-    f << "Removed axioms: " << toString({{{', '.join(formatted_removed_axioms)}}}) << endl;
+    f << "Removed axioms: " << toString({{{fmt_list(removed_axioms)}}}) << endl;
     f << "Remaining axioms: " << toString(remainingAxioms) << endl;
-    f << "Target axiom: " << {formatted_target} << endl;
+    f << "Targets: " << toString(targetList) << endl;
     close f;
     """
 
@@ -286,8 +358,11 @@ def check_axiom_dimensions(variables, all_axioms, target, removed_axioms, filena
     with open(script_path, "w") as file:
         file.write(macaulay2_script)
 
-    result = subprocess.run([macaulay2_path, "--script", script_path], capture_output=False, text=True)
-    os.remove(script_path)
+    result = subprocess.run([macaulay2_path, "--script", script_path], capture_output=True, text=True)
+    try:
+        os.remove(script_path)
+    except Exception:
+        pass
 
     try:
         with open("temp.txt", "r") as f:
@@ -296,20 +371,24 @@ def check_axiom_dimensions(variables, all_axioms, target, removed_axioms, filena
         original_dim = reduced_dim = discovered_dim = None
         removed_axioms_list = []
         remaining_axioms_list = []
+        targets_list = []
 
         for line in temp_content.split('\n'):
             if line.startswith("Original dimension:"):
-                original_dim = int(line.split(':')[1].strip())
+                original_dim = int(line.split(':', 1)[1].strip())
             elif line.startswith("Reduced dimension:"):
-                reduced_dim = int(line.split(':')[1].strip())
+                reduced_dim = int(line.split(':', 1)[1].strip())
             elif line.startswith("Discovered dimension:"):
-                discovered_dim = int(line.split(':')[1].strip())
+                discovered_dim = int(line.split(':', 1)[1].strip())
             elif line.startswith("Removed axioms:"):
-                removed_axioms_str = line.split(':', 1)[1].strip()
-                removed_axioms_list = [a.strip().strip('"') for a in removed_axioms_str[1:-1].split(',')]
+                s = line.split(':', 1)[1].strip()
+                removed_axioms_list = [a.strip().strip('"') for a in s[1:-1].split(',')] if s.startswith('{') else []
             elif line.startswith("Remaining axioms:"):
-                remaining_axioms_str = line.split(':', 1)[1].strip()
-                remaining_axioms_list = [a.strip().strip('"') for a in remaining_axioms_str[1:-1].split(',')]
+                s = line.split(':', 1)[1].strip()
+                remaining_axioms_list = [a.strip().strip('"') for a in s[1:-1].split(',')] if s.startswith('{') else []
+            elif line.startswith("Targets:"):
+                s = line.split(':', 1)[1].strip()
+                targets_list = [a.strip().strip('"') for a in s[1:-1].split(',')] if s.startswith('{') else []
 
         dimensions_equal = (original_dim == discovered_dim)
 
@@ -319,9 +398,9 @@ def check_axiom_dimensions(variables, all_axioms, target, removed_axioms, filena
             f.write(f"Removed axioms: {removed_axioms_list}\n")
             f.write(f"Remaining axioms: {remaining_axioms_list}\n")
             f.write(f"Reduced dimension: {reduced_dim}\n")
-            f.write(f"Target axiom: {target}\n")
+            f.write(f"Targets: {targets_list}\n")
             f.write(f"Discovered dimension: {discovered_dim}\n")
-            f.write(f"Original == Discovered: {original_dim == discovered_dim}\n")
+            f.write(f"Original == Discovered: {dimensions_equal}\n")
 
         os.remove("temp.txt")
 
@@ -331,6 +410,7 @@ def check_axiom_dimensions(variables, all_axioms, target, removed_axioms, filena
             "discovered_dimension": discovered_dim,
             "removed_axioms": removed_axioms_list,
             "remaining_axioms": remaining_axioms_list,
+            "targets": targets_list,
             "dimensions_equal": dimensions_equal
         }
 
@@ -340,4 +420,114 @@ def check_axiom_dimensions(variables, all_axioms, target, removed_axioms, filena
     except Exception as e:
         print(f"Error processing results: {e}")
         return None
+
+def witness_set_nag(variables, remaining_axioms, targets, filename,
+                    macaulay2_path="/opt/homebrew/bin/M2",
+                    samples_per_component: int = 100):
+    def m2_list(py_list):
+        return ','.join(py_list) if py_list else ''
+
+    macaulay2_script = f'''
+    needsPackage("NumericalAlgebraicGeometry", Reload => true)
+
+    -- Work over CC for numerical algebraic geometry
+    R = CC[{m2_list(variables)}, MonomialOrder => Lex];
+
+    remainingAxioms = toList([{m2_list(remaining_axioms)}]);
+    qList           = toList([{m2_list(targets)}]);
+
+    I = ideal(join(remainingAxioms, qList));
+
+    -- Numerical irreducible decomposition
+    W  = numericalIrreducibleDecomposition I;
+    Ws = components W;
+
+    -- Variables in ring order
+    varList = flatten entries vars R;
+
+    -- Target #points per component (witness + sampled)
+    targetCount = {int(samples_per_component)};
+
+    f = openOut "witness_set.txt";
+    f << "variable ordering: ";
+    for i from 0 to #varList - 1 do (
+        f << toString(varList#i);
+        if i < #varList - 1 then f << ", ";
+    );
+    f << endl << endl;
+
+    for i from 0 to #Ws - 1 do (
+        Wi = Ws#i;
+        f << "component_" << toString(i+1) << ":" << endl;
+
+        -- Equations
+        f << "equations:" << endl;
+        eqsList = equations Wi;
+        scan(eqsList, e -> f << toString e << endl);
+
+        -- Collect witness points (if available)
+        ptsList = {{}};
+        try (
+            pts0 = points Wi;               -- list of Point
+            ptsList = toList pts0;
+        ) else (
+            ptsList = {{}};
+        );
+
+        -- Top up to targetCount by sampling additional points on Wi
+        added = 0;
+        attempts = 0;
+        maxAttempts = 5 * targetCount;     -- be generous to tolerate occasional failures
+        while (#ptsList < targetCount and attempts < maxAttempts) do (
+            attempts = attempts + 1;
+            try (
+                p = sample Wi;             -- sample a Point on the component
+                ptsList = append(ptsList, p);
+                added = added + 1;
+            ) else (
+                -- ignore failed sample and continue
+                1;
+            );
+        );
+
+        -- Points as CSV of coordinates (avoid printing the Point objects)
+        f << "points:" << endl;            -- keep exact label so existing parser works
+        scan(ptsList, P -> (
+            C = coordinates P;             -- list of coordinates
+            for j from 0 to #C - 1 do (
+                f << toString(C#j);
+                if j < #C - 1 then f << ", ";
+            );
+            f << endl;
+        ));
+        f << endl;
+    );
+
+    close f;
+    '''
+
+    script_path = "temp_witness_script.m2"
+    with open(script_path, "w") as fh:
+        fh.write(macaulay2_script)
+
+    result = subprocess.run([macaulay2_path, "--script", script_path], capture_output=True, text=True)
+    try:
+        os.remove(script_path)
+    except Exception:
+        pass
+
+    if result.stdout:
+        print("M2 (witness) STDOUT:\n", result.stdout)
+    if result.stderr:
+        print("M2 (witness) STDERR:\n", result.stderr)
+
+    try:
+        with open("witness_set.txt", "r") as f:
+            txt = f.read()
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+        os.replace("witness_set.txt", filename)
+        return txt
+    except FileNotFoundError:
+        return "Error: 'witness_set.txt' not found."
+
 

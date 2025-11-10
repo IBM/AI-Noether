@@ -1,0 +1,20 @@
+Variables: ["L", "L0", "v", "c", "L1", "dt", "dt0", "d", "F", "F0", "m", "m0", "a", "a0"]
+Equations:
+c*dt0 - 2*d 
+4*L^2 - 4*d^2 - v^2*dt^2 
+c*dt - 2*L 
+F0*dt0 - 1 
+F*dt - 1 
+c*dt0 - 2*L0 
+F0-m0*a0
+F-m*a
+a-a0
+2*L1*c - dt*(c^2 - v^2)
+
+
+Measured Variables: ["L1", "L0", "c", "v", "L0", "c","F0","F","m","m0"]
+
+Target Polynomial:
+m*F0-F*m0
+m^2*c^2-m0^2*c^2+m0^2*v^2
+(c^2)*L1^2 - L0^2*(c^2 - v^2)

@@ -5,126 +5,326 @@ Remaining Axioms:
 Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2
 Fc-w^2*m2*d2
 w*p-1
-Target Polynomial q:
+Targets qList:
 -m1*d1*d2^2+m1*m2*p^2-d1^2*m2*d2-2*d1*m2*d2^2
 
-Primary Decomposition:
-ideal(w*p-1,Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2,Fc*p-w*m2*d2,Fc*p^2-m2*d2,m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2,Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2,Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2,Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3)
-
-Ideal: ideal(w*p-1,Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2,Fc*p-w*m2*d2,Fc*p^2-m2*d2,m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2,Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2,Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2,Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3)
-  Found 8 generators in ideal
-  Testing 36 combinations
+Ideal component: ideal(w*p-1,Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2,Fc*p-w*m2*d2,Fc*p^2-m2*d2,m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2,Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2,Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2,Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3)
+  Found 8 generators
+  Testing 93 combinations
+  Trying combination: {}
+    Filtered combo: {}
+    Base: remaining axioms alone do NOT imply all targets
   Trying combination: {w*p-1}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {Fc*p-w*m2*d2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {Fc*p^2-m2*d2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
     Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
-    Filtered combo implies q
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
   Trying combination: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
     Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
     Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
     Filtered combo: {Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {w*p-1, Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {w*p-1, Fc*p-w*m2*d2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*p-w*m2*d2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {w*p-1, Fc*p^2-m2*d2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*p^2-m2*d2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {Fc*p-w*m2*d2, Fc*p^2-m2*d2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {w*p-1, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
     Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
-    Filtered combo implies q
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
   Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
     Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
-    Filtered combo implies q
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
   Trying combination: {Fc*p-w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
     Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
-    Filtered combo implies q
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
   Trying combination: {Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
     Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
-    Filtered combo implies q
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
   Trying combination: {w*p-1, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
     Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
     Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {Fc*p-w*m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
     Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {Fc*p^2-m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
     Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
     Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
-    Filtered combo implies q
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
   Trying combination: {w*p-1, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
     Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
     Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {Fc*p-w*m2*d2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
     Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {Fc*p^2-m2*d2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
     Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
     Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
-    Filtered combo implies q
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
   Trying combination: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
     Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {w*p-1, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
     Filtered combo: {Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
     Filtered combo: {Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {Fc*p-w*m2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
     Filtered combo: {Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {Fc*p^2-m2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
     Filtered combo: {Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
     Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
-    Filtered combo implies q
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
   Trying combination: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
     Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
     Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
-    Filtered combo does not imply q
-Saved Polynomials:
+    filteredCombo does NOT imply all targets
+  Trying combination: {w*p-1, Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*p-w*m2*d2}
+    Filtered combo: {}
+    Skipping: all combo elements already implied
+  Trying combination: {w*p-1, Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*p^2-m2*d2}
+    Filtered combo: {}
+    Skipping: all combo elements already implied
+  Trying combination: {w*p-1, Fc*p-w*m2*d2, Fc*p^2-m2*d2}
+    Filtered combo: {}
+    Skipping: all combo elements already implied
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*p-w*m2*d2, Fc*p^2-m2*d2}
+    Filtered combo: {}
+    Skipping: all combo elements already implied
+  Trying combination: {w*p-1, Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {w*p-1, Fc*p-w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*p-w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {w*p-1, Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fc*p-w*m2*d2, Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {w*p-1, Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {w*p-1, Fc*p-w*m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*p-w*m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {w*p-1, Fc*p^2-m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*p^2-m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fc*p-w*m2*d2, Fc*p^2-m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {w*p-1, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fc*p-w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {w*p-1, Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {w*p-1, Fc*p-w*m2*d2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*p-w*m2*d2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {w*p-1, Fc*p^2-m2*d2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*p^2-m2*d2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fc*p-w*m2*d2, Fc*p^2-m2*d2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {w*p-1, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fc*p-w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {w*p-1, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fc*p-w*m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fc*p^2-m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {w*p-1, Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo does NOT imply all targets
+  Trying combination: {w*p-1, Fc*p-w*m2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*p-w*m2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo does NOT imply all targets
+  Trying combination: {w*p-1, Fc*p^2-m2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*p^2-m2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fc*p-w*m2*d2, Fc*p^2-m2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo does NOT imply all targets
+  Trying combination: {w*p-1, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fc*p-w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {w*p-1, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fc*p-w*m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fc*p^2-m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo does NOT imply all targets
+  Trying combination: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {w*p-1, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fc*p-w*m2*d2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fc*p^2-m2*d2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo does NOT imply all targets
+  Trying combination: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    Filtered combo: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+    filteredCombo does NOT imply all targets
+Saved Polynomials (combos implying ALL targets):
 {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
 {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
 {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
 {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+{m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2}
+{m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
+{m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*Fg*m1*d2^3+Fc*Fg*d1*m2*d2^2+2*Fc*Fg*m2*d2^3-Fc*m1^2*m2*d2-Fc*m1*d1*m2^2-2*Fc*m1*m2^2*d2+Fg*m1*d1*m2^2+2*Fg*m1*m2^2*d2, Fc^2*Fg*m1*d1*p-Fc^2*Fg*m2*d2*p+Fc*w*m1*m2^3-Fg*w*m1*m2^3}
 Strong Candidates:

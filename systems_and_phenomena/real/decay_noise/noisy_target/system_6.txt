@@ -1,0 +1,12 @@
+Variables: ['pp', 'pmu', 'Ev', 'Emu', 'Ep', 'pv', 'mp', 'mmu']
+Equations:
+pv - pmu
+Ep - mp
+Ev - pv
+Ep - Emu - Ev
+Emu^2 - pmu^2 - mmu^2
+
+Measured Variables: ['pv', 'mp', 'mmu']
+
+Target Polynomial:
+(3/2)*mmu^2 + (-2/3)*mp^2 + (2)*mp*pv

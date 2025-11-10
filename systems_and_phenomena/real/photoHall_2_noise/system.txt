@@ -1,0 +1,14 @@
+Variables: ["ph", "dp", "mu", "muN", "muH", "n", "dsigma2dn", "e", "mup", "p0", "dn", "beta", "r", "sigma", "H"]
+Equations:
+beta * mup - muN
+muH - r * mu
+ph - p0 - dp
+n - dn
+dp - dn
+sigma - e * ph * mup - e * n * muN
+H * (ph + beta * n)^2 * e - r * ph + r * beta^2 * n
+
+Measured Variables: ["sigma", "r", "e", "mup", "p0", "dn", "beta", "H"]
+
+Target Polynomial:
+(94/10)*r*e*mup*dn*beta^2 + (123/100)*r*e*mup*dn*beta - (101/100)*r*sigma + (113/100)*e*p0*sigma*H + (98/100)*e*dn*beta*sigma*H + (97/100)*e*dn*sigma*H

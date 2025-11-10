@@ -5,79 +5,155 @@ Remaining Axioms:
 Fc-w^2*m2*d2
 Fc-Fg
 w*p-1
-Target Polynomial q:
+Targets qList:
 -m1*d1*d2^2+m1*m2*p^2-d1^2*m2*d2-2*d1*m2*d2^2
 
-Primary Decomposition:
-ideal(Fc-Fg,w*p-1,Fg*p-w*m2*d2,Fg*p^2-m2*d2,m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2,Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2)
-
-Ideal: ideal(Fc-Fg,w*p-1,Fg*p-w*m2*d2,Fg*p^2-m2*d2,m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2,Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2)
-  Found 6 generators in ideal
-  Testing 21 combinations
+Ideal component: ideal(Fc-Fg,w*p-1,Fg*p-w*m2*d2,Fg*p^2-m2*d2,m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2,Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2)
+  Found 6 generators
+  Testing 42 combinations
+  Trying combination: {}
+    Filtered combo: {}
+    Base: remaining axioms alone do NOT imply all targets
   Trying combination: {Fc-Fg}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {w*p-1}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {Fg*p-w*m2*d2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {Fg*p^2-m2*d2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
     Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
-    Filtered combo implies q
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
   Trying combination: {Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
     Filtered combo: {Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {Fc-Fg, w*p-1}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {Fc-Fg, Fg*p-w*m2*d2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {w*p-1, Fg*p-w*m2*d2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {Fc-Fg, Fg*p^2-m2*d2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {w*p-1, Fg*p^2-m2*d2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {Fg*p-w*m2*d2, Fg*p^2-m2*d2}
     Filtered combo: {}
-    Skipping: All combo elements already implied
+    Skipping: all combo elements already implied
   Trying combination: {Fc-Fg, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
     Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
-    Filtered combo implies q
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
   Trying combination: {w*p-1, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
     Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
-    Filtered combo implies q
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
   Trying combination: {Fg*p-w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
     Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
-    Filtered combo implies q
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
   Trying combination: {Fg*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
     Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
-    Filtered combo implies q
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
   Trying combination: {Fc-Fg, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
     Filtered combo: {Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {w*p-1, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
     Filtered combo: {Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {Fg*p-w*m2*d2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
     Filtered combo: {Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {Fg*p^2-m2*d2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
     Filtered combo: {Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
-    Filtered combo does not imply q
+    filteredCombo does NOT imply all targets
   Trying combination: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
     Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
-    Filtered combo implies q
-Saved Polynomials:
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fc-Fg, w*p-1, Fg*p-w*m2*d2}
+    Filtered combo: {}
+    Skipping: all combo elements already implied
+  Trying combination: {Fc-Fg, w*p-1, Fg*p^2-m2*d2}
+    Filtered combo: {}
+    Skipping: all combo elements already implied
+  Trying combination: {Fc-Fg, Fg*p-w*m2*d2, Fg*p^2-m2*d2}
+    Filtered combo: {}
+    Skipping: all combo elements already implied
+  Trying combination: {w*p-1, Fg*p-w*m2*d2, Fg*p^2-m2*d2}
+    Filtered combo: {}
+    Skipping: all combo elements already implied
+  Trying combination: {Fc-Fg, w*p-1, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fc-Fg, Fg*p-w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {w*p-1, Fg*p-w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fc-Fg, Fg*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {w*p-1, Fg*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fg*p-w*m2*d2, Fg*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fc-Fg, w*p-1, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fc-Fg, Fg*p-w*m2*d2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {w*p-1, Fg*p-w*m2*d2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fc-Fg, Fg*p^2-m2*d2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {w*p-1, Fg*p^2-m2*d2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fg*p-w*m2*d2, Fg*p^2-m2*d2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    Filtered combo: {Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    filteredCombo does NOT imply all targets
+  Trying combination: {Fc-Fg, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {w*p-1, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fg*p-w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+  Trying combination: {Fg*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    Filtered combo: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
+    filteredCombo implies ALL targets (per-target projections)
+    Not STRONG under literal-appearance check
+Saved Polynomials (combos implying ALL targets):
 {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
 {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fg*m1*d1*d2+Fg*d1^2*m2+2*Fg*d1*m2*d2-m1*m2^2}
 Strong Candidates:

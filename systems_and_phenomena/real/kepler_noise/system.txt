@@ -1,0 +1,11 @@
+Variables: ["Fc", "Fg", "w", "m1", "m2", "d1", "d2", "p"]
+Equations:
+Fg*(d1+d2)^2 - m1*m2
+Fc - m2*d2*w^2
+Fc - Fg
+w*p - 1
+
+Measured Variables: ["m1", "m2", "d1", "d2", "p"]
+
+Target Polynomial:
+(101/100)*p^2*m1*m2 - (102/100)*d1^2*d2*m2 - (203/100)*d1*d2^2*m2 - (101/100)*d2^3*m2
