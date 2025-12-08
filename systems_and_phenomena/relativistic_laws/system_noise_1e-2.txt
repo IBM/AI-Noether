@@ -1,0 +1,23 @@
+Variables: ["L", "L0", "v", "c", "L1", "dt", "dt0", "d", "F", "F0", "m", "m0", "u0", "y", "uy", "delpa", "delpb"]
+Equations:
+L^2 + v^2*dt0^2 - c^2*dt0^2
+2*L1*c - dt*(c^2 - v^2) 
+delpa-delpb
+c*dt - 2*L
+c*dt0 - 2*d 
+u0*dt-y
+uy*dt0-y
+delpa-2*m0*u0
+delpb+2*m*uy
+c*dt0 - 2*L0 
+4*L^2 - 4*d^2 - v^2*dt^2
+F0*dt0 - 1
+F*dt - 1
+
+
+Measured Variables: ["L1", "L0", "c", "v", "L0", "c","F0","F","m","m0", "u0"]
+
+Target Polynomial:
+(11/10)*c^2*F0^2-(9/10)*c^2*F^2-F0^2*v^2
+(101/100)*4*dt^2*c^2*m^2*u0-(98/100)*dt^2*c^2*m0^2*u0-(12/10)*4*dt^2*v^2*m^2*u0
+(98/100)*(c^2)*L1^2 - (102/100)*L0^2*(c^2 - v^2)

@@ -1,0 +1,15 @@
+Variables: ["F", "ad", "T", "Fd",  "omega", "theta", "sintheta", "m", "d", "g",  "L", "j", "Pi", "Tj"]
+Equations: 
+Fd-F*sintheta
+Fd - m*g*sintheta
+ad-g*sintheta
+d-L*theta
+T*omega-2*Pi
+d*omega^2-ad
+Tj-j*T
+sintheta - theta
+
+Measured Variables: ["d", "g", "L", "j", "Pi", "Tj"]
+
+Target Polynomial:
+d*g*Tj^2-4*d*L*j^2*Pi^2

@@ -1,0 +1,46 @@
+ArchiveEntry "{problem_name}_target{target_index}_combo{axiom_combo}"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+{variable_declarations}
+{exist_coeff_declarations}
+End.
+
+Problem
+  (
+    {exist_coefficients}
+    (
+      {coefficient_positivity}
+      &
+      (
+        {forall_variables}
+        (
+          (
+            {variable_positivity}
+            {known_axiom_equations}
+            {abducted_axiom_equations}
+          )
+          ->
+          (
+            {consequence_equation}
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

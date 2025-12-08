@@ -1,164 +1,203 @@
-# AI-Noether
+# AI-Noether: Abductive Inference for Scientific Discovery
 
-**AI-Noether** is a Python/Macaulay2 pipeline for **abductive inference of axioms** in algebraic physics systems from our paper: [AI Noether (arXiv:2509.23004)](https://arxiv.org/abs/2509.23004)
-Given a system of polynomial axioms and a *target polynomial* (a "consequence"), the framework automatically analyzes which combinations of axioms explain the target, projects ideals onto measured variables, and checks dimensional consistency.
+A system for discovering missing axioms in physics and mathematics through algebraic and numerical methods.
 
-This project is inspired by the spirit of Emmy Noether’s algebraic approach to invariants and conservation laws, bringing those ideas into computational abductive reasoning.
+## Overview
 
----
+AI-Noether implements the abductive inference framework from the paper, which:
 
-## Features
+1. **Encodes** axioms and consequences into algebraic varieties
+2. **Decomposes** varieties via primary decomposition (noiseless) or numerical irreducible decomposition (noisy)
+3. **Reasons** by testing if candidate axiom sets prove consequences
 
-- **Projection**: Eliminates non-measured variables to obtain reduced Gröbner bases.  
-- **Abductive Inference**: Tests subsets of removed axioms to infer candidate axioms explaining the target.  
-- **Dimensionality Checks**: Compares ideal dimensions before/after removing axioms to test explanatory power.  
-- **Timeout-Safe Parallelism**: Uses `ProcessPoolExecutor` to manage Macaulay2 runs with configurable timeouts.
+## Directory Structure
 
----
+```
+ai_noether/
+├── config_template.yaml      # Configuration template (copy to config.yaml)
+├── run.sh                    # Main entry script
+├── templates/
+│   ├── m2/
+│   │   ├── projection.m2     # Groebner basis and elimination
+│   │   ├── decomposition.m2  # Primary decomposition
+│   │   ├── reasoning.m2      # Test candidate axiom sets
+│   │   ├── dimensionality.m2 # Dimension comparison
+│   │   └── witness_set.m2    # Numerical irreducible decomposition
+│   ├── singular/
+│   │   └── decomposition.sing # Faster primary decomposition via minAss
+│   └── keymaera/
+│       └── reasoning.kyx      # Existential reasoning template
+└── src/
+    ├── __init__.py
+    ├── main.py               # Main orchestration
+    ├── config.py             # Configuration loading
+    ├── templates.py          # Template filling utilities
+    ├── parsers.py            # Parse M2/Singular output
+    ├── decomposition.py      # Primary decomposition (M2 or Singular)
+    ├── reasoning.py          # Reasoning with superset elimination
+    ├── numerical.py          # Witness sets, symbolic regression, KeyMaera
+    ├── projection.py         # Projection/elimination analysis
+    ├── dimensionality.py     # Dimension checking
+    └── logging_utils.py      # Logging utilities
+```
 
 ## Installation
 
-### Prerequisites
+### Dependencies
 
-1. **Python 3.9+** (earlier versions may work but are untested).  
-   Recommended: create a virtual environment:
-
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-
-2. **Macaulay2** installed and accessible via command line.  
-   On macOS with Homebrew:
-
-   ```bash
-   brew install macaulay2
-   ```
-
-   This project assumes the Macaulay2 binary is located at:
-
-   ```
-   /opt/homebrew/bin/M2
-   ```
-
-   If your system uses a different path, update the variable `macaulay2_path` in `m2_functions.py`.
-
-3. **Python dependencies**:  
-   Install required libraries:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   The main dependencies are:
-   - `concurrent.futures` (built-in with Python 3)
-   - `itertools` (built-in)
-   - `re` (built-in)
-
-   No external Python packages are strictly required.
-
----
-
-## Repository Structure
-
-```
-AI-Noether/
-│
-├── model.py                # Main pipeline
-├── m2_functions.py         # Python↔Macaulay2 function wrappers
-├── systems_and_phenomena/  # Input systems
-│   └── real/
-│       └── kepler/
-│           └── system.txt  # Example system definition
-└── results/                # Auto-generated results will be stored here
+**Python packages:**
+```bash
+pip install numpy sympy pyyaml
 ```
 
----
-
-## Input Format
-
-Each problem system is stored in `systems_and_phenomena/<domain>/<problem>/system.txt`.  
-
-Example (`systems_and_phenomena/real/kepler/system.txt`):
-
-```
-Variables: ["Fc", "Fg", "w", "m1", "m2", "d1", "d2", "p"]
-Equations:
-Fg*(d1+d2)^2 - m1*m2
-Fc - m2*d2*w^2
-Fc - Fg
-w*p - 1
-
-Measured Variables: ["m1", "m2", "d1", "d2", "p"]
-
-Target Polynomial:
-p^2*m1*m2 - d1^2*d2*m2 - 2*d1*d2^2*m2 - d2^3*m2
-```
-
-Sections:
-- **Variables**: Full list of symbolic variables.
-- **Equations**: Axioms defining the system (one per line).
-- **Measured Variables**: Subset of variables considered observable.
-- **Target Polynomial**: The consequence to test for abductive explanation.
-
----
+**External tools (configure paths in config.yaml):**
+- Macaulay2 (required): https://www.macaulay2.com/
+- Singular (optional, faster decomposition): https://www.singular.uni-kl.de/
+- Bertini (optional, for numerical methods): https://bertini.nd.edu/
+- KeyMaera X (optional, for noisy reasoning): https://www.keymaerax.org/
 
 ## Usage
 
-1. Place your system files under `systems_and_phenomena/<domain>/<problem>/system.txt`.
-
-2. Edit `model.py` to include your problem names in `problems_list`. Example:
-
-   ```python
-   problems_list = [
-       'kepler',
-       'light_2',
-   ]
-   ```
-
-3. Run the pipeline:
-
+1. Copy and customize the configuration:
    ```bash
-   python model.py
+   cp config_template.yaml config.yaml
+   # Edit config.yaml with your paths and settings
    ```
 
-4. Results will appear in:
-
+2. Prepare your problem files in the format:
    ```
-   results/<domain>/<problem>/
+   systems_and_phenomena/real/problem_name/system.txt
+   ```
+   
+   Each `system.txt` should contain:
+   ```
+   Variables: [x, y, z, ...]
+   
+   Equations:
+   x^2 - y
+   y*z - 1
+   ...
+   
+   Measured Variables: [x, z]
+   
+   Target Polynomial:
+   x^2*z - 1
    ```
 
-   Inside, you’ll find:
-   - `projection.txt` — Gröbner basis analysis of eliminated variables.
-   - `abduction_*.txt` — Subset-based abduction inference logs.
-   - `dimensionality_check/` — Dimension analysis for each axiom removal subset.
+3. Run the analysis:
+   ```bash
+   ./run.sh config.yaml
+   ```
 
----
+## Configuration
 
-## Example Workflow
+Key settings in `config.yaml`:
 
-Running with the provided **Kepler system**:
-
-```bash
-python model.py
+### Decomposition Engine
+```yaml
+decomposition:
+  engine: "singular"  # "m2" or "singular" (singular is faster)
 ```
 
-Produces outputs such as:
+### Analyses to Run
+```yaml
+analyses:
+  projection: true              # Groebner basis and elimination
+  dimensionality_check: true    # Compare ideal dimensions
+  algebraic_abduction: true     # Noiseless decomposition + reasoning
+  numerical_abduction: true     # Noisy witness sets + symbolic regression
+```
 
-- **Projection Analysis**: reduced Gröbner bases for measurable variables.  
-- **Abduction Results**: candidate combinations of axioms that explain the target polynomial.  
-- **Dimension Checks**: confirmation of when removed axioms plus the target yield the original ideal’s dimension.
+### Axiom Removal
+```yaml
+axiom_removal:
+  num_axioms: "all"    # "all", "[1,3]", "1..3", "1,2,3", or just "2"
+```
 
----
+### Symbolic Regression (Noisy Case)
+```yaml
+normalization:
+  normalize_coefficients: true   # Normalize max coefficient to 1
+  complex_threshold: 1e-6        # Zero out small imaginary parts
+  compute_coefficient_error: true # Compute L2 error vs true coefficients
+```
 
-## Notes
+## Output Structure
 
-- **Timeouts**: Each abductive inference and dimension check has a configurable timeout (`TIMEOUT_SECONDS = 60`).  
-- **Parallelism**: Subset computations are parallelized using `ProcessPoolExecutor`.  
-- **Path Adjustments**: If your Macaulay2 binary is not at `/opt/homebrew/bin/M2`, edit `macaulay2_path` in `m2_functions.py`.
+Results are organized as:
+```
+results/problem_name/
+├── projection/                  # (if enabled)
+│   └── target_1/
+├── dimensionality_check/        # (if enabled)
+│   └── 1_axioms_removed/
+│       └── subset_1/
+├── abduction/
+│   ├── noiseless/
+│   │   └── 1_axiom(s)_removed/
+│   │       └── combo_1/
+│   │           ├── decomposition/
+│   │           │   ├── decomposition_script.m2 (or .sing)
+│   │           │   └── decomposition_output.txt
+│   │           └── reasoning/
+│   │               ├── reasoning_script.m2
+│   │               ├── reasoning_output.txt
+│   │               └── reasoning_filtered.txt
+│   └── noisy/
+│       └── 1_axiom(s)_removed/
+│           └── combo_1/
+│               ├── decomposition/
+│               │   ├── witness_sets/
+│               │   │   └── witness_set.txt
+│               │   └── symbolic_regression/
+│               │       └── fit_axiom1_comp1.txt
+│               └── reasoning/
+│                   └── reasoning_target1_combo1.kyx
+└── logs/
+    └── ai_noether.log
+```
 
----
+## Key Features
+
+### Superset Elimination
+The reasoning step automatically filters out:
+- **Duplicates**: Same axiom set appearing multiple times
+- **Supersets**: If `{A}` proves Q, don't save `{A, B}`
+
+### Singular Integration
+For faster primary decomposition:
+```yaml
+decomposition:
+  engine: "singular"
+```
+
+Singular's `minAss` is significantly faster than M2's `primaryDecomposition` for larger ideals.
+
+### Coefficient Normalization
+For noisy symbolic regression:
+- Normalizes largest coefficient to 1
+- Zeros out imaginary parts below threshold
+- Computes L2 error vs true axiom coefficients
+
+### KeyMaera Templates
+For noisy reasoning, generates `.kyx` files with:
+- Existentially quantified coefficients
+- Known axioms as exact equations
+- Abducted axioms with symbolic coefficients
+
+Templates are saved but NOT auto-executed (run KeyMaera manually).
+
+## Logging
+
+Configure verbosity in `config.yaml`:
+```yaml
+execution:
+  verbose: false      # Print to stdout
+  log_level: "INFO"   # DEBUG, INFO, WARNING, ERROR
+```
+
+All logs are saved to `results/*/logs/ai_noether.log`.
 
 ## License
 
-MIT License. See [LICENSE](LICENSE) for details.
+[Your license here]
