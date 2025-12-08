@@ -1,0 +1,27 @@
+Number of components: 3
+
+COMPONENT_1:
+  num_generators: 4
+  GEN: v
+  GEN: c
+  GEN: -1/2*dt*c+L
+  GEN: -1/2*dt0*c+d
+
+COMPONENT_2:
+  num_generators: 6
+  GEN: c^2*F0^2-c^2*F^2-F0^2*v^2
+  GEN: dt0*F0+dt*F
+  GEN: dt*c^2*F0+dt0*c^2*F-dt*F0*v^2
+  GEN: dt^2*c^2-dt0^2*c^2-dt^2*v^2
+  GEN: -1/2*dt*c+L
+  GEN: -1/2*dt0*c+d
+
+COMPONENT_3:
+  num_generators: 6
+  GEN: c^2*F0^2-c^2*F^2-F0^2*v^2
+  GEN: -dt0*F0+dt*F
+  GEN: dt*c^2*F0-dt0*c^2*F-dt*F0*v^2
+  GEN: dt^2*c^2-dt0^2*c^2-dt^2*v^2
+  GEN: -1/2*dt*c+L
+  GEN: -1/2*dt0*c+d
+

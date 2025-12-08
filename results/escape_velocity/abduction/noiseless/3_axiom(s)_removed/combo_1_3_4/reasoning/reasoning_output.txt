@@ -1,0 +1,86 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  Ekf
+  Eki-Ekf+Ugi-Ugf
+
+Targets:
+  2*G*M*m-m*ve^2*r
+
+Require literal GB appearance: true
+Number of candidate sets to test: 15
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {Ekf}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Eki+Ugi-Ugf}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-2*G*M+ve^2*r}
+  filtered: {-2*G*M+ve^2*r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ekf, Eki+Ugi-Ugf}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ekf, -2*G*M+ve^2*r}
+  filtered: {-2*G*M+ve^2*r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Eki+Ugi-Ugf, -2*G*M+ve^2*r}
+  filtered: {-2*G*M+ve^2*r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ekf, Eki+Ugi-Ugf, -2*G*M+ve^2*r}
+  filtered: {-2*G*M+ve^2*r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {m}
+  filtered: {m}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ekf}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Eki+Ugi-Ugf}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {m, Ekf}
+  filtered: {m}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {m, Eki+Ugi-Ugf}
+  filtered: {m}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ekf, Eki+Ugi-Ugf}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {m, Ekf, Eki+Ugi-Ugf}
+  filtered: {m}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {-2*G*M+ve^2*r}
+  {m}
+
+STRONG_CANDIDATES:

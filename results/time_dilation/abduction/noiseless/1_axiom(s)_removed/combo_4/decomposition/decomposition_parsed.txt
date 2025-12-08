@@ -1,0 +1,48 @@
+Number of components: 3
+
+COMPONENT_1:
+  num_generators: 16
+  GEN: 2*L*F-c
+  GEN: dt*F-1
+  GEN: dt0*F0-1
+  GEN: 2*d*F0-c
+  GEN: dt0*c-2*d
+  GEN: dt*c-2*L
+  GEN: d*dt-dt0*L
+  GEN: 4*d^2*F+dt*v^2-2*L*c
+  GEN: dt*F0*v^2-2*L*c*F0+2*d*c*F
+  GEN: dt*L*v^2+2*d^2*c-2*L^2*c
+  GEN: dt^2*v^2+4*d^2-4*L^2
+  GEN: 2*d*c*F^2-c^2*F0+F0*v^2
+  GEN: c^2*F0^2-c^2*F^2-F0^2*v^2
+  GEN: L*c^2*F0-d*c^2*F-L*F0*v^2
+  GEN: d^2*c^2-L^2*c^2+L^2*v^2
+  GEN: dt0*L^2*v^2+2*d^3*c-2*d*L^2*c
+
+COMPONENT_2:
+  num_generators: 16
+  GEN: 2*L*F+c
+  GEN: dt*F+1
+  GEN: dt0*F0-1
+  GEN: 2*d*F0-c
+  GEN: dt0*c-2*d
+  GEN: dt*c-2*L
+  GEN: d*dt-dt0*L
+  GEN: 4*d^2*F-dt*v^2+2*L*c
+  GEN: dt*F0*v^2-2*L*c*F0-2*d*c*F
+  GEN: dt*L*v^2+2*d^2*c-2*L^2*c
+  GEN: dt^2*v^2+4*d^2-4*L^2
+  GEN: 2*d*c*F^2-c^2*F0+F0*v^2
+  GEN: c^2*F0^2-c^2*F^2-F0^2*v^2
+  GEN: L*c^2*F0+d*c^2*F-L*F0*v^2
+  GEN: d^2*c^2-L^2*c^2+L^2*v^2
+  GEN: dt0*L^2*v^2+2*d^3*c-2*d*L^2*c
+
+COMPONENT_3:
+  num_generators: 5
+  GEN: v
+  GEN: c
+  GEN: L
+  GEN: d
+  GEN: dt0*F0-1
+

@@ -1,0 +1,60 @@
+ArchiveEntry "decay_target1_combo1"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real pp;
+  Real pmu;
+  Real Ev;
+  Real Emu;
+  Real Ep;
+  Real pv;
+  Real mp;
+  Real mmu;
+  Real c1_1;
+  Real c1_2;
+  Real d1;
+  Real d2;
+  Real d3;
+End.
+
+Problem
+  (
+    \exists c1_1 \exists c1_2 \exists d1 \exists d2 \exists d3
+    (
+      c1_1 > 0 & c1_2 > 0 & d1 > 0 & d2 > 0 & d3 > 0
+      &
+      (
+        \forall pp \forall pmu \forall Ev \forall Emu \forall Ep \forall pv \forall mp \forall mmu
+        (
+          (
+            (pp > 0 & pmu > 0 & Ev > 0 & Emu > 0 & Ep > 0 & pv > 0 & mp > 0 & mmu > 0) &
+            & ( Ep - mp = 0 )
+            & ( Ev - pv = 0 )
+            & ( Ep - Emu - Ev = 0 )
+            & ( Emu^2 - pmu^2 - mmu^2 = 0 )
+            & ( ( c1_1 * pmu ) + ( c1_2 * pv ) = 0 )
+          )
+          ->
+          (
+            ( d1 * pv*mp ) + ( d2 * mp^2 ) + ( d3 * mmu^2 ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

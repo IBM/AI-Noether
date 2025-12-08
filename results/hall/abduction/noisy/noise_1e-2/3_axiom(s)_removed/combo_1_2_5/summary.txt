@@ -1,0 +1,110 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-2
+Removed axiom indices (1-based): [1, 2, 5]
+Removed axioms:
+  Fm - qe*v*B
+  Fe - qe*E
+  v*dt - L
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 8
+Symbolic regression results: 24
+
+Regression results below threshold (5.0):
+  Axiom 1, Component 1:
+    Singular value: 2.7546120400407728
+    Polynomial: 1*Fm + (0.0141626-0.00117677i)*v*qe*B
+    Coefficient L2 error: 1.0141632371568645
+  Axiom 2, Component 1:
+    Singular value: 2.5606873146424567
+    Polynomial: 1*Fe + (-0.011482-0.001407i)*E*qe
+    Coefficient L2 error: 0.9885190048986231
+  Axiom 5, Component 1:
+    Singular value: 2.8922281404948493
+    Polynomial: (-0.0170117+0.00131493i)*v*dt + 1*L
+    Coefficient L2 error: 2.2437278100213445
+  Axiom 1, Component 2:
+    Singular value: 2.3159985469665854
+    Polynomial: 1*Fm + (-0.0105388-1.2647e-05i)*v*qe*B
+    Coefficient L2 error: 0.9894612013115286
+  Axiom 2, Component 2:
+    Singular value: 2.2316123298499853
+    Polynomial: 1*Fe + (-0.0305789-0.00212104i)*E*qe
+    Coefficient L2 error: 0.9694233844263478
+  Axiom 5, Component 2:
+    Singular value: 3.1962863719741235e-31
+    Polynomial: 1*v*dt
+    Coefficient L2 error: 1.0
+  Axiom 1, Component 3:
+    Singular value: 1.7337054113960884
+    Polynomial: 1*Fm + (-0.00369059+0.00105296i)*v*qe*B
+    Coefficient L2 error: 0.996309963477146
+  Axiom 2, Component 3:
+    Singular value: 1.8108864480524423
+    Polynomial: 1*Fe + (0.030237-0.00108916i)*E*qe
+    Coefficient L2 error: 1.0302376085718852
+  Axiom 5, Component 3:
+    Singular value: 2.4894432565825023e-62
+    Polynomial: 1*v*dt
+    Coefficient L2 error: 1.0
+  Axiom 1, Component 4:
+    Singular value: 3.8169439527815627
+    Polynomial: 1*Fm + (0.00521687-0.00706692i)*v*qe*B
+    Coefficient L2 error: 1.005241709975464
+  Axiom 2, Component 4:
+    Singular value: 2.8304274993635135
+    Polynomial: 1*Fe + (-0.0114904+0.00645759i)*E*qe
+    Coefficient L2 error: 0.9885306555427555
+  Axiom 5, Component 4:
+    Singular value: 1.0202383765453598
+    Polynomial: (2.68072e-05+0.00031818i)*v*dt + 1*L
+    Coefficient L2 error: 2.236056011728909
+  Axiom 1, Component 5:
+    Singular value: 1.9451846417195233
+    Polynomial: 1*Fm + (0.00335094-0.000952098i)*v*qe*B
+    Coefficient L2 error: 1.0033513895569155
+  Axiom 2, Component 5:
+    Singular value: 2.592621514850727
+    Polynomial: 1*Fe + (0.0600078+0.0397988i)*E*qe
+    Coefficient L2 error: 1.060754686721301
+  Axiom 5, Component 5:
+    Singular value: 3.361147482309258
+    Polynomial: (-0.130845-0.0245595i)*v*dt + 1*L
+    Coefficient L2 error: 2.297697258660813
+  Axiom 1, Component 6:
+    Singular value: 2.1993303870042666
+    Polynomial: 1*Fm + (0.000591918-0.0069609i)*v*qe*B
+    Coefficient L2 error: 1.000616130767832
+  Axiom 2, Component 6:
+    Singular value: 2.8600399120592783
+    Polynomial: 1*Fe + (0.0885284+0.0210738i)*E*qe
+    Coefficient L2 error: 1.088732325020604
+  Axiom 5, Component 6:
+    Singular value: 2.9118683829231355e-58
+    Polynomial: 1*L
+    Coefficient L2 error: 2.23606797749979
+  Axiom 1, Component 7:
+    Singular value: 2.216278054700699
+    Polynomial: 1*Fm + (-0.00595202-0.00186783i)*v*qe*B
+    Coefficient L2 error: 0.9940497365730021
+  Axiom 2, Component 7:
+    Singular value: 1.9778075312698584
+    Polynomial: 1*Fe + (0.0902986-1.1993e-05i)*E*qe
+    Coefficient L2 error: 1.0902985965042968
+  Axiom 5, Component 7:
+    Singular value: 0.5698445832895315
+    Polynomial: (0.00304582-0.00340777i)*v*dt + 1*L
+    Coefficient L2 error: 2.2347101028202476
+  Axiom 1, Component 8:
+    Singular value: 3.158556371866887e-43
+    Polynomial: 1*v*qe*B
+    Coefficient L2 error: 2.23606797749979
+  Axiom 2, Component 8:
+    Singular value: 6.26188285746934e-43
+    Polynomial: 1*E*qe
+    Coefficient L2 error: 2.23606797749979
+  Axiom 5, Component 8:
+    Singular value: 0.751733567744499
+    Polynomial: (-0.000157745+0.00254251i)*v*dt + 1*L
+    Coefficient L2 error: 2.2361399729297107

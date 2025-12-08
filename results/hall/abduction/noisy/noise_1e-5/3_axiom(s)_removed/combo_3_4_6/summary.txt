@@ -1,0 +1,62 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-5
+Removed axiom indices (1-based): [3, 4, 6]
+Removed axioms:
+  Fm - Fe
+  E*h - UH
+  i*dt - Q
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 4
+Symbolic regression results: 12
+
+Regression results below threshold (5.0):
+  Axiom 3, Component 1:
+    Singular value: 4.597301291252518
+    Polynomial: (-0.0617321-0.106277i)*Fm + 1*Fe
+    Coefficient L2 error: 2.2668414181902037
+  Axiom 4, Component 1:
+    Singular value: 2.1689602971788908e-55
+    Polynomial: 1*E*h
+    Coefficient L2 error: 1.0
+  Axiom 6, Component 1:
+    Singular value: 2.3158086721442684e-62
+    Polynomial: 1*Q
+    Coefficient L2 error: 2.23606797749979
+  Axiom 3, Component 2:
+    Singular value: 2.8045133818400917e-46
+    Polynomial: 1*Fm
+    Coefficient L2 error: 1.0
+  Axiom 4, Component 2:
+    Singular value: 3.3384555905800246
+    Polynomial: (-0.00888219+0.0119802i)*E*h + 1*UH
+    Coefficient L2 error: 2.2400863354030767
+  Axiom 6, Component 2:
+    Singular value: 3.320532978487783e-61
+    Polynomial: 1*Q
+    Coefficient L2 error: 2.23606797749979
+  Axiom 3, Component 3:
+    Singular value: 2.128476798132105
+    Polynomial: (0.351268-0.0302308i)*Fm + 1*Fe
+    Coefficient L2 error: 2.102799866107792
+  Axiom 4, Component 3:
+    Singular value: 3.8222831066396
+    Polynomial: (-0.14953+0.101386i)*E*h + 1*UH
+    Coefficient L2 error: 2.3090471742501926
+  Axiom 6, Component 3:
+    Singular value: 7.308756014439052e-108
+    Polynomial: 1*dt*i + (-0.389772+0.393025i)*Q
+    Coefficient L2 error: 0.7258418987458068
+  Axiom 3, Component 4:
+    Singular value: 1.5236217650057031
+    Polynomial: (0.342275+0.0378495i)*Fm + 1*Fe
+    Coefficient L2 error: 2.1057147116045023
+  Axiom 4, Component 4:
+    Singular value: 1.2650950785696673
+    Polynomial: (-0.00171292+0.00013107i)*E*h + 1*UH
+    Coefficient L2 error: 2.236834547428536
+  Axiom 6, Component 4:
+    Singular value: 1.2918635232277624
+    Polynomial: (-0.0214889+0.0303408i)*dt*i + 1*Q
+    Coefficient L2 error: 2.2459653191686675

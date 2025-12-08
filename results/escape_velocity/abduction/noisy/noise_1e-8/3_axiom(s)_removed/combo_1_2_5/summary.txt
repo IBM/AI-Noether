@@ -1,0 +1,69 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-8
+Removed axiom indices (1-based): [1, 2, 5]
+Removed axioms:
+  Eki - 1/2 * m * ve^2
+  Ekf - 0
+  Eki + Ugi - Ekf - Ugf
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 5
+Symbolic regression results: 15
+
+Regression results below threshold (5.0):
+  Axiom 1, Component 1:
+    Singular value: 2.107951319912865
+    Polynomial: 1*Eki + (-0.0582381+0.00212228i)*m*ve^2
+    Coefficient L2 error: 0.44176695531151466
+  Axiom 2, Component 1:
+    Singular value: 2.407700717066033
+    Polynomial: 1*Ekf
+  Axiom 5, Component 1:
+    Singular value: 1.477632638738104e-31
+    Polynomial: 1*Ugf
+    Coefficient L2 error: 2.6457513110645907
+  Axiom 1, Component 2:
+    Singular value: 3.6562628565980246e-103
+    Polynomial: 1*m*ve^2
+    Coefficient L2 error: 1.8027756377319946
+  Axiom 2, Component 2:
+    Singular value: 2.220324045651844
+    Polynomial: 1*Ekf
+  Axiom 5, Component 2:
+    Singular value: 4.752172198310883e-31
+    Polynomial: 1*Ugf
+    Coefficient L2 error: 2.6457513110645907
+  Axiom 1, Component 3:
+    Singular value: 1.9462194206778698
+    Polynomial: 1*Eki + (0.0164302+0.00506983i)*m*ve^2
+    Coefficient L2 error: 0.5164551284122367
+  Axiom 2, Component 3:
+    Singular value: 2.570631860133825
+    Polynomial: 1*Ekf
+  Axiom 5, Component 3:
+    Singular value: 0.0
+    Polynomial: 1*Ugf
+    Coefficient L2 error: 2.6457513110645907
+  Axiom 1, Component 4:
+    Singular value: 8.085743088589058e-76
+    Polynomial: 1*m*ve^2
+    Coefficient L2 error: 1.8027756377319946
+  Axiom 2, Component 4:
+    Singular value: 1.9012336993042096
+    Polynomial: 1*Ekf
+  Axiom 5, Component 4:
+    Singular value: 0.0
+    Polynomial: 1*Ugf
+    Coefficient L2 error: 2.6457513110645907
+  Axiom 1, Component 5:
+    Singular value: 2.677380859275812
+    Polynomial: 1*Eki + (-0.0559872+0.00762888i)*m*ve^2
+    Coefficient L2 error: 0.44407829295610424
+  Axiom 2, Component 5:
+    Singular value: 2.724167004375919
+    Polynomial: 1*Ekf
+  Axiom 5, Component 5:
+    Singular value: 3.230065745611605e-30
+    Polynomial: 1*Ugf
+    Coefficient L2 error: 2.6457513110645907

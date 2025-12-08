@@ -1,0 +1,58 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-8
+Removed axiom indices (1-based): [1, 3, 7]
+Removed axioms:
+  Fm - qe*v*B
+  Fm - Fe
+  Q - N*qe
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 4
+Symbolic regression results: 12
+
+Regression results below threshold (5.0):
+  Axiom 1, Component 1:
+    Singular value: 4.109063425979277
+    Polynomial: 1*Fm + (-0.00410756+0.00827255i)*v*qe*B
+    Coefficient L2 error: 0.9959267998279986
+  Axiom 3, Component 1:
+    Singular value: 1.561359177977872
+    Polynomial: (0.103195-0.0346415i)*Fm + 1*Fe
+    Coefficient L2 error: 2.1921355681148667
+  Axiom 7, Component 1:
+    Singular value: 2.241395548089229e-90
+    Polynomial: 1*Q + (-0.0731323+0.236406i)*N*qe
+    Coefficient L2 error: 0.9565415213145237
+  Axiom 1, Component 2:
+    Singular value: 3.513562708141154e-52
+    Polynomial: 1*v*qe*B
+    Coefficient L2 error: 2.23606797749979
+  Axiom 3, Component 2:
+    Singular value: 2.4626170611487295
+    Polynomial: 1*Fm + (-0.0413517-0.0273862i)*Fe
+    Coefficient L2 error: 0.9590393516486125
+  Axiom 7, Component 2:
+    Singular value: 3.1488360195219763e-51
+    Polynomial: 1*N*qe
+    Coefficient L2 error: 2.23606797749979
+  Axiom 1, Component 3:
+    Singular value: 3.623774902607748
+    Polynomial: 1*Fm + (0.001443+0.00109809i)*v*qe*B
+    Coefficient L2 error: 1.0014436039018986
+  Axiom 7, Component 3:
+    Singular value: 8.411124159209123e-31
+    Polynomial: 1*N*qe
+    Coefficient L2 error: 2.23606797749979
+  Axiom 1, Component 4:
+    Singular value: 3.398335564085923
+    Polynomial: 1*Fm + (-0.0280986-0.112665i)*v*qe*B
+    Coefficient L2 error: 0.97840987388247
+  Axiom 3, Component 4:
+    Singular value: 1.2953747503790616
+    Polynomial: (-0.00821296+0.0774275i)*Fm + 1*Fe
+    Coefficient L2 error: 2.2410908951500157
+  Axiom 7, Component 4:
+    Singular value: 1.4203942880551927
+    Polynomial: 1*Q + (-0.0578106+0.0215153i)*N*qe
+    Coefficient L2 error: 0.9424350161947322

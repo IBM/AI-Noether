@@ -1,0 +1,87 @@
+ArchiveEntry "inelastic_collision_target1_combo4_5_9"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real mr;
+  Real vm;
+  Real vc;
+  Real pc;
+  Real Em;
+  Real Er;
+  Real Ec;
+  Real mc;
+  Real mm;
+  Real pm;
+  Real c;
+  Real c4_1;
+  Real c4_2;
+  Real c4_3;
+  Real c5_4;
+  Real c5_5;
+  Real c5_6;
+  Real c5_7;
+  Real c9_8;
+  Real c9_9;
+  Real c9_10;
+  Real c4_11;
+  Real c4_12;
+  Real c4_13;
+  Real c5_14;
+  Real c5_15;
+  Real c5_16;
+  Real c5_17;
+  Real c9_18;
+  Real c9_19;
+  Real c9_20;
+  Real d1;
+  Real d2;
+End.
+
+Problem
+  (
+    \exists c4_1 \exists c4_2 \exists c4_3 \exists c5_4 \exists c5_5 \exists c5_6 \exists c5_7 \exists c9_8 \exists c9_9 \exists c9_10 \exists c4_11 \exists c4_12 \exists c4_13 \exists c5_14 \exists c5_15 \exists c5_16 \exists c5_17 \exists c9_18 \exists c9_19 \exists c9_20 \exists d1 \exists d2
+    (
+      c4_1 > 0 & c4_2 > 0 & c4_3 > 0 & c5_4 > 0 & c5_5 > 0 & c5_6 > 0 & c5_7 > 0 & c9_8 > 0 & c9_9 > 0 & c9_10 > 0 & c4_11 > 0 & c4_12 > 0 & c4_13 > 0 & c5_14 > 0 & c5_15 > 0 & c5_16 > 0 & c5_17 > 0 & c9_18 > 0 & c9_19 > 0 & c9_20 > 0 & d1 > 0 & d2 > 0
+      &
+      (
+        \forall mr \forall vm \forall vc \forall pc \forall Em \forall Er \forall Ec \forall mc \forall mm \forall pm \forall c
+        (
+          (
+            (mr > 0 & vm > 0 & vc > 0 & pc > 0 & Em > 0 & Er > 0 & Ec > 0 & mc > 0 & mm > 0 & pm > 0 & c > 0) &
+            & ( pm^2*(c^2 - vm^2) - mm^2*vm^2*c^2 = 0 )
+            & ( Em^2 - (mm*c^2)^2 - (pm*c)^2 = 0 )
+            & ( Er - mr*c^2 = 0 )
+            & ( pc - pm = 0 )
+            & ( vm - 4/5*c = 0 )
+            & ( mr - mm = 0 )
+            & ( ( c4_1 * pc^2*c^2 ) + ( c4_2 * Ec^2 ) + ( c4_3 * mc^2*c^2 ) = 0 )
+            & ( ( c5_4 * Em^2 ) + ( c5_5 * Em*Er ) + ( c5_6 * Er^2 ) + ( c5_7 * Ec^2 ) = 0 )
+            & ( ( c9_8 * vc^2*pc^2 ) + ( c9_9 * vc^2*mc^2*c^2 ) + ( c9_10 * pc^2*c^2 ) = 0 )
+            & ( ( c4_11 * pc^2*c^2 ) + ( c4_12 * Ec^2 ) + ( c4_13 * mc^2*c^2 ) = 0 )
+            & ( ( c5_14 * Em^2 ) + ( c5_15 * Em*Er ) + ( c5_16 * Er^2 ) + ( c5_17 * Ec^2 ) = 0 )
+            & ( ( c9_18 * vc^2*pc^2 ) + ( c9_19 * vc^2*mc^2*c^2 ) + ( c9_20 * pc^2*c^2 ) = 0 )
+          )
+          ->
+          (
+            ( d1 * mm^2*c^4 ) + ( d2 * pm^2*c^2 ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

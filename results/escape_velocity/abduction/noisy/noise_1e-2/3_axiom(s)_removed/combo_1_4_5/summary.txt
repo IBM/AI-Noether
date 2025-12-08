@@ -1,0 +1,69 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-2
+Removed axiom indices (1-based): [1, 4, 5]
+Removed axioms:
+  Eki - 1/2 * m * ve^2
+  Ugf - 0
+  Eki + Ugi - Ekf - Ugf
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 5
+Symbolic regression results: 15
+
+Regression results below threshold (5.0):
+  Axiom 1, Component 1:
+    Singular value: 2.2816435534078283
+    Polynomial: 1*Eki + (0.0315943-0.000226314i)*m*ve^2
+    Coefficient L2 error: 0.5315943163325938
+  Axiom 4, Component 1:
+    Singular value: 2.2426278518922462
+    Polynomial: 1*Ugf
+  Axiom 5, Component 1:
+    Singular value: 8.015602667302096e-17
+    Polynomial: 1*Ekf
+    Coefficient L2 error: 2.6457513110645907
+  Axiom 1, Component 2:
+    Singular value: 6.222794886552724e-92
+    Polynomial: 1*m*ve^2
+    Coefficient L2 error: 1.8027756377319946
+  Axiom 4, Component 2:
+    Singular value: 2.0445184081218004
+    Polynomial: 1*Ugf
+  Axiom 5, Component 2:
+    Singular value: 2.4313935878606175e-16
+    Polynomial: 1*Ekf
+    Coefficient L2 error: 2.6457513110645907
+  Axiom 1, Component 3:
+    Singular value: 2.116537089465356
+    Polynomial: 1*Eki + (-0.0186111+0.0022759i)*m*ve^2
+    Coefficient L2 error: 0.4813942552226659
+  Axiom 4, Component 3:
+    Singular value: 2.243359880013559
+    Polynomial: 1*Ugf
+  Axiom 5, Component 3:
+    Singular value: 4.638401675134751e-16
+    Polynomial: 1*Ekf
+    Coefficient L2 error: 2.6457513110645907
+  Axiom 1, Component 4:
+    Singular value: 1.2945826448278128e-91
+    Polynomial: 1*m*ve^2
+    Coefficient L2 error: 1.8027756377319946
+  Axiom 4, Component 4:
+    Singular value: 1.9938082962524881
+    Polynomial: 1*Ugf
+  Axiom 5, Component 4:
+    Singular value: 4.4321493440520554e-32
+    Polynomial: 1*Ugi
+    Coefficient L2 error: 1.7320508075688776
+  Axiom 1, Component 5:
+    Singular value: 2.583862202557045
+    Polynomial: 1*Eki + (-0.064377-0.00753867i)*m*ve^2
+    Coefficient L2 error: 0.435688239857194
+  Axiom 4, Component 5:
+    Singular value: 2.5494010088782386
+    Polynomial: 1*Ugf
+  Axiom 5, Component 5:
+    Singular value: 2.6836173706413864e-16
+    Polynomial: 1*Ekf
+    Coefficient L2 error: 2.64575131106459

@@ -1,0 +1,65 @@
+ArchiveEntry "time_dilation_target1_combo2_4_5"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real d;
+  Real dt;
+  Real dt0;
+  Real L;
+  Real c;
+  Real F0;
+  Real F;
+  Real v;
+  Real c2_1;
+  Real c2_2;
+  Real c2_3;
+  Real c4_4;
+  Real c4_5;
+  Real c5_6;
+  Real c5_7;
+  Real d1;
+  Real d2;
+  Real d3;
+End.
+
+Problem
+  (
+    \exists c2_1 \exists c2_2 \exists c2_3 \exists c4_4 \exists c4_5 \exists c5_6 \exists c5_7 \exists d1 \exists d2 \exists d3
+    (
+      c2_1 > 0 & c2_2 > 0 & c2_3 > 0 & c4_4 > 0 & c4_5 > 0 & c5_6 > 0 & c5_7 > 0 & d1 > 0 & d2 > 0 & d3 > 0
+      &
+      (
+        \forall d \forall dt \forall dt0 \forall L \forall c \forall F0 \forall F \forall v
+        (
+          (
+            (d > 0 & dt > 0 & dt0 > 0 & L > 0 & c > 0 & F0 > 0 & F > 0 & v > 0) &
+            & ( c*dt0 - 2*d = 0 )
+            & ( F0*dt0 - 1 = 0 )
+            & ( ( c2_1 * d^2 ) + ( c2_2 * dt^2*v^2 ) + ( c2_3 * L^2 ) = 0 )
+            & ( ( c4_4 * dt*F ) + ( c4_5 * 1 ) = 0 )
+            & ( ( c5_6 * dt*c ) + ( c5_7 * L ) = 0 )
+          )
+          ->
+          (
+            ( d1 * c^2*F0^2 ) + ( d2 * c^2*F^2 ) + ( d3 * F0^2*v^2 ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

@@ -1,0 +1,126 @@
+ArchiveEntry "hall_target1_combo2_3_9"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real Fm;
+  Real d;
+  Real v;
+  Real Fe;
+  Real E;
+  Real dt;
+  Real Q;
+  Real N;
+  Real V;
+  Real i;
+  Real n;
+  Real qe;
+  Real B;
+  Real h;
+  Real L;
+  Real UH;
+  Real c2_1;
+  Real c2_2;
+  Real c3_3;
+  Real c3_4;
+  Real c9_5;
+  Real c9_6;
+  Real c2_7;
+  Real c2_8;
+  Real c9_9;
+  Real c9_10;
+  Real c2_11;
+  Real c2_12;
+  Real c9_13;
+  Real c9_14;
+  Real c2_15;
+  Real c2_16;
+  Real c3_17;
+  Real c3_18;
+  Real c9_19;
+  Real c9_20;
+  Real c2_21;
+  Real c2_22;
+  Real c3_23;
+  Real c3_24;
+  Real c9_25;
+  Real c9_26;
+  Real c2_27;
+  Real c2_28;
+  Real c9_29;
+  Real c9_30;
+  Real c2_31;
+  Real c2_32;
+  Real c3_33;
+  Real c3_34;
+  Real c9_35;
+  Real c9_36;
+  Real c2_37;
+  Real c2_38;
+  Real c9_39;
+  Real c9_40;
+  Real d1;
+  Real d2;
+End.
+
+Problem
+  (
+    \exists c2_1 \exists c2_2 \exists c3_3 \exists c3_4 \exists c9_5 \exists c9_6 \exists c2_7 \exists c2_8 \exists c9_9 \exists c9_10 \exists c2_11 \exists c2_12 \exists c9_13 \exists c9_14 \exists c2_15 \exists c2_16 \exists c3_17 \exists c3_18 \exists c9_19 \exists c9_20 \exists c2_21 \exists c2_22 \exists c3_23 \exists c3_24 \exists c9_25 \exists c9_26 \exists c2_27 \exists c2_28 \exists c9_29 \exists c9_30 \exists c2_31 \exists c2_32 \exists c3_33 \exists c3_34 \exists c9_35 \exists c9_36 \exists c2_37 \exists c2_38 \exists c9_39 \exists c9_40 \exists d1 \exists d2
+    (
+      c2_1 > 0 & c2_2 > 0 & c3_3 > 0 & c3_4 > 0 & c9_5 > 0 & c9_6 > 0 & c2_7 > 0 & c2_8 > 0 & c9_9 > 0 & c9_10 > 0 & c2_11 > 0 & c2_12 > 0 & c9_13 > 0 & c9_14 > 0 & c2_15 > 0 & c2_16 > 0 & c3_17 > 0 & c3_18 > 0 & c9_19 > 0 & c9_20 > 0 & c2_21 > 0 & c2_22 > 0 & c3_23 > 0 & c3_24 > 0 & c9_25 > 0 & c9_26 > 0 & c2_27 > 0 & c2_28 > 0 & c9_29 > 0 & c9_30 > 0 & c2_31 > 0 & c2_32 > 0 & c3_33 > 0 & c3_34 > 0 & c9_35 > 0 & c9_36 > 0 & c2_37 > 0 & c2_38 > 0 & c9_39 > 0 & c9_40 > 0 & d1 > 0 & d2 > 0
+      &
+      (
+        \forall Fm \forall d \forall v \forall Fe \forall E \forall dt \forall Q \forall N \forall V \forall i \forall n \forall qe \forall B \forall h \forall L \forall UH
+        (
+          (
+            (Fm > 0 & d > 0 & v > 0 & Fe > 0 & E > 0 & dt > 0 & Q > 0 & N > 0 & V > 0 & i > 0 & n > 0 & qe > 0 & B > 0 & h > 0 & L > 0 & UH > 0) &
+            & ( Fm - qe*v*B = 0 )
+            & ( E*h - UH = 0 )
+            & ( v*dt - L = 0 )
+            & ( i*dt - Q = 0 )
+            & ( Q - N*qe = 0 )
+            & ( n*V - N = 0 )
+            & ( ( c2_1 * Fe ) + ( c2_2 * E*qe ) = 0 )
+            & ( ( c3_3 * Fm ) + ( c3_4 * Fe ) = 0 )
+            & ( ( c9_5 * d*h*L ) + ( c9_6 * V ) = 0 )
+            & ( ( c2_7 * Fe ) + ( c2_8 * E*qe ) = 0 )
+            & ( ( c9_9 * d*h*L ) + ( c9_10 * V ) = 0 )
+            & ( ( c2_11 * Fe ) + ( c2_12 * E*qe ) = 0 )
+            & ( ( c9_13 * d*h*L ) + ( c9_14 * V ) = 0 )
+            & ( ( c2_15 * Fe ) + ( c2_16 * E*qe ) = 0 )
+            & ( ( c3_17 * Fm ) + ( c3_18 * Fe ) = 0 )
+            & ( ( c9_19 * d*h*L ) + ( c9_20 * V ) = 0 )
+            & ( ( c2_21 * Fe ) + ( c2_22 * E*qe ) = 0 )
+            & ( ( c3_23 * Fm ) + ( c3_24 * Fe ) = 0 )
+            & ( ( c9_25 * d*h*L ) + ( c9_26 * V ) = 0 )
+            & ( ( c2_27 * Fe ) + ( c2_28 * E*qe ) = 0 )
+            & ( ( c9_29 * d*h*L ) + ( c9_30 * V ) = 0 )
+            & ( ( c2_31 * Fe ) + ( c2_32 * E*qe ) = 0 )
+            & ( ( c3_33 * Fm ) + ( c3_34 * Fe ) = 0 )
+            & ( ( c9_35 * d*h*L ) + ( c9_36 * V ) = 0 )
+            & ( ( c2_37 * Fe ) + ( c2_38 * E*qe ) = 0 )
+            & ( ( c9_39 * d*h*L ) + ( c9_40 * V ) = 0 )
+          )
+          ->
+          (
+            ( d1 * N*qe*UH ) + ( d2 * i*B*h*L ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

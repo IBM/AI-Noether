@@ -1,0 +1,61 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-2
+Removed axiom indices (1-based): [3, 8]
+Removed axioms:
+  Fm - Fe
+  n*V - N
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 6
+Symbolic regression results: 12
+
+Regression results below threshold (5.0):
+  Axiom 3, Component 1:
+    Singular value: 2.643443828425731e-32
+    Polynomial: (-0.00294924-0.000627156i)*Fm + 1*Fe
+    Coefficient L2 error: 2.2373885598482595
+  Axiom 8, Component 1:
+    Singular value: 1.4690828013323834e-31
+    Polynomial: 1*V*n
+    Coefficient L2 error: 2.23606797749979
+  Axiom 3, Component 2:
+    Singular value: 1.2880464346885469e-66
+    Polynomial: (-0.0172838+0.00455229i)*Fm + 1*Fe
+    Coefficient L2 error: 2.243855405471199
+  Axiom 8, Component 2:
+    Singular value: 3.2385865942124568
+    Polynomial: 1*N + (-0.0397358+0.00661476i)*V*n
+    Coefficient L2 error: 0.9602869406782523
+  Axiom 3, Component 3:
+    Singular value: 2.5244843938783172
+    Polynomial: (0.0261885+0.012779i)*Fm + 1*Fe
+    Coefficient L2 error: 2.224516143467843
+  Axiom 8, Component 3:
+    Singular value: 1.2249393999790356e-47
+    Polynomial: 1*N
+    Coefficient L2 error: 1.0
+  Axiom 3, Component 4:
+    Singular value: 1.136630410839098
+    Polynomial: (0.0074943+0.00205006i)*Fm + 1*Fe
+    Coefficient L2 error: 2.232727428363964
+  Axiom 8, Component 4:
+    Singular value: 1.2552685648396348e-61
+    Polynomial: 1*N
+    Coefficient L2 error: 1.0
+  Axiom 3, Component 5:
+    Singular value: 2.662394453523919
+    Polynomial: (0.0485084-0.0576816i)*Fm + 1*Fe
+    Coefficient L2 error: 2.2155503879265344
+  Axiom 8, Component 5:
+    Singular value: 9.199489131011001e-47
+    Polynomial: 1*V*n
+    Coefficient L2 error: 2.23606797749979
+  Axiom 3, Component 6:
+    Singular value: 4.892867114292285e-07
+    Polynomial: -0.809917*Fm + 1*Fe
+    Coefficient L2 error: 2.697369285257302
+  Axiom 8, Component 6:
+    Singular value: 1.0696388017984775
+    Polynomial: 1*N + (-0.00478535+0.000562607i)*V*n
+    Coefficient L2 error: 0.9952148100544904

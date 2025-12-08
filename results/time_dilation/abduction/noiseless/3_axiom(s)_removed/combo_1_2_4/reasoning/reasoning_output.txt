@@ -1,0 +1,526 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  dt0*F0-1
+  dt*c-2*L
+
+Targets:
+  c^2*F0^2-c^2*F^2-F0^2*v^2
+
+Require literal GB appearance: true
+Number of candidate sets to test: 99
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {dt0*F0-1}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {dt*c-2*L}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*c^2*F^2-c^2*F0+F0*v^2}
+  filtered: {dt0*c^2*F^2-c^2*F0+F0*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {dt0*F0-1, c^2*F0^2-c^2*F^2-F0^2*v^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*F0-1, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  filtered: {dt0*c^2*F^2-c^2*F0+F0*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*F0-1, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c-2*L, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  filtered: {dt0*c^2*F^2-c^2*F0+F0*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c-2*L, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  filtered: {dt0*c^2*F^2-c^2*F0+F0*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*F0-1, c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*F0-1, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*F0-1, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c-2*L, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c-2*L, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*c-2*L, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*F0-1, c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt0*F0-1, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*c-2*L, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c-2*L, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  filtered: {dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  SAVED: true
+  STRONG: true
+
+=== Summary ===
+SAVED_COMBOS:
+  {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+
+STRONG_CANDIDATES:
+  {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}
+  {dt0*c^2*F^2-c^2*F0+F0*v^2, dt*F0*v^2+2*dt0*L*c*F^2-2*L*c*F0, dt*F0^2*v^2-2*L*c*F0^2+2*L*c*F^2, dt^2*F0*v^2+4*dt0*L^2*F^2-4*L^2*F0}

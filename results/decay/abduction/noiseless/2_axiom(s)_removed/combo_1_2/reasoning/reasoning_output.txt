@@ -1,0 +1,86 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  Ev-pv
+  -Ev-Emu+Ep
+  -pmu^2+Emu^2-mmu^2
+
+Targets:
+  2*pv*mp-mp^2+mmu^2
+
+Require literal GB appearance: true
+Number of candidate sets to test: 15
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {Emu-Ep+pv}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ev-pv}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {2*pv*mp-mp^2+mmu^2}
+  filtered: {2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {pmu^2-Ep^2+2*Ep*pv-pv^2+mmu^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Emu-Ep+pv, Ev-pv}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Emu-Ep+pv, 2*pv*mp-mp^2+mmu^2}
+  filtered: {2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Emu-Ep+pv, pmu^2-Ep^2+2*Ep*pv-pv^2+mmu^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ev-pv, 2*pv*mp-mp^2+mmu^2}
+  filtered: {2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ev-pv, pmu^2-Ep^2+2*Ep*pv-pv^2+mmu^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {2*pv*mp-mp^2+mmu^2, pmu^2-Ep^2+2*Ep*pv-pv^2+mmu^2}
+  filtered: {2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Emu-Ep+pv, Ev-pv, 2*pv*mp-mp^2+mmu^2}
+  filtered: {2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Emu-Ep+pv, Ev-pv, pmu^2-Ep^2+2*Ep*pv-pv^2+mmu^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Emu-Ep+pv, 2*pv*mp-mp^2+mmu^2, pmu^2-Ep^2+2*Ep*pv-pv^2+mmu^2}
+  filtered: {2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ev-pv, 2*pv*mp-mp^2+mmu^2, pmu^2-Ep^2+2*Ep*pv-pv^2+mmu^2}
+  filtered: {2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+=== Summary ===
+SAVED_COMBOS:
+  {2*pv*mp-mp^2+mmu^2}
+
+STRONG_CANDIDATES:
+  {2*pv*mp-mp^2+mmu^2}

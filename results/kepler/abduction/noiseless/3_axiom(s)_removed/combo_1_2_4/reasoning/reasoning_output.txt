@@ -1,0 +1,291 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  Fc-w^2*m2*d2
+  w*p-1
+
+Targets:
+  -m1*d1*d2^2+m1*m2*p^2-d1^2*m2*d2-2*d1*m2*d2^2
+
+Require literal GB appearance: true
+Number of candidate sets to test: 57
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {w*p-1}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Fc*p^2-m2*d2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-Fc*p+w*m2*d2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  filtered: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, Fc*p^2-m2*d2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {w*p-1, -Fc*p+w*m2*d2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {w*p-1, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  filtered: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {w*p-1, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Fc*p^2-m2*d2, -Fc*p+w*m2*d2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Fc*p^2-m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  filtered: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Fc*p^2-m2*d2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-Fc*p+w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-Fc*p+w*m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  filtered: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-Fc*p+w*m2*d2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, Fc*p^2-m2*d2, -Fc*p+w*m2*d2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {w*p-1, Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, Fc*p^2-m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  filtered: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {w*p-1, Fc*p^2-m2*d2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, -Fc*p+w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, -Fc*p+w*m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  filtered: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {w*p-1, -Fc*p+w*m2*d2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Fc*p^2-m2*d2, -Fc*p+w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Fc*p^2-m2*d2, -Fc*p+w*m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  filtered: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Fc*p^2-m2*d2, -Fc*p+w*m2*d2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Fc*p^2-m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-Fc*p+w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-Fc*p+w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-Fc*p+w*m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, Fc*p^2-m2*d2, -Fc*p+w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, Fc*p^2-m2*d2, -Fc*p+w*m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  filtered: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {w*p-1, Fc*p^2-m2*d2, -Fc*p+w*m2*d2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, Fc*p^2-m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, -Fc*p+w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, -Fc*p+w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, -Fc*p+w*m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w*p-1, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Fc*p^2-m2*d2, -Fc*p+w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Fc*p^2-m2*d2, -Fc*p+w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Fc*p^2-m2*d2, -Fc*p+w*m2*d2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Fc*p^2-m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-Fc*p+w*m2*d2, m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  filtered: {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2}
+  {Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p}
+  {Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+  {m1*d1*d2^2-m1*m2*p^2+d1^2*m2*d2+2*d1*m2*d2^2, Fc*d1^2*p+2*Fc*d1*d2*p+w*m1*d1*d2^2-m1*m2*p, Fc*m1*d1*d2+Fc*d1^2*m2+2*Fc*d1*m2*d2-m1*m2^2}
+
+STRONG_CANDIDATES:

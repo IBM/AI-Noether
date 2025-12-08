@@ -1,0 +1,58 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-2
+Removed axiom indices (1-based): [2, 3, 5]
+Removed axioms:
+  Em^2 - (mm*c^2)^2 - (pm*c)^2
+  Er - mr*c^2
+  2*Em*Er - Ec^2 + Em^2 + Er^2
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 5
+Symbolic regression results: 12
+
+Regression results below threshold (5.0):
+  Axiom 2, Component 1:
+    Singular value: 7.411447918588167e-33
+    Polynomial: (-5.43607e-05+6.50801e-06i)*mm^2*c^4 + 1*pm^2*c^2
+    Coefficient L2 error: 2.449467550637047
+  Axiom 3, Component 1:
+    Singular value: 7.101667338995969e-16
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 1.0
+  Axiom 5, Component 1:
+    Singular value: 1.8447349684751375e-27
+    Polynomial: 1*Ec^2
+    Coefficient L2 error: 1.9364916731037085
+  Axiom 2, Component 2:
+    Singular value: 3.507587705840223e-35
+    Polynomial: 1*mm^2*c^4 + (-0.442861+0.0102131i)*pm^2*c^2
+    Coefficient L2 error: 2.3044541006400583
+  Axiom 3, Component 2:
+    Singular value: 2.0269482279327417e-17
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 1.0
+  Axiom 2, Component 3:
+    Singular value: 3.462200786398361e-35
+    Polynomial: (-0.273471+0.265482i)*mm^2*c^4 + 1*pm^2*c^2
+    Coefficient L2 error: 2.366078142250019
+  Axiom 3, Component 3:
+    Singular value: 1.2278886607891903e-17
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 1.0
+  Axiom 5, Component 3:
+    Singular value: 1.7212959017072358
+    Polynomial: (-0.501332+0.0225913i)*Em^2 + 1*Em*Er + (-0.458076+0.00943783i)*Er^2 + (0.0534466+0.00395767i)*Ec^2
+    Coefficient L2 error: 1.4924789756365338
+  Axiom 2, Component 4:
+    Singular value: 1.4946544694260415e-34
+    Polynomial: 1*mm^2*c^4
+    Coefficient L2 error: 2.449489742783178
+  Axiom 3, Component 4:
+    Singular value: 2.44439411781428e-18
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 1.0
+  Axiom 5, Component 4:
+    Singular value: 2.078460743654147e-16
+    Polynomial: 1*Ec^2
+    Coefficient L2 error: 1.9364916731037085

@@ -1,0 +1,62 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-8
+Removed axiom indices (1-based): [3, 4, 6]
+Removed axioms:
+  Fm - Fe
+  E*h - UH
+  i*dt - Q
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 4
+Symbolic regression results: 12
+
+Regression results below threshold (5.0):
+  Axiom 3, Component 1:
+    Singular value: 2.75561376685393
+    Polynomial: (0.565144+0.0527336i)*Fm + 1*Fe
+    Coefficient L2 error: 2.04740834262195
+  Axiom 4, Component 1:
+    Singular value: 1.1270749279493457e-41
+    Polynomial: 1*E*h
+    Coefficient L2 error: 1.0
+  Axiom 6, Component 1:
+    Singular value: 2.194495881372196e-49
+    Polynomial: 1*Q
+    Coefficient L2 error: 2.23606797749979
+  Axiom 3, Component 2:
+    Singular value: 4.471255037331294
+    Polynomial: (0.0998802-0.0784354i)*Fm + 1*Fe
+    Coefficient L2 error: 2.1946224728355395
+  Axiom 4, Component 2:
+    Singular value: 3.2200923074926457
+    Polynomial: (-0.0555058-0.013166i)*E*h + 1*UH
+    Coefficient L2 error: 2.2614742625656166
+  Axiom 6, Component 2:
+    Singular value: 1.9077471433490047e-84
+    Polynomial: 1*Q
+    Coefficient L2 error: 2.23606797749979
+  Axiom 3, Component 3:
+    Singular value: 1.287823009188648e-45
+    Polynomial: 1*Fm
+    Coefficient L2 error: 1.0
+  Axiom 4, Component 3:
+    Singular value: 2.4952891789684384
+    Polynomial: (0.0723431-0.0516703i)*E*h + 1*UH
+    Coefficient L2 error: 2.2052703258694057
+  Axiom 6, Component 3:
+    Singular value: 1.1780110463673962e-52
+    Polynomial: 1*Q
+    Coefficient L2 error: 2.23606797749979
+  Axiom 3, Component 4:
+    Singular value: 1.4548090673246992
+    Polynomial: 1*Fm + (-0.0516231-0.0190512i)*Fe
+    Coefficient L2 error: 0.9485681981716585
+  Axiom 4, Component 4:
+    Singular value: 1.6022056494435646
+    Polynomial: (0.115966+0.00124739i)*E*h + 1*UH
+    Coefficient L2 error: 2.186668210741123
+  Axiom 6, Component 4:
+    Singular value: 1.236911648247953
+    Polynomial: (0.0109588+0.00477215i)*dt*i + 1*Q
+    Coefficient L2 error: 2.231193686854761

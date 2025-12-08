@@ -1,0 +1,144 @@
+-- AI-Noether: Reasoning Template (Noiseless)
+-- Tests if candidate axiom sets, when added to remaining axioms, prove targets
+
+needsPackage("PrimaryDecomposition", Reload => true)
+
+-- Ring definition
+R = QQ[mr, vm, vc, pc, Em, Er, Ec, mc, mm, pm, c, MonomialOrder => Lex];
+
+-- Input data
+remainingAxioms = toList([Em^2 - (mm*c^2)^2 - (pm*c)^2, Er - mr*c^2, Ec^2 - (mc*c)^2 - (pc*c)^2, 2*Em*Er - Ec^2 + Em^2 + Er^2, pc - pm, vm - 4/5*c, mr - mm, pc^2*(c^2 - vc^2) - mc^2*vc^2*c^2]);
+qList = toList([16*mm^2*c^4 - 9*pm^2*c^2]);
+k = #qList;
+
+-- Per-target variable partitions
+measuredPerTarget = {{mm, pm, c}};
+nonMeasuredPerTarget = {{mr, vm, vc, pc, Em, Er, Ec, mc}};
+
+-- Candidate axiom sets to test (list of lists)
+candidateSets = {{}, {c}, {pm}, {Ec}, {Er}, {Em}, {pc}, {vm}, {mr-mm}, {c, pm}, {c, Ec}, {c, Er}, {c, Em}, {c, pc}, {c, vm}, {c, mr-mm}, {pm, Ec}, {pm, Er}, {pm, Em}, {pm, pc}, {pm, vm}, {pm, mr-mm}, {Ec, Er}, {Ec, Em}, {Ec, pc}, {Ec, vm}, {Ec, mr-mm}, {Er, Em}, {Er, pc}, {Er, vm}, {Er, mr-mm}, {Em, pc}, {Em, vm}, {Em, mr-mm}, {pc, vm}, {pc, mr-mm}, {vm, mr-mm}, {c}, {Ec}, {Er}, {Em}, {pc-pm}, {vc}, {vm}, {mr-mm}, {c, Ec}, {c, Er}, {c, Em}, {c, pc-pm}, {c, vc}, {c, vm}, {c, mr-mm}, {Ec, Er}, {Ec, Em}, {Ec, pc-pm}, {Ec, vc}, {Ec, vm}, {Ec, mr-mm}, {Er, Em}, {Er, pc-pm}, {Er, vc}, {Er, vm}, {Er, mr-mm}, {Em, pc-pm}, {Em, vc}, {Em, vm}, {Em, mr-mm}, {pc-pm, vc}, {pc-pm, vm}, {pc-pm, mr-mm}, {vc, vm}, {vc, mr-mm}, {vm, mr-mm}, {8*Er-3*Ec}, {8*Em-5*Ec}, {pc-pm}, {5*vm-4*c}, {mr-mm}, {2*pm*c-Ec}, {4*mm*c-3*pm}, {2*Ec*mm-3*pm^2}, {mc^2-2*Ec*mm}, {9*vc^2*Ec+8*vc^2*mm-3*Ec}, {3*vc^2*c^2+vc^2-c^2}, {16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {8*Er-3*Ec, 8*Em-5*Ec}, {8*Er-3*Ec, pc-pm}, {8*Er-3*Ec, 5*vm-4*c}, {8*Er-3*Ec, mr-mm}, {8*Er-3*Ec, 2*pm*c-Ec}, {8*Er-3*Ec, 4*mm*c-3*pm}, {8*Er-3*Ec, 2*Ec*mm-3*pm^2}, {8*Er-3*Ec, mc^2-2*Ec*mm}, {8*Er-3*Ec, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {8*Er-3*Ec, 3*vc^2*c^2+vc^2-c^2}, {8*Er-3*Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {8*Em-5*Ec, pc-pm}, {8*Em-5*Ec, 5*vm-4*c}, {8*Em-5*Ec, mr-mm}, {8*Em-5*Ec, 2*pm*c-Ec}, {8*Em-5*Ec, 4*mm*c-3*pm}, {8*Em-5*Ec, 2*Ec*mm-3*pm^2}, {8*Em-5*Ec, mc^2-2*Ec*mm}, {8*Em-5*Ec, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {8*Em-5*Ec, 3*vc^2*c^2+vc^2-c^2}, {8*Em-5*Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {pc-pm, 5*vm-4*c}, {pc-pm, mr-mm}, {pc-pm, 2*pm*c-Ec}, {pc-pm, 4*mm*c-3*pm}, {pc-pm, 2*Ec*mm-3*pm^2}, {pc-pm, mc^2-2*Ec*mm}, {pc-pm, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {pc-pm, 3*vc^2*c^2+vc^2-c^2}, {pc-pm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {5*vm-4*c, mr-mm}, {5*vm-4*c, 2*pm*c-Ec}, {5*vm-4*c, 4*mm*c-3*pm}, {5*vm-4*c, 2*Ec*mm-3*pm^2}, {5*vm-4*c, mc^2-2*Ec*mm}, {5*vm-4*c, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {5*vm-4*c, 3*vc^2*c^2+vc^2-c^2}, {5*vm-4*c, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {mr-mm, 2*pm*c-Ec}, {mr-mm, 4*mm*c-3*pm}, {mr-mm, 2*Ec*mm-3*pm^2}, {mr-mm, mc^2-2*Ec*mm}, {mr-mm, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {mr-mm, 3*vc^2*c^2+vc^2-c^2}, {mr-mm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {2*pm*c-Ec, 4*mm*c-3*pm}, {2*pm*c-Ec, 2*Ec*mm-3*pm^2}, {2*pm*c-Ec, mc^2-2*Ec*mm}, {2*pm*c-Ec, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {2*pm*c-Ec, 3*vc^2*c^2+vc^2-c^2}, {2*pm*c-Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {4*mm*c-3*pm, 2*Ec*mm-3*pm^2}, {4*mm*c-3*pm, mc^2-2*Ec*mm}, {4*mm*c-3*pm, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {4*mm*c-3*pm, 3*vc^2*c^2+vc^2-c^2}, {4*mm*c-3*pm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {2*Ec*mm-3*pm^2, mc^2-2*Ec*mm}, {2*Ec*mm-3*pm^2, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {2*Ec*mm-3*pm^2, 3*vc^2*c^2+vc^2-c^2}, {2*Ec*mm-3*pm^2, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {mc^2-2*Ec*mm, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {mc^2-2*Ec*mm, 3*vc^2*c^2+vc^2-c^2}, {mc^2-2*Ec*mm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {9*vc^2*Ec+8*vc^2*mm-3*Ec, 3*vc^2*c^2+vc^2-c^2}, {9*vc^2*Ec+8*vc^2*mm-3*Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {3*vc^2*c^2+vc^2-c^2, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {pm}, {mm}, {mc}, {Ec}, {Er}, {Em}, {pc}, {5*vm-4*c}, {mr}, {pm, mm}, {pm, mc}, {pm, Ec}, {pm, Er}, {pm, Em}, {pm, pc}, {pm, 5*vm-4*c}, {pm, mr}, {mm, mc}, {mm, Ec}, {mm, Er}, {mm, Em}, {mm, pc}, {mm, 5*vm-4*c}, {mm, mr}, {mc, Ec}, {mc, Er}, {mc, Em}, {mc, pc}, {mc, 5*vm-4*c}, {mc, mr}, {Ec, Er}, {Ec, Em}, {Ec, pc}, {Ec, 5*vm-4*c}, {Ec, mr}, {Er, Em}, {Er, pc}, {Er, 5*vm-4*c}, {Er, mr}, {Em, pc}, {Em, 5*vm-4*c}, {Em, mr}, {pc, 5*vm-4*c}, {pc, mr}, {5*vm-4*c, mr}, {8*Er+3*Ec}, {8*Em+5*Ec}, {pc-pm}, {5*vm-4*c}, {mr-mm}, {2*pm*c+Ec}, {4*mm*c-3*pm}, {2*Ec*mm+3*pm^2}, {mc^2+2*Ec*mm}, {9*vc^2*Ec-8*vc^2*mm-3*Ec}, {3*vc^2*c^2+vc^2-c^2}, {16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {8*Er+3*Ec, 8*Em+5*Ec}, {8*Er+3*Ec, pc-pm}, {8*Er+3*Ec, 5*vm-4*c}, {8*Er+3*Ec, mr-mm}, {8*Er+3*Ec, 2*pm*c+Ec}, {8*Er+3*Ec, 4*mm*c-3*pm}, {8*Er+3*Ec, 2*Ec*mm+3*pm^2}, {8*Er+3*Ec, mc^2+2*Ec*mm}, {8*Er+3*Ec, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {8*Er+3*Ec, 3*vc^2*c^2+vc^2-c^2}, {8*Er+3*Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {8*Em+5*Ec, pc-pm}, {8*Em+5*Ec, 5*vm-4*c}, {8*Em+5*Ec, mr-mm}, {8*Em+5*Ec, 2*pm*c+Ec}, {8*Em+5*Ec, 4*mm*c-3*pm}, {8*Em+5*Ec, 2*Ec*mm+3*pm^2}, {8*Em+5*Ec, mc^2+2*Ec*mm}, {8*Em+5*Ec, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {8*Em+5*Ec, 3*vc^2*c^2+vc^2-c^2}, {8*Em+5*Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {pc-pm, 5*vm-4*c}, {pc-pm, mr-mm}, {pc-pm, 2*pm*c+Ec}, {pc-pm, 4*mm*c-3*pm}, {pc-pm, 2*Ec*mm+3*pm^2}, {pc-pm, mc^2+2*Ec*mm}, {pc-pm, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {pc-pm, 3*vc^2*c^2+vc^2-c^2}, {pc-pm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {5*vm-4*c, mr-mm}, {5*vm-4*c, 2*pm*c+Ec}, {5*vm-4*c, 4*mm*c-3*pm}, {5*vm-4*c, 2*Ec*mm+3*pm^2}, {5*vm-4*c, mc^2+2*Ec*mm}, {5*vm-4*c, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {5*vm-4*c, 3*vc^2*c^2+vc^2-c^2}, {5*vm-4*c, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {mr-mm, 2*pm*c+Ec}, {mr-mm, 4*mm*c-3*pm}, {mr-mm, 2*Ec*mm+3*pm^2}, {mr-mm, mc^2+2*Ec*mm}, {mr-mm, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {mr-mm, 3*vc^2*c^2+vc^2-c^2}, {mr-mm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {2*pm*c+Ec, 4*mm*c-3*pm}, {2*pm*c+Ec, 2*Ec*mm+3*pm^2}, {2*pm*c+Ec, mc^2+2*Ec*mm}, {2*pm*c+Ec, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {2*pm*c+Ec, 3*vc^2*c^2+vc^2-c^2}, {2*pm*c+Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {4*mm*c-3*pm, 2*Ec*mm+3*pm^2}, {4*mm*c-3*pm, mc^2+2*Ec*mm}, {4*mm*c-3*pm, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {4*mm*c-3*pm, 3*vc^2*c^2+vc^2-c^2}, {4*mm*c-3*pm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {2*Ec*mm+3*pm^2, mc^2+2*Ec*mm}, {2*Ec*mm+3*pm^2, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {2*Ec*mm+3*pm^2, 3*vc^2*c^2+vc^2-c^2}, {2*Ec*mm+3*pm^2, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {mc^2+2*Ec*mm, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {mc^2+2*Ec*mm, 3*vc^2*c^2+vc^2-c^2}, {mc^2+2*Ec*mm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {9*vc^2*Ec-8*vc^2*mm-3*Ec, 3*vc^2*c^2+vc^2-c^2}, {9*vc^2*Ec-8*vc^2*mm-3*Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {3*vc^2*c^2+vc^2-c^2, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {2*Er-3*Ec}, {2*Em+5*Ec}, {pc-pm}, {5*vm-4*c}, {mr-mm}, {pm*c-2*Ec}, {4*mm*c-3*pm}, {8*Ec*mm-3*pm^2}, {mc^2+2*Ec*mm}, {9*vc^2*Ec-8*vc^2*mm+12*Ec}, {3*vc^2*c^2-4*vc^2+4*c^2}, {64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {2*Er-3*Ec, 2*Em+5*Ec}, {2*Er-3*Ec, pc-pm}, {2*Er-3*Ec, 5*vm-4*c}, {2*Er-3*Ec, mr-mm}, {2*Er-3*Ec, pm*c-2*Ec}, {2*Er-3*Ec, 4*mm*c-3*pm}, {2*Er-3*Ec, 8*Ec*mm-3*pm^2}, {2*Er-3*Ec, mc^2+2*Ec*mm}, {2*Er-3*Ec, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {2*Er-3*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {2*Er-3*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {2*Em+5*Ec, pc-pm}, {2*Em+5*Ec, 5*vm-4*c}, {2*Em+5*Ec, mr-mm}, {2*Em+5*Ec, pm*c-2*Ec}, {2*Em+5*Ec, 4*mm*c-3*pm}, {2*Em+5*Ec, 8*Ec*mm-3*pm^2}, {2*Em+5*Ec, mc^2+2*Ec*mm}, {2*Em+5*Ec, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {2*Em+5*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {2*Em+5*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {pc-pm, 5*vm-4*c}, {pc-pm, mr-mm}, {pc-pm, pm*c-2*Ec}, {pc-pm, 4*mm*c-3*pm}, {pc-pm, 8*Ec*mm-3*pm^2}, {pc-pm, mc^2+2*Ec*mm}, {pc-pm, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {pc-pm, 3*vc^2*c^2-4*vc^2+4*c^2}, {pc-pm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {5*vm-4*c, mr-mm}, {5*vm-4*c, pm*c-2*Ec}, {5*vm-4*c, 4*mm*c-3*pm}, {5*vm-4*c, 8*Ec*mm-3*pm^2}, {5*vm-4*c, mc^2+2*Ec*mm}, {5*vm-4*c, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {5*vm-4*c, 3*vc^2*c^2-4*vc^2+4*c^2}, {5*vm-4*c, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {mr-mm, pm*c-2*Ec}, {mr-mm, 4*mm*c-3*pm}, {mr-mm, 8*Ec*mm-3*pm^2}, {mr-mm, mc^2+2*Ec*mm}, {mr-mm, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {mr-mm, 3*vc^2*c^2-4*vc^2+4*c^2}, {mr-mm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {pm*c-2*Ec, 4*mm*c-3*pm}, {pm*c-2*Ec, 8*Ec*mm-3*pm^2}, {pm*c-2*Ec, mc^2+2*Ec*mm}, {pm*c-2*Ec, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {pm*c-2*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {pm*c-2*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {4*mm*c-3*pm, 8*Ec*mm-3*pm^2}, {4*mm*c-3*pm, mc^2+2*Ec*mm}, {4*mm*c-3*pm, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {4*mm*c-3*pm, 3*vc^2*c^2-4*vc^2+4*c^2}, {4*mm*c-3*pm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {8*Ec*mm-3*pm^2, mc^2+2*Ec*mm}, {8*Ec*mm-3*pm^2, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {8*Ec*mm-3*pm^2, 3*vc^2*c^2-4*vc^2+4*c^2}, {8*Ec*mm-3*pm^2, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {mc^2+2*Ec*mm, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {mc^2+2*Ec*mm, 3*vc^2*c^2-4*vc^2+4*c^2}, {mc^2+2*Ec*mm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {9*vc^2*Ec-8*vc^2*mm+12*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {9*vc^2*Ec-8*vc^2*mm+12*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {3*vc^2*c^2-4*vc^2+4*c^2, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {2*Er+3*Ec}, {2*Em-5*Ec}, {pc-pm}, {5*vm-4*c}, {mr-mm}, {pm*c+2*Ec}, {4*mm*c-3*pm}, {8*Ec*mm+3*pm^2}, {mc^2-2*Ec*mm}, {9*vc^2*Ec+8*vc^2*mm+12*Ec}, {3*vc^2*c^2-4*vc^2+4*c^2}, {64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {2*Er+3*Ec, 2*Em-5*Ec}, {2*Er+3*Ec, pc-pm}, {2*Er+3*Ec, 5*vm-4*c}, {2*Er+3*Ec, mr-mm}, {2*Er+3*Ec, pm*c+2*Ec}, {2*Er+3*Ec, 4*mm*c-3*pm}, {2*Er+3*Ec, 8*Ec*mm+3*pm^2}, {2*Er+3*Ec, mc^2-2*Ec*mm}, {2*Er+3*Ec, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {2*Er+3*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {2*Er+3*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {2*Em-5*Ec, pc-pm}, {2*Em-5*Ec, 5*vm-4*c}, {2*Em-5*Ec, mr-mm}, {2*Em-5*Ec, pm*c+2*Ec}, {2*Em-5*Ec, 4*mm*c-3*pm}, {2*Em-5*Ec, 8*Ec*mm+3*pm^2}, {2*Em-5*Ec, mc^2-2*Ec*mm}, {2*Em-5*Ec, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {2*Em-5*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {2*Em-5*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {pc-pm, 5*vm-4*c}, {pc-pm, mr-mm}, {pc-pm, pm*c+2*Ec}, {pc-pm, 4*mm*c-3*pm}, {pc-pm, 8*Ec*mm+3*pm^2}, {pc-pm, mc^2-2*Ec*mm}, {pc-pm, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {pc-pm, 3*vc^2*c^2-4*vc^2+4*c^2}, {pc-pm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {5*vm-4*c, mr-mm}, {5*vm-4*c, pm*c+2*Ec}, {5*vm-4*c, 4*mm*c-3*pm}, {5*vm-4*c, 8*Ec*mm+3*pm^2}, {5*vm-4*c, mc^2-2*Ec*mm}, {5*vm-4*c, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {5*vm-4*c, 3*vc^2*c^2-4*vc^2+4*c^2}, {5*vm-4*c, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {mr-mm, pm*c+2*Ec}, {mr-mm, 4*mm*c-3*pm}, {mr-mm, 8*Ec*mm+3*pm^2}, {mr-mm, mc^2-2*Ec*mm}, {mr-mm, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {mr-mm, 3*vc^2*c^2-4*vc^2+4*c^2}, {mr-mm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {pm*c+2*Ec, 4*mm*c-3*pm}, {pm*c+2*Ec, 8*Ec*mm+3*pm^2}, {pm*c+2*Ec, mc^2-2*Ec*mm}, {pm*c+2*Ec, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {pm*c+2*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {pm*c+2*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {4*mm*c-3*pm, 8*Ec*mm+3*pm^2}, {4*mm*c-3*pm, mc^2-2*Ec*mm}, {4*mm*c-3*pm, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {4*mm*c-3*pm, 3*vc^2*c^2-4*vc^2+4*c^2}, {4*mm*c-3*pm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {8*Ec*mm+3*pm^2, mc^2-2*Ec*mm}, {8*Ec*mm+3*pm^2, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {8*Ec*mm+3*pm^2, 3*vc^2*c^2-4*vc^2+4*c^2}, {8*Ec*mm+3*pm^2, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {mc^2-2*Ec*mm, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {mc^2-2*Ec*mm, 3*vc^2*c^2-4*vc^2+4*c^2}, {mc^2-2*Ec*mm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {9*vc^2*Ec+8*vc^2*mm+12*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {9*vc^2*Ec+8*vc^2*mm+12*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {3*vc^2*c^2-4*vc^2+4*c^2, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {8*Er-3*Ec}, {8*Em-5*Ec}, {pc-pm}, {5*vm-4*c}, {mr-mm}, {2*pm*c+Ec}, {4*mm*c+3*pm}, {2*Ec*mm-3*pm^2}, {mc^2-2*Ec*mm}, {9*vc^2*Ec+8*vc^2*mm-3*Ec}, {3*vc^2*c^2+vc^2-c^2}, {16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {8*Er-3*Ec, 8*Em-5*Ec}, {8*Er-3*Ec, pc-pm}, {8*Er-3*Ec, 5*vm-4*c}, {8*Er-3*Ec, mr-mm}, {8*Er-3*Ec, 2*pm*c+Ec}, {8*Er-3*Ec, 4*mm*c+3*pm}, {8*Er-3*Ec, 2*Ec*mm-3*pm^2}, {8*Er-3*Ec, mc^2-2*Ec*mm}, {8*Er-3*Ec, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {8*Er-3*Ec, 3*vc^2*c^2+vc^2-c^2}, {8*Er-3*Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {8*Em-5*Ec, pc-pm}, {8*Em-5*Ec, 5*vm-4*c}, {8*Em-5*Ec, mr-mm}, {8*Em-5*Ec, 2*pm*c+Ec}, {8*Em-5*Ec, 4*mm*c+3*pm}, {8*Em-5*Ec, 2*Ec*mm-3*pm^2}, {8*Em-5*Ec, mc^2-2*Ec*mm}, {8*Em-5*Ec, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {8*Em-5*Ec, 3*vc^2*c^2+vc^2-c^2}, {8*Em-5*Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {pc-pm, 5*vm-4*c}, {pc-pm, mr-mm}, {pc-pm, 2*pm*c+Ec}, {pc-pm, 4*mm*c+3*pm}, {pc-pm, 2*Ec*mm-3*pm^2}, {pc-pm, mc^2-2*Ec*mm}, {pc-pm, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {pc-pm, 3*vc^2*c^2+vc^2-c^2}, {pc-pm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {5*vm-4*c, mr-mm}, {5*vm-4*c, 2*pm*c+Ec}, {5*vm-4*c, 4*mm*c+3*pm}, {5*vm-4*c, 2*Ec*mm-3*pm^2}, {5*vm-4*c, mc^2-2*Ec*mm}, {5*vm-4*c, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {5*vm-4*c, 3*vc^2*c^2+vc^2-c^2}, {5*vm-4*c, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {mr-mm, 2*pm*c+Ec}, {mr-mm, 4*mm*c+3*pm}, {mr-mm, 2*Ec*mm-3*pm^2}, {mr-mm, mc^2-2*Ec*mm}, {mr-mm, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {mr-mm, 3*vc^2*c^2+vc^2-c^2}, {mr-mm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {2*pm*c+Ec, 4*mm*c+3*pm}, {2*pm*c+Ec, 2*Ec*mm-3*pm^2}, {2*pm*c+Ec, mc^2-2*Ec*mm}, {2*pm*c+Ec, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {2*pm*c+Ec, 3*vc^2*c^2+vc^2-c^2}, {2*pm*c+Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {4*mm*c+3*pm, 2*Ec*mm-3*pm^2}, {4*mm*c+3*pm, mc^2-2*Ec*mm}, {4*mm*c+3*pm, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {4*mm*c+3*pm, 3*vc^2*c^2+vc^2-c^2}, {4*mm*c+3*pm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {2*Ec*mm-3*pm^2, mc^2-2*Ec*mm}, {2*Ec*mm-3*pm^2, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {2*Ec*mm-3*pm^2, 3*vc^2*c^2+vc^2-c^2}, {2*Ec*mm-3*pm^2, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {mc^2-2*Ec*mm, 9*vc^2*Ec+8*vc^2*mm-3*Ec}, {mc^2-2*Ec*mm, 3*vc^2*c^2+vc^2-c^2}, {mc^2-2*Ec*mm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {9*vc^2*Ec+8*vc^2*mm-3*Ec, 3*vc^2*c^2+vc^2-c^2}, {9*vc^2*Ec+8*vc^2*mm-3*Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {3*vc^2*c^2+vc^2-c^2, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {8*Er+3*Ec}, {8*Em+5*Ec}, {pc-pm}, {5*vm-4*c}, {mr-mm}, {2*pm*c-Ec}, {4*mm*c+3*pm}, {2*Ec*mm+3*pm^2}, {mc^2+2*Ec*mm}, {9*vc^2*Ec-8*vc^2*mm-3*Ec}, {3*vc^2*c^2+vc^2-c^2}, {16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {8*Er+3*Ec, 8*Em+5*Ec}, {8*Er+3*Ec, pc-pm}, {8*Er+3*Ec, 5*vm-4*c}, {8*Er+3*Ec, mr-mm}, {8*Er+3*Ec, 2*pm*c-Ec}, {8*Er+3*Ec, 4*mm*c+3*pm}, {8*Er+3*Ec, 2*Ec*mm+3*pm^2}, {8*Er+3*Ec, mc^2+2*Ec*mm}, {8*Er+3*Ec, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {8*Er+3*Ec, 3*vc^2*c^2+vc^2-c^2}, {8*Er+3*Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {8*Em+5*Ec, pc-pm}, {8*Em+5*Ec, 5*vm-4*c}, {8*Em+5*Ec, mr-mm}, {8*Em+5*Ec, 2*pm*c-Ec}, {8*Em+5*Ec, 4*mm*c+3*pm}, {8*Em+5*Ec, 2*Ec*mm+3*pm^2}, {8*Em+5*Ec, mc^2+2*Ec*mm}, {8*Em+5*Ec, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {8*Em+5*Ec, 3*vc^2*c^2+vc^2-c^2}, {8*Em+5*Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {pc-pm, 5*vm-4*c}, {pc-pm, mr-mm}, {pc-pm, 2*pm*c-Ec}, {pc-pm, 4*mm*c+3*pm}, {pc-pm, 2*Ec*mm+3*pm^2}, {pc-pm, mc^2+2*Ec*mm}, {pc-pm, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {pc-pm, 3*vc^2*c^2+vc^2-c^2}, {pc-pm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {5*vm-4*c, mr-mm}, {5*vm-4*c, 2*pm*c-Ec}, {5*vm-4*c, 4*mm*c+3*pm}, {5*vm-4*c, 2*Ec*mm+3*pm^2}, {5*vm-4*c, mc^2+2*Ec*mm}, {5*vm-4*c, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {5*vm-4*c, 3*vc^2*c^2+vc^2-c^2}, {5*vm-4*c, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {mr-mm, 2*pm*c-Ec}, {mr-mm, 4*mm*c+3*pm}, {mr-mm, 2*Ec*mm+3*pm^2}, {mr-mm, mc^2+2*Ec*mm}, {mr-mm, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {mr-mm, 3*vc^2*c^2+vc^2-c^2}, {mr-mm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {2*pm*c-Ec, 4*mm*c+3*pm}, {2*pm*c-Ec, 2*Ec*mm+3*pm^2}, {2*pm*c-Ec, mc^2+2*Ec*mm}, {2*pm*c-Ec, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {2*pm*c-Ec, 3*vc^2*c^2+vc^2-c^2}, {2*pm*c-Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {4*mm*c+3*pm, 2*Ec*mm+3*pm^2}, {4*mm*c+3*pm, mc^2+2*Ec*mm}, {4*mm*c+3*pm, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {4*mm*c+3*pm, 3*vc^2*c^2+vc^2-c^2}, {4*mm*c+3*pm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {2*Ec*mm+3*pm^2, mc^2+2*Ec*mm}, {2*Ec*mm+3*pm^2, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {2*Ec*mm+3*pm^2, 3*vc^2*c^2+vc^2-c^2}, {2*Ec*mm+3*pm^2, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {mc^2+2*Ec*mm, 9*vc^2*Ec-8*vc^2*mm-3*Ec}, {mc^2+2*Ec*mm, 3*vc^2*c^2+vc^2-c^2}, {mc^2+2*Ec*mm, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {9*vc^2*Ec-8*vc^2*mm-3*Ec, 3*vc^2*c^2+vc^2-c^2}, {9*vc^2*Ec-8*vc^2*mm-3*Ec, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {3*vc^2*c^2+vc^2-c^2, 16*vc^2*mm^2+27*vc^2*pm^2-9*pm^2}, {2*Er-3*Ec}, {2*Em+5*Ec}, {pc-pm}, {5*vm-4*c}, {mr-mm}, {pm*c+2*Ec}, {4*mm*c+3*pm}, {8*Ec*mm-3*pm^2}, {mc^2+2*Ec*mm}, {9*vc^2*Ec-8*vc^2*mm+12*Ec}, {3*vc^2*c^2-4*vc^2+4*c^2}, {64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {2*Er-3*Ec, 2*Em+5*Ec}, {2*Er-3*Ec, pc-pm}, {2*Er-3*Ec, 5*vm-4*c}, {2*Er-3*Ec, mr-mm}, {2*Er-3*Ec, pm*c+2*Ec}, {2*Er-3*Ec, 4*mm*c+3*pm}, {2*Er-3*Ec, 8*Ec*mm-3*pm^2}, {2*Er-3*Ec, mc^2+2*Ec*mm}, {2*Er-3*Ec, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {2*Er-3*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {2*Er-3*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {2*Em+5*Ec, pc-pm}, {2*Em+5*Ec, 5*vm-4*c}, {2*Em+5*Ec, mr-mm}, {2*Em+5*Ec, pm*c+2*Ec}, {2*Em+5*Ec, 4*mm*c+3*pm}, {2*Em+5*Ec, 8*Ec*mm-3*pm^2}, {2*Em+5*Ec, mc^2+2*Ec*mm}, {2*Em+5*Ec, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {2*Em+5*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {2*Em+5*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {pc-pm, 5*vm-4*c}, {pc-pm, mr-mm}, {pc-pm, pm*c+2*Ec}, {pc-pm, 4*mm*c+3*pm}, {pc-pm, 8*Ec*mm-3*pm^2}, {pc-pm, mc^2+2*Ec*mm}, {pc-pm, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {pc-pm, 3*vc^2*c^2-4*vc^2+4*c^2}, {pc-pm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {5*vm-4*c, mr-mm}, {5*vm-4*c, pm*c+2*Ec}, {5*vm-4*c, 4*mm*c+3*pm}, {5*vm-4*c, 8*Ec*mm-3*pm^2}, {5*vm-4*c, mc^2+2*Ec*mm}, {5*vm-4*c, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {5*vm-4*c, 3*vc^2*c^2-4*vc^2+4*c^2}, {5*vm-4*c, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {mr-mm, pm*c+2*Ec}, {mr-mm, 4*mm*c+3*pm}, {mr-mm, 8*Ec*mm-3*pm^2}, {mr-mm, mc^2+2*Ec*mm}, {mr-mm, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {mr-mm, 3*vc^2*c^2-4*vc^2+4*c^2}, {mr-mm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {pm*c+2*Ec, 4*mm*c+3*pm}, {pm*c+2*Ec, 8*Ec*mm-3*pm^2}, {pm*c+2*Ec, mc^2+2*Ec*mm}, {pm*c+2*Ec, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {pm*c+2*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {pm*c+2*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {4*mm*c+3*pm, 8*Ec*mm-3*pm^2}, {4*mm*c+3*pm, mc^2+2*Ec*mm}, {4*mm*c+3*pm, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {4*mm*c+3*pm, 3*vc^2*c^2-4*vc^2+4*c^2}, {4*mm*c+3*pm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {8*Ec*mm-3*pm^2, mc^2+2*Ec*mm}, {8*Ec*mm-3*pm^2, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {8*Ec*mm-3*pm^2, 3*vc^2*c^2-4*vc^2+4*c^2}, {8*Ec*mm-3*pm^2, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {mc^2+2*Ec*mm, 9*vc^2*Ec-8*vc^2*mm+12*Ec}, {mc^2+2*Ec*mm, 3*vc^2*c^2-4*vc^2+4*c^2}, {mc^2+2*Ec*mm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {9*vc^2*Ec-8*vc^2*mm+12*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {9*vc^2*Ec-8*vc^2*mm+12*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {3*vc^2*c^2-4*vc^2+4*c^2, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {2*Er+3*Ec}, {2*Em-5*Ec}, {pc-pm}, {5*vm-4*c}, {mr-mm}, {pm*c-2*Ec}, {4*mm*c+3*pm}, {8*Ec*mm+3*pm^2}, {mc^2-2*Ec*mm}, {9*vc^2*Ec+8*vc^2*mm+12*Ec}, {3*vc^2*c^2-4*vc^2+4*c^2}, {64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {2*Er+3*Ec, 2*Em-5*Ec}, {2*Er+3*Ec, pc-pm}, {2*Er+3*Ec, 5*vm-4*c}, {2*Er+3*Ec, mr-mm}, {2*Er+3*Ec, pm*c-2*Ec}, {2*Er+3*Ec, 4*mm*c+3*pm}, {2*Er+3*Ec, 8*Ec*mm+3*pm^2}, {2*Er+3*Ec, mc^2-2*Ec*mm}, {2*Er+3*Ec, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {2*Er+3*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {2*Er+3*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {2*Em-5*Ec, pc-pm}, {2*Em-5*Ec, 5*vm-4*c}, {2*Em-5*Ec, mr-mm}, {2*Em-5*Ec, pm*c-2*Ec}, {2*Em-5*Ec, 4*mm*c+3*pm}, {2*Em-5*Ec, 8*Ec*mm+3*pm^2}, {2*Em-5*Ec, mc^2-2*Ec*mm}, {2*Em-5*Ec, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {2*Em-5*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {2*Em-5*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {pc-pm, 5*vm-4*c}, {pc-pm, mr-mm}, {pc-pm, pm*c-2*Ec}, {pc-pm, 4*mm*c+3*pm}, {pc-pm, 8*Ec*mm+3*pm^2}, {pc-pm, mc^2-2*Ec*mm}, {pc-pm, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {pc-pm, 3*vc^2*c^2-4*vc^2+4*c^2}, {pc-pm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {5*vm-4*c, mr-mm}, {5*vm-4*c, pm*c-2*Ec}, {5*vm-4*c, 4*mm*c+3*pm}, {5*vm-4*c, 8*Ec*mm+3*pm^2}, {5*vm-4*c, mc^2-2*Ec*mm}, {5*vm-4*c, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {5*vm-4*c, 3*vc^2*c^2-4*vc^2+4*c^2}, {5*vm-4*c, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {mr-mm, pm*c-2*Ec}, {mr-mm, 4*mm*c+3*pm}, {mr-mm, 8*Ec*mm+3*pm^2}, {mr-mm, mc^2-2*Ec*mm}, {mr-mm, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {mr-mm, 3*vc^2*c^2-4*vc^2+4*c^2}, {mr-mm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {pm*c-2*Ec, 4*mm*c+3*pm}, {pm*c-2*Ec, 8*Ec*mm+3*pm^2}, {pm*c-2*Ec, mc^2-2*Ec*mm}, {pm*c-2*Ec, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {pm*c-2*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {pm*c-2*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {4*mm*c+3*pm, 8*Ec*mm+3*pm^2}, {4*mm*c+3*pm, mc^2-2*Ec*mm}, {4*mm*c+3*pm, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {4*mm*c+3*pm, 3*vc^2*c^2-4*vc^2+4*c^2}, {4*mm*c+3*pm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {8*Ec*mm+3*pm^2, mc^2-2*Ec*mm}, {8*Ec*mm+3*pm^2, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {8*Ec*mm+3*pm^2, 3*vc^2*c^2-4*vc^2+4*c^2}, {8*Ec*mm+3*pm^2, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {mc^2-2*Ec*mm, 9*vc^2*Ec+8*vc^2*mm+12*Ec}, {mc^2-2*Ec*mm, 3*vc^2*c^2-4*vc^2+4*c^2}, {mc^2-2*Ec*mm, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {9*vc^2*Ec+8*vc^2*mm+12*Ec, 3*vc^2*c^2-4*vc^2+4*c^2}, {9*vc^2*Ec+8*vc^2*mm+12*Ec, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}, {3*vc^2*c^2-4*vc^2+4*c^2, 64*vc^2*mm^2-27*vc^2*pm^2-36*pm^2}};
+
+-- Configuration
+requireLiteralGB = true;
+
+-- Helper functions
+isInIdeal = (poly, base) -> (
+    if #base == 0 then return false;
+    M = ideal(base);
+    G = gens gb M;
+    poly % ideal(G) == 0
+);
+
+-- Check if target i is in eliminated ideal for given combo
+inEliminatedIdealIdx = (i, combo) -> (
+    M = ideal(join(remainingAxioms, combo));
+    eliminatedIdeal = eliminate(nonMeasuredPerTarget#i, M);
+    GBproj = gens gb eliminatedIdeal;
+    (qList#i) % ideal(GBproj) == 0
+);
+
+-- Check if target i appears literally in eliminated GB
+appearsInGBExactlyIdx = (i, combo) -> (
+    M = ideal(join(remainingAxioms, combo));
+    eliminatedIdeal = eliminate(nonMeasuredPerTarget#i, M);
+    GBproj = gens gb eliminatedIdeal;
+    member(true, toList apply(flatten entries GBproj, g -> g == (qList#i)))
+);
+
+-- Check all targets for membership
+allInEliminatedIdealPT = (combo) ->
+    all(toList(0..(k-1)), i -> inEliminatedIdealIdx(i, combo));
+
+-- Check all targets for literal appearance
+allAppearInGBExactlyPT = (combo) ->
+    all(toList(0..(k-1)), i -> appearsInGBExactlyIdx(i, combo));
+
+-- Output file
+f = openOut "results/inelastic_collision/abduction/noiseless/1_axiom(s)_removed/combo_1/reasoning/reasoning_output.txt";
+f << "=== Reasoning Results ===" << endl;
+f << "Remaining Axioms:" << endl;
+scan(remainingAxioms, a -> f << "  " << toString a << endl);
+f << endl;
+f << "Targets:" << endl;
+scan(qList, q -> f << "  " << toString q << endl);
+f << endl;
+f << "Require literal GB appearance: " << toString requireLiteralGB << endl;
+f << "Number of candidate sets to test: " << toString(#candidateSets) << endl;
+f << endl;
+
+-- Track saved combos and strong candidates (start with empty lists)
+savedCombos = {};
+strongCandidates = {};
+
+-- Test each candidate set
+f << "=== Testing Candidate Sets ===" << endl;
+scan(candidateSets, combo -> (
+    f << "CANDIDATE_SET: " << toString combo << endl;
+    
+    -- Filter out polynomials already implied by remaining axioms
+    filteredCombo = select(combo, p -> not isInIdeal(p, remainingAxioms));
+    f << "  filtered: " << toString filteredCombo << endl;
+    
+    if #filteredCombo == 0 then (
+        if #combo == 0 then (
+            -- Empty combo: test if remaining axioms alone suffice
+            if allInEliminatedIdealPT({}) then (
+                f << "  SAVED: true (base case - remaining axioms alone)" << endl;
+                if not member({}, savedCombos) then savedCombos = append(savedCombos, {});
+                if requireLiteralGB then (
+                    if allAppearInGBExactlyPT({}) then (
+                        f << "  STRONG: true" << endl;
+                        if not member({}, strongCandidates) then strongCandidates = append(strongCandidates, {});
+                    ) else (
+                        f << "  STRONG: false" << endl;
+                    );
+                ) else (
+                    f << "  STRONG: true (by membership)" << endl;
+                    if not member({}, strongCandidates) then strongCandidates = append(strongCandidates, {});
+                );
+            ) else (
+                f << "  SAVED: false (base case fails)" << endl;
+            );
+        ) else (
+            f << "  SKIPPED: all elements already implied by remaining axioms" << endl;
+        );
+    ) else (
+        -- Test filtered combo
+        if allInEliminatedIdealPT(filteredCombo) then (
+            sortedCombo = sort filteredCombo;
+            f << "  SAVED: true" << endl;
+            if not member(sortedCombo, savedCombos) then (
+                savedCombos = append(savedCombos, sortedCombo);
+            );
+            if requireLiteralGB then (
+                if allAppearInGBExactlyPT(filteredCombo) then (
+                    f << "  STRONG: true" << endl;
+                    if not member(sortedCombo, strongCandidates) then (
+                        strongCandidates = append(strongCandidates, sortedCombo);
+                    );
+                ) else (
+                    f << "  STRONG: false" << endl;
+                );
+            ) else (
+                f << "  STRONG: true (by membership)" << endl;
+                if not member(sortedCombo, strongCandidates) then (
+                    strongCandidates = append(strongCandidates, sortedCombo);
+                );
+            );
+        ) else (
+            f << "  SAVED: false (does not imply all targets)" << endl;
+        );
+    );
+    f << endl;
+));
+
+f << "=== Summary ===" << endl;
+f << "SAVED_COMBOS:" << endl;
+scan(savedCombos, c -> f << "  " << toString c << endl);
+f << endl;
+f << "STRONG_CANDIDATES:" << endl;
+scan(strongCandidates, c -> f << "  " << toString c << endl);
+
+close f;
+
+print("Reasoning complete. Output written to results/inelastic_collision/abduction/noiseless/1_axiom(s)_removed/combo_1/reasoning/reasoning_output.txt");

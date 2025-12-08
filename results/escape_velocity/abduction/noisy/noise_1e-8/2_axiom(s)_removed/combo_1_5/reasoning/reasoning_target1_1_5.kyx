@@ -1,0 +1,96 @@
+ArchiveEntry "escape_velocity_target1_combo1_5"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real Eki;
+  Real Ekf;
+  Real Ugi;
+  Real Ugf;
+  Real G;
+  Real M;
+  Real m;
+  Real ve;
+  Real r;
+  Real c1_1;
+  Real c1_2;
+  Real c5_3;
+  Real c5_4;
+  Real c5_5;
+  Real c5_6;
+  Real c1_7;
+  Real c1_8;
+  Real c5_9;
+  Real c5_10;
+  Real c5_11;
+  Real c5_12;
+  Real c1_13;
+  Real c1_14;
+  Real c5_15;
+  Real c5_16;
+  Real c5_17;
+  Real c5_18;
+  Real c1_19;
+  Real c1_20;
+  Real c5_21;
+  Real c5_22;
+  Real c5_23;
+  Real c5_24;
+  Real c1_25;
+  Real c1_26;
+  Real c5_27;
+  Real c5_28;
+  Real c5_29;
+  Real c5_30;
+  Real d1;
+  Real d2;
+End.
+
+Problem
+  (
+    \exists c1_1 \exists c1_2 \exists c5_3 \exists c5_4 \exists c5_5 \exists c5_6 \exists c1_7 \exists c1_8 \exists c5_9 \exists c5_10 \exists c5_11 \exists c5_12 \exists c1_13 \exists c1_14 \exists c5_15 \exists c5_16 \exists c5_17 \exists c5_18 \exists c1_19 \exists c1_20 \exists c5_21 \exists c5_22 \exists c5_23 \exists c5_24 \exists c1_25 \exists c1_26 \exists c5_27 \exists c5_28 \exists c5_29 \exists c5_30 \exists d1 \exists d2
+    (
+      c1_1 > 0 & c1_2 > 0 & c5_3 > 0 & c5_4 > 0 & c5_5 > 0 & c5_6 > 0 & c1_7 > 0 & c1_8 > 0 & c5_9 > 0 & c5_10 > 0 & c5_11 > 0 & c5_12 > 0 & c1_13 > 0 & c1_14 > 0 & c5_15 > 0 & c5_16 > 0 & c5_17 > 0 & c5_18 > 0 & c1_19 > 0 & c1_20 > 0 & c5_21 > 0 & c5_22 > 0 & c5_23 > 0 & c5_24 > 0 & c1_25 > 0 & c1_26 > 0 & c5_27 > 0 & c5_28 > 0 & c5_29 > 0 & c5_30 > 0 & d1 > 0 & d2 > 0
+      &
+      (
+        \forall Eki \forall Ekf \forall Ugi \forall Ugf \forall G \forall M \forall m \forall ve \forall r
+        (
+          (
+            (Eki > 0 & Ekf > 0 & Ugi > 0 & Ugf > 0 & G > 0 & M > 0 & m > 0 & ve > 0 & r > 0) &
+            & ( Ekf - 0 = 0 )
+            & ( Ugi * r + G * M * m = 0 )
+            & ( Ugf - 0 = 0 )
+            & ( ( c1_1 * Eki ) + ( c1_2 * m*ve^2 ) = 0 )
+            & ( ( c5_3 * Eki ) + ( c5_4 * Ekf ) + ( c5_5 * Ugi ) + ( c5_6 * Ugf ) = 0 )
+            & ( ( c1_7 * Eki ) + ( c1_8 * m*ve^2 ) = 0 )
+            & ( ( c5_9 * Eki ) + ( c5_10 * Ekf ) + ( c5_11 * Ugi ) + ( c5_12 * Ugf ) = 0 )
+            & ( ( c1_13 * Eki ) + ( c1_14 * m*ve^2 ) = 0 )
+            & ( ( c5_15 * Eki ) + ( c5_16 * Ekf ) + ( c5_17 * Ugi ) + ( c5_18 * Ugf ) = 0 )
+            & ( ( c1_19 * Eki ) + ( c1_20 * m*ve^2 ) = 0 )
+            & ( ( c5_21 * Eki ) + ( c5_22 * Ekf ) + ( c5_23 * Ugi ) + ( c5_24 * Ugf ) = 0 )
+            & ( ( c1_25 * Eki ) + ( c1_26 * m*ve^2 ) = 0 )
+            & ( ( c5_27 * Eki ) + ( c5_28 * Ekf ) + ( c5_29 * Ugi ) + ( c5_30 * Ugf ) = 0 )
+          )
+          ->
+          (
+            ( d1 * G*M*m ) + ( d2 * m*ve^2*r ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

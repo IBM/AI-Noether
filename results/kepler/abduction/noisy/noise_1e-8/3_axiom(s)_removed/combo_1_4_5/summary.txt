@@ -1,0 +1,22 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-8
+Removed axiom indices (1-based): [1, 4, 5]
+Removed axioms:
+  m1*d1-m2*d2
+  Fc - Fg
+  w*p - 1
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 1
+Symbolic regression results: 3
+
+Regression results below threshold (5.0):
+  Axiom 1, Component 1:
+    Singular value: 0.39613736195231936
+    Polynomial: 1*m1*d1 + (-0.0074704-0.00313416i)*m2*d2
+    Coefficient L2 error: 0.992534551575803
+  Axiom 4, Component 1:
+    Singular value: 0.474154535602493
+    Polynomial: (0.0241695+0.00132624i)*Fc + 1*Fg
+    Coefficient L2 error: 2.225364463433556

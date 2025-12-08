@@ -1,0 +1,198 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  -pmu+pv
+  Ep-mp
+  -Ev-Emu+Ep
+  -pmu^2+Emu^2-mmu^2
+
+Targets:
+  2*pv*mp-mp^2+mmu^2
+
+Require literal GB appearance: true
+Number of candidate sets to test: 31
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {Ep-mp}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Emu+pv-mp}
+  filtered: {Emu+pv-mp}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ev-pv}
+  filtered: {Ev-pv}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {pmu-Ev}
+  filtered: {pmu-Ev}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {2*pv*mp-mp^2+mmu^2}
+  filtered: {2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ep-mp, Emu+pv-mp}
+  filtered: {Emu+pv-mp}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ep-mp, Ev-pv}
+  filtered: {Ev-pv}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ep-mp, pmu-Ev}
+  filtered: {pmu-Ev}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ep-mp, 2*pv*mp-mp^2+mmu^2}
+  filtered: {2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Emu+pv-mp, Ev-pv}
+  filtered: {Emu+pv-mp, Ev-pv}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Emu+pv-mp, pmu-Ev}
+  filtered: {Emu+pv-mp, pmu-Ev}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Emu+pv-mp, 2*pv*mp-mp^2+mmu^2}
+  filtered: {Emu+pv-mp, 2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ev-pv, pmu-Ev}
+  filtered: {Ev-pv, pmu-Ev}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ev-pv, 2*pv*mp-mp^2+mmu^2}
+  filtered: {Ev-pv, 2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {pmu-Ev, 2*pv*mp-mp^2+mmu^2}
+  filtered: {pmu-Ev, 2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ep-mp}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Emu-pv+mp}
+  filtered: {Emu-pv+mp}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ev+pv-2*mp}
+  filtered: {Ev+pv-2*mp}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {pmu-pv}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {2*pv*mp-mp^2+mmu^2}
+  filtered: {2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ep-mp, Emu-pv+mp}
+  filtered: {Emu-pv+mp}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ep-mp, Ev+pv-2*mp}
+  filtered: {Ev+pv-2*mp}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ep-mp, pmu-pv}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ep-mp, 2*pv*mp-mp^2+mmu^2}
+  filtered: {2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Emu-pv+mp, Ev+pv-2*mp}
+  filtered: {Emu-pv+mp, Ev+pv-2*mp}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Emu-pv+mp, pmu-pv}
+  filtered: {Emu-pv+mp}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Emu-pv+mp, 2*pv*mp-mp^2+mmu^2}
+  filtered: {Emu-pv+mp, 2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ev+pv-2*mp, pmu-pv}
+  filtered: {Ev+pv-2*mp}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ev+pv-2*mp, 2*pv*mp-mp^2+mmu^2}
+  filtered: {Ev+pv-2*mp, 2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {pmu-pv, 2*pv*mp-mp^2+mmu^2}
+  filtered: {2*pv*mp-mp^2+mmu^2}
+  SAVED: true
+  STRONG: true
+
+=== Summary ===
+SAVED_COMBOS:
+  {Emu+pv-mp}
+  {Ev-pv}
+  {pmu-Ev}
+  {2*pv*mp-mp^2+mmu^2}
+  {Emu+pv-mp, Ev-pv}
+  {Emu+pv-mp, pmu-Ev}
+  {2*pv*mp-mp^2+mmu^2, Emu+pv-mp}
+  {Ev-pv, pmu-Ev}
+  {2*pv*mp-mp^2+mmu^2, Ev-pv}
+  {2*pv*mp-mp^2+mmu^2, pmu-Ev}
+  {Emu-pv+mp}
+  {Ev+pv-2*mp}
+  {Emu-pv+mp, Ev+pv-2*mp}
+  {2*pv*mp-mp^2+mmu^2, Emu-pv+mp}
+  {2*pv*mp-mp^2+mmu^2, Ev+pv-2*mp}
+
+STRONG_CANDIDATES:
+  {Emu+pv-mp}
+  {Ev-pv}
+  {pmu-Ev}
+  {2*pv*mp-mp^2+mmu^2}
+  {Emu+pv-mp, Ev-pv}
+  {Emu+pv-mp, pmu-Ev}
+  {2*pv*mp-mp^2+mmu^2, Emu+pv-mp}
+  {Ev-pv, pmu-Ev}
+  {2*pv*mp-mp^2+mmu^2, Ev-pv}
+  {2*pv*mp-mp^2+mmu^2, pmu-Ev}
+  {Emu-pv+mp}
+  {Ev+pv-2*mp}
+  {Emu-pv+mp, Ev+pv-2*mp}
+  {2*pv*mp-mp^2+mmu^2, Emu-pv+mp}
+  {2*pv*mp-mp^2+mmu^2, Ev+pv-2*mp}

@@ -1,0 +1,75 @@
+ArchiveEntry "escape_velocity_target1_combo2_3_5"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real Eki;
+  Real Ekf;
+  Real Ugi;
+  Real Ugf;
+  Real G;
+  Real M;
+  Real m;
+  Real ve;
+  Real r;
+  Real c2_1;
+  Real c3_2;
+  Real c3_3;
+  Real c5_4;
+  Real c5_5;
+  Real c5_6;
+  Real c5_7;
+  Real c2_8;
+  Real c3_9;
+  Real c3_10;
+  Real c5_11;
+  Real c5_12;
+  Real c5_13;
+  Real c5_14;
+  Real d1;
+  Real d2;
+End.
+
+Problem
+  (
+    \exists c2_1 \exists c3_2 \exists c3_3 \exists c5_4 \exists c5_5 \exists c5_6 \exists c5_7 \exists c2_8 \exists c3_9 \exists c3_10 \exists c5_11 \exists c5_12 \exists c5_13 \exists c5_14 \exists d1 \exists d2
+    (
+      c2_1 > 0 & c3_2 > 0 & c3_3 > 0 & c5_4 > 0 & c5_5 > 0 & c5_6 > 0 & c5_7 > 0 & c2_8 > 0 & c3_9 > 0 & c3_10 > 0 & c5_11 > 0 & c5_12 > 0 & c5_13 > 0 & c5_14 > 0 & d1 > 0 & d2 > 0
+      &
+      (
+        \forall Eki \forall Ekf \forall Ugi \forall Ugf \forall G \forall M \forall m \forall ve \forall r
+        (
+          (
+            (Eki > 0 & Ekf > 0 & Ugi > 0 & Ugf > 0 & G > 0 & M > 0 & m > 0 & ve > 0 & r > 0) &
+            & ( Eki - 1/2 * m * ve^2 = 0 )
+            & ( Ugf - 0 = 0 )
+            & ( ( c2_1 * Ekf ) = 0 )
+            & ( ( c3_2 * Ugi*r ) + ( c3_3 * G*M*m ) = 0 )
+            & ( ( c5_4 * Eki ) + ( c5_5 * Ekf ) + ( c5_6 * Ugi ) + ( c5_7 * Ugf ) = 0 )
+            & ( ( c2_8 * Ekf ) = 0 )
+            & ( ( c3_9 * Ugi*r ) + ( c3_10 * G*M*m ) = 0 )
+            & ( ( c5_11 * Eki ) + ( c5_12 * Ekf ) + ( c5_13 * Ugi ) + ( c5_14 * Ugf ) = 0 )
+          )
+          ->
+          (
+            ( d1 * G*M*m ) + ( d2 * m*ve^2*r ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

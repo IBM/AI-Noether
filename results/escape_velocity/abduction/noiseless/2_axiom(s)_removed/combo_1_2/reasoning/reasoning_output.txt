@@ -1,0 +1,407 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  Ugi*r+G*M*m
+  Ugf
+  Eki-Ekf+Ugi-Ugf
+
+Targets:
+  2*G*M*m-m*ve^2*r
+
+Require literal GB appearance: true
+Number of candidate sets to test: 82
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {Ugf}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Eki-Ekf+Ugi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-2*G*M+ve^2*r}
+  filtered: {-2*G*M+ve^2*r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {2*Ugi+m*ve^2}
+  filtered: {2*Ugi+m*ve^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ugi*r+G*M*m}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ugf, Eki-Ekf+Ugi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ugf, -2*G*M+ve^2*r}
+  filtered: {-2*G*M+ve^2*r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ugf, 2*Ugi+m*ve^2}
+  filtered: {2*Ugi+m*ve^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ugf, Ugi*r+G*M*m}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Eki-Ekf+Ugi, -2*G*M+ve^2*r}
+  filtered: {-2*G*M+ve^2*r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Eki-Ekf+Ugi, 2*Ugi+m*ve^2}
+  filtered: {2*Ugi+m*ve^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Eki-Ekf+Ugi, Ugi*r+G*M*m}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-2*G*M+ve^2*r, 2*Ugi+m*ve^2}
+  filtered: {-2*G*M+ve^2*r, 2*Ugi+m*ve^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-2*G*M+ve^2*r, Ugi*r+G*M*m}
+  filtered: {-2*G*M+ve^2*r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {2*Ugi+m*ve^2, Ugi*r+G*M*m}
+  filtered: {2*Ugi+m*ve^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ugf, Eki-Ekf+Ugi, -2*G*M+ve^2*r}
+  filtered: {-2*G*M+ve^2*r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ugf, Eki-Ekf+Ugi, 2*Ugi+m*ve^2}
+  filtered: {2*Ugi+m*ve^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ugf, Eki-Ekf+Ugi, Ugi*r+G*M*m}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ugf, -2*G*M+ve^2*r, 2*Ugi+m*ve^2}
+  filtered: {-2*G*M+ve^2*r, 2*Ugi+m*ve^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ugf, -2*G*M+ve^2*r, Ugi*r+G*M*m}
+  filtered: {-2*G*M+ve^2*r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ugf, 2*Ugi+m*ve^2, Ugi*r+G*M*m}
+  filtered: {2*Ugi+m*ve^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Eki-Ekf+Ugi, -2*G*M+ve^2*r, 2*Ugi+m*ve^2}
+  filtered: {-2*G*M+ve^2*r, 2*Ugi+m*ve^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Eki-Ekf+Ugi, -2*G*M+ve^2*r, Ugi*r+G*M*m}
+  filtered: {-2*G*M+ve^2*r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Eki-Ekf+Ugi, 2*Ugi+m*ve^2, Ugi*r+G*M*m}
+  filtered: {2*Ugi+m*ve^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-2*G*M+ve^2*r, 2*Ugi+m*ve^2, Ugi*r+G*M*m}
+  filtered: {-2*G*M+ve^2*r, 2*Ugi+m*ve^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r}
+  filtered: {r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {G}
+  filtered: {G}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ugf}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Eki-Ekf+Ugi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {r, G}
+  filtered: {r, G}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r, Ugf}
+  filtered: {r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r, Eki-Ekf+Ugi}
+  filtered: {r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {G, Ugf}
+  filtered: {G}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {G, Eki-Ekf+Ugi}
+  filtered: {G}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ugf, Eki-Ekf+Ugi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {r, G, Ugf}
+  filtered: {r, G}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r, G, Eki-Ekf+Ugi}
+  filtered: {r, G}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r, Ugf, Eki-Ekf+Ugi}
+  filtered: {r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {G, Ugf, Eki-Ekf+Ugi}
+  filtered: {G}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r}
+  filtered: {r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {m}
+  filtered: {m}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ugf}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Eki-Ekf+Ugi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {r, m}
+  filtered: {r, m}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r, Ugf}
+  filtered: {r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r, Eki-Ekf+Ugi}
+  filtered: {r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {m, Ugf}
+  filtered: {m}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {m, Eki-Ekf+Ugi}
+  filtered: {m}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ugf, Eki-Ekf+Ugi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {r, m, Ugf}
+  filtered: {r, m}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r, m, Eki-Ekf+Ugi}
+  filtered: {r, m}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r, Ugf, Eki-Ekf+Ugi}
+  filtered: {r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {m, Ugf, Eki-Ekf+Ugi}
+  filtered: {m}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r}
+  filtered: {r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {M}
+  filtered: {M}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ugf}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Eki-Ekf+Ugi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {r, M}
+  filtered: {r, M}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r, Ugf}
+  filtered: {r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r, Eki-Ekf+Ugi}
+  filtered: {r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {M, Ugf}
+  filtered: {M}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {M, Eki-Ekf+Ugi}
+  filtered: {M}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ugf, Eki-Ekf+Ugi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {r, M, Ugf}
+  filtered: {r, M}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r, M, Eki-Ekf+Ugi}
+  filtered: {r, M}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r, Ugf, Eki-Ekf+Ugi}
+  filtered: {r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {M, Ugf, Eki-Ekf+Ugi}
+  filtered: {M}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {m}
+  filtered: {m}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ugf}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ugi}
+  filtered: {Ugi}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Eki-Ekf}
+  filtered: {Eki-Ekf}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {m, Ugf}
+  filtered: {m}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {m, Ugi}
+  filtered: {m, Ugi}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {m, Eki-Ekf}
+  filtered: {m, Eki-Ekf}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ugf, Ugi}
+  filtered: {Ugi}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ugf, Eki-Ekf}
+  filtered: {Eki-Ekf}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ugi, Eki-Ekf}
+  filtered: {Ugi, Eki-Ekf}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {m, Ugf, Ugi}
+  filtered: {m, Ugi}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {m, Ugf, Eki-Ekf}
+  filtered: {m, Eki-Ekf}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {m, Ugi, Eki-Ekf}
+  filtered: {m, Ugi, Eki-Ekf}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ugf, Ugi, Eki-Ekf}
+  filtered: {Ugi, Eki-Ekf}
+  SAVED: false (does not imply all targets)
+
+=== Summary ===
+SAVED_COMBOS:
+  {-2*G*M+ve^2*r}
+  {2*Ugi+m*ve^2}
+  {-2*G*M+ve^2*r, 2*Ugi+m*ve^2}
+  {r}
+  {r, G}
+  {m}
+  {r, m}
+  {r, M}
+  {m, Ugi}
+  {m, Eki-Ekf}
+  {m, Ugi, Eki-Ekf}
+
+STRONG_CANDIDATES:
+  {2*Ugi+m*ve^2}

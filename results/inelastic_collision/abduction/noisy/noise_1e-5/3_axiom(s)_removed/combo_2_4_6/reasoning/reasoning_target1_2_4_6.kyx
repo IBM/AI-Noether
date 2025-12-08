@@ -1,0 +1,124 @@
+ArchiveEntry "inelastic_collision_target1_combo2_4_6"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real mr;
+  Real vm;
+  Real vc;
+  Real pc;
+  Real Em;
+  Real Er;
+  Real Ec;
+  Real mc;
+  Real mm;
+  Real pm;
+  Real c;
+  Real c2_1;
+  Real c2_2;
+  Real c2_3;
+  Real c4_4;
+  Real c4_5;
+  Real c4_6;
+  Real c6_7;
+  Real c6_8;
+  Real c2_9;
+  Real c2_10;
+  Real c2_11;
+  Real c4_12;
+  Real c4_13;
+  Real c4_14;
+  Real c6_15;
+  Real c6_16;
+  Real c2_17;
+  Real c2_18;
+  Real c2_19;
+  Real c4_20;
+  Real c4_21;
+  Real c4_22;
+  Real c2_23;
+  Real c2_24;
+  Real c2_25;
+  Real c4_26;
+  Real c4_27;
+  Real c4_28;
+  Real c6_29;
+  Real c6_30;
+  Real c2_31;
+  Real c2_32;
+  Real c2_33;
+  Real c4_34;
+  Real c4_35;
+  Real c4_36;
+  Real c6_37;
+  Real c6_38;
+  Real c2_39;
+  Real c2_40;
+  Real c2_41;
+  Real c4_42;
+  Real c4_43;
+  Real c4_44;
+  Real c6_45;
+  Real c6_46;
+  Real d1;
+  Real d2;
+End.
+
+Problem
+  (
+    \exists c2_1 \exists c2_2 \exists c2_3 \exists c4_4 \exists c4_5 \exists c4_6 \exists c6_7 \exists c6_8 \exists c2_9 \exists c2_10 \exists c2_11 \exists c4_12 \exists c4_13 \exists c4_14 \exists c6_15 \exists c6_16 \exists c2_17 \exists c2_18 \exists c2_19 \exists c4_20 \exists c4_21 \exists c4_22 \exists c2_23 \exists c2_24 \exists c2_25 \exists c4_26 \exists c4_27 \exists c4_28 \exists c6_29 \exists c6_30 \exists c2_31 \exists c2_32 \exists c2_33 \exists c4_34 \exists c4_35 \exists c4_36 \exists c6_37 \exists c6_38 \exists c2_39 \exists c2_40 \exists c2_41 \exists c4_42 \exists c4_43 \exists c4_44 \exists c6_45 \exists c6_46 \exists d1 \exists d2
+    (
+      c2_1 > 0 & c2_2 > 0 & c2_3 > 0 & c4_4 > 0 & c4_5 > 0 & c4_6 > 0 & c6_7 > 0 & c6_8 > 0 & c2_9 > 0 & c2_10 > 0 & c2_11 > 0 & c4_12 > 0 & c4_13 > 0 & c4_14 > 0 & c6_15 > 0 & c6_16 > 0 & c2_17 > 0 & c2_18 > 0 & c2_19 > 0 & c4_20 > 0 & c4_21 > 0 & c4_22 > 0 & c2_23 > 0 & c2_24 > 0 & c2_25 > 0 & c4_26 > 0 & c4_27 > 0 & c4_28 > 0 & c6_29 > 0 & c6_30 > 0 & c2_31 > 0 & c2_32 > 0 & c2_33 > 0 & c4_34 > 0 & c4_35 > 0 & c4_36 > 0 & c6_37 > 0 & c6_38 > 0 & c2_39 > 0 & c2_40 > 0 & c2_41 > 0 & c4_42 > 0 & c4_43 > 0 & c4_44 > 0 & c6_45 > 0 & c6_46 > 0 & d1 > 0 & d2 > 0
+      &
+      (
+        \forall mr \forall vm \forall vc \forall pc \forall Em \forall Er \forall Ec \forall mc \forall mm \forall pm \forall c
+        (
+          (
+            (mr > 0 & vm > 0 & vc > 0 & pc > 0 & Em > 0 & Er > 0 & Ec > 0 & mc > 0 & mm > 0 & pm > 0 & c > 0) &
+            & ( pm^2*(c^2 - vm^2) - mm^2*vm^2*c^2 = 0 )
+            & ( Er - mr*c^2 = 0 )
+            & ( 2*Em*Er - Ec^2 + Em^2 + Er^2 = 0 )
+            & ( vm - 4/5*c = 0 )
+            & ( mr - mm = 0 )
+            & ( pc^2*(c^2 - vc^2) - mc^2*vc^2*c^2 = 0 )
+            & ( ( c2_1 * Em^2 ) + ( c2_2 * mm^2*c^4 ) + ( c2_3 * pm^2*c^2 ) = 0 )
+            & ( ( c4_4 * pc^2*c^2 ) + ( c4_5 * Ec^2 ) + ( c4_6 * mc^2*c^2 ) = 0 )
+            & ( ( c6_7 * pc ) + ( c6_8 * pm ) = 0 )
+            & ( ( c2_9 * Em^2 ) + ( c2_10 * mm^2*c^4 ) + ( c2_11 * pm^2*c^2 ) = 0 )
+            & ( ( c4_12 * pc^2*c^2 ) + ( c4_13 * Ec^2 ) + ( c4_14 * mc^2*c^2 ) = 0 )
+            & ( ( c6_15 * pc ) + ( c6_16 * pm ) = 0 )
+            & ( ( c2_17 * Em^2 ) + ( c2_18 * mm^2*c^4 ) + ( c2_19 * pm^2*c^2 ) = 0 )
+            & ( ( c4_20 * pc^2*c^2 ) + ( c4_21 * Ec^2 ) + ( c4_22 * mc^2*c^2 ) = 0 )
+            & ( ( c2_23 * Em^2 ) + ( c2_24 * mm^2*c^4 ) + ( c2_25 * pm^2*c^2 ) = 0 )
+            & ( ( c4_26 * pc^2*c^2 ) + ( c4_27 * Ec^2 ) + ( c4_28 * mc^2*c^2 ) = 0 )
+            & ( ( c6_29 * pc ) + ( c6_30 * pm ) = 0 )
+            & ( ( c2_31 * Em^2 ) + ( c2_32 * mm^2*c^4 ) + ( c2_33 * pm^2*c^2 ) = 0 )
+            & ( ( c4_34 * pc^2*c^2 ) + ( c4_35 * Ec^2 ) + ( c4_36 * mc^2*c^2 ) = 0 )
+            & ( ( c6_37 * pc ) + ( c6_38 * pm ) = 0 )
+            & ( ( c2_39 * Em^2 ) + ( c2_40 * mm^2*c^4 ) + ( c2_41 * pm^2*c^2 ) = 0 )
+            & ( ( c4_42 * pc^2*c^2 ) + ( c4_43 * Ec^2 ) + ( c4_44 * mc^2*c^2 ) = 0 )
+            & ( ( c6_45 * pc ) + ( c6_46 * pm ) = 0 )
+          )
+          ->
+          (
+            ( d1 * mm^2*c^4 ) + ( d2 * pm^2*c^2 ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

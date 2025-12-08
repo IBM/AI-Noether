@@ -1,0 +1,67 @@
+ArchiveEntry "kepler_target1_combo1_2_3"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real Fc;
+  Real Fg;
+  Real w;
+  Real m1;
+  Real d1;
+  Real m2;
+  Real d2;
+  Real p;
+  Real c1_1;
+  Real c1_2;
+  Real c2_3;
+  Real c2_4;
+  Real c2_5;
+  Real c2_6;
+  Real c3_7;
+  Real c3_8;
+  Real d1;
+  Real d2;
+  Real d3;
+  Real d4;
+End.
+
+Problem
+  (
+    \exists c1_1 \exists c1_2 \exists c2_3 \exists c2_4 \exists c2_5 \exists c2_6 \exists c3_7 \exists c3_8 \exists d1 \exists d2 \exists d3 \exists d4
+    (
+      c1_1 > 0 & c1_2 > 0 & c2_3 > 0 & c2_4 > 0 & c2_5 > 0 & c2_6 > 0 & c3_7 > 0 & c3_8 > 0 & d1 > 0 & d2 > 0 & d3 > 0 & d4 > 0
+      &
+      (
+        \forall Fc \forall Fg \forall w \forall m1 \forall d1 \forall m2 \forall d2 \forall p
+        (
+          (
+            (Fc > 0 & Fg > 0 & w > 0 & m1 > 0 & d1 > 0 & m2 > 0 & d2 > 0 & p > 0) &
+            & ( Fc - Fg = 0 )
+            & ( w*p - 1 = 0 )
+            & ( ( c1_1 * m1*d1 ) + ( c1_2 * m2*d2 ) = 0 )
+            & ( ( c2_3 * Fg*d1^2 ) + ( c2_4 * Fg*d1*d2 ) + ( c2_5 * Fg*d2^2 ) + ( c2_6 * m1*m2 ) = 0 )
+            & ( ( c3_7 * Fc ) + ( c3_8 * w^2*m2*d2 ) = 0 )
+          )
+          ->
+          (
+            ( d1 * m1*d1*d2^2 ) + ( d2 * m1*m2*p^2 ) + ( d3 * d1^2*m2*d2 ) + ( d4 * d1*m2*d2^2 ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

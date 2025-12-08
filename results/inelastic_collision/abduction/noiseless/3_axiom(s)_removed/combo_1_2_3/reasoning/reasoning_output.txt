@@ -1,0 +1,2652 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  -pc^2*c^2+Ec^2-mc^2*c^2
+  Em^2+2*Em*Er+Er^2-Ec^2
+  pc-pm
+  vm-(4/5)*c
+  mr-mm
+  -vc^2*pc^2-vc^2*mc^2*c^2+pc^2*c^2
+
+Targets:
+  16*mm^2*c^4-9*pm^2*c^2
+
+Require literal GB appearance: true
+Number of candidate sets to test: 589
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {c}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm}
+  filtered: {pm}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {c, pm}
+  filtered: {c, pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec}
+  filtered: {c, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er}
+  filtered: {c, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vm-(4/5)*c}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, mr-mm}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Ec}
+  filtered: {pm, Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, Em+Er}
+  filtered: {pm, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, pc-pm}
+  filtered: {pm}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, vm-(4/5)*c}
+  filtered: {pm}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, mr-mm}
+  filtered: {pm}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, Em+Er}
+  filtered: {Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, pc-pm}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, vm-(4/5)*c}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, mr-mm}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, pc-pm}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, vm-(4/5)*c}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, mr-mm}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {c, pm, Ec}
+  filtered: {c, pm, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Em+Er}
+  filtered: {c, pm, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, pc-pm}
+  filtered: {c, pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, vm-(4/5)*c}
+  filtered: {c, pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, mr-mm}
+  filtered: {c, pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, Em+Er}
+  filtered: {c, Ec, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, pc-pm}
+  filtered: {c, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, vm-(4/5)*c}
+  filtered: {c, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, mr-mm}
+  filtered: {c, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, pc-pm}
+  filtered: {c, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, vm-(4/5)*c}
+  filtered: {c, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, mr-mm}
+  filtered: {c, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm, vm-(4/5)*c}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm, mr-mm}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vm-(4/5)*c, mr-mm}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Ec, Em+Er}
+  filtered: {pm, Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, Ec, pc-pm}
+  filtered: {pm, Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, Ec, vm-(4/5)*c}
+  filtered: {pm, Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, Ec, mr-mm}
+  filtered: {pm, Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, Em+Er, pc-pm}
+  filtered: {pm, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, Em+Er, vm-(4/5)*c}
+  filtered: {pm, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, Em+Er, mr-mm}
+  filtered: {pm, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, pc-pm, vm-(4/5)*c}
+  filtered: {pm}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, pc-pm, mr-mm}
+  filtered: {pm}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, vm-(4/5)*c, mr-mm}
+  filtered: {pm}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, Em+Er, pc-pm}
+  filtered: {Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, Em+Er, vm-(4/5)*c}
+  filtered: {Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, Em+Er, mr-mm}
+  filtered: {Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, pc-pm, vm-(4/5)*c}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, pc-pm, mr-mm}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, vm-(4/5)*c, mr-mm}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, pc-pm, vm-(4/5)*c}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, pc-pm, mr-mm}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {c, pm, Ec, Em+Er}
+  filtered: {c, pm, Ec, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Ec, pc-pm}
+  filtered: {c, pm, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Ec, vm-(4/5)*c}
+  filtered: {c, pm, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Ec, mr-mm}
+  filtered: {c, pm, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Em+Er, pc-pm}
+  filtered: {c, pm, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Em+Er, vm-(4/5)*c}
+  filtered: {c, pm, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Em+Er, mr-mm}
+  filtered: {c, pm, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, pc-pm, vm-(4/5)*c}
+  filtered: {c, pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, pc-pm, mr-mm}
+  filtered: {c, pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, vm-(4/5)*c, mr-mm}
+  filtered: {c, pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, Em+Er, pc-pm}
+  filtered: {c, Ec, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, Em+Er, vm-(4/5)*c}
+  filtered: {c, Ec, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, Em+Er, mr-mm}
+  filtered: {c, Ec, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, pc-pm, vm-(4/5)*c}
+  filtered: {c, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, pc-pm, mr-mm}
+  filtered: {c, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, vm-(4/5)*c, mr-mm}
+  filtered: {c, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, pc-pm, vm-(4/5)*c}
+  filtered: {c, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, pc-pm, mr-mm}
+  filtered: {c, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, vm-(4/5)*c, mr-mm}
+  filtered: {c, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Ec, Em+Er, pc-pm}
+  filtered: {pm, Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, Ec, Em+Er, vm-(4/5)*c}
+  filtered: {pm, Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, Ec, Em+Er, mr-mm}
+  filtered: {pm, Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, Ec, pc-pm, vm-(4/5)*c}
+  filtered: {pm, Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, Ec, pc-pm, mr-mm}
+  filtered: {pm, Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, Ec, vm-(4/5)*c, mr-mm}
+  filtered: {pm, Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, Em+Er, pc-pm, vm-(4/5)*c}
+  filtered: {pm, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, Em+Er, pc-pm, mr-mm}
+  filtered: {pm, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, Em+Er, vm-(4/5)*c, mr-mm}
+  filtered: {pm, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {pm}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, Em+Er, pc-pm, vm-(4/5)*c}
+  filtered: {Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, Em+Er, pc-pm, mr-mm}
+  filtered: {Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, Em+Er, vm-(4/5)*c, mr-mm}
+  filtered: {Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {c}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {vc}
+  filtered: {vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {c, Ec}
+  filtered: {c, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er}
+  filtered: {c, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vc}
+  filtered: {c, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vm-(4/5)*c}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, mr-mm}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec, Em+Er}
+  filtered: {Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, pc-pm}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, vc}
+  filtered: {Ec, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, vm-(4/5)*c}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, mr-mm}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, pc-pm}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, vc}
+  filtered: {Em+Er, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, vm-(4/5)*c}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, mr-mm}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vc}
+  filtered: {vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {vc, vm-(4/5)*c}
+  filtered: {vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {vc, mr-mm}
+  filtered: {vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {c, Ec, Em+Er}
+  filtered: {c, Ec, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, pc-pm}
+  filtered: {c, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, vc}
+  filtered: {c, Ec, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, vm-(4/5)*c}
+  filtered: {c, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, mr-mm}
+  filtered: {c, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, pc-pm}
+  filtered: {c, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, vc}
+  filtered: {c, Em+Er, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, vm-(4/5)*c}
+  filtered: {c, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, mr-mm}
+  filtered: {c, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm, vc}
+  filtered: {c, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm, vm-(4/5)*c}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm, mr-mm}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vc, vm-(4/5)*c}
+  filtered: {c, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vc, mr-mm}
+  filtered: {c, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vm-(4/5)*c, mr-mm}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec, Em+Er, pc-pm}
+  filtered: {Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, Em+Er, vc}
+  filtered: {Ec, Em+Er, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, Em+Er, vm-(4/5)*c}
+  filtered: {Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, Em+Er, mr-mm}
+  filtered: {Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, pc-pm, vc}
+  filtered: {Ec, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, pc-pm, vm-(4/5)*c}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, pc-pm, mr-mm}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, vc, vm-(4/5)*c}
+  filtered: {Ec, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, vc, mr-mm}
+  filtered: {Ec, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, vm-(4/5)*c, mr-mm}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, pc-pm, vc}
+  filtered: {Em+Er, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, pc-pm, vm-(4/5)*c}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, pc-pm, mr-mm}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, vc, vm-(4/5)*c}
+  filtered: {Em+Er, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, vc, mr-mm}
+  filtered: {Em+Er, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vc, vm-(4/5)*c}
+  filtered: {vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vc, mr-mm}
+  filtered: {vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {vc, vm-(4/5)*c, mr-mm}
+  filtered: {vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {c, Ec, Em+Er, pc-pm}
+  filtered: {c, Ec, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, Em+Er, vc}
+  filtered: {c, Ec, Em+Er, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, Em+Er, vm-(4/5)*c}
+  filtered: {c, Ec, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, Em+Er, mr-mm}
+  filtered: {c, Ec, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, pc-pm, vc}
+  filtered: {c, Ec, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, pc-pm, vm-(4/5)*c}
+  filtered: {c, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, pc-pm, mr-mm}
+  filtered: {c, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, vc, vm-(4/5)*c}
+  filtered: {c, Ec, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, vc, mr-mm}
+  filtered: {c, Ec, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Ec, vm-(4/5)*c, mr-mm}
+  filtered: {c, Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, pc-pm, vc}
+  filtered: {c, Em+Er, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, pc-pm, vm-(4/5)*c}
+  filtered: {c, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, pc-pm, mr-mm}
+  filtered: {c, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, vc, vm-(4/5)*c}
+  filtered: {c, Em+Er, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, vc, mr-mm}
+  filtered: {c, Em+Er, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em+Er, vm-(4/5)*c, mr-mm}
+  filtered: {c, Em+Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm, vc, vm-(4/5)*c}
+  filtered: {c, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm, vc, mr-mm}
+  filtered: {c, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vc, vm-(4/5)*c, mr-mm}
+  filtered: {c, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec, Em+Er, pc-pm, vc}
+  filtered: {Ec, Em+Er, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, Em+Er, pc-pm, vm-(4/5)*c}
+  filtered: {Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, Em+Er, pc-pm, mr-mm}
+  filtered: {Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, Em+Er, vc, vm-(4/5)*c}
+  filtered: {Ec, Em+Er, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, Em+Er, vc, mr-mm}
+  filtered: {Ec, Em+Er, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, Em+Er, vm-(4/5)*c, mr-mm}
+  filtered: {Ec, Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, pc-pm, vc, vm-(4/5)*c}
+  filtered: {Ec, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, pc-pm, vc, mr-mm}
+  filtered: {Ec, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec, vc, vm-(4/5)*c, mr-mm}
+  filtered: {Ec, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, pc-pm, vc, vm-(4/5)*c}
+  filtered: {Em+Er, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, pc-pm, vc, mr-mm}
+  filtered: {Em+Er, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er, vc, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er, vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vc, vm-(4/5)*c, mr-mm}
+  filtered: {vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Em+Er+Ec}
+  filtered: {4*mm*c+3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, pc-pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, mr-mm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec, pc-pm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec, vm-(4/5)*c}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec, mr-mm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec}
+  filtered: {4*mm*c+3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, pc-pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, mr-mm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Em+Er+Ec, pc-pm}
+  filtered: {4*mm*c+3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Em+Er+Ec, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Em+Er+Ec, mr-mm}
+  filtered: {4*mm*c+3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, pc-pm, mr-mm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, pc-pm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, vm-(4/5)*c}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, mr-mm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec, pc-pm, vm-(4/5)*c}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec, pc-pm, mr-mm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, pc-pm}
+  filtered: {4*mm*c+3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, mr-mm}
+  filtered: {4*mm*c+3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, mr-mm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, pc-pm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, mr-mm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, mr-mm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Em+Er+Ec, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Em+Er+Ec, pc-pm, mr-mm}
+  filtered: {4*mm*c+3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Em+Er+Ec, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c+3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, pc-pm, vm-(4/5)*c}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, pc-pm, mr-mm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, pc-pm, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, pc-pm, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Em+Er+Ec}
+  filtered: {4*mm*c-3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, pc-pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, mr-mm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec, pc-pm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec, vm-(4/5)*c}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec, mr-mm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec}
+  filtered: {4*mm*c-3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, pc-pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, mr-mm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Em+Er+Ec, pc-pm}
+  filtered: {4*mm*c-3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Em+Er+Ec, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Em+Er+Ec, mr-mm}
+  filtered: {4*mm*c-3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, pc-pm, mr-mm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, pc-pm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, vm-(4/5)*c}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, mr-mm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec, pc-pm, vm-(4/5)*c}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec, pc-pm, mr-mm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, pc-pm}
+  filtered: {4*mm*c-3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, mr-mm}
+  filtered: {4*mm*c-3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, mr-mm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, pc-pm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, mr-mm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, mr-mm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Em+Er+Ec, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Em+Er+Ec, pc-pm, mr-mm}
+  filtered: {4*mm*c-3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Em+Er+Ec, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c-3*pm, Em+Er+Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, pc-pm, vm-(4/5)*c}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, pc-pm, mr-mm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er+Ec, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, pc-pm, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, pc-pm, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er+Ec, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er+Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Em+Er-Ec}
+  filtered: {4*mm*c+3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, pc-pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, mr-mm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec, pc-pm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec, vm-(4/5)*c}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec, mr-mm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec}
+  filtered: {4*mm*c+3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, pc-pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, mr-mm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Em+Er-Ec, pc-pm}
+  filtered: {4*mm*c+3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Em+Er-Ec, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Em+Er-Ec, mr-mm}
+  filtered: {4*mm*c+3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, pc-pm, mr-mm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, pc-pm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, vm-(4/5)*c}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, mr-mm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec, pc-pm, vm-(4/5)*c}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec, pc-pm, mr-mm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, pc-pm}
+  filtered: {4*mm*c+3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, mr-mm}
+  filtered: {4*mm*c+3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, mr-mm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, pc-pm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, mr-mm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, mr-mm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Em+Er-Ec, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c+3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Em+Er-Ec, pc-pm, mr-mm}
+  filtered: {4*mm*c+3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, Em+Er-Ec, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c+3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, pc-pm, vm-(4/5)*c}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, pc-pm, mr-mm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, pc-pm, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, pc-pm, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Em+Er-Ec}
+  filtered: {4*mm*c-3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, pc-pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, mr-mm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec, pc-pm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec, vm-(4/5)*c}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec, mr-mm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec}
+  filtered: {4*mm*c-3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, pc-pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, mr-mm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Em+Er-Ec, pc-pm}
+  filtered: {4*mm*c-3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Em+Er-Ec, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Em+Er-Ec, mr-mm}
+  filtered: {4*mm*c-3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, pc-pm, mr-mm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, pc-pm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, vm-(4/5)*c}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, mr-mm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, vm-(4/5)*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec, pc-pm, vm-(4/5)*c}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec, pc-pm, mr-mm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, mr-mm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, pc-pm}
+  filtered: {4*mm*c-3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, mr-mm}
+  filtered: {4*mm*c-3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, mr-mm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Ec^2-mc^2*c^2-pm^2*c^2, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, pc-pm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, mr-mm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, mr-mm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Em+Er-Ec, pc-pm, vm-(4/5)*c}
+  filtered: {4*mm*c-3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Em+Er-Ec, pc-pm, mr-mm}
+  filtered: {4*mm*c-3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, Em+Er-Ec, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c-3*pm, Em+Er-Ec}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, pc-pm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, pc-pm, vm-(4/5)*c}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, pc-pm, mr-mm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, Em+Er-Ec, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ec^2-mc^2*c^2-pm^2*c^2, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, pc-pm, vm-(4/5)*c}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, pc-pm, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em+Er-Ec, pc-pm, vm-(4/5)*c, mr-mm}
+  filtered: {Em+Er-Ec}
+  SAVED: false (does not imply all targets)
+
+=== Summary ===
+SAVED_COMBOS:
+  {c}
+  {c, pm}
+  {c, Ec}
+  {c, Em+Er}
+  {c, pm, Ec}
+  {c, pm, Em+Er}
+  {c, Ec, Em+Er}
+  {c, pm, Ec, Em+Er}
+  {c, vc}
+  {c, Ec, vc}
+  {c, Em+Er, vc}
+  {c, Ec, Em+Er, vc}
+  {4*mm*c+3*pm}
+  {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c+3*pm, Em+Er+Ec}
+  {4*mm*c+3*pm, Em+Er+Ec, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm}
+  {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm, Em+Er+Ec}
+  {4*mm*c-3*pm, Em+Er+Ec, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c+3*pm, Em+Er-Ec}
+  {4*mm*c+3*pm, Em+Er-Ec, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm, Em+Er-Ec}
+  {4*mm*c-3*pm, Em+Er-Ec, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+
+STRONG_CANDIDATES:

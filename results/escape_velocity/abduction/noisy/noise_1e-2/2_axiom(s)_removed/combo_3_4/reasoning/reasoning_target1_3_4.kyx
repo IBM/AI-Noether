@@ -1,0 +1,63 @@
+ArchiveEntry "escape_velocity_target1_combo3_4"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real Eki;
+  Real Ekf;
+  Real Ugi;
+  Real Ugf;
+  Real G;
+  Real M;
+  Real m;
+  Real ve;
+  Real r;
+  Real c3_1;
+  Real c3_2;
+  Real c4_3;
+  Real c4_4;
+  Real d1;
+  Real d2;
+End.
+
+Problem
+  (
+    \exists c3_1 \exists c3_2 \exists c4_3 \exists c4_4 \exists d1 \exists d2
+    (
+      c3_1 > 0 & c3_2 > 0 & c4_3 > 0 & c4_4 > 0 & d1 > 0 & d2 > 0
+      &
+      (
+        \forall Eki \forall Ekf \forall Ugi \forall Ugf \forall G \forall M \forall m \forall ve \forall r
+        (
+          (
+            (Eki > 0 & Ekf > 0 & Ugi > 0 & Ugf > 0 & G > 0 & M > 0 & m > 0 & ve > 0 & r > 0) &
+            & ( Eki - 1/2 * m * ve^2 = 0 )
+            & ( Ekf - 0 = 0 )
+            & ( Eki + Ugi - Ekf - Ugf = 0 )
+            & ( ( c3_1 * Ugi*r ) + ( c3_2 * G*M*m ) = 0 )
+            & ( ( c4_3 * Ugf ) = 0 )
+            & ( ( c4_4 * Ugf ) = 0 )
+          )
+          ->
+          (
+            ( d1 * G*M*m ) + ( d2 * m*ve^2*r ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

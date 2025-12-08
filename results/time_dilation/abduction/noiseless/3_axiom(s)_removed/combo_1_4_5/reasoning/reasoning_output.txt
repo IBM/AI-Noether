@@ -1,0 +1,98 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  -4*d^2-dt^2*v^2+4*L^2
+  dt0*F0-1
+
+Targets:
+  c^2*F0^2-c^2*F^2-F0^2*v^2
+
+Require literal GB appearance: true
+Number of candidate sets to test: 16
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}
+  filtered: {dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {4*d^2+dt^2*v^2-4*L^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*F0-1}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, 4*d^2+dt^2*v^2-4*L^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}
+  filtered: {dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, 4*d^2+dt^2*v^2-4*L^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0, 4*d^2+dt^2*v^2-4*L^2}
+  filtered: {dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*F0-1, dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*F0-1, 4*d^2+dt^2*v^2-4*L^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0, 4*d^2+dt^2*v^2-4*L^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt0*F0-1, dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0, 4*d^2+dt^2*v^2-4*L^2}
+  filtered: {dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*F0-1, dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0, 4*d^2+dt^2*v^2-4*L^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}
+  SAVED: true
+  STRONG: true
+
+=== Summary ===
+SAVED_COMBOS:
+  {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  {dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}
+
+STRONG_CANDIDATES:
+  {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  {dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*c^2*F^2+dt0*F0^2*v^2-c^2*F0}

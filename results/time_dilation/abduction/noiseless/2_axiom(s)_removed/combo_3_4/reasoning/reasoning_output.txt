@@ -1,0 +1,455 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  -2*d+dt0*c
+  -4*d^2-dt^2*v^2+4*L^2
+  dt*c-2*L
+
+Targets:
+  c^2*F0^2-c^2*F^2-F0^2*v^2
+
+Require literal GB appearance: true
+Number of candidate sets to test: 97
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {v}
+  filtered: {v}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {c}
+  filtered: {c}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-(1/2)*dt*c+L}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {d-(1/2)*dt0*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {v, c}
+  filtered: {v, c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {v, -(1/2)*dt*c+L}
+  filtered: {v}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {v, d-(1/2)*dt0*c}
+  filtered: {v}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {c, -(1/2)*dt*c+L}
+  filtered: {c}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {c, d-(1/2)*dt0*c}
+  filtered: {c}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-(1/2)*dt*c+L, d-(1/2)*dt0*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {v, c, -(1/2)*dt*c+L}
+  filtered: {v, c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {v, c, d-(1/2)*dt0*c}
+  filtered: {v, c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {v, -(1/2)*dt*c+L, d-(1/2)*dt0*c}
+  filtered: {v}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {c, -(1/2)*dt*c+L, d-(1/2)*dt0*c}
+  filtered: {c}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*F+dt0*F0}
+  filtered: {dt*F+dt0*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  filtered: {dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt^2*c^2-dt^2*v^2-dt0^2*c^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*dt*c+L}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {d-(1/2)*dt0*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F+dt0*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F+dt0*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*c^2-dt^2*v^2-dt0^2*c^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, -(1/2)*dt*c+L}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, d-(1/2)*dt0*c}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*F+dt0*F0, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  filtered: {dt*F+dt0*F0, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F+dt0*F0, dt^2*c^2-dt^2*v^2-dt0^2*c^2}
+  filtered: {dt*F+dt0*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F+dt0*F0, -(1/2)*dt*c+L}
+  filtered: {dt*F+dt0*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F+dt0*F0, d-(1/2)*dt0*c}
+  filtered: {dt*F+dt0*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c^2*F0-dt*F0*v^2+dt0*c^2*F, dt^2*c^2-dt^2*v^2-dt0^2*c^2}
+  filtered: {dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c^2*F0-dt*F0*v^2+dt0*c^2*F, -(1/2)*dt*c+L}
+  filtered: {dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c^2*F0-dt*F0*v^2+dt0*c^2*F, d-(1/2)*dt0*c}
+  filtered: {dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt^2*c^2-dt^2*v^2-dt0^2*c^2, -(1/2)*dt*c+L}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {dt^2*c^2-dt^2*v^2-dt0^2*c^2, d-(1/2)*dt0*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*dt*c+L, d-(1/2)*dt0*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F+dt0*F0, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F+dt0*F0, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F+dt0*F0, dt^2*c^2-dt^2*v^2-dt0^2*c^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F+dt0*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F+dt0*F0, -(1/2)*dt*c+L}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F+dt0*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F+dt0*F0, d-(1/2)*dt0*c}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F+dt0*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F, dt^2*c^2-dt^2*v^2-dt0^2*c^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F, -(1/2)*dt*c+L}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F, d-(1/2)*dt0*c}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*c^2-dt^2*v^2-dt0^2*c^2, -(1/2)*dt*c+L}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*c^2-dt^2*v^2-dt0^2*c^2, d-(1/2)*dt0*c}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, -(1/2)*dt*c+L, d-(1/2)*dt0*c}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*F+dt0*F0, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F, dt^2*c^2-dt^2*v^2-dt0^2*c^2}
+  filtered: {dt*F+dt0*F0, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F+dt0*F0, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F, -(1/2)*dt*c+L}
+  filtered: {dt*F+dt0*F0, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F+dt0*F0, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F, d-(1/2)*dt0*c}
+  filtered: {dt*F+dt0*F0, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F+dt0*F0, dt^2*c^2-dt^2*v^2-dt0^2*c^2, -(1/2)*dt*c+L}
+  filtered: {dt*F+dt0*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F+dt0*F0, dt^2*c^2-dt^2*v^2-dt0^2*c^2, d-(1/2)*dt0*c}
+  filtered: {dt*F+dt0*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F+dt0*F0, -(1/2)*dt*c+L, d-(1/2)*dt0*c}
+  filtered: {dt*F+dt0*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c^2*F0-dt*F0*v^2+dt0*c^2*F, dt^2*c^2-dt^2*v^2-dt0^2*c^2, -(1/2)*dt*c+L}
+  filtered: {dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c^2*F0-dt*F0*v^2+dt0*c^2*F, dt^2*c^2-dt^2*v^2-dt0^2*c^2, d-(1/2)*dt0*c}
+  filtered: {dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c^2*F0-dt*F0*v^2+dt0*c^2*F, -(1/2)*dt*c+L, d-(1/2)*dt0*c}
+  filtered: {dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt^2*c^2-dt^2*v^2-dt0^2*c^2, -(1/2)*dt*c+L, d-(1/2)*dt0*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*F-dt0*F0}
+  filtered: {dt*F-dt0*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  filtered: {dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt^2*c^2-dt^2*v^2-dt0^2*c^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*dt*c+L}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {d-(1/2)*dt0*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-dt0*F0}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-dt0*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*c^2-dt^2*v^2-dt0^2*c^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, -(1/2)*dt*c+L}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, d-(1/2)*dt0*c}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*F-dt0*F0, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  filtered: {dt*F-dt0*F0, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F-dt0*F0, dt^2*c^2-dt^2*v^2-dt0^2*c^2}
+  filtered: {dt*F-dt0*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F-dt0*F0, -(1/2)*dt*c+L}
+  filtered: {dt*F-dt0*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F-dt0*F0, d-(1/2)*dt0*c}
+  filtered: {dt*F-dt0*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c^2*F0-dt*F0*v^2-dt0*c^2*F, dt^2*c^2-dt^2*v^2-dt0^2*c^2}
+  filtered: {dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c^2*F0-dt*F0*v^2-dt0*c^2*F, -(1/2)*dt*c+L}
+  filtered: {dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c^2*F0-dt*F0*v^2-dt0*c^2*F, d-(1/2)*dt0*c}
+  filtered: {dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt^2*c^2-dt^2*v^2-dt0^2*c^2, -(1/2)*dt*c+L}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {dt^2*c^2-dt^2*v^2-dt0^2*c^2, d-(1/2)*dt0*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*dt*c+L, d-(1/2)*dt0*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-dt0*F0, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-dt0*F0, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-dt0*F0, dt^2*c^2-dt^2*v^2-dt0^2*c^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-dt0*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-dt0*F0, -(1/2)*dt*c+L}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-dt0*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-dt0*F0, d-(1/2)*dt0*c}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-dt0*F0}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F, dt^2*c^2-dt^2*v^2-dt0^2*c^2}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F, -(1/2)*dt*c+L}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F, d-(1/2)*dt0*c}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*c^2-dt^2*v^2-dt0^2*c^2, -(1/2)*dt*c+L}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt^2*c^2-dt^2*v^2-dt0^2*c^2, d-(1/2)*dt0*c}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, -(1/2)*dt*c+L, d-(1/2)*dt0*c}
+  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dt*F-dt0*F0, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F, dt^2*c^2-dt^2*v^2-dt0^2*c^2}
+  filtered: {dt*F-dt0*F0, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F-dt0*F0, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F, -(1/2)*dt*c+L}
+  filtered: {dt*F-dt0*F0, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F-dt0*F0, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F, d-(1/2)*dt0*c}
+  filtered: {dt*F-dt0*F0, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F-dt0*F0, dt^2*c^2-dt^2*v^2-dt0^2*c^2, -(1/2)*dt*c+L}
+  filtered: {dt*F-dt0*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F-dt0*F0, dt^2*c^2-dt^2*v^2-dt0^2*c^2, d-(1/2)*dt0*c}
+  filtered: {dt*F-dt0*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*F-dt0*F0, -(1/2)*dt*c+L, d-(1/2)*dt0*c}
+  filtered: {dt*F-dt0*F0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c^2*F0-dt*F0*v^2-dt0*c^2*F, dt^2*c^2-dt^2*v^2-dt0^2*c^2, -(1/2)*dt*c+L}
+  filtered: {dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c^2*F0-dt*F0*v^2-dt0*c^2*F, dt^2*c^2-dt^2*v^2-dt0^2*c^2, d-(1/2)*dt0*c}
+  filtered: {dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt*c^2*F0-dt*F0*v^2-dt0*c^2*F, -(1/2)*dt*c+L, d-(1/2)*dt0*c}
+  filtered: {dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dt^2*c^2-dt^2*v^2-dt0^2*c^2, -(1/2)*dt*c+L, d-(1/2)*dt0*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+=== Summary ===
+SAVED_COMBOS:
+  {v, c}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F+dt0*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F+dt0*F0, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-dt0*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-dt0*F0, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+
+STRONG_CANDIDATES:
+  {c^2*F0^2-c^2*F^2-F0^2*v^2}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F+dt0*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F+dt0*F0, dt*c^2*F0-dt*F0*v^2+dt0*c^2*F}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-dt0*F0}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}
+  {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-dt0*F0, dt*c^2*F0-dt*F0*v^2-dt0*c^2*F}

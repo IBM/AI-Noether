@@ -1,0 +1,53 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-5
+Removed axiom indices (1-based): [2, 9]
+Removed axioms:
+  Em^2 - (mm*c^2)^2 - (pm*c)^2
+  pc^2*(c^2 - vc^2) - mc^2*vc^2*c^2
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 5
+Symbolic regression results: 10
+
+Regression results below threshold (5.0):
+  Axiom 2, Component 1:
+    Singular value: 3.497222656590793e-33
+    Polynomial: 1*mm^2*c^4 + (-0.43243+0.0372907i)*pm^2*c^2
+    Coefficient L2 error: 2.3072768783312894
+  Axiom 9, Component 1:
+    Singular value: 1.3710815692023233e-32
+    Polynomial: (-0.000318824-0.000237185i)*vc^2*pc^2 + 1*pc^2*c^2
+    Coefficient L2 error: 2.449619930849673
+  Axiom 2, Component 2:
+    Singular value: 4.4191504203172974e-33
+    Polynomial: 1*mm^2*c^4 + (-0.0142705-0.0037972i)*pm^2*c^2
+    Coefficient L2 error: 2.4437014896792677
+  Axiom 9, Component 2:
+    Singular value: 2.9085537253465067e-32
+    Polynomial: (0.00168597+0.000868959i)*vc^2*pc^2 + 1*pc^2*c^2
+    Coefficient L2 error: 2.448802085608485
+  Axiom 2, Component 3:
+    Singular value: 2.8296235854203667e-33
+    Polynomial: 1*mm^2*c^4 + (-0.00443182+0.00373214i)*pm^2*c^2
+    Coefficient L2 error: 2.447686650151716
+  Axiom 9, Component 3:
+    Singular value: 1.5761790821219998e-32
+    Polynomial: (-0.0120185+0.00970538i)*vc^2*pc^2 + 1*pc^2*c^2
+    Coefficient L2 error: 2.4544399842748943
+  Axiom 2, Component 4:
+    Singular value: 1.3416351570075381e-32
+    Polynomial: 1*mm^2*c^4 + (-0.00242831+0.00496112i)*pm^2*c^2
+    Coefficient L2 error: 2.4485044187640423
+  Axiom 9, Component 4:
+    Singular value: 4.373756330575575e-32
+    Polynomial: (-0.02358+0.0155569i)*vc^2*pc^2 + 1*pc^2*c^2
+    Coefficient L2 error: 2.459259651524531
+  Axiom 2, Component 5:
+    Singular value: 2.4339530875736976e-34
+    Polynomial: 1*mm^2*c^4
+    Coefficient L2 error: 2.449489742783178
+  Axiom 9, Component 5:
+    Singular value: 7.542663650342468e-18
+    Polynomial: (0.000956421-0.000212093i)*vc^2*mc^2*c^2 + 1*pc^2*c^2
+    Coefficient L2 error: 2.4490994501915715

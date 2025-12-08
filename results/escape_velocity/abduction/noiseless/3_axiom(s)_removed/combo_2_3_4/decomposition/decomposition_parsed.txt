@@ -1,0 +1,15 @@
+Number of components: 2
+
+COMPONENT_1:
+  num_generators: 4
+  GEN: Eki-Ekf+Ugi-Ugf
+  GEN: ve^2*r-2*G*M
+  GEN: m*ve^2-2*Ekf+2*Ugi-2*Ugf
+  GEN: G*M*m-Ekf*r+Ugi*r-Ugf*r
+
+COMPONENT_2:
+  num_generators: 3
+  GEN: m
+  GEN: Ekf-Ugi+Ugf
+  GEN: Eki
+

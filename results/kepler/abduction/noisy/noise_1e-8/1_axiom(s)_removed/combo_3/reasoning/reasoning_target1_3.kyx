@@ -1,0 +1,76 @@
+ArchiveEntry "kepler_target1_combo3"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real Fc;
+  Real Fg;
+  Real w;
+  Real m1;
+  Real d1;
+  Real m2;
+  Real d2;
+  Real p;
+  Real c3_1;
+  Real c3_2;
+  Real c3_3;
+  Real c3_4;
+  Real c3_5;
+  Real c3_6;
+  Real c3_7;
+  Real c3_8;
+  Real c3_9;
+  Real c3_10;
+  Real c3_11;
+  Real c3_12;
+  Real d1;
+  Real d2;
+  Real d3;
+  Real d4;
+End.
+
+Problem
+  (
+    \exists c3_1 \exists c3_2 \exists c3_3 \exists c3_4 \exists c3_5 \exists c3_6 \exists c3_7 \exists c3_8 \exists c3_9 \exists c3_10 \exists c3_11 \exists c3_12 \exists d1 \exists d2 \exists d3 \exists d4
+    (
+      c3_1 > 0 & c3_2 > 0 & c3_3 > 0 & c3_4 > 0 & c3_5 > 0 & c3_6 > 0 & c3_7 > 0 & c3_8 > 0 & c3_9 > 0 & c3_10 > 0 & c3_11 > 0 & c3_12 > 0 & d1 > 0 & d2 > 0 & d3 > 0 & d4 > 0
+      &
+      (
+        \forall Fc \forall Fg \forall w \forall m1 \forall d1 \forall m2 \forall d2 \forall p
+        (
+          (
+            (Fc > 0 & Fg > 0 & w > 0 & m1 > 0 & d1 > 0 & m2 > 0 & d2 > 0 & p > 0) &
+            & ( m1*d1-m2*d2 = 0 )
+            & ( Fg*(d1+d2)^2 - m1*m2 = 0 )
+            & ( Fc - Fg = 0 )
+            & ( w*p - 1 = 0 )
+            & ( ( c3_1 * Fc ) + ( c3_2 * w^2*m2*d2 ) = 0 )
+            & ( ( c3_3 * Fc ) + ( c3_4 * w^2*m2*d2 ) = 0 )
+            & ( ( c3_5 * Fc ) + ( c3_6 * w^2*m2*d2 ) = 0 )
+            & ( ( c3_7 * Fc ) + ( c3_8 * w^2*m2*d2 ) = 0 )
+            & ( ( c3_9 * Fc ) + ( c3_10 * w^2*m2*d2 ) = 0 )
+            & ( ( c3_11 * Fc ) + ( c3_12 * w^2*m2*d2 ) = 0 )
+          )
+          ->
+          (
+            ( d1 * m1*d1*d2^2 ) + ( d2 * m1*m2*p^2 ) + ( d3 * d1^2*m2*d2 ) + ( d4 * d1*m2*d2^2 ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

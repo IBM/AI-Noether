@@ -1,0 +1,86 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  -628*sintheta*dtheta*r^2+100*dA
+  -3*sintheta^3*dtheta+4
+  2*ap^2-x0^2*w^4
+
+Targets:
+  75*P-314*qc^2*x0^2*w^4
+
+Require literal GB appearance: true
+Number of candidate sets to test: 15
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {2*ap^2-x0^2*w^4}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {P-(314/75)*qc^2*x0^2*w^4}
+  filtered: {P-(314/75)*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-(157/25)*sintheta*dtheta*r^2+dA}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, 2*ap^2-x0^2*w^4}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, P-(314/75)*qc^2*x0^2*w^4}
+  filtered: {P-(314/75)*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, -(157/25)*sintheta*dtheta*r^2+dA}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {2*ap^2-x0^2*w^4, P-(314/75)*qc^2*x0^2*w^4}
+  filtered: {P-(314/75)*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {2*ap^2-x0^2*w^4, -(157/25)*sintheta*dtheta*r^2+dA}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {P-(314/75)*qc^2*x0^2*w^4, -(157/25)*sintheta*dtheta*r^2+dA}
+  filtered: {P-(314/75)*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, 2*ap^2-x0^2*w^4, P-(314/75)*qc^2*x0^2*w^4}
+  filtered: {P-(314/75)*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, 2*ap^2-x0^2*w^4, -(157/25)*sintheta*dtheta*r^2+dA}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, P-(314/75)*qc^2*x0^2*w^4, -(157/25)*sintheta*dtheta*r^2+dA}
+  filtered: {P-(314/75)*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {2*ap^2-x0^2*w^4, P-(314/75)*qc^2*x0^2*w^4, -(157/25)*sintheta*dtheta*r^2+dA}
+  filtered: {P-(314/75)*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+=== Summary ===
+SAVED_COMBOS:
+  {P-(314/75)*qc^2*x0^2*w^4}
+
+STRONG_CANDIDATES:
+  {P-(314/75)*qc^2*x0^2*w^4}

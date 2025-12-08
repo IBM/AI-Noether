@@ -1,0 +1,62 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-2
+Removed axiom indices (1-based): [1, 4, 6]
+Removed axioms:
+  Fm - qe*v*B
+  E*h - UH
+  i*dt - Q
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 4
+Symbolic regression results: 12
+
+Regression results below threshold (5.0):
+  Axiom 1, Component 1:
+    Singular value: 1.775200059860401e-54
+    Polynomial: 1*v*qe*B
+    Coefficient L2 error: 2.23606797749979
+  Axiom 4, Component 1:
+    Singular value: 3.040738408689477
+    Polynomial: (0.0173806-0.00126091i)*E*h + 1*UH
+    Coefficient L2 error: 2.228349727117252
+  Axiom 6, Component 1:
+    Singular value: 1.0621748444276746e-49
+    Polynomial: 1*Q
+    Coefficient L2 error: 2.23606797749979
+  Axiom 1, Component 2:
+    Singular value: 1.4488689748890784
+    Polynomial: 1*Fm + (0.00791739-0.113781i)*v*qe*B
+    Coefficient L2 error: 1.0143192700033583
+  Axiom 4, Component 2:
+    Singular value: 1.4570037511692273
+    Polynomial: (-0.0284313+0.034401i)*E*h + 1*UH
+    Coefficient L2 error: 2.2491897027124153
+  Axiom 6, Component 2:
+    Singular value: 0.8670024055089186
+    Polynomial: (-0.0254428-6.29781e-05i)*dt*i + 1*Q
+    Coefficient L2 error: 2.2475615699808063
+  Axiom 1, Component 3:
+    Singular value: 2.5475502662558807
+    Polynomial: 1*Fm + (-0.0115134+0.000625418i)*v*qe*B
+    Coefficient L2 error: 0.9884868399785987
+  Axiom 4, Component 3:
+    Singular value: 3.8513972963339085
+    Polynomial: (-0.0694681+0.151971i)*E*h + 1*UH
+    Coefficient L2 error: 2.2730721787283947
+  Axiom 6, Component 3:
+    Singular value: 2.1639834211511236e-87
+    Polynomial: 1*Q
+    Coefficient L2 error: 2.23606797749979
+  Axiom 1, Component 4:
+    Singular value: 2.5339599154578423
+    Polynomial: 1*Fm + (0.03422+0.0211452i)*v*qe*B
+    Coefficient L2 error: 1.0344361278240648
+  Axiom 4, Component 4:
+    Singular value: 1.9254047066604835e-48
+    Polynomial: 1*E*h
+    Coefficient L2 error: 1.0
+  Axiom 6, Component 4:
+    Singular value: 2.0672099767907853e-62
+    Polynomial: 1*Q
+    Coefficient L2 error: 2.23606797749979

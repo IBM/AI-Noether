@@ -1,0 +1,123 @@
+ArchiveEntry "hall_target1_combo5_6_9"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real Fm;
+  Real d;
+  Real v;
+  Real Fe;
+  Real E;
+  Real dt;
+  Real Q;
+  Real N;
+  Real V;
+  Real i;
+  Real n;
+  Real qe;
+  Real B;
+  Real h;
+  Real L;
+  Real UH;
+  Real c5_1;
+  Real c5_2;
+  Real c6_3;
+  Real c6_4;
+  Real c9_5;
+  Real c9_6;
+  Real c6_7;
+  Real c6_8;
+  Real c9_9;
+  Real c9_10;
+  Real c5_11;
+  Real c5_12;
+  Real c6_13;
+  Real c6_14;
+  Real c9_15;
+  Real c9_16;
+  Real c5_17;
+  Real c5_18;
+  Real c6_19;
+  Real c6_20;
+  Real c9_21;
+  Real c9_22;
+  Real c5_23;
+  Real c5_24;
+  Real c6_25;
+  Real c6_26;
+  Real c9_27;
+  Real c9_28;
+  Real c6_29;
+  Real c6_30;
+  Real c9_31;
+  Real c9_32;
+  Real c5_33;
+  Real c5_34;
+  Real c6_35;
+  Real c6_36;
+  Real c9_37;
+  Real c9_38;
+  Real d1;
+  Real d2;
+End.
+
+Problem
+  (
+    \exists c5_1 \exists c5_2 \exists c6_3 \exists c6_4 \exists c9_5 \exists c9_6 \exists c6_7 \exists c6_8 \exists c9_9 \exists c9_10 \exists c5_11 \exists c5_12 \exists c6_13 \exists c6_14 \exists c9_15 \exists c9_16 \exists c5_17 \exists c5_18 \exists c6_19 \exists c6_20 \exists c9_21 \exists c9_22 \exists c5_23 \exists c5_24 \exists c6_25 \exists c6_26 \exists c9_27 \exists c9_28 \exists c6_29 \exists c6_30 \exists c9_31 \exists c9_32 \exists c5_33 \exists c5_34 \exists c6_35 \exists c6_36 \exists c9_37 \exists c9_38 \exists d1 \exists d2
+    (
+      c5_1 > 0 & c5_2 > 0 & c6_3 > 0 & c6_4 > 0 & c9_5 > 0 & c9_6 > 0 & c6_7 > 0 & c6_8 > 0 & c9_9 > 0 & c9_10 > 0 & c5_11 > 0 & c5_12 > 0 & c6_13 > 0 & c6_14 > 0 & c9_15 > 0 & c9_16 > 0 & c5_17 > 0 & c5_18 > 0 & c6_19 > 0 & c6_20 > 0 & c9_21 > 0 & c9_22 > 0 & c5_23 > 0 & c5_24 > 0 & c6_25 > 0 & c6_26 > 0 & c9_27 > 0 & c9_28 > 0 & c6_29 > 0 & c6_30 > 0 & c9_31 > 0 & c9_32 > 0 & c5_33 > 0 & c5_34 > 0 & c6_35 > 0 & c6_36 > 0 & c9_37 > 0 & c9_38 > 0 & d1 > 0 & d2 > 0
+      &
+      (
+        \forall Fm \forall d \forall v \forall Fe \forall E \forall dt \forall Q \forall N \forall V \forall i \forall n \forall qe \forall B \forall h \forall L \forall UH
+        (
+          (
+            (Fm > 0 & d > 0 & v > 0 & Fe > 0 & E > 0 & dt > 0 & Q > 0 & N > 0 & V > 0 & i > 0 & n > 0 & qe > 0 & B > 0 & h > 0 & L > 0 & UH > 0) &
+            & ( Fm - qe*v*B = 0 )
+            & ( Fe - qe*E = 0 )
+            & ( Fm - Fe = 0 )
+            & ( E*h - UH = 0 )
+            & ( Q - N*qe = 0 )
+            & ( n*V - N = 0 )
+            & ( ( c5_1 * v*dt ) + ( c5_2 * L ) = 0 )
+            & ( ( c6_3 * dt*i ) + ( c6_4 * Q ) = 0 )
+            & ( ( c9_5 * d*h*L ) + ( c9_6 * V ) = 0 )
+            & ( ( c6_7 * dt*i ) + ( c6_8 * Q ) = 0 )
+            & ( ( c9_9 * d*h*L ) + ( c9_10 * V ) = 0 )
+            & ( ( c5_11 * v*dt ) + ( c5_12 * L ) = 0 )
+            & ( ( c6_13 * dt*i ) + ( c6_14 * Q ) = 0 )
+            & ( ( c9_15 * d*h*L ) + ( c9_16 * V ) = 0 )
+            & ( ( c5_17 * v*dt ) + ( c5_18 * L ) = 0 )
+            & ( ( c6_19 * dt*i ) + ( c6_20 * Q ) = 0 )
+            & ( ( c9_21 * d*h*L ) + ( c9_22 * V ) = 0 )
+            & ( ( c5_23 * v*dt ) + ( c5_24 * L ) = 0 )
+            & ( ( c6_25 * dt*i ) + ( c6_26 * Q ) = 0 )
+            & ( ( c9_27 * d*h*L ) + ( c9_28 * V ) = 0 )
+            & ( ( c6_29 * dt*i ) + ( c6_30 * Q ) = 0 )
+            & ( ( c9_31 * d*h*L ) + ( c9_32 * V ) = 0 )
+            & ( ( c5_33 * v*dt ) + ( c5_34 * L ) = 0 )
+            & ( ( c6_35 * dt*i ) + ( c6_36 * Q ) = 0 )
+            & ( ( c9_37 * d*h*L ) + ( c9_38 * V ) = 0 )
+          )
+          ->
+          (
+            ( d1 * N*qe*UH ) + ( d2 * i*B*h*L ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

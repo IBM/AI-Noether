@@ -1,0 +1,51 @@
+=== Primary Decomposition Results ===
+Remaining Axioms:
+  Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2
+  Fc-w^2*m2*d2
+  Fc-Fg
+
+Targets:
+  m1*m2*p^2-m2*d1^2*d2-2*m2*d1*d2^2-m2*d2^3
+
+Number of components: 5
+
+=== Component Generators ===
+COMPONENT_1:
+  num_generators: 3
+  GEN: m2
+  GEN: Fg
+  GEN: Fc
+
+COMPONENT_2:
+  num_generators: 4
+  GEN: d2
+  GEN: m1
+  GEN: Fg
+  GEN: Fc
+
+COMPONENT_3:
+  num_generators: 4
+  GEN: m1
+  GEN: Fc-Fg
+  GEN: d1^2+2*d1*d2+d2^2
+  GEN: Fg-w^2*m2*d2
+
+COMPONENT_4:
+  num_generators: 6
+  GEN: Fc-Fg
+  GEN: w*p-1
+  GEN: m1*p^2-d1^2*d2-2*d1*d2^2-d2^3
+  GEN: Fg*p-w*m2*d2
+  GEN: Fg*p^2-m2*d2
+  GEN: Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2
+
+COMPONENT_5:
+  num_generators: 6
+  GEN: Fc-Fg
+  GEN: w*p+1
+  GEN: m1*p^2-d1^2*d2-2*d1*d2^2-d2^3
+  GEN: Fg*p+w*m2*d2
+  GEN: Fg*p^2-m2*d2
+  GEN: Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2
+
+=== END ===

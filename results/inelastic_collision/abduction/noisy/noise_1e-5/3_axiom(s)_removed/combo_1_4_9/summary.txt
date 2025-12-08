@@ -1,0 +1,122 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-5
+Removed axiom indices (1-based): [1, 4, 9]
+Removed axioms:
+  pm^2*(c^2 - vm^2) - mm^2*vm^2*c^2
+  Ec^2 - (mc*c)^2 - (pc*c)^2
+  pc^2*(c^2 - vc^2) - mc^2*vc^2*c^2
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 9
+Symbolic regression results: 27
+
+Regression results below threshold (5.0):
+  Axiom 1, Component 1:
+    Singular value: 8.982351334622397e-101
+    Polynomial: 1*vm^2*mm^2*c^2
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 4, Component 1:
+    Singular value: 7.46132078925972e-50
+    Polynomial: 1*pc^2*c^2 + (-0.0738483+0.00362193i)*mc^2*c^2
+    Coefficient L2 error: 1.4673660715300403
+  Axiom 9, Component 1:
+    Singular value: 7.12357388069072e-50
+    Polynomial: (-0.00387641+0.000399414i)*vc^2*mc^2*c^2 + 1*pc^2*c^2
+    Coefficient L2 error: 2.4510748686799486
+  Axiom 1, Component 2:
+    Singular value: 3.253971582724874e-07
+    Polynomial: (-0.58-0.628484i)*vm^2*mm^2*c^2 + 1*vm^2*pm^2 + (-0.429851+0.227717i)*pm^2*c^2
+    Coefficient L2 error: 1.8078489276114578
+  Axiom 4, Component 2:
+    Singular value: 5.792434808000537e-07
+    Polynomial: 1*pc^2*c^2 + -0.249034*Ec^2 + 2.20068e-09*mc^2*c^2
+    Coefficient L2 error: 1.2505797173117301
+  Axiom 9, Component 2:
+    Singular value: 0.26257651887909167
+    Polynomial: (0.00557265+0.000199702i)*vc^2*pc^2 + (1.44816e-05-5.03863e-06i)*vc^2*mc^2*c^2 + 1*pc^2*c^2
+    Coefficient L2 error: 2.447214094715586
+  Axiom 1, Component 3:
+    Singular value: 6.031222520736539e-07
+    Polynomial: 1*vm^2*mm^2*c^2 + (-0.0514331+0.344882i)*vm^2*pm^2 + (-0.32941-0.220725i)*pm^2*c^2
+    Coefficient L2 error: 1.3125797075983434
+  Axiom 4, Component 3:
+    Singular value: 3.366102614580737e-07
+    Polynomial: -0.249035*pc^2*c^2 + 1*Ec^2 + -2.9414e-10*mc^2*c^2
+    Coefficient L2 error: 2.561266825973893
+  Axiom 9, Component 3:
+    Singular value: 0.2584374710318381
+    Polynomial: (0.000819149+0.000132182i)*vc^2*pc^2 + (1.18559e-05+2.10384e-05i)*vc^2*mc^2*c^2 + 1*pc^2*c^2
+    Coefficient L2 error: 2.449150603799717
+  Axiom 1, Component 4:
+    Singular value: 3.603313910151168e-07
+    Polynomial: 1*vm^2*mm^2*c^2 + (-0.306553-0.00147726i)*vm^2*pm^2 + (-0.166133+0.00094558i)*pm^2*c^2
+    Coefficient L2 error: 1.5499737440744734
+  Axiom 4, Component 4:
+    Singular value: 3.1658876491305665e-07
+    Polynomial: -0.249034*pc^2*c^2 + 1*Ec^2 + -2.36006e-09*mc^2*c^2
+    Coefficient L2 error: 2.5612666008595633
+  Axiom 9, Component 4:
+    Singular value: 0.3751077254391708
+    Polynomial: (-0.0117015+0.000955543i)*vc^2*pc^2 + (5.60631e-05-2.31037e-06i)*vc^2*mc^2*c^2 + 1*pc^2*c^2
+    Coefficient L2 error: 2.4542674613711037
+  Axiom 1, Component 5:
+    Singular value: 3.09508691788947e-07
+    Polynomial: (-0.719734-0.281295i)*vm^2*mm^2*c^2 + 1*vm^2*pm^2 + (-0.37922+0.101921i)*pm^2*c^2
+    Coefficient L2 error: 1.8526651864053374
+  Axiom 4, Component 5:
+    Singular value: 4.1390187886079877e-07
+    Polynomial: 1*pc^2*c^2 + -0.249034*Ec^2 + 2.83442e-09*mc^2*c^2
+    Coefficient L2 error: 1.2505795966593305
+  Axiom 9, Component 5:
+    Singular value: 0.20774443417556837
+    Polynomial: (0.00733256-0.00824454i)*vc^2*pc^2 + (-0.000253852+0.000101626i)*vc^2*mc^2*c^2 + 1*pc^2*c^2
+    Coefficient L2 error: 2.4466230596653187
+  Axiom 1, Component 6:
+    Singular value: 1.8773738542752358e-07
+    Polynomial: 1*vm^2*mm^2*c^2 + (-0.388137+0.0907331i)*vm^2*pm^2 + (-0.113919-0.0580692i)*pm^2*c^2
+    Coefficient L2 error: 1.6503540772428167
+  Axiom 4, Component 6:
+    Singular value: 5.059064205564177e-07
+    Polynomial: 1*pc^2*c^2 + -0.249034*Ec^2 + 4.80688e-08*mc^2*c^2
+    Coefficient L2 error: 1.2505796019189512
+  Axiom 9, Component 6:
+    Singular value: 0.18860854946496217
+    Polynomial: (0.0126519+0.0075399i)*vc^2*pc^2 + (-8.85954e-05+0.000372061i)*vc^2*mc^2*c^2 + 1*pc^2*c^2
+    Coefficient L2 error: 2.444399821969796
+  Axiom 1, Component 7:
+    Singular value: 8.976582103800761e-08
+    Polynomial: 1*vm^2*mm^2*c^2 + (-0.37847+0.055155i)*vm^2*pm^2 + (-0.120106-0.0352993i)*pm^2*c^2
+    Coefficient L2 error: 1.6366678577542044
+  Axiom 4, Component 7:
+    Singular value: 3.466798076122282e-07
+    Polynomial: 1*pc^2*c^2 + -0.249034*Ec^2 + 4.10589e-09*mc^2*c^2
+    Coefficient L2 error: 1.2505796447632695
+  Axiom 9, Component 7:
+    Singular value: 0.11417378776680809
+    Polynomial: (-0.0119555-0.00880426i)*vc^2*pc^2 + (0.000416021-0.000257627i)*vc^2*mc^2*c^2 + 1*pc^2*c^2
+    Coefficient L2 error: 2.454241134857157
+  Axiom 1, Component 8:
+    Singular value: 1.2086653837115908e-07
+    Polynomial: 1*vm^2*mm^2*c^2 + (-0.799865-0.109356i)*vm^2*pm^2 + (0.149587+0.0699879i)*pm^2*c^2
+    Coefficient L2 error: 2.1396072190293065
+  Axiom 4, Component 8:
+    Singular value: 2.681422347145898e-07
+    Polynomial: -0.249034*pc^2*c^2 + 1*Ec^2 + -3.29123e-10*mc^2*c^2
+    Coefficient L2 error: 2.5612665282600413
+  Axiom 9, Component 8:
+    Singular value: 0.22060605949363032
+    Polynomial: (-0.00124775-0.000473721i)*vc^2*pc^2 + (0.000189349-4.23492e-05i)*vc^2*mc^2*c^2 + 1*pc^2*c^2
+    Coefficient L2 error: 2.449922166191078
+  Axiom 1, Component 9:
+    Singular value: 6.753884542847581e-08
+    Polynomial: 1*vm^2*mm^2*c^2 + (-0.783593-0.0569582i)*vm^2*pm^2 + (0.139172+0.0364535i)*pm^2*c^2
+    Coefficient L2 error: 2.1174254865011757
+  Axiom 4, Component 9:
+    Singular value: 9.763269877487465e-08
+    Polynomial: -0.249034*pc^2*c^2 + 1*Ec^2 + -2.37051e-10*mc^2*c^2
+    Coefficient L2 error: 2.561266695555282
+  Axiom 9, Component 9:
+    Singular value: 0.3213342571526812
+    Polynomial: (-0.0291209+0.0146377i)*vc^2*pc^2 + (0.00232742+0.000355106i)*vc^2*mc^2*c^2 + 1*pc^2*c^2
+    Coefficient L2 error: 2.4606208334178197

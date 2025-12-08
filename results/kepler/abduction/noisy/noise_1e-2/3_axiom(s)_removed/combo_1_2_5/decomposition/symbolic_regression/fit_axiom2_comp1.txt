@@ -1,0 +1,19 @@
+=== Symbolic Regression Result ===
+Dropped axiom index (1-based): 2
+Dropped axiom text: Fg*(d1+d2)^2 - m1*m2
+Component index: 1
+Variables: ['Fg', 'm1', 'd1', 'm2', 'd2']
+Number of monomials: 4
+Total degree: 3
+Number of points (total): 100
+Number of points (used after outlier removal): 18
+Smallest singular value: 0.67323369033338
+Relative residual: 0.6821685830239197
+
+Inferred polynomial (raw):
+  0.012416*Fg*d1^2 + (0.00967735-0.00203039i)*Fg*d1*d2 + (-0.00217575+0.00100347i)*Fg*d2^2 + (0.961366-0.275272i)*m1*m2 = 0
+
+Inferred polynomial (normalized):
+  (0.0119363+0.00341777i)*Fg*d1^2 + (0.00986239+0.000711958i)*Fg*d1*d2 + (-0.00236792+0.000365781i)*Fg*d2^2 + 1*m1*m2 = 0
+
+Coefficient L2 error vs true: 1.9289801801978135

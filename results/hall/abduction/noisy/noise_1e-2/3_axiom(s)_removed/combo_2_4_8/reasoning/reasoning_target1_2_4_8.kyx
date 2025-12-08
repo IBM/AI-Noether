@@ -1,0 +1,111 @@
+ArchiveEntry "hall_target1_combo2_4_8"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real Fm;
+  Real d;
+  Real v;
+  Real Fe;
+  Real E;
+  Real dt;
+  Real Q;
+  Real N;
+  Real V;
+  Real i;
+  Real n;
+  Real qe;
+  Real B;
+  Real h;
+  Real L;
+  Real UH;
+  Real c2_1;
+  Real c2_2;
+  Real c4_3;
+  Real c4_4;
+  Real c8_5;
+  Real c8_6;
+  Real c2_7;
+  Real c2_8;
+  Real c4_9;
+  Real c4_10;
+  Real c8_11;
+  Real c8_12;
+  Real c2_13;
+  Real c2_14;
+  Real c4_15;
+  Real c4_16;
+  Real c8_17;
+  Real c8_18;
+  Real c2_19;
+  Real c2_20;
+  Real c4_21;
+  Real c4_22;
+  Real c8_23;
+  Real c8_24;
+  Real c2_25;
+  Real c2_26;
+  Real c4_27;
+  Real c4_28;
+  Real c8_29;
+  Real c8_30;
+  Real d1;
+  Real d2;
+End.
+
+Problem
+  (
+    \exists c2_1 \exists c2_2 \exists c4_3 \exists c4_4 \exists c8_5 \exists c8_6 \exists c2_7 \exists c2_8 \exists c4_9 \exists c4_10 \exists c8_11 \exists c8_12 \exists c2_13 \exists c2_14 \exists c4_15 \exists c4_16 \exists c8_17 \exists c8_18 \exists c2_19 \exists c2_20 \exists c4_21 \exists c4_22 \exists c8_23 \exists c8_24 \exists c2_25 \exists c2_26 \exists c4_27 \exists c4_28 \exists c8_29 \exists c8_30 \exists d1 \exists d2
+    (
+      c2_1 > 0 & c2_2 > 0 & c4_3 > 0 & c4_4 > 0 & c8_5 > 0 & c8_6 > 0 & c2_7 > 0 & c2_8 > 0 & c4_9 > 0 & c4_10 > 0 & c8_11 > 0 & c8_12 > 0 & c2_13 > 0 & c2_14 > 0 & c4_15 > 0 & c4_16 > 0 & c8_17 > 0 & c8_18 > 0 & c2_19 > 0 & c2_20 > 0 & c4_21 > 0 & c4_22 > 0 & c8_23 > 0 & c8_24 > 0 & c2_25 > 0 & c2_26 > 0 & c4_27 > 0 & c4_28 > 0 & c8_29 > 0 & c8_30 > 0 & d1 > 0 & d2 > 0
+      &
+      (
+        \forall Fm \forall d \forall v \forall Fe \forall E \forall dt \forall Q \forall N \forall V \forall i \forall n \forall qe \forall B \forall h \forall L \forall UH
+        (
+          (
+            (Fm > 0 & d > 0 & v > 0 & Fe > 0 & E > 0 & dt > 0 & Q > 0 & N > 0 & V > 0 & i > 0 & n > 0 & qe > 0 & B > 0 & h > 0 & L > 0 & UH > 0) &
+            & ( Fm - qe*v*B = 0 )
+            & ( Fm - Fe = 0 )
+            & ( v*dt - L = 0 )
+            & ( i*dt - Q = 0 )
+            & ( Q - N*qe = 0 )
+            & ( V - L*h*d = 0 )
+            & ( ( c2_1 * Fe ) + ( c2_2 * E*qe ) = 0 )
+            & ( ( c4_3 * E*h ) + ( c4_4 * UH ) = 0 )
+            & ( ( c8_5 * N ) + ( c8_6 * V*n ) = 0 )
+            & ( ( c2_7 * Fe ) + ( c2_8 * E*qe ) = 0 )
+            & ( ( c4_9 * E*h ) + ( c4_10 * UH ) = 0 )
+            & ( ( c8_11 * N ) + ( c8_12 * V*n ) = 0 )
+            & ( ( c2_13 * Fe ) + ( c2_14 * E*qe ) = 0 )
+            & ( ( c4_15 * E*h ) + ( c4_16 * UH ) = 0 )
+            & ( ( c8_17 * N ) + ( c8_18 * V*n ) = 0 )
+            & ( ( c2_19 * Fe ) + ( c2_20 * E*qe ) = 0 )
+            & ( ( c4_21 * E*h ) + ( c4_22 * UH ) = 0 )
+            & ( ( c8_23 * N ) + ( c8_24 * V*n ) = 0 )
+            & ( ( c2_25 * Fe ) + ( c2_26 * E*qe ) = 0 )
+            & ( ( c4_27 * E*h ) + ( c4_28 * UH ) = 0 )
+            & ( ( c8_29 * N ) + ( c8_30 * V*n ) = 0 )
+          )
+          ->
+          (
+            ( d1 * N*qe*UH ) + ( d2 * i*B*h*L ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

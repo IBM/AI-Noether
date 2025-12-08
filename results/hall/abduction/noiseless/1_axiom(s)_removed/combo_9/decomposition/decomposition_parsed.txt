@@ -1,0 +1,35 @@
+Number of components: 3
+
+COMPONENT_1:
+  num_generators: 8
+  GEN: -V*n*qe+dt*i
+  GEN: v*B-E
+  GEN: -E*h+UH
+  GEN: -v*dt+L
+  GEN: -V*n+N
+  GEN: -dt*i+Q
+  GEN: -E*qe+Fe
+  GEN: -v*qe*B+Fm
+
+COMPONENT_2:
+  num_generators: 8
+  GEN: -E*h+UH
+  GEN: -v*dt+L
+  GEN: qe
+  GEN: i
+  GEN: -V*n+N
+  GEN: -dt*i+Q
+  GEN: -E*qe+Fe
+  GEN: -v*qe*B+Fm
+
+COMPONENT_3:
+  num_generators: 8
+  GEN: -E*h+UH
+  GEN: -v*dt+L
+  GEN: qe
+  GEN: -V*n+N
+  GEN: -dt*i+Q
+  GEN: dt
+  GEN: -E*qe+Fe
+  GEN: -v*qe*B+Fm
+

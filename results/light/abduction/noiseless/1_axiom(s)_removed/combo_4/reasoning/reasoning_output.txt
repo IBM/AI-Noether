@@ -1,0 +1,627 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  S*r^2-ap^2*sintheta^2*qc^2
+  -628*sintheta*dtheta*r^2+100*dA
+  -S*dA+P
+  2*ap^2-x0^2*w^4
+
+Targets:
+  75*P-314*qc^2*x0^2*w^4
+
+Require literal GB appearance: true
+Number of candidate sets to test: 127
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {S*dA-P}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {628*S*r^2-75*sintheta^2*P}
+  filtered: {628*S*r^2-75*sintheta^2*P}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {75*sintheta^2*dA-628*r^2}
+  filtered: {75*sintheta^2*dA-628*r^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {628*ap^2*qc^2-75*P}
+  filtered: {628*ap^2*qc^2-75*P}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {157*sintheta*dtheta*r^2-25*dA}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4}
+  filtered: {3*sintheta^3*dtheta-4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-1875*sintheta*dA^2+98596*dtheta*r^4}
+  filtered: {-1875*sintheta*dA^2+98596*dtheta*r^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-2*ap^2+x0^2*w^4}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {S*dA-P, 628*S*r^2-75*sintheta^2*P}
+  filtered: {628*S*r^2-75*sintheta^2*P}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {S*dA-P, 75*sintheta^2*dA-628*r^2}
+  filtered: {75*sintheta^2*dA-628*r^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {S*dA-P, 628*ap^2*qc^2-75*P}
+  filtered: {628*ap^2*qc^2-75*P}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {S*dA-P, 157*sintheta*dtheta*r^2-25*dA}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {S*dA-P, 3*sintheta^3*dtheta-4}
+  filtered: {3*sintheta^3*dtheta-4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {S*dA-P, -1875*sintheta*dA^2+98596*dtheta*r^4}
+  filtered: {-1875*sintheta*dA^2+98596*dtheta*r^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {S*dA-P, -2*ap^2+x0^2*w^4}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {628*S*r^2-75*sintheta^2*P, 75*sintheta^2*dA-628*r^2}
+  filtered: {628*S*r^2-75*sintheta^2*P, 75*sintheta^2*dA-628*r^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {628*S*r^2-75*sintheta^2*P, 628*ap^2*qc^2-75*P}
+  filtered: {628*S*r^2-75*sintheta^2*P, 628*ap^2*qc^2-75*P}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {628*S*r^2-75*sintheta^2*P, 157*sintheta*dtheta*r^2-25*dA}
+  filtered: {628*S*r^2-75*sintheta^2*P}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {628*S*r^2-75*sintheta^2*P, 3*sintheta^3*dtheta-4}
+  filtered: {628*S*r^2-75*sintheta^2*P, 3*sintheta^3*dtheta-4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {628*S*r^2-75*sintheta^2*P, -1875*sintheta*dA^2+98596*dtheta*r^4}
+  filtered: {628*S*r^2-75*sintheta^2*P, -1875*sintheta*dA^2+98596*dtheta*r^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {628*S*r^2-75*sintheta^2*P, -2*ap^2+x0^2*w^4}
+  filtered: {628*S*r^2-75*sintheta^2*P}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {75*sintheta^2*dA-628*r^2, 628*ap^2*qc^2-75*P}
+  filtered: {75*sintheta^2*dA-628*r^2, 628*ap^2*qc^2-75*P}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {75*sintheta^2*dA-628*r^2, 157*sintheta*dtheta*r^2-25*dA}
+  filtered: {75*sintheta^2*dA-628*r^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {75*sintheta^2*dA-628*r^2, 3*sintheta^3*dtheta-4}
+  filtered: {75*sintheta^2*dA-628*r^2, 3*sintheta^3*dtheta-4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {75*sintheta^2*dA-628*r^2, -1875*sintheta*dA^2+98596*dtheta*r^4}
+  filtered: {75*sintheta^2*dA-628*r^2, -1875*sintheta*dA^2+98596*dtheta*r^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {75*sintheta^2*dA-628*r^2, -2*ap^2+x0^2*w^4}
+  filtered: {75*sintheta^2*dA-628*r^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {628*ap^2*qc^2-75*P, 157*sintheta*dtheta*r^2-25*dA}
+  filtered: {628*ap^2*qc^2-75*P}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {628*ap^2*qc^2-75*P, 3*sintheta^3*dtheta-4}
+  filtered: {628*ap^2*qc^2-75*P, 3*sintheta^3*dtheta-4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {628*ap^2*qc^2-75*P, -1875*sintheta*dA^2+98596*dtheta*r^4}
+  filtered: {628*ap^2*qc^2-75*P, -1875*sintheta*dA^2+98596*dtheta*r^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {628*ap^2*qc^2-75*P, -2*ap^2+x0^2*w^4}
+  filtered: {628*ap^2*qc^2-75*P}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {157*sintheta*dtheta*r^2-25*dA, 3*sintheta^3*dtheta-4}
+  filtered: {3*sintheta^3*dtheta-4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {157*sintheta*dtheta*r^2-25*dA, -1875*sintheta*dA^2+98596*dtheta*r^4}
+  filtered: {-1875*sintheta*dA^2+98596*dtheta*r^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {157*sintheta*dtheta*r^2-25*dA, -2*ap^2+x0^2*w^4}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, -1875*sintheta*dA^2+98596*dtheta*r^4}
+  filtered: {3*sintheta^3*dtheta-4, -1875*sintheta*dA^2+98596*dtheta*r^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, -2*ap^2+x0^2*w^4}
+  filtered: {3*sintheta^3*dtheta-4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-1875*sintheta*dA^2+98596*dtheta*r^4, -2*ap^2+x0^2*w^4}
+  filtered: {-1875*sintheta*dA^2+98596*dtheta*r^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {w}
+  filtered: {w}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {P}
+  filtered: {P}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {ap}
+  filtered: {ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {S}
+  filtered: {S}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {157*sintheta*dtheta*r^2-25*dA}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {w, P}
+  filtered: {w, P}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w, ap}
+  filtered: {w, ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w, S}
+  filtered: {w, S}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w, 157*sintheta*dtheta*r^2-25*dA}
+  filtered: {w}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {P, ap}
+  filtered: {P, ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {P, S}
+  filtered: {P, S}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {P, 157*sintheta*dtheta*r^2-25*dA}
+  filtered: {P}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {ap, S}
+  filtered: {ap, S}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {ap, 157*sintheta*dtheta*r^2-25*dA}
+  filtered: {ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {S, 157*sintheta*dtheta*r^2-25*dA}
+  filtered: {S}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {w}
+  filtered: {w}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {P}
+  filtered: {P}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r}
+  filtered: {r}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dA}
+  filtered: {dA}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {ap}
+  filtered: {ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w, P}
+  filtered: {w, P}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w, r}
+  filtered: {w, r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w, dA}
+  filtered: {w, dA}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {w, ap}
+  filtered: {w, ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {P, r}
+  filtered: {P, r}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {P, dA}
+  filtered: {P, dA}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {P, ap}
+  filtered: {P, ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r, dA}
+  filtered: {r, dA}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r, ap}
+  filtered: {r, ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {dA, ap}
+  filtered: {dA, ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {qc}
+  filtered: {qc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {P}
+  filtered: {P}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {S}
+  filtered: {S}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {157*sintheta*dtheta*r^2-25*dA}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-2*ap^2+x0^2*w^4}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {qc, P}
+  filtered: {qc, P}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {qc, S}
+  filtered: {qc, S}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {qc, 157*sintheta*dtheta*r^2-25*dA}
+  filtered: {qc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {qc, -2*ap^2+x0^2*w^4}
+  filtered: {qc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {P, S}
+  filtered: {P, S}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {P, 157*sintheta*dtheta*r^2-25*dA}
+  filtered: {P}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {P, -2*ap^2+x0^2*w^4}
+  filtered: {P}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {S, 157*sintheta*dtheta*r^2-25*dA}
+  filtered: {S}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {S, -2*ap^2+x0^2*w^4}
+  filtered: {S}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {157*sintheta*dtheta*r^2-25*dA, -2*ap^2+x0^2*w^4}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {qc}
+  filtered: {qc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {P}
+  filtered: {P}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r}
+  filtered: {r}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dA}
+  filtered: {dA}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-2*ap^2+x0^2*w^4}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {qc, P}
+  filtered: {qc, P}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {qc, r}
+  filtered: {qc, r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {qc, dA}
+  filtered: {qc, dA}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {qc, -2*ap^2+x0^2*w^4}
+  filtered: {qc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {P, r}
+  filtered: {P, r}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {P, dA}
+  filtered: {P, dA}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {P, -2*ap^2+x0^2*w^4}
+  filtered: {P}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r, dA}
+  filtered: {r, dA}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r, -2*ap^2+x0^2*w^4}
+  filtered: {r}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dA, -2*ap^2+x0^2*w^4}
+  filtered: {dA}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {x0}
+  filtered: {x0}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {P}
+  filtered: {P}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {ap}
+  filtered: {ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {S}
+  filtered: {S}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {157*sintheta*dtheta*r^2-25*dA}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {x0, P}
+  filtered: {x0, P}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {x0, ap}
+  filtered: {x0, ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {x0, S}
+  filtered: {x0, S}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {x0, 157*sintheta*dtheta*r^2-25*dA}
+  filtered: {x0}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {P, ap}
+  filtered: {P, ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {P, S}
+  filtered: {P, S}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {P, 157*sintheta*dtheta*r^2-25*dA}
+  filtered: {P}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {ap, S}
+  filtered: {ap, S}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {ap, 157*sintheta*dtheta*r^2-25*dA}
+  filtered: {ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {S, 157*sintheta*dtheta*r^2-25*dA}
+  filtered: {S}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {x0}
+  filtered: {x0}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {P}
+  filtered: {P}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r}
+  filtered: {r}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dA}
+  filtered: {dA}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {ap}
+  filtered: {ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {x0, P}
+  filtered: {x0, P}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {x0, r}
+  filtered: {x0, r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {x0, dA}
+  filtered: {x0, dA}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {x0, ap}
+  filtered: {x0, ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {P, r}
+  filtered: {P, r}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {P, dA}
+  filtered: {P, dA}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {P, ap}
+  filtered: {P, ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r, dA}
+  filtered: {r, dA}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r, ap}
+  filtered: {r, ap}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {dA, ap}
+  filtered: {dA, ap}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {628*ap^2*qc^2-75*P}
+  {3*sintheta^3*dtheta-4}
+  {628*ap^2*qc^2-75*P, 628*S*r^2-75*sintheta^2*P}
+  {3*sintheta^3*dtheta-4, 628*S*r^2-75*sintheta^2*P}
+  {75*sintheta^2*dA-628*r^2, 628*ap^2*qc^2-75*P}
+  {75*sintheta^2*dA-628*r^2, 3*sintheta^3*dtheta-4}
+  {3*sintheta^3*dtheta-4, 628*ap^2*qc^2-75*P}
+  {-1875*sintheta*dA^2+98596*dtheta*r^4, 628*ap^2*qc^2-75*P}
+  {-1875*sintheta*dA^2+98596*dtheta*r^4, 3*sintheta^3*dtheta-4}
+  {w}
+  {ap}
+  {w, P}
+  {w, ap}
+  {w, S}
+  {P, ap}
+  {ap, S}
+  {w, r}
+  {w, dA}
+  {r, ap}
+  {dA, ap}
+  {qc}
+  {qc, P}
+  {qc, S}
+  {qc, r}
+  {qc, dA}
+  {x0}
+  {x0, P}
+  {x0, ap}
+  {x0, S}
+  {x0, r}
+  {x0, dA}
+
+STRONG_CANDIDATES:
+  {628*ap^2*qc^2-75*P}
+  {3*sintheta^3*dtheta-4}
+  {628*ap^2*qc^2-75*P, 628*S*r^2-75*sintheta^2*P}
+  {3*sintheta^3*dtheta-4, 628*S*r^2-75*sintheta^2*P}
+  {75*sintheta^2*dA-628*r^2, 628*ap^2*qc^2-75*P}
+  {75*sintheta^2*dA-628*r^2, 3*sintheta^3*dtheta-4}
+  {3*sintheta^3*dtheta-4, 628*ap^2*qc^2-75*P}
+  {-1875*sintheta*dA^2+98596*dtheta*r^4, 628*ap^2*qc^2-75*P}
+  {-1875*sintheta*dA^2+98596*dtheta*r^4, 3*sintheta^3*dtheta-4}

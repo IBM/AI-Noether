@@ -1,0 +1,40 @@
+Number of components: 4
+
+COMPONENT_1:
+  num_generators: 6
+  GEN: c
+  GEN: pm
+  GEN: Er
+  GEN: pc
+  GEN: vm
+  GEN: mr-mm
+
+COMPONENT_2:
+  num_generators: 6
+  GEN: c
+  GEN: Er
+  GEN: pc-pm
+  GEN: vc
+  GEN: vm
+  GEN: mr-mm
+
+COMPONENT_3:
+  num_generators: 7
+  GEN: pc-pm
+  GEN: 5*vm-4*c
+  GEN: mr-mm
+  GEN: 3*pm*c-4*Er
+  GEN: 4*mm*c-3*pm
+  GEN: 16*Er*mm-9*pm^2
+  GEN: 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2
+
+COMPONENT_4:
+  num_generators: 7
+  GEN: pc-pm
+  GEN: 5*vm-4*c
+  GEN: mr-mm
+  GEN: 3*pm*c+4*Er
+  GEN: 4*mm*c+3*pm
+  GEN: 16*Er*mm-9*pm^2
+  GEN: 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2
+

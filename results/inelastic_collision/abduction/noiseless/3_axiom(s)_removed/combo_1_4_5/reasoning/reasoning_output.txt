@@ -1,0 +1,4305 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  Em^2-mm^2*c^4-pm^2*c^2
+  -mr*c^2+Er
+  pc-pm
+  vm-(4/5)*c
+  mr-mm
+  -vc^2*pc^2-vc^2*mc^2*c^2+pc^2*c^2
+
+Targets:
+  16*mm^2*c^4-9*pm^2*c^2
+
+Require literal GB appearance: true
+Number of candidate sets to test: 845
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {c}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm}
+  filtered: {pm}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Er}
+  filtered: {Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em}
+  filtered: {Em}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc}
+  filtered: {pc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {vm}
+  filtered: {vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {c, pm}
+  filtered: {c, pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er}
+  filtered: {c, Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em}
+  filtered: {c, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc}
+  filtered: {c, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vm}
+  filtered: {c, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, mr-mm}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Er}
+  filtered: {pm, Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Em}
+  filtered: {pm, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, pc}
+  filtered: {pm, pc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, vm}
+  filtered: {pm, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, mr-mm}
+  filtered: {pm}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Er, Em}
+  filtered: {Er, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, pc}
+  filtered: {Er, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, vm}
+  filtered: {Er, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, mr-mm}
+  filtered: {Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em, pc}
+  filtered: {Em, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, vm}
+  filtered: {Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, mr-mm}
+  filtered: {Em}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc, vm}
+  filtered: {pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc, mr-mm}
+  filtered: {pc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {vm, mr-mm}
+  filtered: {vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Er}
+  filtered: {c, pm, Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Em}
+  filtered: {c, pm, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, pc}
+  filtered: {c, pm, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, vm}
+  filtered: {c, pm, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, mr-mm}
+  filtered: {c, pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, Em}
+  filtered: {c, Er, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, pc}
+  filtered: {c, Er, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, vm}
+  filtered: {c, Er, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, mr-mm}
+  filtered: {c, Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, pc}
+  filtered: {c, Em, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, vm}
+  filtered: {c, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, mr-mm}
+  filtered: {c, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc, vm}
+  filtered: {c, pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc, mr-mm}
+  filtered: {c, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vm, mr-mm}
+  filtered: {c, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Er, Em}
+  filtered: {pm, Er, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Er, pc}
+  filtered: {pm, Er, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Er, vm}
+  filtered: {pm, Er, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Er, mr-mm}
+  filtered: {pm, Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Em, pc}
+  filtered: {pm, Em, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Em, vm}
+  filtered: {pm, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Em, mr-mm}
+  filtered: {pm, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, pc, vm}
+  filtered: {pm, pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, pc, mr-mm}
+  filtered: {pm, pc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pm, vm, mr-mm}
+  filtered: {pm, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, pc}
+  filtered: {Er, Em, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, vm}
+  filtered: {Er, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, mr-mm}
+  filtered: {Er, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, pc, vm}
+  filtered: {Er, pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, pc, mr-mm}
+  filtered: {Er, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, vm, mr-mm}
+  filtered: {Er, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, pc, vm}
+  filtered: {Em, pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, pc, mr-mm}
+  filtered: {Em, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, vm, mr-mm}
+  filtered: {Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc, vm, mr-mm}
+  filtered: {pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Er, Em}
+  filtered: {c, pm, Er, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Er, pc}
+  filtered: {c, pm, Er, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Er, vm}
+  filtered: {c, pm, Er, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Er, mr-mm}
+  filtered: {c, pm, Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Em, pc}
+  filtered: {c, pm, Em, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Em, vm}
+  filtered: {c, pm, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, Em, mr-mm}
+  filtered: {c, pm, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, pc, vm}
+  filtered: {c, pm, pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, pc, mr-mm}
+  filtered: {c, pm, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pm, vm, mr-mm}
+  filtered: {c, pm, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, Em, pc}
+  filtered: {c, Er, Em, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, Em, vm}
+  filtered: {c, Er, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, Em, mr-mm}
+  filtered: {c, Er, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, pc, vm}
+  filtered: {c, Er, pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, pc, mr-mm}
+  filtered: {c, Er, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, vm, mr-mm}
+  filtered: {c, Er, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, pc, vm}
+  filtered: {c, Em, pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, pc, mr-mm}
+  filtered: {c, Em, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, vm, mr-mm}
+  filtered: {c, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc, vm, mr-mm}
+  filtered: {c, pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Er, Em, pc}
+  filtered: {pm, Er, Em, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Er, Em, vm}
+  filtered: {pm, Er, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Er, Em, mr-mm}
+  filtered: {pm, Er, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Er, pc, vm}
+  filtered: {pm, Er, pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Er, pc, mr-mm}
+  filtered: {pm, Er, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Er, vm, mr-mm}
+  filtered: {pm, Er, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Em, pc, vm}
+  filtered: {pm, Em, pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Em, pc, mr-mm}
+  filtered: {pm, Em, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, Em, vm, mr-mm}
+  filtered: {pm, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pm, pc, vm, mr-mm}
+  filtered: {pm, pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, pc, vm}
+  filtered: {Er, Em, pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, pc, mr-mm}
+  filtered: {Er, Em, pc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, vm, mr-mm}
+  filtered: {Er, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, pc, vm, mr-mm}
+  filtered: {Er, pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, pc, vm, mr-mm}
+  filtered: {Em, pc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er}
+  filtered: {Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em}
+  filtered: {Em}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {vc}
+  filtered: {vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {vm}
+  filtered: {vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {c, Er}
+  filtered: {c, Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em}
+  filtered: {c, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vc}
+  filtered: {c, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vm}
+  filtered: {c, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, mr-mm}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em}
+  filtered: {Er, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, pc-pm}
+  filtered: {Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Er, vc}
+  filtered: {Er, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, vm}
+  filtered: {Er, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, mr-mm}
+  filtered: {Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em, pc-pm}
+  filtered: {Em}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em, vc}
+  filtered: {Em, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, vm}
+  filtered: {Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, mr-mm}
+  filtered: {Em}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vc}
+  filtered: {vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vm}
+  filtered: {vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {vc, vm}
+  filtered: {vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {vc, mr-mm}
+  filtered: {vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {vm, mr-mm}
+  filtered: {vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, Em}
+  filtered: {c, Er, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, pc-pm}
+  filtered: {c, Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, vc}
+  filtered: {c, Er, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, vm}
+  filtered: {c, Er, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, mr-mm}
+  filtered: {c, Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, pc-pm}
+  filtered: {c, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, vc}
+  filtered: {c, Em, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, vm}
+  filtered: {c, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, mr-mm}
+  filtered: {c, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm, vc}
+  filtered: {c, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm, vm}
+  filtered: {c, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm, mr-mm}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vc, vm}
+  filtered: {c, vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vc, mr-mm}
+  filtered: {c, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vm, mr-mm}
+  filtered: {c, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, pc-pm}
+  filtered: {Er, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, vc}
+  filtered: {Er, Em, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, vm}
+  filtered: {Er, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, mr-mm}
+  filtered: {Er, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, pc-pm, vc}
+  filtered: {Er, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, pc-pm, vm}
+  filtered: {Er, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, pc-pm, mr-mm}
+  filtered: {Er}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Er, vc, vm}
+  filtered: {Er, vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, vc, mr-mm}
+  filtered: {Er, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, vm, mr-mm}
+  filtered: {Er, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, pc-pm, vc}
+  filtered: {Em, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, pc-pm, vm}
+  filtered: {Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, pc-pm, mr-mm}
+  filtered: {Em}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Em, vc, vm}
+  filtered: {Em, vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, vc, mr-mm}
+  filtered: {Em, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, vm, mr-mm}
+  filtered: {Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, vc, vm}
+  filtered: {vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, vc, mr-mm}
+  filtered: {vc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, vm, mr-mm}
+  filtered: {vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {vc, vm, mr-mm}
+  filtered: {vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, Em, pc-pm}
+  filtered: {c, Er, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, Em, vc}
+  filtered: {c, Er, Em, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, Em, vm}
+  filtered: {c, Er, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, Em, mr-mm}
+  filtered: {c, Er, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, pc-pm, vc}
+  filtered: {c, Er, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, pc-pm, vm}
+  filtered: {c, Er, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, pc-pm, mr-mm}
+  filtered: {c, Er}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, vc, vm}
+  filtered: {c, Er, vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, vc, mr-mm}
+  filtered: {c, Er, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Er, vm, mr-mm}
+  filtered: {c, Er, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, pc-pm, vc}
+  filtered: {c, Em, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, pc-pm, vm}
+  filtered: {c, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, pc-pm, mr-mm}
+  filtered: {c, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, vc, vm}
+  filtered: {c, Em, vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, vc, mr-mm}
+  filtered: {c, Em, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, Em, vm, mr-mm}
+  filtered: {c, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm, vc, vm}
+  filtered: {c, vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm, vc, mr-mm}
+  filtered: {c, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, pc-pm, vm, mr-mm}
+  filtered: {c, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c, vc, vm, mr-mm}
+  filtered: {c, vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, pc-pm, vc}
+  filtered: {Er, Em, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, pc-pm, vm}
+  filtered: {Er, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, pc-pm, mr-mm}
+  filtered: {Er, Em}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, vc, vm}
+  filtered: {Er, Em, vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, vc, mr-mm}
+  filtered: {Er, Em, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, Em, vm, mr-mm}
+  filtered: {Er, Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, pc-pm, vc, vm}
+  filtered: {Er, vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, pc-pm, vc, mr-mm}
+  filtered: {Er, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, pc-pm, vm, mr-mm}
+  filtered: {Er, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Er, vc, vm, mr-mm}
+  filtered: {Er, vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, pc-pm, vc, vm}
+  filtered: {Em, vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, pc-pm, vc, mr-mm}
+  filtered: {Em, vc}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, pc-pm, vm, mr-mm}
+  filtered: {Em, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Em, vc, vm, mr-mm}
+  filtered: {Em, vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, vc, vm, mr-mm}
+  filtered: {vc, vm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {pc-pm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {5*vm-4*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, -4*Er+3*pm*c}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 4*mm*c-3*pm}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, -4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {5*vm-4*c, -4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {mr-mm, -4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 5*vm-4*c}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, mr-mm}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, -4*Er+3*pm*c}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 4*mm*c-3*pm}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, mr-mm}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, -4*Er+3*pm*c}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 4*mm*c-3*pm}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, -4*Er+3*pm*c}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 4*mm*c-3*pm}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, -4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, mr-mm, -4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, -4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {5*vm-4*c, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 5*vm-4*c, mr-mm}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 5*vm-4*c, -4*Er+3*pm*c}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 5*vm-4*c, 4*mm*c-3*pm}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, mr-mm, -4*Er+3*pm*c}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, mr-mm, 4*mm*c-3*pm}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, mr-mm, -4*Er+3*pm*c}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, mr-mm, 4*mm*c-3*pm}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, -4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, -4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, -4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, 4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, -4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, -4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, -4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, -4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, -4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, -4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, -4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {pc-pm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {5*vm-4*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, -4*Er+3*pm*c}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 4*mm*c-3*pm}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, -4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {5*vm-4*c, -4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {mr-mm, -4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 5*vm-4*c}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, mr-mm}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, -4*Er+3*pm*c}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 4*mm*c-3*pm}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, mr-mm}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, -4*Er+3*pm*c}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 4*mm*c-3*pm}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, -4*Er+3*pm*c}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 4*mm*c-3*pm}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, -4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, mr-mm, -4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, -4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {5*vm-4*c, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 5*vm-4*c, mr-mm}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 5*vm-4*c, -4*Er+3*pm*c}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 5*vm-4*c, 4*mm*c-3*pm}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, mr-mm, -4*Er+3*pm*c}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, mr-mm, 4*mm*c-3*pm}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, mr-mm, -4*Er+3*pm*c}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, mr-mm, 4*mm*c-3*pm}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, -4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, -4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, -4*Er+3*pm*c}
+  filtered: {-4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, 4*mm*c-3*pm}
+  filtered: {4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, -4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, -4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, -4*Er+3*pm*c, 4*mm*c-3*pm}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, -4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, -4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, -4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, -4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, -4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {-4*Er+3*pm*c, 4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {pc-pm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {5*vm-4*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, 4*Er+3*pm*c}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 4*mm*c+3*pm}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, 4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {5*vm-4*c, 4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {mr-mm, 4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 5*vm-4*c}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, mr-mm}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 4*Er+3*pm*c}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 4*mm*c+3*pm}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, mr-mm}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 4*Er+3*pm*c}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 4*mm*c+3*pm}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 4*Er+3*pm*c}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 4*mm*c+3*pm}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {5*vm-4*c, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 5*vm-4*c, mr-mm}
+  filtered: {3*Em-5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 5*vm-4*c, 4*Er+3*pm*c}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 5*vm-4*c, 4*mm*c+3*pm}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, mr-mm, 4*Er+3*pm*c}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, mr-mm, 4*mm*c+3*pm}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, pc-pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, mr-mm, 4*Er+3*pm*c}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, mr-mm, 4*mm*c+3*pm}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 5*vm-4*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em-5*Er, 4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em-5*Er, 4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, 4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, 4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {pc-pm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {5*vm-4*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, 4*Er+3*pm*c}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 4*mm*c+3*pm}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, 4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {5*vm-4*c, 4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {mr-mm, 4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 5*vm-4*c}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, mr-mm}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 4*Er+3*pm*c}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 4*mm*c+3*pm}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, mr-mm}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 4*Er+3*pm*c}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 4*mm*c+3*pm}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 4*Er+3*pm*c}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 4*mm*c+3*pm}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {5*vm-4*c, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 5*vm-4*c, mr-mm}
+  filtered: {3*Em+5*Er}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 5*vm-4*c, 4*Er+3*pm*c}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 5*vm-4*c, 4*mm*c+3*pm}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 5*vm-4*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 5*vm-4*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, mr-mm, 4*Er+3*pm*c}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, mr-mm, 4*mm*c+3*pm}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, pc-pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, mr-mm, 4*Er+3*pm*c}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, mr-mm, 4*mm*c+3*pm}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 5*vm-4*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*Em+5*Er, 4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {3*Em+5*Er, 4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, 4*Er+3*pm*c}
+  filtered: {4*Er+3*pm*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, 4*mm*c+3*pm}
+  filtered: {4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, mr-mm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 5*vm-4*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pc-pm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*Er+3*pm*c, 4*mm*c+3*pm}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, mr-mm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {5*vm-4*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mr-mm, 4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  filtered: {4*Er+3*pm*c, 4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {c}
+  {vm}
+  {c, pm}
+  {c, Er}
+  {c, Em}
+  {c, pc}
+  {c, vm}
+  {pm, Er}
+  {pm, Em}
+  {pm, vm}
+  {Er, Em}
+  {Er, pc}
+  {Er, vm}
+  {Em, pc}
+  {Em, vm}
+  {pc, vm}
+  {c, pm, Er}
+  {c, pm, Em}
+  {c, pm, pc}
+  {c, pm, vm}
+  {c, Er, Em}
+  {c, Er, pc}
+  {c, Er, vm}
+  {c, Em, pc}
+  {c, Em, vm}
+  {c, pc, vm}
+  {pm, Er, Em}
+  {pm, Er, pc}
+  {pm, Er, vm}
+  {pm, Em, pc}
+  {pm, Em, vm}
+  {pm, pc, vm}
+  {Er, Em, pc}
+  {Er, Em, vm}
+  {Er, pc, vm}
+  {Em, pc, vm}
+  {c, pm, Er, Em}
+  {c, pm, Er, pc}
+  {c, pm, Er, vm}
+  {c, pm, Em, pc}
+  {c, pm, Em, vm}
+  {c, pm, pc, vm}
+  {c, Er, Em, pc}
+  {c, Er, Em, vm}
+  {c, Er, pc, vm}
+  {c, Em, pc, vm}
+  {pm, Er, Em, pc}
+  {pm, Er, Em, vm}
+  {pm, Er, pc, vm}
+  {pm, Em, pc, vm}
+  {Er, Em, pc, vm}
+  {c, vc}
+  {Er, vc}
+  {Em, vc}
+  {vc, vm}
+  {c, Er, vc}
+  {c, Em, vc}
+  {c, vc, vm}
+  {Er, Em, vc}
+  {Er, vc, vm}
+  {Em, vc, vm}
+  {c, Er, Em, vc}
+  {c, Er, vc, vm}
+  {c, Em, vc, vm}
+  {Er, Em, vc, vm}
+  {3*Em-5*Er}
+  {-4*Er+3*pm*c}
+  {4*mm*c-3*pm}
+  {16*Er*mm-9*pm^2}
+  {-4*Er+3*pm*c, 3*Em-5*Er}
+  {4*mm*c-3*pm, 3*Em-5*Er}
+  {16*Er*mm-9*pm^2, 3*Em-5*Er}
+  {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm, -4*Er+3*pm*c}
+  {-4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  {-4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm, 16*Er*mm-9*pm^2}
+  {4*mm*c-3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm, -4*Er+3*pm*c, 3*Em-5*Er}
+  {-4*Er+3*pm*c, 16*Er*mm-9*pm^2, 3*Em-5*Er}
+  {-4*Er+3*pm*c, 3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm, 16*Er*mm-9*pm^2, 3*Em-5*Er}
+  {4*mm*c-3*pm, 3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {16*Er*mm-9*pm^2, 3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  {4*mm*c-3*pm, -4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {-4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2, 3*Em-5*Er}
+  {4*mm*c-3*pm, -4*Er+3*pm*c, 3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {-4*Er+3*pm*c, 16*Er*mm-9*pm^2, 3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm, 16*Er*mm-9*pm^2, 3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {3*Em+5*Er}
+  {-4*Er+3*pm*c, 3*Em+5*Er}
+  {4*mm*c-3*pm, 3*Em+5*Er}
+  {16*Er*mm-9*pm^2, 3*Em+5*Er}
+  {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm, -4*Er+3*pm*c, 3*Em+5*Er}
+  {-4*Er+3*pm*c, 16*Er*mm-9*pm^2, 3*Em+5*Er}
+  {-4*Er+3*pm*c, 3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm, 16*Er*mm-9*pm^2, 3*Em+5*Er}
+  {4*mm*c-3*pm, 3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {16*Er*mm-9*pm^2, 3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm, -4*Er+3*pm*c, 16*Er*mm-9*pm^2, 3*Em+5*Er}
+  {4*mm*c-3*pm, -4*Er+3*pm*c, 3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {-4*Er+3*pm*c, 16*Er*mm-9*pm^2, 3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c-3*pm, 16*Er*mm-9*pm^2, 3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*Er+3*pm*c}
+  {4*mm*c+3*pm}
+  {4*Er+3*pm*c, 3*Em-5*Er}
+  {4*mm*c+3*pm, 3*Em-5*Er}
+  {4*mm*c+3*pm, 4*Er+3*pm*c}
+  {4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  {4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c+3*pm, 16*Er*mm-9*pm^2}
+  {4*mm*c+3*pm, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c+3*pm, 4*Er+3*pm*c, 3*Em-5*Er}
+  {4*Er+3*pm*c, 16*Er*mm-9*pm^2, 3*Em-5*Er}
+  {4*Er+3*pm*c, 3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c+3*pm, 16*Er*mm-9*pm^2, 3*Em-5*Er}
+  {4*mm*c+3*pm, 3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c+3*pm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2}
+  {4*mm*c+3*pm, 4*Er+3*pm*c, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c+3*pm, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c+3*pm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2, 3*Em-5*Er}
+  {4*mm*c+3*pm, 4*Er+3*pm*c, 3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*Er+3*pm*c, 16*Er*mm-9*pm^2, 3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c+3*pm, 16*Er*mm-9*pm^2, 3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c+3*pm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*Er+3*pm*c, 3*Em+5*Er}
+  {4*mm*c+3*pm, 3*Em+5*Er}
+  {4*mm*c+3*pm, 4*Er+3*pm*c, 3*Em+5*Er}
+  {4*Er+3*pm*c, 16*Er*mm-9*pm^2, 3*Em+5*Er}
+  {4*Er+3*pm*c, 3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c+3*pm, 16*Er*mm-9*pm^2, 3*Em+5*Er}
+  {4*mm*c+3*pm, 3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c+3*pm, 4*Er+3*pm*c, 16*Er*mm-9*pm^2, 3*Em+5*Er}
+  {4*mm*c+3*pm, 4*Er+3*pm*c, 3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*Er+3*pm*c, 16*Er*mm-9*pm^2, 3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {4*mm*c+3*pm, 16*Er*mm-9*pm^2, 3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+
+STRONG_CANDIDATES:
+  {3*Em-5*Er}
+  {3*Em-5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}
+  {3*Em+5*Er}
+  {3*Em+5*Er, 9*vc^2*mc^2+16*vc^2*mm^2-9*pm^2}

@@ -1,0 +1,196 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  S*r^2-ap^2*sintheta^2*qc^2
+  -S*dA+P
+  -3*sintheta^3*dtheta+4
+
+Targets:
+  75*P-314*qc^2*x0^2*w^4
+
+Require literal GB appearance: true
+Number of candidate sets to test: 40
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4}
+  filtered: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {S*r^2-ap^2*sintheta^2*qc^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {75*S*dA-314*qc^2*x0^2*w^4}
+  filtered: {75*S*dA-314*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-S*dA+P}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, 50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4}
+  filtered: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, S*r^2-ap^2*sintheta^2*qc^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, 75*S*dA-314*qc^2*x0^2*w^4}
+  filtered: {75*S*dA-314*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, -S*dA+P}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4, S*r^2-ap^2*sintheta^2*qc^2}
+  filtered: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4, 75*S*dA-314*qc^2*x0^2*w^4}
+  filtered: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4, 75*S*dA-314*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4, -S*dA+P}
+  filtered: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {S*r^2-ap^2*sintheta^2*qc^2, 75*S*dA-314*qc^2*x0^2*w^4}
+  filtered: {75*S*dA-314*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {S*r^2-ap^2*sintheta^2*qc^2, -S*dA+P}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {75*S*dA-314*qc^2*x0^2*w^4, -S*dA+P}
+  filtered: {75*S*dA-314*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, 50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4, S*r^2-ap^2*sintheta^2*qc^2}
+  filtered: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, 50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4, 75*S*dA-314*qc^2*x0^2*w^4}
+  filtered: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4, 75*S*dA-314*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, 50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4, -S*dA+P}
+  filtered: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, S*r^2-ap^2*sintheta^2*qc^2, 75*S*dA-314*qc^2*x0^2*w^4}
+  filtered: {75*S*dA-314*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, S*r^2-ap^2*sintheta^2*qc^2, -S*dA+P}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, 75*S*dA-314*qc^2*x0^2*w^4, -S*dA+P}
+  filtered: {75*S*dA-314*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4, S*r^2-ap^2*sintheta^2*qc^2, 75*S*dA-314*qc^2*x0^2*w^4}
+  filtered: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4, 75*S*dA-314*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4, S*r^2-ap^2*sintheta^2*qc^2, -S*dA+P}
+  filtered: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4, 75*S*dA-314*qc^2*x0^2*w^4, -S*dA+P}
+  filtered: {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4, 75*S*dA-314*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {S*r^2-ap^2*sintheta^2*qc^2, 75*S*dA-314*qc^2*x0^2*w^4, -S*dA+P}
+  filtered: {75*S*dA-314*qc^2*x0^2*w^4}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {qc}
+  filtered: {qc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-S*dA+P}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {S}
+  filtered: {S}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, qc}
+  filtered: {qc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, -S*dA+P}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, S}
+  filtered: {S}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {qc, -S*dA+P}
+  filtered: {qc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {qc, S}
+  filtered: {qc, S}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-S*dA+P, S}
+  filtered: {S}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, qc, -S*dA+P}
+  filtered: {qc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, qc, S}
+  filtered: {qc, S}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {3*sintheta^3*dtheta-4, -S*dA+P, S}
+  filtered: {S}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {qc, -S*dA+P, S}
+  filtered: {qc, S}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {75*S*dA-314*qc^2*x0^2*w^4}
+  {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4, 75*S*dA-314*qc^2*x0^2*w^4}
+  {qc, S}
+
+STRONG_CANDIDATES:
+  {75*S*dA-314*qc^2*x0^2*w^4}
+  {50*ap^2*dA-157*sintheta*dtheta*r^2*x0^2*w^4, 75*S*dA-314*qc^2*x0^2*w^4}

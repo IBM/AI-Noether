@@ -1,0 +1,121 @@
+ArchiveEntry "hall_target1_combo4_7"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real Fm;
+  Real d;
+  Real v;
+  Real Fe;
+  Real E;
+  Real dt;
+  Real Q;
+  Real N;
+  Real V;
+  Real i;
+  Real n;
+  Real qe;
+  Real B;
+  Real h;
+  Real L;
+  Real UH;
+  Real c4_1;
+  Real c4_2;
+  Real c7_3;
+  Real c7_4;
+  Real c4_5;
+  Real c4_6;
+  Real c7_7;
+  Real c7_8;
+  Real c4_9;
+  Real c4_10;
+  Real c7_11;
+  Real c7_12;
+  Real c4_13;
+  Real c4_14;
+  Real c7_15;
+  Real c7_16;
+  Real c4_17;
+  Real c4_18;
+  Real c7_19;
+  Real c7_20;
+  Real c4_21;
+  Real c4_22;
+  Real c7_23;
+  Real c7_24;
+  Real c4_25;
+  Real c4_26;
+  Real c7_27;
+  Real c7_28;
+  Real c4_29;
+  Real c4_30;
+  Real c7_31;
+  Real c7_32;
+  Real c4_33;
+  Real c4_34;
+  Real c7_35;
+  Real c7_36;
+  Real d1;
+  Real d2;
+End.
+
+Problem
+  (
+    \exists c4_1 \exists c4_2 \exists c7_3 \exists c7_4 \exists c4_5 \exists c4_6 \exists c7_7 \exists c7_8 \exists c4_9 \exists c4_10 \exists c7_11 \exists c7_12 \exists c4_13 \exists c4_14 \exists c7_15 \exists c7_16 \exists c4_17 \exists c4_18 \exists c7_19 \exists c7_20 \exists c4_21 \exists c4_22 \exists c7_23 \exists c7_24 \exists c4_25 \exists c4_26 \exists c7_27 \exists c7_28 \exists c4_29 \exists c4_30 \exists c7_31 \exists c7_32 \exists c4_33 \exists c4_34 \exists c7_35 \exists c7_36 \exists d1 \exists d2
+    (
+      c4_1 > 0 & c4_2 > 0 & c7_3 > 0 & c7_4 > 0 & c4_5 > 0 & c4_6 > 0 & c7_7 > 0 & c7_8 > 0 & c4_9 > 0 & c4_10 > 0 & c7_11 > 0 & c7_12 > 0 & c4_13 > 0 & c4_14 > 0 & c7_15 > 0 & c7_16 > 0 & c4_17 > 0 & c4_18 > 0 & c7_19 > 0 & c7_20 > 0 & c4_21 > 0 & c4_22 > 0 & c7_23 > 0 & c7_24 > 0 & c4_25 > 0 & c4_26 > 0 & c7_27 > 0 & c7_28 > 0 & c4_29 > 0 & c4_30 > 0 & c7_31 > 0 & c7_32 > 0 & c4_33 > 0 & c4_34 > 0 & c7_35 > 0 & c7_36 > 0 & d1 > 0 & d2 > 0
+      &
+      (
+        \forall Fm \forall d \forall v \forall Fe \forall E \forall dt \forall Q \forall N \forall V \forall i \forall n \forall qe \forall B \forall h \forall L \forall UH
+        (
+          (
+            (Fm > 0 & d > 0 & v > 0 & Fe > 0 & E > 0 & dt > 0 & Q > 0 & N > 0 & V > 0 & i > 0 & n > 0 & qe > 0 & B > 0 & h > 0 & L > 0 & UH > 0) &
+            & ( Fm - qe*v*B = 0 )
+            & ( Fe - qe*E = 0 )
+            & ( Fm - Fe = 0 )
+            & ( v*dt - L = 0 )
+            & ( i*dt - Q = 0 )
+            & ( n*V - N = 0 )
+            & ( V - L*h*d = 0 )
+            & ( ( c4_1 * E*h ) + ( c4_2 * UH ) = 0 )
+            & ( ( c7_3 * Q ) + ( c7_4 * N*qe ) = 0 )
+            & ( ( c4_5 * E*h ) + ( c4_6 * UH ) = 0 )
+            & ( ( c7_7 * Q ) + ( c7_8 * N*qe ) = 0 )
+            & ( ( c4_9 * E*h ) + ( c4_10 * UH ) = 0 )
+            & ( ( c7_11 * Q ) + ( c7_12 * N*qe ) = 0 )
+            & ( ( c4_13 * E*h ) + ( c4_14 * UH ) = 0 )
+            & ( ( c7_15 * Q ) + ( c7_16 * N*qe ) = 0 )
+            & ( ( c4_17 * E*h ) + ( c4_18 * UH ) = 0 )
+            & ( ( c7_19 * Q ) + ( c7_20 * N*qe ) = 0 )
+            & ( ( c4_21 * E*h ) + ( c4_22 * UH ) = 0 )
+            & ( ( c7_23 * Q ) + ( c7_24 * N*qe ) = 0 )
+            & ( ( c4_25 * E*h ) + ( c4_26 * UH ) = 0 )
+            & ( ( c7_27 * Q ) + ( c7_28 * N*qe ) = 0 )
+            & ( ( c4_29 * E*h ) + ( c4_30 * UH ) = 0 )
+            & ( ( c7_31 * Q ) + ( c7_32 * N*qe ) = 0 )
+            & ( ( c4_33 * E*h ) + ( c4_34 * UH ) = 0 )
+            & ( ( c7_35 * Q ) + ( c7_36 * N*qe ) = 0 )
+          )
+          ->
+          (
+            ( d1 * N*qe*UH ) + ( d2 * i*B*h*L ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

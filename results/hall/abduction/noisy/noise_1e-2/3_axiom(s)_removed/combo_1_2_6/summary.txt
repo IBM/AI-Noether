@@ -1,0 +1,58 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-2
+Removed axiom indices (1-based): [1, 2, 6]
+Removed axioms:
+  Fm - qe*v*B
+  Fe - qe*E
+  i*dt - Q
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 4
+Symbolic regression results: 12
+
+Regression results below threshold (5.0):
+  Axiom 1, Component 1:
+    Singular value: 2.7026481596887164e-58
+    Polynomial: 1*v*qe*B
+    Coefficient L2 error: 2.23606797749979
+  Axiom 6, Component 1:
+    Singular value: 9.099189658258404e-50
+    Polynomial: 1*Q
+    Coefficient L2 error: 2.23606797749979
+  Axiom 1, Component 2:
+    Singular value: 2.9146758449857595
+    Polynomial: 1*Fm + (-0.0201691+0.0226041i)*v*qe*B
+    Coefficient L2 error: 0.980091551464678
+  Axiom 2, Component 2:
+    Singular value: 2.369021235326768
+    Polynomial: 1*Fe + (0.0149865+0.0088257i)*E*qe
+    Coefficient L2 error: 1.0150248225496095
+  Axiom 6, Component 2:
+    Singular value: 1.7337803525873636e-121
+    Polynomial: 1*dt*i + (-0.0402503+0.469421i)*Q
+    Coefficient L2 error: 1.0683985005077072
+  Axiom 1, Component 3:
+    Singular value: 1.9257162658390934
+    Polynomial: 1*Fm + (0.0154425+0.0023161i)*v*qe*B
+    Coefficient L2 error: 1.0154451673200855
+  Axiom 2, Component 3:
+    Singular value: 1.8868339200270683
+    Polynomial: 1*Fe + (0.0299545-0.00367378i)*E*qe
+    Coefficient L2 error: 1.0299610188337847
+  Axiom 6, Component 3:
+    Singular value: 6.34062895143121e-31
+    Polynomial: 1*Q
+    Coefficient L2 error: 2.23606797749979
+  Axiom 1, Component 4:
+    Singular value: 3.284296841891459
+    Polynomial: 1*Fm + (-0.00721348+0.0039619i)*v*qe*B
+    Coefficient L2 error: 0.9927944264606466
+  Axiom 2, Component 4:
+    Singular value: 3.480479861176213
+    Polynomial: 1*Fe + (-0.236721+0.0840939i)*E*qe
+    Coefficient L2 error: 0.7678972804123056
+  Axiom 6, Component 4:
+    Singular value: 0.855662719078092
+    Polynomial: (0.0120908+0.00389176i)*dt*i + 1*Q
+    Coefficient L2 error: 2.2306904322309467
