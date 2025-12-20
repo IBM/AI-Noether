@@ -265,11 +265,14 @@ For large ideals, increase timeouts and consider:
 If you use AI-Noether in your research, please cite:
 
 ```bibtex
-@article{ai-noether,
-  title={AI-Noether: Abductive Inference for Scientific Discovery},
-  author={...},
-  journal={...},
-  year={2024}
+@misc{srivastava2025ainoether,
+      title={AI Noether -- Bridging the Gap Between Scientific Laws Derived by AI Systems and Canonical Knowledge via Abductive Inference}, 
+      author={Karan Srivastava and Sanjeeb Dash and Ryan Cory-Wright and Barry Trager and Lior Horesh},
+      year={2025},
+      eprint={2509.23004},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2509.23004}, 
 }
 ```
 
