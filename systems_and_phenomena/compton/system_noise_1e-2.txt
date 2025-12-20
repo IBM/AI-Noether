@@ -1,0 +1,17 @@
+Variables: ["f1", "f2", "Eph1", "Eph2", "Eel1", "Eel2", "p1", "p2", "pel2", "lam1", "lam2", "hbar", "mel", "cVar", "cosTh"]
+Equations:
+Eph1 + Eel1 - Eph2- Eel2
+Eph1 - hbar*f1
+Eph2 - hbar*f2
+p1*cVar - hbar*f1
+p2*cVar - hbar*f2
+lam1*f1 - cVar
+lam2*f2 - cVar
+Eel1 - mel*cVar^2
+Eel2^2 - pel2^2*cVar^2 - mel^2*cVar^4
+pel2^2 - p1^2 - p2^2 + 2*p1*p2*cosTh
+
+Measured Variables: ["lam", "lam", "hbar", "mel", "cVar", "cosTh"]
+
+Target Polynomial:
+(102/100)*lam1*mel*cVar - (98/100)*lam2*mel*cVar - (100/100)*cosTh*hbar + (99/100)*hbar

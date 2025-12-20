@@ -126,39 +126,51 @@ def compute_coefficient_error(
     """
     Compute L2 norm of difference between normalized coefficient vectors.
     
-    Both vectors are normalized to have max coefficient = 1.
+    Both vectors are normalized to have max coefficient magnitude = 1.
     Coefficients are matched by their monomial exponent tuples.
     
+    Handles sign ambiguity: since p=0 and -p=0 are equivalent,
+    we compute min(||c1 - c2||, ||c1 + c2||).
+    
     Returns:
-        L2 norm of the difference
+        L2 norm of the difference (accounting for sign ambiguity)
     """
-    # Normalize both
+    # Normalize both (idempotent if already normalized)
     inferred_norm = normalize_coefficients(inferred.copy())
     true_norm = normalize_coefficients(true_coeffs.copy())
     
     # Create dict mapping monomial -> coefficient for true
     true_dict = {m: c for m, c in zip(monomials_true, true_norm)}
+    inferred_set = set(monomials_inferred)
     
-    # Compute difference for matching monomials
-    diff_sq = 0.0
-    matched = 0
-    
+    # Compute difference for c1 - c2 (same sign)
+    diff_sq_same = 0.0
     for m, c_inf in zip(monomials_inferred, inferred_norm):
         if m in true_dict:
             c_true = true_dict[m]
-            diff_sq += np.abs(c_inf - c_true) ** 2
-            matched += 1
+            diff_sq_same += np.abs(c_inf - c_true) ** 2
         else:
-            # Monomial not in true - penalize
-            diff_sq += np.abs(c_inf) ** 2
+            diff_sq_same += np.abs(c_inf) ** 2
     
-    # Also penalize monomials in true but not in inferred
-    inferred_set = set(monomials_inferred)
     for m, c_true in zip(monomials_true, true_norm):
         if m not in inferred_set:
-            diff_sq += np.abs(c_true) ** 2
+            diff_sq_same += np.abs(c_true) ** 2
     
-    return np.sqrt(diff_sq)
+    # Compute difference for c1 + c2 (opposite sign, i.e., c1 vs -c2)
+    diff_sq_opp = 0.0
+    for m, c_inf in zip(monomials_inferred, inferred_norm):
+        if m in true_dict:
+            c_true = true_dict[m]
+            diff_sq_opp += np.abs(c_inf + c_true) ** 2  # + instead of -
+        else:
+            diff_sq_opp += np.abs(c_inf) ** 2
+    
+    for m, c_true in zip(monomials_true, true_norm):
+        if m not in inferred_set:
+            diff_sq_opp += np.abs(c_true) ** 2
+    
+    # Return the smaller error (handles sign ambiguity)
+    return min(np.sqrt(diff_sq_same), np.sqrt(diff_sq_opp))
 
 
 def fit_nullspace(A: np.ndarray) -> Tuple[Optional[np.ndarray], Optional[float], Optional[float]]:

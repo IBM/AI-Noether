@@ -1,0 +1,13 @@
+Variables: ["ad", "T", "omega", "theta", "sintheta", "d", "g",  "L", "j", "Pii", "Tj"]
+Equations: 
+ad-g*sintheta
+d-L*theta
+T*omega-2*Pii
+d*omega^2-ad
+Tj-j*T
+sintheta - theta
+
+Measured Variables: ["g", "L", "j", "Pii", "Tj"]
+
+Target Polynomial:
+(101/100)*g*Tj^2-(404/100)*L*j^2*Pii^2

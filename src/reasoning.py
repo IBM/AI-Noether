@@ -15,6 +15,11 @@ from .config import Config
 from .templates import fill_m2_reasoning_template
 from .parsers import parse_m2_reasoning_output, ReasoningResult, DecompositionResult
 from .logging_utils import get_logger, log_subprocess_result
+from .poly_utils import (
+    filter_generators_m2,
+    normalize_generators_m2,
+    get_normalized_polynomial_set
+)
 
 
 def _frozenset_from_list(items: List[str]) -> FrozenSet[str]:
@@ -45,9 +50,10 @@ def filter_supersets(candidates: List[List[str]]) -> List[List[str]]:
     Filter out candidates that are supersets of other candidates.
     
     Keep only minimal sets - if {A} proves Q, don't keep {A, B}.
+    Uses normalized polynomial comparison to detect equivalence.
     """
-    # Convert to frozensets for efficient set operations
-    candidate_sets = [_frozenset_from_list(c) for c in candidates]
+    # Convert to normalized frozensets for proper comparison
+    candidate_sets = [get_normalized_polynomial_set(c) for c in candidates]
     
     # Sort by size (ascending) so we process smaller sets first
     indexed = sorted(enumerate(candidate_sets), key=lambda x: len(x[1]))
@@ -64,12 +70,15 @@ def filter_supersets(candidates: List[List[str]]) -> List[List[str]]:
 
 
 def remove_duplicates(candidates: List[List[str]]) -> List[List[str]]:
-    """Remove duplicate candidate sets (order-independent)."""
+    """
+    Remove duplicate candidate sets (order-independent).
+    Uses normalized polynomial comparison to detect equivalence.
+    """
     seen = set()
     unique = []
     
     for candidate in candidates:
-        key = _frozenset_from_list(candidate)
+        key = get_normalized_polynomial_set(candidate)
         if key not in seen:
             seen.add(key)
             unique.append(sorted(candidate))
@@ -79,8 +88,11 @@ def remove_duplicates(candidates: List[List[str]]) -> List[List[str]]:
 
 def generate_candidate_sets(
     decomp_result: DecompositionResult,
+    remaining_axioms: List[str],
+    targets: List[str],
+    variables: List[str],
+    m2_path: str,
     num_removed: int,
-    num_targets: int,
     max_size: int = -1
 ) -> List[List[str]]:
     """
@@ -89,34 +101,89 @@ def generate_candidate_sets(
     For each component, generate subsets of generators up to max_size.
     Only consider subsets from within a single component (not cross-component).
     
+    Uses Macaulay2 to filter out generators via ideal membership test:
+    - If gen ∈ ideal(remaining_axioms + targets), it contains no new information
+    - This is checked via Groebner basis reduction: gen % I == 0
+    
+    Also deduplicates candidate sets accounting for polynomial equivalence.
+    
     Args:
         decomp_result: Result from decomposition
+        remaining_axioms: Axioms that were NOT removed (for filtering)
+        targets: Target polynomials (also used for filtering)
+        variables: List of variable names (for M2 ring definition)
+        m2_path: Path to Macaulay2 executable
         num_removed: Number of axioms that were removed
-        num_targets: Number of targets
-        max_size: Maximum subset size (-1 for default = num_removed + num_targets)
+        max_size: Maximum candidate set size. If -1, uses num_removed + num_targets
     
     Returns:
-        List of candidate sets to test
+        List of candidate sets to test (filtered and deduplicated)
     """
+    logger = get_logger()
+    
+    num_targets = len(targets)
     if max_size < 0:
         max_size = num_removed + num_targets
     
     all_candidates = []
+    seen_normalized: Set[FrozenSet[str]] = set()
     
     # Always include empty set (baseline)
     all_candidates.append([])
+    seen_normalized.add(frozenset())
     
-    for component_gens in decomp_result.components:
+    total_generators_before = 0
+    total_generators_after = 0
+    
+    for component_idx, component_gens in enumerate(decomp_result.components):
         if not component_gens:
             continue
         
+        total_generators_before += len(component_gens)
+        
+        # Filter out generators equivalent to remaining axioms OR targets using M2
+        # Filter out generators that are in the ideal of (remaining_axioms + targets)
+        filtered_gens = filter_generators_m2(
+            generators=component_gens,
+            remaining_axioms=remaining_axioms,
+            targets=targets,
+            variables=variables,
+            m2_path=m2_path
+        )
+        
+        total_generators_after += len(filtered_gens)
+        
+        if not filtered_gens:
+            logger.debug(f"Component {component_idx + 1}: all generators are in ideal(axioms + targets)")
+            continue
+        
+        # Normalize generators for deduplication
+        normalized_gens = normalize_generators_m2(
+            generators=filtered_gens,
+            variables=variables,
+            m2_path=m2_path
+        )
+        
         # Limit to max_size
-        limit = min(max_size, len(component_gens))
+        limit = min(max_size, len(filtered_gens))
         
         # Generate all subsets of size 1 to limit
         for size in range(1, limit + 1):
-            for subset in combinations(component_gens, size):
-                all_candidates.append(list(subset))
+            for subset_indices in combinations(range(len(filtered_gens)), size):
+                subset_list = [filtered_gens[i] for i in subset_indices]
+                
+                # Use normalized forms for deduplication
+                normalized_subset = frozenset(normalized_gens[i] for i in subset_indices)
+                
+                if normalized_subset not in seen_normalized:
+                    seen_normalized.add(normalized_subset)
+                    all_candidates.append(subset_list)
+    
+    if total_generators_before != total_generators_after:
+        logger.info(f"Filtered generators via ideal membership: {total_generators_before} -> {total_generators_after} "
+                   f"(removed {total_generators_before - total_generators_after} in ideal)")
+    
+    logger.debug(f"Generated {len(all_candidates)} unique candidate sets")
     
     return all_candidates
 
@@ -274,23 +341,48 @@ def run_reasoning(
     # Create output directory
     os.makedirs(output_dir, exist_ok=True)
     
-    # Generate candidate sets
+    # Generate candidate sets (filtering redundant generators using M2)
     candidate_sets = generate_candidate_sets(
         decomp_result=decomp_result,
+        remaining_axioms=remaining_axioms,
+        targets=targets,
+        variables=variables,
+        m2_path=config.paths.macaulay2,
         num_removed=num_removed,
-        num_targets=len(targets),
         max_size=config.reasoning.max_candidate_size
     )
     
-    logger.info(f"Generated {len(candidate_sets)} candidate sets from {decomp_result.num_components} components")
+    logger.info(f"Generated {len(candidate_sets)} unique candidate sets from {decomp_result.num_components} components")
     
     # Save candidate sets for reference
     candidates_path = os.path.join(output_dir, "candidate_sets.txt")
     with open(candidates_path, 'w') as f:
         f.write(f"Number of components: {decomp_result.num_components}\n")
-        f.write(f"Number of candidate sets: {len(candidate_sets)}\n\n")
+        f.write(f"Number of remaining axioms: {len(remaining_axioms)}\n")
+        f.write(f"Number of targets: {len(targets)}\n")
+        f.write(f"Max candidate set size: {config.reasoning.max_candidate_size if config.reasoning.max_candidate_size > 0 else 'num_removed + num_targets'}\n")
+        f.write(f"Number of candidate sets (after filtering): {len(candidate_sets)}\n\n")
+        
+        f.write("Filtering method: ideal membership test\n")
+        f.write("  Generators g where g ∈ ideal(remaining_axioms + targets) are excluded\n")
+        f.write("  (They contain no new information beyond what's already known)\n\n")
+        
+        f.write("Remaining axioms:\n")
+        for i, ax in enumerate(remaining_axioms):
+            f.write(f"  {i+1}. {ax}\n")
+        f.write("\n")
+        
+        f.write("Targets:\n")
+        for i, t in enumerate(targets):
+            f.write(f"  {i+1}. {t}\n")
+        f.write("\n")
+        
+        f.write("Candidate sets to test:\n")
         for i, cs in enumerate(candidate_sets):
-            f.write(f"Candidate {i}: {cs}\n")
+            if not cs:
+                f.write(f"  Candidate {i}: [] (empty set / baseline)\n")
+            else:
+                f.write(f"  Candidate {i}: {cs}\n")
     
     # Run reasoning
     return run_reasoning_m2(
