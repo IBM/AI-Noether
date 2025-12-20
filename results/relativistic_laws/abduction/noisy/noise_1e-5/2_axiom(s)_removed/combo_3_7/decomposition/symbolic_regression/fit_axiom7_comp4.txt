@@ -1,0 +1,19 @@
+=== Symbolic Regression Result ===
+Dropped axiom index (1-based): 7
+Dropped axiom text: dt*(c^2 - v^2) - 2*L*c
+Component index: 4
+Variables: ['c', 'dt', 'v', 'L']
+Number of monomials: 3
+Total degree: 3
+Number of points (total): 100
+Number of points (used after outlier removal): 75
+Smallest singular value: 2.3250818206588548e-05
+Relative residual: 4.344843129333001e-05
+
+Inferred polynomial (raw):
+  0.207881*c^2*dt + (0.429199+0.609797i)*c*L + (-0.184404+0.982851i)*dt*v^2 = 0
+
+Inferred polynomial (normalized):
+  (-0.0383342-0.204316i)*c^2*dt + (0.520193-0.534288i)*c*L + 1*dt*v^2 = 0
+
+Coefficient L2 error vs true: 1.010226902236687

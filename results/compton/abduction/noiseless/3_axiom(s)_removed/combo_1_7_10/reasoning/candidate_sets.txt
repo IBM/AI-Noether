@@ -1,0 +1,52 @@
+Number of components: 5
+Number of remaining axioms: 7
+Number of targets: 1
+Max candidate set size: 1
+Number of candidate sets (after filtering): 29
+
+Filtering method: ideal membership test
+  Generators g where g ∈ ideal(remaining_axioms + targets) are excluded
+  (They contain no new information beyond what's already known)
+
+Remaining axioms:
+  1. E1 - h*f1
+  2. E2 - h*f2
+  3. p1*c - h*f1
+  4. p2*c - h*f2
+  5. lambda1*f1 - c
+  6. Ee1 - me*c^2
+  7. Ee2^2 - pe2^2*c^2 - me^2*c^4
+
+Targets:
+  1. lambda1*h*me*c^3 - lambda2*h*me*c^3 - coss*h^2*c^2 + h^2*c^2
+
+Candidate sets to test:
+  Candidate 0: [] (empty set / baseline)
+  Candidate 1: ['p1*lambda1-h']
+  Candidate 2: ['f2*p1-f1*p2']
+  Candidate 3: ['h*c*coss-Ee1*lambda1+Ee1*lambda2-h*c']
+  Candidate 4: ['lambda1*me*c-lambda2*me*c-h*coss+h']
+  Candidate 5: ['E1*lambda2*me-h*me*c+p1*h*coss-p1*h']
+  Candidate 6: ['f1*lambda2*me-me*c+p1*coss-p1']
+  Candidate 7: ['E2*lambda1*me-E2*lambda2*me-p2*h*coss+p2*h']
+  Candidate 8: ['f2*lambda1*me-f2*lambda2*me-p2*coss+p2']
+  Candidate 9: ['Ee1*p1*lambda2+E1*h*coss-E1*h-Ee1*h']
+  Candidate 10: ['f1*Ee1*lambda2+E1*c*coss-E1*c-Ee1*c']
+  Candidate 11: ['Ee1*p2*lambda1-Ee1*p2*lambda2-E2*h*coss+E2*h']
+  Candidate 12: ['f2*Ee1*lambda1-f2*Ee1*lambda2-E2*c*coss+E2*c']
+  Candidate 13: ['Ee1*lambda1^2*me-2*Ee1*lambda1*lambda2*me+Ee1*lambda2^2*me-h^2*coss^2+2*h^2*coss-h^2']
+  Candidate 14: ['E1*Ee1*p2*lambda2+E1*E2*h*coss-E1*E2*h-E2*Ee1*h']
+  Candidate 15: ['Ee2^2*p1*lambda2*me+E1*pe2^2*h*coss+E1*Ee1*h*me*coss-E1*pe2^2*h-E1*Ee1*h*me-Ee2^2*h*me']
+  Candidate 16: ['Ee2^2*p2*lambda1*me-Ee2^2*p2*lambda2*me-E2*pe2^2*h*coss-E2*Ee1*h*me*coss+E2*pe2^2*h+E2*Ee1*h*me']
+  Candidate 17: ['Ee2^2*lambda1^2*me^2-2*Ee2^2*lambda1*lambda2*me^2+Ee2^2*lambda2^2*me^2-pe2^2*h^2*coss^2-Ee1*h^2*me*coss^2+2*pe2^2*h^2*coss+2*Ee1*h^2*me*coss-pe2^2*h^2-Ee1*h^2*me']
+  Candidate 18: ['h']
+  Candidate 19: ['p2']
+  Candidate 20: ['p1']
+  Candidate 21: ['E2']
+  Candidate 22: ['E1']
+  Candidate 23: ['c']
+  Candidate 24: ['lambda1']
+  Candidate 25: ['Ee2']
+  Candidate 26: ['Ee1']
+  Candidate 27: ['f1']
+  Candidate 28: ['f2']

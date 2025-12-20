@@ -1,0 +1,61 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-8
+Removed axiom indices (1-based): [3, 4]
+Removed axioms:
+  Er - mr*c^2
+  Ec^2 - (mc*c)^2 - (pc*c)^2
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 8
+Symbolic regression results: 12
+
+Regression results below threshold (200.0):
+  Axiom 3, Component 1:
+    Singular value: 4.192515319311327e-12
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 1.0000000000000313
+  Axiom 4, Component 1:
+    Singular value: 5.901813700689479e-28
+    Polynomial: 1*pc^2*c^2
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 3, Component 2:
+    Singular value: 8.071998327562027e-11
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 0.9999999999998676
+  Axiom 4, Component 2:
+    Singular value: 4.545247934975527e-24
+    Polynomial: 1*pc^2*c^2 + (-0.00071193+0.000361361i)*mc^2*c^2
+    Coefficient L2 error: 1.4147171085730035
+  Axiom 3, Component 3:
+    Singular value: 5.020469379336763e-09
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 0.9999999999905194
+  Axiom 4, Component 3:
+    Singular value: 3.954794929904785e-21
+    Polynomial: 1*pc^2*c^2
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 3, Component 4:
+    Singular value: 2.0041179272488793e-08
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 0.9999999999871224
+  Axiom 4, Component 4:
+    Singular value: 2.9009203028091644e-23
+    Polynomial: 1*pc^2*c^2 + (7.88388e-05+0.00012026i)*mc^2*c^2
+    Coefficient L2 error: 1.414157821106854
+  Axiom 3, Component 6:
+    Singular value: 1.439819681318166e-15
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 0.9999999999999999
+  Axiom 4, Component 6:
+    Singular value: 2.957178691562508e-16
+    Polynomial: 1*pc^2*c^2 + (-0.0172246+0.00480258i)*mc^2*c^2
+    Coefficient L2 error: 1.426453308879999
+  Axiom 3, Component 7:
+    Singular value: 2.45974681696911e-16
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 1.0
+  Axiom 4, Component 7:
+    Singular value: 2.0224174410431334e-16
+    Polynomial: 1*pc^2*c^2 + (0.0476346+0.0183411i)*mc^2*c^2
+    Coefficient L2 error: 1.381063471255307

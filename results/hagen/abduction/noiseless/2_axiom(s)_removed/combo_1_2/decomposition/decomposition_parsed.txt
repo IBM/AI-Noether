@@ -1,0 +1,29 @@
+Number of components: 4
+
+COMPONENT_1:
+  num_generators: 3
+  GEN: r
+  GEN: c0-u
+  GEN: c2*Rad^2+u
+
+COMPONENT_2:
+  num_generators: 6
+  GEN: 4*u*L*mu+r^2*delP-Rad^2*delP
+  GEN: 4*c2*L*mu+delP
+  GEN: 4*c0*L*mu-Rad^2*delP
+  GEN: c2*Rad^2+c0
+  GEN: c2*r^2+c0-u
+  GEN: c0*r^2-c0*Rad^2+Rad^2*u
+
+COMPONENT_3:
+  num_generators: 3
+  GEN: u
+  GEN: r-Rad
+  GEN: c2*Rad^2+c0
+
+COMPONENT_4:
+  num_generators: 3
+  GEN: u
+  GEN: r+Rad
+  GEN: c2*Rad^2+c0
+

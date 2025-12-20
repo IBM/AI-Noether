@@ -1,0 +1,385 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  -muN+mup*beta
+  -mu*r+muH
+  ph-dp-p0
+  n-dn
+  dp-dn
+  -ph*e*mup-muN*n*e+sigma
+
+Targets:
+  e*mup*dn*beta^2*r+e*mup*dn*beta*r+e*p0*sigma*H+e*dn*beta*sigma*H+e*dn*sigma*H-r*sigma
+
+Require literal GB appearance: true
+Number of candidate sets to test: 85
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+  filtered: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {n-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-mu*r+muH}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {muN-mup*beta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {dp-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, -e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma}
+  filtered: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, n-dn}
+  filtered: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, -mu*r+muH}
+  filtered: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, muN-mup*beta}
+  filtered: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, dp-dn}
+  filtered: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r, ph-p0-dn}
+  filtered: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, n-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, -mu*r+muH}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, muN-mup*beta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, dp-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {n-dn, -mu*r+muH}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {n-dn, muN-mup*beta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {n-dn, dp-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {n-dn, ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-mu*r+muH, muN-mup*beta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-mu*r+muH, dp-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-mu*r+muH, ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {muN-mup*beta, dp-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {muN-mup*beta, ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {dp-dn, ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {mup}
+  filtered: {mup}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {n-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-mu*r+muH}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {muN-mup*beta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {dp-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, mup}
+  filtered: {mup}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, n-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, -mu*r+muH}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, muN-mup*beta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, dp-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {mup, n-dn}
+  filtered: {mup}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mup, -mu*r+muH}
+  filtered: {mup}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mup, muN-mup*beta}
+  filtered: {mup}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mup, dp-dn}
+  filtered: {mup}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mup, ph-p0-dn}
+  filtered: {mup}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {n-dn, -mu*r+muH}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {n-dn, muN-mup*beta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {n-dn, dp-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {n-dn, ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-mu*r+muH, muN-mup*beta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-mu*r+muH, dp-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-mu*r+muH, ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {muN-mup*beta, dp-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {muN-mup*beta, ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {dp-dn, ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {e}
+  filtered: {e}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {n-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-mu*r+muH}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {muN-mup*beta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {dp-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, e}
+  filtered: {e}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, n-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, -mu*r+muH}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, muN-mup*beta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, dp-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-e*mup*p0-e*mup*dn*beta-e*mup*dn+sigma, ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {e, n-dn}
+  filtered: {e}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {e, -mu*r+muH}
+  filtered: {e}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {e, muN-mup*beta}
+  filtered: {e}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {e, dp-dn}
+  filtered: {e}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {e, ph-p0-dn}
+  filtered: {e}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {n-dn, -mu*r+muH}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {n-dn, muN-mup*beta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {n-dn, dp-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {n-dn, ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-mu*r+muH, muN-mup*beta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-mu*r+muH, dp-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-mu*r+muH, ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {muN-mup*beta, dp-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {muN-mup*beta, ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {dp-dn, ph-p0-dn}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+=== Summary ===
+SAVED_COMBOS:
+  {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+  {mup}
+  {e}
+
+STRONG_CANDIDATES:
+  {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}

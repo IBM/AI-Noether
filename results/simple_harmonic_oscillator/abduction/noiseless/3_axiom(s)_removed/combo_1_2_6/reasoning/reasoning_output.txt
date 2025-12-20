@@ -1,0 +1,2109 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  -theta*L+d
+  T*omega-2*Pi
+  -ad+omega^2*d
+  -theta+sintheta
+
+Targets:
+  d*g*Tj^2-4*d*L*j^2*Pi^2
+
+Require literal GB appearance: true
+Number of candidate sets to test: 446
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta*L-d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {T*omega-2*Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-ad+omega^2*d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta*L-d, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta*L-d, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {T*omega-2*Pi, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad+omega^2*d, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad+omega^2*d, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, T*omega-2*Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -ad*T+2*omega*d*Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -ad+omega^2*d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -ad*T+2*omega*d*Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -ad+omega^2*d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, -ad+omega^2*d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -ad*T+2*omega*d*Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -ad+omega^2*d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, -ad+omega^2*d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, -ad+omega^2*d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad+omega^2*d, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad+omega^2*d, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad+omega^2*d, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad+omega^2*d, ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, T*omega-2*Pi, -ad*T+2*omega*d*Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, T*omega-2*Pi, -ad+omega^2*d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, T*omega-2*Pi, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, T*omega-2*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, T*omega-2*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, T*omega-2*Pi, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -ad*T+2*omega*d*Pi, -ad+omega^2*d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -ad*T+2*omega*d*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -ad*T+2*omega*d*Pi, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -ad+omega^2*d, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -ad+omega^2*d, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, sintheta*L-d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -ad*T+2*omega*d*Pi, -ad+omega^2*d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -ad*T+2*omega*d*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -ad*T+2*omega*d*Pi, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -ad+omega^2*d, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -ad+omega^2*d, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, -ad+omega^2*d, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, -ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, -ad+omega^2*d, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, -ad*T+2*omega*d*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d, ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, -ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {theta-sintheta, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -ad*T+2*omega*d*Pi, -ad+omega^2*d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -ad*T+2*omega*d*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -ad*T+2*omega*d*Pi, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -ad+omega^2*d, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -ad+omega^2*d, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, T*omega-2*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, -ad+omega^2*d, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, -ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, -ad+omega^2*d, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, -ad*T+2*omega*d*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d, ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, -ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {sintheta*L-d, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sintheta*L-d, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta*L-d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, -ad+omega^2*d, ad*T^2-4*d*Pi^2}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, -ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, -ad+omega^2*d, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad*T+2*omega*d*Pi, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d, ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, -ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*omega-2*Pi, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*omega-2*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d, ad*T^2-4*d*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -ad+omega^2*d, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad*T+2*omega*d*Pi, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad+omega^2*d, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad+omega^2*d, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad+omega^2*d, ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad+omega^2*d, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad+omega^2*d, ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-ad+omega^2*d, ad*T^2-4*d*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad+omega^2*d, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-ad+omega^2*d, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {ad*T^2-4*d*Pi^2, -g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {ad*T^2-4*d*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  filtered: {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d}
+  filtered: {d}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {ad}
+  filtered: {ad}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {L, d}
+  filtered: {L, d}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, theta-sintheta}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, ad}
+  filtered: {L, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, T*omega-2*Pi}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, theta-sintheta}
+  filtered: {d}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, ad}
+  filtered: {d, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, T*omega-2*Pi}
+  filtered: {d}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, ad}
+  filtered: {ad}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {theta-sintheta, T*omega-2*Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {ad, T*omega-2*Pi}
+  filtered: {ad}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {L, d, theta-sintheta}
+  filtered: {L, d}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, d, ad}
+  filtered: {L, d, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, d, T*omega-2*Pi}
+  filtered: {L, d}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, theta-sintheta, ad}
+  filtered: {L, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, theta-sintheta, T*omega-2*Pi}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, ad, T*omega-2*Pi}
+  filtered: {L, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, theta-sintheta, ad}
+  filtered: {d, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, theta-sintheta, T*omega-2*Pi}
+  filtered: {d}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, ad, T*omega-2*Pi}
+  filtered: {d, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, ad, T*omega-2*Pi}
+  filtered: {ad}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {L, d, theta-sintheta, ad}
+  filtered: {L, d, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, d, theta-sintheta, T*omega-2*Pi}
+  filtered: {L, d}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, d, ad, T*omega-2*Pi}
+  filtered: {L, d, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, theta-sintheta, ad, T*omega-2*Pi}
+  filtered: {L, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, theta-sintheta, ad, T*omega-2*Pi}
+  filtered: {d, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d}
+  filtered: {d}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta}
+  filtered: {sintheta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta}
+  filtered: {theta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {ad}
+  filtered: {ad}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {d, sintheta}
+  filtered: {d, sintheta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, theta}
+  filtered: {d, theta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, ad}
+  filtered: {d, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, T*omega-2*Pi}
+  filtered: {d}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta, theta}
+  filtered: {sintheta, theta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta, ad}
+  filtered: {sintheta, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta, T*omega-2*Pi}
+  filtered: {sintheta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta, ad}
+  filtered: {theta, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta, T*omega-2*Pi}
+  filtered: {theta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {ad, T*omega-2*Pi}
+  filtered: {ad}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {d, sintheta, theta}
+  filtered: {d, sintheta, theta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, sintheta, ad}
+  filtered: {d, sintheta, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, sintheta, T*omega-2*Pi}
+  filtered: {d, sintheta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, theta, ad}
+  filtered: {d, theta, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, theta, T*omega-2*Pi}
+  filtered: {d, theta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, ad, T*omega-2*Pi}
+  filtered: {d, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta, theta, ad}
+  filtered: {sintheta, theta, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta, theta, T*omega-2*Pi}
+  filtered: {sintheta, theta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta, ad, T*omega-2*Pi}
+  filtered: {sintheta, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta, ad, T*omega-2*Pi}
+  filtered: {theta, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, sintheta, theta, ad}
+  filtered: {d, sintheta, theta, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, sintheta, theta, T*omega-2*Pi}
+  filtered: {d, sintheta, theta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, sintheta, ad, T*omega-2*Pi}
+  filtered: {d, sintheta, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {d, theta, ad, T*omega-2*Pi}
+  filtered: {d, theta, ad}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta, theta, ad, T*omega-2*Pi}
+  filtered: {sintheta, theta, ad}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {-g*Tj^2+4*L*j^2*Pi^2}
+  {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  {-g*Tj^2+4*L*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  {-g*Tj^2+4*L*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  {-g*Tj^2+4*L*j^2*Pi^2, -sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  {L}
+  {d}
+  {L, d}
+  {L, ad}
+  {d, ad}
+  {L, d, ad}
+  {sintheta}
+  {theta}
+  {d, sintheta}
+  {d, theta}
+  {sintheta, theta}
+  {sintheta, ad}
+  {theta, ad}
+  {d, sintheta, theta}
+  {d, sintheta, ad}
+  {d, theta, ad}
+  {sintheta, theta, ad}
+  {d, sintheta, theta, ad}
+
+STRONG_CANDIDATES:
+  {-sintheta*g*Tj^2+4*d*j^2*Pi^2}
+  {-sintheta*g*Tj^2+4*d*j^2*Pi^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}
+  {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2}
+  {-sintheta*g*Tj^2+4*d*j^2*Pi^2, -4*ad*j^2*Pi^2+omega^2*sintheta*g*Tj^2, 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2}

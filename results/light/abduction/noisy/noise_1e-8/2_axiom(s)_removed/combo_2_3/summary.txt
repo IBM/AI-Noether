@@ -7,15 +7,23 @@ Removed axioms:
 
 Numerical engine: bertini
 Samples per component: 100
-Number of witness set components: 1
-Symbolic regression results: 2
+Number of witness set components: 2
+Symbolic regression results: 4
 
-Regression results below threshold (5.0):
+Regression results below threshold (200.0):
   Axiom 2, Component 1:
-    Singular value: 0.004597593954711592
-    Polynomial: 1*sintheta*dtheta*r^2 + (-0.000163808+2.98143e-05i)*dA
-    Coefficient L2 error: 0.15907186387630481
+    Singular value: 0.37815625460368607
+    Polynomial: 1*sintheta*dtheta*r^2 + (-0.0460822-0.00560898i)*dA
+    Coefficient L2 error: 0.11329238264574708
   Axiom 3, Component 1:
-    Singular value: 3.697910552089347
-    Polynomial: (0.256219+0.0188466i)*S*dA + 1*P
-    Coefficient L2 error: 2.133908388525251
+    Singular value: 1.7992167603202602
+    Polynomial: (0.614709-0.00365889i)*S*dA + 1*P
+    Coefficient L2 error: 1.6147128061396314
+  Axiom 2, Component 2:
+    Singular value: 0.7507954068877054
+    Polynomial: 1*sintheta*dtheta*r^2 + (0.0670918-0.0391685i)*dA
+    Coefficient L2 error: 0.22969176654397627
+  Axiom 3, Component 2:
+    Singular value: 3.9097173357906563
+    Polynomial: (0.933478+0.200794i)*S*dA + 1*P
+    Coefficient L2 error: 1.943876119285146

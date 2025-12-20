@@ -16,7 +16,7 @@ measuredPerTarget = {{c, F0, F, v}};
 nonMeasuredPerTarget = {{d, dt, dt0, L}};
 
 -- Candidate axiom sets to test (list of lists)
-candidateSets = {{}, {dt*F-1}, {dt0*c-2*d}, {c^2*F0^2-c^2*F^2-F0^2*v^2}, {dt0*F0^2*v^2-2*d*c*F0^2+2*d*c*F^2}, {dt*F-1, dt0*c-2*d}, {dt*F-1, c^2*F0^2-c^2*F^2-F0^2*v^2}, {dt*F-1, dt0*F0^2*v^2-2*d*c*F0^2+2*d*c*F^2}, {dt0*c-2*d, c^2*F0^2-c^2*F^2-F0^2*v^2}, {dt0*c-2*d, dt0*F0^2*v^2-2*d*c*F0^2+2*d*c*F^2}, {c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*F0^2*v^2-2*d*c*F0^2+2*d*c*F^2}, {dt*F-1, dt0*c-2*d, c^2*F0^2-c^2*F^2-F0^2*v^2}, {dt*F-1, dt0*c-2*d, dt0*F0^2*v^2-2*d*c*F0^2+2*d*c*F^2}, {dt*F-1, c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*F0^2*v^2-2*d*c*F0^2+2*d*c*F^2}, {dt0*c-2*d, c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*F0^2*v^2-2*d*c*F0^2+2*d*c*F^2}, {dt*F-1, dt0*c-2*d, c^2*F0^2-c^2*F^2-F0^2*v^2, dt0*F0^2*v^2-2*d*c*F0^2+2*d*c*F^2}};
+candidateSets = {{}};
 
 -- Configuration
 requireLiteralGB = true;

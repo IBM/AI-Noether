@@ -1,0 +1,123 @@
+ArchiveEntry "compton_target1_combo1_9"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real f1;
+  Real f2;
+  Real Eph1;
+  Real Eph2;
+  Real Eel1;
+  Real Eel2;
+  Real p1;
+  Real p2;
+  Real pel2;
+  Real lambda1;
+  Real lambda2;
+  Real h;
+  Real mel;
+  Real c;
+  Real cosTh;
+  Real c1_1;
+  Real c1_2;
+  Real c1_3;
+  Real c1_4;
+  Real c9_5;
+  Real c9_6;
+  Real c9_7;
+  Real c1_8;
+  Real c1_9;
+  Real c1_10;
+  Real c1_11;
+  Real c9_12;
+  Real c9_13;
+  Real c9_14;
+  Real c1_15;
+  Real c1_16;
+  Real c1_17;
+  Real c1_18;
+  Real c9_19;
+  Real c9_20;
+  Real c9_21;
+  Real c1_22;
+  Real c1_23;
+  Real c1_24;
+  Real c1_25;
+  Real c9_26;
+  Real c9_27;
+  Real c9_28;
+  Real c1_29;
+  Real c1_30;
+  Real c1_31;
+  Real c1_32;
+  Real c9_33;
+  Real c9_34;
+  Real c9_35;
+  Real c1_36;
+  Real c1_37;
+  Real c1_38;
+  Real c1_39;
+  Real c9_40;
+  Real c9_41;
+  Real c9_42;
+  Real d1;
+  Real d2;
+  Real d3;
+  Real d4;
+End.
+
+Problem
+  (
+    \exists c1_1 \exists c1_2 \exists c1_3 \exists c1_4 \exists c9_5 \exists c9_6 \exists c9_7 \exists c1_8 \exists c1_9 \exists c1_10 \exists c1_11 \exists c9_12 \exists c9_13 \exists c9_14 \exists c1_15 \exists c1_16 \exists c1_17 \exists c1_18 \exists c9_19 \exists c9_20 \exists c9_21 \exists c1_22 \exists c1_23 \exists c1_24 \exists c1_25 \exists c9_26 \exists c9_27 \exists c9_28 \exists c1_29 \exists c1_30 \exists c1_31 \exists c1_32 \exists c9_33 \exists c9_34 \exists c9_35 \exists c1_36 \exists c1_37 \exists c1_38 \exists c1_39 \exists c9_40 \exists c9_41 \exists c9_42 \exists d1 \exists d2 \exists d3 \exists d4
+    (
+      c1_1 > 0 & c1_2 > 0 & c1_3 > 0 & c1_4 > 0 & c9_5 > 0 & c9_6 > 0 & c9_7 > 0 & c1_8 > 0 & c1_9 > 0 & c1_10 > 0 & c1_11 > 0 & c9_12 > 0 & c9_13 > 0 & c9_14 > 0 & c1_15 > 0 & c1_16 > 0 & c1_17 > 0 & c1_18 > 0 & c9_19 > 0 & c9_20 > 0 & c9_21 > 0 & c1_22 > 0 & c1_23 > 0 & c1_24 > 0 & c1_25 > 0 & c9_26 > 0 & c9_27 > 0 & c9_28 > 0 & c1_29 > 0 & c1_30 > 0 & c1_31 > 0 & c1_32 > 0 & c9_33 > 0 & c9_34 > 0 & c9_35 > 0 & c1_36 > 0 & c1_37 > 0 & c1_38 > 0 & c1_39 > 0 & c9_40 > 0 & c9_41 > 0 & c9_42 > 0 & d1 > 0 & d2 > 0 & d3 > 0 & d4 > 0
+      &
+      (
+        \forall f1 \forall f2 \forall Eph1 \forall Eph2 \forall Eel1 \forall Eel2 \forall p1 \forall p2 \forall pel2 \forall lambda1 \forall lambda2 \forall h \forall mel \forall c \forall cosTh
+        (
+          (
+            (f1 > 0 & f2 > 0 & Eph1 > 0 & Eph2 > 0 & Eel1 > 0 & Eel2 > 0 & p1 > 0 & p2 > 0 & pel2 > 0 & lambda1 > 0 & lambda2 > 0 & h > 0 & mel > 0 & c > 0 & cosTh > 0) &
+            & ( Eph1 - h*f1 = 0 )
+            & ( Eph2- h*f2 = 0 )
+            & ( p1*c - h*f1 = 0 )
+            & ( p2*c - h*f2 = 0 )
+            & ( lambda1*f1 - c = 0 )
+            & ( lambda2*f2 - c = 0 )
+            & ( Eel1 - mel*c^2 = 0 )
+            & ( pel2^2 - p1^2 - p2^2 + 2*p1*p2*cosTh = 0 )
+            & ( ( c1_1 * Eph1 ) + ( c1_2 * Eph2 ) + ( c1_3 * Eel1 ) + ( c1_4 * Eel2 ) = 0 )
+            & ( ( c9_5 * Eel2^2 ) + ( c9_6 * pel2^2*c^2 ) + ( c9_7 * mel^2*c^4 ) = 0 )
+            & ( ( c1_8 * Eph1 ) + ( c1_9 * Eph2 ) + ( c1_10 * Eel1 ) + ( c1_11 * Eel2 ) = 0 )
+            & ( ( c9_12 * Eel2^2 ) + ( c9_13 * pel2^2*c^2 ) + ( c9_14 * mel^2*c^4 ) = 0 )
+            & ( ( c1_15 * Eph1 ) + ( c1_16 * Eph2 ) + ( c1_17 * Eel1 ) + ( c1_18 * Eel2 ) = 0 )
+            & ( ( c9_19 * Eel2^2 ) + ( c9_20 * pel2^2*c^2 ) + ( c9_21 * mel^2*c^4 ) = 0 )
+            & ( ( c1_22 * Eph1 ) + ( c1_23 * Eph2 ) + ( c1_24 * Eel1 ) + ( c1_25 * Eel2 ) = 0 )
+            & ( ( c9_26 * Eel2^2 ) + ( c9_27 * pel2^2*c^2 ) + ( c9_28 * mel^2*c^4 ) = 0 )
+            & ( ( c1_29 * Eph1 ) + ( c1_30 * Eph2 ) + ( c1_31 * Eel1 ) + ( c1_32 * Eel2 ) = 0 )
+            & ( ( c9_33 * Eel2^2 ) + ( c9_34 * pel2^2*c^2 ) + ( c9_35 * mel^2*c^4 ) = 0 )
+            & ( ( c1_36 * Eph1 ) + ( c1_37 * Eph2 ) + ( c1_38 * Eel1 ) + ( c1_39 * Eel2 ) = 0 )
+            & ( ( c9_40 * Eel2^2 ) + ( c9_41 * pel2^2*c^2 ) + ( c9_42 * mel^2*c^4 ) = 0 )
+          )
+          ->
+          (
+            ( d1 * lambda1*mel*c ) + ( d2 * lambda2*mel*c ) + ( d3 * h*cosTh ) + ( d4 * h ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

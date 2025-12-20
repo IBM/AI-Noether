@@ -1,0 +1,44 @@
+Number of components: 7
+Number of remaining axioms: 5
+Number of targets: 1
+Max candidate set size: 1
+Number of candidate sets (after filtering): 23
+
+Filtering method: ideal membership test
+  Generators g where g ∈ ideal(remaining_axioms + targets) are excluded
+  (They contain no new information beyond what's already known)
+
+Remaining axioms:
+  1. beta * mup - muN
+  2. ph - p0 - dp
+  3. n - dn
+  4. dp - dn
+  5. H * (ph + beta * n)^2 * e - r * ph + r * beta^2 * n
+
+Targets:
+  1. r*e*mup*dn*beta^2 + r*e*mup*dn*beta - r*sigma + e*p0*sigma*H + e*dn*beta*sigma*H + e*dn*sigma*H
+
+Candidate sets to test:
+  Candidate 0: [] (empty set / baseline)
+  Candidate 1: ['e*mup*p0+muN*e*dn+e*mup*dn-sigma']
+  Candidate 2: ['muN*dn*beta*r+dn*beta*sigma*H-mup*p0*r-mup*dn*r+p0*sigma*H+dn*sigma*H']
+  Candidate 3: ['mup^2*p0*r-muN^2*dn*r+mup^2*dn*r-mup*p0*sigma*H-muN*dn*sigma*H-mup*dn*sigma*H']
+  Candidate 4: ['muN*e*dn*beta+muN*e*p0+muN*e*dn-beta*sigma']
+  Candidate 5: ['e*dn*beta*sigma*H-muN*e*p0*r+e*p0*sigma*H+e*dn*sigma*H+beta*r*sigma-r*sigma']
+  Candidate 6: ['muN^2*e*dn*r+muN*e*mup*dn*r-mup*r*sigma+sigma^2*H']
+  Candidate 7: ['muN^2*e*p0*r-muN*beta*r*sigma-beta*sigma^2*H+muN*r*sigma']
+  Candidate 8: ['r']
+  Candidate 9: ['dn*beta+p0+dn']
+  Candidate 10: ['mup*p0+muN*dn+mup*dn']
+  Candidate 11: ['H']
+  Candidate 12: ['e']
+  Candidate 13: ['dn']
+  Candidate 14: ['n']
+  Candidate 15: ['dp']
+  Candidate 16: ['ph-p0']
+  Candidate 17: ['e*p0*H-r']
+  Candidate 18: ['beta']
+  Candidate 19: ['muN']
+  Candidate 20: ['e*p0*H+e*dn*H-r']
+  Candidate 21: ['beta+1']
+  Candidate 22: ['muN+mup']

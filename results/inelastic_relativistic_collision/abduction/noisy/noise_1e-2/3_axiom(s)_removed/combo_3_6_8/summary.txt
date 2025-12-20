@@ -1,0 +1,62 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-2
+Removed axiom indices (1-based): [3, 6, 8]
+Removed axioms:
+  Er - mr*c^2
+  pc - pm
+  mr - mm
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 4
+Symbolic regression results: 12
+
+Regression results below threshold (200.0):
+  Axiom 3, Component 1:
+    Singular value: 13.081990823280199
+    Polynomial: (-0.00711597-0.0137131i)*mr*c^2 + 1*Er
+    Coefficient L2 error: 0.9929787271947502
+  Axiom 6, Component 1:
+    Singular value: 9.362609494439734e-17
+    Polynomial: 1*pm
+    Coefficient L2 error: 1.0
+  Axiom 8, Component 1:
+    Singular value: 1.9914664334027095e-16
+    Polynomial: 1*mm
+    Coefficient L2 error: 1.0
+  Axiom 3, Component 2:
+    Singular value: 14.253002870873573
+    Polynomial: (0.0216675-0.0050498i)*mr*c^2 + 1*Er
+    Coefficient L2 error: 1.021679941510183
+  Axiom 6, Component 2:
+    Singular value: 1.4070718163483387e-16
+    Polynomial: 1*pm
+    Coefficient L2 error: 1.0
+  Axiom 8, Component 2:
+    Singular value: 1.0113448606871656e-16
+    Polynomial: 1*mm
+    Coefficient L2 error: 1.0
+  Axiom 3, Component 3:
+    Singular value: 3.494288817971487e-18
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 0.9999999999628666
+  Axiom 6, Component 3:
+    Singular value: 5.740993301105133e-08
+    Polynomial: 1*pc + 1.19469e-10*pm
+    Coefficient L2 error: 1.0000000001194687
+  Axiom 8, Component 3:
+    Singular value: 14.745189202097855
+    Polynomial: (0.858447-0.299512i)*mr + 1*mm
+    Coefficient L2 error: 1.8824271601286808
+  Axiom 3, Component 4:
+    Singular value: 5.737177803083646e-18
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 1.0000000000136193
+  Axiom 6, Component 4:
+    Singular value: 14.913670994785724
+    Polynomial: 1*pc + (-0.346595+0.188661i)*pm
+    Coefficient L2 error: 0.6800966663276208
+  Axiom 8, Component 4:
+    Singular value: 16.42940152446968
+    Polynomial: 1*mr + (-0.169891+0.386726i)*mm
+    Coefficient L2 error: 0.9157721446141711

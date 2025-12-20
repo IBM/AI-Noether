@@ -1,0 +1,19 @@
+=== Symbolic Regression Result ===
+Dropped axiom index (1-based): 6
+Dropped axiom text: sigma - e * ph * mup - e * n * muN
+Component index: 2
+Variables: ['ph', 'muN', 'n', 'e', 'mup', 'sigma']
+Number of monomials: 3
+Total degree: 3
+Number of points (total): 100
+Number of points (used after outlier removal): 21
+Smallest singular value: 3.450686779355248
+Relative residual: 4.622797378179538
+
+Inferred polynomial (raw):
+  -0.0771629*ph*e*mup + (0.0295102+0.0228108i)*muN*n*e + (0.0803068-0.99677i)*sigma = 0
+
+Inferred polynomial (normalized):
+  (-0.0061967-0.0769137i)*ph*e*mup + (-0.0203672+0.0312468i)*muN*n*e + 1*sigma = 0
+
+Coefficient L2 error vs true: 1.3979332715207384

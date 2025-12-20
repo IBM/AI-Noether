@@ -9,8 +9,8 @@ allAxioms = {c*dt0 - 2*d, 4*L^2 - 4*d^2 - v^2*dt^2, F0*dt0 - 1, F*dt - 1, c*dt -
 targetList = {c^2*F0^2-c^2*F^2-F0^2*v^2};
 
 -- Original dimension (all axioms)
-I = ideal(allAxioms);
-originalDim = dim I;
+origIdeal = ideal(allAxioms);
+originalDim = dim origIdeal;
 
 -- Compute remaining axioms by removing specified ones
 remainingAxioms = allAxioms;

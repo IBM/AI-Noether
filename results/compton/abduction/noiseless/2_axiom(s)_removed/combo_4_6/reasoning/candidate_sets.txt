@@ -1,0 +1,40 @@
+Number of components: 5
+Number of remaining axioms: 8
+Number of targets: 1
+Max candidate set size: 1
+Number of candidate sets (after filtering): 16
+
+Filtering method: ideal membership test
+  Generators g where g ∈ ideal(remaining_axioms + targets) are excluded
+  (They contain no new information beyond what's already known)
+
+Remaining axioms:
+  1. E1 + Ee1 - E2 - Ee2
+  2. E1 - h*f1
+  3. E2 - h*f2
+  4. p2*c - h*f2
+  5. lambda2*f2 - c
+  6. Ee1 - me*c^2
+  7. Ee2^2 - pe2^2*c^2 - me^2*c^4
+  8. pe2^2 - p1^2 - p2^2 + 2*p1*p2*coss
+
+Targets:
+  1. lambda1*h*me*c^3 - lambda2*h*me*c^3 - coss*h^2*c^2 + h^2*c^2
+
+Candidate sets to test:
+  Candidate 0: [] (empty set / baseline)
+  Candidate 1: ['h']
+  Candidate 2: ['lambda2']
+  Candidate 3: ['pe2']
+  Candidate 4: ['p2']
+  Candidate 5: ['p1']
+  Candidate 6: ['p2*lambda2-h']
+  Candidate 7: ['f2*lambda1*me-f2*lambda2*me-p2*coss+p2']
+  Candidate 8: ['2*f1*f2^2*lambda1*lambda2*h*me-2*f2^3*lambda1*lambda2*h*me-f2^2*pe2^2*lambda2^2-2*f1*f2*p2*lambda2*h*coss+2*f2^2*p2*lambda2*h*coss-f2^2*p2*lambda2*h+f1^2*h^2']
+  Candidate 9: ['2*f1*f2*lambda2*h*me*coss-2*f2^2*lambda2*h*me*coss+f1^2*lambda1*h*me-f1^2*lambda2*h*me-2*f1*f2*lambda2*h*me+2*f2^2*lambda2*h*me-2*f1*p2^2*lambda2*coss+f2*p2^2*lambda2*coss-f2*pe2^2*lambda2*coss+2*f1*p2^2*lambda2-f2*p2^2*lambda2+f2*pe2^2*lambda2']
+  Candidate 10: ['f1^2*lambda1^2*me^2-2*f1^2*lambda1*lambda2*me^2+f1^2*lambda2^2*me^2-2*f1*p2*lambda1*me*coss+2*f1*h*me*coss^2-2*f2*h*me*coss^2+2*f1*p2*lambda1*me-2*f1*h*me*coss+4*f2*h*me*coss+p2^2*coss^2-pe2^2*coss^2-2*f2*h*me-2*p2^2*coss+2*pe2^2*coss+p2^2-pe2^2']
+  Candidate 11: ['2*f1*f2^2*lambda1*h*me-2*f2^3*lambda1*h*me-f2^2*pe2^2*lambda2-2*f1*f2*p2*h*coss+2*f2^2*p2*h*coss+f1^2*p2*h-f2^2*p2*h']
+  Candidate 12: ['f1^2*p2*lambda1*me+2*f1*f2*h*me*coss-2*f2^2*h*me*coss-f1^2*h*me-2*f1*f2*h*me+2*f2^2*h*me-2*f1*p2^2*coss+f2*p2^2*coss-f2*pe2^2*coss+2*f1*p2^2-f2*p2^2+f2*pe2^2']
+  Candidate 13: ['2*f1*f2^2*h*me-2*f2^3*h*me+f1^2*p2^2-2*f1*f2*p2^2+f2^2*p2^2-f2^2*pe2^2']
+  Candidate 14: ['f2']
+  Candidate 15: ['f1']

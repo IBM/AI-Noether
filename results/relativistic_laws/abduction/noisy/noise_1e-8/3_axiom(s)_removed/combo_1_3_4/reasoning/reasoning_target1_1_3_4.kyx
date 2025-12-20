@@ -1,0 +1,92 @@
+ArchiveEntry "relativistic_laws_updated_target1_combo1_3_4"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real c;
+  Real dt;
+  Real v;
+  Real F0;
+  Real F;
+  Real dt0;
+  Real L0;
+  Real L;
+  Real m0;
+  Real u0;
+  Real m;
+  Real u;
+  Real c3_1;
+  Real c3_2;
+  Real c4_3;
+  Real c4_4;
+  Real c4_5;
+  Real c1_6;
+  Real c1_7;
+  Real c3_8;
+  Real c3_9;
+  Real c4_10;
+  Real c4_11;
+  Real c4_12;
+  Real c3_13;
+  Real c3_14;
+  Real c4_15;
+  Real c4_16;
+  Real c4_17;
+  Real c3_18;
+  Real c3_19;
+  Real c4_20;
+  Real c4_21;
+  Real c4_22;
+  Real d1;
+  Real d2;
+  Real d3;
+End.
+
+Problem
+  (
+    \exists c3_1 \exists c3_2 \exists c4_3 \exists c4_4 \exists c4_5 \exists c1_6 \exists c1_7 \exists c3_8 \exists c3_9 \exists c4_10 \exists c4_11 \exists c4_12 \exists c3_13 \exists c3_14 \exists c4_15 \exists c4_16 \exists c4_17 \exists c3_18 \exists c3_19 \exists c4_20 \exists c4_21 \exists c4_22 \exists d1 \exists d2 \exists d3
+    (
+      c3_1 > 0 & c3_2 > 0 & c4_3 > 0 & c4_4 > 0 & c4_5 > 0 & c1_6 > 0 & c1_7 > 0 & c3_8 > 0 & c3_9 > 0 & c4_10 > 0 & c4_11 > 0 & c4_12 > 0 & c3_13 > 0 & c3_14 > 0 & c4_15 > 0 & c4_16 > 0 & c4_17 > 0 & c3_18 > 0 & c3_19 > 0 & c4_20 > 0 & c4_21 > 0 & c4_22 > 0 & d1 > 0 & d2 > 0 & d3 > 0
+      &
+      (
+        \forall c \forall dt \forall v \forall F0 \forall F \forall dt0 \forall L0 \forall L \forall m0 \forall u0 \forall m \forall u
+        (
+          (
+            (c > 0 & dt > 0 & v > 0 & F0 > 0 & F > 0 & dt0 > 0 & L0 > 0 & L > 0 & m0 > 0 & u0 > 0 & m > 0 & u > 0) &
+            & ( F*dt - 1 = 0 )
+            & ( m0*u0 - m*u = 0 )
+            & ( u0*dt0 - u*dt = 0 )
+            & ( dt*(c^2 - v^2) - 2*L*c = 0 )
+            & ( ( c3_1 * c*dt0 ) + ( c3_2 * L0 ) = 0 )
+            & ( ( c4_3 * c^2*dt^2 ) + ( c4_4 * dt^2*v^2 ) + ( c4_5 * L0^2 ) = 0 )
+            & ( ( c1_6 * F0*dt0 ) + ( c1_7 * 1 ) = 0 )
+            & ( ( c3_8 * c*dt0 ) + ( c3_9 * L0 ) = 0 )
+            & ( ( c4_10 * c^2*dt^2 ) + ( c4_11 * dt^2*v^2 ) + ( c4_12 * L0^2 ) = 0 )
+            & ( ( c3_13 * c*dt0 ) + ( c3_14 * L0 ) = 0 )
+            & ( ( c4_15 * c^2*dt^2 ) + ( c4_16 * dt^2*v^2 ) + ( c4_17 * L0^2 ) = 0 )
+            & ( ( c3_18 * c*dt0 ) + ( c3_19 * L0 ) = 0 )
+            & ( ( c4_20 * c^2*dt^2 ) + ( c4_21 * dt^2*v^2 ) + ( c4_22 * L0^2 ) = 0 )
+          )
+          ->
+          (
+            ( d1 * c^2*F0^2 ) + ( d2 * c^2*F^2 ) + ( d3 * v^2*F0^2 ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

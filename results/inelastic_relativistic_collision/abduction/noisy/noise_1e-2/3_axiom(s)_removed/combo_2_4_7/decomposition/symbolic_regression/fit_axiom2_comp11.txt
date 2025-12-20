@@ -1,0 +1,19 @@
+=== Symbolic Regression Result ===
+Dropped axiom index (1-based): 2
+Dropped axiom text: Em^2 - (mm*c^2)^2 - (pm*c)^2
+Component index: 11
+Variables: ['Em', 'mm', 'pm', 'c']
+Number of monomials: 3
+Total degree: 6
+Number of points (total): 100
+Number of points (used after outlier removal): 75
+Smallest singular value: 0.0001646798903782145
+Relative residual: 0.00017198339131340525
+
+Inferred polynomial (raw):
+  6.68978e-07*Em^2 + (-0.992835+0.119496i)*mm^2*c^4 + (0.560638-0.0674779i)*pm^2*c^2 = 0
+
+Inferred polynomial (normalized):
+  -6.64185e-07*Em^2 + 1*mm^2*c^4 + -0.564684*pm^2*c^2 = 0
+
+Coefficient L2 error vs true: 1.8569424101704577

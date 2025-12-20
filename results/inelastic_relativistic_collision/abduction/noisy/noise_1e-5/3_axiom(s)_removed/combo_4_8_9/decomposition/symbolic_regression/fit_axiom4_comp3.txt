@@ -1,0 +1,19 @@
+=== Symbolic Regression Result ===
+Dropped axiom index (1-based): 4
+Dropped axiom text: Ec^2 - (mc*c)^2 - (pc*c)^2
+Component index: 3
+Variables: ['pc', 'Ec', 'mc', 'c']
+Number of monomials: 3
+Total degree: 4
+Number of points (total): 100
+Number of points (used after outlier removal): 75
+Smallest singular value: 5.183132006628937e-16
+Relative residual: 5.249610092586282e-16
+
+Inferred polynomial (raw):
+  -0.0531189*pc^2*c^2 + (0.965034+0.262126i)*Ec^2 + (-8.19803e-05-1.18217e-05i)*mc^2*c^2 = 0
+
+Inferred polynomial (normalized):
+  (-0.0512615+0.0139239i)*pc^2*c^2 + 1*Ec^2 + (-8.22125e-05+1.00809e-05i)*mc^2*c^2 = 0
+
+Coefficient L2 error vs true: 1.3784535260601707

@@ -1,0 +1,41 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  -c0-c2*r^2+u
+
+Targets:
+  r^3*delP-r*Rad^2*delP+4*r*u*L*mu
+
+Require literal GB appearance: true
+Number of candidate sets to test: 5
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {r}
+  filtered: {r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c0-u}
+  filtered: {c0-u}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r, c0-u}
+  filtered: {r, c0-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {r}
+  {r, c0-u}
+  {r^2*delP-Rad^2*delP+4*u*L*mu}
+
+STRONG_CANDIDATES:

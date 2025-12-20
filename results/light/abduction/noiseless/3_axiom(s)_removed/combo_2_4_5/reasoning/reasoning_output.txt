@@ -1,0 +1,38 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  S*r^2-ap^2*sintheta^2*qc^2
+  -S*dA+P
+
+Targets:
+  75*P-314*qc^2*x0^2*w^4
+
+Require literal GB appearance: true
+Number of candidate sets to test: 5
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+  filtered: {75*ap^2*sintheta^2*dA-314*r^2*x0^2*w^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {qc}
+  filtered: {qc}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {S}
+  filtered: {S}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {qc, S}
+  filtered: {qc, S}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {qc, S}
+
+STRONG_CANDIDATES:

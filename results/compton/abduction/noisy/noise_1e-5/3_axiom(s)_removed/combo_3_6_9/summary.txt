@@ -1,0 +1,62 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-5
+Removed axiom indices (1-based): [3, 6, 9]
+Removed axioms:
+  Eph2- h*f2
+  lambda1*f1 - c
+  Eel2^2 - pel2^2*c^2 - mel^2*c^4
+
+Numerical engine: nag
+Samples per component: 100
+Number of witness set components: 4
+Symbolic regression results: 12
+
+Regression results below threshold (200.0):
+  Axiom 3, Component 1:
+    Singular value: 1.7759152243151693e-30
+    Polynomial: 1*f2*h
+    Coefficient L2 error: 1.0
+  Axiom 6, Component 1:
+    Singular value: 7.01288382567274e-16
+    Polynomial: 1*c
+    Coefficient L2 error: 1.0
+  Axiom 9, Component 1:
+    Singular value: 5.17332648783243e-62
+    Polynomial: 1*mel^2*c^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 3, Component 2:
+    Singular value: 6.379805726811716e-15
+    Polynomial: 1*f2*h
+    Coefficient L2 error: 1.0
+  Axiom 6, Component 2:
+    Singular value: 8.345520518558852e-16
+    Polynomial: 1*c
+    Coefficient L2 error: 1.0
+  Axiom 9, Component 2:
+    Singular value: 8.177269388433964e-62
+    Polynomial: 1*mel^2*c^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 3, Component 3:
+    Singular value: 15.29608475542048
+    Polynomial: 1*f2*h + (-0.904747-0.328601i)*Eph2
+    Coefficient L2 error: 0.3421282123815492
+  Axiom 6, Component 3:
+    Singular value: 8.374125561393276
+    Polynomial: (-0.011333+0.00198877i)*f1*lambda1 + 1*c
+    Coefficient L2 error: 0.9886689645333223
+  Axiom 9, Component 3:
+    Singular value: 34.98778770275808
+    Polynomial: (-0.00544258-0.0244574i)*Eel2^2 + (-0.0102026-0.00863426i)*pel2^2*c^2 + 1*mel^2*c^4
+    Coefficient L2 error: 1.417859818962133
+  Axiom 3, Component 4:
+    Singular value: 1.2063790208542671e-31
+    Polynomial: 1*f2*h
+    Coefficient L2 error: 1.0
+  Axiom 6, Component 4:
+    Singular value: 1.928333628894345e-32
+    Polynomial: (-2.40831e-05+6.02979e-05i)*f1*lambda1 + 1*c
+    Coefficient L2 error: 0.9999759187302659
+  Axiom 9, Component 4:
+    Singular value: 5.285646253566028e-126
+    Polynomial: 1*mel^2*c^4
+    Coefficient L2 error: 1.4142135623730951

@@ -1,0 +1,199 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  E1-E2+Ee1-Ee2
+  -f2*h+E2
+  -f1*h+p1*c
+  f1*lambda1-c
+  f2*lambda2-c
+  Ee1-me*c^2
+  Ee2^2-pe2^2*c^2-me^2*c^4
+
+Targets:
+  lambda1*h*me*c^3-lambda2*h*me*c^3-h^2*c^2*coss+h^2*c^2
+
+Require literal GB appearance: true
+Number of candidate sets to test: 34
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {p1*lambda1-h}
+  filtered: {p1*lambda1-h}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-Ee1*lambda1+Ee1*lambda2+h*c*coss-h*c}
+  filtered: {-Ee1*lambda1+Ee1*lambda2+h*c*coss-h*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f1*E2*coss-f1*E2+f1*Ee1-f2*Ee1}
+  filtered: {f1*E2*coss-f1*E2+f1*Ee1-f2*Ee1}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {lambda1*me*c-lambda2*me*c-h*coss+h}
+  filtered: {lambda1*me*c-lambda2*me*c-h*coss+h}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-E2*p1*coss+E2*p1+E2*me*c-Ee1*p1}
+  filtered: {-E2*p1*coss+E2*p1+E2*me*c-Ee1*p1}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f1*me*c+f2*p1*coss-f2*p1-f2*me*c}
+  filtered: {f1*me*c+f2*p1*coss-f2*p1-f2*me*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f1*lambda2*me+p1*coss-p1-me*c}
+  filtered: {f1*lambda2*me+p1*coss-p1-me*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f2*Ee1*lambda1-E2*c*coss+E2*c-Ee1*c}
+  filtered: {f2*Ee1*lambda1-E2*c*coss+E2*c-Ee1*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f1*Ee1*lambda2-Ee1*c+p1*c^2*coss-p1*c^2}
+  filtered: {f1*Ee1*lambda2-Ee1*c+p1*c^2*coss-p1*c^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-E2*Ee1+E2*p1*c*coss-E2*p1*c+Ee1*p1*c}
+  filtered: {-E2*Ee1+E2*p1*c*coss-E2*p1*c+Ee1*p1*c}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {p1*lambda2*me*c+p1*h*coss-p1*h-h*me*c}
+  filtered: {p1*lambda2*me*c+p1*h*coss-p1*h-h*me*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ee1*lambda1^2*me-2*Ee1*lambda1*lambda2*me+Ee1*lambda2^2*me-h^2*coss^2+2*h^2*coss-h^2}
+  filtered: {Ee1*lambda1^2*me-2*Ee1*lambda1*lambda2*me+Ee1*lambda2^2*me-h^2*coss^2+2*h^2*coss-h^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-E2*Ee1*lambda1*me+E2*p1*h*coss^2-2*E2*p1*h*coss+E2*p1*h+Ee1*p1*h*coss-Ee1*p1*h+Ee1*h*me*c}
+  filtered: {-E2*Ee1*lambda1*me+E2*p1*h*coss^2-2*E2*p1*h*coss+E2*p1*h+Ee1*p1*h*coss-Ee1*p1*h+Ee1*h*me*c}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-E2*Ee1*me+E2*p1^2*coss^2-2*E2*p1^2*coss+E2*p1^2+Ee1*p1^2*coss-Ee1*p1^2+Ee1*p1*me*c}
+  filtered: {-E2*Ee1*me+E2*p1^2*coss^2-2*E2*p1^2*coss+E2*p1^2+Ee1*p1^2*coss-Ee1*p1^2+Ee1*p1*me*c}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-f1*E2^2*me+f2*E2*p1^2*coss-f2*E2*p1^2+f2*Ee1*p1^2}
+  filtered: {-f1*E2^2*me+f2*E2*p1^2*coss-f2*E2*p1^2+f2*Ee1*p1^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {f1^2*E2*me-f1*f2*E2*me+f2^2*p1^2*coss-f2^2*p1^2}
+  filtered: {f1^2*E2*me-f1*f2*E2*me+f2^2*p1^2*coss-f2^2*p1^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {Ee1*p1*lambda2^2*me+Ee1*lambda1*h*me-2*Ee1*lambda2*h*me-p1*h^2*coss^2+2*p1*h^2*coss-p1*h^2}
+  filtered: {Ee1*p1*lambda2^2*me+Ee1*lambda1*h*me-2*Ee1*lambda2*h*me-p1*h^2*coss^2+2*p1*h^2*coss-p1*h^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {f2*Ee2^2*lambda1*me-E2*Ee1*p1*coss^2+2*E2*Ee1*p1*coss-E2*Ee1*p1-E2*pe2^2*c*coss+E2*pe2^2*c-Ee1^2*p1*coss+Ee1^2*p1-Ee2^2*me*c}
+  filtered: {f2*Ee2^2*lambda1*me-E2*Ee1*p1*coss^2+2*E2*Ee1*p1*coss-E2*Ee1*p1-E2*pe2^2*c*coss+E2*pe2^2*c-Ee1^2*p1*coss+Ee1^2*p1-Ee2^2*me*c}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-Ee1*h^2*me*coss^2+2*Ee1*h^2*me*coss-Ee1*h^2*me+Ee2^2*lambda1^2*me^2-2*Ee2^2*lambda1*lambda2*me^2+Ee2^2*lambda2^2*me^2-pe2^2*h^2*coss^2+2*pe2^2*h^2*coss-pe2^2*h^2}
+  filtered: {-Ee1*h^2*me*coss^2+2*Ee1*h^2*me*coss-Ee1*h^2*me+Ee2^2*lambda1^2*me^2-2*Ee2^2*lambda1*lambda2*me^2+Ee2^2*lambda2^2*me^2-pe2^2*h^2*coss^2+2*pe2^2*h^2*coss-pe2^2*h^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-Ee1*p1*h^2*me*coss^2+2*Ee1*p1*h^2*me*coss-Ee1*p1*h^2*me+Ee2^2*p1*lambda2^2*me^2+Ee2^2*lambda1*h*me^2-2*Ee2^2*lambda2*h*me^2-p1*pe2^2*h^2*coss^2+2*p1*pe2^2*h^2*coss-p1*pe2^2*h^2}
+  filtered: {-Ee1*p1*h^2*me*coss^2+2*Ee1*p1*h^2*me*coss-Ee1*p1*h^2*me+Ee2^2*p1*lambda2^2*me^2+Ee2^2*lambda1*h*me^2-2*Ee2^2*lambda2*h*me^2-p1*pe2^2*h^2*coss^2+2*p1*pe2^2*h^2*coss-p1*pe2^2*h^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {c}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {h}
+  filtered: {h}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {lambda2}
+  filtered: {lambda2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {lambda1}
+  filtered: {lambda1}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ee2}
+  filtered: {Ee2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ee1}
+  filtered: {Ee1}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {E2}
+  filtered: {E2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {E1}
+  filtered: {E1}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {f2}
+  filtered: {f2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f1}
+  filtered: {f1}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {E1-E2}
+  filtered: {E1-E2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {p1}
+  filtered: {p1}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {E1+Ee1-Ee2}
+  filtered: {E1+Ee1-Ee2}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {-Ee1*lambda1+Ee1*lambda2+h*c*coss-h*c}
+  {f1*E2*coss-f1*E2+f1*Ee1-f2*Ee1}
+  {lambda1*me*c-lambda2*me*c-h*coss+h}
+  {-E2*p1*coss+E2*p1+E2*me*c-Ee1*p1}
+  {f1*me*c+f2*p1*coss-f2*p1-f2*me*c}
+  {f1*lambda2*me+p1*coss-p1-me*c}
+  {f2*Ee1*lambda1-E2*c*coss+E2*c-Ee1*c}
+  {f1*Ee1*lambda2-Ee1*c+p1*c^2*coss-p1*c^2}
+  {-E2*Ee1+E2*p1*c*coss-E2*p1*c+Ee1*p1*c}
+  {p1*lambda2*me*c+p1*h*coss-p1*h-h*me*c}
+  {f1^2*E2*me-f1*f2*E2*me+f2^2*p1^2*coss-f2^2*p1^2}
+  {c}
+  {h}
+  {lambda2}
+  {lambda1}
+  {E2}
+  {f2}
+  {f1}
+  {p1}
+  {E1+Ee1-Ee2}
+
+STRONG_CANDIDATES:
+  {-E2*Ee1+E2*p1*c*coss-E2*p1*c+Ee1*p1*c}
+  {f1^2*E2*me-f1*f2*E2*me+f2^2*p1^2*coss-f2^2*p1^2}

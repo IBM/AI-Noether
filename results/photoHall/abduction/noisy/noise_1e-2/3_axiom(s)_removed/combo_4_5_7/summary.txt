@@ -1,0 +1,50 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-2
+Removed axiom indices (1-based): [4, 5, 7]
+Removed axioms:
+  n - dn
+  dp - dn
+  H * (ph + beta * n)^2 * e - r * ph + r * beta^2 * n
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 3
+Symbolic regression results: 9
+
+Regression results below threshold (200.0):
+  Axiom 4, Component 1:
+    Singular value: 14.873151319884217
+    Polynomial: 1*n + (0.455954+0.549157i)*dn
+    Coefficient L2 error: 1.5560767720337256
+  Axiom 5, Component 1:
+    Singular value: 2.4751885222361496
+    Polynomial: 1*dp + (0.213976-0.0371481i)*dn
+    Coefficient L2 error: 1.2145443282386286
+  Axiom 7, Component 1:
+    Singular value: 5.860685563745387e-32
+    Polynomial: 1*ph^2*e*H + (-0.0929085-0.0947946i)*n^2*e*beta^2*H
+    Coefficient L2 error: 1.4527651296345252
+  Axiom 4, Component 2:
+    Singular value: 12.587792102871306
+    Polynomial: 1*n + (0.0781291+0.582651i)*dn
+    Coefficient L2 error: 1.225497690072829
+  Axiom 5, Component 2:
+    Singular value: 3.915582574428151
+    Polynomial: 1*dp + (0.133384-0.0997838i)*dn
+    Coefficient L2 error: 1.1377684504816645
+  Axiom 7, Component 2:
+    Singular value: 2.230639962312721
+    Polynomial: (-0.194408+0.195031i)*ph^2*e*H + (0.0515291-0.0853453i)*ph*n*e*beta*H + 1*ph*r + (-0.0098719-0.0219561i)*n^2*e*beta^2*H + (0.0421696+0.0118202i)*n*beta^2*r
+    Coefficient L2 error: 1.424505447043911
+  Axiom 4, Component 3:
+    Singular value: 5.618184193420929
+    Polynomial: 1*n + (0.265008+0.153151i)*dn
+    Coefficient L2 error: 1.274245053881688
+  Axiom 5, Component 3:
+    Singular value: 1.4521954906359766
+    Polynomial: (0.181609-0.0528894i)*dp + 1*dn
+    Coefficient L2 error: 1.1827917941460002
+  Axiom 7, Component 3:
+    Singular value: 0.6434371392432674
+    Polynomial: (0.742793-0.493938i)*ph^2*e*H + 1*ph*n*e*beta*H + (-0.205746-0.583573i)*ph*r + (-0.184463+0.0100413i)*n^2*e*beta^2*H + (0.195896-0.0252611i)*n*beta^2*r
+    Coefficient L2 error: 1.1365621429183483

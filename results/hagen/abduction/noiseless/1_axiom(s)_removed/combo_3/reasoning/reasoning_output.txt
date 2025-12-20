@@ -1,0 +1,653 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  4*c2*r*mu-dp*r
+  dp*L+delP
+  -c0-c2*r^2+u
+
+Targets:
+  r^3*delP-r*Rad^2*delP+4*r*u*L*mu
+
+Require literal GB appearance: true
+Number of candidate sets to test: 108
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {4*c2*mu-dp}
+  filtered: {4*c2*mu-dp}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP}
+  filtered: {4*c0*L*mu-Rad^2*delP}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*mu+dp*Rad^2}
+  filtered: {4*c0*mu+dp*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c0+c2*Rad^2}
+  filtered: {c0+c2*Rad^2}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c2*r^2-c2*Rad^2-u}
+  filtered: {c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu}
+  filtered: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP}
+  filtered: {4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, 4*c0*mu+dp*Rad^2}
+  filtered: {4*c2*mu-dp, 4*c0*mu+dp*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, c0+c2*Rad^2}
+  filtered: {4*c2*mu-dp, c0+c2*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {4*c2*mu-dp, dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, c2*r^2-c2*Rad^2-u}
+  filtered: {4*c2*mu-dp, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c2*mu-dp, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*mu+dp*Rad^2}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*mu+dp*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, c0+c2*Rad^2}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, c0+c2*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, c2*r^2-c2*Rad^2-u}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP, 4*c0*mu+dp*Rad^2}
+  filtered: {4*c0*L*mu-Rad^2*delP, 4*c0*mu+dp*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP, c0+c2*Rad^2}
+  filtered: {4*c0*L*mu-Rad^2*delP, c0+c2*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP, dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {4*c0*L*mu-Rad^2*delP, dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP, c2*r^2-c2*Rad^2-u}
+  filtered: {4*c0*L*mu-Rad^2*delP, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c0*L*mu-Rad^2*delP, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*mu+dp*Rad^2, c0+c2*Rad^2}
+  filtered: {4*c0*mu+dp*Rad^2, c0+c2*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*mu+dp*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {4*c0*mu+dp*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*mu+dp*Rad^2, c2*r^2-c2*Rad^2-u}
+  filtered: {4*c0*mu+dp*Rad^2, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*mu+dp*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c0*mu+dp*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c0+c2*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {c0+c2*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c0+c2*Rad^2, c2*r^2-c2*Rad^2-u}
+  filtered: {c0+c2*Rad^2, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+  filtered: {dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {dp*r^2-dp*Rad^2-4*u*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {dp*r^2-dp*Rad^2-4*u*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP}
+  filtered: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*mu+dp*Rad^2}
+  filtered: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*mu+dp*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu, c0+c2*Rad^2}
+  filtered: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu, c0+c2*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu, c2*r^2-c2*Rad^2-u}
+  filtered: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP, 4*c0*mu+dp*Rad^2}
+  filtered: {4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP, 4*c0*mu+dp*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP, c0+c2*Rad^2}
+  filtered: {4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP, c0+c2*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP, dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP, dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP, c2*r^2-c2*Rad^2-u}
+  filtered: {4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, 4*c0*mu+dp*Rad^2, c0+c2*Rad^2}
+  filtered: {4*c2*mu-dp, 4*c0*mu+dp*Rad^2, c0+c2*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, 4*c0*mu+dp*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {4*c2*mu-dp, 4*c0*mu+dp*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, 4*c0*mu+dp*Rad^2, c2*r^2-c2*Rad^2-u}
+  filtered: {4*c2*mu-dp, 4*c0*mu+dp*Rad^2, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, 4*c0*mu+dp*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c2*mu-dp, 4*c0*mu+dp*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, c0+c2*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {4*c2*mu-dp, c0+c2*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, c0+c2*Rad^2, c2*r^2-c2*Rad^2-u}
+  filtered: {4*c2*mu-dp, c0+c2*Rad^2, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c2*mu-dp, c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+  filtered: {4*c2*mu-dp, dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, dp*r^2-dp*Rad^2-4*u*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c2*mu-dp, dp*r^2-dp*Rad^2-4*u*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c2*mu-dp, c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP, 4*c0*mu+dp*Rad^2}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP, 4*c0*mu+dp*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP, c0+c2*Rad^2}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP, c0+c2*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP, dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP, dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP, c2*r^2-c2*Rad^2-u}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*mu+dp*Rad^2, c0+c2*Rad^2}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*mu+dp*Rad^2, c0+c2*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*mu+dp*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*mu+dp*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*mu+dp*Rad^2, c2*r^2-c2*Rad^2-u}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*mu+dp*Rad^2, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*mu+dp*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*mu+dp*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, c0+c2*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, c0+c2*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, c0+c2*Rad^2, c2*r^2-c2*Rad^2-u}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, c0+c2*Rad^2, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP, 4*c0*mu+dp*Rad^2, c0+c2*Rad^2}
+  filtered: {4*c0*L*mu-Rad^2*delP, 4*c0*mu+dp*Rad^2, c0+c2*Rad^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP, 4*c0*mu+dp*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {4*c0*L*mu-Rad^2*delP, 4*c0*mu+dp*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP, 4*c0*mu+dp*Rad^2, c2*r^2-c2*Rad^2-u}
+  filtered: {4*c0*L*mu-Rad^2*delP, 4*c0*mu+dp*Rad^2, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP, 4*c0*mu+dp*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c0*L*mu-Rad^2*delP, 4*c0*mu+dp*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP, c0+c2*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {4*c0*L*mu-Rad^2*delP, c0+c2*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP, c0+c2*Rad^2, c2*r^2-c2*Rad^2-u}
+  filtered: {4*c0*L*mu-Rad^2*delP, c0+c2*Rad^2, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP, c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c0*L*mu-Rad^2*delP, c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP, dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+  filtered: {4*c0*L*mu-Rad^2*delP, dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP, dp*r^2-dp*Rad^2-4*u*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c0*L*mu-Rad^2*delP, dp*r^2-dp*Rad^2-4*u*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*L*mu-Rad^2*delP, c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c0*L*mu-Rad^2*delP, c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*mu+dp*Rad^2, c0+c2*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  filtered: {4*c0*mu+dp*Rad^2, c0+c2*Rad^2, dp*r^2-dp*Rad^2-4*u*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*mu+dp*Rad^2, c0+c2*Rad^2, c2*r^2-c2*Rad^2-u}
+  filtered: {4*c0*mu+dp*Rad^2, c0+c2*Rad^2, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*mu+dp*Rad^2, c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c0*mu+dp*Rad^2, c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*mu+dp*Rad^2, dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+  filtered: {4*c0*mu+dp*Rad^2, dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*mu+dp*Rad^2, dp*r^2-dp*Rad^2-4*u*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c0*mu+dp*Rad^2, dp*r^2-dp*Rad^2-4*u*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c0*mu+dp*Rad^2, c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {4*c0*mu+dp*Rad^2, c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c0+c2*Rad^2, dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+  filtered: {c0+c2*Rad^2, dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c0+c2*Rad^2, dp*r^2-dp*Rad^2-4*u*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {c0+c2*Rad^2, dp*r^2-dp*Rad^2-4*u*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c0+c2*Rad^2, c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {c0+c2*Rad^2, c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  filtered: {dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {r}
+  filtered: {r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c0-u}
+  filtered: {c0-u}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r, c0-u}
+  filtered: {r, c0-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {delP}
+  filtered: {delP}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {mu}
+  filtered: {mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {dp}
+  filtered: {dp}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {delP, mu}
+  filtered: {delP, mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {delP, dp}
+  filtered: {delP, dp}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {mu, dp}
+  filtered: {mu, dp}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {delP, mu, dp}
+  filtered: {delP, mu, dp}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {delP, L}
+  filtered: {delP, L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {delP, 4*c2*mu-dp}
+  filtered: {delP, 4*c2*mu-dp}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {L, 4*c2*mu-dp}
+  filtered: {L, 4*c2*mu-dp}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {delP, L, 4*c2*mu-dp}
+  filtered: {delP, L, 4*c2*mu-dp}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {r^2*delP-Rad^2*delP+4*u*L*mu}
+  {4*c0*L*mu-Rad^2*delP}
+  {4*c0*mu+dp*Rad^2}
+  {c0+c2*Rad^2}
+  {dp*r^2-dp*Rad^2-4*u*mu}
+  {c2*r^2-c2*Rad^2-u}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c2*mu-dp}
+  {4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP}
+  {4*c2*mu-dp, 4*c0*mu+dp*Rad^2}
+  {4*c2*mu-dp, c0+c2*Rad^2}
+  {dp*r^2-dp*Rad^2-4*u*mu, 4*c2*mu-dp}
+  {4*c2*mu-dp, c2*r^2-c2*Rad^2-u}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*mu+dp*Rad^2}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, c0+c2*Rad^2}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, c2*r^2-c2*Rad^2-u}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  {4*c0*mu+dp*Rad^2, 4*c0*L*mu-Rad^2*delP}
+  {c0+c2*Rad^2, 4*c0*L*mu-Rad^2*delP}
+  {dp*r^2-dp*Rad^2-4*u*mu, 4*c0*L*mu-Rad^2*delP}
+  {c2*r^2-c2*Rad^2-u, 4*c0*L*mu-Rad^2*delP}
+  {4*c0*L*mu-Rad^2*delP, c0*r^2-c0*Rad^2+Rad^2*u}
+  {c0+c2*Rad^2, 4*c0*mu+dp*Rad^2}
+  {dp*r^2-dp*Rad^2-4*u*mu, 4*c0*mu+dp*Rad^2}
+  {c2*r^2-c2*Rad^2-u, 4*c0*mu+dp*Rad^2}
+  {4*c0*mu+dp*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  {dp*r^2-dp*Rad^2-4*u*mu, c0+c2*Rad^2}
+  {c2*r^2-c2*Rad^2-u, c0+c2*Rad^2}
+  {c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  {dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+  {dp*r^2-dp*Rad^2-4*u*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  {c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c2*mu-dp, 4*c0*mu+dp*Rad^2}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c2*mu-dp, c0+c2*Rad^2}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu, 4*c2*mu-dp}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c2*mu-dp, c2*r^2-c2*Rad^2-u}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c2*mu-dp, c0*r^2-c0*Rad^2+Rad^2*u}
+  {4*c2*mu-dp, 4*c0*mu+dp*Rad^2, 4*c0*L*mu-Rad^2*delP}
+  {4*c2*mu-dp, c0+c2*Rad^2, 4*c0*L*mu-Rad^2*delP}
+  {dp*r^2-dp*Rad^2-4*u*mu, 4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP}
+  {4*c2*mu-dp, c2*r^2-c2*Rad^2-u, 4*c0*L*mu-Rad^2*delP}
+  {4*c2*mu-dp, 4*c0*L*mu-Rad^2*delP, c0*r^2-c0*Rad^2+Rad^2*u}
+  {4*c2*mu-dp, c0+c2*Rad^2, 4*c0*mu+dp*Rad^2}
+  {dp*r^2-dp*Rad^2-4*u*mu, 4*c2*mu-dp, 4*c0*mu+dp*Rad^2}
+  {4*c2*mu-dp, c2*r^2-c2*Rad^2-u, 4*c0*mu+dp*Rad^2}
+  {4*c2*mu-dp, 4*c0*mu+dp*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  {dp*r^2-dp*Rad^2-4*u*mu, 4*c2*mu-dp, c0+c2*Rad^2}
+  {4*c2*mu-dp, c2*r^2-c2*Rad^2-u, c0+c2*Rad^2}
+  {4*c2*mu-dp, c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  {dp*r^2-dp*Rad^2-4*u*mu, 4*c2*mu-dp, c2*r^2-c2*Rad^2-u}
+  {dp*r^2-dp*Rad^2-4*u*mu, 4*c2*mu-dp, c0*r^2-c0*Rad^2+Rad^2*u}
+  {4*c2*mu-dp, c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*mu+dp*Rad^2, 4*c0*L*mu-Rad^2*delP}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, c0+c2*Rad^2, 4*c0*L*mu-Rad^2*delP}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu, 4*c0*L*mu-Rad^2*delP}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, c2*r^2-c2*Rad^2-u, 4*c0*L*mu-Rad^2*delP}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*L*mu-Rad^2*delP, c0*r^2-c0*Rad^2+Rad^2*u}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, c0+c2*Rad^2, 4*c0*mu+dp*Rad^2}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu, 4*c0*mu+dp*Rad^2}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, c2*r^2-c2*Rad^2-u, 4*c0*mu+dp*Rad^2}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c0*mu+dp*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu, c0+c2*Rad^2}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, c2*r^2-c2*Rad^2-u, c0+c2*Rad^2}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, dp*r^2-dp*Rad^2-4*u*mu, c0*r^2-c0*Rad^2+Rad^2*u}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  {c0+c2*Rad^2, 4*c0*mu+dp*Rad^2, 4*c0*L*mu-Rad^2*delP}
+  {dp*r^2-dp*Rad^2-4*u*mu, 4*c0*mu+dp*Rad^2, 4*c0*L*mu-Rad^2*delP}
+  {c2*r^2-c2*Rad^2-u, 4*c0*mu+dp*Rad^2, 4*c0*L*mu-Rad^2*delP}
+  {4*c0*mu+dp*Rad^2, 4*c0*L*mu-Rad^2*delP, c0*r^2-c0*Rad^2+Rad^2*u}
+  {dp*r^2-dp*Rad^2-4*u*mu, c0+c2*Rad^2, 4*c0*L*mu-Rad^2*delP}
+  {c2*r^2-c2*Rad^2-u, c0+c2*Rad^2, 4*c0*L*mu-Rad^2*delP}
+  {c0+c2*Rad^2, 4*c0*L*mu-Rad^2*delP, c0*r^2-c0*Rad^2+Rad^2*u}
+  {dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u, 4*c0*L*mu-Rad^2*delP}
+  {dp*r^2-dp*Rad^2-4*u*mu, 4*c0*L*mu-Rad^2*delP, c0*r^2-c0*Rad^2+Rad^2*u}
+  {c2*r^2-c2*Rad^2-u, 4*c0*L*mu-Rad^2*delP, c0*r^2-c0*Rad^2+Rad^2*u}
+  {dp*r^2-dp*Rad^2-4*u*mu, c0+c2*Rad^2, 4*c0*mu+dp*Rad^2}
+  {c2*r^2-c2*Rad^2-u, c0+c2*Rad^2, 4*c0*mu+dp*Rad^2}
+  {c0+c2*Rad^2, 4*c0*mu+dp*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  {dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u, 4*c0*mu+dp*Rad^2}
+  {dp*r^2-dp*Rad^2-4*u*mu, 4*c0*mu+dp*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  {c2*r^2-c2*Rad^2-u, 4*c0*mu+dp*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  {dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u, c0+c2*Rad^2}
+  {dp*r^2-dp*Rad^2-4*u*mu, c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  {c2*r^2-c2*Rad^2-u, c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  {dp*r^2-dp*Rad^2-4*u*mu, c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  {r}
+  {r, c0-u}
+  {mu}
+  {delP, mu}
+  {mu, dp}
+  {delP, mu, dp}
+  {L}
+  {delP, L}
+  {L, 4*c2*mu-dp}
+  {delP, L, 4*c2*mu-dp}
+
+STRONG_CANDIDATES:
+  {c0+c2*Rad^2}
+  {c2*r^2-c2*Rad^2-u}
+  {c2*r^2-c2*Rad^2-u, c0+c2*Rad^2}
+  {c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}
+  {c2*r^2-c2*Rad^2-u, c0*r^2-c0*Rad^2+Rad^2*u}
+  {c2*r^2-c2*Rad^2-u, c0+c2*Rad^2, c0*r^2-c0*Rad^2+Rad^2*u}

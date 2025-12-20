@@ -1,0 +1,22 @@
+Number of components: 3
+
+COMPONENT_1:
+  num_generators: 3
+  GEN: r
+  GEN: c0-u
+  GEN: dp*L+delP
+
+COMPONENT_2:
+  num_generators: 5
+  GEN: dp*L+delP
+  GEN: 4*u*L*mu+r^2*delP-Rad^2*delP
+  GEN: dp*r^2-dp*Rad^2-4*u*mu
+  GEN: c2*r^2+c0-u
+  GEN: c2*dp*Rad^2+4*c2*u*mu+c0*dp-dp*u
+
+COMPONENT_3:
+  num_generators: 3
+  GEN: delP
+  GEN: L
+  GEN: c2*r^2+c0-u
+

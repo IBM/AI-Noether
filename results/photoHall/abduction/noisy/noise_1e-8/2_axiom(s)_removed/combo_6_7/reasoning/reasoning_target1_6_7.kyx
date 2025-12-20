@@ -1,0 +1,78 @@
+ArchiveEntry "photoHall_target1_combo6_7"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real ph;
+  Real dp;
+  Real mu;
+  Real muN;
+  Real muH;
+  Real n;
+  Real dsigma2dn;
+  Real e;
+  Real mup;
+  Real p0;
+  Real dn;
+  Real beta;
+  Real r;
+  Real sigma;
+  Real H;
+  Real c6_1;
+  Real c6_2;
+  Real c6_3;
+  Real c7_4;
+  Real c7_5;
+  Real c7_6;
+  Real c7_7;
+  Real c7_8;
+  Real d1;
+  Real d2;
+  Real d3;
+  Real d4;
+  Real d5;
+  Real d6;
+End.
+
+Problem
+  (
+    \exists c6_1 \exists c6_2 \exists c6_3 \exists c7_4 \exists c7_5 \exists c7_6 \exists c7_7 \exists c7_8 \exists d1 \exists d2 \exists d3 \exists d4 \exists d5 \exists d6
+    (
+      c6_1 > 0 & c6_2 > 0 & c6_3 > 0 & c7_4 > 0 & c7_5 > 0 & c7_6 > 0 & c7_7 > 0 & c7_8 > 0 & d1 > 0 & d2 > 0 & d3 > 0 & d4 > 0 & d5 > 0 & d6 > 0
+      &
+      (
+        \forall ph \forall dp \forall mu \forall muN \forall muH \forall n \forall dsigma2dn \forall e \forall mup \forall p0 \forall dn \forall beta \forall r \forall sigma \forall H
+        (
+          (
+            (ph > 0 & dp > 0 & mu > 0 & muN > 0 & muH > 0 & n > 0 & dsigma2dn > 0 & e > 0 & mup > 0 & p0 > 0 & dn > 0 & beta > 0 & r > 0 & sigma > 0 & H > 0) &
+            & ( beta * mup - muN = 0 )
+            & ( muH - r * mu = 0 )
+            & ( ph - p0 - dp = 0 )
+            & ( n - dn = 0 )
+            & ( dp - dn = 0 )
+            & ( ( c6_1 * ph*e*mup ) + ( c6_2 * muN*n*e ) + ( c6_3 * sigma ) = 0 )
+            & ( ( c7_4 * ph^2*e*H ) + ( c7_5 * ph*n*e*beta*H ) + ( c7_6 * ph*r ) + ( c7_7 * n^2*e*beta^2*H ) + ( c7_8 * n*beta^2*r ) = 0 )
+          )
+          ->
+          (
+            ( d1 * e*mup*dn*beta^2*r ) + ( d2 * e*mup*dn*beta*r ) + ( d3 * e*p0*sigma*H ) + ( d4 * e*dn*beta*sigma*H ) + ( d5 * e*dn*sigma*H ) + ( d6 * r*sigma ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

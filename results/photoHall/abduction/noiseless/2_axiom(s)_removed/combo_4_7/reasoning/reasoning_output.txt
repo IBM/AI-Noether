@@ -1,0 +1,42 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  -muN+mup*beta
+  -mu*r+muH
+  ph-dp-p0
+  dp-dn
+  -ph*e*mup-muN*n*e+sigma
+
+Targets:
+  e*mup*dn*beta^2*r+e*mup*dn*beta*r+e*p0*sigma*H+e*dn*beta*sigma*H+e*dn*sigma*H-r*sigma
+
+Require literal GB appearance: true
+Number of candidate sets to test: 4
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {n*e*p0*beta*H+n*e*dn*beta^2*H+n*e*dn*beta*H-n*beta*r+e*p0^2*H+e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r+dn*beta*r-dn*r}
+  filtered: {n*e*p0*beta*H+n*e*dn*beta^2*H+n*e*dn*beta*H-n*beta*r+e*p0^2*H+e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r+dn*beta*r-dn*r}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {mup}
+  filtered: {mup}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {e}
+  filtered: {e}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {n*e*p0*beta*H+n*e*dn*beta^2*H+n*e*dn*beta*H-n*beta*r+e*p0^2*H+e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r+dn*beta*r-dn*r}
+  {mup}
+  {e}
+
+STRONG_CANDIDATES:
+  {n*e*p0*beta*H+n*e*dn*beta^2*H+n*e*dn*beta*H-n*beta*r+e*p0^2*H+e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r+dn*beta*r-dn*r}

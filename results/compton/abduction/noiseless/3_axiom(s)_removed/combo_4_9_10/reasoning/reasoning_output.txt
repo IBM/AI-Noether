@@ -1,0 +1,83 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  E1-E2+Ee1-Ee2
+  -f1*h+E1
+  -f2*h+E2
+  -f2*h+p2*c
+  f1*lambda1-c
+  f2*lambda2-c
+  Ee1-me*c^2
+
+Targets:
+  lambda1*h*me*c^3-lambda2*h*me*c^3-h^2*c^2*coss+h^2*c^2
+
+Require literal GB appearance: true
+Number of candidate sets to test: 11
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {h}
+  filtered: {h}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {lambda2}
+  filtered: {lambda2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {lambda1}
+  filtered: {lambda1}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f1}
+  filtered: {f1}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {p2}
+  filtered: {p2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {p2*lambda2-h}
+  filtered: {p2*lambda2-h}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {f2*lambda1*me-f2*lambda2*me-p2*coss+p2}
+  filtered: {f2*lambda1*me-f2*lambda2*me-p2*coss+p2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f1*f2*h*me+f1*p2^2*coss-f1*p2^2-f2^2*h*me}
+  filtered: {f1*f2*h*me+f1*p2^2*coss-f1*p2^2-f2^2*h*me}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f1*f2*lambda2*me+f1*p2*coss-f1*p2-f2^2*lambda2*me}
+  filtered: {f1*f2*lambda2*me+f1*p2*coss-f1*p2-f2^2*lambda2*me}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f2}
+  filtered: {f2}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {h}
+  {lambda2}
+  {lambda1}
+  {f1}
+  {p2}
+  {f2*lambda1*me-f2*lambda2*me-p2*coss+p2}
+  {f1*f2*h*me+f1*p2^2*coss-f1*p2^2-f2^2*h*me}
+  {f1*f2*lambda2*me+f1*p2*coss-f1*p2-f2^2*lambda2*me}
+  {f2}
+
+STRONG_CANDIDATES:

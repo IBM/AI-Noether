@@ -1,0 +1,57 @@
+Number of components: 10
+Number of remaining axioms: 5
+Number of targets: 1
+Max candidate set size: 1
+Number of candidate sets (after filtering): 36
+
+Filtering method: ideal membership test
+  Generators g where g ∈ ideal(remaining_axioms + targets) are excluded
+  (They contain no new information beyond what's already known)
+
+Remaining axioms:
+  1. beta * mup - muN
+  2. ph - p0 - dp
+  3. dp - dn
+  4. sigma - e * ph * mup - e * n * muN
+  5. H * (ph + beta * n)^2 * e - r * ph + r * beta^2 * n
+
+Targets:
+  1. r*e*mup*dn*beta^2 + r*e*mup*dn*beta - r*sigma + e*p0*sigma*H + e*dn*beta*sigma*H + e*dn*sigma*H
+
+Candidate sets to test:
+  Candidate 0: [] (empty set / baseline)
+  Candidate 1: ['n-dn']
+  Candidate 2: ['e*mup*p0+muN*e*dn+e*mup*dn-sigma']
+  Candidate 3: ['muN*dn*beta*r+dn*beta*sigma*H-mup*p0*r-mup*dn*r+p0*sigma*H+dn*sigma*H']
+  Candidate 4: ['mup^2*p0*r-muN^2*dn*r+mup^2*dn*r-mup*p0*sigma*H-muN*dn*sigma*H-mup*dn*sigma*H']
+  Candidate 5: ['muN*e*dn*beta+muN*e*p0+muN*e*dn-beta*sigma']
+  Candidate 6: ['e*dn*beta*sigma*H-muN*e*p0*r+e*p0*sigma*H+e*dn*sigma*H+beta*r*sigma-r*sigma']
+  Candidate 7: ['muN^2*e*dn*r+muN*e*mup*dn*r-mup*r*sigma+sigma^2*H']
+  Candidate 8: ['muN^2*e*p0*r-muN*beta*r*sigma-beta*sigma^2*H+muN*r*sigma']
+  Candidate 9: ['e*dn^2*beta^2*H+2*e*p0*dn*beta*H+2*e*dn^2*beta*H+dn*beta^2*r+e*p0^2*H+2*e*p0*dn*H+e*dn^2*H-p0*r-dn*r']
+  Candidate 10: ['sigma']
+  Candidate 11: ['e']
+  Candidate 12: ['n*beta^2-p0-dn']
+  Candidate 13: ['muN*n*beta-mup*p0-mup*dn']
+  Candidate 14: ['muN^2*n-mup^2*p0-mup^2*dn']
+  Candidate 15: ['r']
+  Candidate 16: ['H']
+  Candidate 17: ['beta']
+  Candidate 18: ['muN']
+  Candidate 19: ['mup*r-sigma*H']
+  Candidate 20: ['e*p0*H+e*dn*H-r']
+  Candidate 21: ['e*mup*p0+e*mup*dn-sigma']
+  Candidate 22: ['p0+dn']
+  Candidate 23: ['ph']
+  Candidate 24: ['mup']
+  Candidate 25: ['n*beta+p0+dn']
+  Candidate 26: ['muN*n+mup*p0+mup*dn']
+  Candidate 27: ['beta+1']
+  Candidate 28: ['n-p0-dn']
+  Candidate 29: ['muN+mup']
+  Candidate 30: ['muN*r+mup*r+sigma*H']
+  Candidate 31: ['n*beta+p0*beta+dn*beta+2*p0+2*dn']
+  Candidate 32: ['muN*n+muN*p0+2*mup*p0+muN*dn+2*mup*dn']
+  Candidate 33: ['n*mup*r-mup*p0*r-mup*dn*r+n*sigma*H+p0*sigma*H+dn*sigma*H']
+  Candidate 34: ['muN*e*p0+e*mup*p0+muN*e*dn+e*mup*dn+sigma']
+  Candidate 35: ['n*e*mup*p0-e*mup*p0^2+n*e*mup*dn-2*e*mup*p0*dn-e*mup*dn^2+n*sigma+p0*sigma+dn*sigma']

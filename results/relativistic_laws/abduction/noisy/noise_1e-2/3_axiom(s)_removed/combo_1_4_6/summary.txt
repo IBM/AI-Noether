@@ -1,0 +1,62 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-2
+Removed axiom indices (1-based): [1, 4, 6]
+Removed axioms:
+  F0*dt0 - 1
+  c^2*dt^2 - 4*L0^2 - v^2*dt^2
+  u0*dt0 - u*dt
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 5
+Symbolic regression results: 15
+
+Regression results below threshold (5.0):
+  Axiom 1, Component 1:
+    Singular value: 0.1212515034882176
+    Polynomial: 1*F0*dt0 + (0.986286-0.0161663i)*1
+    Coefficient L2 error: 1.9863522626700305
+  Axiom 4, Component 1:
+    Singular value: 4.831635494280856e-05
+    Polynomial: -0.252526*c^2*dt^2 + (0.245099-1.17726e-06i)*dt^2*v^2 + 1*L0^2
+    Coefficient L2 error: 0.005513973106275819
+  Axiom 6, Component 1:
+    Singular value: 0.014034038879751498
+    Polynomial: (0.973017-0.000258781i)*dt*u + 1*dt0*u0
+    Coefficient L2 error: 1.9730166603399395
+  Axiom 4, Component 2:
+    Singular value: 0.04706862078098545
+    Polynomial: (-0.971125-9.58323e-05i)*c^2*dt^2 + 1*dt^2*v^2
+    Coefficient L2 error: 1.443094159423494
+  Axiom 6, Component 2:
+    Singular value: 1.6766137202976847
+    Polynomial: 1*dt*u + (-0.0202618+0.0030441i)*dt0*u0
+    Coefficient L2 error: 0.9797428825241044
+  Axiom 1, Component 3:
+    Singular value: 4.0406569567301185
+    Polynomial: (0.346859+0.108234i)*F0*dt0 + 1*1
+    Coefficient L2 error: 1.351200711625702
+  Axiom 4, Component 3:
+    Singular value: 3.073980892231369e-05
+    Polynomial: (-0.252336+1.83408e-05i)*c^2*dt^2 + (0.245102-3.20106e-06i)*dt^2*v^2 + 1*L0^2
+    Coefficient L2 error: 0.005426269080789737
+  Axiom 6, Component 3:
+    Singular value: 0.013302296275560942
+    Polynomial: (-0.968605+0.000144193i)*dt*u + 1*dt0*u0
+    Coefficient L2 error: 0.03139486237220743
+  Axiom 4, Component 4:
+    Singular value: 0.013675775620968856
+    Polynomial: (-0.970742-0.000320266i)*c^2*dt^2 + 1*dt^2*v^2 + 2.19409e-09*L0^2
+    Coefficient L2 error: 1.4429031761346043
+  Axiom 6, Component 4:
+    Singular value: 8.709249372330632e-125
+    Polynomial: 1*dt0*u0
+    Coefficient L2 error: 1.0
+  Axiom 4, Component 5:
+    Singular value: 5.2624397502928495e-34
+    Polynomial: 1*c^2*dt^2 + (-0.000206443-9.56915e-05i)*L0^2
+    Coefficient L2 error: 1.2745929415661046
+  Axiom 6, Component 5:
+    Singular value: 1.6241739341245671
+    Polynomial: 1*dt*u + (0.00417787+0.00275296i)*dt0*u0
+    Coefficient L2 error: 1.004181644877236

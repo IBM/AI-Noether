@@ -16,7 +16,7 @@ measuredPerTarget = {{P, qc, x0, w}};
 nonMeasuredPerTarget = {{S, ap, sintheta, dA, dtheta, r}};
 
 -- Candidate axiom sets to test (list of lists)
-candidateSets = {{}, {3*sintheta^3*dtheta-4}, {-x0^2*w^4+2*ap^2}, {-628*ap^2*qc^2+75*S*dA}, {-S*dA+P}, {3*sintheta^3*dtheta-4, -x0^2*w^4+2*ap^2}, {3*sintheta^3*dtheta-4, -628*ap^2*qc^2+75*S*dA}, {3*sintheta^3*dtheta-4, -S*dA+P}, {-x0^2*w^4+2*ap^2, -628*ap^2*qc^2+75*S*dA}, {-x0^2*w^4+2*ap^2, -S*dA+P}, {-628*ap^2*qc^2+75*S*dA, -S*dA+P}, {3*sintheta^3*dtheta-4, -x0^2*w^4+2*ap^2, -628*ap^2*qc^2+75*S*dA}, {3*sintheta^3*dtheta-4, -x0^2*w^4+2*ap^2, -S*dA+P}, {3*sintheta^3*dtheta-4, -628*ap^2*qc^2+75*S*dA, -S*dA+P}, {-x0^2*w^4+2*ap^2, -628*ap^2*qc^2+75*S*dA, -S*dA+P}};
+candidateSets = {{}};
 
 -- Configuration
 requireLiteralGB = true;

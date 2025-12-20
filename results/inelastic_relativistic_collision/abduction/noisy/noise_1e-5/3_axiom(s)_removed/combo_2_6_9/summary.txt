@@ -1,0 +1,50 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-5
+Removed axiom indices (1-based): [2, 6, 9]
+Removed axioms:
+  Em^2 - (mm*c^2)^2 - (pm*c)^2
+  pc - pm
+  pc^2*(c^2 - vc^2) - mc^2*vc^2*c^2
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 3
+Symbolic regression results: 9
+
+Regression results below threshold (200.0):
+  Axiom 2, Component 1:
+    Singular value: 5.719161006460884e-31
+    Polynomial: 1*mm^2*c^4 + (-0.388501-0.0360013i)*pm^2*c^2
+    Coefficient L2 error: 1.7114994604644587
+  Axiom 6, Component 1:
+    Singular value: 2.2308103931778248e-15
+    Polynomial: 1*pm
+    Coefficient L2 error: 1.0
+  Axiom 9, Component 1:
+    Singular value: 26.19629319312014
+    Polynomial: (-0.000782399-0.000415798i)*vc^2*pc^2 + (0.00203079-0.00318115i)*vc^2*mc^2*c^2 + 1*pc^2*c^2
+    Coefficient L2 error: 1.4151013398038077
+  Axiom 2, Component 2:
+    Singular value: 1.0919081946368853e-30
+    Polynomial: 1*mm^2*c^4 + (-0.0718147-0.0812548i)*pm^2*c^2
+    Coefficient L2 error: 1.4681243116221048
+  Axiom 6, Component 2:
+    Singular value: 3.3733890674652175e-15
+    Polynomial: 1*pm
+    Coefficient L2 error: 1.0
+  Axiom 9, Component 2:
+    Singular value: 58.5162080072211
+    Polynomial: (-0.0181387+0.0199277i)*vc^2*pc^2 + (0.00340355-0.000280032i)*vc^2*mc^2*c^2 + 1*pc^2*c^2
+    Coefficient L2 error: 1.4040183372484842
+  Axiom 2, Component 3:
+    Singular value: 3.498621519329776e-34
+    Polynomial: 1*mm^2*c^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 6, Component 3:
+    Singular value: 14.497725228238073
+    Polynomial: 1*pc + (-0.254069+0.410648i)*pm
+    Coefficient L2 error: 0.8514953918099775
+  Axiom 9, Component 3:
+    Singular value: 4.4298797611695913e-17
+    Polynomial: (0.0065007-0.00581576i)*vc^2*mc^2*c^2 + 1*pc^2*c^2
+    Coefficient L2 error: 1.4188296137361258

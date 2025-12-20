@@ -1,0 +1,53 @@
+=== SINGULAR_DECOMPOSITION_OUTPUT ===
+[1]:
+   _[1]=n-dn
+   _[2]=mu*r-muH
+   _[3]=mup*beta-muN
+   _[4]=muN*e*dn*beta*r+e*dn*beta*sigma*H+muN*e*dn*r+e*p0*sigma*H+e*dn*sigma*H-r*sigma
+   _[5]=muN^2*e*dn*r+muN*e*mup*dn*r+e*mup*p0*sigma*H+muN*e*dn*sigma*H+e*mup*dn*sigma*H-mup*r*sigma
+   _[6]=mu*e*dn*beta*sigma*H+muN*muH*e*dn*beta+mu*e*p0*sigma*H+mu*e*dn*sigma*H+muN*muH*e*dn-muH*sigma
+   _[7]=mu*e*mup*p0*sigma*H+mu*muN*e*dn*sigma*H+mu*e*mup*dn*sigma*H+muN^2*muH*e*dn+muN*muH*e*mup*dn-muH*mup*sigma
+   _[8]=e*dn^2*beta^2*H+2*ph*e*dn*beta*H+dn*beta^2*r+ph^2*e*H-ph*r
+   _[9]=muN*e*dn^2*beta*H+ph^2*e*mup*H+2*ph*muN*e*dn*H+muN*dn*beta*r-ph*mup*r
+   _[10]=ph^2*e*mup^2*H+2*ph*muN*e*mup*dn*H+muN^2*e*dn^2*H-ph*mup^2*r+muN^2*dn*r
+   _[11]=e*dn^2*beta*sigma*H^2-ph^2*e*mup*r*H-2*ph*muN*e*dn*r*H+muN*e*dn^2*r*H+e*p0*dn*sigma*H^2+e*dn^2*sigma*H^2-muN*dn*beta*r^2+ph*mup*r^2-dn*r*sigma*H
+   _[12]=e*p0*dn*beta*sigma*H^2-muN*dn*beta^2*r^2-ph^2*muN*e*r*H+2*ph*muN*e*dn*r*H-muN*e*dn^2*r*H-dn*beta^2*r*sigma*H-ph^2*e*sigma*H^2+2*ph*e*p0*sigma*H^2+2*ph*e*dn*sigma*H^2-e*p0*dn*sigma*H^2-e*dn^2*sigma*H^2-dn*beta*r*sigma*H+ph*muN*r^2-ph*r*sigma*H+dn*r*sigma*H
+   _[13]=ph^2*muN*e*mup*r*H-2*ph*muN*e*mup*dn*r*H+muN*e*mup*dn^2*r*H+ph^2*e*mup*sigma*H^2-2*ph*e*mup*p0*sigma*H^2-2*ph*e*mup*dn*sigma*H^2-muN*e*p0*dn*sigma*H^2+e*mup*p0*dn*sigma*H^2+e*mup*dn^2*sigma*H^2+muN^2*dn*beta*r^2+muN*dn*beta*r*sigma*H-ph*muN*mup*r^2+ph*mup*r*sigma*H+muN*dn*r*sigma*H-mup*dn*r*sigma*H
+   _[14]=muN*muH*e*p0*dn*beta*H+ph^2*mu*e*sigma*H^2-2*ph*mu*e*p0*sigma*H^2+mu*e*p0^2*sigma*H^2-2*ph*mu*e*dn*sigma*H^2+2*mu*e*p0*dn*sigma*H^2+mu*e*dn^2*sigma*H^2+muN*muH*dn*beta^2*r+ph^2*muN*muH*e*H-2*ph*muN*muH*e*dn*H+muN*muH*e*p0*dn*H+muN*muH*e*dn^2*H+muH*dn*beta^2*sigma*H+muH*dn*beta*sigma*H-ph*muN*muH*r+ph*muH*sigma*H-muH*p0*sigma*H-muH*dn*sigma*H
+   _[15]=muN*dn^2*beta^2*r^2-ph^2*e*mup*p0*r*H+ph^2*muN*e*dn*r*H-2*ph*muN*e*p0*dn*r*H-2*ph*muN*e*dn^2*r*H+muN*e*p0*dn^2*r*H+muN*e*dn^3*r*H+dn^2*beta^2*r*sigma*H+ph^2*e*dn*sigma*H^2-2*ph*e*p0*dn*sigma*H^2+e*p0^2*dn*sigma*H^2-2*ph*e*dn^2*sigma*H^2+2*e*p0*dn^2*sigma*H^2+e*dn^3*sigma*H^2-muN*p0*dn*beta*r^2+dn^2*beta*r*sigma*H+ph*mup*p0*r^2-ph*muN*dn*r^2+ph*dn*r*sigma*H-p0*dn*r*sigma*H-dn^2*r*sigma*H
+   _[16]=muN*dn^2*beta^3*r+dn^2*beta^3*sigma*H+muN*dn^2*beta^2*r+p0*dn*beta^2*sigma*H+2*dn^2*beta^2*sigma*H-ph*muN*dn*beta*r+ph*dn*beta*sigma*H-ph*muN*dn*r+ph^2*sigma*H-ph*p0*sigma*H-ph*dn*sigma*H
+   _[17]=muN^2*dn^2*beta^2*r+muN*dn^2*beta^2*sigma*H+muN^2*dn^2*beta*r+muN*p0*dn*beta*sigma*H+2*muN*dn^2*beta*sigma*H-ph*muN^2*dn*r-ph*muN*mup*dn*r+ph^2*mup*sigma*H-ph*mup*p0*sigma*H+ph*muN*dn*sigma*H-ph*mup*dn*sigma*H
+   _[18]=muN^3*dn^2*beta*r+muN^2*dn^2*beta*sigma*H-ph*muN^2*mup*dn*r-ph*muN*mup^2*dn*r+muN^3*dn^2*r+ph^2*mup^2*sigma*H-ph*mup^2*p0*sigma*H+ph*muN*mup*dn*sigma*H-ph*mup^2*dn*sigma*H+muN^2*p0*dn*sigma*H+2*muN^2*dn^2*sigma*H
+   _[19]=ph*muN^2*mup^2*dn*r+ph*muN*mup^3*dn*r-muN^4*dn^2*r-muN^3*mup*dn^2*r-ph^2*mup^3*sigma*H+ph*mup^3*p0*sigma*H-ph*muN*mup^2*dn*sigma*H+ph*mup^3*dn*sigma*H-muN^2*mup*p0*dn*sigma*H-muN^3*dn^2*sigma*H-2*muN^2*mup*dn^2*sigma*H
+   _[20]=muN*muH*e*dn^2*beta^2+2*ph*muN*muH*e*dn*beta-muN*muH*e*p0*dn*beta-ph^2*mu*e*sigma*H+2*ph*mu*e*p0*sigma*H-mu*e*p0^2*sigma*H+2*ph*mu*e*dn*sigma*H-2*mu*e*p0*dn*sigma*H-mu*e*dn^2*sigma*H+2*ph*muN*muH*e*dn-muN*muH*e*p0*dn-muN*muH*e*dn^2-muH*dn*beta^2*sigma-muH*dn*beta*sigma-ph*muH*sigma+muH*p0*sigma+muH*dn*sigma
+   _[21]=muN^2*muH*e*dn^2*beta-ph^2*mu*e*mup*sigma*H-2*ph*mu*muN*e*dn*sigma*H+mu*muN*e*p0*dn*sigma*H+mu*muN*e*dn^2*sigma*H+muN^2*muH*e*dn^2-muN*muH*dn*beta*sigma+ph*muH*mup*sigma-muN*muH*dn*sigma
+   _[22]=ph^2*mu*e*dn*sigma*H^2-2*ph*mu*e*p0*dn*sigma*H^2+mu*e*p0^2*dn*sigma*H^2-2*ph*mu*e*dn^2*sigma*H^2+2*mu*e*p0*dn^2*sigma*H^2+mu*e*dn^3*sigma*H^2+muN*muH*dn^2*beta^2*r-ph^2*muH*e*mup*p0*H+ph^2*muN*muH*e*dn*H-2*ph*muN*muH*e*p0*dn*H-2*ph*muN*muH*e*dn^2*H+muN*muH*e*p0*dn^2*H+muN*muH*e*dn^3*H+muH*dn^2*beta^2*sigma*H-muN*muH*p0*dn*beta*r+muH*dn^2*beta*sigma*H+ph*muH*mup*p0*r-ph*muN*muH*dn*r+ph*muH*dn*sigma*H-muH*p0*dn*sigma*H-muH*dn^2*sigma*H
+   _[23]=ph^2*mu*e*mup*sigma*H^2+2*ph*mu*muN*e*dn*sigma*H^2-mu*muN*e*p0*dn*sigma*H^2-mu*muN*e*dn^2*sigma*H^2+ph^2*muN*muH*e*mup*H+2*ph*muN^2*muH*e*dn*H-muN^2*muH*e*dn^2*H+muN^2*muH*dn*beta*r+muN*muH*dn*beta*sigma*H-ph*muN*muH*mup*r-ph*muH*mup*sigma*H+muN*muH*dn*sigma*H
+   _[24]=mu*dn^2*beta^3*sigma*H+muN*muH*dn^2*beta^3+mu*p0*dn*beta^2*sigma*H+2*mu*dn^2*beta^2*sigma*H+muN*muH*dn^2*beta^2+ph*mu*dn*beta*sigma*H-ph*muN*muH*dn*beta+ph^2*mu*sigma*H-ph*mu*p0*sigma*H-ph*mu*dn*sigma*H-ph*muN*muH*dn
+   _[25]=mu*muN*dn^2*beta^2*sigma*H+muN^2*muH*dn^2*beta^2+mu*muN*p0*dn*beta*sigma*H+2*mu*muN*dn^2*beta*sigma*H+muN^2*muH*dn^2*beta+ph^2*mu*mup*sigma*H-ph*mu*mup*p0*sigma*H+ph*mu*muN*dn*sigma*H-ph*mu*mup*dn*sigma*H-ph*muN^2*muH*dn-ph*muN*muH*mup*dn
+   _[26]=mu*muN^2*dn^2*beta*sigma*H+muN^3*muH*dn^2*beta+ph^2*mu*mup^2*sigma*H-ph*mu*mup^2*p0*sigma*H+ph*mu*muN*mup*dn*sigma*H-ph*mu*mup^2*dn*sigma*H+mu*muN^2*p0*dn*sigma*H+2*mu*muN^2*dn^2*sigma*H-ph*muN^2*muH*mup*dn-ph*muN*muH*mup^2*dn+muN^3*muH*dn^2
+   _[27]=ph^2*mu*mup^3*sigma*H-ph*mu*mup^3*p0*sigma*H+ph*mu*muN*mup^2*dn*sigma*H-ph*mu*mup^3*dn*sigma*H+mu*muN^2*mup*p0*dn*sigma*H+mu*muN^3*dn^2*sigma*H+2*mu*muN^2*mup*dn^2*sigma*H-ph*muN^2*muH*mup^2*dn-ph*muN*muH*mup^3*dn+muN^4*muH*dn^2+muN^3*muH*mup*dn^2
+   _[28]=ph^2*e^2*mup*p0*r*H-ph^2*muN*e^2*dn*r*H+2*ph*muN*e^2*p0*dn*r*H+2*ph*muN*e^2*dn^2*r*H-muN*e^2*p0*dn^2*r*H-muN*e^2*dn^3*r*H-ph^2*e^2*dn*sigma*H^2+2*ph*e^2*p0*dn*sigma*H^2-e^2*p0^2*dn*sigma*H^2+2*ph*e^2*dn^2*sigma*H^2-2*e^2*p0*dn^2*sigma*H^2-e^2*dn^3*sigma*H^2-e*dn^2*beta*r*sigma*H-ph*e*mup*p0*r^2+ph*muN*e*dn*r^2-muN*e*p0*dn*r^2-muN*e*dn^2*r^2-e*p0^2*r*sigma*H-ph*e*dn*r*sigma*H-e*p0*dn*r*sigma*H-dn*beta*r^2*sigma+p0*r^2*sigma+dn*r^2*sigma
+   _[29]=muN^2*dn*beta^2*r^3+ph^2*muN^2*e*r^2*H+2*ph*muN*e*mup*dn*r^2*H-muN*e*mup*dn^2*r^2*H+2*muN*dn*beta^2*r^2*sigma*H+2*ph^2*muN*e*r*sigma*H^2-2*ph*muN*e*p0*r*sigma*H^2+2*ph*e*mup*p0*r*sigma*H^2-2*ph*muN*e*dn*r*sigma*H^2+2*ph*e*mup*dn*r*sigma*H^2+2*muN*e*p0*dn*r*sigma*H^2-e*mup*p0*dn*r*sigma*H^2+muN*e*dn^2*r*sigma*H^2-e*mup*dn^2*r*sigma*H^2+dn*beta^2*r*sigma^2*H^2+ph^2*e*sigma^2*H^3-2*ph*e*p0*sigma^2*H^3+e*p0^2*sigma^2*H^3-2*ph*e*dn*sigma^2*H^3+2*e*p0*dn*sigma^2*H^3+e*dn^2*sigma^2*H^3+muN*dn*beta*r^2*sigma*H+dn*beta*r*sigma^2*H^2-ph*muN^2*r^3-2*ph*mup*r^2*sigma*H-muN*dn*r^2*sigma*H+mup*dn*r^2*sigma*H+ph*r*sigma^2*H^2-p0*r*sigma^2*H^2-dn*r*sigma^2*H^2
+   _[30]=muN*e*dn^3*beta^3+2*ph*muN*e*dn^2*beta^2+muN*e*dn^3*beta^2+ph^2*muN*e*dn*beta+2*ph*muN*e*dn^2*beta-dn^2*beta^3*sigma+ph^2*muN*e*dn-p0*dn*beta^2*sigma-2*dn^2*beta^2*sigma-ph*dn*beta*sigma-ph^2*sigma+ph*p0*sigma+ph*dn*sigma
+   _[31]=muN^2*e*dn^3*beta^2+2*ph*muN^2*e*dn^2*beta+muN^2*e*dn^3*beta+ph^2*muN^2*e*dn+ph^2*muN*e*mup*dn+2*ph*muN^2*e*dn^2-muN*dn^2*beta^2*sigma-muN*p0*dn*beta*sigma-2*muN*dn^2*beta*sigma-ph^2*mup*sigma+ph*mup*p0*sigma-ph*muN*dn*sigma+ph*mup*dn*sigma
+   _[32]=muN^3*e*dn^3*beta+ph^2*muN^2*e*mup*dn+ph^2*muN*e*mup^2*dn+2*ph*muN^3*e*dn^2+2*ph*muN^2*e*mup*dn^2+muN^3*e*dn^3-muN^2*dn^2*beta*sigma-ph^2*mup^2*sigma+ph*mup^2*p0*sigma-ph*muN*mup*dn*sigma+ph*mup^2*dn*sigma-muN^2*p0*dn*sigma-2*muN^2*dn^2*sigma
+   _[33]=ph^2*muN^2*e*mup^2*dn+ph^2*muN*e*mup^3*dn+2*ph*muN^3*e*mup*dn^2+2*ph*muN^2*e*mup^2*dn^2+muN^4*e*dn^3+muN^3*e*mup*dn^3-ph^2*mup^3*sigma+ph*mup^3*p0*sigma-ph*muN*mup^2*dn*sigma+ph*mup^3*dn*sigma-muN^2*mup*p0*dn*sigma-muN^3*dn^2*sigma-2*muN^2*mup*dn^2*sigma
+   _[34]=ph^2*mu*e*sigma^2*H^3-2*ph*mu*e*p0*sigma^2*H^3+mu*e*p0^2*sigma^2*H^3-2*ph*mu*e*dn*sigma^2*H^3+2*mu*e*p0*dn*sigma^2*H^3+mu*e*dn^2*sigma^2*H^3+muN^2*muH*dn*beta^2*r^2+ph^2*muN^2*muH*e*r*H+2*ph*muN*muH*e*mup*dn*r*H-muN*muH*e*mup*dn^2*r*H+2*muN*muH*dn*beta^2*r*sigma*H+2*ph^2*muN*muH*e*sigma*H^2-2*ph*muN*muH*e*p0*sigma*H^2+2*ph*muH*e*mup*p0*sigma*H^2-2*ph*muN*muH*e*dn*sigma*H^2+2*ph*muH*e*mup*dn*sigma*H^2+2*muN*muH*e*p0*dn*sigma*H^2-muH*e*mup*p0*dn*sigma*H^2+muN*muH*e*dn^2*sigma*H^2-muH*e*mup*dn^2*sigma*H^2+muH*dn*beta^2*sigma^2*H^2+muN*muH*dn*beta*r*sigma*H+muH*dn*beta*sigma^2*H^2-ph*muN^2*muH*r^2-2*ph*muH*mup*r*sigma*H-muN*muH*dn*r*sigma*H+muH*mup*dn*r*sigma*H+ph*muH*sigma^2*H^2-muH*p0*sigma^2*H^2-muH*dn*sigma^2*H^2
+   _[35]=ph^2*mu^2*e*sigma^2*H^2-2*ph*mu^2*e*p0*sigma^2*H^2+mu^2*e*p0^2*sigma^2*H^2-2*ph*mu^2*e*dn*sigma^2*H^2+2*mu^2*e*p0*dn*sigma^2*H^2+mu^2*e*dn^2*sigma^2*H^2-muN^2*muH^2*e*p0*dn*beta+ph^2*mu*muN*muH*e*sigma*H-mu*muN*muH*e*p0^2*sigma*H-2*ph*mu*muN*muH*e*dn*sigma*H+mu*muN*muH*e*dn^2*sigma*H+mu*muH*dn*beta^2*sigma^2*H-muN^2*muH^2*e*p0*dn+muN*muH^2*dn*beta^2*sigma+mu*muH*dn*beta*sigma^2*H+ph*mu*muH*sigma^2*H-mu*muH*p0*sigma^2*H-mu*muH*dn*sigma^2*H-ph*muN*muH^2*sigma+muN*muH^2*p0*sigma
+   _[36]=ph^2*mu*muN*e*mup*dn*sigma*H+2*ph*mu*muN^2*e*dn^2*sigma*H-mu*muN^2*e*p0*dn^2*sigma*H-mu*muN^2*e*dn^3*sigma*H+ph^2*muN^2*muH*e*mup*dn+ph^2*muN*muH*e*mup^2*dn+2*ph*muN^3*muH*e*dn^2+2*ph*muN^2*muH*e*mup*dn^2-ph^2*muH*mup^2*sigma+ph*muH*mup^2*p0*sigma-2*ph*muN*muH*mup*dn*sigma+ph*muH*mup^2*dn*sigma-muN^2*muH*p0*dn*sigma-muN^2*muH*dn^2*sigma
+   _[37]=ph^2*muN^2*e^2*r^2*H+2*ph*muN*e^2*mup*dn*r^2*H-muN*e^2*mup*dn^2*r^2*H+2*ph^2*muN*e^2*r*sigma*H^2-2*ph*muN*e^2*p0*r*sigma*H^2+2*ph*e^2*mup*p0*r*sigma*H^2-2*ph*muN*e^2*dn*r*sigma*H^2+2*ph*e^2*mup*dn*r*sigma*H^2+2*muN*e^2*p0*dn*r*sigma*H^2-e^2*mup*p0*dn*r*sigma*H^2+muN*e^2*dn^2*r*sigma*H^2-e^2*mup*dn^2*r*sigma*H^2+ph^2*e^2*sigma^2*H^3-2*ph*e^2*p0*sigma^2*H^3+e^2*p0^2*sigma^2*H^3-2*ph*e^2*dn*sigma^2*H^3+2*e^2*p0*dn*sigma^2*H^3+e^2*dn^2*sigma^2*H^3-muN*e*p0*beta*r^2*sigma*H-e*p0*beta*r*sigma^2*H^2-ph*muN^2*e*r^3-muN*e*mup*dn*r^3-2*ph*e*mup*r^2*sigma*H+muN*e*p0*r^2*sigma*H-e*mup*p0*r^2*sigma*H-muN*e*dn*r^2*sigma*H+ph*e*r*sigma^2*H^2-e*p0*r*sigma^2*H^2-e*dn*r*sigma^2*H^2+muN*beta*r^3*sigma+beta*r^2*sigma^2*H-muN*r^3*sigma+mup*r^3*sigma
+   _[38]=ph^2*mu*muN^2*e*dn^2*sigma*H-2*ph*mu*muN^2*e*p0*dn^2*sigma*H+mu*muN^2*e*p0^2*dn^2*sigma*H-2*ph*mu*muN^2*e*dn^3*sigma*H+2*mu*muN^2*e*p0*dn^3*sigma*H+mu*muN^2*e*dn^4*sigma*H-ph^2*muN^2*muH*e*mup*p0*dn-ph^2*muN*muH*e*mup^2*p0*dn+ph^2*muN^3*muH*e*dn^2-ph^2*muN*muH*e*mup^2*dn^2-2*ph*muN^3*muH*e*p0*dn^2-2*ph*muN^2*muH*e*mup*p0*dn^2-2*ph*muN^3*muH*e*dn^3-2*ph*muN^2*muH*e*mup*dn^3+ph^2*muH*mup^2*p0*sigma-ph*muH*mup^2*p0^2*sigma-ph^2*muN*muH*mup*dn*sigma+ph^2*muH*mup^2*dn*sigma+2*ph*muN*muH*mup*p0*dn*sigma-2*ph*muH*mup^2*p0*dn*sigma+muN^2*muH*p0^2*dn*sigma+2*ph*muN*muH*mup*dn^2*sigma-ph*muH*mup^2*dn^2*sigma+2*muN^2*muH*p0*dn^2*sigma+muN^2*muH*dn^3*sigma
+[2]:
+   _[1]=r
+   _[2]=e
+   _[3]=n-dn
+   _[4]=muH
+   _[5]=mup*beta-muN
+[3]:
+   _[1]=H
+   _[2]=r
+   _[3]=n-dn
+   _[4]=muH
+   _[5]=mup*beta-muN
+=== END_SINGULAR_DECOMPOSITION_OUTPUT ===

@@ -1,0 +1,50 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-5
+Removed axiom indices (1-based): [2, 3, 7]
+Removed axioms:
+  muH - r * mu
+  ph - p0 - dp
+  H * (ph + beta * n)^2 * e - r * ph + r * beta^2 * n
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 3
+Symbolic regression results: 9
+
+Regression results below threshold (200.0):
+  Axiom 2, Component 1:
+    Singular value: 4.402623430821792
+    Polynomial: (-0.0751131-0.073845i)*mu*r + 1*muH
+    Coefficient L2 error: 0.9278302311418188
+  Axiom 3, Component 1:
+    Singular value: 3.350327739575984
+    Polynomial: (-0.0322568-0.0637694i)*ph + 1*dp + (0.0502163-0.033229i)*p0
+    Coefficient L2 error: 1.357861067794273
+  Axiom 7, Component 1:
+    Singular value: 3.087631521691977
+    Polynomial: (0.0580816+0.0163531i)*ph^2*e*H + (0.0455229-0.0481518i)*ph*n*e*beta*H + 1*ph*r + (0.0819207+0.0690647i)*n^2*e*beta^2*H + (-0.0749206+0.000348789i)*n*beta^2*r
+    Coefficient L2 error: 1.4769067230159028
+  Axiom 2, Component 2:
+    Singular value: 4.28806485059395
+    Polynomial: (0.0652004+0.0436941i)*mu*r + 1*muH
+    Coefficient L2 error: 1.0660961813542276
+  Axiom 3, Component 2:
+    Singular value: 1.3027019768547619
+    Polynomial: (-0.00309981+0.0157177i)*ph + 1*dp + (0.188416+0.0132749i)*p0
+    Coefficient L2 error: 1.285652255798748
+  Axiom 7, Component 2:
+    Singular value: 0.2626629259237511
+    Polynomial: (0.376174-0.165558i)*ph^2*e*H + 1*ph*n*e*beta*H + (-0.0583362-0.071023i)*ph*r + (0.611665+0.169596i)*n^2*e*beta^2*H + (0.0501102+0.0540932i)*n*beta^2*r
+    Coefficient L2 error: 0.6995801245775696
+  Axiom 2, Component 3:
+    Singular value: 2.454370844834353
+    Polynomial: (-0.00964401-0.00428598i)*mu*r + 1*muH
+    Coefficient L2 error: 0.990365266612442
+  Axiom 3, Component 3:
+    Singular value: 1.4313278156768519
+    Polynomial: (0.129621+0.0248405i)*ph + 1*dp + (0.266701-0.086467i)*p0
+    Coefficient L2 error: 1.3497651050151878
+  Axiom 7, Component 3:
+    Singular value: 9.552782758476807e-31
+    Polynomial: (-0.646339+0.0252549i)*ph^2*e*H + 1*n^2*e*beta^2*H
+    Coefficient L2 error: 1.750637227527491

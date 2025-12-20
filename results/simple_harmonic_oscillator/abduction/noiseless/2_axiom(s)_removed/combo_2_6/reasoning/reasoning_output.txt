@@ -1,0 +1,888 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  ad-sintheta*g
+  -theta*L+d
+  T*omega-2*Pi
+  -ad+omega^2*d
+  -theta+sintheta
+
+Targets:
+  d*g*Tj^2-4*d*L*j^2*Pi^2
+
+Require literal GB appearance: true
+Number of candidate sets to test: 190
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {omega^2*L-g}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*j+Tj}
+  filtered: {T*j+Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-sintheta*L+d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {omega^2*L-g, T*j+Tj}
+  filtered: {omega^2*L-g, T*j+Tj}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {omega^2*L-g, -(1/2)*T*omega+Pi}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, -sintheta*L+d}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, theta-sintheta}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, ad-sintheta*g}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*j+Tj, -(1/2)*T*omega+Pi}
+  filtered: {T*j+Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j+Tj, -sintheta*L+d}
+  filtered: {T*j+Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j+Tj, theta-sintheta}
+  filtered: {T*j+Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j+Tj, ad-sintheta*g}
+  filtered: {T*j+Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-sintheta*L+d, theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-sintheta*L+d, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {omega^2*L-g, T*j+Tj, -(1/2)*T*omega+Pi}
+  filtered: {omega^2*L-g, T*j+Tj}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {omega^2*L-g, T*j+Tj, -sintheta*L+d}
+  filtered: {omega^2*L-g, T*j+Tj}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {omega^2*L-g, T*j+Tj, theta-sintheta}
+  filtered: {omega^2*L-g, T*j+Tj}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {omega^2*L-g, T*j+Tj, ad-sintheta*g}
+  filtered: {omega^2*L-g, T*j+Tj}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {omega^2*L-g, -(1/2)*T*omega+Pi, -sintheta*L+d}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, -(1/2)*T*omega+Pi, theta-sintheta}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, -(1/2)*T*omega+Pi, ad-sintheta*g}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, -sintheta*L+d, theta-sintheta}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, -sintheta*L+d, ad-sintheta*g}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, theta-sintheta, ad-sintheta*g}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*j+Tj, -(1/2)*T*omega+Pi, -sintheta*L+d}
+  filtered: {T*j+Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j+Tj, -(1/2)*T*omega+Pi, theta-sintheta}
+  filtered: {T*j+Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j+Tj, -(1/2)*T*omega+Pi, ad-sintheta*g}
+  filtered: {T*j+Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j+Tj, -sintheta*L+d, theta-sintheta}
+  filtered: {T*j+Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j+Tj, -sintheta*L+d, ad-sintheta*g}
+  filtered: {T*j+Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j+Tj, theta-sintheta, ad-sintheta*g}
+  filtered: {T*j+Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d, theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, theta-sintheta, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-sintheta*L+d, theta-sintheta, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {omega^2*L-g}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*j-Tj}
+  filtered: {T*j-Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-sintheta*L+d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {omega^2*L-g, T*j-Tj}
+  filtered: {omega^2*L-g, T*j-Tj}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {omega^2*L-g, -(1/2)*T*omega+Pi}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, -sintheta*L+d}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, theta-sintheta}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, ad-sintheta*g}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*j-Tj, -(1/2)*T*omega+Pi}
+  filtered: {T*j-Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j-Tj, -sintheta*L+d}
+  filtered: {T*j-Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j-Tj, theta-sintheta}
+  filtered: {T*j-Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j-Tj, ad-sintheta*g}
+  filtered: {T*j-Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-sintheta*L+d, theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-sintheta*L+d, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {omega^2*L-g, T*j-Tj, -(1/2)*T*omega+Pi}
+  filtered: {omega^2*L-g, T*j-Tj}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {omega^2*L-g, T*j-Tj, -sintheta*L+d}
+  filtered: {omega^2*L-g, T*j-Tj}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {omega^2*L-g, T*j-Tj, theta-sintheta}
+  filtered: {omega^2*L-g, T*j-Tj}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {omega^2*L-g, T*j-Tj, ad-sintheta*g}
+  filtered: {omega^2*L-g, T*j-Tj}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {omega^2*L-g, -(1/2)*T*omega+Pi, -sintheta*L+d}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, -(1/2)*T*omega+Pi, theta-sintheta}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, -(1/2)*T*omega+Pi, ad-sintheta*g}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, -sintheta*L+d, theta-sintheta}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, -sintheta*L+d, ad-sintheta*g}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, theta-sintheta, ad-sintheta*g}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*j-Tj, -(1/2)*T*omega+Pi, -sintheta*L+d}
+  filtered: {T*j-Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j-Tj, -(1/2)*T*omega+Pi, theta-sintheta}
+  filtered: {T*j-Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j-Tj, -(1/2)*T*omega+Pi, ad-sintheta*g}
+  filtered: {T*j-Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j-Tj, -sintheta*L+d, theta-sintheta}
+  filtered: {T*j-Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j-Tj, -sintheta*L+d, ad-sintheta*g}
+  filtered: {T*j-Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {T*j-Tj, theta-sintheta, ad-sintheta*g}
+  filtered: {T*j-Tj}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d, theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, theta-sintheta, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-sintheta*L+d, theta-sintheta, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {L}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-sintheta*L+d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, L}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, g}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {L, g}
+  filtered: {L, g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, -sintheta*L+d}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, theta-sintheta}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, ad-sintheta*g}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g, -sintheta*L+d}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g, theta-sintheta}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g, ad-sintheta*g}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-sintheta*L+d, theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-sintheta*L+d, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, L, g}
+  filtered: {L, g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, L, -sintheta*L+d}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, L, theta-sintheta}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, L, ad-sintheta*g}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, g, -sintheta*L+d}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, g, theta-sintheta}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, g, ad-sintheta*g}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d, theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, theta-sintheta, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {L, g, -sintheta*L+d}
+  filtered: {L, g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, g, theta-sintheta}
+  filtered: {L, g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, g, ad-sintheta*g}
+  filtered: {L, g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, -sintheta*L+d, theta-sintheta}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, -sintheta*L+d, ad-sintheta*g}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L, theta-sintheta, ad-sintheta*g}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g, -sintheta*L+d, theta-sintheta}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g, -sintheta*L+d, ad-sintheta*g}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g, theta-sintheta, ad-sintheta*g}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-sintheta*L+d, theta-sintheta, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {g}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-sintheta*L+d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {omega}
+  filtered: {omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, g}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, omega}
+  filtered: {omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {g, -sintheta*L+d}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g, theta-sintheta}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g, omega}
+  filtered: {g, omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g, ad-sintheta*g}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-sintheta*L+d, theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-sintheta*L+d, omega}
+  filtered: {omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-sintheta*L+d, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {theta-sintheta, omega}
+  filtered: {omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {omega, ad-sintheta*g}
+  filtered: {omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, g, -sintheta*L+d}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, g, theta-sintheta}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, g, omega}
+  filtered: {g, omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, g, ad-sintheta*g}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d, theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d, omega}
+  filtered: {omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, theta-sintheta, omega}
+  filtered: {omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, theta-sintheta, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, omega, ad-sintheta*g}
+  filtered: {omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g, -sintheta*L+d, theta-sintheta}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g, -sintheta*L+d, omega}
+  filtered: {g, omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g, -sintheta*L+d, ad-sintheta*g}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g, theta-sintheta, omega}
+  filtered: {g, omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g, theta-sintheta, ad-sintheta*g}
+  filtered: {g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g, omega, ad-sintheta*g}
+  filtered: {g, omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-sintheta*L+d, theta-sintheta, omega}
+  filtered: {omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-sintheta*L+d, theta-sintheta, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-sintheta*L+d, omega, ad-sintheta*g}
+  filtered: {omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, omega, ad-sintheta*g}
+  filtered: {omega}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-sintheta*L+d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta}
+  filtered: {sintheta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, sintheta}
+  filtered: {sintheta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-sintheta*L+d, sintheta}
+  filtered: {sintheta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-sintheta*L+d, theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-sintheta*L+d, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta, theta-sintheta}
+  filtered: {sintheta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta, ad-sintheta*g}
+  filtered: {sintheta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {theta-sintheta, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d, sintheta}
+  filtered: {sintheta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d, theta-sintheta}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, -sintheta*L+d, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, sintheta, theta-sintheta}
+  filtered: {sintheta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, sintheta, ad-sintheta*g}
+  filtered: {sintheta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-(1/2)*T*omega+Pi, theta-sintheta, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {-sintheta*L+d, sintheta, theta-sintheta}
+  filtered: {sintheta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-sintheta*L+d, sintheta, ad-sintheta*g}
+  filtered: {sintheta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-sintheta*L+d, theta-sintheta, ad-sintheta*g}
+  filtered: {}
+  SKIPPED: all elements already implied by remaining axioms
+
+CANDIDATE_SET: {sintheta, theta-sintheta, ad-sintheta*g}
+  filtered: {sintheta}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {T*j+Tj}
+  {omega^2*L-g, T*j+Tj}
+  {T*j-Tj}
+  {omega^2*L-g, T*j-Tj}
+  {L}
+  {g}
+  {L, g}
+  {omega}
+  {g, omega}
+  {sintheta}
+
+STRONG_CANDIDATES:
+  {T*j+Tj}
+  {T*j-Tj}

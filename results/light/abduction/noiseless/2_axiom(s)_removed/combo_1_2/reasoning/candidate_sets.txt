@@ -1,18 +1,20 @@
 Number of components: 1
-Number of candidate sets: 15
+Number of remaining axioms: 3
+Number of targets: 1
+Max candidate set size: 3
+Number of candidate sets (after filtering): 1
 
-Candidate 0: []
-Candidate 1: ['3*sintheta^3*dtheta-4']
-Candidate 2: ['-x0^2*w^4+2*ap^2']
-Candidate 3: ['-628*ap^2*qc^2+75*S*dA']
-Candidate 4: ['-S*dA+P']
-Candidate 5: ['3*sintheta^3*dtheta-4', '-x0^2*w^4+2*ap^2']
-Candidate 6: ['3*sintheta^3*dtheta-4', '-628*ap^2*qc^2+75*S*dA']
-Candidate 7: ['3*sintheta^3*dtheta-4', '-S*dA+P']
-Candidate 8: ['-x0^2*w^4+2*ap^2', '-628*ap^2*qc^2+75*S*dA']
-Candidate 9: ['-x0^2*w^4+2*ap^2', '-S*dA+P']
-Candidate 10: ['-628*ap^2*qc^2+75*S*dA', '-S*dA+P']
-Candidate 11: ['3*sintheta^3*dtheta-4', '-x0^2*w^4+2*ap^2', '-628*ap^2*qc^2+75*S*dA']
-Candidate 12: ['3*sintheta^3*dtheta-4', '-x0^2*w^4+2*ap^2', '-S*dA+P']
-Candidate 13: ['3*sintheta^3*dtheta-4', '-628*ap^2*qc^2+75*S*dA', '-S*dA+P']
-Candidate 14: ['-x0^2*w^4+2*ap^2', '-628*ap^2*qc^2+75*S*dA', '-S*dA+P']
+Filtering method: ideal membership test
+  Generators g where g ∈ ideal(remaining_axioms + targets) are excluded
+  (They contain no new information beyond what's already known)
+
+Remaining axioms:
+  1. P - S * dA
+  2. 4 - 3*sintheta^3 * dtheta
+  3. 2*ap^2 - w^4 * x0^2
+
+Targets:
+  1. 75*P - 314*qc^2*w^4*x0^2
+
+Candidate sets to test:
+  Candidate 0: [] (empty set / baseline)

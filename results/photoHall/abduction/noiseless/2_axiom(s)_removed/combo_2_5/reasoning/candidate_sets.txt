@@ -1,0 +1,52 @@
+Number of components: 10
+Number of remaining axioms: 5
+Number of targets: 1
+Max candidate set size: 1
+Number of candidate sets (after filtering): 31
+
+Filtering method: ideal membership test
+  Generators g where g ∈ ideal(remaining_axioms + targets) are excluded
+  (They contain no new information beyond what's already known)
+
+Remaining axioms:
+  1. beta * mup - muN
+  2. ph - p0 - dp
+  3. n - dn
+  4. sigma - e * ph * mup - e * n * muN
+  5. H * (ph + beta * n)^2 * e - r * ph + r * beta^2 * n
+
+Targets:
+  1. r*e*mup*dn*beta^2 + r*e*mup*dn*beta - r*sigma + e*p0*sigma*H + e*dn*beta*sigma*H + e*dn*sigma*H
+
+Candidate sets to test:
+  Candidate 0: [] (empty set / baseline)
+  Candidate 1: ['dp-dn']
+  Candidate 2: ['ph-p0-dn']
+  Candidate 3: ['e*mup*p0+muN*e*dn+e*mup*dn-sigma']
+  Candidate 4: ['muN*dn*beta*r+dn*beta*sigma*H-mup*p0*r-mup*dn*r+p0*sigma*H+dn*sigma*H']
+  Candidate 5: ['mup^2*p0*r-muN^2*dn*r+mup^2*dn*r-mup*p0*sigma*H-muN*dn*sigma*H-mup*dn*sigma*H']
+  Candidate 6: ['muN*e*dn*beta+muN*e*p0+muN*e*dn-beta*sigma']
+  Candidate 7: ['e*dn*beta*sigma*H-muN*e*p0*r+e*p0*sigma*H+e*dn*sigma*H+beta*r*sigma-r*sigma']
+  Candidate 8: ['muN^2*e*p0*r-muN*beta*r*sigma-beta*sigma^2*H+muN*r*sigma']
+  Candidate 9: ['e*dn^2*beta^2*H+2*e*p0*dn*beta*H+2*e*dn^2*beta*H+dn*beta^2*r+e*p0^2*H+2*e*p0*dn*H+e*dn^2*H-p0*r-dn*r']
+  Candidate 10: ['sigma']
+  Candidate 11: ['e']
+  Candidate 12: ['dn*beta^2-dp-p0']
+  Candidate 13: ['muN*dn*beta-dp*mup-mup*p0']
+  Candidate 14: ['dp*mup^2+mup^2*p0-muN^2*dn']
+  Candidate 15: ['r']
+  Candidate 16: ['H']
+  Candidate 17: ['dp*muN*e+muN*e*p0-muN*e*dn-beta*sigma+sigma']
+  Candidate 18: ['muN^2*e*dn+muN*e*mup*dn-mup*sigma']
+  Candidate 19: ['mup']
+  Candidate 20: ['muN']
+  Candidate 21: ['beta']
+  Candidate 22: ['dp+p0']
+  Candidate 23: ['ph']
+  Candidate 24: ['dn']
+  Candidate 25: ['n']
+  Candidate 26: ['beta+1']
+  Candidate 27: ['muN+mup']
+  Candidate 28: ['dp+p0-dn']
+  Candidate 29: ['dn*beta+dp+p0']
+  Candidate 30: ['dp*mup+mup*p0+muN*dn']

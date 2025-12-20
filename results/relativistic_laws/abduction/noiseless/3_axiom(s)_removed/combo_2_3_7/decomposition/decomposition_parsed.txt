@@ -1,0 +1,388 @@
+Number of components: 19
+
+COMPONENT_1:
+  num_generators: 6
+  GEN: F0*dt0-1
+  GEN: u
+  GEN: u0
+  GEN: L0
+  GEN: v
+  GEN: c
+
+COMPONENT_2:
+  num_generators: 17
+  GEN: F*dt0*L0+L
+  GEN: F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: dt^2*v^2*L^2-4*L0^4+4*L0^2*L^2
+  GEN: dt^2*v^2*F*L+4*F0*L0^3+4*F*L0^2*L
+  GEN: dt^2*v^2*F^2-4*F0^2*L0^2+4*F^2*L0^2
+  GEN: dt*v^2*L+2*c*L0^2-2*c*L^2
+  GEN: -dt*v^2*F*dt0+2*c*F*dt0*L+2*c*L0
+  GEN: -dt*v^2*F+2*c*F0*L0+2*c*F*L
+  GEN: c*dt*L+2*L0^2
+  GEN: -dt^2*v^2*F*dt0+4*F0*dt0*L0*L+2*c*dt*L0
+  GEN: c*dt*F-2*F0*L0
+  GEN: v^2*F0^2*dt0^2+c^2*F^2*dt0^2-c^2
+  GEN: -v^2*F0^2*dt0-c^2*F^2*dt0+c^2*F0
+  GEN: c^2*dt-dt*v^2+2*c*L
+  GEN: u
+  GEN: u0
+
+COMPONENT_3:
+  num_generators: 17
+  GEN: F*dt0*L0+L
+  GEN: F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: dt^2*v^2*L^2-4*L0^4+4*L0^2*L^2
+  GEN: dt^2*v^2*F*L+4*F0*L0^3+4*F*L0^2*L
+  GEN: dt^2*v^2*F^2-4*F0^2*L0^2+4*F^2*L0^2
+  GEN: -dt*v^2*L+2*c*L0^2-2*c*L^2
+  GEN: dt*v^2*F*dt0+2*c*F*dt0*L+2*c*L0
+  GEN: dt*v^2*F+2*c*F0*L0+2*c*F*L
+  GEN: c*dt*L-2*L0^2
+  GEN: dt^2*v^2*F*dt0-4*F0*dt0*L0*L+2*c*dt*L0
+  GEN: c*dt*F+2*F0*L0
+  GEN: v^2*F0^2*dt0^2+c^2*F^2*dt0^2-c^2
+  GEN: -v^2*F0^2*dt0-c^2*F^2*dt0+c^2*F0
+  GEN: c^2*dt-dt*v^2-2*c*L
+  GEN: u
+  GEN: u0
+
+COMPONENT_4:
+  num_generators: 17
+  GEN: F*dt0*L0-L
+  GEN: -F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: dt^2*v^2*L^2-4*L0^4+4*L0^2*L^2
+  GEN: dt^2*v^2*F*L-4*F0*L0^3+4*F*L0^2*L
+  GEN: dt^2*v^2*F^2-4*F0^2*L0^2+4*F^2*L0^2
+  GEN: dt*v^2*L+2*c*L0^2-2*c*L^2
+  GEN: -dt*v^2*F*dt0+2*c*F*dt0*L-2*c*L0
+  GEN: dt*v^2*F+2*c*F0*L0-2*c*F*L
+  GEN: c*dt*L+2*L0^2
+  GEN: dt^2*v^2*F*dt0+4*F0*dt0*L0*L+2*c*dt*L0
+  GEN: c*dt*F+2*F0*L0
+  GEN: v^2*F0^2*dt0^2+c^2*F^2*dt0^2-c^2
+  GEN: -v^2*F0^2*dt0-c^2*F^2*dt0+c^2*F0
+  GEN: c^2*dt-dt*v^2+2*c*L
+  GEN: u
+  GEN: u0
+
+COMPONENT_5:
+  num_generators: 17
+  GEN: F*dt0*L0-L
+  GEN: -F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: dt^2*v^2*L^2-4*L0^4+4*L0^2*L^2
+  GEN: dt^2*v^2*F*L-4*F0*L0^3+4*F*L0^2*L
+  GEN: dt^2*v^2*F^2-4*F0^2*L0^2+4*F^2*L0^2
+  GEN: -dt*v^2*L+2*c*L0^2-2*c*L^2
+  GEN: dt*v^2*F*dt0+2*c*F*dt0*L-2*c*L0
+  GEN: -dt*v^2*F+2*c*F0*L0-2*c*F*L
+  GEN: c*dt*L-2*L0^2
+  GEN: -dt^2*v^2*F*dt0-4*F0*dt0*L0*L+2*c*dt*L0
+  GEN: c*dt*F-2*F0*L0
+  GEN: v^2*F0^2*dt0^2+c^2*F^2*dt0^2-c^2
+  GEN: -v^2*F0^2*dt0-c^2*F^2*dt0+c^2*F0
+  GEN: c^2*dt-dt*v^2-2*c*L
+  GEN: u
+  GEN: u0
+
+COMPONENT_6:
+  num_generators: 28
+  GEN: F*dt0*L0+L
+  GEN: F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: -4*F0^2*L0^4*u^2-4*F0*F*L0^3*L*u^2+v^2*L^2*u0^2
+  GEN: 4*F0^3*L0^3*u^2-4*F0*F^2*L0^3*u^2+v^2*F*L*u0^2
+  GEN: -4*F0^4*L0^2*u^2+4*F0^2*F^2*L0^2*u^2+v^2*F^2*u0^2
+  GEN: -dt0*u0+dt*u
+  GEN: dt*v^2*L^2*u0-4*F0*L0^4*u+4*F0*L0^2*L^2*u
+  GEN: dt*v^2*F*L*u0+4*F0^2*L0^3*u+4*F0*F*L0^2*L*u
+  GEN: dt*v^2*F^2*u0-4*F0^3*L0^2*u+4*F0*F^2*L0^2*u
+  GEN: dt^2*v^2*L^2-4*L0^4+4*L0^2*L^2
+  GEN: dt^2*v^2*F*L+4*F0*L0^3+4*F*L0^2*L
+  GEN: dt^2*v^2*F^2-4*F0^2*L0^2+4*F^2*L0^2
+  GEN: 2*F0*L0^2*u+c*L*u0
+  GEN: -dt*v^2*F*dt0*u0+4*F0*L0*L*u+2*c*L0*u0
+  GEN: dt*v^2*L+2*c*L0^2-2*c*L^2
+  GEN: -2*F0^2*L0*u+c*F*u0
+  GEN: -dt*v^2*F*dt0+2*c*F*dt0*L+2*c*L0
+  GEN: -dt*v^2*F+2*c*F0*L0+2*c*F*L
+  GEN: c*dt*L+2*L0^2
+  GEN: -dt^2*v^2*F*dt0+4*F0*dt0*L0*L+2*c*dt*L0
+  GEN: c*dt*F-2*F0*L0
+  GEN: 2*c*F0*L*u+c^2*u0-v^2*u0
+  GEN: v^2*F0^2*dt0^2+c^2*F^2*dt0^2-c^2
+  GEN: -v^2*F0^2*dt0-c^2*F^2*dt0+c^2*F0
+  GEN: c^2*dt-dt*v^2+2*c*L
+  GEN: m
+  GEN: m0
+
+COMPONENT_7:
+  num_generators: 28
+  GEN: F*dt0*L0+L
+  GEN: F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: -4*F0^2*L0^4*u^2-4*F0*F*L0^3*L*u^2+v^2*L^2*u0^2
+  GEN: 4*F0^3*L0^3*u^2-4*F0*F^2*L0^3*u^2+v^2*F*L*u0^2
+  GEN: -4*F0^4*L0^2*u^2+4*F0^2*F^2*L0^2*u^2+v^2*F^2*u0^2
+  GEN: -dt0*u0+dt*u
+  GEN: dt*v^2*L^2*u0-4*F0*L0^4*u+4*F0*L0^2*L^2*u
+  GEN: dt*v^2*F*L*u0+4*F0^2*L0^3*u+4*F0*F*L0^2*L*u
+  GEN: dt*v^2*F^2*u0-4*F0^3*L0^2*u+4*F0*F^2*L0^2*u
+  GEN: dt^2*v^2*L^2-4*L0^4+4*L0^2*L^2
+  GEN: dt^2*v^2*F*L+4*F0*L0^3+4*F*L0^2*L
+  GEN: dt^2*v^2*F^2-4*F0^2*L0^2+4*F^2*L0^2
+  GEN: -2*F0*L0^2*u+c*L*u0
+  GEN: dt*v^2*F*dt0*u0-4*F0*L0*L*u+2*c*L0*u0
+  GEN: -dt*v^2*L+2*c*L0^2-2*c*L^2
+  GEN: 2*F0^2*L0*u+c*F*u0
+  GEN: dt*v^2*F*dt0+2*c*F*dt0*L+2*c*L0
+  GEN: dt*v^2*F+2*c*F0*L0+2*c*F*L
+  GEN: c*dt*L-2*L0^2
+  GEN: dt^2*v^2*F*dt0-4*F0*dt0*L0*L+2*c*dt*L0
+  GEN: c*dt*F+2*F0*L0
+  GEN: -2*c*F0*L*u+c^2*u0-v^2*u0
+  GEN: v^2*F0^2*dt0^2+c^2*F^2*dt0^2-c^2
+  GEN: -v^2*F0^2*dt0-c^2*F^2*dt0+c^2*F0
+  GEN: c^2*dt-dt*v^2-2*c*L
+  GEN: m
+  GEN: m0
+
+COMPONENT_8:
+  num_generators: 28
+  GEN: F*dt0*L0-L
+  GEN: -F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: -4*F0^2*L0^4*u^2+4*F0*F*L0^3*L*u^2+v^2*L^2*u0^2
+  GEN: -4*F0^3*L0^3*u^2+4*F0*F^2*L0^3*u^2+v^2*F*L*u0^2
+  GEN: -4*F0^4*L0^2*u^2+4*F0^2*F^2*L0^2*u^2+v^2*F^2*u0^2
+  GEN: -dt0*u0+dt*u
+  GEN: dt*v^2*L^2*u0-4*F0*L0^4*u+4*F0*L0^2*L^2*u
+  GEN: dt*v^2*F*L*u0-4*F0^2*L0^3*u+4*F0*F*L0^2*L*u
+  GEN: dt*v^2*F^2*u0-4*F0^3*L0^2*u+4*F0*F^2*L0^2*u
+  GEN: dt^2*v^2*L^2-4*L0^4+4*L0^2*L^2
+  GEN: dt^2*v^2*F*L-4*F0*L0^3+4*F*L0^2*L
+  GEN: dt^2*v^2*F^2-4*F0^2*L0^2+4*F^2*L0^2
+  GEN: -2*F0*L0^2*u+c*L*u0
+  GEN: -dt*v^2*F*dt0*u0-4*F0*L0*L*u+2*c*L0*u0
+  GEN: -dt*v^2*L+2*c*L0^2-2*c*L^2
+  GEN: -2*F0^2*L0*u+c*F*u0
+  GEN: dt*v^2*F*dt0+2*c*F*dt0*L-2*c*L0
+  GEN: -dt*v^2*F+2*c*F0*L0-2*c*F*L
+  GEN: c*dt*L-2*L0^2
+  GEN: -dt^2*v^2*F*dt0-4*F0*dt0*L0*L+2*c*dt*L0
+  GEN: c*dt*F-2*F0*L0
+  GEN: -2*c*F0*L*u+c^2*u0-v^2*u0
+  GEN: v^2*F0^2*dt0^2+c^2*F^2*dt0^2-c^2
+  GEN: -v^2*F0^2*dt0-c^2*F^2*dt0+c^2*F0
+  GEN: c^2*dt-dt*v^2-2*c*L
+  GEN: m
+  GEN: m0
+
+COMPONENT_9:
+  num_generators: 28
+  GEN: F*dt0*L0-L
+  GEN: -F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: -4*F0^2*L0^4*u^2+4*F0*F*L0^3*L*u^2+v^2*L^2*u0^2
+  GEN: -4*F0^3*L0^3*u^2+4*F0*F^2*L0^3*u^2+v^2*F*L*u0^2
+  GEN: -4*F0^4*L0^2*u^2+4*F0^2*F^2*L0^2*u^2+v^2*F^2*u0^2
+  GEN: -dt0*u0+dt*u
+  GEN: dt*v^2*L^2*u0-4*F0*L0^4*u+4*F0*L0^2*L^2*u
+  GEN: dt*v^2*F*L*u0-4*F0^2*L0^3*u+4*F0*F*L0^2*L*u
+  GEN: dt*v^2*F^2*u0-4*F0^3*L0^2*u+4*F0*F^2*L0^2*u
+  GEN: dt^2*v^2*L^2-4*L0^4+4*L0^2*L^2
+  GEN: dt^2*v^2*F*L-4*F0*L0^3+4*F*L0^2*L
+  GEN: dt^2*v^2*F^2-4*F0^2*L0^2+4*F^2*L0^2
+  GEN: 2*F0*L0^2*u+c*L*u0
+  GEN: dt*v^2*F*dt0*u0+4*F0*L0*L*u+2*c*L0*u0
+  GEN: dt*v^2*L+2*c*L0^2-2*c*L^2
+  GEN: 2*F0^2*L0*u+c*F*u0
+  GEN: -dt*v^2*F*dt0+2*c*F*dt0*L-2*c*L0
+  GEN: dt*v^2*F+2*c*F0*L0-2*c*F*L
+  GEN: c*dt*L+2*L0^2
+  GEN: dt^2*v^2*F*dt0+4*F0*dt0*L0*L+2*c*dt*L0
+  GEN: c*dt*F+2*F0*L0
+  GEN: 2*c*F0*L*u+c^2*u0-v^2*u0
+  GEN: v^2*F0^2*dt0^2+c^2*F^2*dt0^2-c^2
+  GEN: -v^2*F0^2*dt0-c^2*F^2*dt0+c^2*F0
+  GEN: c^2*dt-dt*v^2+2*c*L
+  GEN: m
+  GEN: m0
+
+COMPONENT_10:
+  num_generators: 16
+  GEN: m0*u0-m*u
+  GEN: L*u0+L0*u
+  GEN: L0*m0+L*m
+  GEN: F*dt0*m+m0
+  GEN: F*dt0*u0+u
+  GEN: F*dt0*L0-L
+  GEN: F*u0+F0*u
+  GEN: F0*m0+F*m
+  GEN: -F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: -4*F0^2*L0^2+4*F0^2*L^2+v^2
+  GEN: -dt0*u0+dt*u
+  GEN: dt*m0-dt0*m
+  GEN: dt0*L0+dt*L
+  GEN: dt*F+F0*dt0
+  GEN: 2*F0*L0+c
+
+COMPONENT_11:
+  num_generators: 16
+  GEN: m0*u0-m*u
+  GEN: L*u0+L0*u
+  GEN: L0*m0+L*m
+  GEN: F*dt0*m-m0
+  GEN: F*dt0*u0-u
+  GEN: F*dt0*L0+L
+  GEN: -F*u0+F0*u
+  GEN: F0*m0-F*m
+  GEN: F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: -4*F0^2*L0^2+4*F0^2*L^2+v^2
+  GEN: -dt0*u0+dt*u
+  GEN: dt*m0-dt0*m
+  GEN: dt0*L0+dt*L
+  GEN: dt*F-F0*dt0
+  GEN: 2*F0*L0+c
+
+COMPONENT_12:
+  num_generators: 16
+  GEN: m0*u0-m*u
+  GEN: -L*u0+L0*u
+  GEN: L0*m0-L*m
+  GEN: F*dt0*m+m0
+  GEN: F*dt0*u0+u
+  GEN: F*dt0*L0+L
+  GEN: F*u0+F0*u
+  GEN: F0*m0+F*m
+  GEN: F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: -4*F0^2*L0^2+4*F0^2*L^2+v^2
+  GEN: -dt0*u0+dt*u
+  GEN: dt*m0-dt0*m
+  GEN: -dt0*L0+dt*L
+  GEN: dt*F+F0*dt0
+  GEN: 2*F0*L0+c
+
+COMPONENT_13:
+  num_generators: 16
+  GEN: m0*u0-m*u
+  GEN: -L*u0+L0*u
+  GEN: L0*m0-L*m
+  GEN: F*dt0*m-m0
+  GEN: F*dt0*u0-u
+  GEN: F*dt0*L0-L
+  GEN: -F*u0+F0*u
+  GEN: F0*m0-F*m
+  GEN: -F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: -4*F0^2*L0^2+4*F0^2*L^2+v^2
+  GEN: -dt0*u0+dt*u
+  GEN: dt*m0-dt0*m
+  GEN: -dt0*L0+dt*L
+  GEN: dt*F-F0*dt0
+  GEN: 2*F0*L0+c
+
+COMPONENT_14:
+  num_generators: 7
+  GEN: m0*u0-m*u
+  GEN: F0*dt0-1
+  GEN: -dt0*u0+dt*u
+  GEN: dt*m0-dt0*m
+  GEN: L0
+  GEN: v
+  GEN: c
+
+COMPONENT_15:
+  num_generators: 16
+  GEN: m0*u0-m*u
+  GEN: L*u0+L0*u
+  GEN: L0*m0+L*m
+  GEN: F*dt0*m+m0
+  GEN: F*dt0*u0+u
+  GEN: F*dt0*L0-L
+  GEN: F*u0+F0*u
+  GEN: F0*m0+F*m
+  GEN: -F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: -4*F0^2*L0^2+4*F0^2*L^2+v^2
+  GEN: -dt0*u0+dt*u
+  GEN: dt*m0-dt0*m
+  GEN: dt0*L0+dt*L
+  GEN: dt*F+F0*dt0
+  GEN: -2*F0*L0+c
+
+COMPONENT_16:
+  num_generators: 16
+  GEN: m0*u0-m*u
+  GEN: L*u0+L0*u
+  GEN: L0*m0+L*m
+  GEN: F*dt0*m-m0
+  GEN: F*dt0*u0-u
+  GEN: F*dt0*L0+L
+  GEN: -F*u0+F0*u
+  GEN: F0*m0-F*m
+  GEN: F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: -4*F0^2*L0^2+4*F0^2*L^2+v^2
+  GEN: -dt0*u0+dt*u
+  GEN: dt*m0-dt0*m
+  GEN: dt0*L0+dt*L
+  GEN: dt*F-F0*dt0
+  GEN: -2*F0*L0+c
+
+COMPONENT_17:
+  num_generators: 16
+  GEN: m0*u0-m*u
+  GEN: -L*u0+L0*u
+  GEN: L0*m0-L*m
+  GEN: F*dt0*m+m0
+  GEN: F*dt0*u0+u
+  GEN: F*dt0*L0+L
+  GEN: F*u0+F0*u
+  GEN: F0*m0+F*m
+  GEN: F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: -4*F0^2*L0^2+4*F0^2*L^2+v^2
+  GEN: -dt0*u0+dt*u
+  GEN: dt*m0-dt0*m
+  GEN: -dt0*L0+dt*L
+  GEN: dt*F+F0*dt0
+  GEN: -2*F0*L0+c
+
+COMPONENT_18:
+  num_generators: 16
+  GEN: m0*u0-m*u
+  GEN: -L*u0+L0*u
+  GEN: L0*m0-L*m
+  GEN: F*dt0*m-m0
+  GEN: F*dt0*u0-u
+  GEN: F*dt0*L0-L
+  GEN: -F*u0+F0*u
+  GEN: F0*m0-F*m
+  GEN: -F*L0+F0*L
+  GEN: F0*dt0-1
+  GEN: -4*F0^2*L0^2+4*F0^2*L^2+v^2
+  GEN: -dt0*u0+dt*u
+  GEN: dt*m0-dt0*m
+  GEN: -dt0*L0+dt*L
+  GEN: dt*F-F0*dt0
+  GEN: -2*F0*L0+c
+
+COMPONENT_19:
+  num_generators: 8
+  GEN: F0*dt0-1
+  GEN: v^2*F0^2*dt0^2+c^2*F^2*dt0^2-c^2
+  GEN: -v^2*F0^2*dt0-c^2*F^2*dt0+c^2*F0
+  GEN: m
+  GEN: u0
+  GEN: L
+  GEN: L0
+  GEN: dt
+

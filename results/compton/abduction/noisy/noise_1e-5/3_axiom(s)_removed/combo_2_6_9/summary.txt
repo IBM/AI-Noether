@@ -1,0 +1,62 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-5
+Removed axiom indices (1-based): [2, 6, 9]
+Removed axioms:
+  Eph1 - h*f1
+  lambda1*f1 - c
+  Eel2^2 - pel2^2*c^2 - mel^2*c^4
+
+Numerical engine: nag
+Samples per component: 100
+Number of witness set components: 4
+Symbolic regression results: 12
+
+Regression results below threshold (200.0):
+  Axiom 2, Component 1:
+    Singular value: 5.753668617993404e-15
+    Polynomial: 1*f1*h
+    Coefficient L2 error: 0.9999999999999999
+  Axiom 6, Component 1:
+    Singular value: 5.577746729983864e-16
+    Polynomial: 1*c
+    Coefficient L2 error: 1.0
+  Axiom 9, Component 1:
+    Singular value: 9.258334134396219e-63
+    Polynomial: 1*mel^2*c^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 2, Component 2:
+    Singular value: 1.8663608965354535e-14
+    Polynomial: 1*f1*h
+    Coefficient L2 error: 0.9999999999999998
+  Axiom 6, Component 2:
+    Singular value: 8.244290208170148e-16
+    Polynomial: 1*c
+    Coefficient L2 error: 1.0
+  Axiom 9, Component 2:
+    Singular value: 2.500157120793598e-61
+    Polynomial: 1*mel^2*c^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 2, Component 3:
+    Singular value: 5.250065902345721e-31
+    Polynomial: 1*f1*h
+    Coefficient L2 error: 1.0
+  Axiom 6, Component 3:
+    Singular value: 3.6980354865886955e-32
+    Polynomial: (0.0078957-0.061847i)*f1*lambda1 + 1*c
+    Coefficient L2 error: 1.0097914633360354
+  Axiom 9, Component 3:
+    Singular value: 4.7441019674837116e-126
+    Polynomial: 1*mel^2*c^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 2, Component 4:
+    Singular value: 16.86311250973437
+    Polynomial: (0.0429902-0.0375041i)*f1*h + 1*Eph1
+    Coefficient L2 error: 1.0436643027459371
+  Axiom 6, Component 4:
+    Singular value: 7.2637897015546535
+    Polynomial: (-0.00309042+0.00515219i)*f1*lambda1 + 1*c
+    Coefficient L2 error: 0.9969228960658959
+  Axiom 9, Component 4:
+    Singular value: 28.161436089126827
+    Polynomial: (-0.377309-0.0395147i)*Eel2^2 + (-0.00917262-0.0140192i)*pel2^2*c^2 + 1*mel^2*c^4
+    Coefficient L2 error: 1.1865627797955467

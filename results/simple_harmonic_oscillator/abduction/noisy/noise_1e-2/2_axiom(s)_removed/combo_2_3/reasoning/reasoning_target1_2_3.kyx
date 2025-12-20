@@ -1,0 +1,71 @@
+ArchiveEntry "pendulum_target1_combo2_3"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real ad;
+  Real T;
+  Real omega;
+  Real theta;
+  Real sintheta;
+  Real d;
+  Real g;
+  Real L;
+  Real j;
+  Real Pii;
+  Real Tj;
+  Real c2_1;
+  Real c2_2;
+  Real c3_3;
+  Real c3_4;
+  Real c2_5;
+  Real c2_6;
+  Real c3_7;
+  Real c3_8;
+  Real d1;
+  Real d2;
+End.
+
+Problem
+  (
+    \exists c2_1 \exists c2_2 \exists c3_3 \exists c3_4 \exists c2_5 \exists c2_6 \exists c3_7 \exists c3_8 \exists d1 \exists d2
+    (
+      c2_1 > 0 & c2_2 > 0 & c3_3 > 0 & c3_4 > 0 & c2_5 > 0 & c2_6 > 0 & c3_7 > 0 & c3_8 > 0 & d1 > 0 & d2 > 0
+      &
+      (
+        \forall ad \forall T \forall omega \forall theta \forall sintheta \forall d \forall g \forall L \forall j \forall Pii \forall Tj
+        (
+          (
+            (ad > 0 & T > 0 & omega > 0 & theta > 0 & sintheta > 0 & d > 0 & g > 0 & L > 0 & j > 0 & Pii > 0 & Tj > 0) &
+            & ( ad-g*sintheta = 0 )
+            & ( d*omega^2-ad = 0 )
+            & ( Tj-j*T = 0 )
+            & ( sintheta - theta = 0 )
+            & ( ( c2_1 * theta*L ) + ( c2_2 * d ) = 0 )
+            & ( ( c3_3 * T*omega ) + ( c3_4 * Pii ) = 0 )
+            & ( ( c2_5 * theta*L ) + ( c2_6 * d ) = 0 )
+            & ( ( c3_7 * T*omega ) + ( c3_8 * Pii ) = 0 )
+          )
+          ->
+          (
+            ( d1 * g*Tj^2 ) + ( d2 * L*j^2*Pii^2 ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

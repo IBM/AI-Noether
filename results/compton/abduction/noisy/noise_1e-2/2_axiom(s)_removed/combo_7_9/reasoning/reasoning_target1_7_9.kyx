@@ -1,0 +1,97 @@
+ArchiveEntry "compton_target1_combo7_9"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real f1;
+  Real f2;
+  Real Eph1;
+  Real Eph2;
+  Real Eel1;
+  Real Eel2;
+  Real p1;
+  Real p2;
+  Real pel2;
+  Real lam1;
+  Real lam2;
+  Real hbar;
+  Real mel;
+  Real cVar;
+  Real cosTh;
+  Real c7_1;
+  Real c7_2;
+  Real c9_3;
+  Real c9_4;
+  Real c9_5;
+  Real c7_6;
+  Real c7_7;
+  Real c9_8;
+  Real c9_9;
+  Real c9_10;
+  Real c7_11;
+  Real c7_12;
+  Real c9_13;
+  Real c9_14;
+  Real c9_15;
+  Real c7_16;
+  Real c7_17;
+  Real c9_18;
+  Real c9_19;
+  Real c9_20;
+  Real d1;
+  Real d2;
+  Real d3;
+  Real d4;
+End.
+
+Problem
+  (
+    \exists c7_1 \exists c7_2 \exists c9_3 \exists c9_4 \exists c9_5 \exists c7_6 \exists c7_7 \exists c9_8 \exists c9_9 \exists c9_10 \exists c7_11 \exists c7_12 \exists c9_13 \exists c9_14 \exists c9_15 \exists c7_16 \exists c7_17 \exists c9_18 \exists c9_19 \exists c9_20 \exists d1 \exists d2 \exists d3 \exists d4
+    (
+      c7_1 > 0 & c7_2 > 0 & c9_3 > 0 & c9_4 > 0 & c9_5 > 0 & c7_6 > 0 & c7_7 > 0 & c9_8 > 0 & c9_9 > 0 & c9_10 > 0 & c7_11 > 0 & c7_12 > 0 & c9_13 > 0 & c9_14 > 0 & c9_15 > 0 & c7_16 > 0 & c7_17 > 0 & c9_18 > 0 & c9_19 > 0 & c9_20 > 0 & d1 > 0 & d2 > 0 & d3 > 0 & d4 > 0
+      &
+      (
+        \forall f1 \forall f2 \forall Eph1 \forall Eph2 \forall Eel1 \forall Eel2 \forall p1 \forall p2 \forall pel2 \forall lam1 \forall lam2 \forall hbar \forall mel \forall cVar \forall cosTh
+        (
+          (
+            (f1 > 0 & f2 > 0 & Eph1 > 0 & Eph2 > 0 & Eel1 > 0 & Eel2 > 0 & p1 > 0 & p2 > 0 & pel2 > 0 & lam1 > 0 & lam2 > 0 & hbar > 0 & mel > 0 & cVar > 0 & cosTh > 0) &
+            & ( Eph1 + Eel1 - Eph2- Eel2 = 0 )
+            & ( Eph1 - hbar*f1 = 0 )
+            & ( Eph2 - hbar*f2 = 0 )
+            & ( p1*cVar - hbar*f1 = 0 )
+            & ( p2*cVar - hbar*f2 = 0 )
+            & ( lam1*f1 - cVar = 0 )
+            & ( Eel1 - mel*cVar^2 = 0 )
+            & ( pel2^2 - p1^2 - p2^2 + 2*p1*p2*cosTh = 0 )
+            & ( ( c7_1 * f2*lam2 ) + ( c7_2 * cVar ) = 0 )
+            & ( ( c9_3 * Eel2^2 ) + ( c9_4 * pel2^2*cVar^2 ) + ( c9_5 * mel^2*cVar^4 ) = 0 )
+            & ( ( c7_6 * f2*lam2 ) + ( c7_7 * cVar ) = 0 )
+            & ( ( c9_8 * Eel2^2 ) + ( c9_9 * pel2^2*cVar^2 ) + ( c9_10 * mel^2*cVar^4 ) = 0 )
+            & ( ( c7_11 * f2*lam2 ) + ( c7_12 * cVar ) = 0 )
+            & ( ( c9_13 * Eel2^2 ) + ( c9_14 * pel2^2*cVar^2 ) + ( c9_15 * mel^2*cVar^4 ) = 0 )
+            & ( ( c7_16 * f2*lam2 ) + ( c7_17 * cVar ) = 0 )
+            & ( ( c9_18 * Eel2^2 ) + ( c9_19 * pel2^2*cVar^2 ) + ( c9_20 * mel^2*cVar^4 ) = 0 )
+          )
+          ->
+          (
+            ( d1 * lam1*mel*cVar ) + ( d2 * lam2*mel*cVar ) + ( d3 * hbar*cosTh ) + ( d4 * hbar ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

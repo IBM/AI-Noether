@@ -1,0 +1,88 @@
+ArchiveEntry "pendulum_target1_combo2_5_6"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real ad;
+  Real T;
+  Real omega;
+  Real theta;
+  Real sintheta;
+  Real d;
+  Real g;
+  Real L;
+  Real j;
+  Real Pi;
+  Real Tj;
+  Real c2_1;
+  Real c2_2;
+  Real c5_3;
+  Real c5_4;
+  Real c2_5;
+  Real c2_6;
+  Real c5_7;
+  Real c5_8;
+  Real c6_9;
+  Real c6_10;
+  Real c2_11;
+  Real c2_12;
+  Real c5_13;
+  Real c5_14;
+  Real c6_15;
+  Real c6_16;
+  Real c2_17;
+  Real c2_18;
+  Real c5_19;
+  Real c5_20;
+  Real d1;
+  Real d2;
+End.
+
+Problem
+  (
+    \exists c2_1 \exists c2_2 \exists c5_3 \exists c5_4 \exists c2_5 \exists c2_6 \exists c5_7 \exists c5_8 \exists c6_9 \exists c6_10 \exists c2_11 \exists c2_12 \exists c5_13 \exists c5_14 \exists c6_15 \exists c6_16 \exists c2_17 \exists c2_18 \exists c5_19 \exists c5_20 \exists d1 \exists d2
+    (
+      c2_1 > 0 & c2_2 > 0 & c5_3 > 0 & c5_4 > 0 & c2_5 > 0 & c2_6 > 0 & c5_7 > 0 & c5_8 > 0 & c6_9 > 0 & c6_10 > 0 & c2_11 > 0 & c2_12 > 0 & c5_13 > 0 & c5_14 > 0 & c6_15 > 0 & c6_16 > 0 & c2_17 > 0 & c2_18 > 0 & c5_19 > 0 & c5_20 > 0 & d1 > 0 & d2 > 0
+      &
+      (
+        \forall ad \forall T \forall omega \forall theta \forall sintheta \forall d \forall g \forall L \forall j \forall Pi \forall Tj
+        (
+          (
+            (ad > 0 & T > 0 & omega > 0 & theta > 0 & sintheta > 0 & d > 0 & g > 0 & L > 0 & j > 0 & Pi > 0 & Tj > 0) &
+            & ( ad-g*sintheta = 0 )
+            & ( T*omega-2*Pi = 0 )
+            & ( d*omega^2-ad = 0 )
+            & ( ( c2_1 * theta*L ) + ( c2_2 * d ) = 0 )
+            & ( ( c5_3 * T*j ) + ( c5_4 * Tj ) = 0 )
+            & ( ( c2_5 * theta*L ) + ( c2_6 * d ) = 0 )
+            & ( ( c5_7 * T*j ) + ( c5_8 * Tj ) = 0 )
+            & ( ( c6_9 * theta ) + ( c6_10 * sintheta ) = 0 )
+            & ( ( c2_11 * theta*L ) + ( c2_12 * d ) = 0 )
+            & ( ( c5_13 * T*j ) + ( c5_14 * Tj ) = 0 )
+            & ( ( c6_15 * theta ) + ( c6_16 * sintheta ) = 0 )
+            & ( ( c2_17 * theta*L ) + ( c2_18 * d ) = 0 )
+            & ( ( c5_19 * T*j ) + ( c5_20 * Tj ) = 0 )
+          )
+          ->
+          (
+            ( d1 * d*g*Tj^2 ) + ( d2 * d*L*j^2*Pi^2 ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

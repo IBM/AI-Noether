@@ -4,7 +4,8 @@
 LIB "primdec.lib";
 
 // Ring definition - characteristic 0, variables, degree reverse lex ordering
-ring r = 0, (d, dt, dt0, L, c, F0, F, v), dp;
+// Note: ring name is baseR to avoid conflicts with user variable names
+ring baseR = 0, (d, dt, dt0, L, c, F0, F, v), dp;
 
 // Define remaining axioms as polynomials
 poly ax1 = c*dt0 - 2*d;

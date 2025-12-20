@@ -1,0 +1,147 @@
+ArchiveEntry "photoHall_target1_combo2_3_5"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real ph;
+  Real dp;
+  Real mu;
+  Real muN;
+  Real muH;
+  Real n;
+  Real dsigma2dn;
+  Real e;
+  Real mup;
+  Real p0;
+  Real dn;
+  Real beta;
+  Real r;
+  Real sigma;
+  Real H;
+  Real c2_1;
+  Real c2_2;
+  Real c3_3;
+  Real c3_4;
+  Real c3_5;
+  Real c5_6;
+  Real c5_7;
+  Real c2_8;
+  Real c2_9;
+  Real c3_10;
+  Real c3_11;
+  Real c3_12;
+  Real c5_13;
+  Real c5_14;
+  Real c2_15;
+  Real c2_16;
+  Real c3_17;
+  Real c3_18;
+  Real c3_19;
+  Real c5_20;
+  Real c5_21;
+  Real c2_22;
+  Real c2_23;
+  Real c3_24;
+  Real c3_25;
+  Real c3_26;
+  Real c5_27;
+  Real c5_28;
+  Real c2_29;
+  Real c2_30;
+  Real c3_31;
+  Real c3_32;
+  Real c3_33;
+  Real c5_34;
+  Real c5_35;
+  Real c2_36;
+  Real c2_37;
+  Real c3_38;
+  Real c3_39;
+  Real c3_40;
+  Real c5_41;
+  Real c5_42;
+  Real c2_43;
+  Real c2_44;
+  Real c3_45;
+  Real c3_46;
+  Real c3_47;
+  Real c5_48;
+  Real c5_49;
+  Real c2_50;
+  Real c2_51;
+  Real c3_52;
+  Real c3_53;
+  Real c3_54;
+  Real c5_55;
+  Real c5_56;
+  Real d1;
+  Real d2;
+  Real d3;
+  Real d4;
+  Real d5;
+  Real d6;
+End.
+
+Problem
+  (
+    \exists c2_1 \exists c2_2 \exists c3_3 \exists c3_4 \exists c3_5 \exists c5_6 \exists c5_7 \exists c2_8 \exists c2_9 \exists c3_10 \exists c3_11 \exists c3_12 \exists c5_13 \exists c5_14 \exists c2_15 \exists c2_16 \exists c3_17 \exists c3_18 \exists c3_19 \exists c5_20 \exists c5_21 \exists c2_22 \exists c2_23 \exists c3_24 \exists c3_25 \exists c3_26 \exists c5_27 \exists c5_28 \exists c2_29 \exists c2_30 \exists c3_31 \exists c3_32 \exists c3_33 \exists c5_34 \exists c5_35 \exists c2_36 \exists c2_37 \exists c3_38 \exists c3_39 \exists c3_40 \exists c5_41 \exists c5_42 \exists c2_43 \exists c2_44 \exists c3_45 \exists c3_46 \exists c3_47 \exists c5_48 \exists c5_49 \exists c2_50 \exists c2_51 \exists c3_52 \exists c3_53 \exists c3_54 \exists c5_55 \exists c5_56 \exists d1 \exists d2 \exists d3 \exists d4 \exists d5 \exists d6
+    (
+      c2_1 > 0 & c2_2 > 0 & c3_3 > 0 & c3_4 > 0 & c3_5 > 0 & c5_6 > 0 & c5_7 > 0 & c2_8 > 0 & c2_9 > 0 & c3_10 > 0 & c3_11 > 0 & c3_12 > 0 & c5_13 > 0 & c5_14 > 0 & c2_15 > 0 & c2_16 > 0 & c3_17 > 0 & c3_18 > 0 & c3_19 > 0 & c5_20 > 0 & c5_21 > 0 & c2_22 > 0 & c2_23 > 0 & c3_24 > 0 & c3_25 > 0 & c3_26 > 0 & c5_27 > 0 & c5_28 > 0 & c2_29 > 0 & c2_30 > 0 & c3_31 > 0 & c3_32 > 0 & c3_33 > 0 & c5_34 > 0 & c5_35 > 0 & c2_36 > 0 & c2_37 > 0 & c3_38 > 0 & c3_39 > 0 & c3_40 > 0 & c5_41 > 0 & c5_42 > 0 & c2_43 > 0 & c2_44 > 0 & c3_45 > 0 & c3_46 > 0 & c3_47 > 0 & c5_48 > 0 & c5_49 > 0 & c2_50 > 0 & c2_51 > 0 & c3_52 > 0 & c3_53 > 0 & c3_54 > 0 & c5_55 > 0 & c5_56 > 0 & d1 > 0 & d2 > 0 & d3 > 0 & d4 > 0 & d5 > 0 & d6 > 0
+      &
+      (
+        \forall ph \forall dp \forall mu \forall muN \forall muH \forall n \forall dsigma2dn \forall e \forall mup \forall p0 \forall dn \forall beta \forall r \forall sigma \forall H
+        (
+          (
+            (ph > 0 & dp > 0 & mu > 0 & muN > 0 & muH > 0 & n > 0 & dsigma2dn > 0 & e > 0 & mup > 0 & p0 > 0 & dn > 0 & beta > 0 & r > 0 & sigma > 0 & H > 0) &
+            & ( beta * mup - muN = 0 )
+            & ( n - dn = 0 )
+            & ( sigma - e * ph * mup - e * n * muN = 0 )
+            & ( H * (ph + beta * n)^2 * e - r * ph + r * beta^2 * n = 0 )
+            & ( ( c2_1 * mu*r ) + ( c2_2 * muH ) = 0 )
+            & ( ( c3_3 * ph ) + ( c3_4 * dp ) + ( c3_5 * p0 ) = 0 )
+            & ( ( c5_6 * dp ) + ( c5_7 * dn ) = 0 )
+            & ( ( c2_8 * mu*r ) + ( c2_9 * muH ) = 0 )
+            & ( ( c3_10 * ph ) + ( c3_11 * dp ) + ( c3_12 * p0 ) = 0 )
+            & ( ( c5_13 * dp ) + ( c5_14 * dn ) = 0 )
+            & ( ( c2_15 * mu*r ) + ( c2_16 * muH ) = 0 )
+            & ( ( c3_17 * ph ) + ( c3_18 * dp ) + ( c3_19 * p0 ) = 0 )
+            & ( ( c5_20 * dp ) + ( c5_21 * dn ) = 0 )
+            & ( ( c2_22 * mu*r ) + ( c2_23 * muH ) = 0 )
+            & ( ( c3_24 * ph ) + ( c3_25 * dp ) + ( c3_26 * p0 ) = 0 )
+            & ( ( c5_27 * dp ) + ( c5_28 * dn ) = 0 )
+            & ( ( c2_29 * mu*r ) + ( c2_30 * muH ) = 0 )
+            & ( ( c3_31 * ph ) + ( c3_32 * dp ) + ( c3_33 * p0 ) = 0 )
+            & ( ( c5_34 * dp ) + ( c5_35 * dn ) = 0 )
+            & ( ( c2_36 * mu*r ) + ( c2_37 * muH ) = 0 )
+            & ( ( c3_38 * ph ) + ( c3_39 * dp ) + ( c3_40 * p0 ) = 0 )
+            & ( ( c5_41 * dp ) + ( c5_42 * dn ) = 0 )
+            & ( ( c2_43 * mu*r ) + ( c2_44 * muH ) = 0 )
+            & ( ( c3_45 * ph ) + ( c3_46 * dp ) + ( c3_47 * p0 ) = 0 )
+            & ( ( c5_48 * dp ) + ( c5_49 * dn ) = 0 )
+            & ( ( c2_50 * mu*r ) + ( c2_51 * muH ) = 0 )
+            & ( ( c3_52 * ph ) + ( c3_53 * dp ) + ( c3_54 * p0 ) = 0 )
+            & ( ( c5_55 * dp ) + ( c5_56 * dn ) = 0 )
+          )
+          ->
+          (
+            ( d1 * e*mup*dn*beta^2*r ) + ( d2 * e*mup*dn*beta*r ) + ( d3 * e*p0*sigma*H ) + ( d4 * e*dn*beta*sigma*H ) + ( d5 * e*dn*sigma*H ) + ( d6 * r*sigma ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

@@ -8,7 +8,7 @@ needsPackage("Bertini", Reload => true, Configuration => {"BERTINIexecutable" =>
 R = CC[S, ap, sintheta, dA, dtheta, r, P, qc, x0, w, MonomialOrder => Lex];
 
 remainingAxioms = toList([S * r^2 - qc^2 * ap^2 * sintheta^2, dA - 2*(314/100)*r^2*sintheta*dtheta, P - S * dA, 4/3 - sintheta^3 * dtheta]);
-qList = toList([(7501249465/10000000)*P - (3140818710/10000)*qc^2*w^4*x0^2]);
+qList = toList([(750024465/10000000)*P - (3140008710/10000000)*qc^2*w^4*x0^2]);
 
 axiomIdeal = ideal(join(remainingAxioms, qList));
 

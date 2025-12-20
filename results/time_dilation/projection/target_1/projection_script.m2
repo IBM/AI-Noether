@@ -7,10 +7,10 @@ axioms = toList([c*dt0 - 2*d, 4*L^2 - 4*d^2 - v^2*dt^2, F0*dt0 - 1, F*dt - 1, c*
 measuredVariables = toList([c, F0, F, v]);
 nonMeasuredVariables = toList([d, dt, dt0, L]);
 
-I = ideal(axioms);
-GB = gens gb I;
+axiomIdeal = ideal(axioms);
+GB = gens gb axiomIdeal;
 
-eliminatedIdeal = eliminate(nonMeasuredVariables, I);
+eliminatedIdeal = eliminate(nonMeasuredVariables, axiomIdeal);
 GBproj = gens gb eliminatedIdeal;
 
 f = openOut "results/time_dilation/projection/target_1/projection_output.txt";
@@ -26,9 +26,11 @@ f << endl;
 -- Target checks
 
 qList = toList([c^2*F0^2-c^2*F^2-F0^2*v^2]);
+elimIdeal = ideal(flatten entries GBproj);
 f << "Target checks in eliminated ideal (membership & literal appearance):" << endl;
 scan(qList, q -> (
-    remZero = (q % ideal(GBproj) == 0);
+    rem = q % elimIdeal;
+    remZero = (rem == 0);
     appears = member(true, toList apply(flatten entries GBproj, g -> g == q));
     f << "q = " << toString q << endl;
     f << "  remainderZero: " << toString remZero << endl;

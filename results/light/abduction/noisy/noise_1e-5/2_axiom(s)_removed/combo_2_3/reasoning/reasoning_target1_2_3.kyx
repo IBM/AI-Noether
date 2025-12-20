@@ -31,15 +31,17 @@ ProgramVariables
   Real c3_4;
   Real c2_5;
   Real c2_6;
+  Real c3_7;
+  Real c3_8;
   Real d1;
   Real d2;
 End.
 
 Problem
   (
-    \exists c2_1 \exists c2_2 \exists c3_3 \exists c3_4 \exists c2_5 \exists c2_6 \exists d1 \exists d2
+    \exists c2_1 \exists c2_2 \exists c3_3 \exists c3_4 \exists c2_5 \exists c2_6 \exists c3_7 \exists c3_8 \exists d1 \exists d2
     (
-      c2_1 > 0 & c2_2 > 0 & c3_3 > 0 & c3_4 > 0 & c2_5 > 0 & c2_6 > 0 & d1 > 0 & d2 > 0
+      c2_1 > 0 & c2_2 > 0 & c3_3 > 0 & c3_4 > 0 & c2_5 > 0 & c2_6 > 0 & c3_7 > 0 & c3_8 > 0 & d1 > 0 & d2 > 0
       &
       (
         \forall S \forall ap \forall sintheta \forall dA \forall dtheta \forall r \forall P \forall qc \forall x0 \forall w
@@ -52,6 +54,7 @@ Problem
             & ( ( c2_1 * sintheta*dtheta*r^2 ) + ( c2_2 * dA ) = 0 )
             & ( ( c3_3 * S*dA ) + ( c3_4 * P ) = 0 )
             & ( ( c2_5 * sintheta*dtheta*r^2 ) + ( c2_6 * dA ) = 0 )
+            & ( ( c3_7 * S*dA ) + ( c3_8 * P ) = 0 )
           )
           ->
           (

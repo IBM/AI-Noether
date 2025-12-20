@@ -1,0 +1,114 @@
+Number of components: 8
+Number of remaining axioms: 9
+Number of targets: 1
+Max candidate set size: 1
+Number of candidate sets (after filtering): 89
+
+Filtering method: ideal membership test
+  Generators g where g ∈ ideal(remaining_axioms + targets) are excluded
+  (They contain no new information beyond what's already known)
+
+Remaining axioms:
+  1. E1 + Ee1 - E2 - Ee2
+  2. E1 - h*f1
+  3. E2 - h*f2
+  4. p1*c - h*f1
+  5. p2*c - h*f2
+  6. lambda1*f1 - c
+  7. lambda2*f2 - c
+  8. Ee2^2 - pe2^2*c^2 - me^2*c^4
+  9. pe2^2 - p1^2 - p2^2 + 2*p1*p2*coss
+
+Targets:
+  1. lambda1*h*me*c^3 - lambda2*h*me*c^3 - coss*h^2*c^2 + h^2*c^2
+
+Candidate sets to test:
+  Candidate 0: [] (empty set / baseline)
+  Candidate 1: ['p2*lambda2-h']
+  Candidate 2: ['p1*lambda1-h']
+  Candidate 3: ['p1^2-2*p1*p2+p2^2-pe2^2-2*Ee1*me+2*Ee2*me']
+  Candidate 4: ['f2*p1-f1*p2']
+  Candidate 5: ['h*c*coss-Ee1*lambda1+2*Ee2*lambda1+Ee1*lambda2-2*Ee2*lambda2-h*c']
+  Candidate 6: ['p1*p2*coss-p1*p2-Ee1*me+Ee2*me']
+  Candidate 7: ['E2*p2*coss-Ee1*p2*coss+Ee2*p2*coss+Ee1*p1-2*Ee2*p1-E2*p2+Ee2*p2']
+  Candidate 8: ['E2^2*coss-E2*Ee1*coss+E2*Ee2*coss-E2^2+E2*Ee1-Ee1^2-E2*Ee2+3*Ee1*Ee2-2*Ee2^2']
+  Candidate 9: ['f2*E2*coss-f2*Ee1*coss+f2*Ee2*coss-f2*E2+f1*Ee1-2*f1*Ee2+f2*Ee2']
+  Candidate 10: ['me*c^2-Ee1+2*Ee2']
+  Candidate 11: ['lambda1*me*c-lambda2*me*c-h*coss+h']
+  Candidate 12: ['Ee1*me*c-Ee2*me*c+Ee1*p1-2*Ee2*p1-Ee1*p2+2*Ee2*p2']
+  Candidate 13: ['E2*me*c-Ee1*p2+2*Ee2*p2']
+  Candidate 14: ['f1*me*c-f2*me*c+f1*p2*coss-f1*p2']
+  Candidate 15: ['pe2^2*c+2*Ee1*me*c-2*Ee2*me*c+Ee1*p1-Ee2*p1-Ee1*p2+Ee2*p2']
+  Candidate 16: ['Ee1*lambda2*me-Ee2*lambda2*me-p1*h*coss+p1*h']
+  Candidate 17: ['f1*lambda2*me-me*c+p1*coss-p1']
+  Candidate 18: ['Ee1*lambda1*me-Ee2*lambda1*me-p2*h*coss+p2*h']
+  Candidate 19: ['f2*lambda1*me-me*c-p2*coss+p2']
+  Candidate 20: ['Ee1*p1*lambda2-2*Ee2*p1*lambda2+E2*h*coss-Ee1*h*coss+Ee2*h*coss-E2*h+Ee2*h']
+  Candidate 21: ['f1*Ee1*lambda2-2*f1*Ee2*lambda2+E2*c*coss-Ee1*c*coss+Ee2*c*coss-E2*c+Ee2*c']
+  Candidate 22: ['p2^2*lambda1-pe2^2*lambda1-2*Ee1*lambda1*me+2*Ee2*lambda1*me+p1*h-2*p2*h']
+  Candidate 23: ['Ee1*p2*lambda1-2*Ee2*p2*lambda1-E2*h*coss+E2*h-Ee1*h+2*Ee2*h']
+  Candidate 24: ['f2*Ee1*lambda1-2*f2*Ee2*lambda1+f1*Ee1*lambda2-2*f1*Ee2*lambda2-Ee1*c*coss+Ee2*c*coss-Ee1*c+3*Ee2*c']
+  Candidate 25: ['Ee1*pe2^2-2*Ee2*pe2^2+Ee1^2*me-4*Ee1*Ee2*me+3*Ee2^2*me']
+  Candidate 26: ['Ee1*p2^2-2*Ee2*p2^2-E2^2*me']
+  Candidate 27: ['Ee2*p1*p2+Ee1*p2^2-3*Ee2*p2^2+E2*pe2^2-E2^2*me+E2*Ee1*me-E2*Ee2*me']
+  Candidate 28: ['Ee1*p1*p2-Ee2*p1*p2-Ee1*p2^2+Ee2*p2^2+E2*pe2^2+2*E2*Ee1*me-2*E2*Ee2*me']
+  Candidate 29: ['f1*p1*p2-2*f1*p2^2+f2*p2^2-f2*pe2^2-2*f2*Ee1*me+2*f2*Ee2*me']
+  Candidate 30: ['p2^3*coss-p2*pe2^2*coss-2*Ee1*p2*me*coss+2*Ee2*p2*me*coss-p2^3+p2*pe2^2+Ee1*p1*me-Ee2*p1*me']
+  Candidate 31: ['Ee2*p2^2*coss-E2*pe2^2*coss-E2*Ee1*me*coss+E2*Ee2*me*coss-Ee2*p2^2+E2*pe2^2+E2*Ee1*me-E2*Ee2*me-Ee1*Ee2*me+Ee2^2*me']
+  Candidate 32: ['f2*p2^2*coss-f2*pe2^2*coss-2*f2*Ee1*me*coss+2*f2*Ee2*me*coss-f2*p2^2+f2*pe2^2+f1*Ee1*me-f1*Ee2*me']
+  Candidate 33: ['f1*p2^2*coss-f1*p2^2-f2*Ee1*me+f2*Ee2*me']
+  Candidate 34: ['f1*Ee1*p2*coss-f1*Ee2*p2*coss-f1*Ee1*p1+2*f1*Ee2*p1+f1*Ee1*p2-f2*Ee1*p2-3*f1*Ee2*p2+2*f2*Ee2*p2']
+  Candidate 35: ['f1*f2*Ee1*coss-f1*f2*Ee2*coss-f1^2*Ee1+f1*f2*Ee1-f2^2*Ee1+2*f1^2*Ee2-3*f1*f2*Ee2+2*f2^2*Ee2']
+  Candidate 36: ['Ee2*p1*lambda2*me+p2^2*h*coss-pe2^2*h*coss-E2*h*me*coss-Ee1*h*me*coss+Ee2*h*me*coss-p2^2*h+pe2^2*h+E2*h*me-Ee2*h*me']
+  Candidate 37: ['Ee2*lambda1^2*me-2*Ee2*lambda1*lambda2*me+Ee2*lambda2^2*me-p2*lambda1*h*coss-p1*lambda2*h*coss+h^2*coss^2+p2*lambda1*h+p1*lambda2*h-h^2']
+  Candidate 38: ['Ee2*p2*lambda1*me-p2^2*h*coss+E2*h*me*coss+p2^2*h-E2*h*me+Ee1*h*me-2*Ee2*h*me']
+  Candidate 39: ['pe2^2*lambda1*lambda2-p2*lambda1*h-p1*lambda2*h+2*h^2*coss']
+  Candidate 40: ['Ee2^2*p2^2-E2^2*pe2^2-E2^2*Ee1*me+2*E2^2*Ee2*me']
+  Candidate 41: ['f1*Ee2*p2^2-f2*Ee2*p2^2+f2*E2*pe2^2+f2*E2*Ee1*me-f2*E2*Ee2*me']
+  Candidate 42: ['f1^2*p2^2-2*f1*f2*p2^2+f2^2*p2^2-f2^2*pe2^2-2*f2^2*Ee1*me+2*f2^2*Ee2*me']
+  Candidate 43: ['f1*p2*pe2^2*coss-f1*p2*pe2^2+f1*Ee1*p1*me-3*f1*Ee2*p1*me-2*f1*Ee1*p2*me+f2*Ee1*p2*me+6*f1*Ee2*p2*me-3*f2*Ee2*p2*me']
+  Candidate 44: ['f1*f2*pe2^2*coss-f1*f2*pe2^2+f1^2*Ee1*me-2*f1*f2*Ee1*me+f2^2*Ee1*me-3*f1^2*Ee2*me+6*f1*f2*Ee2*me-3*f2^2*Ee2*me']
+  Candidate 45: ['Ee2*pe2^2*lambda2*me-p1*pe2^2*h*coss-Ee1*p1*h*me*coss+3*Ee2*p1*h*me*coss+p1*pe2^2*h+Ee1*p1*h*me-3*Ee2*p1*h*me']
+  Candidate 46: ['Ee2*pe2^2*lambda1*me-p2*pe2^2*h*coss-Ee1*p2*h*me*coss+3*Ee2*p2*h*me*coss+p2*pe2^2*h+Ee1*p2*h*me-3*Ee2*p2*h*me']
+  Candidate 47: ['h']
+  Candidate 48: ['pe2']
+  Candidate 49: ['p2']
+  Candidate 50: ['p1']
+  Candidate 51: ['Ee1-Ee2']
+  Candidate 52: ['E2']
+  Candidate 53: ['E1']
+  Candidate 54: ['me*c^2+Ee2']
+  Candidate 55: ['h*c*coss-Ee1*lambda1+Ee1*lambda2-h*c']
+  Candidate 56: ['E2*p2*coss-Ee1*p2*coss+Ee2*p2*coss+Ee1*p1-E2*p2-Ee2*p2']
+  Candidate 57: ['E2^2*coss-E2*Ee1*coss+E2*Ee2*coss-E2^2+E2*Ee1-Ee1^2-E2*Ee2+Ee1*Ee2']
+  Candidate 58: ['f2*E2*coss-f2*Ee1*coss+f2*Ee2*coss-f2*E2+f1*Ee1-f2*Ee2']
+  Candidate 59: ['me*c^2-Ee1']
+  Candidate 60: ['Ee1*me*c-Ee2*me*c+Ee1*p1-Ee1*p2']
+  Candidate 61: ['E2*me*c-Ee1*p2']
+  Candidate 62: ['Ee1*p1*lambda2+E2*h*coss-Ee1*h*coss+Ee2*h*coss-E2*h-Ee2*h']
+  Candidate 63: ['f1*Ee1*lambda2+E2*c*coss-Ee1*c*coss+Ee2*c*coss-E2*c-Ee2*c']
+  Candidate 64: ['Ee1*p2*lambda1-E2*h*coss+E2*h-Ee1*h']
+  Candidate 65: ['f2*Ee1*lambda1+f1*Ee1*lambda2-Ee1*c*coss+Ee2*c*coss-Ee1*c-Ee2*c']
+  Candidate 66: ['Ee1*pe2^2+Ee1^2*me-Ee2^2*me']
+  Candidate 67: ['Ee1*p2^2-E2^2*me']
+  Candidate 68: ['Ee2*p1*p2+Ee1*p2^2-Ee2*p2^2-E2*pe2^2-E2^2*me-E2*Ee1*me+E2*Ee2*me']
+  Candidate 69: ['Ee2*p2^2*coss+E2*pe2^2*coss+E2*Ee1*me*coss-E2*Ee2*me*coss-Ee2*p2^2-E2*pe2^2-E2*Ee1*me+E2*Ee2*me-Ee1*Ee2*me+Ee2^2*me']
+  Candidate 70: ['f1*Ee1*p2*coss-f1*Ee2*p2*coss-f1*Ee1*p1+f1*Ee1*p2-f2*Ee1*p2+f1*Ee2*p2']
+  Candidate 71: ['f1*f2*Ee1*coss-f1*f2*Ee2*coss-f1^2*Ee1+f1*f2*Ee1-f2^2*Ee1+f1*f2*Ee2']
+  Candidate 72: ['Ee2*p1*lambda2*me-p2^2*h*coss+pe2^2*h*coss+E2*h*me*coss+Ee1*h*me*coss-Ee2*h*me*coss+p2^2*h-pe2^2*h-E2*h*me-Ee2*h*me']
+  Candidate 73: ['Ee2*lambda1^2*me-2*Ee2*lambda1*lambda2*me+Ee2*lambda2^2*me+p2*lambda1*h*coss+p1*lambda2*h*coss-h^2*coss^2-p2*lambda1*h-p1*lambda2*h+h^2']
+  Candidate 74: ['Ee2*p2*lambda1*me+p2^2*h*coss-E2*h*me*coss-p2^2*h+E2*h*me-Ee1*h*me']
+  Candidate 75: ['Ee2^2*p2^2-E2^2*pe2^2-E2^2*Ee1*me']
+  Candidate 76: ['f1*Ee2*p2^2-f2*Ee2*p2^2-f2*E2*pe2^2-f2*E2*Ee1*me+f2*E2*Ee2*me']
+  Candidate 77: ['f1*p2*pe2^2*coss-f1*p2*pe2^2+f1*Ee1*p1*me+f1*Ee2*p1*me-2*f1*Ee1*p2*me+f2*Ee1*p2*me-2*f1*Ee2*p2*me+f2*Ee2*p2*me']
+  Candidate 78: ['f1*f2*pe2^2*coss-f1*f2*pe2^2+f1^2*Ee1*me-2*f1*f2*Ee1*me+f2^2*Ee1*me+f1^2*Ee2*me-2*f1*f2*Ee2*me+f2^2*Ee2*me']
+  Candidate 79: ['Ee2*pe2^2*lambda2*me+p1*pe2^2*h*coss+Ee1*p1*h*me*coss+Ee2*p1*h*me*coss-p1*pe2^2*h-Ee1*p1*h*me-Ee2*p1*h*me']
+  Candidate 80: ['Ee2*pe2^2*lambda1*me+p2*pe2^2*h*coss+Ee1*p2*h*me*coss+Ee2*p2*h*me*coss-p2*pe2^2*h-Ee1*p2*h*me-Ee2*p2*h*me']
+  Candidate 81: ['me*c^2-Ee2']
+  Candidate 82: ['c']
+  Candidate 83: ['lambda2']
+  Candidate 84: ['Ee2']
+  Candidate 85: ['Ee1']
+  Candidate 86: ['f1']
+  Candidate 87: ['lambda1']
+  Candidate 88: ['f2']

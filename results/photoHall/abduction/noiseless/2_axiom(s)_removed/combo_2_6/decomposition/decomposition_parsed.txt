@@ -1,0 +1,72 @@
+Number of components: 7
+
+COMPONENT_1:
+  num_generators: 12
+  GEN: n-dn
+  GEN: dp-dn
+  GEN: ph-p0-dn
+  GEN: mup*beta-muN
+  GEN: e*mup*p0+muN*e*dn+e*mup*dn-sigma
+  GEN: muN*dn*beta*r+dn*beta*sigma*H-mup*p0*r-mup*dn*r+p0*sigma*H+dn*sigma*H
+  GEN: mup^2*p0*r-muN^2*dn*r+mup^2*dn*r-mup*p0*sigma*H-muN*dn*sigma*H-mup*dn*sigma*H
+  GEN: muN*e*dn*beta+muN*e*p0+muN*e*dn-beta*sigma
+  GEN: e*dn*beta*sigma*H-muN*e*p0*r+e*p0*sigma*H+e*dn*sigma*H+beta*r*sigma-r*sigma
+  GEN: muN^2*e*dn*r+muN*e*mup*dn*r-mup*r*sigma+sigma^2*H
+  GEN: muN^2*e*p0*r-muN*beta*r*sigma-beta*sigma^2*H+muN*r*sigma
+  GEN: e*dn^2*beta^2*H+2*e*p0*dn*beta*H+2*e*dn^2*beta*H+dn*beta^2*r+e*p0^2*H+2*e*p0*dn*H+e*dn^2*H-p0*r-dn*r
+
+COMPONENT_2:
+  num_generators: 7
+  GEN: r
+  GEN: n-dn
+  GEN: dp-dn
+  GEN: ph-p0-dn
+  GEN: dn*beta+p0+dn
+  GEN: mup*beta-muN
+  GEN: mup*p0+muN*dn+mup*dn
+
+COMPONENT_3:
+  num_generators: 6
+  GEN: H
+  GEN: r
+  GEN: n-dn
+  GEN: dp-dn
+  GEN: ph-p0-dn
+  GEN: mup*beta-muN
+
+COMPONENT_4:
+  num_generators: 6
+  GEN: r
+  GEN: e
+  GEN: n-dn
+  GEN: dp-dn
+  GEN: ph-p0-dn
+  GEN: mup*beta-muN
+
+COMPONENT_5:
+  num_generators: 6
+  GEN: dn
+  GEN: n
+  GEN: dp
+  GEN: ph-p0
+  GEN: mup*beta-muN
+  GEN: e*p0*H-r
+
+COMPONENT_6:
+  num_generators: 6
+  GEN: beta
+  GEN: n-dn
+  GEN: muN
+  GEN: dp-dn
+  GEN: ph-p0-dn
+  GEN: e*p0*H+e*dn*H-r
+
+COMPONENT_7:
+  num_generators: 6
+  GEN: beta+1
+  GEN: n-dn
+  GEN: muN+mup
+  GEN: dp-dn
+  GEN: ph-p0-dn
+  GEN: e*p0*H-r
+

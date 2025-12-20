@@ -1,0 +1,62 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-8
+Removed axiom indices (1-based): [3, 4, 9]
+Removed axioms:
+  Er - mr*c^2
+  Ec^2 - (mc*c)^2 - (pc*c)^2
+  pc^2*(c^2 - vc^2) - mc^2*vc^2*c^2
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 4
+Symbolic regression results: 12
+
+Regression results below threshold (200.0):
+  Axiom 3, Component 1:
+    Singular value: 2.267301581092236e-09
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 1.0000000000119333
+  Axiom 4, Component 1:
+    Singular value: 5.7269467902557855e-24
+    Polynomial: 1*pc^2*c^2
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 9, Component 1:
+    Singular value: 1.0470840204607584e-25
+    Polynomial: 1*vc^2*pc^2 + (-0.14282-0.0311025i)*pc^2*c^2
+    Coefficient L2 error: 1.3174688576433344
+  Axiom 3, Component 2:
+    Singular value: 2.144797376598263e-11
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 1.0000000000001266
+  Axiom 4, Component 2:
+    Singular value: 2.8044394742775646e-23
+    Polynomial: 1*pc^2*c^2
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 9, Component 2:
+    Singular value: 9.671280398555213e-20
+    Polynomial: (-0.455057-0.245195i)*vc^2*pc^2 + 1*pc^2*c^2
+    Coefficient L2 error: 1.164939503764955
+  Axiom 3, Component 3:
+    Singular value: 9.275538555065155e-15
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 1.0
+  Axiom 4, Component 3:
+    Singular value: 6.321336294232688e-15
+    Polynomial: (0.33905+0.255223i)*pc^2*c^2 + 1*mc^2*c^2
+    Coefficient L2 error: 1.2255585219957912
+  Axiom 9, Component 3:
+    Singular value: 2.2274205785585986e-15
+    Polynomial: (-0.00374954+0.00428322i)*vc^2*mc^2*c^2 + 1*pc^2*c^2
+    Coefficient L2 error: 1.4115712223330363
+  Axiom 3, Component 4:
+    Singular value: 1.6473186959334025e-15
+    Polynomial: 1*mr*c^2
+    Coefficient L2 error: 1.0
+  Axiom 4, Component 4:
+    Singular value: 6.615094817729669e-15
+    Polynomial: 1*pc^2*c^2 + (0.41553-0.145932i)*mc^2*c^2
+    Coefficient L2 error: 1.1674336463546846
+  Axiom 9, Component 4:
+    Singular value: 2.1042340148976764e-15
+    Polynomial: (-0.00602102-0.00753918i)*vc^2*mc^2*c^2 + 1*pc^2*c^2
+    Coefficient L2 error: 1.4099826417649888

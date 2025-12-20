@@ -1,0 +1,19 @@
+=== Symbolic Regression Result ===
+Dropped axiom index (1-based): 6
+Dropped axiom text: u0*dt0 - u*dt
+Component index: 65
+Variables: ['dt', 'dt0', 'u0', 'u']
+Number of monomials: 2
+Total degree: 2
+Number of points (total): 100
+Number of points (used after outlier removal): 17
+Smallest singular value: 2.9845005519493773e-21
+Relative residual: 1.3834035084937947e-18
+
+Inferred polynomial (raw):
+  0.995835*dt*u + (0.999995-0.00300571i)*dt0*u0 = 0
+
+Inferred polynomial (normalized):
+  (0.99583+0.00299319i)*dt*u + 1*dt0*u0 = 0
+
+Coefficient L2 error vs true: 1.9958326169785896

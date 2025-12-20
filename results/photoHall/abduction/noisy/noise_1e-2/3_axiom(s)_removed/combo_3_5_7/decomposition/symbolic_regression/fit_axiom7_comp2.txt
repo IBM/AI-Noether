@@ -1,0 +1,19 @@
+=== Symbolic Regression Result ===
+Dropped axiom index (1-based): 7
+Dropped axiom text: H * (ph + beta * n)^2 * e - r * ph + r * beta^2 * n
+Component index: 2
+Variables: ['ph', 'n', 'e', 'beta', 'r', 'H']
+Number of monomials: 5
+Total degree: 6
+Number of points (total): 100
+Number of points (used after outlier removal): 23
+Smallest singular value: 2.8691749026801903
+Relative residual: 5.888318991644727
+
+Inferred polynomial (raw):
+  -0.115355*ph^2*e*H + (0.0105548+0.0605072i)*ph*n*e*beta*H + (-0.701849-0.712326i)*ph*r + (0.00221638+0.0028644i)*n^2*e*beta^2*H + (-0.0718121-0.0617112i)*n*beta^2*r = 0
+
+Inferred polynomial (normalized):
+  (0.0809618-0.0821703i)*ph^2*e*H + (-0.0505087-0.0349485i)*ph*n*e*beta*H + 1*ph*r + (-0.00359595-0.000431589i)*n^2*e*beta^2*H + (0.0943597-0.00784165i)*n*beta^2*r = 0
+
+Coefficient L2 error vs true: 1.448021321015127

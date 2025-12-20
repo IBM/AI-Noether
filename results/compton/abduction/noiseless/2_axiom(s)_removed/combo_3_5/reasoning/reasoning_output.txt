@@ -1,0 +1,300 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  E1-E2+Ee1-Ee2
+  -f1*h+E1
+  -f1*h+p1*c
+  f1*lambda1-c
+  f2*lambda2-c
+  Ee1-me*c^2
+  Ee2^2-pe2^2*c^2-me^2*c^4
+  -p1^2+2*p1*p2*coss-p2^2+pe2^2
+
+Targets:
+  lambda1*h*me*c^3-lambda2*h*me*c^3-h^2*c^2*coss+h^2*c^2
+
+Require literal GB appearance: true
+Number of candidate sets to test: 60
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {p1*lambda1-h}
+  filtered: {p1*lambda1-h}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-Ee1*lambda1+Ee1*lambda2+h*c*coss-h*c}
+  filtered: {-Ee1*lambda1+Ee1*lambda2+h*c*coss-h*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f1*Ee1+f2*E2*coss-f2*E2-f2*Ee1*coss+f2*Ee2*coss-f2*Ee2}
+  filtered: {f1*Ee1+f2*E2*coss-f2*E2-f2*Ee1*coss+f2*Ee2*coss-f2*Ee2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {lambda1*me*c-lambda2*me*c-h*coss+h}
+  filtered: {lambda1*me*c-lambda2*me*c-h*coss+h}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f1*me*c+f2*p1*coss-f2*p1-f2*me*c}
+  filtered: {f1*me*c+f2*p1*coss-f2*p1-f2*me*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {E2*lambda2*me-Ee1*lambda2*me+Ee2*lambda2*me+p1*h*coss-p1*h-h*me*c}
+  filtered: {E2*lambda2*me-Ee1*lambda2*me+Ee2*lambda2*me+p1*h*coss-p1*h-h*me*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f1*lambda2*me+p1*coss-p1-me*c}
+  filtered: {f1*lambda2*me+p1*coss-p1-me*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {E2*h*coss-E2*h+Ee1*p1*lambda2-Ee1*h*coss+Ee2*h*coss-Ee2*h}
+  filtered: {E2*h*coss-E2*h+Ee1*p1*lambda2-Ee1*h*coss+Ee2*h*coss-Ee2*h}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f1*Ee1*lambda2+E2*c*coss-E2*c-Ee1*c*coss+Ee2*c*coss-Ee2*c}
+  filtered: {f1*Ee1*lambda2+E2*c*coss-E2*c-Ee1*c*coss+Ee2*c*coss-Ee2*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {p1*h+p2^2*lambda1-2*p2*h*coss-pe2^2*lambda1}
+  filtered: {p1*h+p2^2*lambda1-2*p2*h*coss-pe2^2*lambda1}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {f1*E2*me-f1*Ee1*me+f1*Ee2*me-f2*E2*me+f2*Ee1*me-f2*Ee2*me+f2*p1^2*coss-f2*p1^2}
+  filtered: {f1*E2*me-f1*Ee1*me+f1*Ee2*me-f2*E2*me+f2*Ee1*me-f2*Ee2*me+f2*p1^2*coss-f2*p1^2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-f2*p1*h*coss+f2*p1*h+f2*h*me*c-Ee1*p1}
+  filtered: {-f2*p1*h*coss+f2*p1*h+f2*h*me*c-Ee1*p1}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ee1*lambda1^2*me-2*Ee1*lambda1*lambda2*me+Ee1*lambda2^2*me-h^2*coss^2+2*h^2*coss-h^2}
+  filtered: {Ee1*lambda1^2*me-2*Ee1*lambda1*lambda2*me+Ee1*lambda2^2*me-h^2*coss^2+2*h^2*coss-h^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {2*f1*E2*p2*me-2*f1*Ee1*p2*me+2*f1*Ee2*p2*me-2*f2*E2*p2*me+2*f2*Ee1*p2*me-2*f2*Ee2*p2*me+f2*p1^3-2*f2*p1^2*p2+f2*p1*p2^2-f2*p1*pe2^2}
+  filtered: {2*f1*E2*p2*me-2*f1*Ee1*p2*me+2*f1*Ee2*p2*me-2*f2*E2*p2*me+2*f2*Ee1*p2*me-2*f2*Ee2*p2*me+f2*p1^3-2*f2*p1^2*p2+f2*p1*p2^2-f2*p1*pe2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {2*f1*Ee1*p1*p2-f2*E2^2*me+2*f2*E2*Ee1*me-2*f2*E2*Ee2*me+f2*E2*p1^2-2*f2*E2*p1*p2+f2*E2*p2^2-f2*E2*pe2^2-2*f2*Ee1^2*me+2*f2*Ee1*Ee2*me-f2*Ee1*p2^2+f2*Ee2*p1^2-2*f2*Ee2*p1*p2+f2*Ee2*p2^2-f2*Ee2*pe2^2}
+  filtered: {2*f1*Ee1*p1*p2-f2*E2^2*me+2*f2*E2*Ee1*me-2*f2*E2*Ee2*me+f2*E2*p1^2-2*f2*E2*p1*p2+f2*E2*p2^2-f2*E2*pe2^2-2*f2*Ee1^2*me+2*f2*Ee1*Ee2*me-f2*Ee1*p2^2+f2*Ee2*p1^2-2*f2*Ee2*p1*p2+f2*Ee2*p2^2-f2*Ee2*pe2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-E2*p1*h*coss+E2*p1*h+2*E2*p2*h*coss^2-2*E2*p2*h*coss+Ee1^2*lambda2*me+Ee1*p1*h*coss+Ee1*p2^2*lambda2-2*Ee1*p2*h*coss^2-Ee2^2*lambda2*me-Ee2*p1*h*coss+Ee2*p1*h+2*Ee2*p2*h*coss^2-2*Ee2*p2*h*coss}
+  filtered: {-E2*p1*h*coss+E2*p1*h+2*E2*p2*h*coss^2-2*E2*p2*h*coss+Ee1^2*lambda2*me+Ee1*p1*h*coss+Ee1*p2^2*lambda2-2*Ee1*p2*h*coss^2-Ee2^2*lambda2*me-Ee2*p1*h*coss+Ee2*p1*h+2*Ee2*p2*h*coss^2-2*Ee2*p2*h*coss}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-f2*Ee1*lambda1*me+f2*p1*h*coss^2-2*f2*p1*h*coss+f2*p1*h+Ee1*p1*coss-Ee1*p1+Ee1*me*c}
+  filtered: {-f2*Ee1*lambda1*me+f2*p1*h*coss^2-2*f2*p1*h*coss+f2*p1*h+Ee1*p1*coss-Ee1*p1+Ee1*me*c}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {2*f1*E2*p1*me-4*f1*E2*p2*me*coss-2*f1*Ee1*p1*me+4*f1*Ee1*p2*me*coss-4*f1*Ee1*p2*me+2*f1*Ee2*p1*me-4*f1*Ee2*p2*me*coss-2*f2*E2*p1*me+4*f2*E2*p2*me+2*f2*Ee1*p1*me-2*f2*Ee2*p1*me+4*f2*Ee2*p2*me-f2*p1^2*p2+2*f2*p1*p2^2+2*f2*p1*pe2^2*coss-2*f2*p1*pe2^2-f2*p2^3+f2*p2*pe2^2}
+  filtered: {2*f1*E2*p1*me-4*f1*E2*p2*me*coss-2*f1*Ee1*p1*me+4*f1*Ee1*p2*me*coss-4*f1*Ee1*p2*me+2*f1*Ee2*p1*me-4*f1*Ee2*p2*me*coss-2*f2*E2*p1*me+4*f2*E2*p2*me+2*f2*Ee1*p1*me-2*f2*Ee2*p1*me+4*f2*Ee2*p2*me-f2*p1^2*p2+2*f2*p1*p2^2+2*f2*p1*pe2^2*coss-2*f2*p1*pe2^2-f2*p2^3+f2*p2*pe2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {E2*Ee1*h*me*coss-E2*Ee1*h*me+E2*pe2^2*h*coss-E2*pe2^2*h+Ee1*Ee2*h*me*coss-Ee1*Ee2*h*me+Ee2^2*p1*lambda2*me-Ee2^2*h*me*coss+Ee2*pe2^2*h*coss-Ee2*pe2^2*h}
+  filtered: {E2*Ee1*h*me*coss-E2*Ee1*h*me+E2*pe2^2*h*coss-E2*pe2^2*h+Ee1*Ee2*h*me*coss-Ee1*Ee2*h*me+Ee2^2*p1*lambda2*me-Ee2^2*h*me*coss+Ee2*pe2^2*h*coss-Ee2*pe2^2*h}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-f2*E2*h*me+2*f2*Ee1*p2*lambda1*me+f2*Ee1*h*me-f2*Ee2*h*me+f2*p1^2*h-2*f2*p1*p2*h-f2*p2^2*h*coss+2*f2*p2^2*h+f2*pe2^2*h*coss-2*f2*pe2^2*h-Ee1^2*me+2*Ee1*p1*p2-Ee1*p2^2-2*Ee1*p2*me*c+Ee2^2*me}
+  filtered: {-f2*E2*h*me+2*f2*Ee1*p2*lambda1*me+f2*Ee1*h*me-f2*Ee2*h*me+f2*p1^2*h-2*f2*p1*p2*h-f2*p2^2*h*coss+2*f2*p2^2*h+f2*pe2^2*h*coss-2*f2*pe2^2*h-Ee1^2*me+2*Ee1*p1*p2-Ee1*p2^2-2*Ee1*p2*me*c+Ee2^2*me}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {2*f1*E2*Ee1*p2*me-2*f1*Ee1^2*p2*me+2*f1*Ee1*Ee2*p2*me+f2*E2^2*p1*me-2*f2*E2^2*p2*me-2*f2*E2*Ee1*p1*me+2*f2*E2*Ee1*p2*me+2*f2*E2*Ee2*p1*me-4*f2*E2*Ee2*p2*me+2*f2*Ee1^2*p1*me-2*f2*Ee1*Ee2*p1*me+2*f2*Ee1*Ee2*p2*me+f2*Ee1*p1*p2^2-2*f2*Ee2^2*p2*me}
+  filtered: {2*f1*E2*Ee1*p2*me-2*f1*Ee1^2*p2*me+2*f1*Ee1*Ee2*p2*me+f2*E2^2*p1*me-2*f2*E2^2*p2*me-2*f2*E2*Ee1*p1*me+2*f2*E2*Ee1*p2*me+2*f2*E2*Ee2*p1*me-4*f2*E2*Ee2*p2*me+2*f2*Ee1^2*p1*me-2*f2*Ee1*Ee2*p1*me+2*f2*Ee1*Ee2*p2*me+f2*Ee1*p1*p2^2-2*f2*Ee2^2*p2*me}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-2*f1*Ee1^2*p1*p2-f2*E2^3*me+3*f2*E2^2*Ee1*me-3*f2*E2^2*Ee2*me-4*f2*E2*Ee1^2*me+6*f2*E2*Ee1*Ee2*me+2*f2*E2*Ee1*p1*p2-f2*E2*Ee1*p2^2-2*f2*E2*Ee2^2*me+2*f2*Ee1^3*me-4*f2*Ee1^2*Ee2*me+f2*Ee1^2*p2^2+2*f2*Ee1*Ee2^2*me+2*f2*Ee1*Ee2*p1*p2-f2*Ee1*Ee2*p2^2}
+  filtered: {-2*f1*Ee1^2*p1*p2-f2*E2^3*me+3*f2*E2^2*Ee1*me-3*f2*E2^2*Ee2*me-4*f2*E2*Ee1^2*me+6*f2*E2*Ee1*Ee2*me+2*f2*E2*Ee1*p1*p2-f2*E2*Ee1*p2^2-2*f2*E2*Ee2^2*me+2*f2*Ee1^3*me-4*f2*Ee1^2*Ee2*me+f2*Ee1^2*p2^2+2*f2*Ee1*Ee2^2*me+2*f2*Ee1*Ee2*p1*p2-f2*Ee1*Ee2*p2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-2*f1*E2*p1*p2*me+4*f1*E2*p2^2*me*coss+2*f1*Ee1*p1*p2*me-4*f1*Ee1*p2^2*me*coss+4*f1*Ee1*p2^2*me-2*f1*Ee2*p1*p2*me+4*f1*Ee2*p2^2*me*coss+2*f2*E2*p1*p2*me-4*f2*E2*p2^2*me-2*f2*Ee1*p1*p2*me+2*f2*Ee2*p1*p2*me-4*f2*Ee2*p2^2*me+f2*p1^2*p2^2-f2*p1^2*pe2^2-2*f2*p1*p2^3+2*f2*p1*p2*pe2^2+f2*p2^4-2*f2*p2^2*pe2^2+f2*pe2^4}
+  filtered: {-2*f1*E2*p1*p2*me+4*f1*E2*p2^2*me*coss+2*f1*Ee1*p1*p2*me-4*f1*Ee1*p2^2*me*coss+4*f1*Ee1*p2^2*me-2*f1*Ee2*p1*p2*me+4*f1*Ee2*p2^2*me*coss+2*f2*E2*p1*p2*me-4*f2*E2*p2^2*me-2*f2*Ee1*p1*p2*me+2*f2*Ee2*p1*p2*me-4*f2*Ee2*p2^2*me+f2*p1^2*p2^2-f2*p1^2*pe2^2-2*f2*p1*p2^3+2*f2*p1*p2*pe2^2+f2*p2^4-2*f2*p2^2*pe2^2+f2*pe2^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-2*f1*E2*Ee1*p1*me+4*f1*E2*Ee1*p2*me*coss+4*f1*E2*Ee1*p2*me+2*f1*Ee1^2*p1*me-4*f1*Ee1^2*p2*me*coss-2*f1*Ee1*Ee2*p1*me+4*f1*Ee1*Ee2*p2*me*coss+4*f1*Ee1*Ee2*p2*me+2*f2*E2^2*p1*me-3*f2*E2^2*p2*me-2*f2*E2*Ee1*p1*me-2*f2*E2*Ee1*p2*me+4*f2*E2*Ee2*p1*me-6*f2*E2*Ee2*p2*me+2*f2*Ee1^2*p1*me*coss+2*f2*Ee1^2*p2*me-2*f2*Ee1*Ee2*p1*me-2*f2*Ee1*Ee2*p2*me+f2*Ee1*p2^3-2*f2*Ee2^2*p1*me*coss+2*f2*Ee2^2*p1*me-4*f2*Ee2^2*p2*me}
+  filtered: {-2*f1*E2*Ee1*p1*me+4*f1*E2*Ee1*p2*me*coss+4*f1*E2*Ee1*p2*me+2*f1*Ee1^2*p1*me-4*f1*Ee1^2*p2*me*coss-2*f1*Ee1*Ee2*p1*me+4*f1*Ee1*Ee2*p2*me*coss+4*f1*Ee1*Ee2*p2*me+2*f2*E2^2*p1*me-3*f2*E2^2*p2*me-2*f2*E2*Ee1*p1*me-2*f2*E2*Ee1*p2*me+4*f2*E2*Ee2*p1*me-6*f2*E2*Ee2*p2*me+2*f2*Ee1^2*p1*me*coss+2*f2*Ee1^2*p2*me-2*f2*Ee1*Ee2*p1*me-2*f2*Ee1*Ee2*p2*me+f2*Ee1*p2^3-2*f2*Ee2^2*p1*me*coss+2*f2*Ee2^2*p1*me-4*f2*Ee2^2*p2*me}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-Ee1*h^2*me*coss^2+2*Ee1*h^2*me*coss-Ee1*h^2*me+Ee2^2*lambda1^2*me^2-2*Ee2^2*lambda1*lambda2*me^2+Ee2^2*lambda2^2*me^2-pe2^2*h^2*coss^2+2*pe2^2*h^2*coss-pe2^2*h^2}
+  filtered: {-Ee1*h^2*me*coss^2+2*Ee1*h^2*me*coss-Ee1*h^2*me+Ee2^2*lambda1^2*me^2-2*Ee2^2*lambda1*lambda2*me^2+Ee2^2*lambda2^2*me^2-pe2^2*h^2*coss^2+2*pe2^2*h^2*coss-pe2^2*h^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {f2*E2*p2*h*me+2*f2*Ee1^2*lambda1*me^2+2*f2*Ee1*p1*h*me-4*f2*Ee1*p2*h*me*coss-f2*Ee1*p2*h*me-2*f2*Ee2^2*lambda1*me^2+f2*Ee2*p2*h*me-f2*p1^2*p2*h+2*f2*p1*p2^2*h+f2*p2^3*h*coss-2*f2*p2^3*h-f2*p2*pe2^2*h*coss+2*f2*p2*pe2^2*h-2*E2*Ee1*p1*me+4*E2*Ee1*p2*me*coss+2*Ee1^2*p1*me-4*Ee1^2*p2*me*coss+Ee1^2*p2*me-2*Ee1^2*me^2*c-2*Ee1*Ee2*p1*me+4*Ee1*Ee2*p2*me*coss-2*Ee1*p1*p2^2+Ee1*p2^3-Ee2^2*p2*me+2*Ee2^2*me^2*c}
+  filtered: {f2*E2*p2*h*me+2*f2*Ee1^2*lambda1*me^2+2*f2*Ee1*p1*h*me-4*f2*Ee1*p2*h*me*coss-f2*Ee1*p2*h*me-2*f2*Ee2^2*lambda1*me^2+f2*Ee2*p2*h*me-f2*p1^2*p2*h+2*f2*p1*p2^2*h+f2*p2^3*h*coss-2*f2*p2^3*h-f2*p2*pe2^2*h*coss+2*f2*p2*pe2^2*h-2*E2*Ee1*p1*me+4*E2*Ee1*p2*me*coss+2*Ee1^2*p1*me-4*Ee1^2*p2*me*coss+Ee1^2*p2*me-2*Ee1^2*me^2*c-2*Ee1*Ee2*p1*me+4*Ee1*Ee2*p2*me*coss-2*Ee1*p1*p2^2+Ee1*p2^3-Ee2^2*p2*me+2*Ee2^2*me^2*c}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-2*E2*h^2*me*coss+2*E2*h^2*me+Ee1^2*lambda2^2*me^2+Ee1*p2^2*lambda2^2*me+2*Ee1*p2*lambda1*h*me*coss-4*Ee1*p2*lambda2*h*me*coss+2*Ee1*h^2*me*coss-Ee1*h^2*me-Ee2^2*lambda2^2*me^2-2*Ee2*h^2*me*coss+2*Ee2*h^2*me-p2^2*h^2*coss^2+2*p2^2*h^2*coss-p2^2*h^2+pe2^2*h^2*coss^2-2*pe2^2*h^2*coss+pe2^2*h^2}
+  filtered: {-2*E2*h^2*me*coss+2*E2*h^2*me+Ee1^2*lambda2^2*me^2+Ee1*p2^2*lambda2^2*me+2*Ee1*p2*lambda1*h*me*coss-4*Ee1*p2*lambda2*h*me*coss+2*Ee1*h^2*me*coss-Ee1*h^2*me-Ee2^2*lambda2^2*me^2-2*Ee2*h^2*me*coss+2*Ee2*h^2*me-p2^2*h^2*coss^2+2*p2^2*h^2*coss-p2^2*h^2+pe2^2*h^2*coss^2-2*pe2^2*h^2*coss+pe2^2*h^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {2*f2*E2*p1*p2*h*me-4*f2*E2*p2^2*h*me-2*f2*Ee1*p1*p2*h*me+2*f2*Ee2*p1*p2*h*me-4*f2*Ee2*p2^2*h*me+f2*p1^2*p2^2*h-f2*p1^2*pe2^2*h-2*f2*p1*p2^3*h+2*f2*p1*p2*pe2^2*h+f2*p2^4*h-2*f2*p2^2*pe2^2*h+f2*pe2^4*h+4*E2*Ee1*p2^2*me+2*Ee1^2*p1*p2*me-4*Ee1^2*p2^2*me+4*Ee1*Ee2*p2^2*me+2*Ee1*p1*p2^3-2*Ee2^2*p1*p2*me}
+  filtered: {2*f2*E2*p1*p2*h*me-4*f2*E2*p2^2*h*me-2*f2*Ee1*p1*p2*h*me+2*f2*Ee2*p1*p2*h*me-4*f2*Ee2*p2^2*h*me+f2*p1^2*p2^2*h-f2*p1^2*pe2^2*h-2*f2*p1*p2^3*h+2*f2*p1*p2*pe2^2*h+f2*p2^4*h-2*f2*p2^2*pe2^2*h+f2*pe2^4*h+4*E2*Ee1*p2^2*me+2*Ee1^2*p1*p2*me-4*Ee1^2*p2^2*me+4*Ee1*Ee2*p2^2*me+2*Ee1*p1*p2^3-2*Ee2^2*p1*p2*me}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-4*f1^2*Ee1*p2^2*me-2*f1*f2*E2*p1*p2*me+4*f1*f2*E2*p2^2*me+2*f1*f2*Ee1*p1*p2*me+4*f1*f2*Ee1*p2^2*me-2*f1*f2*Ee2*p1*p2*me+4*f1*f2*Ee2*p2^2*me+2*f2^2*E2*p1*p2*me-4*f2^2*E2*p2^2*me-2*f2^2*Ee1*p1*p2*me+2*f2^2*Ee2*p1*p2*me-4*f2^2*Ee2*p2^2*me+f2^2*p1^2*p2^2-f2^2*p1^2*pe2^2-2*f2^2*p1*p2^3+2*f2^2*p1*p2*pe2^2+f2^2*p2^4-2*f2^2*p2^2*pe2^2+f2^2*pe2^4}
+  filtered: {-4*f1^2*Ee1*p2^2*me-2*f1*f2*E2*p1*p2*me+4*f1*f2*E2*p2^2*me+2*f1*f2*Ee1*p1*p2*me+4*f1*f2*Ee1*p2^2*me-2*f1*f2*Ee2*p1*p2*me+4*f1*f2*Ee2*p2^2*me+2*f2^2*E2*p1*p2*me-4*f2^2*E2*p2^2*me-2*f2^2*Ee1*p1*p2*me+2*f2^2*Ee2*p1*p2*me-4*f2^2*Ee2*p2^2*me+f2^2*p1^2*p2^2-f2^2*p1^2*pe2^2-2*f2^2*p1*p2^3+2*f2^2*p1*p2*pe2^2+f2^2*p2^4-2*f2^2*p2^2*pe2^2+f2^2*pe2^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {2*f1*E2*Ee2^2*p2*me-2*f1*Ee1*Ee2^2*p2*me+2*f1*Ee2^3*p2*me+f2*E2^2*Ee1*p1*me-2*f2*E2^2*Ee1*p2*me+f2*E2^2*p1*pe2^2-2*f2*E2^2*p2*pe2^2+2*f2*E2*Ee1*Ee2*p1*me-4*f2*E2*Ee1*Ee2*p2*me-2*f2*E2*Ee2^2*p1*me+2*f2*E2*Ee2^2*p2*me+2*f2*E2*Ee2*p1*pe2^2-4*f2*E2*Ee2*p2*pe2^2+2*f2*Ee1*Ee2^2*p1*me-2*f2*Ee1*Ee2^2*p2*me-2*f2*Ee2^3*p1*me+2*f2*Ee2^3*p2*me+f2*Ee2^2*p1*p2^2-2*f2*Ee2^2*p2*pe2^2}
+  filtered: {2*f1*E2*Ee2^2*p2*me-2*f1*Ee1*Ee2^2*p2*me+2*f1*Ee2^3*p2*me+f2*E2^2*Ee1*p1*me-2*f2*E2^2*Ee1*p2*me+f2*E2^2*p1*pe2^2-2*f2*E2^2*p2*pe2^2+2*f2*E2*Ee1*Ee2*p1*me-4*f2*E2*Ee1*Ee2*p2*me-2*f2*E2*Ee2^2*p1*me+2*f2*E2*Ee2^2*p2*me+2*f2*E2*Ee2*p1*pe2^2-4*f2*E2*Ee2*p2*pe2^2+2*f2*Ee1*Ee2^2*p1*me-2*f2*Ee1*Ee2^2*p2*me-2*f2*Ee2^3*p1*me+2*f2*Ee2^3*p2*me+f2*Ee2^2*p1*p2^2-2*f2*Ee2^2*p2*pe2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {4*f1*E2^2*Ee1*p2*me-4*f1*E2*Ee1^2*p2*me+8*f1*E2*Ee1*Ee2*p2*me-4*f1*Ee1^2*Ee2*p2*me+2*f1*Ee1^2*p1*p2^2+4*f1*Ee1*Ee2^2*p2*me+2*f2*E2^3*p1*me-3*f2*E2^3*p2*me-4*f2*E2^2*Ee1*p1*me+f2*E2^2*Ee1*p2*me+6*f2*E2^2*Ee2*p1*me-9*f2*E2^2*Ee2*p2*me+4*f2*E2*Ee1^2*p1*me+4*f2*E2*Ee1^2*p2*me-8*f2*E2*Ee1*Ee2*p1*me+2*f2*E2*Ee1*Ee2*p2*me+f2*E2*Ee1*p2^3+4*f2*E2*Ee2^2*p1*me-10*f2*E2*Ee2^2*p2*me-2*f2*Ee1^3*p2*me+4*f2*Ee1^2*Ee2*p1*me+4*f2*Ee1^2*Ee2*p2*me-f2*Ee1^2*p2^3-4*f2*Ee1*Ee2^2*p1*me+2*f2*Ee1*Ee2^2*p2*me+f2*Ee1*Ee2*p2^3-4*f2*Ee2^3*p2*me}
+  filtered: {4*f1*E2^2*Ee1*p2*me-4*f1*E2*Ee1^2*p2*me+8*f1*E2*Ee1*Ee2*p2*me-4*f1*Ee1^2*Ee2*p2*me+2*f1*Ee1^2*p1*p2^2+4*f1*Ee1*Ee2^2*p2*me+2*f2*E2^3*p1*me-3*f2*E2^3*p2*me-4*f2*E2^2*Ee1*p1*me+f2*E2^2*Ee1*p2*me+6*f2*E2^2*Ee2*p1*me-9*f2*E2^2*Ee2*p2*me+4*f2*E2*Ee1^2*p1*me+4*f2*E2*Ee1^2*p2*me-8*f2*E2*Ee1*Ee2*p1*me+2*f2*E2*Ee1*Ee2*p2*me+f2*E2*Ee1*p2^3+4*f2*E2*Ee2^2*p1*me-10*f2*E2*Ee2^2*p2*me-2*f2*Ee1^3*p2*me+4*f2*Ee1^2*Ee2*p1*me+4*f2*Ee1^2*Ee2*p2*me-f2*Ee1^2*p2^3-4*f2*Ee1*Ee2^2*p1*me+2*f2*Ee1*Ee2^2*p2*me+f2*Ee1*Ee2*p2^3-4*f2*Ee2^3*p2*me}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-2*f1*Ee1*Ee2^2*p1*p2-f2*E2^3*Ee1*me-f2*E2^3*pe2^2-3*f2*E2^2*Ee1*Ee2*me+3*f2*E2^2*Ee2^2*me-3*f2*E2^2*Ee2*pe2^2-6*f2*E2*Ee1*Ee2^2*me+6*f2*E2*Ee2^3*me+2*f2*E2*Ee2^2*p1*p2-f2*E2*Ee2^2*p2^2-2*f2*E2*Ee2^2*pe2^2+2*f2*Ee1^2*Ee2^2*me-4*f2*Ee1*Ee2^3*me+f2*Ee1*Ee2^2*p2^2+2*f2*Ee2^4*me+2*f2*Ee2^3*p1*p2-f2*Ee2^3*p2^2}
+  filtered: {-2*f1*Ee1*Ee2^2*p1*p2-f2*E2^3*Ee1*me-f2*E2^3*pe2^2-3*f2*E2^2*Ee1*Ee2*me+3*f2*E2^2*Ee2^2*me-3*f2*E2^2*Ee2*pe2^2-6*f2*E2*Ee1*Ee2^2*me+6*f2*E2*Ee2^3*me+2*f2*E2*Ee2^2*p1*p2-f2*E2*Ee2^2*p2^2-2*f2*E2*Ee2^2*pe2^2+2*f2*Ee1^2*Ee2^2*me-4*f2*Ee1*Ee2^3*me+f2*Ee1*Ee2^2*p2^2+2*f2*Ee2^4*me+2*f2*Ee2^3*p1*p2-f2*Ee2^3*p2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {2*f2*E2*p1*p2*h*me-3*f2*E2*p2^2*h*me-f2*E2*pe2^2*h*me-f2*Ee1^2*h*me^2-4*f2*Ee1*p2^2*h*me*coss-f2*Ee1*p2^2*h*me+f2*Ee2^2*h*me^2+2*f2*Ee2*p1*p2*h*me-3*f2*Ee2*p2^2*h*me-f2*Ee2*pe2^2*h*me+f2*p2^4*h*coss-f2*p2^4*h-2*f2*p2^2*pe2^2*h*coss+2*f2*p2^2*pe2^2*h+f2*pe2^4*h*coss-f2*pe2^4*h-2*E2*Ee1*p1*p2*me+4*E2*Ee1*p2^2*me*coss+4*E2*Ee1*p2^2*me+Ee1^3*me^2+2*Ee1^2*p1*p2*me-4*Ee1^2*p2^2*me*coss-2*Ee1^2*p2^2*me-Ee1*Ee2^2*me^2-2*Ee1*Ee2*p1*p2*me+4*Ee1*Ee2*p2^2*me*coss+4*Ee1*Ee2*p2^2*me+Ee1*p2^4-2*Ee2^2*p2^2*me+Ee2^2*pe2^2*me}
+  filtered: {2*f2*E2*p1*p2*h*me-3*f2*E2*p2^2*h*me-f2*E2*pe2^2*h*me-f2*Ee1^2*h*me^2-4*f2*Ee1*p2^2*h*me*coss-f2*Ee1*p2^2*h*me+f2*Ee2^2*h*me^2+2*f2*Ee2*p1*p2*h*me-3*f2*Ee2*p2^2*h*me-f2*Ee2*pe2^2*h*me+f2*p2^4*h*coss-f2*p2^4*h-2*f2*p2^2*pe2^2*h*coss+2*f2*p2^2*pe2^2*h+f2*pe2^4*h*coss-f2*pe2^4*h-2*E2*Ee1*p1*p2*me+4*E2*Ee1*p2^2*me*coss+4*E2*Ee1*p2^2*me+Ee1^3*me^2+2*Ee1^2*p1*p2*me-4*Ee1^2*p2^2*me*coss-2*Ee1^2*p2^2*me-Ee1*Ee2^2*me^2-2*Ee1*Ee2*p1*p2*me+4*Ee1*Ee2*p2^2*me*coss+4*Ee1*Ee2*p2^2*me+Ee1*p2^4-2*Ee2^2*p2^2*me+Ee2^2*pe2^2*me}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {2*f1^2*Ee1*p1*p2*me-4*f1^2*Ee1*p2^2*me*coss-4*f1^2*Ee1*p2^2*me-2*f1*f2*E2*p1*p2*me+3*f1*f2*E2*p2^2*me+f1*f2*E2*pe2^2*me+f1*f2*Ee1^2*me^2-2*f1*f2*Ee1*p1*p2*me+8*f1*f2*Ee1*p2^2*me*coss+5*f1*f2*Ee1*p2^2*me-f1*f2*Ee2^2*me^2-2*f1*f2*Ee2*p1*p2*me+3*f1*f2*Ee2*p2^2*me+f1*f2*Ee2*pe2^2*me+2*f2^2*E2*p1*p2*me-3*f2^2*E2*p2^2*me-f2^2*E2*pe2^2*me-f2^2*Ee1^2*me^2-4*f2^2*Ee1*p2^2*me*coss-f2^2*Ee1*p2^2*me+f2^2*Ee2^2*me^2+2*f2^2*Ee2*p1*p2*me-3*f2^2*Ee2*p2^2*me-f2^2*Ee2*pe2^2*me+f2^2*p2^4*coss-f2^2*p2^4-2*f2^2*p2^2*pe2^2*coss+2*f2^2*p2^2*pe2^2+f2^2*pe2^4*coss-f2^2*pe2^4}
+  filtered: {2*f1^2*Ee1*p1*p2*me-4*f1^2*Ee1*p2^2*me*coss-4*f1^2*Ee1*p2^2*me-2*f1*f2*E2*p1*p2*me+3*f1*f2*E2*p2^2*me+f1*f2*E2*pe2^2*me+f1*f2*Ee1^2*me^2-2*f1*f2*Ee1*p1*p2*me+8*f1*f2*Ee1*p2^2*me*coss+5*f1*f2*Ee1*p2^2*me-f1*f2*Ee2^2*me^2-2*f1*f2*Ee2*p1*p2*me+3*f1*f2*Ee2*p2^2*me+f1*f2*Ee2*pe2^2*me+2*f2^2*E2*p1*p2*me-3*f2^2*E2*p2^2*me-f2^2*E2*pe2^2*me-f2^2*Ee1^2*me^2-4*f2^2*Ee1*p2^2*me*coss-f2^2*Ee1*p2^2*me+f2^2*Ee2^2*me^2+2*f2^2*Ee2*p1*p2*me-3*f2^2*Ee2*p2^2*me-f2^2*Ee2*pe2^2*me+f2^2*p2^4*coss-f2^2*p2^4-2*f2^2*p2^2*pe2^2*coss+2*f2^2*p2^2*pe2^2+f2^2*pe2^4*coss-f2^2*pe2^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {f2*E2^2*h*me^2-3*f2*E2*Ee1*h*me^2+2*f2*E2*Ee2*h*me^2-f2*E2*pe2^2*h*me-f2*Ee1^2*h*me^2*coss+3*f2*Ee1^2*h*me^2-3*f2*Ee1*Ee2*h*me^2-2*f2*Ee1*p1*p2*h*me-f2*Ee1*p2^2*h*me*coss+2*f2*Ee1*p2^2*h*me+2*f2*Ee2^2*p2*lambda1*me^2+f2*Ee2^2*h*me^2*coss-f2*Ee2*pe2^2*h*me+f2*p1^2*pe2^2*h-2*f2*p1*p2*pe2^2*h-f2*p2^2*pe2^2*h*coss+2*f2*p2^2*pe2^2*h+f2*pe2^4*h*coss-2*f2*pe2^4*h+2*Ee2^2*p1*p2*me-Ee2^2*p2^2*me-2*Ee2^2*p2*me^2*c+Ee2^2*pe2^2*me}
+  filtered: {f2*E2^2*h*me^2-3*f2*E2*Ee1*h*me^2+2*f2*E2*Ee2*h*me^2-f2*E2*pe2^2*h*me-f2*Ee1^2*h*me^2*coss+3*f2*Ee1^2*h*me^2-3*f2*Ee1*Ee2*h*me^2-2*f2*Ee1*p1*p2*h*me-f2*Ee1*p2^2*h*me*coss+2*f2*Ee1*p2^2*h*me+2*f2*Ee2^2*p2*lambda1*me^2+f2*Ee2^2*h*me^2*coss-f2*Ee2*pe2^2*h*me+f2*p1^2*pe2^2*h-2*f2*p1*p2*pe2^2*h-f2*p2^2*pe2^2*h*coss+2*f2*p2^2*pe2^2*h+f2*pe2^4*h*coss-2*f2*pe2^4*h+2*Ee2^2*p1*p2*me-Ee2^2*p2^2*me-2*Ee2^2*p2*me^2*c+Ee2^2*pe2^2*me}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-f2*E2^3*h*me^2+3*f2*E2^2*Ee1*h*me^2-3*f2*E2^2*Ee2*h*me^2+2*f2*E2^2*p1*p2*h*me-3*f2*E2^2*p2^2*h*me-f2*E2^2*pe2^2*h*me-6*f2*E2*Ee1^2*h*me^2+6*f2*E2*Ee1*Ee2*h*me^2-3*f2*E2*Ee1*p2^2*h*me+4*f2*E2*Ee2*p1*p2*h*me-6*f2*E2*Ee2*p2^2*h*me-2*f2*E2*Ee2*pe2^2*h*me+4*f2*Ee1^3*h*me^2-6*f2*Ee1^2*Ee2*h*me^2+4*f2*Ee1^2*p2^2*h*me-3*f2*Ee1*Ee2*p2^2*h*me+f2*Ee1*p2^4*h+2*f2*Ee2^3*h*me^2+2*f2*Ee2^2*p1*p2*h*me-5*f2*Ee2^2*p2^2*h*me+4*E2^2*Ee1*p2^2*me-2*E2*Ee1^2*p1*p2*me-4*E2*Ee1^2*p2^2*me+8*E2*Ee1*Ee2*p2^2*me+4*Ee1^3*p1*p2*me-2*Ee1^2*Ee2*p1*p2*me-4*Ee1^2*Ee2*p2^2*me+2*Ee1^2*p1*p2^3-2*Ee1*Ee2^2*p1*p2*me+4*Ee1*Ee2^2*p2^2*me}
+  filtered: {-f2*E2^3*h*me^2+3*f2*E2^2*Ee1*h*me^2-3*f2*E2^2*Ee2*h*me^2+2*f2*E2^2*p1*p2*h*me-3*f2*E2^2*p2^2*h*me-f2*E2^2*pe2^2*h*me-6*f2*E2*Ee1^2*h*me^2+6*f2*E2*Ee1*Ee2*h*me^2-3*f2*E2*Ee1*p2^2*h*me+4*f2*E2*Ee2*p1*p2*h*me-6*f2*E2*Ee2*p2^2*h*me-2*f2*E2*Ee2*pe2^2*h*me+4*f2*Ee1^3*h*me^2-6*f2*Ee1^2*Ee2*h*me^2+4*f2*Ee1^2*p2^2*h*me-3*f2*Ee1*Ee2*p2^2*h*me+f2*Ee1*p2^4*h+2*f2*Ee2^3*h*me^2+2*f2*Ee2^2*p1*p2*h*me-5*f2*Ee2^2*p2^2*h*me+4*E2^2*Ee1*p2^2*me-2*E2*Ee1^2*p1*p2*me-4*E2*Ee1^2*p2^2*me+8*E2*Ee1*Ee2*p2^2*me+4*Ee1^3*p1*p2*me-2*Ee1^2*Ee2*p1*p2*me-4*Ee1^2*Ee2*p2^2*me+2*Ee1^2*p1*p2^3-2*Ee1*Ee2^2*p1*p2*me+4*Ee1*Ee2^2*p2^2*me}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-2*f1^2*Ee1^2*p1*p2*me-4*f1^2*Ee1^2*p2^2*me-f1*f2*E2^3*me^2+3*f1*f2*E2^2*Ee1*me^2-3*f1*f2*E2^2*Ee2*me^2-4*f1*f2*E2*Ee1^2*me^2+6*f1*f2*E2*Ee1*Ee2*me^2+7*f1*f2*E2*Ee1*p2^2*me-2*f1*f2*E2*Ee2^2*me^2+2*f1*f2*Ee1^3*me^2-4*f1*f2*Ee1^2*Ee2*me^2+f1*f2*Ee1^2*p2^2*me+2*f1*f2*Ee1*Ee2^2*me^2+7*f1*f2*Ee1*Ee2*p2^2*me-f2^2*E2^3*me^2+3*f2^2*E2^2*Ee1*me^2-3*f2^2*E2^2*Ee2*me^2+2*f2^2*E2^2*p1*p2*me-3*f2^2*E2^2*p2^2*me-f2^2*E2^2*pe2^2*me-6*f2^2*E2*Ee1^2*me^2+6*f2^2*E2*Ee1*Ee2*me^2-3*f2^2*E2*Ee1*p2^2*me+4*f2^2*E2*Ee2*p1*p2*me-6*f2^2*E2*Ee2*p2^2*me-2*f2^2*E2*Ee2*pe2^2*me+4*f2^2*Ee1^3*me^2-6*f2^2*Ee1^2*Ee2*me^2+4*f2^2*Ee1^2*p2^2*me-3*f2^2*Ee1*Ee2*p2^2*me+f2^2*Ee1*p2^4+2*f2^2*Ee2^3*me^2+2*f2^2*Ee2^2*p1*p2*me-5*f2^2*Ee2^2*p2^2*me}
+  filtered: {-2*f1^2*Ee1^2*p1*p2*me-4*f1^2*Ee1^2*p2^2*me-f1*f2*E2^3*me^2+3*f1*f2*E2^2*Ee1*me^2-3*f1*f2*E2^2*Ee2*me^2-4*f1*f2*E2*Ee1^2*me^2+6*f1*f2*E2*Ee1*Ee2*me^2+7*f1*f2*E2*Ee1*p2^2*me-2*f1*f2*E2*Ee2^2*me^2+2*f1*f2*Ee1^3*me^2-4*f1*f2*Ee1^2*Ee2*me^2+f1*f2*Ee1^2*p2^2*me+2*f1*f2*Ee1*Ee2^2*me^2+7*f1*f2*Ee1*Ee2*p2^2*me-f2^2*E2^3*me^2+3*f2^2*E2^2*Ee1*me^2-3*f2^2*E2^2*Ee2*me^2+2*f2^2*E2^2*p1*p2*me-3*f2^2*E2^2*p2^2*me-f2^2*E2^2*pe2^2*me-6*f2^2*E2*Ee1^2*me^2+6*f2^2*E2*Ee1*Ee2*me^2-3*f2^2*E2*Ee1*p2^2*me+4*f2^2*E2*Ee2*p1*p2*me-6*f2^2*E2*Ee2*p2^2*me-2*f2^2*E2*Ee2*pe2^2*me+4*f2^2*Ee1^3*me^2-6*f2^2*Ee1^2*Ee2*me^2+4*f2^2*Ee1^2*p2^2*me-3*f2^2*Ee1*Ee2*p2^2*me+f2^2*Ee1*p2^4+2*f2^2*Ee2^3*me^2+2*f2^2*Ee2^2*p1*p2*me-5*f2^2*Ee2^2*p2^2*me}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-4*f1^2*E2*Ee1^2*p2*me+4*f1^2*Ee1^3*p2*me-4*f1^2*Ee1^2*Ee2*p2*me-2*f1*f2*E2^2*Ee1*p1*me+8*f1*f2*E2^2*Ee1*p2*me+4*f1*f2*E2*Ee1^2*p1*me-8*f1*f2*E2*Ee1^2*p2*me-4*f1*f2*E2*Ee1*Ee2*p1*me+16*f1*f2*E2*Ee1*Ee2*p2*me-4*f1*f2*Ee1^3*p1*me+4*f1*f2*Ee1^2*Ee2*p1*me-8*f1*f2*Ee1^2*Ee2*p2*me+8*f1*f2*Ee1*Ee2^2*p2*me+2*f2^2*E2^3*p1*me-3*f2^2*E2^3*p2*me-4*f2^2*E2^2*Ee1*p1*me+f2^2*E2^2*Ee1*p2*me+6*f2^2*E2^2*Ee2*p1*me-9*f2^2*E2^2*Ee2*p2*me+4*f2^2*E2*Ee1^2*p1*me+4*f2^2*E2*Ee1^2*p2*me-8*f2^2*E2*Ee1*Ee2*p1*me+2*f2^2*E2*Ee1*Ee2*p2*me+f2^2*E2*Ee1*p2^3+4*f2^2*E2*Ee2^2*p1*me-10*f2^2*E2*Ee2^2*p2*me-2*f2^2*Ee1^3*p2*me+4*f2^2*Ee1^2*Ee2*p1*me+4*f2^2*Ee1^2*Ee2*p2*me-f2^2*Ee1^2*p2^3-4*f2^2*Ee1*Ee2^2*p1*me+2*f2^2*Ee1*Ee2^2*p2*me+f2^2*Ee1*Ee2*p2^3-4*f2^2*Ee2^3*p2*me}
+  filtered: {-4*f1^2*E2*Ee1^2*p2*me+4*f1^2*Ee1^3*p2*me-4*f1^2*Ee1^2*Ee2*p2*me-2*f1*f2*E2^2*Ee1*p1*me+8*f1*f2*E2^2*Ee1*p2*me+4*f1*f2*E2*Ee1^2*p1*me-8*f1*f2*E2*Ee1^2*p2*me-4*f1*f2*E2*Ee1*Ee2*p1*me+16*f1*f2*E2*Ee1*Ee2*p2*me-4*f1*f2*Ee1^3*p1*me+4*f1*f2*Ee1^2*Ee2*p1*me-8*f1*f2*Ee1^2*Ee2*p2*me+8*f1*f2*Ee1*Ee2^2*p2*me+2*f2^2*E2^3*p1*me-3*f2^2*E2^3*p2*me-4*f2^2*E2^2*Ee1*p1*me+f2^2*E2^2*Ee1*p2*me+6*f2^2*E2^2*Ee2*p1*me-9*f2^2*E2^2*Ee2*p2*me+4*f2^2*E2*Ee1^2*p1*me+4*f2^2*E2*Ee1^2*p2*me-8*f2^2*E2*Ee1*Ee2*p1*me+2*f2^2*E2*Ee1*Ee2*p2*me+f2^2*E2*Ee1*p2^3+4*f2^2*E2*Ee2^2*p1*me-10*f2^2*E2*Ee2^2*p2*me-2*f2^2*Ee1^3*p2*me+4*f2^2*Ee1^2*Ee2*p1*me+4*f2^2*Ee1^2*Ee2*p2*me-f2^2*Ee1^2*p2^3-4*f2^2*Ee1*Ee2^2*p1*me+2*f2^2*Ee1*Ee2^2*p2*me+f2^2*Ee1*Ee2*p2^3-4*f2^2*Ee2^3*p2*me}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {4*f1*E2^2*Ee2^2*p2*me-4*f1*E2*Ee1*Ee2^2*p2*me+8*f1*E2*Ee2^3*p2*me-4*f1*Ee1*Ee2^3*p2*me+2*f1*Ee1*Ee2^2*p1*p2^2+4*f1*Ee2^4*p2*me+2*f2*E2^3*Ee1*p1*me-3*f2*E2^3*Ee1*p2*me+2*f2*E2^3*p1*pe2^2-3*f2*E2^3*p2*pe2^2+6*f2*E2^2*Ee1*Ee2*p1*me-9*f2*E2^2*Ee1*Ee2*p2*me-4*f2*E2^2*Ee2^2*p1*me+f2*E2^2*Ee2^2*p2*me+6*f2*E2^2*Ee2*p1*pe2^2-9*f2*E2^2*Ee2*p2*pe2^2+8*f2*E2*Ee1*Ee2^2*p1*me-6*f2*E2*Ee1*Ee2^2*p2*me-8*f2*E2*Ee2^3*p1*me+2*f2*E2*Ee2^3*p2*me+4*f2*E2*Ee2^2*p1*pe2^2+f2*E2*Ee2^2*p2^3-10*f2*E2*Ee2^2*p2*pe2^2-2*f2*Ee1^2*Ee2^2*p2*me+4*f2*Ee1*Ee2^3*p1*me-f2*Ee1*Ee2^2*p2^3-4*f2*Ee2^4*p1*me+2*f2*Ee2^4*p2*me+f2*Ee2^3*p2^3-4*f2*Ee2^3*p2*pe2^2}
+  filtered: {4*f1*E2^2*Ee2^2*p2*me-4*f1*E2*Ee1*Ee2^2*p2*me+8*f1*E2*Ee2^3*p2*me-4*f1*Ee1*Ee2^3*p2*me+2*f1*Ee1*Ee2^2*p1*p2^2+4*f1*Ee2^4*p2*me+2*f2*E2^3*Ee1*p1*me-3*f2*E2^3*Ee1*p2*me+2*f2*E2^3*p1*pe2^2-3*f2*E2^3*p2*pe2^2+6*f2*E2^2*Ee1*Ee2*p1*me-9*f2*E2^2*Ee1*Ee2*p2*me-4*f2*E2^2*Ee2^2*p1*me+f2*E2^2*Ee2^2*p2*me+6*f2*E2^2*Ee2*p1*pe2^2-9*f2*E2^2*Ee2*p2*pe2^2+8*f2*E2*Ee1*Ee2^2*p1*me-6*f2*E2*Ee1*Ee2^2*p2*me-8*f2*E2*Ee2^3*p1*me+2*f2*E2*Ee2^3*p2*me+4*f2*E2*Ee2^2*p1*pe2^2+f2*E2*Ee2^2*p2^3-10*f2*E2*Ee2^2*p2*pe2^2-2*f2*Ee1^2*Ee2^2*p2*me+4*f2*Ee1*Ee2^3*p1*me-f2*Ee1*Ee2^2*p2^3-4*f2*Ee2^4*p1*me+2*f2*Ee2^4*p2*me+f2*Ee2^3*p2^3-4*f2*Ee2^3*p2*pe2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-2*E2*Ee1*h^2*me^2*coss+2*E2*Ee1*h^2*me^2-2*E2*pe2^2*h^2*me*coss+2*E2*pe2^2*h^2*me-Ee1^2*h^2*me^2*coss^2+2*Ee1^2*h^2*me^2*coss-Ee1^2*h^2*me^2-2*Ee1*Ee2*h^2*me^2*coss+2*Ee1*Ee2*h^2*me^2-Ee1*p2^2*h^2*me*coss^2+2*Ee1*p2^2*h^2*me*coss-Ee1*p2^2*h^2*me+Ee2^2*p2^2*lambda2^2*me^2+2*Ee2^2*p2*lambda1*h*me^2*coss-4*Ee2^2*p2*lambda2*h*me^2*coss-Ee2^2*pe2^2*lambda2^2*me^2+Ee2^2*h^2*me^2*coss^2-2*Ee2*pe2^2*h^2*me*coss+2*Ee2*pe2^2*h^2*me-p2^2*pe2^2*h^2*coss^2+2*p2^2*pe2^2*h^2*coss-p2^2*pe2^2*h^2+pe2^4*h^2*coss^2-2*pe2^4*h^2*coss+pe2^4*h^2}
+  filtered: {-2*E2*Ee1*h^2*me^2*coss+2*E2*Ee1*h^2*me^2-2*E2*pe2^2*h^2*me*coss+2*E2*pe2^2*h^2*me-Ee1^2*h^2*me^2*coss^2+2*Ee1^2*h^2*me^2*coss-Ee1^2*h^2*me^2-2*Ee1*Ee2*h^2*me^2*coss+2*Ee1*Ee2*h^2*me^2-Ee1*p2^2*h^2*me*coss^2+2*Ee1*p2^2*h^2*me*coss-Ee1*p2^2*h^2*me+Ee2^2*p2^2*lambda2^2*me^2+2*Ee2^2*p2*lambda1*h*me^2*coss-4*Ee2^2*p2*lambda2*h*me^2*coss-Ee2^2*pe2^2*lambda2^2*me^2+Ee2^2*h^2*me^2*coss^2-2*Ee2*pe2^2*h^2*me*coss+2*Ee2*pe2^2*h^2*me-p2^2*pe2^2*h^2*coss^2+2*p2^2*pe2^2*h^2*coss-p2^2*pe2^2*h^2+pe2^4*h^2*coss^2-2*pe2^4*h^2*coss+pe2^4*h^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {2*f2*E2^2*p1*h*me^2-3*f2*E2^2*p2*h*me^2-4*f2*E2*Ee1*p1*h*me^2+f2*E2*Ee1*p2*h*me^2+4*f2*E2*Ee2*p1*h*me^2-6*f2*E2*Ee2*p2*h*me^2-f2*E2*p2*pe2^2*h*me+4*f2*Ee1^2*p1*h*me^2-f2*Ee1^2*p2*h*me^2*coss+3*f2*Ee1^2*p2*h*me^2-4*f2*Ee1*Ee2*p1*h*me^2+f2*Ee1*Ee2*p2*h*me^2-f2*Ee1*p2^3*h*me*coss+2*f2*Ee1*p2^3*h*me-2*f2*Ee2^2*p1*h*me^2+5*f2*Ee2^2*p2*h*me^2*coss-4*f2*Ee2^2*p2*h*me^2+2*f2*Ee2^2*pe2^2*lambda1*me^2-f2*Ee2*p2*pe2^2*h*me+f2*p1^2*p2*pe2^2*h-2*f2*p1*p2^2*pe2^2*h-f2*p2^3*pe2^2*h*coss+2*f2*p2^3*pe2^2*h+f2*p2*pe2^4*h*coss-2*f2*p2*pe2^4*h+4*E2^2*Ee1*p2*me^2-8*E2*Ee1^2*p2*me^2+8*E2*Ee1*Ee2*p2*me^2+2*E2*Ee2^2*p1*me^2-4*E2*Ee2^2*p2*me^2*coss+4*Ee1^3*p2*me^2-8*Ee1^2*Ee2*p2*me^2-2*Ee1*Ee2^2*p1*me^2+4*Ee1*Ee2^2*p2*me^2*coss+4*Ee1*Ee2^2*p2*me^2+2*Ee2^3*p1*me^2-4*Ee2^3*p2*me^2*coss+2*Ee2^2*p1*p2^2*me-Ee2^2*p2^3*me+Ee2^2*p2*pe2^2*me-2*Ee2^2*pe2^2*me^2*c}
+  filtered: {2*f2*E2^2*p1*h*me^2-3*f2*E2^2*p2*h*me^2-4*f2*E2*Ee1*p1*h*me^2+f2*E2*Ee1*p2*h*me^2+4*f2*E2*Ee2*p1*h*me^2-6*f2*E2*Ee2*p2*h*me^2-f2*E2*p2*pe2^2*h*me+4*f2*Ee1^2*p1*h*me^2-f2*Ee1^2*p2*h*me^2*coss+3*f2*Ee1^2*p2*h*me^2-4*f2*Ee1*Ee2*p1*h*me^2+f2*Ee1*Ee2*p2*h*me^2-f2*Ee1*p2^3*h*me*coss+2*f2*Ee1*p2^3*h*me-2*f2*Ee2^2*p1*h*me^2+5*f2*Ee2^2*p2*h*me^2*coss-4*f2*Ee2^2*p2*h*me^2+2*f2*Ee2^2*pe2^2*lambda1*me^2-f2*Ee2*p2*pe2^2*h*me+f2*p1^2*p2*pe2^2*h-2*f2*p1*p2^2*pe2^2*h-f2*p2^3*pe2^2*h*coss+2*f2*p2^3*pe2^2*h+f2*p2*pe2^4*h*coss-2*f2*p2*pe2^4*h+4*E2^2*Ee1*p2*me^2-8*E2*Ee1^2*p2*me^2+8*E2*Ee1*Ee2*p2*me^2+2*E2*Ee2^2*p1*me^2-4*E2*Ee2^2*p2*me^2*coss+4*Ee1^3*p2*me^2-8*Ee1^2*Ee2*p2*me^2-2*Ee1*Ee2^2*p1*me^2+4*Ee1*Ee2^2*p2*me^2*coss+4*Ee1*Ee2^2*p2*me^2+2*Ee2^3*p1*me^2-4*Ee2^3*p2*me^2*coss+2*Ee2^2*p1*p2^2*me-Ee2^2*p2^3*me+Ee2^2*p2*pe2^2*me-2*Ee2^2*pe2^2*me^2*c}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {f2*E2^4*h*me^2-4*f2*E2^3*Ee1*h*me^2+4*f2*E2^3*Ee2*h*me^2-f2*E2^3*pe2^2*h*me+5*f2*E2^2*Ee1^2*h*me^2-12*f2*E2^2*Ee1*Ee2*h*me^2-2*f2*E2^2*Ee1*p2^2*h*me+7*f2*E2^2*Ee2^2*h*me^2-3*f2*E2^2*Ee2*pe2^2*h*me+2*f2*E2^2*p1*p2*pe2^2*h-3*f2*E2^2*p2^2*pe2^2*h-f2*E2^2*pe2^4*h-2*f2*E2*Ee1^3*h*me^2+10*f2*E2*Ee1^2*Ee2*h*me^2-f2*E2*Ee1^2*p2^2*h*me-14*f2*E2*Ee1*Ee2^2*h*me^2-4*f2*E2*Ee1*Ee2*p2^2*h*me+6*f2*E2*Ee2^3*h*me^2-3*f2*E2*Ee2^2*p2^2*h*me+4*f2*E2*Ee2*p1*p2*pe2^2*h-6*f2*E2*Ee2*p2^2*pe2^2*h-2*f2*E2*Ee2*pe2^4*h-2*f2*Ee1^3*Ee2*h*me^2+8*f2*Ee1^2*Ee2^2*h*me^2-f2*Ee1^2*Ee2*p2^2*h*me-6*f2*Ee1*Ee2^3*h*me^2-3*f2*Ee2^3*p2^2*h*me+2*f2*Ee2^3*pe2^2*h*me+2*f2*Ee2^2*p1*p2*pe2^2*h+f2*Ee2^2*p2^4*h-5*f2*Ee2^2*p2^2*pe2^2*h+2*E2^2*Ee1^2*p1*p2*me+4*E2^2*Ee2^2*p2^2*me-2*E2*Ee1^3*p1*p2*me+4*E2*Ee1^2*Ee2*p1*p2*me-2*E2*Ee1*Ee2^2*p1*p2*me-4*E2*Ee1*Ee2^2*p2^2*me+8*E2*Ee2^3*p2^2*me-2*Ee1^3*Ee2*p1*p2*me+6*Ee1^2*Ee2^2*p1*p2*me-2*Ee1*Ee2^3*p1*p2*me-4*Ee1*Ee2^3*p2^2*me+2*Ee1*Ee2^2*p1*p2^3-2*Ee2^4*p1*p2*me+4*Ee2^4*p2^2*me}
+  filtered: {f2*E2^4*h*me^2-4*f2*E2^3*Ee1*h*me^2+4*f2*E2^3*Ee2*h*me^2-f2*E2^3*pe2^2*h*me+5*f2*E2^2*Ee1^2*h*me^2-12*f2*E2^2*Ee1*Ee2*h*me^2-2*f2*E2^2*Ee1*p2^2*h*me+7*f2*E2^2*Ee2^2*h*me^2-3*f2*E2^2*Ee2*pe2^2*h*me+2*f2*E2^2*p1*p2*pe2^2*h-3*f2*E2^2*p2^2*pe2^2*h-f2*E2^2*pe2^4*h-2*f2*E2*Ee1^3*h*me^2+10*f2*E2*Ee1^2*Ee2*h*me^2-f2*E2*Ee1^2*p2^2*h*me-14*f2*E2*Ee1*Ee2^2*h*me^2-4*f2*E2*Ee1*Ee2*p2^2*h*me+6*f2*E2*Ee2^3*h*me^2-3*f2*E2*Ee2^2*p2^2*h*me+4*f2*E2*Ee2*p1*p2*pe2^2*h-6*f2*E2*Ee2*p2^2*pe2^2*h-2*f2*E2*Ee2*pe2^4*h-2*f2*Ee1^3*Ee2*h*me^2+8*f2*Ee1^2*Ee2^2*h*me^2-f2*Ee1^2*Ee2*p2^2*h*me-6*f2*Ee1*Ee2^3*h*me^2-3*f2*Ee2^3*p2^2*h*me+2*f2*Ee2^3*pe2^2*h*me+2*f2*Ee2^2*p1*p2*pe2^2*h+f2*Ee2^2*p2^4*h-5*f2*Ee2^2*p2^2*pe2^2*h+2*E2^2*Ee1^2*p1*p2*me+4*E2^2*Ee2^2*p2^2*me-2*E2*Ee1^3*p1*p2*me+4*E2*Ee1^2*Ee2*p1*p2*me-2*E2*Ee1*Ee2^2*p1*p2*me-4*E2*Ee1*Ee2^2*p2^2*me+8*E2*Ee2^3*p2^2*me-2*Ee1^3*Ee2*p1*p2*me+6*Ee1^2*Ee2^2*p1*p2*me-2*Ee1*Ee2^3*p1*p2*me-4*Ee1*Ee2^3*p2^2*me+2*Ee1*Ee2^2*p1*p2^3-2*Ee2^4*p1*p2*me+4*Ee2^4*p2^2*me}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {2*f1^2*Ee1^3*p1*p2*me-2*f1^2*Ee1*Ee2^2*p1*p2*me-4*f1^2*Ee1*Ee2^2*p2^2*me-f1*f2*E2^3*pe2^2*me-3*f1*f2*E2^2*Ee1^2*me^2+3*f1*f2*E2^2*Ee2^2*me^2-3*f1*f2*E2^2*Ee2*pe2^2*me+4*f1*f2*E2*Ee1^3*me^2-6*f1*f2*E2*Ee1^2*Ee2*me^2+f1*f2*E2*Ee1^2*p2^2*me-4*f1*f2*E2*Ee1*Ee2^2*me^2+6*f1*f2*E2*Ee2^3*me^2+7*f1*f2*E2*Ee2^2*p2^2*me-2*f1*f2*E2*Ee2^2*pe2^2*me-2*f1*f2*Ee1^4*me^2+4*f1*f2*Ee1^3*Ee2*me^2-f1*f2*Ee1^3*p2^2*me+f1*f2*Ee1^2*Ee2*p2^2*me-4*f1*f2*Ee1*Ee2^3*me^2+f1*f2*Ee1*Ee2^2*p2^2*me+2*f1*f2*Ee2^4*me^2+7*f1*f2*Ee2^3*p2^2*me+f2^2*E2^4*me^2-4*f2^2*E2^3*Ee1*me^2+4*f2^2*E2^3*Ee2*me^2-f2^2*E2^3*pe2^2*me+5*f2^2*E2^2*Ee1^2*me^2-12*f2^2*E2^2*Ee1*Ee2*me^2-2*f2^2*E2^2*Ee1*p2^2*me+7*f2^2*E2^2*Ee2^2*me^2-3*f2^2*E2^2*Ee2*pe2^2*me+2*f2^2*E2^2*p1*p2*pe2^2-3*f2^2*E2^2*p2^2*pe2^2-f2^2*E2^2*pe2^4-2*f2^2*E2*Ee1^3*me^2+10*f2^2*E2*Ee1^2*Ee2*me^2-f2^2*E2*Ee1^2*p2^2*me-14*f2^2*E2*Ee1*Ee2^2*me^2-4*f2^2*E2*Ee1*Ee2*p2^2*me+6*f2^2*E2*Ee2^3*me^2-3*f2^2*E2*Ee2^2*p2^2*me+4*f2^2*E2*Ee2*p1*p2*pe2^2-6*f2^2*E2*Ee2*p2^2*pe2^2-2*f2^2*E2*Ee2*pe2^4-2*f2^2*Ee1^3*Ee2*me^2+8*f2^2*Ee1^2*Ee2^2*me^2-f2^2*Ee1^2*Ee2*p2^2*me-6*f2^2*Ee1*Ee2^3*me^2-3*f2^2*Ee2^3*p2^2*me+2*f2^2*Ee2^3*pe2^2*me+2*f2^2*Ee2^2*p1*p2*pe2^2+f2^2*Ee2^2*p2^4-5*f2^2*Ee2^2*p2^2*pe2^2}
+  filtered: {2*f1^2*Ee1^3*p1*p2*me-2*f1^2*Ee1*Ee2^2*p1*p2*me-4*f1^2*Ee1*Ee2^2*p2^2*me-f1*f2*E2^3*pe2^2*me-3*f1*f2*E2^2*Ee1^2*me^2+3*f1*f2*E2^2*Ee2^2*me^2-3*f1*f2*E2^2*Ee2*pe2^2*me+4*f1*f2*E2*Ee1^3*me^2-6*f1*f2*E2*Ee1^2*Ee2*me^2+f1*f2*E2*Ee1^2*p2^2*me-4*f1*f2*E2*Ee1*Ee2^2*me^2+6*f1*f2*E2*Ee2^3*me^2+7*f1*f2*E2*Ee2^2*p2^2*me-2*f1*f2*E2*Ee2^2*pe2^2*me-2*f1*f2*Ee1^4*me^2+4*f1*f2*Ee1^3*Ee2*me^2-f1*f2*Ee1^3*p2^2*me+f1*f2*Ee1^2*Ee2*p2^2*me-4*f1*f2*Ee1*Ee2^3*me^2+f1*f2*Ee1*Ee2^2*p2^2*me+2*f1*f2*Ee2^4*me^2+7*f1*f2*Ee2^3*p2^2*me+f2^2*E2^4*me^2-4*f2^2*E2^3*Ee1*me^2+4*f2^2*E2^3*Ee2*me^2-f2^2*E2^3*pe2^2*me+5*f2^2*E2^2*Ee1^2*me^2-12*f2^2*E2^2*Ee1*Ee2*me^2-2*f2^2*E2^2*Ee1*p2^2*me+7*f2^2*E2^2*Ee2^2*me^2-3*f2^2*E2^2*Ee2*pe2^2*me+2*f2^2*E2^2*p1*p2*pe2^2-3*f2^2*E2^2*p2^2*pe2^2-f2^2*E2^2*pe2^4-2*f2^2*E2*Ee1^3*me^2+10*f2^2*E2*Ee1^2*Ee2*me^2-f2^2*E2*Ee1^2*p2^2*me-14*f2^2*E2*Ee1*Ee2^2*me^2-4*f2^2*E2*Ee1*Ee2*p2^2*me+6*f2^2*E2*Ee2^3*me^2-3*f2^2*E2*Ee2^2*p2^2*me+4*f2^2*E2*Ee2*p1*p2*pe2^2-6*f2^2*E2*Ee2*p2^2*pe2^2-2*f2^2*E2*Ee2*pe2^4-2*f2^2*Ee1^3*Ee2*me^2+8*f2^2*Ee1^2*Ee2^2*me^2-f2^2*Ee1^2*Ee2*p2^2*me-6*f2^2*Ee1*Ee2^3*me^2-3*f2^2*Ee2^3*p2^2*me+2*f2^2*Ee2^3*pe2^2*me+2*f2^2*Ee2^2*p1*p2*pe2^2+f2^2*Ee2^2*p2^4-5*f2^2*Ee2^2*p2^2*pe2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-4*f1^2*E2*Ee1*Ee2^2*p2*me+4*f1^2*Ee1^2*Ee2^2*p2*me-4*f1^2*Ee1*Ee2^3*p2*me-2*f1*f2*E2^2*Ee2^2*p1*me+8*f1*f2*E2^2*Ee2^2*p2*me+4*f1*f2*E2*Ee1*Ee2^2*p1*me-8*f1*f2*E2*Ee1*Ee2^2*p2*me-4*f1*f2*E2*Ee2^3*p1*me+16*f1*f2*E2*Ee2^3*p2*me-4*f1*f2*Ee1^2*Ee2^2*p1*me+4*f1*f2*Ee1*Ee2^3*p1*me-8*f1*f2*Ee1*Ee2^3*p2*me+8*f1*f2*Ee2^4*p2*me+2*f2^2*E2^3*Ee1*p1*me-3*f2^2*E2^3*Ee1*p2*me+2*f2^2*E2^3*p1*pe2^2-3*f2^2*E2^3*p2*pe2^2+6*f2^2*E2^2*Ee1*Ee2*p1*me-9*f2^2*E2^2*Ee1*Ee2*p2*me-4*f2^2*E2^2*Ee2^2*p1*me+f2^2*E2^2*Ee2^2*p2*me+6*f2^2*E2^2*Ee2*p1*pe2^2-9*f2^2*E2^2*Ee2*p2*pe2^2+8*f2^2*E2*Ee1*Ee2^2*p1*me-6*f2^2*E2*Ee1*Ee2^2*p2*me-8*f2^2*E2*Ee2^3*p1*me+2*f2^2*E2*Ee2^3*p2*me+4*f2^2*E2*Ee2^2*p1*pe2^2+f2^2*E2*Ee2^2*p2^3-10*f2^2*E2*Ee2^2*p2*pe2^2-2*f2^2*Ee1^2*Ee2^2*p2*me+4*f2^2*Ee1*Ee2^3*p1*me-f2^2*Ee1*Ee2^2*p2^3-4*f2^2*Ee2^4*p1*me+2*f2^2*Ee2^4*p2*me+f2^2*Ee2^3*p2^3-4*f2^2*Ee2^3*p2*pe2^2}
+  filtered: {-4*f1^2*E2*Ee1*Ee2^2*p2*me+4*f1^2*Ee1^2*Ee2^2*p2*me-4*f1^2*Ee1*Ee2^3*p2*me-2*f1*f2*E2^2*Ee2^2*p1*me+8*f1*f2*E2^2*Ee2^2*p2*me+4*f1*f2*E2*Ee1*Ee2^2*p1*me-8*f1*f2*E2*Ee1*Ee2^2*p2*me-4*f1*f2*E2*Ee2^3*p1*me+16*f1*f2*E2*Ee2^3*p2*me-4*f1*f2*Ee1^2*Ee2^2*p1*me+4*f1*f2*Ee1*Ee2^3*p1*me-8*f1*f2*Ee1*Ee2^3*p2*me+8*f1*f2*Ee2^4*p2*me+2*f2^2*E2^3*Ee1*p1*me-3*f2^2*E2^3*Ee1*p2*me+2*f2^2*E2^3*p1*pe2^2-3*f2^2*E2^3*p2*pe2^2+6*f2^2*E2^2*Ee1*Ee2*p1*me-9*f2^2*E2^2*Ee1*Ee2*p2*me-4*f2^2*E2^2*Ee2^2*p1*me+f2^2*E2^2*Ee2^2*p2*me+6*f2^2*E2^2*Ee2*p1*pe2^2-9*f2^2*E2^2*Ee2*p2*pe2^2+8*f2^2*E2*Ee1*Ee2^2*p1*me-6*f2^2*E2*Ee1*Ee2^2*p2*me-8*f2^2*E2*Ee2^3*p1*me+2*f2^2*E2*Ee2^3*p2*me+4*f2^2*E2*Ee2^2*p1*pe2^2+f2^2*E2*Ee2^2*p2^3-10*f2^2*E2*Ee2^2*p2*pe2^2-2*f2^2*Ee1^2*Ee2^2*p2*me+4*f2^2*Ee1*Ee2^3*p1*me-f2^2*Ee1*Ee2^2*p2^3-4*f2^2*Ee2^4*p1*me+2*f2^2*Ee2^4*p2*me+f2^2*Ee2^3*p2^3-4*f2^2*Ee2^3*p2*pe2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {4*f1*E2^2*Ee1*Ee2^2*p2*me^2+4*f1*E2^2*Ee2^2*p2*pe2^2*me+8*f1*E2*Ee1*Ee2^3*p2*me^2-4*f1*E2*Ee2^4*p2*me^2+8*f1*E2*Ee2^3*p2*pe2^2*me+4*f1*Ee1*Ee2^4*p2*me^2-4*f1*Ee2^5*p2*me^2+2*f1*Ee2^4*p1*p2^2*me+4*f1*Ee2^4*p2*pe2^2*me-2*f2*E2^3*Ee1^2*p1*me^2+3*f2*E2^3*Ee1^2*p2*me^2+4*f2*E2^3*Ee2^2*p1*me^2-6*f2*E2^3*Ee2^2*p2*me^2+2*f2*E2^3*p1*pe2^4-3*f2*E2^3*p2*pe2^4-6*f2*E2^2*Ee1^2*Ee2*p1*me^2+9*f2*E2^2*Ee1^2*Ee2*p2*me^2-4*f2*E2^2*Ee1*Ee2^2*p1*me^2+f2*E2^2*Ee1*Ee2^2*p2*me^2+12*f2*E2^2*Ee2^3*p1*me^2-18*f2*E2^2*Ee2^3*p2*me^2-4*f2*E2^2*Ee2^2*p1*pe2^2*me+f2*E2^2*Ee2^2*p2*pe2^2*me+6*f2*E2^2*Ee2*p1*pe2^4-9*f2*E2^2*Ee2*p2*pe2^4-4*f2*E2*Ee1^2*Ee2^2*p1*me^2+10*f2*E2*Ee1^2*Ee2^2*p2*me^2-8*f2*E2*Ee1*Ee2^3*p1*me^2+2*f2*E2*Ee1*Ee2^3*p2*me^2+f2*E2*Ee1*Ee2^2*p2^3*me+12*f2*E2*Ee2^4*p1*me^2-16*f2*E2*Ee2^4*p2*me^2-8*f2*E2*Ee2^3*p1*pe2^2*me+2*f2*E2*Ee2^3*p2*pe2^2*me+4*f2*E2*Ee2^2*p1*pe2^4+f2*E2*Ee2^2*p2^3*pe2^2-10*f2*E2*Ee2^2*p2*pe2^4+4*f2*Ee1^2*Ee2^3*p2*me^2-4*f2*Ee1*Ee2^4*p1*me^2+f2*Ee1*Ee2^3*p2^3*me+4*f2*Ee2^5*p1*me^2-4*f2*Ee2^5*p2*me^2-4*f2*Ee2^4*p1*pe2^2*me-f2*Ee2^4*p2^3*me+2*f2*Ee2^4*p2*pe2^2*me+f2*Ee2^3*p2^3*pe2^2-4*f2*Ee2^3*p2*pe2^4}
+  filtered: {4*f1*E2^2*Ee1*Ee2^2*p2*me^2+4*f1*E2^2*Ee2^2*p2*pe2^2*me+8*f1*E2*Ee1*Ee2^3*p2*me^2-4*f1*E2*Ee2^4*p2*me^2+8*f1*E2*Ee2^3*p2*pe2^2*me+4*f1*Ee1*Ee2^4*p2*me^2-4*f1*Ee2^5*p2*me^2+2*f1*Ee2^4*p1*p2^2*me+4*f1*Ee2^4*p2*pe2^2*me-2*f2*E2^3*Ee1^2*p1*me^2+3*f2*E2^3*Ee1^2*p2*me^2+4*f2*E2^3*Ee2^2*p1*me^2-6*f2*E2^3*Ee2^2*p2*me^2+2*f2*E2^3*p1*pe2^4-3*f2*E2^3*p2*pe2^4-6*f2*E2^2*Ee1^2*Ee2*p1*me^2+9*f2*E2^2*Ee1^2*Ee2*p2*me^2-4*f2*E2^2*Ee1*Ee2^2*p1*me^2+f2*E2^2*Ee1*Ee2^2*p2*me^2+12*f2*E2^2*Ee2^3*p1*me^2-18*f2*E2^2*Ee2^3*p2*me^2-4*f2*E2^2*Ee2^2*p1*pe2^2*me+f2*E2^2*Ee2^2*p2*pe2^2*me+6*f2*E2^2*Ee2*p1*pe2^4-9*f2*E2^2*Ee2*p2*pe2^4-4*f2*E2*Ee1^2*Ee2^2*p1*me^2+10*f2*E2*Ee1^2*Ee2^2*p2*me^2-8*f2*E2*Ee1*Ee2^3*p1*me^2+2*f2*E2*Ee1*Ee2^3*p2*me^2+f2*E2*Ee1*Ee2^2*p2^3*me+12*f2*E2*Ee2^4*p1*me^2-16*f2*E2*Ee2^4*p2*me^2-8*f2*E2*Ee2^3*p1*pe2^2*me+2*f2*E2*Ee2^3*p2*pe2^2*me+4*f2*E2*Ee2^2*p1*pe2^4+f2*E2*Ee2^2*p2^3*pe2^2-10*f2*E2*Ee2^2*p2*pe2^4+4*f2*Ee1^2*Ee2^3*p2*me^2-4*f2*Ee1*Ee2^4*p1*me^2+f2*Ee1*Ee2^3*p2^3*me+4*f2*Ee2^5*p1*me^2-4*f2*Ee2^5*p2*me^2-4*f2*Ee2^4*p1*pe2^2*me-f2*Ee2^4*p2^3*me+2*f2*Ee2^4*p2*pe2^2*me+f2*Ee2^3*p2^3*pe2^2-4*f2*Ee2^3*p2*pe2^4}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {h}
+  filtered: {h}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {p2-pe2}
+  filtered: {p2-pe2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {p1}
+  filtered: {p1}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {E2-Ee1+Ee2}
+  filtered: {E2-Ee1+Ee2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {E1}
+  filtered: {E1}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {p2+pe2}
+  filtered: {p2+pe2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {c}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {lambda2}
+  filtered: {lambda2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {lambda1}
+  filtered: {lambda1}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ee2}
+  filtered: {Ee2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ee1}
+  filtered: {Ee1}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {E2}
+  filtered: {E2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {f2}
+  filtered: {f2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f1}
+  filtered: {f1}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {-Ee1*lambda1+Ee1*lambda2+h*c*coss-h*c}
+  {f1*Ee1+f2*E2*coss-f2*E2-f2*Ee1*coss+f2*Ee2*coss-f2*Ee2}
+  {lambda1*me*c-lambda2*me*c-h*coss+h}
+  {f1*me*c+f2*p1*coss-f2*p1-f2*me*c}
+  {E2*lambda2*me-Ee1*lambda2*me+Ee2*lambda2*me+p1*h*coss-p1*h-h*me*c}
+  {f1*lambda2*me+p1*coss-p1-me*c}
+  {E2*h*coss-E2*h+Ee1*p1*lambda2-Ee1*h*coss+Ee2*h*coss-Ee2*h}
+  {f1*Ee1*lambda2+E2*c*coss-E2*c-Ee1*c*coss+Ee2*c*coss-Ee2*c}
+  {f1*E2*me-f1*Ee1*me+f1*Ee2*me-f2*E2*me+f2*Ee1*me-f2*Ee2*me+f2*p1^2*coss-f2*p1^2}
+  {-f2*p1*h*coss+f2*p1*h+f2*h*me*c-Ee1*p1}
+  {h}
+  {p1}
+  {E2-Ee1+Ee2}
+  {E1}
+  {c}
+  {lambda2}
+  {lambda1}
+  {f2}
+  {f1}
+
+STRONG_CANDIDATES:

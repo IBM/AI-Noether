@@ -1,0 +1,61 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-8
+Removed axiom indices (1-based): [2, 9]
+Removed axioms:
+  Eph1 - h*f1
+  Eel2^2 - pel2^2*c^2 - mel^2*c^4
+
+Numerical engine: nag
+Samples per component: 100
+Number of witness set components: 6
+Symbolic regression results: 12
+
+Regression results below threshold (200.0):
+  Axiom 2, Component 1:
+    Singular value: 7.445914198640036
+    Polynomial: 1*f1*h + (-0.0239297-0.0147347i)*Eph1
+    Coefficient L2 error: 0.9761815590687527
+  Axiom 9, Component 1:
+    Singular value: 36.03581223006695
+    Polynomial: 1*Eel2^2 + (-0.0316905-0.0195638i)*pel2^2*c^2 + (-0.0626673-0.118702i)*mel^2*c^4
+    Coefficient L2 error: 1.3530295004091568
+  Axiom 2, Component 2:
+    Singular value: 1.821210678440001e-29
+    Polynomial: 1*f1*h
+    Coefficient L2 error: 1.0
+  Axiom 9, Component 2:
+    Singular value: 7.513190283219772e-61
+    Polynomial: 1*mel^2*c^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 2, Component 3:
+    Singular value: 3.491684785637664e-15
+    Polynomial: 1*f1*h
+    Coefficient L2 error: 1.0
+  Axiom 9, Component 3:
+    Singular value: 1.194186502096296e-60
+    Polynomial: 1*mel^2*c^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 2, Component 4:
+    Singular value: 1.0776353906368832e-30
+    Polynomial: 1*f1*h
+    Coefficient L2 error: 1.0
+  Axiom 9, Component 4:
+    Singular value: 1.8370585217208443e-62
+    Polynomial: 1*mel^2*c^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 2, Component 5:
+    Singular value: 9.68510267590351e-15
+    Polynomial: 1*f1*h
+    Coefficient L2 error: 0.9999999999999999
+  Axiom 9, Component 5:
+    Singular value: 1.0795203568158586e-61
+    Polynomial: 1*mel^2*c^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 2, Component 6:
+    Singular value: 5.446936406804102e-15
+    Polynomial: 1*f1*h
+    Coefficient L2 error: 1.0
+  Axiom 9, Component 6:
+    Singular value: 5.772638945189585e-59
+    Polynomial: 1*mel^2*c^4
+    Coefficient L2 error: 1.4142135623730951

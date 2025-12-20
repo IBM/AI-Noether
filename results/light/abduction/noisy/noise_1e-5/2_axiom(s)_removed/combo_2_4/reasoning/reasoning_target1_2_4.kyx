@@ -31,17 +31,29 @@ ProgramVariables
   Real c4_4;
   Real c2_5;
   Real c2_6;
-  Real c2_7;
-  Real c2_8;
+  Real c4_7;
+  Real c4_8;
+  Real c2_9;
+  Real c2_10;
+  Real c4_11;
+  Real c4_12;
+  Real c2_13;
+  Real c2_14;
+  Real c4_15;
+  Real c4_16;
+  Real c2_17;
+  Real c2_18;
+  Real c4_19;
+  Real c4_20;
   Real d1;
   Real d2;
 End.
 
 Problem
   (
-    \exists c2_1 \exists c2_2 \exists c4_3 \exists c4_4 \exists c2_5 \exists c2_6 \exists c2_7 \exists c2_8 \exists d1 \exists d2
+    \exists c2_1 \exists c2_2 \exists c4_3 \exists c4_4 \exists c2_5 \exists c2_6 \exists c4_7 \exists c4_8 \exists c2_9 \exists c2_10 \exists c4_11 \exists c4_12 \exists c2_13 \exists c2_14 \exists c4_15 \exists c4_16 \exists c2_17 \exists c2_18 \exists c4_19 \exists c4_20 \exists d1 \exists d2
     (
-      c2_1 > 0 & c2_2 > 0 & c4_3 > 0 & c4_4 > 0 & c2_5 > 0 & c2_6 > 0 & c2_7 > 0 & c2_8 > 0 & d1 > 0 & d2 > 0
+      c2_1 > 0 & c2_2 > 0 & c4_3 > 0 & c4_4 > 0 & c2_5 > 0 & c2_6 > 0 & c4_7 > 0 & c4_8 > 0 & c2_9 > 0 & c2_10 > 0 & c4_11 > 0 & c4_12 > 0 & c2_13 > 0 & c2_14 > 0 & c4_15 > 0 & c4_16 > 0 & c2_17 > 0 & c2_18 > 0 & c4_19 > 0 & c4_20 > 0 & d1 > 0 & d2 > 0
       &
       (
         \forall S \forall ap \forall sintheta \forall dA \forall dtheta \forall r \forall P \forall qc \forall x0 \forall w
@@ -54,7 +66,13 @@ Problem
             & ( ( c2_1 * sintheta*dtheta*r^2 ) + ( c2_2 * dA ) = 0 )
             & ( ( c4_3 * sintheta^3*dtheta ) + ( c4_4 * 1 ) = 0 )
             & ( ( c2_5 * sintheta*dtheta*r^2 ) + ( c2_6 * dA ) = 0 )
-            & ( ( c2_7 * sintheta*dtheta*r^2 ) + ( c2_8 * dA ) = 0 )
+            & ( ( c4_7 * sintheta^3*dtheta ) + ( c4_8 * 1 ) = 0 )
+            & ( ( c2_9 * sintheta*dtheta*r^2 ) + ( c2_10 * dA ) = 0 )
+            & ( ( c4_11 * sintheta^3*dtheta ) + ( c4_12 * 1 ) = 0 )
+            & ( ( c2_13 * sintheta*dtheta*r^2 ) + ( c2_14 * dA ) = 0 )
+            & ( ( c4_15 * sintheta^3*dtheta ) + ( c4_16 * 1 ) = 0 )
+            & ( ( c2_17 * sintheta*dtheta*r^2 ) + ( c2_18 * dA ) = 0 )
+            & ( ( c4_19 * sintheta^3*dtheta ) + ( c4_20 * 1 ) = 0 )
           )
           ->
           (

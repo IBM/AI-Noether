@@ -10,10 +10,10 @@ R = CC[d, dt, dt0, L, c, F0, F, v, MonomialOrder => Lex];
 remainingAxioms = toList([F0*dt0 - 1, F*dt - 1, c*dt - 2*L]);
 qList = toList([(99/100)*c^2*F0^2 - (98/100)*c^2*F^2 - (101/100)*F0^2*v^2]);
 
-I = ideal(join(remainingAxioms, qList));
+axiomIdeal = ideal(join(remainingAxioms, qList));
 
 -- Numerical irreducible decomposition
-W = bertiniPosDimSolve I;
+W = bertiniPosDimSolve axiomIdeal;
 Ws = components W;
 
 -- Variables in ring order

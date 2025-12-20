@@ -1,0 +1,19 @@
+=== Symbolic Regression Result ===
+Dropped axiom index (1-based): 10
+Dropped axiom text: pel2^2 - p1^2 - p2^2 + 2*p1*p2*cosTh
+Component index: 1
+Variables: ['p1', 'p2', 'pel2', 'cosTh']
+Number of monomials: 4
+Total degree: 3
+Number of points (total): 100
+Number of points (used after outlier removal): 75
+Smallest singular value: 51.65322948907294
+Relative residual: 59.557533962382294
+
+Inferred polynomial (raw):
+  -0.14121*p1^2 + (0.0879181-0.136343i)*p1*p2*cosTh + (0.341025+0.940054i)*p2^2 + (-0.0106148-0.168042i)*pel2^2 = 0
+
+Inferred polynomial (normalized):
+  (-0.048156+0.132745i)*p1^2 + (-0.0981876-0.129144i)*p1*p2*cosTh + 1*p2^2 + (-0.161588-0.0473279i)*pel2^2 = 0
+
+Coefficient L2 error vs true: 1.23077311056664

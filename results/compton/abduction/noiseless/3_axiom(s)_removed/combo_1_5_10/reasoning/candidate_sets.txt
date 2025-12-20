@@ -1,0 +1,54 @@
+Number of components: 6
+Number of remaining axioms: 7
+Number of targets: 1
+Max candidate set size: 1
+Number of candidate sets (after filtering): 31
+
+Filtering method: ideal membership test
+  Generators g where g ∈ ideal(remaining_axioms + targets) are excluded
+  (They contain no new information beyond what's already known)
+
+Remaining axioms:
+  1. E1 - h*f1
+  2. E2 - h*f2
+  3. p1*c - h*f1
+  4. lambda1*f1 - c
+  5. lambda2*f2 - c
+  6. Ee1 - me*c^2
+  7. Ee2^2 - pe2^2*c^2 - me^2*c^4
+
+Targets:
+  1. lambda1*h*me*c^3 - lambda2*h*me*c^3 - coss*h^2*c^2 + h^2*c^2
+
+Candidate sets to test:
+  Candidate 0: [] (empty set / baseline)
+  Candidate 1: ['p1*lambda1-h']
+  Candidate 2: ['h*c*coss-Ee1*lambda1+Ee1*lambda2-h*c']
+  Candidate 3: ['E1*E2*coss-E1*E2+E1*Ee1-E2*Ee1']
+  Candidate 4: ['f1*E2*coss-f1*E2+f1*Ee1-f2*Ee1']
+  Candidate 5: ['lambda1*me*c-lambda2*me*c-h*coss+h']
+  Candidate 6: ['E2*me*c-E2*p1*coss+E2*p1-Ee1*p1']
+  Candidate 7: ['f1*me*c-f2*me*c+f2*p1*coss-f2*p1']
+  Candidate 8: ['E1*lambda2*me-h*me*c+p1*h*coss-p1*h']
+  Candidate 9: ['f1*lambda2*me-me*c+p1*coss-p1']
+  Candidate 10: ['Ee1*p1*lambda2+E1*h*coss-E1*h-Ee1*h']
+  Candidate 11: ['f1*Ee1*lambda2+E1*c*coss-E1*c-Ee1*c']
+  Candidate 12: ['f2*Ee1*lambda1-E2*c*coss+E2*c-Ee1*c']
+  Candidate 13: ['E2*p1^2*coss-E2*p1^2+E1^2*me-E1*E2*me']
+  Candidate 14: ['f2*p1^2*coss-f2*p1^2+f1*E1*me-f1*E2*me']
+  Candidate 15: ['Ee1*lambda1^2*me-2*Ee1*lambda1*lambda2*me+Ee1*lambda2^2*me-h^2*coss^2+2*h^2*coss-h^2']
+  Candidate 16: ['E2*p1*h*coss^2-E2*Ee1*lambda1*me+Ee1*h*me*c-2*E2*p1*h*coss+Ee1*p1*h*coss+E2*p1*h-Ee1*p1*h']
+  Candidate 17: ['Ee2^2*p1*lambda2*me+E1*pe2^2*h*coss+E1*Ee1*h*me*coss-E1*pe2^2*h-E1*Ee1*h*me-Ee2^2*h*me']
+  Candidate 18: ['f2*Ee2^2*lambda1*me-E2*pe2^2*c*coss-E2*Ee1*p1*coss^2+E2*pe2^2*c-Ee2^2*me*c+2*E2*Ee1*p1*coss-Ee1^2*p1*coss-E2*Ee1*p1+Ee1^2*p1']
+  Candidate 19: ['Ee2^2*lambda1^2*me^2-2*Ee2^2*lambda1*lambda2*me^2+Ee2^2*lambda2^2*me^2-pe2^2*h^2*coss^2-Ee1*h^2*me*coss^2+2*pe2^2*h^2*coss+2*Ee1*h^2*me*coss-pe2^2*h^2-Ee1*h^2*me']
+  Candidate 20: ['h']
+  Candidate 21: ['p1']
+  Candidate 22: ['E2']
+  Candidate 23: ['E1']
+  Candidate 24: ['c']
+  Candidate 25: ['lambda2']
+  Candidate 26: ['lambda1']
+  Candidate 27: ['Ee2']
+  Candidate 28: ['Ee1']
+  Candidate 29: ['f2']
+  Candidate 30: ['f1']

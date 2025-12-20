@@ -1,0 +1,90 @@
+Number of components: 8
+
+COMPONENT_1:
+  num_generators: 26
+  GEN: dp-dn
+  GEN: mup*beta-muN
+  GEN: muN*n*e+ph*e*mup-sigma
+  GEN: n*e*p0*H-ph*e*dn*H+n*e*dn*H-n*r+dn*r
+  GEN: muN*dn*beta*r+dn*beta*sigma*H-muN*n*r-ph*mup*r+muN*dn*r+p0*sigma*H+dn*sigma*H
+  GEN: muN*n*beta*r+n*beta*sigma*H-ph*mup*r+ph*sigma*H
+  GEN: muN*n*mup*r+ph*mup^2*r-muN^2*dn*r-muN*mup*dn*r-mup*p0*sigma*H-muN*dn*sigma*H-mup*dn*sigma*H
+  GEN: muN*n^2*r+ph*n*mup*r-muN*n*dn*r-ph*mup*dn*r-n*p0*sigma*H+ph*dn*sigma*H-n*dn*sigma*H
+  GEN: muN^2*n*r-ph*mup^2*r+muN*n*sigma*H+ph*mup*sigma*H
+  GEN: n^2*beta^2+n*p0*beta^2-ph*dn*beta^2+2*ph*n*beta-2*ph*dn*beta+ph^2-ph*p0-ph*dn
+  GEN: muN*n^2*beta+muN*n*p0*beta-ph*muN*dn*beta+2*ph*muN*n+ph^2*mup-ph*mup*p0-2*ph*muN*dn-ph*mup*dn
+  GEN: muN^2*n^2+2*ph*muN*n*mup+ph^2*mup^2+muN^2*n*p0-ph*mup^2*p0-ph*muN^2*dn-2*ph*muN*mup*dn-ph*mup^2*dn
+  GEN: n*e*beta*sigma*H-ph*muN*e*r-ph*e*mup*r+ph*e*sigma*H+beta*r*sigma
+  GEN: n^2*beta*sigma*H+n*p0*beta*sigma*H-ph*dn*beta*sigma*H-ph*muN*n*r-ph*n*mup*r+ph*muN*dn*r+ph*mup*dn*r+ph*n*sigma*H-ph*dn*sigma*H
+  GEN: ph*e*mup*p0*H+ph*muN*e*dn*H+ph*e*mup*dn*H+muN*n*r-muN*dn*r-p0*sigma*H-dn*sigma*H
+  GEN: muN^2*e*dn*r+muN*e*mup*dn*r+e*mup*p0*sigma*H+muN*e*dn*sigma*H+e*mup*dn*sigma*H-mup*r*sigma
+  GEN: ph*muN*mup^2*r+ph*mup^3*r-muN^3*dn*r-muN^2*mup*dn*r-muN*n*mup*sigma*H-ph*mup^2*sigma*H-muN*mup*p0*sigma*H-muN^2*dn*sigma*H-muN*mup*dn*sigma*H
+  GEN: ph^2*mup^2*r-ph*n*mup^2*r-ph*muN^2*dn*r+ph*mup^2*dn*r+muN*n^2*sigma*H+ph*n*mup*sigma*H+muN*n*p0*sigma*H-ph*mup*p0*sigma*H-2*ph*muN*dn*sigma*H-2*ph*mup*dn*sigma*H
+  GEN: ph*muN*e*mup*r+ph*e*mup^2*r-muN*r*sigma-sigma^2*H
+  GEN: ph*muN^2*e*r-ph*e*mup^2*r-muN*beta*r*sigma-beta*sigma^2*H+muN*r*sigma+sigma^2*H
+  GEN: ph*muN*e*dn*beta+ph*muN*e*p0+ph*e*mup*p0+2*ph*muN*e*dn+ph*e*mup*dn-n*beta*sigma-p0*beta*sigma-ph*sigma
+  GEN: ph*muN*e*mup*p0+ph*e*mup^2*p0+ph*muN^2*e*dn+2*ph*muN*e*mup*dn+ph*e*mup^2*dn-muN*n*sigma-ph*mup*sigma-muN*p0*sigma
+  GEN: ph^2*e*mup*p0-ph*n*e*mup*p0+ph^2*muN*e*dn+2*ph^2*e*mup*dn-ph*n*e*mup*dn+n^2*beta*sigma+n*p0*beta*sigma-ph*dn*beta*sigma+ph*n*sigma-ph*p0*sigma-2*ph*dn*sigma
+  GEN: ph*e*dn*beta*sigma*H-ph*muN*e*p0*r-ph*e*mup*p0*r-ph*muN*e*dn*r-ph*e*mup*dn*r+ph*e*p0*sigma*H+ph*e*dn*sigma*H+n*beta*r*sigma+p0*beta*r*sigma
+  GEN: n*e*dn*beta^2*H+2*ph*e*dn*beta*H+dn*beta^2*r+ph*e*p0*H+ph*e*dn*H-ph*r
+  GEN: ph*e*dn^2*beta^2*H+2*ph*e*p0*dn*beta*H+2*ph*e*dn^2*beta*H+n*dn*beta^2*r+p0*dn*beta^2*r+ph*e*p0^2*H+2*ph*e*p0*dn*H+ph*e*dn^2*H-ph*p0*r-ph*dn*r
+
+COMPONENT_2:
+  num_generators: 7
+  GEN: sigma
+  GEN: e
+  GEN: dp-dn
+  GEN: mup*beta-muN
+  GEN: n*beta^2-ph
+  GEN: muN*n*beta-ph*mup
+  GEN: muN^2*n-ph*mup^2
+
+COMPONENT_3:
+  num_generators: 5
+  GEN: sigma
+  GEN: r
+  GEN: e
+  GEN: dp-dn
+  GEN: mup*beta-muN
+
+COMPONENT_4:
+  num_generators: 5
+  GEN: H
+  GEN: r
+  GEN: dp-dn
+  GEN: mup*beta-muN
+  GEN: muN*n*e+ph*e*mup-sigma
+
+COMPONENT_5:
+  num_generators: 5
+  GEN: sigma
+  GEN: mup
+  GEN: muN
+  GEN: dp-dn
+  GEN: n^2*e*beta^2*H+2*ph*n*e*beta*H+n*beta^2*r+ph^2*e*H-ph*r
+
+COMPONENT_6:
+  num_generators: 5
+  GEN: sigma
+  GEN: beta+1
+  GEN: muN+mup
+  GEN: dp-dn
+  GEN: ph-n
+
+COMPONENT_7:
+  num_generators: 5
+  GEN: sigma
+  GEN: beta
+  GEN: muN
+  GEN: dp-dn
+  GEN: ph
+
+COMPONENT_8:
+  num_generators: 6
+  GEN: sigma
+  GEN: r
+  GEN: dp-dn
+  GEN: mup*beta-muN
+  GEN: n*beta+ph
+  GEN: muN*n+ph*mup
+

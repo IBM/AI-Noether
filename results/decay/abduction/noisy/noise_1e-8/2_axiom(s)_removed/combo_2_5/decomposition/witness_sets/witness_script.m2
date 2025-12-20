@@ -8,12 +8,12 @@ needsPackage("Bertini", Reload => true, Configuration => {"BERTINIexecutable" =>
 R = CC[pp, pmu, Ev, Emu, Ep, pv, mp, mmu, MonomialOrder => Lex];
 
 remainingAxioms = toList([pv - pmu, Ev - pv, Ep - Emu - Ev]);
-qList = toList([(20000212/10000000)*pv*mp - (99989217/10000000)*mp^2 + (99878585/10000000)*mmu^2]);
+qList = toList([(20000212/10000000)*pv*mp - (9998921/10000000)*mp^2 + (9987858/10000000)*mmu^2]);
 
-I = ideal(join(remainingAxioms, qList));
+axiomIdeal = ideal(join(remainingAxioms, qList));
 
 -- Numerical irreducible decomposition
-W = bertiniPosDimSolve I;
+W = bertiniPosDimSolve axiomIdeal;
 Ws = components W;
 
 -- Variables in ring order

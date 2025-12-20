@@ -1,0 +1,41 @@
+Number of components: 5
+Number of remaining axioms: 5
+Number of targets: 1
+Max candidate set size: 3
+Number of candidate sets (after filtering): 20
+
+Filtering method: ideal membership test
+  Generators g where g ∈ ideal(remaining_axioms + targets) are excluded
+  (They contain no new information beyond what's already known)
+
+Remaining axioms:
+  1. ad-g*sintheta
+  2. d-L*theta
+  3. d*omega^2-ad
+  4. Tj-j*T
+  5. sintheta - theta
+
+Targets:
+  1. d*g*Tj^2-4*d*L*j^2*Pi^2
+
+Candidate sets to test:
+  Candidate 0: [] (empty set / baseline)
+  Candidate 1: ['omega^2*L-g']
+  Candidate 2: ['j']
+  Candidate 3: ['omega^2*L-g', 'j']
+  Candidate 4: ['L']
+  Candidate 5: ['g']
+  Candidate 6: ['L', 'g']
+  Candidate 7: ['-2*omega*L*Pi+T*g']
+  Candidate 8: ['T*omega-2*Pi']
+  Candidate 9: ['omega^2*L-g', '-2*omega*L*Pi+T*g']
+  Candidate 10: ['omega^2*L-g', 'T*omega-2*Pi']
+  Candidate 11: ['-2*omega*L*Pi+T*g', 'T*omega-2*Pi']
+  Candidate 12: ['omega^2*L-g', '-2*omega*L*Pi+T*g', 'T*omega-2*Pi']
+  Candidate 13: ['2*omega*L*Pi+T*g']
+  Candidate 14: ['T*omega+2*Pi']
+  Candidate 15: ['omega^2*L-g', '2*omega*L*Pi+T*g']
+  Candidate 16: ['omega^2*L-g', 'T*omega+2*Pi']
+  Candidate 17: ['2*omega*L*Pi+T*g', 'T*omega+2*Pi']
+  Candidate 18: ['omega^2*L-g', '2*omega*L*Pi+T*g', 'T*omega+2*Pi']
+  Candidate 19: ['sintheta']

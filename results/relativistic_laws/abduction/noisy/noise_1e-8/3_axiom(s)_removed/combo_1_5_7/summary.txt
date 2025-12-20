@@ -1,0 +1,42 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-8
+Removed axiom indices (1-based): [1, 5, 7]
+Removed axioms:
+  F0*dt0 - 1
+  m0*u0 - m*u
+  dt*(c^2 - v^2) - 2*L*c
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 3
+Symbolic regression results: 9
+
+Regression results below threshold (5.0):
+  Axiom 1, Component 1:
+    Singular value: 9.489313800705567e-05
+    Polynomial: 1*F0*dt0 + (-0.999958-7.86183e-06i)*1
+    Coefficient L2 error: 4.231108345734227e-05
+  Axiom 5, Component 1:
+    Singular value: 7.358720314431338e-17
+    Polynomial: (-0.000536389+0.00673591i)*m0*u0 + 1*m*u
+    Coefficient L2 error: 0.9994863087317851
+  Axiom 7, Component 1:
+    Singular value: 2.055965190266108e-05
+    Polynomial: 0.499985*c^2*dt + 1*c*L + -0.499998*dt*v^2
+    Coefficient L2 error: 1.4142015030740611
+  Axiom 5, Component 2:
+    Singular value: 0.00010564926054904781
+    Polynomial: -0.999802*m0*u0 + 1*m*u
+    Coefficient L2 error: 0.00019829547803840164
+  Axiom 7, Component 2:
+    Singular value: 1.052193987216434e-05
+    Polynomial: -0.499985*c^2*dt + 1*c*L + 0.499998*dt*v^2
+    Coefficient L2 error: 1.5386037715927147e-05
+  Axiom 5, Component 3:
+    Singular value: 3.092173077461472
+    Polynomial: 1*m0*u0 + (0.00626119-0.0392172i)*m*u
+    Coefficient L2 error: 1.0070251074069907
+  Axiom 7, Component 3:
+    Singular value: 1.601878161557119e-18
+    Polynomial: 1*c^2*dt + (-0.00264295+0.00113155i)*dt*v^2
+    Coefficient L2 error: 1.2236687952467264

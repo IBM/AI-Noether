@@ -1,0 +1,152 @@
+ArchiveEntry "compton_target1_combo1_4_9"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real f1;
+  Real f2;
+  Real Eph1;
+  Real Eph2;
+  Real Eel1;
+  Real Eel2;
+  Real p1;
+  Real p2;
+  Real pel2;
+  Real lam1;
+  Real lam2;
+  Real hbar;
+  Real mel;
+  Real cVar;
+  Real cosTh;
+  Real c1_1;
+  Real c1_2;
+  Real c1_3;
+  Real c1_4;
+  Real c4_5;
+  Real c4_6;
+  Real c9_7;
+  Real c9_8;
+  Real c9_9;
+  Real c1_10;
+  Real c1_11;
+  Real c1_12;
+  Real c1_13;
+  Real c4_14;
+  Real c4_15;
+  Real c9_16;
+  Real c9_17;
+  Real c9_18;
+  Real c1_19;
+  Real c1_20;
+  Real c1_21;
+  Real c1_22;
+  Real c4_23;
+  Real c4_24;
+  Real c9_25;
+  Real c9_26;
+  Real c9_27;
+  Real c1_28;
+  Real c1_29;
+  Real c1_30;
+  Real c1_31;
+  Real c4_32;
+  Real c4_33;
+  Real c9_34;
+  Real c9_35;
+  Real c9_36;
+  Real c1_37;
+  Real c1_38;
+  Real c1_39;
+  Real c1_40;
+  Real c4_41;
+  Real c4_42;
+  Real c9_43;
+  Real c9_44;
+  Real c9_45;
+  Real c1_46;
+  Real c1_47;
+  Real c1_48;
+  Real c1_49;
+  Real c4_50;
+  Real c4_51;
+  Real c9_52;
+  Real c9_53;
+  Real c9_54;
+  Real c1_55;
+  Real c1_56;
+  Real c1_57;
+  Real c1_58;
+  Real c4_59;
+  Real c4_60;
+  Real c9_61;
+  Real c9_62;
+  Real c9_63;
+  Real d1;
+  Real d2;
+  Real d3;
+  Real d4;
+End.
+
+Problem
+  (
+    \exists c1_1 \exists c1_2 \exists c1_3 \exists c1_4 \exists c4_5 \exists c4_6 \exists c9_7 \exists c9_8 \exists c9_9 \exists c1_10 \exists c1_11 \exists c1_12 \exists c1_13 \exists c4_14 \exists c4_15 \exists c9_16 \exists c9_17 \exists c9_18 \exists c1_19 \exists c1_20 \exists c1_21 \exists c1_22 \exists c4_23 \exists c4_24 \exists c9_25 \exists c9_26 \exists c9_27 \exists c1_28 \exists c1_29 \exists c1_30 \exists c1_31 \exists c4_32 \exists c4_33 \exists c9_34 \exists c9_35 \exists c9_36 \exists c1_37 \exists c1_38 \exists c1_39 \exists c1_40 \exists c4_41 \exists c4_42 \exists c9_43 \exists c9_44 \exists c9_45 \exists c1_46 \exists c1_47 \exists c1_48 \exists c1_49 \exists c4_50 \exists c4_51 \exists c9_52 \exists c9_53 \exists c9_54 \exists c1_55 \exists c1_56 \exists c1_57 \exists c1_58 \exists c4_59 \exists c4_60 \exists c9_61 \exists c9_62 \exists c9_63 \exists d1 \exists d2 \exists d3 \exists d4
+    (
+      c1_1 > 0 & c1_2 > 0 & c1_3 > 0 & c1_4 > 0 & c4_5 > 0 & c4_6 > 0 & c9_7 > 0 & c9_8 > 0 & c9_9 > 0 & c1_10 > 0 & c1_11 > 0 & c1_12 > 0 & c1_13 > 0 & c4_14 > 0 & c4_15 > 0 & c9_16 > 0 & c9_17 > 0 & c9_18 > 0 & c1_19 > 0 & c1_20 > 0 & c1_21 > 0 & c1_22 > 0 & c4_23 > 0 & c4_24 > 0 & c9_25 > 0 & c9_26 > 0 & c9_27 > 0 & c1_28 > 0 & c1_29 > 0 & c1_30 > 0 & c1_31 > 0 & c4_32 > 0 & c4_33 > 0 & c9_34 > 0 & c9_35 > 0 & c9_36 > 0 & c1_37 > 0 & c1_38 > 0 & c1_39 > 0 & c1_40 > 0 & c4_41 > 0 & c4_42 > 0 & c9_43 > 0 & c9_44 > 0 & c9_45 > 0 & c1_46 > 0 & c1_47 > 0 & c1_48 > 0 & c1_49 > 0 & c4_50 > 0 & c4_51 > 0 & c9_52 > 0 & c9_53 > 0 & c9_54 > 0 & c1_55 > 0 & c1_56 > 0 & c1_57 > 0 & c1_58 > 0 & c4_59 > 0 & c4_60 > 0 & c9_61 > 0 & c9_62 > 0 & c9_63 > 0 & d1 > 0 & d2 > 0 & d3 > 0 & d4 > 0
+      &
+      (
+        \forall f1 \forall f2 \forall Eph1 \forall Eph2 \forall Eel1 \forall Eel2 \forall p1 \forall p2 \forall pel2 \forall lam1 \forall lam2 \forall hbar \forall mel \forall cVar \forall cosTh
+        (
+          (
+            (f1 > 0 & f2 > 0 & Eph1 > 0 & Eph2 > 0 & Eel1 > 0 & Eel2 > 0 & p1 > 0 & p2 > 0 & pel2 > 0 & lam1 > 0 & lam2 > 0 & hbar > 0 & mel > 0 & cVar > 0 & cosTh > 0) &
+            & ( Eph1 - hbar*f1 = 0 )
+            & ( Eph2 - hbar*f2 = 0 )
+            & ( p2*cVar - hbar*f2 = 0 )
+            & ( lam1*f1 - cVar = 0 )
+            & ( lam2*f2 - cVar = 0 )
+            & ( Eel1 - mel*cVar^2 = 0 )
+            & ( pel2^2 - p1^2 - p2^2 + 2*p1*p2*cosTh = 0 )
+            & ( ( c1_1 * Eph1 ) + ( c1_2 * Eph2 ) + ( c1_3 * Eel1 ) + ( c1_4 * Eel2 ) = 0 )
+            & ( ( c4_5 * f1*hbar ) + ( c4_6 * p1*cVar ) = 0 )
+            & ( ( c9_7 * Eel2^2 ) + ( c9_8 * pel2^2*cVar^2 ) + ( c9_9 * mel^2*cVar^4 ) = 0 )
+            & ( ( c1_10 * Eph1 ) + ( c1_11 * Eph2 ) + ( c1_12 * Eel1 ) + ( c1_13 * Eel2 ) = 0 )
+            & ( ( c4_14 * f1*hbar ) + ( c4_15 * p1*cVar ) = 0 )
+            & ( ( c9_16 * Eel2^2 ) + ( c9_17 * pel2^2*cVar^2 ) + ( c9_18 * mel^2*cVar^4 ) = 0 )
+            & ( ( c1_19 * Eph1 ) + ( c1_20 * Eph2 ) + ( c1_21 * Eel1 ) + ( c1_22 * Eel2 ) = 0 )
+            & ( ( c4_23 * f1*hbar ) + ( c4_24 * p1*cVar ) = 0 )
+            & ( ( c9_25 * Eel2^2 ) + ( c9_26 * pel2^2*cVar^2 ) + ( c9_27 * mel^2*cVar^4 ) = 0 )
+            & ( ( c1_28 * Eph1 ) + ( c1_29 * Eph2 ) + ( c1_30 * Eel1 ) + ( c1_31 * Eel2 ) = 0 )
+            & ( ( c4_32 * f1*hbar ) + ( c4_33 * p1*cVar ) = 0 )
+            & ( ( c9_34 * Eel2^2 ) + ( c9_35 * pel2^2*cVar^2 ) + ( c9_36 * mel^2*cVar^4 ) = 0 )
+            & ( ( c1_37 * Eph1 ) + ( c1_38 * Eph2 ) + ( c1_39 * Eel1 ) + ( c1_40 * Eel2 ) = 0 )
+            & ( ( c4_41 * f1*hbar ) + ( c4_42 * p1*cVar ) = 0 )
+            & ( ( c9_43 * Eel2^2 ) + ( c9_44 * pel2^2*cVar^2 ) + ( c9_45 * mel^2*cVar^4 ) = 0 )
+            & ( ( c1_46 * Eph1 ) + ( c1_47 * Eph2 ) + ( c1_48 * Eel1 ) + ( c1_49 * Eel2 ) = 0 )
+            & ( ( c4_50 * f1*hbar ) + ( c4_51 * p1*cVar ) = 0 )
+            & ( ( c9_52 * Eel2^2 ) + ( c9_53 * pel2^2*cVar^2 ) + ( c9_54 * mel^2*cVar^4 ) = 0 )
+            & ( ( c1_55 * Eph1 ) + ( c1_56 * Eph2 ) + ( c1_57 * Eel1 ) + ( c1_58 * Eel2 ) = 0 )
+            & ( ( c4_59 * f1*hbar ) + ( c4_60 * p1*cVar ) = 0 )
+            & ( ( c9_61 * Eel2^2 ) + ( c9_62 * pel2^2*cVar^2 ) + ( c9_63 * mel^2*cVar^4 ) = 0 )
+          )
+          ->
+          (
+            ( d1 * lam1*mel*cVar ) + ( d2 * lam2*mel*cVar ) + ( d3 * hbar*cosTh ) + ( d4 * hbar ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

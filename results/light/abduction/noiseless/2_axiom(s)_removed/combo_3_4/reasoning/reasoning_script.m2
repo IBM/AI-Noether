@@ -16,7 +16,7 @@ measuredPerTarget = {{P, qc, x0, w}};
 nonMeasuredPerTarget = {{S, ap, sintheta, dA, dtheta, r}};
 
 -- Candidate axiom sets to test (list of lists)
-candidateSets = {{}, {628*S*r^2-75*sintheta^2*P}, {628*ap^2*qc^2-75*P}, {157*sintheta*dtheta*r^2-25*dA}, {3*sintheta^3*dtheta*P-4*S*dA}, {x0^2*w^4-2*ap^2}, {628*S*r^2-75*sintheta^2*P, 628*ap^2*qc^2-75*P}, {628*S*r^2-75*sintheta^2*P, 157*sintheta*dtheta*r^2-25*dA}, {628*S*r^2-75*sintheta^2*P, 3*sintheta^3*dtheta*P-4*S*dA}, {628*S*r^2-75*sintheta^2*P, x0^2*w^4-2*ap^2}, {628*ap^2*qc^2-75*P, 157*sintheta*dtheta*r^2-25*dA}, {628*ap^2*qc^2-75*P, 3*sintheta^3*dtheta*P-4*S*dA}, {628*ap^2*qc^2-75*P, x0^2*w^4-2*ap^2}, {157*sintheta*dtheta*r^2-25*dA, 3*sintheta^3*dtheta*P-4*S*dA}, {157*sintheta*dtheta*r^2-25*dA, x0^2*w^4-2*ap^2}, {3*sintheta^3*dtheta*P-4*S*dA, x0^2*w^4-2*ap^2}, {628*S*r^2-75*sintheta^2*P, 628*ap^2*qc^2-75*P, 157*sintheta*dtheta*r^2-25*dA}, {628*S*r^2-75*sintheta^2*P, 628*ap^2*qc^2-75*P, 3*sintheta^3*dtheta*P-4*S*dA}, {628*S*r^2-75*sintheta^2*P, 628*ap^2*qc^2-75*P, x0^2*w^4-2*ap^2}, {628*S*r^2-75*sintheta^2*P, 157*sintheta*dtheta*r^2-25*dA, 3*sintheta^3*dtheta*P-4*S*dA}, {628*S*r^2-75*sintheta^2*P, 157*sintheta*dtheta*r^2-25*dA, x0^2*w^4-2*ap^2}, {628*S*r^2-75*sintheta^2*P, 3*sintheta^3*dtheta*P-4*S*dA, x0^2*w^4-2*ap^2}, {628*ap^2*qc^2-75*P, 157*sintheta*dtheta*r^2-25*dA, 3*sintheta^3*dtheta*P-4*S*dA}, {628*ap^2*qc^2-75*P, 157*sintheta*dtheta*r^2-25*dA, x0^2*w^4-2*ap^2}, {628*ap^2*qc^2-75*P, 3*sintheta^3*dtheta*P-4*S*dA, x0^2*w^4-2*ap^2}, {157*sintheta*dtheta*r^2-25*dA, 3*sintheta^3*dtheta*P-4*S*dA, x0^2*w^4-2*ap^2}};
+candidateSets = {{}};
 
 -- Configuration
 requireLiteralGB = true;

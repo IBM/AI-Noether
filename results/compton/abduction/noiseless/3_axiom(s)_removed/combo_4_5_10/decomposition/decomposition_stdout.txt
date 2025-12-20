@@ -1,0 +1,99 @@
+=== SINGULAR_DECOMPOSITION_OUTPUT ===
+[1]:
+   _[1]=E1-E2+Ee1-Ee2
+   _[2]=f2*h-E2
+   _[3]=f1*h-E2+Ee1-Ee2
+   _[4]=E2*lambda2-h*c
+   _[5]=f2*lambda2-c
+   _[6]=E2*lambda1-Ee1*lambda1+Ee2*lambda1-h*c
+   _[7]=f1*lambda1-c
+   _[8]=f1*E2-f2*E2+f2*Ee1-f2*Ee2
+   _[9]=h*c*coss-Ee1*lambda1+Ee1*lambda2-h*c
+   _[10]=E2^2*coss-E2*Ee1*coss+E2*Ee2*coss-E2^2+E2*Ee1-Ee1^2-E2*Ee2+Ee1*Ee2
+   _[11]=f2*E2*coss-f2*Ee1*coss+f2*Ee2*coss-f2*E2+f1*Ee1-f2*Ee2
+   _[12]=me*c^2-Ee1
+   _[13]=lambda1*me*c-lambda2*me*c-h*coss+h
+   _[14]=Ee1*lambda1*lambda2-Ee2*lambda1*lambda2-lambda1*h*c+lambda2*h*c
+   _[15]=f1*Ee1*lambda2+E2*c*coss-Ee1*c*coss+Ee2*c*coss-E2*c-Ee2*c
+   _[16]=f2*Ee1*lambda1-E2*c*coss+E2*c-Ee1*c
+   _[17]=Ee1*pe2^2+Ee1^2*me-Ee2^2*me
+   _[18]=f1*f2*Ee1*coss-f1*f2*Ee2*coss-f1^2*Ee1+f1*f2*Ee1-f2^2*Ee1+f1*f2*Ee2
+   _[19]=pe2^2*c^2+Ee1^2-Ee2^2
+   _[20]=Ee1*lambda2*me*c-Ee2*lambda2*me*c-E2*h*coss+Ee1*h*coss-Ee2*h*coss+E2*h-Ee1*h+Ee2*h
+   _[21]=f1*lambda2*me*c+E2*coss-Ee1*coss+Ee2*coss-E2-Ee2
+   _[22]=Ee1*lambda1^2*me-2*Ee2*lambda1*lambda2*me+Ee1*lambda2^2*me-h^2*coss^2+h^2
+   _[23]=f2*Ee2*lambda1*me+f1*Ee2*lambda2*me+pe2^2*c*coss+Ee1*me*c*coss-Ee2*me*c*coss-pe2^2*c-Ee1*me*c-Ee2*me*c
+   _[24]=pe2^2*lambda1*lambda2*coss-pe2^2*lambda1*lambda2+Ee2*lambda1^2*me-2*Ee2*lambda1*lambda2*me+Ee2*lambda2^2*me+h^2*coss^2-2*h^2*coss+h^2
+   _[25]=f1*f2*pe2^2*coss-f1*f2*pe2^2+f1^2*Ee1*me-2*f1*f2*Ee1*me+f2^2*Ee1*me+f1^2*Ee2*me-2*f1*f2*Ee2*me+f2^2*Ee2*me
+   _[26]=pe2^2*lambda1*lambda2*c+Ee1*lambda1*h+Ee2*lambda1*h-Ee1*lambda2*h-Ee2*lambda2*h
+   _[27]=f1*Ee2*lambda2^2*me+pe2^2*lambda2*c*coss-pe2^2*lambda2*c-Ee2*lambda2*me*c+E2*h*coss^2-Ee1*h*coss^2+Ee2*h*coss^2-2*E2*h*coss+2*Ee1*h*coss-Ee2*h*coss+E2*h-Ee1*h
+   _[28]=Ee1^2*lambda2^2*me-Ee1*Ee2*lambda2^2*me+E2*h^2*coss^2-Ee1*h^2*coss^2+Ee2*h^2*coss^2-2*E2*h^2*coss+Ee1*h^2*coss-2*Ee2*h^2*coss+E2*h^2+Ee2*h^2
+   _[29]=Ee2*lambda1^2*lambda2*me-2*Ee2*lambda1*lambda2^2*me+Ee1*lambda2^3*me-lambda2*h^2*coss^2+lambda1*h^2*coss-lambda1*h^2+lambda2*h^2
+   _[30]=f1*Ee2^2*lambda2*me+E2*pe2^2*c*coss+Ee2*pe2^2*c*coss+E2*Ee1*me*c*coss+Ee1*Ee2*me*c*coss-Ee2^2*me*c*coss-E2*pe2^2*c-Ee2*pe2^2*c-E2*Ee1*me*c-Ee1*Ee2*me*c
+   _[31]=f1^2*Ee2*lambda2*me+f1*pe2^2*c*coss+f1*Ee1*me*c*coss-f1*Ee2*me*c*coss-f1*pe2^2*c-f1*Ee1*me*c-f1*Ee2*me*c+f2*Ee2*me*c
+   _[32]=Ee2*pe2^2*lambda1*lambda2+pe2^2*lambda1*h*c-pe2^2*lambda2*h*c+Ee1*h^2*coss+Ee2*h^2*coss-Ee1*h^2-Ee2*h^2
+   _[33]=pe2^2*lambda2^2*me*c+pe2^2*lambda2*h*coss-pe2^2*lambda2*h+Ee1*lambda1*h*me+Ee2*lambda1*h*me-Ee1*lambda2*h*me-Ee2*lambda2*h*me
+   _[34]=Ee2*pe2^2*lambda2*me*c+E2*pe2^2*h*coss+Ee2*pe2^2*h*coss+E2*Ee1*h*me*coss+E2*Ee2*h*me*coss-E2*pe2^2*h-Ee2*pe2^2*h-E2*Ee1*h*me-E2*Ee2*h*me
+   _[35]=Ee2^2*lambda1^2*me^2-2*Ee2^2*lambda1*lambda2*me^2+Ee2^2*lambda2^2*me^2-pe2^2*h^2*coss^2-Ee1*h^2*me*coss^2+2*pe2^2*h^2*coss+2*Ee1*h^2*me*coss-pe2^2*h^2-Ee1*h^2*me
+   _[36]=f2^2*lambda1^2*me^2+f1^2*lambda2^2*me^2-pe2^2*coss^2-2*Ee1*me*coss^2+2*Ee2*me*coss^2+2*pe2^2*coss-pe2^2-2*Ee2*me
+   _[37]=pe2^2*lambda1^2*lambda2^2+2*lambda1*lambda2*h^2*coss-lambda1^2*h^2-lambda2^2*h^2
+   _[38]=Ee1*Ee2*lambda2^3*me^2-Ee2^2*lambda2^3*me^2+pe2^2*lambda2*h^2*coss^2+Ee1*lambda2*h^2*me*coss^2-Ee2*lambda2*h^2*me*coss^2-2*pe2^2*lambda2*h^2*coss+Ee2*lambda1*h^2*me*coss-2*Ee1*lambda2*h^2*me*coss+pe2^2*lambda2*h^2-Ee2*lambda1*h^2*me+Ee1*lambda2*h^2*me+Ee2*lambda2*h^2*me
+   _[39]=f1^2*lambda2^3*me^2-pe2^2*lambda2*coss^2-2*Ee1*lambda2*me*coss^2+2*Ee2*lambda2*me*coss^2+2*pe2^2*lambda2*coss+Ee1*lambda1*me*coss-Ee2*lambda1*me*coss-pe2^2*lambda2+Ee1*lambda1*me+Ee2*lambda1*me-Ee1*lambda2*me-2*Ee2*lambda2*me
+   _[40]=Ee1*Ee2^2*lambda2^2*me^2-Ee2^3*lambda2^2*me^2+E2*pe2^2*h^2*coss^2+Ee2*pe2^2*h^2*coss^2+E2*Ee1*h^2*me*coss^2+Ee1*Ee2*h^2*me*coss^2-Ee2^2*h^2*me*coss^2-2*E2*pe2^2*h^2*coss-2*Ee2*pe2^2*h^2*coss-2*E2*Ee1*h^2*me*coss-2*Ee1*Ee2*h^2*me*coss+Ee2^2*h^2*me*coss+E2*pe2^2*h^2+Ee2*pe2^2*h^2+E2*Ee1*h^2*me+Ee1*Ee2*h^2*me
+   _[41]=f1^3*lambda2^2*me^2-f1*pe2^2*coss^2-2*f1*Ee1*me*coss^2+2*f1*Ee2*me*coss^2+2*f1*pe2^2*coss+f2*Ee1*me*coss-f2*Ee2*me*coss-f1*pe2^2-f1*Ee1*me+f2*Ee1*me-2*f1*Ee2*me+f2*Ee2*me
+   _[42]=Ee2^2*pe2^2*lambda2^3*me^2-pe2^4*lambda2*h^2*coss^2+Ee1^2*lambda2*h^2*me^2*coss^2-Ee2^2*lambda2*h^2*me^2*coss^2+2*pe2^4*lambda2*h^2*coss-Ee2*pe2^2*lambda1*h^2*me*coss+2*Ee2*pe2^2*lambda2*h^2*me*coss-Ee1*Ee2*lambda1*h^2*me^2*coss-Ee2^2*lambda1*h^2*me^2*coss-2*Ee1^2*lambda2*h^2*me^2*coss+2*Ee1*Ee2*lambda2*h^2*me^2*coss+4*Ee2^2*lambda2*h^2*me^2*coss-pe2^4*lambda2*h^2+Ee2*pe2^2*lambda1*h^2*me-2*Ee2*pe2^2*lambda2*h^2*me+Ee1*Ee2*lambda1*h^2*me^2+Ee2^2*lambda1*h^2*me^2+Ee1^2*lambda2*h^2*me^2-2*Ee1*Ee2*lambda2*h^2*me^2-3*Ee2^2*lambda2*h^2*me^2
+   _[43]=Ee2^3*pe2^2*lambda2^2*me^2-E2*pe2^4*h^2*coss^2-Ee2*pe2^4*h^2*coss^2-E2*Ee2*pe2^2*h^2*me*coss^2+E2*Ee1^2*h^2*me^2*coss^2-E2*Ee1*Ee2*h^2*me^2*coss^2+Ee1^2*Ee2*h^2*me^2*coss^2-2*E2*Ee2^2*h^2*me^2*coss^2-Ee2^3*h^2*me^2*coss^2+2*E2*pe2^4*h^2*coss+2*Ee2*pe2^4*h^2*coss+2*E2*Ee2*pe2^2*h^2*me*coss+Ee2^2*pe2^2*h^2*me*coss-2*E2*Ee1^2*h^2*me^2*coss+2*E2*Ee1*Ee2*h^2*me^2*coss-2*Ee1^2*Ee2*h^2*me^2*coss+4*E2*Ee2^2*h^2*me^2*coss+Ee1*Ee2^2*h^2*me^2*coss+3*Ee2^3*h^2*me^2*coss-E2*pe2^4*h^2-Ee2*pe2^4*h^2-E2*Ee2*pe2^2*h^2*me-Ee2^2*pe2^2*h^2*me+E2*Ee1^2*h^2*me^2-E2*Ee1*Ee2*h^2*me^2+Ee1^2*Ee2*h^2*me^2-2*E2*Ee2^2*h^2*me^2-Ee1*Ee2^2*h^2*me^2-2*Ee2^3*h^2*me^2
+[2]:
+   _[1]=c
+   _[2]=h
+   _[3]=lambda2
+   _[4]=lambda1
+   _[5]=Ee2
+   _[6]=Ee1
+   _[7]=E2
+   _[8]=E1
+[3]:
+   _[1]=c
+   _[2]=h
+   _[3]=lambda1
+   _[4]=Ee2
+   _[5]=Ee1
+   _[6]=E2
+   _[7]=E1
+   _[8]=f2
+[4]:
+   _[1]=c
+   _[2]=h
+   _[3]=lambda2
+   _[4]=Ee2
+   _[5]=Ee1
+   _[6]=E2
+   _[7]=E1
+   _[8]=f1
+[5]:
+   _[1]=h
+   _[2]=pe2
+   _[3]=Ee1-Ee2
+   _[4]=E2
+   _[5]=E1
+   _[6]=f2*lambda2-c
+   _[7]=f1*lambda1-c
+   _[8]=me*c^2-Ee2
+[6]:
+   _[1]=c
+   _[2]=Ee2
+   _[3]=Ee1
+   _[4]=E2
+   _[5]=E1
+   _[6]=f2
+   _[7]=f1
+[7]:
+   _[1]=c
+   _[2]=lambda2
+   _[3]=lambda1
+   _[4]=Ee2
+   _[5]=Ee1
+   _[6]=E1-E2
+   _[7]=f1-f2
+   _[8]=f2*h-E2
+=== END_SINGULAR_DECOMPOSITION_OUTPUT ===

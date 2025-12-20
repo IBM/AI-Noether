@@ -1,0 +1,179 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  -muN+mup*beta
+  ph-dp-p0
+  dp-dn
+  -ph*e*mup-muN*n*e+sigma
+  ph^2*e*H+2*ph*n*e*beta*H-ph*r+n^2*e*beta^2*H+n*beta^2*r
+
+Targets:
+  e*mup*dn*beta^2*r+e*mup*dn*beta*r+e*p0*sigma*H+e*dn*beta*sigma*H+e*dn*sigma*H-r*sigma
+
+Require literal GB appearance: true
+Number of candidate sets to test: 36
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {n-dn}
+  filtered: {n-dn}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+  filtered: {muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+  filtered: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-muN^2*dn*r-muN*dn*sigma*H+mup^2*p0*r+mup^2*dn*r-mup*p0*sigma*H-mup*dn*sigma*H}
+  filtered: {-muN^2*dn*r-muN*dn*sigma*H+mup^2*p0*r+mup^2*dn*r-mup*p0*sigma*H-mup*dn*sigma*H}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN*e*p0+muN*e*dn*beta+muN*e*dn-beta*sigma}
+  filtered: {muN*e*p0+muN*e*dn*beta+muN*e*dn-beta*sigma}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-muN*e*p0*r+e*p0*sigma*H+e*dn*beta*sigma*H+e*dn*sigma*H+beta*r*sigma-r*sigma}
+  filtered: {-muN*e*p0*r+e*p0*sigma*H+e*dn*beta*sigma*H+e*dn*sigma*H+beta*r*sigma-r*sigma}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN^2*e*dn*r+muN*e*mup*dn*r-mup*r*sigma+sigma^2*H}
+  filtered: {muN^2*e*dn*r+muN*e*mup*dn*r-mup*r*sigma+sigma^2*H}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN^2*e*p0*r-muN*beta*r*sigma+muN*r*sigma-beta*sigma^2*H}
+  filtered: {muN^2*e*p0*r-muN*beta*r*sigma+muN*r*sigma-beta*sigma^2*H}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+  filtered: {e*p0^2*H+2*e*p0*dn*beta*H+2*e*p0*dn*H+e*dn^2*beta^2*H+2*e*dn^2*beta*H+e*dn^2*H-p0*r+dn*beta^2*r-dn*r}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {sigma}
+  filtered: {sigma}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {e}
+  filtered: {e}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {n*beta^2-p0-dn}
+  filtered: {n*beta^2-p0-dn}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN*n*beta-mup*p0-mup*dn}
+  filtered: {muN*n*beta-mup*p0-mup*dn}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN^2*n-mup^2*p0-mup^2*dn}
+  filtered: {muN^2*n-mup^2*p0-mup^2*dn}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r}
+  filtered: {r}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {H}
+  filtered: {H}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {beta}
+  filtered: {beta}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {muN}
+  filtered: {muN}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {mup*r-sigma*H}
+  filtered: {mup*r-sigma*H}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {e*p0*H+e*dn*H-r}
+  filtered: {e*p0*H+e*dn*H-r}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {e*mup*p0+e*mup*dn-sigma}
+  filtered: {e*mup*p0+e*mup*dn-sigma}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {p0+dn}
+  filtered: {p0+dn}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {ph}
+  filtered: {ph}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {mup}
+  filtered: {mup}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {n*beta+p0+dn}
+  filtered: {n*beta+p0+dn}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN*n+mup*p0+mup*dn}
+  filtered: {muN*n+mup*p0+mup*dn}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {beta+1}
+  filtered: {beta+1}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {n-p0-dn}
+  filtered: {n-p0-dn}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN+mup}
+  filtered: {muN+mup}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN*r+mup*r+sigma*H}
+  filtered: {muN*r+mup*r+sigma*H}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {n*beta+p0*beta+2*p0+dn*beta+2*dn}
+  filtered: {n*beta+p0*beta+2*p0+dn*beta+2*dn}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN*n+muN*p0+muN*dn+2*mup*p0+2*mup*dn}
+  filtered: {muN*n+muN*p0+muN*dn+2*mup*p0+2*mup*dn}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {n*mup*r+n*sigma*H-mup*p0*r-mup*dn*r+p0*sigma*H+dn*sigma*H}
+  filtered: {n*mup*r+n*sigma*H-mup*p0*r-mup*dn*r+p0*sigma*H+dn*sigma*H}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN*e*p0+muN*e*dn+e*mup*p0+e*mup*dn+sigma}
+  filtered: {muN*e*p0+muN*e*dn+e*mup*p0+e*mup*dn+sigma}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {n*e*mup*p0+n*e*mup*dn+n*sigma-e*mup*p0^2-2*e*mup*p0*dn-e*mup*dn^2+p0*sigma+dn*sigma}
+  filtered: {n*e*mup*p0+n*e*mup*dn+n*sigma-e*mup*p0^2-2*e*mup*p0*dn-e*mup*dn^2+p0*sigma+dn*sigma}
+  SAVED: false (does not imply all targets)
+
+=== Summary ===
+SAVED_COMBOS:
+  {n-dn}
+  {muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+  {e}
+  {beta}
+  {muN}
+  {mup}
+  {muN*r+mup*r+sigma*H}
+
+STRONG_CANDIDATES:
+  {n-dn}
+  {muN*e*dn+e*mup*p0+e*mup*dn-sigma}

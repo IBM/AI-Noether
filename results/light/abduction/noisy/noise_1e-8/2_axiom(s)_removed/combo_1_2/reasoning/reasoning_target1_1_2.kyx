@@ -1,0 +1,69 @@
+ArchiveEntry "light_target1_combo1_2"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real S;
+  Real ap;
+  Real sintheta;
+  Real dA;
+  Real dtheta;
+  Real r;
+  Real P;
+  Real qc;
+  Real x0;
+  Real w;
+  Real c1_1;
+  Real c1_2;
+  Real c2_3;
+  Real c2_4;
+  Real c1_5;
+  Real c1_6;
+  Real c2_7;
+  Real c2_8;
+  Real d1;
+  Real d2;
+End.
+
+Problem
+  (
+    \exists c1_1 \exists c1_2 \exists c2_3 \exists c2_4 \exists c1_5 \exists c1_6 \exists c2_7 \exists c2_8 \exists d1 \exists d2
+    (
+      c1_1 > 0 & c1_2 > 0 & c2_3 > 0 & c2_4 > 0 & c1_5 > 0 & c1_6 > 0 & c2_7 > 0 & c2_8 > 0 & d1 > 0 & d2 > 0
+      &
+      (
+        \forall S \forall ap \forall sintheta \forall dA \forall dtheta \forall r \forall P \forall qc \forall x0 \forall w
+        (
+          (
+            (S > 0 & ap > 0 & sintheta > 0 & dA > 0 & dtheta > 0 & r > 0 & P > 0 & qc > 0 & x0 > 0 & w > 0) &
+            & ( P - S * dA = 0 )
+            & ( 4/3 - sintheta^3 * dtheta = 0 )
+            & ( ap^2 - (1/2)*w^4 * x0^2 = 0 )
+            & ( ( c1_1 * S*r^2 ) + ( c1_2 * ap^2*sintheta^2*qc^2 ) = 0 )
+            & ( ( c2_3 * sintheta*dtheta*r^2 ) + ( c2_4 * dA ) = 0 )
+            & ( ( c1_5 * S*r^2 ) + ( c1_6 * ap^2*sintheta^2*qc^2 ) = 0 )
+            & ( ( c2_7 * sintheta*dtheta*r^2 ) + ( c2_8 * dA ) = 0 )
+          )
+          ->
+          (
+            ( d1 * P ) + ( d2 * qc^2*x0^2*w^4 ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

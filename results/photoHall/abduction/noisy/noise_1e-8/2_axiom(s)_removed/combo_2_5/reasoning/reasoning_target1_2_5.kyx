@@ -1,0 +1,104 @@
+ArchiveEntry "photoHall_target1_combo2_5"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real ph;
+  Real dp;
+  Real mu;
+  Real muN;
+  Real muH;
+  Real n;
+  Real dsigma2dn;
+  Real e;
+  Real mup;
+  Real p0;
+  Real dn;
+  Real beta;
+  Real r;
+  Real sigma;
+  Real H;
+  Real c2_1;
+  Real c2_2;
+  Real c5_3;
+  Real c5_4;
+  Real c2_5;
+  Real c2_6;
+  Real c5_7;
+  Real c5_8;
+  Real c2_9;
+  Real c2_10;
+  Real c5_11;
+  Real c5_12;
+  Real c2_13;
+  Real c2_14;
+  Real c5_15;
+  Real c5_16;
+  Real c2_17;
+  Real c2_18;
+  Real c5_19;
+  Real c5_20;
+  Real c2_21;
+  Real c2_22;
+  Real c5_23;
+  Real c5_24;
+  Real d1;
+  Real d2;
+  Real d3;
+  Real d4;
+  Real d5;
+  Real d6;
+End.
+
+Problem
+  (
+    \exists c2_1 \exists c2_2 \exists c5_3 \exists c5_4 \exists c2_5 \exists c2_6 \exists c5_7 \exists c5_8 \exists c2_9 \exists c2_10 \exists c5_11 \exists c5_12 \exists c2_13 \exists c2_14 \exists c5_15 \exists c5_16 \exists c2_17 \exists c2_18 \exists c5_19 \exists c5_20 \exists c2_21 \exists c2_22 \exists c5_23 \exists c5_24 \exists d1 \exists d2 \exists d3 \exists d4 \exists d5 \exists d6
+    (
+      c2_1 > 0 & c2_2 > 0 & c5_3 > 0 & c5_4 > 0 & c2_5 > 0 & c2_6 > 0 & c5_7 > 0 & c5_8 > 0 & c2_9 > 0 & c2_10 > 0 & c5_11 > 0 & c5_12 > 0 & c2_13 > 0 & c2_14 > 0 & c5_15 > 0 & c5_16 > 0 & c2_17 > 0 & c2_18 > 0 & c5_19 > 0 & c5_20 > 0 & c2_21 > 0 & c2_22 > 0 & c5_23 > 0 & c5_24 > 0 & d1 > 0 & d2 > 0 & d3 > 0 & d4 > 0 & d5 > 0 & d6 > 0
+      &
+      (
+        \forall ph \forall dp \forall mu \forall muN \forall muH \forall n \forall dsigma2dn \forall e \forall mup \forall p0 \forall dn \forall beta \forall r \forall sigma \forall H
+        (
+          (
+            (ph > 0 & dp > 0 & mu > 0 & muN > 0 & muH > 0 & n > 0 & dsigma2dn > 0 & e > 0 & mup > 0 & p0 > 0 & dn > 0 & beta > 0 & r > 0 & sigma > 0 & H > 0) &
+            & ( beta * mup - muN = 0 )
+            & ( ph - p0 - dp = 0 )
+            & ( n - dn = 0 )
+            & ( sigma - e * ph * mup - e * n * muN = 0 )
+            & ( H * (ph + beta * n)^2 * e - r * ph + r * beta^2 * n = 0 )
+            & ( ( c2_1 * mu*r ) + ( c2_2 * muH ) = 0 )
+            & ( ( c5_3 * dp ) + ( c5_4 * dn ) = 0 )
+            & ( ( c2_5 * mu*r ) + ( c2_6 * muH ) = 0 )
+            & ( ( c5_7 * dp ) + ( c5_8 * dn ) = 0 )
+            & ( ( c2_9 * mu*r ) + ( c2_10 * muH ) = 0 )
+            & ( ( c5_11 * dp ) + ( c5_12 * dn ) = 0 )
+            & ( ( c2_13 * mu*r ) + ( c2_14 * muH ) = 0 )
+            & ( ( c5_15 * dp ) + ( c5_16 * dn ) = 0 )
+            & ( ( c2_17 * mu*r ) + ( c2_18 * muH ) = 0 )
+            & ( ( c5_19 * dp ) + ( c5_20 * dn ) = 0 )
+            & ( ( c2_21 * mu*r ) + ( c2_22 * muH ) = 0 )
+            & ( ( c5_23 * dp ) + ( c5_24 * dn ) = 0 )
+          )
+          ->
+          (
+            ( d1 * e*mup*dn*beta^2*r ) + ( d2 * e*mup*dn*beta*r ) + ( d3 * e*p0*sigma*H ) + ( d4 * e*dn*beta*sigma*H ) + ( d5 * e*dn*sigma*H ) + ( d6 * r*sigma ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

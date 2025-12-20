@@ -1,0 +1,34 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-8
+Removed axiom indices (1-based): [1, 3, 4]
+Removed axioms:
+  ad-g*sintheta
+  T*omega-2*Pii
+  d*omega^2-ad
+
+Numerical engine: nag
+Samples per component: 100
+Number of witness set components: 2
+Symbolic regression results: 6
+
+Regression results below threshold (5.0):
+  Axiom 3, Component 1:
+    Singular value: 2.5182902118719066
+    Polynomial: (-0.108103-0.00473949i)*T*omega + 1*Pii
+    Coefficient L2 error: 0.3919256331970359
+  Axiom 4, Component 1:
+    Singular value: 2.5734319586486
+    Polynomial: 1*ad + (-0.00301255+0.000154228i)*omega^2*d
+    Coefficient L2 error: 0.9969874643455419
+  Axiom 1, Component 2:
+    Singular value: 3.5152386451499225
+    Polynomial: 1*ad + (-0.376324+0.0734757i)*sintheta*g
+    Coefficient L2 error: 0.6279889875159164
+  Axiom 3, Component 2:
+    Singular value: 1.019906100417562
+    Polynomial: (-0.0133003-0.000930465i)*T*omega + 1*Pii
+    Coefficient L2 error: 0.4867005964989967
+  Axiom 4, Component 2:
+    Singular value: 2.2973247251376083
+    Polynomial: 1*ad + (0.0236684+0.00219763i)*omega^2*d
+    Coefficient L2 error: 1.0236707717923053

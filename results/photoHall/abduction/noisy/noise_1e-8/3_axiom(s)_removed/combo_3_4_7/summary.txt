@@ -1,0 +1,50 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-8
+Removed axiom indices (1-based): [3, 4, 7]
+Removed axioms:
+  ph - p0 - dp
+  n - dn
+  H * (ph + beta * n)^2 * e - r * ph + r * beta^2 * n
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 3
+Symbolic regression results: 9
+
+Regression results below threshold (200.0):
+  Axiom 3, Component 1:
+    Singular value: 1.9550670714747485
+    Polynomial: (0.279962-0.0151461i)*ph + 1*dp + (0.0448289-0.0139727i)*p0
+    Coefficient L2 error: 1.5972096092595525
+  Axiom 4, Component 1:
+    Singular value: 2.008192082523146
+    Polynomial: (0.392824-0.0131647i)*n + 1*dn
+    Coefficient L2 error: 1.3928860265974528
+  Axiom 7, Component 1:
+    Singular value: 6.234584038364733e-31
+    Polynomial: 1*ph^2*e*H + (0.062122-0.139814i)*n^2*e*beta^2*H
+    Coefficient L2 error: 1.4004588625133745
+  Axiom 3, Component 2:
+    Singular value: 1.732942262066434
+    Polynomial: (-0.0593811+0.0264565i)*ph + 1*dp + (-0.116075-0.0051647i)*p0
+    Coefficient L2 error: 1.4598337108916455
+  Axiom 4, Component 2:
+    Singular value: 2.3120582252842126
+    Polynomial: (-0.0178089+0.0345265i)*n + 1*dn
+    Coefficient L2 error: 0.9827977519494082
+  Axiom 7, Component 2:
+    Singular value: 1.8842544821278062
+    Polynomial: (0.0394867+0.00178699i)*ph^2*e*H + (0.0094148+0.00599196i)*ph*n*e*beta*H + 1*ph*r + (0.00118001+0.000665362i)*n^2*e*beta^2*H + (0.00115179-0.00232045i)*n*beta^2*r
+    Coefficient L2 error: 1.436086218820957
+  Axiom 3, Component 3:
+    Singular value: 1.040693071091433
+    Polynomial: (-0.0239493+0.0149965i)*ph + 1*dp + (0.128642-0.0483854i)*p0
+    Coefficient L2 error: 1.30939133078169
+  Axiom 4, Component 3:
+    Singular value: 1.2794641369625088
+    Polynomial: (-0.0424267+0.0439759i)*n + 1*dn
+    Coefficient L2 error: 0.9585825818701497
+  Axiom 7, Component 3:
+    Singular value: 2.915868229361765
+    Polynomial: (-0.311508-0.168364i)*ph^2*e*H + (-0.352024-0.317525i)*ph*n*e*beta*H + 1*ph*r + (-0.00931024-0.140876i)*n^2*e*beta^2*H + (0.113133-0.219603i)*n*beta^2*r
+    Coefficient L2 error: 1.2326191688060335

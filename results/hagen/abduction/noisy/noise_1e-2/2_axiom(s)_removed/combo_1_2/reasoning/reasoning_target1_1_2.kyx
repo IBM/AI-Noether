@@ -1,0 +1,65 @@
+ArchiveEntry "hagen_target1_combo1_2"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real c0;
+  Real c2;
+  Real dp;
+  Real r;
+  Real Rad;
+  Real u;
+  Real L;
+  Real mu;
+  Real delP;
+  Real c1_1;
+  Real c1_2;
+  Real c2_3;
+  Real c2_4;
+  Real c2_5;
+  Real c2_6;
+  Real d1;
+  Real d2;
+  Real d3;
+End.
+
+Problem
+  (
+    \exists c1_1 \exists c1_2 \exists c2_3 \exists c2_4 \exists c2_5 \exists c2_6 \exists d1 \exists d2 \exists d3
+    (
+      c1_1 > 0 & c1_2 > 0 & c2_3 > 0 & c2_4 > 0 & c2_5 > 0 & c2_6 > 0 & d1 > 0 & d2 > 0 & d3 > 0
+      &
+      (
+        \forall c0 \forall c2 \forall dp \forall r \forall Rad \forall u \forall L \forall mu \forall delP
+        (
+          (
+            (c0 > 0 & c2 > 0 & dp > 0 & r > 0 & Rad > 0 & u > 0 & L > 0 & mu > 0 & delP > 0) &
+            & ( c0 + c2*Rad^2 = 0 )
+            & ( u - c0 - r^2*c2 = 0 )
+            & ( ( c1_1 * c2*r*mu ) + ( c1_2 * dp*r ) = 0 )
+            & ( ( c2_3 * dp*L ) + ( c2_4 * delP ) = 0 )
+            & ( ( c2_5 * dp*L ) + ( c2_6 * delP ) = 0 )
+          )
+          ->
+          (
+            ( d1 * r^3*delP ) + ( d2 * r*Rad^2*delP ) + ( d3 * r*u*L*mu ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

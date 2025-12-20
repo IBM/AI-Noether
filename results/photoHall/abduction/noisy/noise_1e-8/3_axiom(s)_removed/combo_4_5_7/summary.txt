@@ -1,0 +1,50 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-8
+Removed axiom indices (1-based): [4, 5, 7]
+Removed axioms:
+  n - dn
+  dp - dn
+  H * (ph + beta * n)^2 * e - r * ph + r * beta^2 * n
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 3
+Symbolic regression results: 9
+
+Regression results below threshold (200.0):
+  Axiom 4, Component 1:
+    Singular value: 8.626989819233225
+    Polynomial: (-0.101806-0.208819i)*n + 1*dn
+    Coefficient L2 error: 0.9221487565656273
+  Axiom 5, Component 1:
+    Singular value: 2.7842103265313805
+    Polynomial: 1*dp + (-0.164702-0.0551089i)*dn
+    Coefficient L2 error: 0.8371137163991401
+  Axiom 7, Component 1:
+    Singular value: 9.54689877820702e-32
+    Polynomial: (-0.189243+0.0285538i)*ph^2*e*H + 1*n^2*e*beta^2*H
+    Coefficient L2 error: 1.4919352295633421
+  Axiom 4, Component 2:
+    Singular value: 13.699573348841078
+    Polynomial: 1*n + (-0.0538146+0.928543i)*dn
+    Coefficient L2 error: 1.3256916269510821
+  Axiom 5, Component 2:
+    Singular value: 2.047761328131227
+    Polynomial: 1*dp + (0.147838-0.0936158i)*dn
+    Coefficient L2 error: 1.151648913454017
+  Axiom 7, Component 2:
+    Singular value: 2.0973938435376946
+    Polynomial: (-0.183204+0.139353i)*ph^2*e*H + (-0.0153779-0.0436461i)*ph*n*e*beta*H + 1*ph*r + (0.00674769-0.00717813i)*n^2*e*beta^2*H + (0.0960908+0.034751i)*n*beta^2*r
+    Coefficient L2 error: 1.3980491524120695
+  Axiom 4, Component 3:
+    Singular value: 4.612634514667101
+    Polynomial: (-0.805602+0.427195i)*n + 1*dn
+    Coefficient L2 error: 0.46934597800794375
+  Axiom 5, Component 3:
+    Singular value: 1.6488524639564146
+    Polynomial: (0.0876609+0.0171125i)*dp + 1*dn
+    Coefficient L2 error: 1.087795523214608
+  Axiom 7, Component 3:
+    Singular value: 1.0421299415485057
+    Polynomial: (0.0298352-0.00791059i)*ph^2*e*H + (0.00421417+0.0020965i)*ph*n*e*beta*H + 1*ph*r + (-0.041295+0.014658i)*n^2*e*beta^2*H + (-0.00646728+0.000406602i)*n*beta^2*r
+    Coefficient L2 error: 1.4118917391200527

@@ -1,0 +1,205 @@
+ArchiveEntry "inelastic_collision_target1_combo5_7_9"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real mr;
+  Real vm;
+  Real vc;
+  Real pc;
+  Real Em;
+  Real Er;
+  Real Ec;
+  Real mc;
+  Real mm;
+  Real pm;
+  Real c;
+  Real c5_1;
+  Real c5_2;
+  Real c5_3;
+  Real c5_4;
+  Real c7_5;
+  Real c7_6;
+  Real c9_7;
+  Real c9_8;
+  Real c9_9;
+  Real c5_10;
+  Real c5_11;
+  Real c5_12;
+  Real c5_13;
+  Real c7_14;
+  Real c7_15;
+  Real c9_16;
+  Real c9_17;
+  Real c9_18;
+  Real c5_19;
+  Real c5_20;
+  Real c5_21;
+  Real c5_22;
+  Real c7_23;
+  Real c7_24;
+  Real c9_25;
+  Real c9_26;
+  Real c9_27;
+  Real c5_28;
+  Real c5_29;
+  Real c5_30;
+  Real c5_31;
+  Real c7_32;
+  Real c7_33;
+  Real c9_34;
+  Real c9_35;
+  Real c9_36;
+  Real c5_37;
+  Real c5_38;
+  Real c5_39;
+  Real c5_40;
+  Real c7_41;
+  Real c7_42;
+  Real c9_43;
+  Real c9_44;
+  Real c9_45;
+  Real c5_46;
+  Real c5_47;
+  Real c5_48;
+  Real c5_49;
+  Real c7_50;
+  Real c7_51;
+  Real c9_52;
+  Real c9_53;
+  Real c9_54;
+  Real c5_55;
+  Real c5_56;
+  Real c5_57;
+  Real c5_58;
+  Real c7_59;
+  Real c7_60;
+  Real c9_61;
+  Real c9_62;
+  Real c9_63;
+  Real c5_64;
+  Real c5_65;
+  Real c5_66;
+  Real c5_67;
+  Real c7_68;
+  Real c7_69;
+  Real c9_70;
+  Real c9_71;
+  Real c9_72;
+  Real c5_73;
+  Real c5_74;
+  Real c5_75;
+  Real c5_76;
+  Real c7_77;
+  Real c7_78;
+  Real c9_79;
+  Real c9_80;
+  Real c9_81;
+  Real c5_82;
+  Real c5_83;
+  Real c5_84;
+  Real c5_85;
+  Real c7_86;
+  Real c7_87;
+  Real c9_88;
+  Real c9_89;
+  Real c9_90;
+  Real c5_91;
+  Real c5_92;
+  Real c5_93;
+  Real c5_94;
+  Real c7_95;
+  Real c7_96;
+  Real c9_97;
+  Real c9_98;
+  Real c9_99;
+  Real c5_100;
+  Real c5_101;
+  Real c5_102;
+  Real c5_103;
+  Real c7_104;
+  Real c7_105;
+  Real c9_106;
+  Real c9_107;
+  Real c9_108;
+  Real d1;
+  Real d2;
+End.
+
+Problem
+  (
+    \exists c5_1 \exists c5_2 \exists c5_3 \exists c5_4 \exists c7_5 \exists c7_6 \exists c9_7 \exists c9_8 \exists c9_9 \exists c5_10 \exists c5_11 \exists c5_12 \exists c5_13 \exists c7_14 \exists c7_15 \exists c9_16 \exists c9_17 \exists c9_18 \exists c5_19 \exists c5_20 \exists c5_21 \exists c5_22 \exists c7_23 \exists c7_24 \exists c9_25 \exists c9_26 \exists c9_27 \exists c5_28 \exists c5_29 \exists c5_30 \exists c5_31 \exists c7_32 \exists c7_33 \exists c9_34 \exists c9_35 \exists c9_36 \exists c5_37 \exists c5_38 \exists c5_39 \exists c5_40 \exists c7_41 \exists c7_42 \exists c9_43 \exists c9_44 \exists c9_45 \exists c5_46 \exists c5_47 \exists c5_48 \exists c5_49 \exists c7_50 \exists c7_51 \exists c9_52 \exists c9_53 \exists c9_54 \exists c5_55 \exists c5_56 \exists c5_57 \exists c5_58 \exists c7_59 \exists c7_60 \exists c9_61 \exists c9_62 \exists c9_63 \exists c5_64 \exists c5_65 \exists c5_66 \exists c5_67 \exists c7_68 \exists c7_69 \exists c9_70 \exists c9_71 \exists c9_72 \exists c5_73 \exists c5_74 \exists c5_75 \exists c5_76 \exists c7_77 \exists c7_78 \exists c9_79 \exists c9_80 \exists c9_81 \exists c5_82 \exists c5_83 \exists c5_84 \exists c5_85 \exists c7_86 \exists c7_87 \exists c9_88 \exists c9_89 \exists c9_90 \exists c5_91 \exists c5_92 \exists c5_93 \exists c5_94 \exists c7_95 \exists c7_96 \exists c9_97 \exists c9_98 \exists c9_99 \exists c5_100 \exists c5_101 \exists c5_102 \exists c5_103 \exists c7_104 \exists c7_105 \exists c9_106 \exists c9_107 \exists c9_108 \exists d1 \exists d2
+    (
+      c5_1 > 0 & c5_2 > 0 & c5_3 > 0 & c5_4 > 0 & c7_5 > 0 & c7_6 > 0 & c9_7 > 0 & c9_8 > 0 & c9_9 > 0 & c5_10 > 0 & c5_11 > 0 & c5_12 > 0 & c5_13 > 0 & c7_14 > 0 & c7_15 > 0 & c9_16 > 0 & c9_17 > 0 & c9_18 > 0 & c5_19 > 0 & c5_20 > 0 & c5_21 > 0 & c5_22 > 0 & c7_23 > 0 & c7_24 > 0 & c9_25 > 0 & c9_26 > 0 & c9_27 > 0 & c5_28 > 0 & c5_29 > 0 & c5_30 > 0 & c5_31 > 0 & c7_32 > 0 & c7_33 > 0 & c9_34 > 0 & c9_35 > 0 & c9_36 > 0 & c5_37 > 0 & c5_38 > 0 & c5_39 > 0 & c5_40 > 0 & c7_41 > 0 & c7_42 > 0 & c9_43 > 0 & c9_44 > 0 & c9_45 > 0 & c5_46 > 0 & c5_47 > 0 & c5_48 > 0 & c5_49 > 0 & c7_50 > 0 & c7_51 > 0 & c9_52 > 0 & c9_53 > 0 & c9_54 > 0 & c5_55 > 0 & c5_56 > 0 & c5_57 > 0 & c5_58 > 0 & c7_59 > 0 & c7_60 > 0 & c9_61 > 0 & c9_62 > 0 & c9_63 > 0 & c5_64 > 0 & c5_65 > 0 & c5_66 > 0 & c5_67 > 0 & c7_68 > 0 & c7_69 > 0 & c9_70 > 0 & c9_71 > 0 & c9_72 > 0 & c5_73 > 0 & c5_74 > 0 & c5_75 > 0 & c5_76 > 0 & c7_77 > 0 & c7_78 > 0 & c9_79 > 0 & c9_80 > 0 & c9_81 > 0 & c5_82 > 0 & c5_83 > 0 & c5_84 > 0 & c5_85 > 0 & c7_86 > 0 & c7_87 > 0 & c9_88 > 0 & c9_89 > 0 & c9_90 > 0 & c5_91 > 0 & c5_92 > 0 & c5_93 > 0 & c5_94 > 0 & c7_95 > 0 & c7_96 > 0 & c9_97 > 0 & c9_98 > 0 & c9_99 > 0 & c5_100 > 0 & c5_101 > 0 & c5_102 > 0 & c5_103 > 0 & c7_104 > 0 & c7_105 > 0 & c9_106 > 0 & c9_107 > 0 & c9_108 > 0 & d1 > 0 & d2 > 0
+      &
+      (
+        \forall mr \forall vm \forall vc \forall pc \forall Em \forall Er \forall Ec \forall mc \forall mm \forall pm \forall c
+        (
+          (
+            (mr > 0 & vm > 0 & vc > 0 & pc > 0 & Em > 0 & Er > 0 & Ec > 0 & mc > 0 & mm > 0 & pm > 0 & c > 0) &
+            & ( pm^2*(c^2 - vm^2) - mm^2*vm^2*c^2 = 0 )
+            & ( Em^2 - (mm*c^2)^2 - (pm*c)^2 = 0 )
+            & ( Er - mr*c^2 = 0 )
+            & ( Ec^2 - (mc*c)^2 - (pc*c)^2 = 0 )
+            & ( pc - pm = 0 )
+            & ( mr - mm = 0 )
+            & ( ( c5_1 * Em^2 ) + ( c5_2 * Em*Er ) + ( c5_3 * Er^2 ) + ( c5_4 * Ec^2 ) = 0 )
+            & ( ( c7_5 * vm ) + ( c7_6 * c ) = 0 )
+            & ( ( c9_7 * vc^2*pc^2 ) + ( c9_8 * vc^2*mc^2*c^2 ) + ( c9_9 * pc^2*c^2 ) = 0 )
+            & ( ( c5_10 * Em^2 ) + ( c5_11 * Em*Er ) + ( c5_12 * Er^2 ) + ( c5_13 * Ec^2 ) = 0 )
+            & ( ( c7_14 * vm ) + ( c7_15 * c ) = 0 )
+            & ( ( c9_16 * vc^2*pc^2 ) + ( c9_17 * vc^2*mc^2*c^2 ) + ( c9_18 * pc^2*c^2 ) = 0 )
+            & ( ( c5_19 * Em^2 ) + ( c5_20 * Em*Er ) + ( c5_21 * Er^2 ) + ( c5_22 * Ec^2 ) = 0 )
+            & ( ( c7_23 * vm ) + ( c7_24 * c ) = 0 )
+            & ( ( c9_25 * vc^2*pc^2 ) + ( c9_26 * vc^2*mc^2*c^2 ) + ( c9_27 * pc^2*c^2 ) = 0 )
+            & ( ( c5_28 * Em^2 ) + ( c5_29 * Em*Er ) + ( c5_30 * Er^2 ) + ( c5_31 * Ec^2 ) = 0 )
+            & ( ( c7_32 * vm ) + ( c7_33 * c ) = 0 )
+            & ( ( c9_34 * vc^2*pc^2 ) + ( c9_35 * vc^2*mc^2*c^2 ) + ( c9_36 * pc^2*c^2 ) = 0 )
+            & ( ( c5_37 * Em^2 ) + ( c5_38 * Em*Er ) + ( c5_39 * Er^2 ) + ( c5_40 * Ec^2 ) = 0 )
+            & ( ( c7_41 * vm ) + ( c7_42 * c ) = 0 )
+            & ( ( c9_43 * vc^2*pc^2 ) + ( c9_44 * vc^2*mc^2*c^2 ) + ( c9_45 * pc^2*c^2 ) = 0 )
+            & ( ( c5_46 * Em^2 ) + ( c5_47 * Em*Er ) + ( c5_48 * Er^2 ) + ( c5_49 * Ec^2 ) = 0 )
+            & ( ( c7_50 * vm ) + ( c7_51 * c ) = 0 )
+            & ( ( c9_52 * vc^2*pc^2 ) + ( c9_53 * vc^2*mc^2*c^2 ) + ( c9_54 * pc^2*c^2 ) = 0 )
+            & ( ( c5_55 * Em^2 ) + ( c5_56 * Em*Er ) + ( c5_57 * Er^2 ) + ( c5_58 * Ec^2 ) = 0 )
+            & ( ( c7_59 * vm ) + ( c7_60 * c ) = 0 )
+            & ( ( c9_61 * vc^2*pc^2 ) + ( c9_62 * vc^2*mc^2*c^2 ) + ( c9_63 * pc^2*c^2 ) = 0 )
+            & ( ( c5_64 * Em^2 ) + ( c5_65 * Em*Er ) + ( c5_66 * Er^2 ) + ( c5_67 * Ec^2 ) = 0 )
+            & ( ( c7_68 * vm ) + ( c7_69 * c ) = 0 )
+            & ( ( c9_70 * vc^2*pc^2 ) + ( c9_71 * vc^2*mc^2*c^2 ) + ( c9_72 * pc^2*c^2 ) = 0 )
+            & ( ( c5_73 * Em^2 ) + ( c5_74 * Em*Er ) + ( c5_75 * Er^2 ) + ( c5_76 * Ec^2 ) = 0 )
+            & ( ( c7_77 * vm ) + ( c7_78 * c ) = 0 )
+            & ( ( c9_79 * vc^2*pc^2 ) + ( c9_80 * vc^2*mc^2*c^2 ) + ( c9_81 * pc^2*c^2 ) = 0 )
+            & ( ( c5_82 * Em^2 ) + ( c5_83 * Em*Er ) + ( c5_84 * Er^2 ) + ( c5_85 * Ec^2 ) = 0 )
+            & ( ( c7_86 * vm ) + ( c7_87 * c ) = 0 )
+            & ( ( c9_88 * vc^2*pc^2 ) + ( c9_89 * vc^2*mc^2*c^2 ) + ( c9_90 * pc^2*c^2 ) = 0 )
+            & ( ( c5_91 * Em^2 ) + ( c5_92 * Em*Er ) + ( c5_93 * Er^2 ) + ( c5_94 * Ec^2 ) = 0 )
+            & ( ( c7_95 * vm ) + ( c7_96 * c ) = 0 )
+            & ( ( c9_97 * vc^2*pc^2 ) + ( c9_98 * vc^2*mc^2*c^2 ) + ( c9_99 * pc^2*c^2 ) = 0 )
+            & ( ( c5_100 * Em^2 ) + ( c5_101 * Em*Er ) + ( c5_102 * Er^2 ) + ( c5_103 * Ec^2 ) = 0 )
+            & ( ( c7_104 * vm ) + ( c7_105 * c ) = 0 )
+            & ( ( c9_106 * vc^2*pc^2 ) + ( c9_107 * vc^2*mc^2*c^2 ) + ( c9_108 * pc^2*c^2 ) = 0 )
+          )
+          ->
+          (
+            ( d1 * mm^2*c^4 ) + ( d2 * pm^2*c^2 ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

@@ -1,0 +1,101 @@
+Number of components: 4
+Number of remaining axioms: 3
+Number of targets: 1
+Max candidate set size: 3
+Number of candidate sets (after filtering): 82
+
+Filtering method: ideal membership test
+  Generators g where g ∈ ideal(remaining_axioms + targets) are excluded
+  (They contain no new information beyond what's already known)
+
+Remaining axioms:
+  1. 4*r*c2*mu - r*dp
+  2. delP + L*dp
+  3. c0 + c2*Rad^2
+
+Targets:
+  1. r^3*delP - r*Rad^2*delP + 4*r*u*L*mu
+
+Candidate sets to test:
+  Candidate 0: [] (empty set / baseline)
+  Candidate 1: ['4*c2*mu-dp']
+  Candidate 2: ['4*u*L*mu+r^2*delP-Rad^2*delP']
+  Candidate 3: ['4*c0*L*mu-4*u*L*mu-r^2*delP']
+  Candidate 4: ['dp*Rad^2+4*c0*mu']
+  Candidate 5: ['dp*r^2+4*c0*mu-4*u*mu']
+  Candidate 6: ['c2*r^2+c0-u']
+  Candidate 7: ['c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 8: ['4*c2*mu-dp', '4*u*L*mu+r^2*delP-Rad^2*delP']
+  Candidate 9: ['4*c2*mu-dp', '4*c0*L*mu-4*u*L*mu-r^2*delP']
+  Candidate 10: ['4*c2*mu-dp', 'dp*Rad^2+4*c0*mu']
+  Candidate 11: ['4*c2*mu-dp', 'dp*r^2+4*c0*mu-4*u*mu']
+  Candidate 12: ['4*c2*mu-dp', 'c2*r^2+c0-u']
+  Candidate 13: ['4*c2*mu-dp', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 14: ['4*u*L*mu+r^2*delP-Rad^2*delP', '4*c0*L*mu-4*u*L*mu-r^2*delP']
+  Candidate 15: ['4*u*L*mu+r^2*delP-Rad^2*delP', 'dp*Rad^2+4*c0*mu']
+  Candidate 16: ['4*u*L*mu+r^2*delP-Rad^2*delP', 'dp*r^2+4*c0*mu-4*u*mu']
+  Candidate 17: ['4*u*L*mu+r^2*delP-Rad^2*delP', 'c2*r^2+c0-u']
+  Candidate 18: ['4*u*L*mu+r^2*delP-Rad^2*delP', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 19: ['4*c0*L*mu-4*u*L*mu-r^2*delP', 'dp*Rad^2+4*c0*mu']
+  Candidate 20: ['4*c0*L*mu-4*u*L*mu-r^2*delP', 'dp*r^2+4*c0*mu-4*u*mu']
+  Candidate 21: ['4*c0*L*mu-4*u*L*mu-r^2*delP', 'c2*r^2+c0-u']
+  Candidate 22: ['4*c0*L*mu-4*u*L*mu-r^2*delP', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 23: ['dp*Rad^2+4*c0*mu', 'dp*r^2+4*c0*mu-4*u*mu']
+  Candidate 24: ['dp*Rad^2+4*c0*mu', 'c2*r^2+c0-u']
+  Candidate 25: ['dp*Rad^2+4*c0*mu', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 26: ['dp*r^2+4*c0*mu-4*u*mu', 'c2*r^2+c0-u']
+  Candidate 27: ['dp*r^2+4*c0*mu-4*u*mu', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 28: ['c2*r^2+c0-u', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 29: ['4*c2*mu-dp', '4*u*L*mu+r^2*delP-Rad^2*delP', '4*c0*L*mu-4*u*L*mu-r^2*delP']
+  Candidate 30: ['4*c2*mu-dp', '4*u*L*mu+r^2*delP-Rad^2*delP', 'dp*Rad^2+4*c0*mu']
+  Candidate 31: ['4*c2*mu-dp', '4*u*L*mu+r^2*delP-Rad^2*delP', 'dp*r^2+4*c0*mu-4*u*mu']
+  Candidate 32: ['4*c2*mu-dp', '4*u*L*mu+r^2*delP-Rad^2*delP', 'c2*r^2+c0-u']
+  Candidate 33: ['4*c2*mu-dp', '4*u*L*mu+r^2*delP-Rad^2*delP', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 34: ['4*c2*mu-dp', '4*c0*L*mu-4*u*L*mu-r^2*delP', 'dp*Rad^2+4*c0*mu']
+  Candidate 35: ['4*c2*mu-dp', '4*c0*L*mu-4*u*L*mu-r^2*delP', 'dp*r^2+4*c0*mu-4*u*mu']
+  Candidate 36: ['4*c2*mu-dp', '4*c0*L*mu-4*u*L*mu-r^2*delP', 'c2*r^2+c0-u']
+  Candidate 37: ['4*c2*mu-dp', '4*c0*L*mu-4*u*L*mu-r^2*delP', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 38: ['4*c2*mu-dp', 'dp*Rad^2+4*c0*mu', 'dp*r^2+4*c0*mu-4*u*mu']
+  Candidate 39: ['4*c2*mu-dp', 'dp*Rad^2+4*c0*mu', 'c2*r^2+c0-u']
+  Candidate 40: ['4*c2*mu-dp', 'dp*Rad^2+4*c0*mu', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 41: ['4*c2*mu-dp', 'dp*r^2+4*c0*mu-4*u*mu', 'c2*r^2+c0-u']
+  Candidate 42: ['4*c2*mu-dp', 'dp*r^2+4*c0*mu-4*u*mu', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 43: ['4*c2*mu-dp', 'c2*r^2+c0-u', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 44: ['4*u*L*mu+r^2*delP-Rad^2*delP', '4*c0*L*mu-4*u*L*mu-r^2*delP', 'dp*Rad^2+4*c0*mu']
+  Candidate 45: ['4*u*L*mu+r^2*delP-Rad^2*delP', '4*c0*L*mu-4*u*L*mu-r^2*delP', 'dp*r^2+4*c0*mu-4*u*mu']
+  Candidate 46: ['4*u*L*mu+r^2*delP-Rad^2*delP', '4*c0*L*mu-4*u*L*mu-r^2*delP', 'c2*r^2+c0-u']
+  Candidate 47: ['4*u*L*mu+r^2*delP-Rad^2*delP', '4*c0*L*mu-4*u*L*mu-r^2*delP', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 48: ['4*u*L*mu+r^2*delP-Rad^2*delP', 'dp*Rad^2+4*c0*mu', 'dp*r^2+4*c0*mu-4*u*mu']
+  Candidate 49: ['4*u*L*mu+r^2*delP-Rad^2*delP', 'dp*Rad^2+4*c0*mu', 'c2*r^2+c0-u']
+  Candidate 50: ['4*u*L*mu+r^2*delP-Rad^2*delP', 'dp*Rad^2+4*c0*mu', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 51: ['4*u*L*mu+r^2*delP-Rad^2*delP', 'dp*r^2+4*c0*mu-4*u*mu', 'c2*r^2+c0-u']
+  Candidate 52: ['4*u*L*mu+r^2*delP-Rad^2*delP', 'dp*r^2+4*c0*mu-4*u*mu', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 53: ['4*u*L*mu+r^2*delP-Rad^2*delP', 'c2*r^2+c0-u', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 54: ['4*c0*L*mu-4*u*L*mu-r^2*delP', 'dp*Rad^2+4*c0*mu', 'dp*r^2+4*c0*mu-4*u*mu']
+  Candidate 55: ['4*c0*L*mu-4*u*L*mu-r^2*delP', 'dp*Rad^2+4*c0*mu', 'c2*r^2+c0-u']
+  Candidate 56: ['4*c0*L*mu-4*u*L*mu-r^2*delP', 'dp*Rad^2+4*c0*mu', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 57: ['4*c0*L*mu-4*u*L*mu-r^2*delP', 'dp*r^2+4*c0*mu-4*u*mu', 'c2*r^2+c0-u']
+  Candidate 58: ['4*c0*L*mu-4*u*L*mu-r^2*delP', 'dp*r^2+4*c0*mu-4*u*mu', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 59: ['4*c0*L*mu-4*u*L*mu-r^2*delP', 'c2*r^2+c0-u', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 60: ['dp*Rad^2+4*c0*mu', 'dp*r^2+4*c0*mu-4*u*mu', 'c2*r^2+c0-u']
+  Candidate 61: ['dp*Rad^2+4*c0*mu', 'dp*r^2+4*c0*mu-4*u*mu', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 62: ['dp*Rad^2+4*c0*mu', 'c2*r^2+c0-u', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 63: ['dp*r^2+4*c0*mu-4*u*mu', 'c2*r^2+c0-u', 'c0*r^2-c0*Rad^2+Rad^2*u']
+  Candidate 64: ['r']
+  Candidate 65: ['delP']
+  Candidate 66: ['L']
+  Candidate 67: ['delP', 'L']
+  Candidate 68: ['delP', '4*c2*mu-dp']
+  Candidate 69: ['delP', 'dp*Rad^2+4*c0*mu']
+  Candidate 70: ['L', '4*c2*mu-dp']
+  Candidate 71: ['L', 'dp*Rad^2+4*c0*mu']
+  Candidate 72: ['delP', 'L', '4*c2*mu-dp']
+  Candidate 73: ['delP', 'L', 'dp*Rad^2+4*c0*mu']
+  Candidate 74: ['delP', '4*c2*mu-dp', 'dp*Rad^2+4*c0*mu']
+  Candidate 75: ['L', '4*c2*mu-dp', 'dp*Rad^2+4*c0*mu']
+  Candidate 76: ['mu']
+  Candidate 77: ['dp']
+  Candidate 78: ['delP', 'mu']
+  Candidate 79: ['delP', 'dp']
+  Candidate 80: ['mu', 'dp']
+  Candidate 81: ['delP', 'mu', 'dp']

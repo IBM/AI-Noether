@@ -1,0 +1,114 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  -muN+mup*beta
+  ph-dp-p0
+  n-dn
+  dp-dn
+  ph^2*e*H+2*ph*n*e*beta*H-ph*r+n^2*e*beta^2*H+n*beta^2*r
+
+Targets:
+  e*mup*dn*beta^2*r+e*mup*dn*beta*r+e*p0*sigma*H+e*dn*beta*sigma*H+e*dn*sigma*H-r*sigma
+
+Require literal GB appearance: true
+Number of candidate sets to test: 23
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+  filtered: {muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+  filtered: {muN*dn*beta*r-mup*p0*r-mup*dn*r+p0*sigma*H+dn*beta*sigma*H+dn*sigma*H}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-muN^2*dn*r-muN*dn*sigma*H+mup^2*p0*r+mup^2*dn*r-mup*p0*sigma*H-mup*dn*sigma*H}
+  filtered: {-muN^2*dn*r-muN*dn*sigma*H+mup^2*p0*r+mup^2*dn*r-mup*p0*sigma*H-mup*dn*sigma*H}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN*e*p0+muN*e*dn*beta+muN*e*dn-beta*sigma}
+  filtered: {muN*e*p0+muN*e*dn*beta+muN*e*dn-beta*sigma}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-muN*e*p0*r+e*p0*sigma*H+e*dn*beta*sigma*H+e*dn*sigma*H+beta*r*sigma-r*sigma}
+  filtered: {-muN*e*p0*r+e*p0*sigma*H+e*dn*beta*sigma*H+e*dn*sigma*H+beta*r*sigma-r*sigma}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN^2*e*dn*r+muN*e*mup*dn*r-mup*r*sigma+sigma^2*H}
+  filtered: {muN^2*e*dn*r+muN*e*mup*dn*r-mup*r*sigma+sigma^2*H}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN^2*e*p0*r-muN*beta*r*sigma+muN*r*sigma-beta*sigma^2*H}
+  filtered: {muN^2*e*p0*r-muN*beta*r*sigma+muN*r*sigma-beta*sigma^2*H}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r}
+  filtered: {r}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {p0+dn*beta+dn}
+  filtered: {p0+dn*beta+dn}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN*dn+mup*p0+mup*dn}
+  filtered: {muN*dn+mup*p0+mup*dn}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {H}
+  filtered: {H}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {e}
+  filtered: {e}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dn}
+  filtered: {dn}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {n}
+  filtered: {n}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {dp}
+  filtered: {dp}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {ph-p0}
+  filtered: {ph-p0}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {e*p0*H-r}
+  filtered: {e*p0*H-r}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {beta}
+  filtered: {beta}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN}
+  filtered: {muN}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {e*p0*H+e*dn*H-r}
+  filtered: {e*p0*H+e*dn*H-r}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {beta+1}
+  filtered: {beta+1}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {muN+mup}
+  filtered: {muN+mup}
+  SAVED: false (does not imply all targets)
+
+=== Summary ===
+SAVED_COMBOS:
+  {muN*e*dn+e*mup*p0+e*mup*dn-sigma}
+
+STRONG_CANDIDATES:
+  {muN*e*dn+e*mup*p0+e*mup*dn-sigma}

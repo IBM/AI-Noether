@@ -1,0 +1,83 @@
+ArchiveEntry "pendulum_target1_combo2_5"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real ad;
+  Real T;
+  Real omega;
+  Real theta;
+  Real sintheta;
+  Real d;
+  Real g;
+  Real L;
+  Real j;
+  Real Pi;
+  Real Tj;
+  Real c2_1;
+  Real c2_2;
+  Real c5_3;
+  Real c5_4;
+  Real c2_5;
+  Real c2_6;
+  Real c5_7;
+  Real c5_8;
+  Real c2_9;
+  Real c2_10;
+  Real c5_11;
+  Real c5_12;
+  Real c2_13;
+  Real c2_14;
+  Real c5_15;
+  Real c5_16;
+  Real d1;
+  Real d2;
+End.
+
+Problem
+  (
+    \exists c2_1 \exists c2_2 \exists c5_3 \exists c5_4 \exists c2_5 \exists c2_6 \exists c5_7 \exists c5_8 \exists c2_9 \exists c2_10 \exists c5_11 \exists c5_12 \exists c2_13 \exists c2_14 \exists c5_15 \exists c5_16 \exists d1 \exists d2
+    (
+      c2_1 > 0 & c2_2 > 0 & c5_3 > 0 & c5_4 > 0 & c2_5 > 0 & c2_6 > 0 & c5_7 > 0 & c5_8 > 0 & c2_9 > 0 & c2_10 > 0 & c5_11 > 0 & c5_12 > 0 & c2_13 > 0 & c2_14 > 0 & c5_15 > 0 & c5_16 > 0 & d1 > 0 & d2 > 0
+      &
+      (
+        \forall ad \forall T \forall omega \forall theta \forall sintheta \forall d \forall g \forall L \forall j \forall Pi \forall Tj
+        (
+          (
+            (ad > 0 & T > 0 & omega > 0 & theta > 0 & sintheta > 0 & d > 0 & g > 0 & L > 0 & j > 0 & Pi > 0 & Tj > 0) &
+            & ( ad-g*sintheta = 0 )
+            & ( T*omega-2*Pi = 0 )
+            & ( d*omega^2-ad = 0 )
+            & ( sintheta - theta = 0 )
+            & ( ( c2_1 * theta*L ) + ( c2_2 * d ) = 0 )
+            & ( ( c5_3 * T*j ) + ( c5_4 * Tj ) = 0 )
+            & ( ( c2_5 * theta*L ) + ( c2_6 * d ) = 0 )
+            & ( ( c5_7 * T*j ) + ( c5_8 * Tj ) = 0 )
+            & ( ( c2_9 * theta*L ) + ( c2_10 * d ) = 0 )
+            & ( ( c5_11 * T*j ) + ( c5_12 * Tj ) = 0 )
+            & ( ( c2_13 * theta*L ) + ( c2_14 * d ) = 0 )
+            & ( ( c5_15 * T*j ) + ( c5_16 * Tj ) = 0 )
+          )
+          ->
+          (
+            ( d1 * d*g*Tj^2 ) + ( d2 * d*L*j^2*Pi^2 ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

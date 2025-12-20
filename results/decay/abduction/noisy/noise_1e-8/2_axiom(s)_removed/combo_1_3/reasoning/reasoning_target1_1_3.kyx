@@ -23,10 +23,8 @@ ProgramVariables
   Real pv;
   Real mp;
   Real mmu;
-  Real c1_1;
-  Real c1_2;
-  Real c3_3;
-  Real c3_4;
+  Real c3_1;
+  Real c3_2;
   Real d1;
   Real d2;
   Real d3;
@@ -34,9 +32,9 @@ End.
 
 Problem
   (
-    \exists c1_1 \exists c1_2 \exists c3_3 \exists c3_4 \exists d1 \exists d2 \exists d3
+    \exists c3_1 \exists c3_2 \exists d1 \exists d2 \exists d3
     (
-      c1_1 > 0 & c1_2 > 0 & c3_3 > 0 & c3_4 > 0 & d1 > 0 & d2 > 0 & d3 > 0
+      c3_1 > 0 & c3_2 > 0 & d1 > 0 & d2 > 0 & d3 > 0
       &
       (
         \forall pp \forall pmu \forall Ev \forall Emu \forall Ep \forall pv \forall mp \forall mmu
@@ -46,8 +44,7 @@ Problem
             & ( Ep - mp = 0 )
             & ( Ep - Emu - Ev = 0 )
             & ( Emu^2 - pmu^2 - mmu^2 = 0 )
-            & ( ( c1_1 * pmu ) + ( c1_2 * pv ) = 0 )
-            & ( ( c3_3 * Ev ) + ( c3_4 * pv ) = 0 )
+            & ( ( c3_1 * Ev ) + ( c3_2 * pv ) = 0 )
           )
           ->
           (

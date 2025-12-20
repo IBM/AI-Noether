@@ -1,0 +1,31 @@
+Number of components: 3
+
+COMPONENT_1:
+  num_generators: 10
+  GEN: theta-sintheta
+  GEN: sintheta*L-d
+  GEN: T*omega-2*Pi
+  GEN: 2*omega*d*Pi-ad*T
+  GEN: omega^2*d-ad
+  GEN: ad*T^2-4*d*Pi^2
+  GEN: 4*L*j^2*Pi^2-g*Tj^2
+  GEN: 4*d*j^2*Pi^2-sintheta*g*Tj^2
+  GEN: 2*ad*T*j^2*Pi-omega*sintheta*g*Tj^2
+  GEN: omega^2*sintheta*g*Tj^2-4*ad*j^2*Pi^2
+
+COMPONENT_2:
+  num_generators: 5
+  GEN: L
+  GEN: d
+  GEN: theta-sintheta
+  GEN: ad
+  GEN: T*omega-2*Pi
+
+COMPONENT_3:
+  num_generators: 5
+  GEN: d
+  GEN: sintheta
+  GEN: theta
+  GEN: ad
+  GEN: T*omega-2*Pi
+

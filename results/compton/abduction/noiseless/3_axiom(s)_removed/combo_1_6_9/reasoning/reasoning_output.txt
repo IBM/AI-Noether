@@ -1,0 +1,157 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  -f1*h+E1
+  -f2*h+E2
+  -f1*h+p1*c
+  -f2*h+p2*c
+  f2*lambda2-c
+  Ee1-me*c^2
+  -p1^2+2*p1*p2*coss-p2^2+pe2^2
+
+Targets:
+  lambda1*h*me*c^3-lambda2*h*me*c^3-h^2*c^2*coss+h^2*c^2
+
+Require literal GB appearance: true
+Number of candidate sets to test: 28
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {p2*lambda2-h}
+  filtered: {p2*lambda2-h}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-f1*p2+f2*p1}
+  filtered: {-f1*p2+f2*p1}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-Ee1*lambda1+Ee1*lambda2+h*c*coss-h*c}
+  filtered: {-Ee1*lambda1+Ee1*lambda2+h*c*coss-h*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {lambda1*me*c-lambda2*me*c-h*coss+h}
+  filtered: {lambda1*me*c-lambda2*me*c-h*coss+h}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {E2*lambda1*me-p2*h*coss+p2*h-h*me*c}
+  filtered: {E2*lambda1*me-p2*h*coss+p2*h-h*me*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {E1*lambda1*me-E1*lambda2*me-p1*h*coss+p1*h}
+  filtered: {E1*lambda1*me-E1*lambda2*me-p1*h*coss+p1*h}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {f2*lambda1*me-p2*coss+p2-me*c}
+  filtered: {f2*lambda1*me-p2*coss+p2-me*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f1*lambda1*me-f1*lambda2*me-p1*coss+p1}
+  filtered: {f1*lambda1*me-f1*lambda2*me-p1*coss+p1}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {p1^2*lambda2-2*p1*h*coss+p2*h-pe2^2*lambda2}
+  filtered: {p1^2*lambda2-2*p1*h*coss+p2*h-pe2^2*lambda2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-E2*h*coss+E2*h+Ee1*p2*lambda1-Ee1*h}
+  filtered: {-E2*h*coss+E2*h+Ee1*p2*lambda1-Ee1*h}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {-E1*h*coss+E1*h+Ee1*p1*lambda1-Ee1*p1*lambda2}
+  filtered: {-E1*h*coss+E1*h+Ee1*p1*lambda1-Ee1*p1*lambda2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {f2*Ee1*lambda1-E2*c*coss+E2*c-Ee1*c}
+  filtered: {f2*Ee1*lambda1-E2*c*coss+E2*c-Ee1*c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {f1*Ee1*lambda1-f1*Ee1*lambda2-E1*c*coss+E1*c}
+  filtered: {f1*Ee1*lambda1-f1*Ee1*lambda2-E1*c*coss+E1*c}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-f1*p1*p2+2*f1*p2^2*coss-f2*p2^2+f2*pe2^2}
+  filtered: {-f1*p1*p2+2*f1*p2^2*coss-f2*p2^2+f2*pe2^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {Ee1*lambda1^2*me-2*Ee1*lambda1*lambda2*me+Ee1*lambda2^2*me-h^2*coss^2+2*h^2*coss-h^2}
+  filtered: {Ee1*lambda1^2*me-2*Ee1*lambda1*lambda2*me+Ee1*lambda2^2*me-h^2*coss^2+2*h^2*coss-h^2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {-E1^2*lambda2*me-E1*p1*h*coss+E1*p1*h+2*E1*p2*h*coss^2-2*E1*p2*h*coss-E2*p2*h*coss+E2*p2*h+2*Ee1*p1*h*coss-Ee1*p2*h+Ee1*pe2^2*lambda1}
+  filtered: {-E1^2*lambda2*me-E1*p1*h*coss+E1*p1*h+2*E1*p2*h*coss^2-2*E1*p2*h*coss-E2*p2*h*coss+E2*p2*h+2*Ee1*p1*h*coss-Ee1*p2*h+Ee1*pe2^2*lambda1}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {c}
+  filtered: {c}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {h}
+  filtered: {h}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {lambda2}
+  filtered: {lambda2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {Ee1}
+  filtered: {Ee1}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {E2}
+  filtered: {E2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {E1}
+  filtered: {E1}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {f2}
+  filtered: {f2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {pe2}
+  filtered: {pe2}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {p2}
+  filtered: {p2}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {p1}
+  filtered: {p1}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {f1}
+  filtered: {f1}
+  SAVED: false (does not imply all targets)
+
+=== Summary ===
+SAVED_COMBOS:
+  {-Ee1*lambda1+Ee1*lambda2+h*c*coss-h*c}
+  {lambda1*me*c-lambda2*me*c-h*coss+h}
+  {E2*lambda1*me-p2*h*coss+p2*h-h*me*c}
+  {f2*lambda1*me-p2*coss+p2-me*c}
+  {-E2*h*coss+E2*h+Ee1*p2*lambda1-Ee1*h}
+  {f2*Ee1*lambda1-E2*c*coss+E2*c-Ee1*c}
+  {c}
+  {h}
+  {lambda2}
+  {E2}
+  {f2}
+  {p2}
+
+STRONG_CANDIDATES:

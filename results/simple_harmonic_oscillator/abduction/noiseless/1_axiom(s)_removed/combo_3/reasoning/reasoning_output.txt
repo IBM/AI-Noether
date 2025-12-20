@@ -1,0 +1,127 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  ad-sintheta*g
+  -theta*L+d
+  -ad+omega^2*d
+  -T*j+Tj
+  -theta+sintheta
+
+Targets:
+  d*g*Tj^2-4*d*L*j^2*Pi^2
+
+Require literal GB appearance: true
+Number of candidate sets to test: 20
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {omega^2*L-g}
+  filtered: {omega^2*L-g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {j}
+  filtered: {j}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {omega^2*L-g, j}
+  filtered: {omega^2*L-g, j}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {L}
+  filtered: {L}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {g}
+  filtered: {g}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {L, g}
+  filtered: {L, g}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*g-2*omega*L*Pi}
+  filtered: {T*g-2*omega*L*Pi}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega-2*Pi}
+  filtered: {T*omega-2*Pi}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {omega^2*L-g, T*g-2*omega*L*Pi}
+  filtered: {omega^2*L-g, T*g-2*omega*L*Pi}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, T*omega-2*Pi}
+  filtered: {omega^2*L-g, T*omega-2*Pi}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*g-2*omega*L*Pi, T*omega-2*Pi}
+  filtered: {T*g-2*omega*L*Pi, T*omega-2*Pi}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {omega^2*L-g, T*g-2*omega*L*Pi, T*omega-2*Pi}
+  filtered: {omega^2*L-g, T*g-2*omega*L*Pi, T*omega-2*Pi}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*g+2*omega*L*Pi}
+  filtered: {T*g+2*omega*L*Pi}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {T*omega+2*Pi}
+  filtered: {T*omega+2*Pi}
+  SAVED: true
+  STRONG: true
+
+CANDIDATE_SET: {omega^2*L-g, T*g+2*omega*L*Pi}
+  filtered: {omega^2*L-g, T*g+2*omega*L*Pi}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {omega^2*L-g, T*omega+2*Pi}
+  filtered: {omega^2*L-g, T*omega+2*Pi}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {T*g+2*omega*L*Pi, T*omega+2*Pi}
+  filtered: {T*g+2*omega*L*Pi, T*omega+2*Pi}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {omega^2*L-g, T*g+2*omega*L*Pi, T*omega+2*Pi}
+  filtered: {omega^2*L-g, T*g+2*omega*L*Pi, T*omega+2*Pi}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {sintheta}
+  filtered: {sintheta}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {j}
+  {j, omega^2*L-g}
+  {L}
+  {L, g}
+  {T*omega-2*Pi}
+  {omega^2*L-g, T*omega-2*Pi}
+  {T*g-2*omega*L*Pi, T*omega-2*Pi}
+  {omega^2*L-g, T*g-2*omega*L*Pi, T*omega-2*Pi}
+  {T*omega+2*Pi}
+  {omega^2*L-g, T*omega+2*Pi}
+  {T*g+2*omega*L*Pi, T*omega+2*Pi}
+  {omega^2*L-g, T*g+2*omega*L*Pi, T*omega+2*Pi}
+  {sintheta}
+
+STRONG_CANDIDATES:
+  {T*omega-2*Pi}
+  {T*omega+2*Pi}

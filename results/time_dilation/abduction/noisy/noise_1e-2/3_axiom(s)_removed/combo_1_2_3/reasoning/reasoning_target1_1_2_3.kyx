@@ -23,9 +23,13 @@ ProgramVariables
   Real F0;
   Real F;
   Real v;
-  Real c2_1;
-  Real c2_2;
+  Real c1_1;
+  Real c1_2;
   Real c2_3;
+  Real c2_4;
+  Real c2_5;
+  Real c3_6;
+  Real c3_7;
   Real d1;
   Real d2;
   Real d3;
@@ -33,9 +37,9 @@ End.
 
 Problem
   (
-    \exists c2_1 \exists c2_2 \exists c2_3 \exists d1 \exists d2 \exists d3
+    \exists c1_1 \exists c1_2 \exists c2_3 \exists c2_4 \exists c2_5 \exists c3_6 \exists c3_7 \exists d1 \exists d2 \exists d3
     (
-      c2_1 > 0 & c2_2 > 0 & c2_3 > 0 & d1 > 0 & d2 > 0 & d3 > 0
+      c1_1 > 0 & c1_2 > 0 & c2_3 > 0 & c2_4 > 0 & c2_5 > 0 & c3_6 > 0 & c3_7 > 0 & d1 > 0 & d2 > 0 & d3 > 0
       &
       (
         \forall d \forall dt \forall dt0 \forall L \forall c \forall F0 \forall F \forall v
@@ -44,7 +48,9 @@ Problem
             (d > 0 & dt > 0 & dt0 > 0 & L > 0 & c > 0 & F0 > 0 & F > 0 & v > 0) &
             & ( F*dt - 1 = 0 )
             & ( c*dt - 2*L = 0 )
-            & ( ( c2_1 * d^2 ) + ( c2_2 * dt^2*v^2 ) + ( c2_3 * L^2 ) = 0 )
+            & ( ( c1_1 * d ) + ( c1_2 * dt0*c ) = 0 )
+            & ( ( c2_3 * d^2 ) + ( c2_4 * dt^2*v^2 ) + ( c2_5 * L^2 ) = 0 )
+            & ( ( c3_6 * dt0*F0 ) + ( c3_7 * 1 ) = 0 )
           )
           ->
           (

@@ -1,0 +1,72 @@
+=== Reasoning Results ===
+Remaining Axioms:
+  4*c2*r*mu-dp*r
+  -c0-c2*r^2+u
+
+Targets:
+  r^3*delP-r*Rad^2*delP+4*r*u*L*mu
+
+Require literal GB appearance: true
+Number of candidate sets to test: 11
+
+=== Testing Candidate Sets ===
+CANDIDATE_SET: {}
+  filtered: {}
+  SAVED: false (base case fails)
+
+CANDIDATE_SET: {r}
+  filtered: {r}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c0-u}
+  filtered: {c0-u}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r, c0-u}
+  filtered: {r, c0-u}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp}
+  filtered: {4*c2*mu-dp}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {c0*delP+c2*Rad^2*delP-dp*u*L-u*delP}
+  filtered: {c0*delP+c2*Rad^2*delP-dp*u*L-u*delP}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu}
+  filtered: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, c0*delP+c2*Rad^2*delP-dp*u*L-u*delP}
+  filtered: {4*c2*mu-dp, c0*delP+c2*Rad^2*delP-dp*u*L-u*delP}
+  SAVED: false (does not imply all targets)
+
+CANDIDATE_SET: {r^2*delP-Rad^2*delP+4*u*L*mu, c0*delP+c2*Rad^2*delP-dp*u*L-u*delP}
+  filtered: {r^2*delP-Rad^2*delP+4*u*L*mu, c0*delP+c2*Rad^2*delP-dp*u*L-u*delP}
+  SAVED: true
+  STRONG: false
+
+CANDIDATE_SET: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu, c0*delP+c2*Rad^2*delP-dp*u*L-u*delP}
+  filtered: {4*c2*mu-dp, r^2*delP-Rad^2*delP+4*u*L*mu, c0*delP+c2*Rad^2*delP-dp*u*L-u*delP}
+  SAVED: true
+  STRONG: false
+
+=== Summary ===
+SAVED_COMBOS:
+  {r}
+  {r, c0-u}
+  {r^2*delP-Rad^2*delP+4*u*L*mu}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c2*mu-dp}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, c0*delP+c2*Rad^2*delP-dp*u*L-u*delP}
+  {r^2*delP-Rad^2*delP+4*u*L*mu, 4*c2*mu-dp, c0*delP+c2*Rad^2*delP-dp*u*L-u*delP}
+
+STRONG_CANDIDATES:

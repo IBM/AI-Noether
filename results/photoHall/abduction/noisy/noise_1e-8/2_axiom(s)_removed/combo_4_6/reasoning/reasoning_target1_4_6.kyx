@@ -1,0 +1,89 @@
+ArchiveEntry "photoHall_target1_combo4_6"
+
+/* AI-Noether: KeyMaera Reasoning Template (Noisy Case)
+ * 
+ * This template verifies that the abducted axioms (with existentially quantified
+ * coefficients) can derive the noisy consequence (also with existentially 
+ * quantified coefficients).
+ *
+ * Structure:
+ * - Variables are universally quantified (forall)
+ * - Monomial coefficients are existentially quantified (exists)
+ * - Known axioms appear as exact equations
+ * - Abducted axioms have coefficients c1, c2, ... for each monomial
+ * - Consequence has coefficients d1, d2, ... for each monomial
+ */
+
+ProgramVariables
+  Real ph;
+  Real dp;
+  Real mu;
+  Real muN;
+  Real muH;
+  Real n;
+  Real dsigma2dn;
+  Real e;
+  Real mup;
+  Real p0;
+  Real dn;
+  Real beta;
+  Real r;
+  Real sigma;
+  Real H;
+  Real c4_1;
+  Real c4_2;
+  Real c6_3;
+  Real c6_4;
+  Real c6_5;
+  Real c4_6;
+  Real c4_7;
+  Real c6_8;
+  Real c6_9;
+  Real c6_10;
+  Real c4_11;
+  Real c4_12;
+  Real c6_13;
+  Real c6_14;
+  Real c6_15;
+  Real d1;
+  Real d2;
+  Real d3;
+  Real d4;
+  Real d5;
+  Real d6;
+End.
+
+Problem
+  (
+    \exists c4_1 \exists c4_2 \exists c6_3 \exists c6_4 \exists c6_5 \exists c4_6 \exists c4_7 \exists c6_8 \exists c6_9 \exists c6_10 \exists c4_11 \exists c4_12 \exists c6_13 \exists c6_14 \exists c6_15 \exists d1 \exists d2 \exists d3 \exists d4 \exists d5 \exists d6
+    (
+      c4_1 > 0 & c4_2 > 0 & c6_3 > 0 & c6_4 > 0 & c6_5 > 0 & c4_6 > 0 & c4_7 > 0 & c6_8 > 0 & c6_9 > 0 & c6_10 > 0 & c4_11 > 0 & c4_12 > 0 & c6_13 > 0 & c6_14 > 0 & c6_15 > 0 & d1 > 0 & d2 > 0 & d3 > 0 & d4 > 0 & d5 > 0 & d6 > 0
+      &
+      (
+        \forall ph \forall dp \forall mu \forall muN \forall muH \forall n \forall dsigma2dn \forall e \forall mup \forall p0 \forall dn \forall beta \forall r \forall sigma \forall H
+        (
+          (
+            (ph > 0 & dp > 0 & mu > 0 & muN > 0 & muH > 0 & n > 0 & dsigma2dn > 0 & e > 0 & mup > 0 & p0 > 0 & dn > 0 & beta > 0 & r > 0 & sigma > 0 & H > 0) &
+            & ( beta * mup - muN = 0 )
+            & ( muH - r * mu = 0 )
+            & ( ph - p0 - dp = 0 )
+            & ( dp - dn = 0 )
+            & ( H * (ph + beta * n)^2 * e - r * ph + r * beta^2 * n = 0 )
+            & ( ( c4_1 * n ) + ( c4_2 * dn ) = 0 )
+            & ( ( c6_3 * ph*e*mup ) + ( c6_4 * muN*n*e ) + ( c6_5 * sigma ) = 0 )
+            & ( ( c4_6 * n ) + ( c4_7 * dn ) = 0 )
+            & ( ( c6_8 * ph*e*mup ) + ( c6_9 * muN*n*e ) + ( c6_10 * sigma ) = 0 )
+            & ( ( c4_11 * n ) + ( c4_12 * dn ) = 0 )
+            & ( ( c6_13 * ph*e*mup ) + ( c6_14 * muN*n*e ) + ( c6_15 * sigma ) = 0 )
+          )
+          ->
+          (
+            ( d1 * e*mup*dn*beta^2*r ) + ( d2 * e*mup*dn*beta*r ) + ( d3 * e*p0*sigma*H ) + ( d4 * e*dn*beta*sigma*H ) + ( d5 * e*dn*sigma*H ) + ( d6 * r*sigma ) = 0
+          )
+        )
+      )
+    )
+  )
+End.
+
+End.

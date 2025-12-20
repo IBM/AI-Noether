@@ -1,0 +1,45 @@
+Number of components: 6
+Number of remaining axioms: 8
+Number of targets: 1
+Max candidate set size: 1
+Number of candidate sets (after filtering): 21
+
+Filtering method: ideal membership test
+  Generators g where g ∈ ideal(remaining_axioms + targets) are excluded
+  (They contain no new information beyond what's already known)
+
+Remaining axioms:
+  1. E1 + Ee1 - E2 - Ee2
+  2. E1 - h*f1
+  3. p1*c - h*f1
+  4. p2*c - h*f2
+  5. lambda1*f1 - c
+  6. lambda2*f2 - c
+  7. Ee1 - me*c^2
+  8. pe2^2 - p1^2 - p2^2 + 2*p1*p2*coss
+
+Targets:
+  1. lambda1*h*me*c^3 - lambda2*h*me*c^3 - coss*h^2*c^2 + h^2*c^2
+
+Candidate sets to test:
+  Candidate 0: [] (empty set / baseline)
+  Candidate 1: ['h']
+  Candidate 2: ['lambda2']
+  Candidate 3: ['lambda1']
+  Candidate 4: ['f1']
+  Candidate 5: ['pe2']
+  Candidate 6: ['p2']
+  Candidate 7: ['p1']
+  Candidate 8: ['f2']
+  Candidate 9: ['pe2^2*lambda1^2*lambda2^2+2*lambda1*lambda2*h^2*coss-lambda1^2*h^2-lambda2^2*h^2']
+  Candidate 10: ['p2*lambda2-h']
+  Candidate 11: ['-pe2^2*lambda1^2*lambda2-2*p2*lambda1*lambda2*h*coss+p2*lambda1^2*h+lambda2*h^2']
+  Candidate 12: ['p2^2*lambda1^2-pe2^2*lambda1^2-2*p2*lambda1*h*coss+h^2']
+  Candidate 13: ['p2^2*lambda1-pe2^2*lambda1-2*p2*h*coss+p1*h']
+  Candidate 14: ['p1*lambda1-h']
+  Candidate 15: ['f2*lambda1*me-f2*lambda2*me-p2*coss+p2']
+  Candidate 16: ['f2*pe2^2*lambda2^2*me+p1*p2^2*lambda2*coss-p2^3*lambda2*coss+p2*pe2^2*lambda2*coss+2*f2*h^2*me*coss-p1*p2^2*lambda2+p2^3*lambda2-p2*pe2^2*lambda2-2*f2*h^2*me']
+  Candidate 17: ['f2*pe2^2*lambda1*me+2*f2*p2*h*me*coss-2*f2*p2*h*me+p1*p2^2*coss-p2^3*coss-p1*p2^2+p2^3']
+  Candidate 18: ['f2*p1*lambda2*me-f2*p2*lambda2*me+p1*p2*coss-p1*p2']
+  Candidate 19: ['f1*lambda2*me-f2*lambda2*me+p1*coss-p1']
+  Candidate 20: ['-f2*p1+f1*p2']

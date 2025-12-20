@@ -7,48 +7,14 @@ Targets:
   c^2*F0^2-c^2*F^2-F0^2*v^2
 
 Require literal GB appearance: true
-Number of candidate sets to test: 8
+Number of candidate sets to test: 1
 
 === Testing Candidate Sets ===
 CANDIDATE_SET: {}
   filtered: {}
   SAVED: false (base case fails)
 
-CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2}
-  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
-  SAVED: true
-  STRONG: true
-
-CANDIDATE_SET: {dt*F-1}
-  filtered: {}
-  SKIPPED: all elements already implied by remaining axioms
-
-CANDIDATE_SET: {4*d^2+dt^2*v^2-4*dt*L^2*F}
-  filtered: {}
-  SKIPPED: all elements already implied by remaining axioms
-
-CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-1}
-  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
-  SAVED: true
-  STRONG: true
-
-CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, 4*d^2+dt^2*v^2-4*dt*L^2*F}
-  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
-  SAVED: true
-  STRONG: true
-
-CANDIDATE_SET: {dt*F-1, 4*d^2+dt^2*v^2-4*dt*L^2*F}
-  filtered: {}
-  SKIPPED: all elements already implied by remaining axioms
-
-CANDIDATE_SET: {c^2*F0^2-c^2*F^2-F0^2*v^2, dt*F-1, 4*d^2+dt^2*v^2-4*dt*L^2*F}
-  filtered: {c^2*F0^2-c^2*F^2-F0^2*v^2}
-  SAVED: true
-  STRONG: true
-
 === Summary ===
 SAVED_COMBOS:
-  {c^2*F0^2-c^2*F^2-F0^2*v^2}
 
 STRONG_CANDIDATES:
-  {c^2*F0^2-c^2*F^2-F0^2*v^2}

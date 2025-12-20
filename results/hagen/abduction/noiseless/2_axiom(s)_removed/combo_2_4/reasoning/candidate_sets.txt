@@ -1,0 +1,34 @@
+Number of components: 2
+Number of remaining axioms: 2
+Number of targets: 1
+Max candidate set size: 3
+Number of candidate sets (after filtering): 16
+
+Filtering method: ideal membership test
+  Generators g where g ∈ ideal(remaining_axioms + targets) are excluded
+  (They contain no new information beyond what's already known)
+
+Remaining axioms:
+  1. 4*r*c2*mu - r*dp
+  2. c0 + c2*Rad^2
+
+Targets:
+  1. r^3*delP - r*Rad^2*delP + 4*r*u*L*mu
+
+Candidate sets to test:
+  Candidate 0: [] (empty set / baseline)
+  Candidate 1: ['r']
+  Candidate 2: ['4*c2*mu-dp']
+  Candidate 3: ['4*u*L*mu+r^2*delP-Rad^2*delP']
+  Candidate 4: ['dp*Rad^2+4*c0*mu']
+  Candidate 5: ['c2*r^2*delP+dp*u*L+c0*delP']
+  Candidate 6: ['4*c2*mu-dp', '4*u*L*mu+r^2*delP-Rad^2*delP']
+  Candidate 7: ['4*c2*mu-dp', 'dp*Rad^2+4*c0*mu']
+  Candidate 8: ['4*c2*mu-dp', 'c2*r^2*delP+dp*u*L+c0*delP']
+  Candidate 9: ['4*u*L*mu+r^2*delP-Rad^2*delP', 'dp*Rad^2+4*c0*mu']
+  Candidate 10: ['4*u*L*mu+r^2*delP-Rad^2*delP', 'c2*r^2*delP+dp*u*L+c0*delP']
+  Candidate 11: ['dp*Rad^2+4*c0*mu', 'c2*r^2*delP+dp*u*L+c0*delP']
+  Candidate 12: ['4*c2*mu-dp', '4*u*L*mu+r^2*delP-Rad^2*delP', 'dp*Rad^2+4*c0*mu']
+  Candidate 13: ['4*c2*mu-dp', '4*u*L*mu+r^2*delP-Rad^2*delP', 'c2*r^2*delP+dp*u*L+c0*delP']
+  Candidate 14: ['4*c2*mu-dp', 'dp*Rad^2+4*c0*mu', 'c2*r^2*delP+dp*u*L+c0*delP']
+  Candidate 15: ['4*u*L*mu+r^2*delP-Rad^2*delP', 'dp*Rad^2+4*c0*mu', 'c2*r^2*delP+dp*u*L+c0*delP']

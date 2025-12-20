@@ -1,0 +1,19 @@
+=== Symbolic Regression Result ===
+Dropped axiom index (1-based): 2
+Dropped axiom text: dA - 2*(314/100)*r^2*sintheta*dtheta
+Component index: 6
+Variables: ['sintheta', 'dA', 'dtheta', 'r']
+Number of monomials: 2
+Total degree: 4
+Number of points (total): 100
+Number of points (used after outlier removal): 17
+Smallest singular value: 1.4060580924173796
+Relative residual: 1.636621842214496
+
+Inferred polynomial (raw):
+  -0.000877735*sintheta*dtheta*r^2 + (0.949876+0.312628i)*dA = 0
+
+Inferred polynomial (normalized):
+  (-0.000833739+0.000274405i)*sintheta*dtheta*r^2 + 1*dA = 0
+
+Coefficient L2 error vs true: 1.3058399414129345

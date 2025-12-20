@@ -1,0 +1,32 @@
+Number of components: 3
+Number of remaining axioms: 4
+Number of targets: 1
+Max candidate set size: 1
+Number of candidate sets (after filtering): 12
+
+Filtering method: ideal membership test
+  Generators g where g ∈ ideal(remaining_axioms + targets) are excluded
+  (They contain no new information beyond what's already known)
+
+Remaining axioms:
+  1. beta * mup - muN
+  2. n - dn
+  3. dp - dn
+  4. H * (ph + beta * n)^2 * e - r * ph + r * beta^2 * n
+
+Targets:
+  1. r*e*mup*dn*beta^2 + r*e*mup*dn*beta - r*sigma + e*p0*sigma*H + e*dn*beta*sigma*H + e*dn*sigma*H
+
+Candidate sets to test:
+  Candidate 0: [] (empty set / baseline)
+  Candidate 1: ['muN*dn^2*beta^3*r+dn^2*beta^3*sigma*H+muN*dn^2*beta^2*r+p0*dn*beta^2*sigma*H+2*dn^2*beta^2*sigma*H-ph*muN*dn*beta*r+ph*dn*beta*sigma*H-ph*muN*dn*r+ph^2*sigma*H-ph*p0*sigma*H-ph*dn*sigma*H']
+  Candidate 2: ['muN^2*dn^2*beta^2*r+muN*dn^2*beta^2*sigma*H+muN^2*dn^2*beta*r+muN*p0*dn*beta*sigma*H+2*muN*dn^2*beta*sigma*H-ph*muN^2*dn*r-ph*muN*mup*dn*r+ph^2*mup*sigma*H-ph*mup*p0*sigma*H+ph*muN*dn*sigma*H-ph*mup*dn*sigma*H']
+  Candidate 3: ['muN^3*dn^2*beta*r+muN^2*dn^2*beta*sigma*H-ph*muN^2*mup*dn*r-ph*muN*mup^2*dn*r+muN^3*dn^2*r+ph^2*mup^2*sigma*H-ph*mup^2*p0*sigma*H+ph*muN*mup*dn*sigma*H-ph*mup^2*dn*sigma*H+muN^2*p0*dn*sigma*H+2*muN^2*dn^2*sigma*H']
+  Candidate 4: ['ph*muN^2*mup^2*dn*r+ph*muN*mup^3*dn*r-muN^4*dn^2*r-muN^3*mup*dn^2*r-ph^2*mup^3*sigma*H+ph*mup^3*p0*sigma*H-ph*muN*mup^2*dn*sigma*H+ph*mup^3*dn*sigma*H-muN^2*mup*p0*dn*sigma*H-muN^3*dn^2*sigma*H-2*muN^2*mup*dn^2*sigma*H']
+  Candidate 5: ['muN*e*dn^3*beta^3+2*ph*muN*e*dn^2*beta^2+muN*e*dn^3*beta^2+ph^2*muN*e*dn*beta+2*ph*muN*e*dn^2*beta-dn^2*beta^3*sigma+ph^2*muN*e*dn-p0*dn*beta^2*sigma-2*dn^2*beta^2*sigma-ph*dn*beta*sigma-ph^2*sigma+ph*p0*sigma+ph*dn*sigma']
+  Candidate 6: ['muN^2*e*dn^3*beta^2+2*ph*muN^2*e*dn^2*beta+muN^2*e*dn^3*beta+ph^2*muN^2*e*dn+ph^2*muN*e*mup*dn+2*ph*muN^2*e*dn^2-muN*dn^2*beta^2*sigma-muN*p0*dn*beta*sigma-2*muN*dn^2*beta*sigma-ph^2*mup*sigma+ph*mup*p0*sigma-ph*muN*dn*sigma+ph*mup*dn*sigma']
+  Candidate 7: ['muN^3*e*dn^3*beta+ph^2*muN^2*e*mup*dn+ph^2*muN*e*mup^2*dn+2*ph*muN^3*e*dn^2+2*ph*muN^2*e*mup*dn^2+muN^3*e*dn^3-muN^2*dn^2*beta*sigma-ph^2*mup^2*sigma+ph*mup^2*p0*sigma-ph*muN*mup*dn*sigma+ph*mup^2*dn*sigma-muN^2*p0*dn*sigma-2*muN^2*dn^2*sigma']
+  Candidate 8: ['ph^2*muN^2*e*mup^2*dn+ph^2*muN*e*mup^3*dn+2*ph*muN^3*e*mup*dn^2+2*ph*muN^2*e*mup^2*dn^2+muN^4*e*dn^3+muN^3*e*mup*dn^3-ph^2*mup^3*sigma+ph*mup^3*p0*sigma-ph*muN*mup^2*dn*sigma+ph*mup^3*dn*sigma-muN^2*mup*p0*dn*sigma-muN^3*dn^2*sigma-2*muN^2*mup*dn^2*sigma']
+  Candidate 9: ['H']
+  Candidate 10: ['r']
+  Candidate 11: ['e']

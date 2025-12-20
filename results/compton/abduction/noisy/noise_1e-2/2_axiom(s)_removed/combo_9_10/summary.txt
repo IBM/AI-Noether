@@ -1,0 +1,61 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-2
+Removed axiom indices (1-based): [9, 10]
+Removed axioms:
+  Eel2^2 - pel2^2*cVar^2 - mel^2*cVar^4
+  pel2^2 - p1^2 - p2^2 + 2*p1*p2*cosTh
+
+Numerical engine: nag
+Samples per component: 100
+Number of witness set components: 6
+Symbolic regression results: 12
+
+Regression results below threshold (200.0):
+  Axiom 9, Component 1:
+    Singular value: 54.29882029231093
+    Polynomial: (0.13168-0.00986822i)*Eel2^2 + (0.000366557+0.000107571i)*pel2^2*cVar^2 + 1*mel^2*cVar^4
+    Coefficient L2 error: 1.5099882205910364
+  Axiom 10, Component 1:
+    Singular value: 23.82484305352371
+    Polynomial: (-0.47912+0.269629i)*p1^2 + 1*p1*p2*cosTh + (-0.65008+0.0537795i)*p2^2 + (-0.00166748-0.00049293i)*pel2^2
+    Coefficient L2 error: 0.591795920523271
+  Axiom 9, Component 2:
+    Singular value: 1.2483918403626957e-62
+    Polynomial: 1*mel^2*cVar^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 10, Component 2:
+    Singular value: 48.260773875772294
+    Polynomial: (-0.679605+0.0883716i)*p1^2 + 1*p1*p2*cosTh + (-0.316321+0.0984871i)*p2^2 + (0.0410398-0.0653879i)*pel2^2
+    Coefficient L2 error: 0.5462828659621056
+  Axiom 9, Component 3:
+    Singular value: 3.130291105912587e-122
+    Polynomial: 1*mel^2*cVar^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 10, Component 3:
+    Singular value: 49.501624827014716
+    Polynomial: 1*p1^2 + (0.00170852+0.0463882i)*p1*p2*cosTh + (0.115653-0.42084i)*p2^2 + (-0.0515962+0.0210162i)*pel2^2
+    Coefficient L2 error: 1.3348813210458303
+  Axiom 9, Component 4:
+    Singular value: 1.6673875929433338e-123
+    Polynomial: 1*mel^2*cVar^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 10, Component 4:
+    Singular value: 57.21798383612736
+    Polynomial: 1*p1^2 + (0.274705-0.0846621i)*p1*p2*cosTh + (0.8782+0.395303i)*p2^2 + (0.331224-0.145527i)*pel2^2
+    Coefficient L2 error: 1.701015004164694
+  Axiom 9, Component 5:
+    Singular value: 3.4432694854980832e-121
+    Polynomial: 1*mel^2*cVar^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 10, Component 5:
+    Singular value: 41.64302857508205
+    Polynomial: 1*p1^2 + (-0.0134418+0.0532418i)*p1*p2*cosTh + (-0.217558-0.0131598i)*p2^2 + (-0.283099+0.607781i)*pel2^2
+    Coefficient L2 error: 1.4688899675391593
+  Axiom 9, Component 6:
+    Singular value: 5.3493244363932886e-124
+    Polynomial: 1*mel^2*cVar^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 10, Component 6:
+    Singular value: 65.08042860969587
+    Polynomial: 1*p1^2 + (-0.0424792-0.0207005i)*p1*p2*cosTh + (-0.206202+0.315452i)*p2^2 + (-0.00531782+0.064958i)*pel2^2
+    Coefficient L2 error: 1.4193084269807785

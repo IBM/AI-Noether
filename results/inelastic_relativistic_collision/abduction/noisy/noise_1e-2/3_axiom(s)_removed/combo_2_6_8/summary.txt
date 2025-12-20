@@ -1,0 +1,62 @@
+=== Numerical Abduction Summary ===
+Noise level: 1e-2
+Removed axiom indices (1-based): [2, 6, 8]
+Removed axioms:
+  Em^2 - (mm*c^2)^2 - (pm*c)^2
+  pc - pm
+  mr - mm
+
+Numerical engine: bertini
+Samples per component: 100
+Number of witness set components: 4
+Symbolic regression results: 12
+
+Regression results below threshold (200.0):
+  Axiom 2, Component 1:
+    Singular value: 2.6262087152190063e-30
+    Polynomial: 1*mm^2*c^4 + (0.0101907-0.00830496i)*pm^2*c^2
+    Coefficient L2 error: 1.4070505960727386
+  Axiom 6, Component 1:
+    Singular value: 4.922111064847996e-15
+    Polynomial: 1*pm
+    Coefficient L2 error: 1.0
+  Axiom 8, Component 1:
+    Singular value: 3.687873419285744e-15
+    Polynomial: 1*mm
+    Coefficient L2 error: 1.0
+  Axiom 2, Component 2:
+    Singular value: 6.466413055366115e-30
+    Polynomial: 1*mm^2*c^4 + (-0.335235-0.0263833i)*pm^2*c^2
+    Coefficient L2 error: 1.6683972724869922
+  Axiom 6, Component 2:
+    Singular value: 9.935784075639276e-15
+    Polynomial: 1*pm
+    Coefficient L2 error: 1.0
+  Axiom 8, Component 2:
+    Singular value: 4.8076615145291355e-15
+    Polynomial: 1*mm
+    Coefficient L2 error: 1.0
+  Axiom 2, Component 3:
+    Singular value: 4.845178710055263e-35
+    Polynomial: 1*mm^2*c^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 6, Component 3:
+    Singular value: 4.595457338777365e-08
+    Polynomial: 1*pc
+    Coefficient L2 error: 1.0000000000562959
+  Axiom 8, Component 3:
+    Singular value: 16.29925675447283
+    Polynomial: 1*mr + (-0.723298+0.109957i)*mm
+    Coefficient L2 error: 0.2977491771172471
+  Axiom 2, Component 4:
+    Singular value: 1.6264941366941875e-34
+    Polynomial: 1*mm^2*c^4
+    Coefficient L2 error: 1.4142135623730951
+  Axiom 6, Component 4:
+    Singular value: 17.118161386386465
+    Polynomial: 1*pc + (0.554094-0.0345833i)*pm
+    Coefficient L2 error: 1.5544788220625676
+  Axiom 8, Component 4:
+    Singular value: 15.720371235570434
+    Polynomial: 1*mr + (0.205364-0.29891i)*mm
+    Coefficient L2 error: 1.2418737072377466
