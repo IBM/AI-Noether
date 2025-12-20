@@ -10,8 +10,14 @@
 
 set -e
 
-source ~/miniconda3/etc/profile.d/conda.sh
-conda activate ai_noether_env
+# Activate conda environment if available (adjust path if needed)
+if [ -f ~/miniconda3/etc/profile.d/conda.sh ]; then
+    source ~/miniconda3/etc/profile.d/conda.sh
+    conda activate ai_noether_env 2>/dev/null || true
+elif [ -f ~/anaconda3/etc/profile.d/conda.sh ]; then
+    source ~/anaconda3/etc/profile.d/conda.sh
+    conda activate ai_noether_env 2>/dev/null || true
+fi
 
 # Get the directory where this script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -26,8 +32,11 @@ if [[ ! -f "$CONFIG_FILE" ]]; then
     echo "Usage: $0 [config_file]"
     echo ""
     echo "If no config file is specified, 'config.yaml' is used."
-    echo "Copy config_template.yaml to config.yaml and customize it:"
-    echo "  cp ${SCRIPT_DIR}/config_template.yaml config.yaml"
+    echo ""
+    echo "To get started:"
+    echo "  1. Copy the template:  cp ${SCRIPT_DIR}/config_template.yaml config.yaml"
+    echo "  2. Edit config.yaml with your paths (especially paths.macaulay2)"
+    echo "  3. Run again:          ./run.sh"
     exit 1
 fi
 
@@ -36,6 +45,9 @@ echo "========================================================="
 echo ""
 echo "Config file: $CONFIG_FILE"
 echo ""
+
+# Set PYTHONPATH to include the script directory so 'src' module can be found
+export PYTHONPATH="${SCRIPT_DIR}:${PYTHONPATH}"
 
 # Run the main script
 python -m src.main --config "$CONFIG_FILE"

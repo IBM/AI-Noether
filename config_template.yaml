@@ -1,0 +1,226 @@
+# =============================================================================
+# AI-Noether Configuration Template
+# =============================================================================
+# Copy this file to config.yaml and customize for your environment:
+#   cp config_template.yaml config.yaml
+#
+# Then edit config.yaml with your specific paths and settings.
+# =============================================================================
+
+# =============================================================================
+# Paths to External Tools
+# =============================================================================
+# These are the external computer algebra systems used by AI-Noether.
+# Update these paths to match your installation.
+
+paths:
+  # REQUIRED: Macaulay2 - used for Groebner bases, ideal membership, reasoning
+  # Install: brew install macaulay2 (macOS) or see https://www.macaulay2.com/
+  # Find path: which M2
+  macaulay2: "/usr/local/bin/M2"
+  
+  # OPTIONAL: Singular - faster primary decomposition via minAss
+  # Install: brew install singular (macOS) or see https://www.singular.uni-kl.de/
+  # Find path: which Singular
+  # Set to "" or remove if not installed
+  singular: "/usr/local/bin/Singular"
+  
+  # OPTIONAL: Bertini - numerical algebraic geometry for noisy case
+  # Install: Download from https://bertini.nd.edu/ and compile
+  # Set to "" or remove if not using numerical_abduction
+  bertini: "/usr/local/bin/bertini"
+
+# =============================================================================
+# Problem Specification
+# =============================================================================
+# Define which physics/math problems to analyze.
+
+problems:
+  # Directory containing problem subdirectories
+  # Each subdirectory should contain a system.txt file
+  base_dir: "systems_and_phenomena/"
+  
+  # List of problem names (subdirectory names) to process
+  # Comment out or leave empty to auto-detect all problems in base_dir
+  problem_list:
+    - "kepler"
+    - "time_dilation"
+    # - "pendulum"
+    # - "hall"
+    # Add more problem names as needed
+
+# =============================================================================
+# Output Configuration
+# =============================================================================
+
+output:
+  # Base directory for all results
+  # Will create subdirectories for each problem
+  base_dir: "results/"
+
+# =============================================================================
+# Axiom Removal Configuration
+# =============================================================================
+# Controls how many axioms to remove when testing abduction.
+
+axiom_removal:
+  # Number of axioms to remove. Accepts several formats:
+  #   "all"     - try all subset sizes from 0 to n (exhaustive)
+  #   "[1,3]"   - inclusive range: remove 1, 2, or 3 axioms
+  #   "1..3"    - same as above (alternative syntax)
+  #   "1,2,3"   - explicit list of sizes
+  #   "2"       - single value: only remove exactly 2 axioms
+  #
+  # Larger values = more combinations = longer runtime
+  # C(n,k) combinations for k axioms removed from n total
+  num_axioms: "[1,3]"
+
+# =============================================================================
+# Analysis Toggles
+# =============================================================================
+# Enable/disable different analysis types.
+
+analyses:
+  # Groebner basis computation and variable elimination
+  # Useful for understanding ideal structure
+  projection: false
+  
+  # Compare dimensions of ideals with/without removed axioms
+  # Helps identify which axiom removals change the variety dimension
+  dimensionality_check: false
+  
+  # MAIN ANALYSIS: Noiseless algebraic abduction
+  # Uses primary decomposition + reasoning to find missing axioms
+  # Requires: macaulay2 (and optionally singular for speed)
+  algebraic_abduction: true
+  
+  # Noisy numerical abduction using witness sets
+  # Recovers axiom coefficients from perturbed measurements
+  # Requires: macaulay2 + (bertini or nag)
+  numerical_abduction: false
+
+# =============================================================================
+# Decomposition Settings (Noiseless Case)
+# =============================================================================
+
+decomposition:
+  # Engine for primary decomposition:
+  #   "m2"       - Macaulay2's primaryDecomposition (more reliable)
+  #   "singular" - Singular's minAss (significantly faster for large ideals)
+  #
+  # Recommendation: Start with "singular", fall back to "m2" if issues arise
+  engine: "singular"
+
+# =============================================================================
+# Reasoning Settings (Noiseless Case)
+# =============================================================================
+
+reasoning:
+  # How strictly to check if targets are derivable:
+  #   true  - require target polynomial to appear literally in Groebner basis
+  #   false - only require ideal membership (target % ideal == 0)
+  #
+  # Literal appearance is stronger but may miss some valid derivations
+  require_literal_gb: true
+  
+  # Maximum number of generators to consider in candidate axiom sets
+  # Limits combinatorial explosion when components have many generators
+  #   -1 = automatic: num_removed_axioms + num_targets
+  #   N  = at most N generators per candidate set
+  max_candidate_size: -1
+
+# =============================================================================
+# Numerical Abduction Settings (Noisy Case)
+# =============================================================================
+# Only used when analyses.numerical_abduction is true
+
+numerical:
+  # Engine for numerical irreducible decomposition:
+  #   "bertini" - Bertini software (more robust, requires separate install)
+  #   "nag"     - Macaulay2's built-in NumericalAlgebraicGeometry package
+  #
+  # Note: Bertini has reserved variable names (see README troubleshooting)
+  engine: "bertini"
+  
+  # Noise levels to process
+  # Each entry corresponds to a file: system_noise_<level>.txt
+  # Example: "1e-2" looks for systems_and_phenomena/<problem>/system_noise_1e-2.txt
+  noise_levels:
+    - "1e-2"    # 1% relative noise
+    - "1e-5"    # 0.001% relative noise
+    - "1e-8"    # essentially exact (numerical precision limit)
+  
+  # Number of points to sample from each witness set component
+  # More points = better coefficient estimation, but slower
+  # Recommended: 50-200
+  samples_per_component: 100
+  
+  # Threshold for determining good symbolic regression fits
+  # Fits with smallest singular value below this are considered successful
+  # Lower = stricter quality requirement
+  singular_value_threshold: 200
+
+# =============================================================================
+# Symbolic Regression Normalization (Noisy Case)
+# =============================================================================
+# Controls how recovered coefficients are processed
+
+normalization:
+  # Normalize coefficients so the largest has magnitude 1
+  # Makes comparison between true and recovered coefficients meaningful
+  normalize_coefficients: true
+  
+  # Threshold for zeroing out imaginary parts
+  # If |imag(coeff)| < threshold, treat as real
+  # Helps clean up numerical noise in coefficient recovery
+  complex_threshold: 1e-6
+  
+  # Compute L2 norm between true and recovered coefficient vectors
+  # Useful for quantifying recovery accuracy
+  compute_coefficient_error: true
+
+# =============================================================================
+# Robust Fitting Settings (Noisy Case)
+# =============================================================================
+# Outlier removal for more reliable coefficient recovery
+
+robust_fitting:
+  # Enable iterative outlier removal during symbolic regression
+  # Removes points with high residuals that may be numerical artifacts
+  enabled: true
+  
+  # Percentile threshold for outlier detection (0-100)
+  # Points with residual above this percentile are removed
+  # Lower = more aggressive removal
+  # Recommended: 75-95
+  outlier_percentile: 75.0
+  
+  # Maximum iterations of outlier removal
+  # Usually converges in 1-3 iterations
+  max_iterations: 1
+  
+  # Minimum number of points to keep
+  # Won't remove points below this count regardless of residuals
+  # Should be > number of monomials in axiom
+  min_points: 10
+
+# =============================================================================
+# Execution Settings
+# =============================================================================
+
+execution:
+  # Timeouts in seconds for individual tasks
+  # Increase for complex problems; decrease for quick testing
+  timeout_projection: 600        # 10 minutes
+  timeout_dimensionality: 600    # 10 minutes
+  timeout_decomposition: 1200    # 20 minutes
+  timeout_reasoning: 1200        # 20 minutes
+  timeout_witness_set: 3600      # 60 minutes (numerical methods are slow)
+  
+  # Print progress to stdout (in addition to log file)
+  verbose: true
+  
+  # Logging level: "DEBUG", "INFO", "WARNING", "ERROR"
+  # DEBUG shows all subprocess output (very verbose)
+  # INFO shows progress and results (recommended)
+  log_level: "INFO"

@@ -67,20 +67,22 @@ pip install numpy sympy pyyaml matplotlib
 
 ### 1. Configure paths
 
-Copy and edit the configuration file:
+Copy the template and customize for your environment:
 
 ```bash
-cp config.yaml my_config.yaml
+cp config_template.yaml config.yaml
 ```
 
-Edit `my_config.yaml` to set paths to external tools:
+Edit `config.yaml` to set paths to external tools:
 
 ```yaml
 paths:
-  macaulay2: "/path/to/M2"
-  singular: "/path/to/Singular"      # optional
-  bertini: "/path/to/bertini"        # optional
+  macaulay2: "/path/to/M2"           # Required - find with: which M2
+  singular: "/path/to/Singular"      # Optional - find with: which Singular
+  bertini: "/path/to/bertini"        # Optional - for numerical methods
 ```
+
+The template file (`config_template.yaml`) contains detailed comments explaining each parameter.
 
 ### 2. Prepare your problem
 
@@ -100,13 +102,13 @@ See `systems_and_phenomena/README.md` for input format details.
 ### 3. Run the analysis
 
 ```bash
-./run.sh my_config.yaml
+./run.sh config.yaml
 ```
 
 Or directly:
 
 ```bash
-python -m src.main --config my_config.yaml
+python -m src.main --config config.yaml
 ```
 
 ### 4. View results
@@ -127,7 +129,8 @@ python plot_noise_results.py --results-dir results --output-dir figures
 ```
 ai_noether/
   README.md                 # This file
-  config.yaml               # Configuration template
+  config_template.yaml      # Configuration template (copy to config.yaml)
+  config.yaml               # Your local configuration (git-ignored)
   run.sh                    # Main execution script
   run_plots.sh              # Plotting script runner
   plot_noise_results.py     # Visualization for noisy experiments
@@ -169,114 +172,50 @@ ai_noether/
 
 ## Configuration Reference
 
-The configuration file (`config.yaml`) has the following sections:
+The configuration file controls all aspects of AI-Noether. See `config_template.yaml` for detailed comments on each parameter.
 
-### paths
+### Quick Reference
+
+| Section | Key Parameters |
+|---------|---------------|
+| `paths` | `macaulay2` (required), `singular`, `bertini` |
+| `problems` | `base_dir`, `problem_list` |
+| `output` | `base_dir` |
+| `axiom_removal` | `num_axioms`: "all", "[1,3]", "1..3", "1,2,3", or "2" |
+| `analyses` | `projection`, `dimensionality_check`, `algebraic_abduction`, `numerical_abduction` |
+| `decomposition` | `engine`: "m2" or "singular" |
+| `reasoning` | `require_literal_gb`, `max_candidate_size` |
+| `numerical` | `engine`: "bertini" or "nag", `noise_levels`, `samples_per_component` |
+| `normalization` | `normalize_coefficients`, `complex_threshold`, `compute_coefficient_error` |
+| `robust_fitting` | `enabled`, `outlier_percentile`, `max_iterations`, `min_points` |
+| `execution` | `timeout_*`, `verbose`, `log_level` |
+
+### Example: Minimal Configuration
 
 ```yaml
 paths:
-  macaulay2: "/opt/homebrew/bin/M2"       # Required
-  singular: "/opt/homebrew/bin/Singular"  # Optional, for faster decomposition
-  bertini: "/path/to/bertini"             # Optional, for numerical methods
-```
+  macaulay2: "/opt/homebrew/bin/M2"
 
-### problems
-
-```yaml
 problems:
-  base_dir: "systems_and_phenomena/"   # Directory containing problem subdirectories
-  problem_list:                        # List of problems to process
-    - "kepler"                         # Leave empty to auto-detect all
-    - "time_dilation"
-```
+  base_dir: "systems_and_phenomena/"
+  problem_list:
+    - "kepler"
 
-### output
-
-```yaml
 output:
-  base_dir: "results/"                 # Where to write results
-```
+  base_dir: "results/"
 
-### axiom_removal
-
-```yaml
 axiom_removal:
-  # How many axioms to remove. Options:
-  # - "all": try all subset sizes from 0 to n
-  # - "[1,3]" or "1..3": inclusive range
-  # - "1,2,3": explicit list
-  # - "2": single value
-  num_axioms: "[1,3]"
-```
+  num_axioms: "[1,2]"
 
-### analyses
-
-```yaml
 analyses:
-  projection: false              # Groebner basis and variable elimination
-  dimensionality_check: false    # Compare ideal dimensions
-  algebraic_abduction: true      # Noiseless decomposition + reasoning
-  numerical_abduction: false     # Noisy witness sets + symbolic regression
-```
+  algebraic_abduction: true
 
-### decomposition
-
-```yaml
 decomposition:
-  engine: "singular"             # "m2" or "singular" (singular is faster)
-```
+  engine: "singular"
 
-### reasoning
-
-```yaml
-reasoning:
-  require_literal_gb: true       # Require target to appear literally in Groebner basis
-  max_candidate_size: -1         # Max subset size (-1 = num_removed + num_targets)
-```
-
-### numerical
-
-```yaml
-numerical:
-  engine: "bertini"              # "bertini" or "nag" (M2 built-in)
-  noise_levels:                  # Which noise levels to process
-    - "1e-2"
-    - "1e-5"
-    - "1e-8"
-  samples_per_component: 100     # Points to sample per witness set component
-  singular_value_threshold: 200  # Threshold for good fit quality
-```
-
-### normalization
-
-```yaml
-normalization:
-  normalize_coefficients: true   # Normalize max coefficient to 1
-  complex_threshold: 1e-6        # Zero out small imaginary parts
-  compute_coefficient_error: true  # Compute L2 error vs true coefficients
-```
-
-### robust_fitting
-
-```yaml
-robust_fitting:
-  enabled: true                  # Enable iterative outlier removal
-  outlier_percentile: 75.0       # Remove points above this percentile
-  max_iterations: 1              # Outlier removal iterations
-  min_points: 10                 # Minimum points to keep
-```
-
-### execution
-
-```yaml
 execution:
-  timeout_projection: 600        # Seconds
-  timeout_dimensionality: 600
-  timeout_decomposition: 1200
-  timeout_reasoning: 1200
-  timeout_witness_set: 3600
-  verbose: true                  # Print to stdout
-  log_level: "INFO"              # DEBUG, INFO, WARNING, ERROR
+  verbose: true
+  log_level: "INFO"
 ```
 
 ## Troubleshooting
