@@ -275,7 +275,7 @@ If you use AI-Noether in your research, please cite:
 
 ## License
 
-[Your license here]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Related Work
 
