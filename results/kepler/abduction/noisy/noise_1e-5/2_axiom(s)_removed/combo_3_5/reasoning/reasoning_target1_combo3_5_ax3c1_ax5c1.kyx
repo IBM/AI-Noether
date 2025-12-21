@@ -1,0 +1,56 @@
+ArchiveEntry "kepler_target1_combo3_5_ax3c1_ax5c1"
+
+ProgramVariables
+  Real Fc;
+  Real Fg;
+  Real w;
+  Real m1;
+  Real d1;
+  Real m2;
+  Real d2;
+  Real p;
+End.
+
+Problem
+  (
+    \exists c1
+    \exists c2
+    \exists c3
+    \exists c4
+    \exists c5
+    \exists c6
+    \exists c7
+    \exists c8
+    \exists c9
+    (
+      c1>0 & c2>0 & c3>0 & c4>0 & c5>0 & c6>0 & c7>0 & c8>0 & c9>0
+      &
+      (
+      \forall Fc
+      \forall Fg
+      \forall w
+      \forall m1
+      \forall d1
+      \forall m2
+      \forall d2
+      \forall p
+          (
+          (
+            Fc>0 & Fg>0 & w>0 & m1>0 & d1>0 & m2>0 & d2>0 & p>0
+            & ( m1*d1-m2*d2 = 0 )
+            & ( Fg*(d1+d2)^2 - m1*m2 = 0 )
+            & ( Fc - Fg = 0 )
+            & ( c1 * Fc ) = ( c2 * 4.35108e ) + ( c3 * w^2*m2*d2 )
+            & ( c4 * w*p ) = ( c5 * 1 )
+            )
+        ->
+          (
+            ( c6 * m1*m2*p^2 ) = ( c7 * m1*d1*d2^2 ) + ( c8 * m2*d1^2*d2 ) + ( c9 * m2*d1*d2^2 )
+          )
+          )
+      )
+    )
+  )
+End.
+
+End.

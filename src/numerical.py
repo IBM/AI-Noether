@@ -5,21 +5,21 @@ This module handles:
 - Witness set computation (numerical irreducible decomposition)
 - Symbolic regression on sampled points
 - Coefficient normalization
-- KeyMaera template generation
+- KeyMaera script generation with Cartesian product combinations and deduplication
 """
 
 import subprocess
 import os
 import numpy as np
-from typing import List, Dict, Any, Optional, Tuple
+from typing import List, Dict, Any, Optional, Tuple, Set
 from pathlib import Path
 from itertools import product
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 from sympy import symbols as sp_symbols, sympify as sp_sympify, Poly as SpPoly
 
 from .config import Config
-from .templates import fill_m2_witness_set_template, fill_keymaera_reasoning_template
+from .templates import fill_m2_witness_set_template, generate_keymaera_content
 from .parsers import parse_m2_witness_set_output, WitnessSetResult, WitnessSetComponent
 from .logging_utils import get_logger, log_subprocess_result
 
@@ -32,12 +32,13 @@ class SymbolicRegressionResult:
     component_index: int
     variables: List[str]
     monomials: List[Tuple[int, ...]]  # Exponent tuples
-    coefficients: np.ndarray  # Complex coefficients
-    coefficients_normalized: np.ndarray  # Normalized so max magnitude = 1
-    singular_value: float
-    relative_residual: float
-    polynomial_string: str
-    polynomial_string_normalized: str
+    monomial_strings: List[str] = field(default_factory=list)  # Human-readable monomial strings
+    coefficients: np.ndarray = field(default_factory=lambda: np.array([]))
+    coefficients_normalized: np.ndarray = field(default_factory=lambda: np.array([]))
+    singular_value: float = 0.0
+    relative_residual: float = 0.0
+    polynomial_string: str = ""
+    polynomial_string_normalized: str = ""
     
     # Robust fitting info
     num_points_total: int = 0
@@ -82,6 +83,19 @@ def monomial_support_from_axiom(axiom: str, all_vars: List[str]) -> Tuple[List[s
     monom_ct = len(alphas)
     
     return vars_sub, alphas, total_deg, monom_ct
+
+
+def exponent_tuple_to_monomial_string(vars_sub: List[str], alpha: Tuple[int, ...]) -> str:
+    """Convert an exponent tuple to a monomial string like 'x^2*y'."""
+    parts = []
+    for v, e in zip(vars_sub, alpha):
+        if e == 0:
+            continue
+        elif e == 1:
+            parts.append(v)
+        else:
+            parts.append(f"{v}^{e}")
+    return '*'.join(parts) if parts else '1'
 
 
 def normalize_coefficients(
@@ -502,6 +516,9 @@ def perform_symbolic_regression(
                 complex_threshold=float(config.normalization.complex_threshold)
             )
             
+            # Generate monomial strings
+            monomial_strings = [exponent_tuple_to_monomial_string(vars_sub, alpha) for alpha in alphas]
+            
             # Format polynomials
             poly_str = format_polynomial(vars_sub, alphas, coeffs)
             poly_str_norm = format_polynomial(vars_sub, alphas, coeffs_normalized)
@@ -532,6 +549,7 @@ def perform_symbolic_regression(
                 component_index=comp.index,
                 variables=vars_sub,
                 monomials=alphas,
+                monomial_strings=monomial_strings,
                 coefficients=coeffs,
                 coefficients_normalized=coeffs_normalized,
                 singular_value=sigma_min or 0.0,
@@ -555,6 +573,7 @@ def perform_symbolic_regression(
                 f.write(f"Component index: {comp.index}\n")
                 f.write(f"Variables: {vars_sub}\n")
                 f.write(f"Number of monomials: {monom_ct}\n")
+                f.write(f"Monomials: {monomial_strings}\n")
                 f.write(f"Total degree: {total_deg}\n")
                 f.write(f"Number of points (total): {num_points_total}\n")
                 f.write(f"Number of points (used after outlier removal): {num_points_used}\n")
@@ -607,7 +626,6 @@ def get_monomials_from_polynomial(poly_str: str, variables: List[str]) -> List[s
     
     Returns list of monomial strings like ['x^2', 'x*y', 'y^2', '1']
     """
-    # This is a simplified version - for KeyMaera we need the actual monomials
     expr_str = poly_str.replace('^', '**')
     sym_list = sp_symbols(' '.join(variables))
     sym_map = {str(s): s for s in sym_list}
@@ -635,6 +653,149 @@ def get_monomials_from_polynomial(poly_str: str, variables: List[str]) -> List[s
         return []
 
 
+def generate_keymaera_scripts(
+    problem_name: str,
+    combo_str: str,
+    variables: List[str],
+    known_axioms: List[str],
+    regression_results: List[SymbolicRegressionResult],
+    targets: List[str],
+    dropped_indices: List[int],
+    output_dir: str,
+    config: Config
+) -> List[str]:
+    """
+    Generate KeyMaera scripts for noisy reasoning using Cartesian product combinations.
+    
+    When multiple axioms are removed, generates one file per COMBINATION of 
+    candidates across all removed axioms. Each file contains ALL abducted axioms
+    with their respective polynomial candidates combined.
+    
+    Deduplicates based on monomial content - if two combinations would produce
+    identical KeyMaera files (same monomials, just different coefficient values
+    from different components), only the first one is generated.
+    
+    Args:
+        problem_name: Name of the physics problem
+        combo_str: String identifying axiom combination (e.g., "1_3")
+        variables: List of variable names
+        known_axioms: List of known axiom equations
+        regression_results: List of symbolic regression results (all axioms, all components)
+        targets: List of target polynomial strings
+        dropped_indices: List of 0-based indices of dropped axioms
+        output_dir: Directory to save outputs
+        config: Configuration object
+    
+    Returns:
+        List of paths to generated scripts
+    """
+    logger = get_logger()
+    
+    # Filter to good fits
+    threshold = float(config.numerical.singular_value_threshold)
+    good_fits = [r for r in regression_results if r.singular_value < threshold]
+    
+    if not good_fits:
+        logger.info(f"No regression results below threshold {threshold}")
+        return []
+    
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Group candidates by axiom_index (1-based)
+    # Each removed axiom should have one or more candidates (from different components)
+    candidates_by_axiom: Dict[int, List[SymbolicRegressionResult]] = {}
+    for fit in good_fits:
+        ax_idx = fit.axiom_index
+        if ax_idx not in candidates_by_axiom:
+            candidates_by_axiom[ax_idx] = []
+        candidates_by_axiom[ax_idx].append(fit)
+    
+    # Build list of candidate lists in order of dropped_indices
+    # Each element is a list of candidates for one removed axiom
+    candidate_lists = []
+    dropped_1based = [i + 1 for i in dropped_indices]
+    
+    for ax_idx in dropped_1based:
+        if ax_idx in candidates_by_axiom:
+            candidate_lists.append(candidates_by_axiom[ax_idx])
+        else:
+            # No candidates for this axiom - skip this combo entirely
+            logger.warning(f"No candidates for axiom {ax_idx}, skipping KeyMaera generation")
+            return []
+    
+    if not candidate_lists:
+        return []
+    
+    generated_paths = []
+    
+    # Track which monomial combinations we've already generated
+    # Key: (target_idx, tuple of (axiom_idx, tuple of sorted monomials) for each abducted axiom, tuple of sorted consequence monomials)
+    seen_monomial_combos: Set[tuple] = set()
+    
+    # Generate Cartesian product of candidates across axioms
+    for combo_tuple in product(*candidate_lists):
+        # combo_tuple is a tuple of SymbolicRegressionResult objects, one per removed axiom
+        
+        # Build abducted_axioms_info list
+        abducted_axioms_info = []
+        all_have_monomials = True
+        
+        for cand in combo_tuple:
+            if not cand.monomial_strings:
+                all_have_monomials = False
+                logger.debug(f"No monomials for axiom {cand.axiom_index} comp {cand.component_index}")
+                break
+            abducted_axioms_info.append((cand.axiom_index, cand.component_index, cand.monomial_strings))
+        
+        if not all_have_monomials:
+            continue
+        
+        # Process each target
+        for target_idx, target in enumerate(targets, 1):
+            consequence_monomials = get_monomials_from_polynomial(target, variables)
+            
+            # Create a signature based on the monomials (not component indices)
+            # This identifies the actual mathematical content of the file
+            monomial_signature = (
+                target_idx,
+                tuple((ax_idx, tuple(sorted(monos))) for ax_idx, _, monos in abducted_axioms_info),
+                tuple(sorted(consequence_monomials))
+            )
+            
+            # Skip if we've already generated a file with identical monomial content
+            if monomial_signature in seen_monomial_combos:
+                logger.debug(f"Skipping duplicate monomial combo for target {target_idx}")
+                continue
+            
+            seen_monomial_combos.add(monomial_signature)
+            
+            # Generate KeyMaera content for this combination
+            content, suffix = generate_keymaera_content(
+                problem_name=problem_name,
+                target_index=target_idx,
+                combo_str=combo_str,
+                abducted_axioms_info=abducted_axioms_info,
+                variables=variables,
+                known_axioms=known_axioms,
+                consequence_monomials=consequence_monomials
+            )
+            
+            # Filename includes all axiom/component pairs
+            out_file = os.path.join(
+                output_dir, 
+                f'reasoning_target{target_idx}_combo{combo_str}_{suffix}.kyx'
+            )
+            
+            with open(out_file, 'w') as f:
+                f.write(content)
+            
+            logger.info(f"Generated KeyMaera script: {out_file}")
+            generated_paths.append(out_file)
+    
+    return generated_paths
+
+
+# Backwards compatibility - keep old function but have it call the new one
 def generate_keymaera_script(
     problem_name: str,
     target_index: int,
@@ -649,29 +810,17 @@ def generate_keymaera_script(
     """
     Generate a KeyMaera script for noisy reasoning.
     
-    Only generates script for regression results with good fit quality
-    (singular value below threshold).
+    DEPRECATED: Use generate_keymaera_scripts() instead for proper Cartesian product
+    handling and deduplication when multiple axioms are removed.
     
-    Args:
-        problem_name: Name of the physics problem
-        target_index: Index of the target (1-based)
-        axiom_combo: String identifying axiom combination
-        variables: List of variable names
-        known_axioms: List of known axiom equations
-        regression_results: List of symbolic regression results
-        target: Target polynomial string
-        output_dir: Directory to save outputs
-        config: Configuration object
-    
-    Returns:
-        Path to generated script or None if not generated
+    This function is kept for backwards compatibility and will generate a single
+    script that combines all good fits into one file.
     """
     logger = get_logger()
     
-    # Filter to good fits (ensure threshold is float for comparison)
+    # Filter to good fits
     threshold = float(config.numerical.singular_value_threshold)
-    good_fits = [r for r in regression_results 
-                 if r.singular_value < threshold]
+    good_fits = [r for r in regression_results if r.singular_value < threshold]
     
     if not good_fits:
         logger.info(f"No regression results below threshold {threshold}")
@@ -679,54 +828,30 @@ def generate_keymaera_script(
     
     os.makedirs(output_dir, exist_ok=True)
     
-    # Build abducted axioms structure for template
-    abducted_axioms = []
-    coeff_idx = 1
-    
+    # Build abducted_axioms_info from all good fits
+    abducted_axioms_info = []
     for fit in good_fits:
-        monomials = []
-        for alpha in fit.monomials:
-            parts = []
-            for v, e in zip(fit.variables, alpha):
-                if e == 0:
-                    continue
-                elif e == 1:
-                    parts.append(v)
-                else:
-                    parts.append(f"{v}^{e}")
-            mono = '*'.join(parts) if parts else '1'
-            monomials.append(mono)
-        
-        abducted_axioms.append({
-            'monomials': monomials,
-            'coeff_prefix': f'c{fit.axiom_index}_'
-        })
+        if fit.monomial_strings:
+            abducted_axioms_info.append((fit.axiom_index, fit.component_index, fit.monomial_strings))
     
-    # Build consequence structure
-    target_monomials = get_monomials_from_polynomial(target, variables)
-    if not target_monomials:
-        target_monomials = [target]  # Fallback
+    if not abducted_axioms_info:
+        return None
     
-    consequence = {
-        'monomials': target_monomials,
-        'coeff_prefix': 'd'
-    }
+    consequence_monomials = get_monomials_from_polynomial(target, variables)
     
-    # Fill template
-    script_content = fill_keymaera_reasoning_template(
+    content, suffix = generate_keymaera_content(
         problem_name=problem_name,
         target_index=target_index,
-        axiom_combo=axiom_combo,
+        combo_str=axiom_combo,
+        abducted_axioms_info=abducted_axioms_info,
         variables=variables,
         known_axioms=known_axioms,
-        abducted_axioms=abducted_axioms,
-        consequence=consequence
+        consequence_monomials=consequence_monomials
     )
     
-    # Save script
-    script_path = os.path.join(output_dir, f"reasoning_target{target_index}_{axiom_combo}.kyx")
+    script_path = os.path.join(output_dir, f"reasoning_target{target_index}_{axiom_combo}_{suffix}.kyx")
     with open(script_path, 'w') as f:
-        f.write(script_content)
+        f.write(content)
     
     logger.info(f"Generated KeyMaera script: {script_path}")
     

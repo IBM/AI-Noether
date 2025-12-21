@@ -1,0 +1,59 @@
+ArchiveEntry "light_target1_combo3_4_5_ax3c1_ax4c1_ax5c1"
+
+ProgramVariables
+  Real S;
+  Real ap;
+  Real sintheta;
+  Real dA;
+  Real dtheta;
+  Real r;
+  Real P;
+  Real qc;
+  Real x0;
+  Real w;
+End.
+
+Problem
+  (
+    \exists c1
+    \exists c2
+    \exists c3
+    \exists c4
+    \exists c5
+    \exists c6
+    \exists c7
+    \exists c8
+    (
+      c1>0 & c2>0 & c3>0 & c4>0 & c5>0 & c6>0 & c7>0 & c8>0
+      &
+      (
+      \forall S
+      \forall ap
+      \forall sintheta
+      \forall dA
+      \forall dtheta
+      \forall r
+      \forall P
+      \forall qc
+      \forall x0
+      \forall w
+          (
+          (
+            S>0 & ap>0 & sintheta>0 & dA>0 & dtheta>0 & r>0 & P>0 & qc>0 & x0>0 & w>0
+            & ( S * r^2 - qc^2 * ap^2 * sintheta^2 = 0 )
+            & ( 100*dA - 2*(314)*(r^2)*sintheta*dtheta = 0 )
+            & ( c1 * S*dA ) = ( c2 * P )
+            & ( c3 * sintheta^3*dtheta ) = ( c4 * 1 )
+            & ( c5 * ap^2 ) = ( c6 * x0^2*w^4 )
+            )
+        ->
+          (
+            ( c7 * P ) = ( c8 * 314*qc^2*w^4*x0^2 )
+          )
+          )
+      )
+    )
+  )
+End.
+
+End.

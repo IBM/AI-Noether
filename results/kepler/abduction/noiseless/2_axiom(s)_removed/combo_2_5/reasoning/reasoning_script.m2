@@ -16,7 +16,7 @@ measuredPerTarget = {{m1, d1, m2, d2, p}};
 nonMeasuredPerTarget = {{Fc, Fg, w}};
 
 -- Candidate axiom sets to test (list of lists)
-candidateSets = {{}, {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2}, {-d1^2*d2-2*d1*d2^2-d2^3+m1*p^2}, {m1*d1-m2*d2}, {-w^2*m2*d2+Fg}, {-w^2*m2*d2+Fc}, {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, -d1^2*d2-2*d1*d2^2-d2^3+m1*p^2}, {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, m1*d1-m2*d2}, {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, -w^2*m2*d2+Fg}, {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, -w^2*m2*d2+Fc}, {-d1^2*d2-2*d1*d2^2-d2^3+m1*p^2, m1*d1-m2*d2}, {-d1^2*d2-2*d1*d2^2-d2^3+m1*p^2, -w^2*m2*d2+Fg}, {-d1^2*d2-2*d1*d2^2-d2^3+m1*p^2, -w^2*m2*d2+Fc}, {m1*d1-m2*d2, -w^2*m2*d2+Fg}, {m1*d1-m2*d2, -w^2*m2*d2+Fc}, {-w^2*m2*d2+Fg, -w^2*m2*d2+Fc}, {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, -d1^2*d2-2*d1*d2^2-d2^3+m1*p^2, m1*d1-m2*d2}, {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, -d1^2*d2-2*d1*d2^2-d2^3+m1*p^2, -w^2*m2*d2+Fg}, {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, -d1^2*d2-2*d1*d2^2-d2^3+m1*p^2, -w^2*m2*d2+Fc}, {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, m1*d1-m2*d2, -w^2*m2*d2+Fg}, {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, m1*d1-m2*d2, -w^2*m2*d2+Fc}, {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2, -w^2*m2*d2+Fg, -w^2*m2*d2+Fc}, {-d1^2*d2-2*d1*d2^2-d2^3+m1*p^2, m1*d1-m2*d2, -w^2*m2*d2+Fg}, {-d1^2*d2-2*d1*d2^2-d2^3+m1*p^2, m1*d1-m2*d2, -w^2*m2*d2+Fc}, {-d1^2*d2-2*d1*d2^2-d2^3+m1*p^2, -w^2*m2*d2+Fg, -w^2*m2*d2+Fc}, {m1*d1-m2*d2, -w^2*m2*d2+Fg, -w^2*m2*d2+Fc}, {d2}, {m1}, {-w^2*m2*d2+Fg}, {-w^2*m2*d2+Fc}, {d2, m1}, {d2, -w^2*m2*d2+Fg}, {d2, -w^2*m2*d2+Fc}, {m1, -w^2*m2*d2+Fg}, {m1, -w^2*m2*d2+Fc}, {-w^2*m2*d2+Fg, -w^2*m2*d2+Fc}, {d2, m1, -w^2*m2*d2+Fg}, {d2, m1, -w^2*m2*d2+Fc}, {d2, -w^2*m2*d2+Fg, -w^2*m2*d2+Fc}, {m1, -w^2*m2*d2+Fg, -w^2*m2*d2+Fc}, {m2}, {d1}, {-w^2*m2*d2+Fg}, {-w^2*m2*d2+Fc}, {m2, d1}, {m2, -w^2*m2*d2+Fg}, {m2, -w^2*m2*d2+Fc}, {d1, -w^2*m2*d2+Fg}, {d1, -w^2*m2*d2+Fc}, {-w^2*m2*d2+Fg, -w^2*m2*d2+Fc}, {m2, d1, -w^2*m2*d2+Fg}, {m2, d1, -w^2*m2*d2+Fc}, {m2, -w^2*m2*d2+Fg, -w^2*m2*d2+Fc}, {d1, -w^2*m2*d2+Fg, -w^2*m2*d2+Fc}, {m2}, {m1}, {-w^2*m2*d2+Fg}, {-w^2*m2*d2+Fc}, {m2, m1}, {m2, -w^2*m2*d2+Fg}, {m2, -w^2*m2*d2+Fc}, {m1, -w^2*m2*d2+Fg}, {m1, -w^2*m2*d2+Fc}, {-w^2*m2*d2+Fg, -w^2*m2*d2+Fc}, {m2, m1, -w^2*m2*d2+Fg}, {m2, m1, -w^2*m2*d2+Fc}, {m2, -w^2*m2*d2+Fg, -w^2*m2*d2+Fc}, {m1, -w^2*m2*d2+Fg, -w^2*m2*d2+Fc}};
+candidateSets = {{}, {d1^3+2*d1^2*d2+d1*d2^2-m2*p^2}, {-d1^2*d2-2*d1*d2^2-d2^3+m1*p^2}, {d2}, {m1}, {m2}, {d1}};
 
 -- Configuration
 requireLiteralGB = true;
@@ -54,7 +54,7 @@ allAppearInGBExactlyPT = (combo) ->
     all(toList(0..(k-1)), i -> appearsInGBExactlyIdx(i, combo));
 
 -- Output file
-f = openOut "results/real/kepler/abduction/noiseless/2_axiom(s)_removed/combo_2_5/reasoning/reasoning_output.txt";
+f = openOut "results/kepler/abduction/noiseless/2_axiom(s)_removed/combo_2_5/reasoning/reasoning_output.txt";
 f << "=== Reasoning Results ===" << endl;
 f << "Remaining Axioms:" << endl;
 scan(remainingAxioms, a -> f << "  " << toString a << endl);
@@ -141,4 +141,4 @@ scan(strongCandidates, c -> f << "  " << toString c << endl);
 
 close f;
 
-print("Reasoning complete. Output written to results/real/kepler/abduction/noiseless/2_axiom(s)_removed/combo_2_5/reasoning/reasoning_output.txt");
+print("Reasoning complete. Output written to results/kepler/abduction/noiseless/2_axiom(s)_removed/combo_2_5/reasoning/reasoning_output.txt");

@@ -1,0 +1,62 @@
+ArchiveEntry "simple_harmonic_oscillator_target1_combo1_2_4_ax1c1_ax2c1_ax4c1"
+
+ProgramVariables
+  Real ad;
+  Real T;
+  Real omega;
+  Real theta;
+  Real sintheta;
+  Real d;
+  Real g;
+  Real L;
+  Real j;
+  Real Pi;
+  Real Tj;
+End.
+
+Problem
+  (
+    \exists c1
+    \exists c2
+    \exists c3
+    \exists c4
+    \exists c5
+    \exists c6
+    \exists c7
+    \exists c8
+    (
+      c1>0 & c2>0 & c3>0 & c4>0 & c5>0 & c6>0 & c7>0 & c8>0
+      &
+      (
+      \forall ad
+      \forall T
+      \forall omega
+      \forall theta
+      \forall sintheta
+      \forall d
+      \forall g
+      \forall L
+      \forall j
+      \forall Pi
+      \forall Tj
+          (
+          (
+            ad>0 & T>0 & omega>0 & theta>0 & sintheta>0 & d>0 & g>0 & L>0 & j>0 & Pi>0 & Tj>0
+            & ( T*omega-2*Pi = 0 )
+            & ( Tj-j*T = 0 )
+            & ( sintheta - theta = 0 )
+            & ( c1 * ad ) = ( c2 * sintheta*g )
+            & ( c3 * theta*L ) = ( c4 * d )
+            & ( c5 * ad ) = ( c6 * omega^2*d )
+            )
+        ->
+          (
+            ( c7 * d*g*Tj^2 ) = ( c8 * d*L*j^2*Pi^2 )
+          )
+          )
+      )
+    )
+  )
+End.
+
+End.

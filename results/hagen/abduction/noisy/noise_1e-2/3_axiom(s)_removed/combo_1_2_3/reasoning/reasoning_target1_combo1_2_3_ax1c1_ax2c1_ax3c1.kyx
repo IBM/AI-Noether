@@ -1,0 +1,57 @@
+ArchiveEntry "hagen_target1_combo1_2_3_ax1c1_ax2c1_ax3c1"
+
+ProgramVariables
+  Real c0;
+  Real c2;
+  Real dp;
+  Real r;
+  Real Rad;
+  Real u;
+  Real L;
+  Real mu;
+  Real delP;
+End.
+
+Problem
+  (
+    \exists c1
+    \exists c_2
+    \exists c3
+    \exists c4
+    \exists c5
+    \exists c6
+    \exists c7
+    \exists c8
+    \exists c9
+    (
+      c1>0 & c_2>0 & c3>0 & c4>0 & c5>0 & c6>0 & c7>0 & c8>0 & c9>0
+      &
+      (
+      \forall c0
+      \forall c2
+      \forall dp
+      \forall r
+      \forall Rad
+      \forall u
+      \forall L
+      \forall mu
+      \forall delP
+          (
+          (
+            c0>0 & c2>0 & dp>0 & r>0 & Rad>0 & u>0 & L>0 & mu>0 & delP>0
+            & ( u - c0 - r^2*c2 = 0 )
+            & ( c1 * c2*r*mu ) = ( c_2 * dp*r )
+            & ( c3 * dp*L ) = ( c4 * delP )
+            & ( c5 * c0 ) = ( c6 * c2*Rad^2 )
+            )
+        ->
+          (
+            ( c7 * r^3*delP ) = ( c8 * r*Rad^2*delP ) + ( c9 * r*u*L*mu )
+          )
+          )
+      )
+    )
+  )
+End.
+
+End.

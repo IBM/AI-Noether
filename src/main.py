@@ -22,7 +22,7 @@ from .reasoning import run_reasoning
 from .numerical import (
     run_witness_set_computation,
     perform_symbolic_regression,
-    generate_keymaera_script
+    generate_keymaera_scripts  # Updated import
 )
 
 
@@ -270,6 +270,9 @@ def process_numerical_abduction(
     Run numerical abduction (noisy case) for a specific noise level.
     
     Loads problem data from system_noise_<noise_level>.txt
+    
+    Generates KeyMaera files using Cartesian product combinations when multiple
+    axioms are removed, with deduplication based on monomial content.
     """
     logger = get_logger()
     logger.info(f"Running numerical abduction (noisy) for noise level: {noise_level}")
@@ -340,24 +343,22 @@ def process_numerical_abduction(
             logger.info(f"Symbolic regression produced {len(regression_results)} results")
             
             # Step 3: Generate KeyMaera scripts for reasoning
+            # Uses Cartesian product combinations with deduplication
             reasoning_dir = os.path.join(combo_dir, "reasoning")
-            os.makedirs(reasoning_dir, exist_ok=True)
             
-            for target_idx, target in enumerate(targets, start=1):
-                script_path = generate_keymaera_script(
-                    problem_name=problem_data.get('problem_name', 'unknown'),
-                    target_index=target_idx,
-                    axiom_combo=combo_str,
-                    variables=variables,
-                    known_axioms=remaining_axioms,
-                    regression_results=regression_results,
-                    target=target,
-                    output_dir=reasoning_dir,
-                    config=config
-                )
-                
-                if script_path:
-                    logger.info(f"Generated KeyMaera script: {script_path}")
+            script_paths = generate_keymaera_scripts(
+                problem_name=problem_data.get('problem_name', 'unknown'),
+                combo_str=combo_str,
+                variables=variables,
+                known_axioms=remaining_axioms,
+                regression_results=regression_results,
+                targets=targets,
+                dropped_indices=list(combo_indices),
+                output_dir=reasoning_dir,
+                config=config
+            )
+            
+            logger.info(f"Generated {len(script_paths)} KeyMaera scripts (with deduplication)")
             
             # Save summary
             summary_path = os.path.join(combo_dir, "summary.txt")
@@ -372,6 +373,7 @@ def process_numerical_abduction(
                 f.write(f"Samples per component: {config.numerical.samples_per_component}\n")
                 f.write(f"Number of witness set components: {len(witness_result.components)}\n")
                 f.write(f"Symbolic regression results: {len(regression_results)}\n")
+                f.write(f"KeyMaera scripts generated: {len(script_paths)}\n")
                 
                 threshold = float(config.numerical.singular_value_threshold)
                 f.write(f"\nRegression results below threshold ({threshold}):\n")
@@ -381,8 +383,14 @@ def process_numerical_abduction(
                     f.write(f"  Axiom {fit.axiom_index}, Component {fit.component_index}:\n")
                     f.write(f"    Singular value: {fit.singular_value}\n")
                     f.write(f"    Polynomial: {fit.polynomial_string_normalized}\n")
+                    f.write(f"    Monomials: {fit.monomial_strings}\n")
                     if fit.coefficient_l2_error is not None:
                         f.write(f"    Coefficient L2 error: {fit.coefficient_l2_error}\n")
+                
+                if script_paths:
+                    f.write(f"\nGenerated KeyMaera scripts:\n")
+                    for path in script_paths:
+                        f.write(f"  {os.path.basename(path)}\n")
 
 
 def process_problem(problem_name: str, config: Config) -> None:

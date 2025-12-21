@@ -1,0 +1,72 @@
+ArchiveEntry "photoHall_target1_combo2_5_ax2c2_ax5c1"
+
+ProgramVariables
+  Real ph;
+  Real dp;
+  Real mu;
+  Real muN;
+  Real muH;
+  Real n;
+  Real dsigma2dn;
+  Real e;
+  Real mup;
+  Real p0;
+  Real dn;
+  Real beta;
+  Real r;
+  Real sigma;
+  Real H;
+End.
+
+Problem
+  (
+    \exists c1
+    \exists c2
+    \exists c3
+    \exists c4
+    \exists c5
+    \exists c6
+    \exists c7
+    \exists c8
+    \exists c9
+    (
+      c1>0 & c2>0 & c3>0 & c4>0 & c5>0 & c6>0 & c7>0 & c8>0 & c9>0
+      &
+      (
+      \forall ph
+      \forall dp
+      \forall mu
+      \forall muN
+      \forall muH
+      \forall n
+      \forall dsigma2dn
+      \forall e
+      \forall mup
+      \forall p0
+      \forall dn
+      \forall beta
+      \forall r
+      \forall sigma
+      \forall H
+          (
+          (
+            ph>0 & dp>0 & mu>0 & muN>0 & muH>0 & n>0 & dsigma2dn>0 & e>0 & mup>0 & p0>0 & dn>0 & beta>0 & r>0 & sigma>0 & H>0
+            & ( beta * mup - muN = 0 )
+            & ( ph - p0 - dp = 0 )
+            & ( n - dn = 0 )
+            & ( sigma - e * ph * mup - e * n * muN = 0 )
+            & ( H * (ph + beta * n)^2 * e - r * ph + r * beta^2 * n = 0 )
+            & ( c1 * mu*r ) = 0
+            & ( c2 * dp ) = ( c3 * dn )
+            )
+        ->
+          (
+            ( c4 * r*e*mup*dn*beta^2 ) = ( c5 * r*e*mup*dn*beta ) + ( c6 * r*sigma ) + ( c7 * e*p0*sigma*H ) + ( c8 * e*dn*beta*sigma*H ) + ( c9 * e*dn*sigma*H )
+          )
+          )
+      )
+    )
+  )
+End.
+
+End.

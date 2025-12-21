@@ -9,25 +9,49 @@ Numerical engine: bertini
 Samples per component: 100
 Number of witness set components: 4
 Symbolic regression results: 8
+KeyMaera scripts generated: 1
 
-Regression results below threshold (5.0):
+Regression results below threshold (200.0):
   Axiom 2, Component 1:
-    Singular value: 1.463775599829583e-98
-    Polynomial: 1*m1*m2
-    Coefficient L2 error: 1.9364916731037085
+    Singular value: 2.897154845684747e-95
+    Polynomial: 1*Fg*d1^2
+    Monomials: ['Fg*d1^2', 'Fg*d1*d2', 'Fg*d2^2', 'm1*m2']
+    Coefficient L2 error: 1.3228756555322954
+  Axiom 5, Component 1:
+    Singular value: 8.449023682788333
+    Polynomial: (-0.00272729+0.0125296i)*w*p + 1*1
+    Monomials: ['w*p', '1']
+    Coefficient L2 error: 0.9973514177242259
   Axiom 2, Component 2:
-    Singular value: 4.046006731951313e-94
-    Polynomial: 1*Fg*d2^2
+    Singular value: 5.974402785522434e-64
+    Polynomial: 1*m1*m2
+    Monomials: ['Fg*d1^2', 'Fg*d1*d2', 'Fg*d2^2', 'm1*m2']
     Coefficient L2 error: 1.3228756555322954
   Axiom 5, Component 2:
-    Singular value: 4.2494100855480985
-    Polynomial: (-0.0024118-0.000144922i)*w*p + 1*1
-    Coefficient L2 error: 2.2371476117918716
+    Singular value: 8.56324233888638
+    Polynomial: (-0.00233558+0.012273i)*w*p + 1*1
+    Monomials: ['w*p', '1']
+    Coefficient L2 error: 0.9977399108181587
   Axiom 2, Component 3:
-    Singular value: 1.782873805768326e-179
-    Polynomial: 1*Fg*d1^2
+    Singular value: 3.1209188156019204e-66
+    Polynomial: 1*Fg*d2^2
+    Monomials: ['Fg*d1^2', 'Fg*d1*d2', 'Fg*d2^2', 'm1*m2']
     Coefficient L2 error: 1.3228756555322954
+  Axiom 5, Component 3:
+    Singular value: 8.468039843032042
+    Polynomial: (-0.00850975-0.00813826i)*w*p + 1*1
+    Monomials: ['w*p', '1']
+    Coefficient L2 error: 0.9915236475731642
   Axiom 2, Component 4:
-    Singular value: 0.48497845169376413
-    Polynomial: (0.0208692+0.0102986i)*Fg*d1^2 + (0.0150501+0.00967218i)*Fg*d1*d2 + (-0.00615522+0.000753072i)*Fg*d2^2 + 1*m1*m2
-    Coefficient L2 error: 1.9251197430086835
+    Singular value: 17.726963214678342
+    Polynomial: (0.114305+0.0552249i)*Fg*d1^2 + (-0.366632+0.113706i)*Fg*d1*d2 + (-0.0790596-0.0587762i)*Fg*d2^2 + 1*m1*m2
+    Monomials: ['Fg*d1^2', 'Fg*d1*d2', 'Fg*d2^2', 'm1*m2']
+    Coefficient L2 error: 1.1068645352481543
+  Axiom 5, Component 4:
+    Singular value: 8.14851293860868
+    Polynomial: (-0.0760547-0.0215683i)*w*p + 1*1
+    Monomials: ['w*p', '1']
+    Coefficient L2 error: 0.9241970118048691
+
+Generated KeyMaera scripts:
+  reasoning_target1_combo2_5_ax2c1_ax5c1.kyx

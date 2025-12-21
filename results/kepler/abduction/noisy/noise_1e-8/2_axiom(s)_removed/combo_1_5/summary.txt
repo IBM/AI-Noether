@@ -9,33 +9,59 @@ Numerical engine: bertini
 Samples per component: 100
 Number of witness set components: 5
 Symbolic regression results: 10
+KeyMaera scripts generated: 1
 
-Regression results below threshold (5.0):
+Regression results below threshold (200.0):
   Axiom 1, Component 1:
-    Singular value: 7.528291158220041e-74
-    Polynomial: (0.0949773+0.070009i)*m1*d1 + 1*m2*d2
-    Coefficient L2 error: 2.1963532023763563
+    Singular value: 1.859675204468319e-31
+    Polynomial: 1*m1*d1 + (0.497499+0.0696953i)*m2*d2
+    Monomials: ['m1*d1', 'm2*d2']
+    Coefficient L2 error: 1.4991201280554454
+  Axiom 5, Component 1:
+    Singular value: 8.58494789149643
+    Polynomial: (0.00087965+0.00662757i)*w*p + 1*1
+    Monomials: ['w*p', '1']
+    Coefficient L2 error: 1.0009015929098288
   Axiom 1, Component 2:
-    Singular value: 3.8570018717791544e-76
-    Polynomial: 1*m1*d1 + (-0.0428323+0.183087i)*m2*d2
-    Coefficient L2 error: 0.9745207640877382
+    Singular value: 3.154063252291381e-32
+    Polynomial: (0.0014827-0.00263743i)*m1*d1 + 1*m2*d2
+    Monomials: ['m1*d1', 'm2*d2']
+    Coefficient L2 error: 1.0014861744276884
+  Axiom 5, Component 2:
+    Singular value: 8.560865736275368
+    Polynomial: (-0.00115293+0.00152374i)*w*p + 1*1
+    Monomials: ['w*p', '1']
+    Coefficient L2 error: 0.9988482353530366
   Axiom 1, Component 3:
-    Singular value: 3.276096879779961e-82
-    Polynomial: (0.013396-0.361036i)*m1*d1 + 1*m2*d2
-    Coefficient L2 error: 2.2591446319419757
+    Singular value: 1.2948968791186415e-32
+    Polynomial: 1*m1*d1
+    Monomials: ['m1*d1', 'm2*d2']
+    Coefficient L2 error: 1.0
   Axiom 5, Component 3:
-    Singular value: 3.777299254053982
-    Polynomial: (-0.166495+0.015703i)*w*p + 1*1
-    Coefficient L2 error: 2.315374056961486
+    Singular value: 8.416403683528836
+    Polynomial: (-0.0043511+0.0240924i)*w*p + 1*1
+    Monomials: ['w*p', '1']
+    Coefficient L2 error: 0.9959403461963062
   Axiom 1, Component 4:
-    Singular value: 6.865565959804599e-48
+    Singular value: 2.758337923202481e-36
     Polynomial: 1*m2*d2
-    Coefficient L2 error: 2.23606797749979
+    Monomials: ['m1*d1', 'm2*d2']
+    Coefficient L2 error: 1.0
+  Axiom 5, Component 4:
+    Singular value: 8.5883495928146
+    Polynomial: (-0.000533923-0.000165045i)*w*p + 1*1
+    Monomials: ['w*p', '1']
+    Coefficient L2 error: 0.9994660902690397
   Axiom 1, Component 5:
-    Singular value: 0.98522893390496
-    Polynomial: (-0.0346495+0.0348614i)*m1*d1 + 1*m2*d2
-    Coefficient L2 error: 2.252046823276278
+    Singular value: 10.70400425298685
+    Polynomial: (-0.0336669-0.141611i)*m1*d1 + 1*m2*d2
+    Monomials: ['m1*d1', 'm2*d2']
+    Coefficient L2 error: 0.9766541320863885
   Axiom 5, Component 5:
-    Singular value: 4.066391227111699
-    Polynomial: (-0.00675075+0.000317835i)*w*p + 1*1
-    Coefficient L2 error: 2.2390951685108282
+    Singular value: 8.294785477961526
+    Polynomial: (0.0450338+0.00951048i)*w*p + 1*1
+    Monomials: ['w*p', '1']
+    Coefficient L2 error: 1.0450770986650937
+
+Generated KeyMaera scripts:
+  reasoning_target1_combo1_5_ax1c1_ax5c1.kyx

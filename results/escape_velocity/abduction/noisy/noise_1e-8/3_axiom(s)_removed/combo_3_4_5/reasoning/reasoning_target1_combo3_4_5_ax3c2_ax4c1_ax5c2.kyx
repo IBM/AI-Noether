@@ -1,0 +1,55 @@
+ArchiveEntry "escape_velocity_target1_combo3_4_5_ax3c2_ax4c1_ax5c2"
+
+ProgramVariables
+  Real Eki;
+  Real Ekf;
+  Real Ugi;
+  Real Ugf;
+  Real G;
+  Real M;
+  Real m;
+  Real ve;
+  Real r;
+End.
+
+Problem
+  (
+    \exists c1
+    \exists c2
+    \exists c3
+    \exists c4
+    \exists c5
+    \exists c6
+    (
+      c1>0 & c2>0 & c3>0 & c4>0 & c5>0 & c6>0
+      &
+      (
+      \forall Eki
+      \forall Ekf
+      \forall Ugi
+      \forall Ugf
+      \forall G
+      \forall M
+      \forall m
+      \forall ve
+      \forall r
+          (
+          (
+            Eki>0 & Ekf>0 & Ugi>0 & Ugf>0 & G>0 & M>0 & m>0 & ve>0 & r>0
+            & ( Eki - 1/2 * m * ve^2 = 0 )
+            & ( Ekf - 0 = 0 )
+            & ( c1 * Ugi*r ) = ( c2 * G*M*m )
+            & ( c3 * Ugf ) = 0
+            & ( c4 * Ekf ) = 0
+            )
+        ->
+          (
+            ( c5 * G*M*m ) = ( c6 * m*ve^2*r )
+          )
+          )
+      )
+    )
+  )
+End.
+
+End.

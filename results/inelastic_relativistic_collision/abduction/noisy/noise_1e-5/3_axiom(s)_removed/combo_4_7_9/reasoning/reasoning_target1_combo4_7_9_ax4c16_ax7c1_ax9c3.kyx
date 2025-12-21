@@ -1,0 +1,68 @@
+ArchiveEntry "inelastic_relativistic_collision_target1_combo4_7_9_ax4c16_ax7c1_ax9c3"
+
+ProgramVariables
+  Real mr;
+  Real vm;
+  Real vc;
+  Real pc;
+  Real Em;
+  Real Er;
+  Real Ec;
+  Real mc;
+  Real mm;
+  Real pm;
+  Real c;
+End.
+
+Problem
+  (
+    \exists c1
+    \exists c2
+    \exists c3
+    \exists c4
+    \exists c5
+    \exists c6
+    \exists c7
+    \exists c8
+    \exists c9
+    \exists c10
+    \exists c11
+    (
+      c1>0 & c2>0 & c3>0 & c4>0 & c5>0 & c6>0 & c7>0 & c8>0 & c9>0 & c10>0 & c11>0
+      &
+      (
+      \forall mr
+      \forall vm
+      \forall vc
+      \forall pc
+      \forall Em
+      \forall Er
+      \forall Ec
+      \forall mc
+      \forall mm
+      \forall pm
+      \forall c
+          (
+          (
+            mr>0 & vm>0 & vc>0 & pc>0 & Em>0 & Er>0 & Ec>0 & mc>0 & mm>0 & pm>0 & c>0
+            & ( pm^2*(c^2 - vm^2) - mm^2*vm^2*c^2 = 0 )
+            & ( Em^2 - (mm*c^2)^2 - (pm*c)^2 = 0 )
+            & ( Er - mr*c^2 = 0 )
+            & ( 2*Em*Er - Ec^2 + Em^2 + Er^2 = 0 )
+            & ( pc - pm = 0 )
+            & ( mr - mm = 0 )
+            & ( c1 * pc^2*c^2 ) = ( c2 * Ec^2 ) + ( c3 * 1.09445e ) + ( c4 * mc^2*c^2 )
+            & ( c5 * 1.36315e ) = ( c6 * vm ) + ( c7 * c )
+            & ( c8 * vc^2*pc^2 ) = ( c9 * pc^2*c^2 )
+            )
+        ->
+          (
+            ( c10 * mm^2*c^4 ) = ( c11 * 9*pm^2*c^2 )
+          )
+          )
+      )
+    )
+  )
+End.
+
+End.

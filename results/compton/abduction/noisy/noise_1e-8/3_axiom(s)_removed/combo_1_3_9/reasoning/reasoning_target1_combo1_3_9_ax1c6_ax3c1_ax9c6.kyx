@@ -1,0 +1,78 @@
+ArchiveEntry "compton_target1_combo1_3_9_ax1c6_ax3c1_ax9c6"
+
+ProgramVariables
+  Real f1;
+  Real f2;
+  Real E1;
+  Real E2;
+  Real Ee1;
+  Real Ee2;
+  Real p1;
+  Real p2;
+  Real pe2;
+  Real lambda1;
+  Real lambda2;
+  Real h;
+  Real me;
+  Real c;
+  Real coss;
+End.
+
+Problem
+  (
+    \exists c1
+    \exists c2
+    \exists c3
+    \exists c4
+    \exists c5
+    \exists c6
+    \exists c7
+    \exists c8
+    \exists c9
+    \exists c10
+    \exists c11
+    \exists c12
+    (
+      c1>0 & c2>0 & c3>0 & c4>0 & c5>0 & c6>0 & c7>0 & c8>0 & c9>0 & c10>0 & c11>0 & c12>0
+      &
+      (
+      \forall f1
+      \forall f2
+      \forall E1
+      \forall E2
+      \forall Ee1
+      \forall Ee2
+      \forall p1
+      \forall p2
+      \forall pe2
+      \forall lambda1
+      \forall lambda2
+      \forall h
+      \forall me
+      \forall c
+      \forall coss
+          (
+          (
+            f1>0 & f2>0 & E1>0 & E2>0 & Ee1>0 & Ee2>0 & p1>0 & p2>0 & pe2>0 & lambda1>0 & lambda2>0 & h>0 & me>0 & c>0 & coss>0
+            & ( E1 - h*f1 = 0 )
+            & ( p1*c - h*f1 = 0 )
+            & ( p2*c - h*f2 = 0 )
+            & ( lambda1*f1 - c = 0 )
+            & ( lambda2*f2 - c = 0 )
+            & ( Ee1 - me*c^2 = 0 )
+            & ( pe2^2 - p1^2 - p2^2 + 2*p1*p2*coss = 0 )
+            & ( c1 * Eph1 ) = ( c2 * Eph2 ) + ( c3 * Eel1 ) + ( c4 * Eel2 )
+            & ( c5 * f2*h ) = 0
+            & ( c6 * Eel2^2 ) = ( c7 * pel2^2*c^2 ) + ( c8 * mel^2*c^4 )
+            )
+        ->
+          (
+            ( c9 * lambda1*h*me*c^3 ) = ( c10 * lambda2*h*me*c^3 ) + ( c11 * coss*h^2*c^2 ) + ( c12 * h^2*c^2 )
+          )
+          )
+      )
+    )
+  )
+End.
+
+End.

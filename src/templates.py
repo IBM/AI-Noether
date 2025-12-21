@@ -7,7 +7,7 @@ Uses simple {placeholder} format for substitution.
 
 import os
 import re
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Tuple
 from pathlib import Path
 
 
@@ -272,7 +272,177 @@ def fill_singular_decomposition_template(
 
 
 # =============================================================================
-# KeyMaera Template Fillers
+# KeyMaera Content Generation (Direct, No Template)
+# =============================================================================
+
+def generate_keymaera_content(
+    problem_name: str,
+    target_index: int,
+    combo_str: str,
+    abducted_axioms_info: List[Tuple[int, int, List[str]]],  # List of (axiom_index, component_index, monomials)
+    variables: List[str],
+    known_axioms: List[str],
+    consequence_monomials: List[str]
+) -> Tuple[str, str]:
+    """
+    Generate KeyMaera file content with proper formatting.
+    
+    This function generates content directly without using a template file,
+    ensuring proper formatting with:
+    - Physics variables in ProgramVariables (no coefficients)
+    - Coefficients in existential quantifiers
+    - One abducted axiom equation per removed axiom
+    - Proper LHS = RHS format for equations
+    
+    Args:
+        problem_name: Name of the physics problem
+        target_index: Index of the target consequence (1-based)
+        combo_str: String identifying the axiom combination removed (e.g., "1_3")
+        abducted_axioms_info: List of tuples (axiom_index, component_index, monomials) 
+                              for each abducted axiom. Each removed axiom should have
+                              exactly one entry.
+        variables: List of physics variable names
+        known_axioms: List of known axiom equations (as strings)
+        consequence_monomials: List of monomial strings for the consequence/target
+    
+    Returns:
+        Tuple of (content, filename_suffix)
+        - content: Complete KeyMaera file content as string
+        - filename_suffix: Suffix for filename like "ax1c1_ax3c2"
+    """
+    # Build filename suffix from all axiom/component pairs
+    axiom_comp_parts = []
+    for ax_idx, comp_idx, _ in abducted_axioms_info:
+        axiom_comp_parts.append(f"ax{ax_idx}c{comp_idx}")
+    axiom_comp_suffix = "_".join(axiom_comp_parts)
+    
+    lines = []
+    lines.append(f'ArchiveEntry "{problem_name}_target{target_index}_combo{combo_str}_{axiom_comp_suffix}"')
+    lines.append('')
+    lines.append('ProgramVariables')
+    
+    # Physics variable declarations ONLY (no coefficients here)
+    for v in variables:
+        lines.append(f'  Real {v};')
+    
+    lines.append('End.')
+    lines.append('')
+    lines.append('Problem')
+    lines.append('  (')
+    
+    # Collect all coefficient names, avoiding conflicts with physics variables
+    all_coeffs = []
+    coeff_idx = 1
+    
+    def get_safe_coeff(idx: int) -> str:
+        name = f"c{idx}"
+        while name in variables:
+            name = f"c_{idx}"
+            idx += 100
+        return name
+    
+    # Track coefficient ranges for each abducted axiom
+    abducted_coeff_ranges = []  # List of (start_idx, end_idx) for each abducted axiom
+    
+    for ax_idx, comp_idx, monomials in abducted_axioms_info:
+        start_idx = len(all_coeffs)
+        for _ in monomials:
+            all_coeffs.append(get_safe_coeff(coeff_idx))
+            coeff_idx += 1
+        end_idx = len(all_coeffs)
+        abducted_coeff_ranges.append((start_idx, end_idx))
+    
+    # Coefficients for consequence
+    conseq_start_idx = len(all_coeffs)
+    for _ in consequence_monomials:
+        all_coeffs.append(get_safe_coeff(coeff_idx))
+        coeff_idx += 1
+    
+    # Existential quantifiers - one per line
+    for c in all_coeffs:
+        lines.append(f'    \\exists {c}')
+    
+    lines.append('    (')
+    
+    # Coefficient positivity
+    coeff_pos = ' & '.join([f'{c}>0' for c in all_coeffs])
+    lines.append(f'      {coeff_pos}')
+    lines.append('      &')
+    lines.append('      (')
+    
+    # Forall quantifiers - one per line
+    for v in variables:
+        lines.append(f'      \\forall {v}')
+    
+    lines.append('          (')
+    lines.append('          (')
+    
+    # Variable positivity
+    var_pos = ' & '.join([f'{v}>0' for v in variables])
+    lines.append(f'            {var_pos}')
+    
+    # Known axiom equations
+    for ax in known_axioms:
+        if '=' in ax:
+            lines.append(f'            & ( {ax} )')
+        else:
+            lines.append(f'            & ( {ax} = 0 )')
+    
+    # Abducted axiom equations - one for each abducted axiom
+    for i, (ax_idx, comp_idx, monomials) in enumerate(abducted_axioms_info):
+        start_idx, end_idx = abducted_coeff_ranges[i]
+        axiom_coeffs = all_coeffs[start_idx:end_idx]
+        
+        if len(monomials) > 0:
+            lhs_coeff = axiom_coeffs[0]
+            lhs_mono = monomials[0]
+            lhs = f'( {lhs_coeff} * {lhs_mono} )'
+            
+            if len(monomials) == 1:
+                lines.append(f'            & {lhs} = 0')
+            else:
+                rhs_terms = []
+                for j, mono in enumerate(monomials[1:], 1):
+                    rhs_coeff = axiom_coeffs[j]
+                    rhs_terms.append(f'( {rhs_coeff} * {mono} )')
+                rhs = ' + '.join(rhs_terms)
+                lines.append(f'            & {lhs} = {rhs}')
+    
+    lines.append('            )')
+    lines.append('        ->')
+    lines.append('          (')
+    
+    # Consequence equation
+    if len(consequence_monomials) == 0:
+        lines.append('            0 = 0')
+    elif len(consequence_monomials) == 1:
+        c = all_coeffs[conseq_start_idx]
+        lines.append(f'            ( {c} * {consequence_monomials[0]} ) = 0')
+    else:
+        lhs_coeff = all_coeffs[conseq_start_idx]
+        lhs = f'( {lhs_coeff} * {consequence_monomials[0]} )'
+        
+        rhs_terms = []
+        for i, mono in enumerate(consequence_monomials[1:], 1):
+            rhs_coeff = all_coeffs[conseq_start_idx + i]
+            rhs_terms.append(f'( {rhs_coeff} * {mono} )')
+        rhs = ' + '.join(rhs_terms)
+        lines.append(f'            {lhs} = {rhs}')
+    
+    lines.append('          )')
+    lines.append('          )')
+    lines.append('      )')
+    lines.append('    )')
+    lines.append('  )')
+    lines.append('End.')
+    lines.append('')
+    lines.append('End.')
+    
+    return '\n'.join(lines), axiom_comp_suffix
+
+
+# =============================================================================
+# KeyMaera Template Fillers (Deprecated - kept for backwards compatibility)
 # =============================================================================
 
 def fill_keymaera_reasoning_template(
@@ -286,6 +456,9 @@ def fill_keymaera_reasoning_template(
 ) -> str:
     """
     Fill the KeyMaera reasoning template.
+    
+    DEPRECATED: Use generate_keymaera_content() instead for proper formatting.
+    This function is kept for backwards compatibility only.
     
     Args:
         problem_name: Name of the physics problem

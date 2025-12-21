@@ -9,13 +9,19 @@ Numerical engine: bertini
 Samples per component: 100
 Number of witness set components: 1
 Symbolic regression results: 2
+KeyMaera scripts generated: 1
 
-Regression results below threshold (5.0):
+Regression results below threshold (200.0):
   Axiom 1, Component 1:
-    Singular value: 0.723079458108776
-    Polynomial: 1*m1*d1 + (-0.698217+0.00711574i)*m2*d2
-    Coefficient L2 error: 0.30186668024396107
+    Singular value: 18.86390897963857
+    Polynomial: (-0.520077-0.0669559i)*m1*d1 + 1*m2*d2
+    Monomials: ['m1*d1', 'm2*d2']
+    Coefficient L2 error: 0.4845715568709433
   Axiom 2, Component 1:
-    Singular value: 0.3874933618821335
-    Polynomial: (0.326515+0.00610505i)*Fg*d1^2 + 1*Fg*d1*d2 + (-0.000309936+0.00090062i)*Fg*d2^2 + (-0.320034-0.00848353i)*m1*m2
-    Coefficient L2 error: 0.5593790295352654
+    Singular value: 17.112380632597578
+    Polynomial: (0.697176+0.0150055i)*Fg*d1^2 + 1*Fg*d1*d2 + (0.0731396+0.0488846i)*Fg*d2^2 + (-0.471324-0.1258i)*m1*m2
+    Monomials: ['Fg*d1^2', 'Fg*d1*d2', 'Fg*d2^2', 'm1*m2']
+    Coefficient L2 error: 0.49025608357124384
+
+Generated KeyMaera scripts:
+  reasoning_target1_combo1_2_ax1c1_ax2c1.kyx

@@ -1,0 +1,67 @@
+ArchiveEntry "relativistic_laws_target1_combo1_2_5_ax1c39_ax2c2_ax5c1"
+
+ProgramVariables
+  Real c;
+  Real dt;
+  Real v;
+  Real F0;
+  Real F;
+  Real dt0;
+  Real L0;
+  Real L;
+  Real m0;
+  Real u0;
+  Real m;
+  Real u;
+End.
+
+Problem
+  (
+    \exists c1
+    \exists c2
+    \exists c3
+    \exists c4
+    \exists c5
+    \exists c6
+    \exists c7
+    \exists c8
+    \exists c9
+    \exists c10
+    (
+      c1>0 & c2>0 & c3>0 & c4>0 & c5>0 & c6>0 & c7>0 & c8>0 & c9>0 & c10>0
+      &
+      (
+      \forall c
+      \forall dt
+      \forall v
+      \forall F0
+      \forall F
+      \forall dt0
+      \forall L0
+      \forall L
+      \forall m0
+      \forall u0
+      \forall m
+      \forall u
+          (
+          (
+            c>0 & dt>0 & v>0 & F0>0 & F>0 & dt0>0 & L0>0 & L>0 & m0>0 & u0>0 & m>0 & u>0
+            & ( c*dt0 - 2*L0 = 0 )
+            & ( c^2*dt^2 - 4*L0^2 - v^2*dt^2 = 0 )
+            & ( u0*dt0 - u*dt = 0 )
+            & ( dt*(c^2 - v^2) - 2*L*c = 0 )
+            & ( c1 * F0*dt0 ) = ( c2 * 1.50139e ) + ( c3 * 1 )
+            & ( c4 * dt*F ) = ( c5 * 1 )
+            & ( c6 * m0*u0 ) = ( c7 * m*u )
+            )
+        ->
+          (
+            ( c8 * c^2*F0^2 ) = ( c9 * c^2*F^2 ) + ( c10 * F0^2*v^2 )
+          )
+          )
+      )
+    )
+  )
+End.
+
+End.

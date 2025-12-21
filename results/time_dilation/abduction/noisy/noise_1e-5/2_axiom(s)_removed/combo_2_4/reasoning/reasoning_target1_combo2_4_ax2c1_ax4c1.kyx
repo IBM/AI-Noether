@@ -1,0 +1,55 @@
+ArchiveEntry "time_dilation_target1_combo2_4_ax2c1_ax4c1"
+
+ProgramVariables
+  Real d;
+  Real dt;
+  Real dt0;
+  Real L;
+  Real c;
+  Real F0;
+  Real F;
+  Real v;
+End.
+
+Problem
+  (
+    \exists c1
+    \exists c2
+    \exists c3
+    \exists c4
+    \exists c5
+    \exists c6
+    \exists c7
+    \exists c8
+    (
+      c1>0 & c2>0 & c3>0 & c4>0 & c5>0 & c6>0 & c7>0 & c8>0
+      &
+      (
+      \forall d
+      \forall dt
+      \forall dt0
+      \forall L
+      \forall c
+      \forall F0
+      \forall F
+      \forall v
+          (
+          (
+            d>0 & dt>0 & dt0>0 & L>0 & c>0 & F0>0 & F>0 & v>0
+            & ( c*dt0 - 2*d = 0 )
+            & ( F0*dt0 - 1 = 0 )
+            & ( c*dt - 2*L = 0 )
+            & ( c1 * d^2 ) = ( c2 * dt^2*v^2 ) + ( c3 * L^2 )
+            & ( c4 * dt*F ) = ( c5 * 1 )
+            )
+        ->
+          (
+            ( c6 * c^2*F0^2 ) = ( c7 * c^2*F^2 ) + ( c8 * F0^2*v^2 )
+          )
+          )
+      )
+    )
+  )
+End.
+
+End.
