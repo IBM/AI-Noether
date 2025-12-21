@@ -9,9 +9,9 @@ systems_and_phenomena/
 ├── README.md                     # This file
 ├── kepler/
 │   ├── system.txt                # Noiseless axiom system
-│   ├── system_noise_1e-2.txt     # Noisy variant (σ = 0.01)
-│   ├── system_noise_1e-5.txt     # Noisy variant (σ = 0.00001)
-│   └── system_noise_1e-8.txt     # Noisy variant (σ = 1e-8)
+│   ├── system_noise_1e-2.txt     # Noisy variant (ε = 1e-2)
+│   ├── system_noise_1e-5.txt     # Noisy variant (ε = 1e-5)
+│   └── system_noise_1e-8.txt     # Noisy variant (ε = 1e-8)
 ├── time_dilation/
 │   └── system.txt
 ├── pendulum/
@@ -51,7 +51,8 @@ T*v - 2*Pi*r
 **Polynomial syntax**:
 - Use `*` for multiplication: `2*x*y` not `2xy`
 - Use `^` for exponents: `x^2` not `x**2`
-- Coefficients can be integers or rationals: `3`, `-1`, `1/2`
+- Coefficients must be integers or rationals in fractional form: `3`, `-1`, `1/2`, `10001/10000`
+- **Important**: Decimal coefficients like `0.023` will cause errors in Macaulay2. Use rational form instead: `23/1000`
 - Each line is one polynomial = 0
 
 ### 3. Measured Variables
@@ -97,31 +98,36 @@ T^2*G*M - 4*Pi^2*a^3
 
 ## Noisy Input Files
 
-For numerical abduction experiments, create noisy variants by perturbing the coefficients:
+For numerical abduction experiments, create noisy variants by perturbing the coefficients. Noise is typically added to the target polynomial to simulate imprecise measurements of the consequence.
 
 **Naming convention**: `system_noise_<level>.txt`
 
-Examples:
-- `system_noise_1e-2.txt` → 1% relative noise (σ = 0.01)
-- `system_noise_1e-5.txt` → 0.001% relative noise
-- `system_noise_1e-8.txt` → essentially exact
+The file naming is purely conventional—you can name files however you like and specify the exact filename in your `config.yaml` under `numerical.noise_levels`.
 
-**Format**: Same as `system.txt`, but with perturbed coefficients:
+Examples:
+- `system_noise_1e-2.txt` → noise level ε = 1e-2
+- `system_noise_1e-5.txt` → noise level ε = 1e-5
+- `system_noise_1e-8.txt` → noise level ε = 1e-8
+
+**Format**: Same as `system.txt`, but with perturbed coefficients expressed as **rational numbers**:
 
 ```
-Variables: [T, a, G, M, r, v, Pi]
+Variables: [Fc, Fg, w, m1, d1, m2, d2, p]
 
 Equations:
-1.00234*T^2*v^3 - 3.99876*Pi^2*a^3
-0.99987*a - 1.00012*r
-1.00045*v^2*r - 0.99956*G*M
-0.99989*T*v - 2.00023*Pi*r
+m1*d1 - m2*d2
+Fg*(d1+d2)^2 - m1*m2
+Fc - m2*d2*w^2
+Fc - Fg
+w*p - 1
 
-Measured Variables: [T, a, G, M, Pi]
+Measured Variables: [m1, d1, m2, d2, p]
 
 Target Polynomial:
-T^2*G*M - 4*Pi^2*a^3
+(10000217/10000000)*m1*m2*p^2 - (9999922/10000000)*m1*d1*d2^2 - (9999853/10000000)*m2*d1^2*d2 - (19989624/10000000)*m2*d1*d2^2
 ```
+
+**Important**: Since AI-Noether interfaces with Macaulay2, all coefficients must be expressed as rational numbers in fractional form. Decimal notation like `1.00234` will cause parsing errors—use `100234/100000` instead.
 
 The numerical abduction pipeline will attempt to recover the true (integer) coefficients from the noisy measurements.
 
@@ -142,7 +148,7 @@ Avoid these names as they conflict with external tools:
 
 ### General Best Practices
 - Use descriptive but short names: `omega` → `w`, `theta` → `th`
-- Avoid single-letter names that are common constants: `e`, `i`, `c`
+- Avoid single-letter names that are common constants: `e`, `i`
 - When in doubt, use longer unique names: `mass_electron` → `mel`
 
 ## Example Problems
@@ -165,23 +171,30 @@ Target Polynomial:
 d*g*Tj^2 - 4*d*L*j^2*Piconst^2
 ```
 
-### Time Dilation
+### Relativistic Laws (Time Dilation, Mass-Energy, Length Contraction)
 ```
-Variables: [dt, dt0, L, d, v, c, L0, L1]
+Variables: [c, dt, v, F0, F, dt0, L0, L, m0, u0, m, u]
 
 Equations:
-2*L1 - L
-L^2 + 2*d^2
-dt*c - 2*L
-dt0*c - 2*d
-L0 - d
-c^2 - v^2
+F0*dt0 - 1
+F*dt - 1
+c*dt0 - 2*L0
+c^2*dt^2 - 4*L0^2 - v^2*dt^2
+m0*u0 - m*u
+u0*dt0 - u*dt
+dt*(c^2 - v^2) - 2*L*c
 
-Measured Variables: [dt, dt0, v, c]
+Measured Variables: [L, L0, v, c, F0, F, m, m0, u0, dt]
 
 Target Polynomial:
-dt^2*c^2 - dt^2*v^2 - dt0^2*c^2
+c^2*F0^2 - c^2*F^2 - F0^2*v^2
+c^2*m0^2*u0 - c^2*u0*m^2 + v^2*u0*m^2
+c^2*L0^2 - c^2*L^2 - v^2*L0^2
 ```
+
+**Interpretation**:
+- Variables: speed of light (c), time intervals (dt, dt0), velocity (v), frequencies (F0, F), lengths (L0, L), rest mass (m0), relativistic mass (m), velocities (u0, u)
+- Three target polynomials encoding: relativistic Doppler effect, relativistic momentum, and length contraction
 
 ## Troubleshooting
 
@@ -192,6 +205,10 @@ dt^2*c^2 - dt^2*v^2 - dt0^2*c^2
 ### "Variable not in ring"
 - All variables in equations must be listed in the Variables section
 - Check for typos in variable names
+
+### "Coefficient parsing error" or Macaulay2 errors
+- Ensure all coefficients are integers or rationals in fractional form
+- Convert decimals to fractions: `0.99987` → `99987/100000`
 
 ### "Decomposition timeout"
 - Reduce number of variables if possible
