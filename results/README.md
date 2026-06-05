@@ -285,6 +285,115 @@ For noisy case, compare:
 
 Matching component counts indicate the numerical decomposition worked correctly.
 
+## Sample Outputs by Scenario (Kepler's Third Law)
+
+To make the above concrete, here is what AI-Noether produces in four
+representative scenarios, using the Kepler problem
+(`systems_and_phenomena/kepler/system.txt`). The on-disk axiom order is:
+
+| index | axiom |
+|-------|-------|
+| 1 | `m1*d1 - m2*d2` |
+| 2 | `Fg*(d1+d2)^2 - m1*m2` |
+| 3 | `Fc - m2*d2*w^2` |
+| 4 | `Fc - Fg` |
+| 5 | `w*p - 1` |
+
+A directory named `combo_2` means axiom 2 was removed; `combo_4_5` means axioms 4
+and 5 were removed jointly. (These same four scenarios are walked through in the
+paper's "Examples of AI-Noether's Outputs" appendix.)
+
+### Scenario 1 — Noiseless, single axiom removed (recovered exactly)
+`abduction/noiseless/1_axiom(s)_removed/combo_2/summary.txt`:
+```
+=== Abduction Summary ===
+Removed axiom indices (1-based): [2]
+Removed axioms:
+  Fg*(d1+d2)^2 - m1*m2
+
+Decomposition engine: singular
+Number of components: 4
+
+Saved combos: 6
+  ['Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2']
+  ['m1']
+  ['m2']
+  ...
+
+Strong candidates: 1
+  ['Fg*d1^2+2*Fg*d1*d2+Fg*d2^2-m1*m2']
+```
+The strong candidate is the removed gravitational axiom recovered exactly (the
+expanded form of `Fg*(d1+d2)^2 - m1*m2`). The `['m1']` / `['m2']` sets are
+degenerate boundary cases that collapse the system trivially.
+
+### Scenario 2 — Noiseless, two axioms removed (coupled recovery)
+`abduction/noiseless/2_axiom(s)_removed/combo_4_5/summary.txt`:
+```
+=== Abduction Summary ===
+Removed axiom indices (1-based): [4, 5]
+Removed axioms:
+  Fc - Fg
+  w*p - 1
+
+Decomposition engine: singular
+Number of components: 7
+
+Saved combos: 5
+  ['Fg*p^2-m2*d2']
+  ...
+
+Strong candidates: 1
+  ['Fg*p^2-m2*d2']
+```
+A single recovered polynomial `Fg*p^2 - m2*d2` is the centripetal axiom
+(`Fc - m2*d2*w^2`) with both missing relations (`Fc=Fg` and `w=1/p`) already
+substituted in — i.e., two missing axioms recovered together in coupled form.
+
+### Scenario 3 — Noisy, single axiom removed (ε = 1e-2)
+`abduction/noisy/noise_1e-2/1_axiom(s)_removed/combo_2/` (per-component fits):
+```
+Number of witness set components: 4
+
+  Axiom 2, Component 1:
+    Smallest singular value: 8.53e-05
+    Polynomial: -0.502463*Fg*d1^2 - 1.012319*Fg*d1*d2
+                - 0.497537*Fg*d2^2 + 0.497536*m1*m2
+    Coefficient L2 error: 0.0213
+  Axiom 2, Component 2:
+    Smallest singular value: 6.88e-94
+    Polynomial: 1*Fg*d1^2
+    Coefficient L2 error: 1.3229
+  (Components 3 and 4 are similar single-monomial fits.)
+```
+Component 1 is the physical branch: after normalization it is a ~2% perturbation
+of the true axiom. Components 2–4 are degenerate axis-aligned branches. **A tiny
+singular value alone does not mean a good fit** — these degenerate branches have
+σ ≈ 1e-60–1e-94 yet are uninformative; their large coefficient L2 error (≈ 1.32
+vs. the normalized ground truth) is what distinguishes them from the physical
+branch.
+
+### Scenario 4 — Noiseless failure (no recovery)
+`abduction/noiseless/2_axiom(s)_removed/combo_1_2/summary.txt`:
+```
+=== Abduction Summary ===
+Removed axiom indices (1-based): [1, 2]
+Removed axioms:
+  m1*d1-m2*d2
+  Fg*(d1+d2)^2 - m1*m2
+
+Decomposition engine: singular
+Number of components: 1
+
+Saved combos: 0
+
+Strong candidates: 0
+```
+With both the lever-arm and gravitational axioms removed, no candidate set can
+both prove the target and be supported by the remaining axioms, so AI-Noether
+returns an empty result (`Saved combos: 0`, `Strong candidates: 0`) rather than a
+spurious recovery. This is the expected "no recovery possible" output.
+
 ## Visualization
 
 Use `plot_noise_results.py` to generate summary plots:
