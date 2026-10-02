@@ -152,13 +152,13 @@ numerical:
   
   # Number of points to sample from each witness set component
   # More points = better coefficient estimation, but slower
-  # Recommended: 50-200
-  samples_per_component: 100
+  # Paper experiments use 1000
+  samples_per_component: 1000
   
   # Threshold for determining good symbolic regression fits
   # Fits with smallest singular value below this are considered successful
   # Lower = stricter quality requirement
-  singular_value_threshold: 200
+  singular_value_threshold: 0.5
 
 # =============================================================================
 # Symbolic Regression Normalization (Noisy Case)
@@ -193,11 +193,11 @@ robust_fitting:
   # Points with residual above this percentile are removed
   # Lower = more aggressive removal
   # Recommended: 75-95
-  outlier_percentile: 75.0
+  outlier_percentile: 90.0          # drop top 10% of residuals (paper default)
   
   # Maximum iterations of outlier removal
   # Usually converges in 1-3 iterations
-  max_iterations: 1
+  max_iterations: 5
   
   # Minimum number of points to keep
   # Won't remove points below this count regardless of residuals
@@ -215,7 +215,7 @@ execution:
   timeout_dimensionality: 600    # 10 minutes
   timeout_decomposition: 1200    # 20 minutes
   timeout_reasoning: 1200        # 20 minutes
-  timeout_witness_set: 3600      # 60 minutes (numerical methods are slow)
+  timeout_witness_set: 7200      # 2 hours (paper default; numerical methods are slow)
   
   # Print progress to stdout (in addition to log file)
   verbose: true
