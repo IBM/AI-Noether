@@ -2,6 +2,13 @@
 
 A system for discovering missing axioms in physics and mathematics through algebraic and numerical methods. Given a set of known axioms (with some missing) and target consequences, AI-Noether identifies which axioms are needed to derive the targets.
 
+This repository accompanies the paper *Bridging the Gap Between Scientific Laws Derived by AI Systems and Canonical Knowledge via Abductive Inference with AI-Noether*, accepted for publication in **Nature Communications** (see [Citation](#citation)). The accepted manuscript is in [`AI-Noether.pdf`](AI-Noether.pdf) and the Supplementary Information in [`AI-Noether-SI.pdf`](AI-Noether-SI.pdf).
+
+<p align="center">
+  <img src="assets/emergence.webp" alt="Illustration: a grey complex of surfaces takes on colour one piece at a time; the red, green, purple and blue pieces settle into a row, and a gold winged surface rises from the gap at the centre and flies toward the light." width="800">
+</p>
+<p align="center"><em>Illustration (not computed output): a variety separates into its irreducible components, and a new component rises from the gap at the centre.</em></p>
+
 ## Overview
 
 AI-Noether implements the abductive inference framework which:
@@ -15,6 +22,11 @@ The system supports two modes:
 
 - **Algebraic (Noiseless)**: Exact symbolic computation using Groebner bases
 - **Numerical (Noisy)**: Handles measurement noise via witness sets and symbolic regression
+
+<p align="center">
+  <img src="assets/varieties.gif" alt="A variety, shown in blue, decomposes into three irreducible components, shown in red, green and purple, which then separate." width="800">
+</p>
+<p align="center"><em>A variety (the solution set of a polynomial system) and its decomposition into irreducible components, whose union is the original variety (Fig. 4a of the paper). AI-Noether searches these components for the missing axioms.</em></p>
 
 ## Installation
 
@@ -127,8 +139,12 @@ python plot_noise_results.py --results-dir results --output-dir figures
 ## Directory Structure
 
 ```
-ai_noether/
+AI-Noether/
   README.md                 # This file
+  CITATION.cff              # Citation metadata (paper and software)
+  AI-Noether.pdf            # Accepted manuscript
+  AI-Noether-SI.pdf         # Supplementary Information
+  assets/                   # README figures
   config_template.yaml      # Configuration template (copy to config.yaml)
   config.yaml               # Your local configuration (git-ignored)
   run.sh                    # Main execution script
@@ -169,6 +185,12 @@ ai_noether/
     <problem_name>/
       ...
 ```
+
+## Reproducing the Paper
+
+The defaults in `config_template.yaml` match the settings reported in the paper: 1000 samples per witness-set component, a singular-value threshold of 0.5, robust fitting that drops the top 10% of residuals, and a 2-hour (7200 s) witness-set timeout. The experiments were run on an Apple M4 MacBook Pro with 16 GB of memory (Supplementary Information, Implementation and Hardware).
+
+The `results/` directory holds the output tree for the 12 benchmark systems. Compton scattering is left out of Fig. 6 because too few of its noisy runs finish within the timeout (Supplementary Information, Supplementary Note 5).
 
 ## Configuration Reference
 
@@ -262,19 +284,30 @@ For large ideals, increase timeouts and consider:
 
 ## Citation
 
-If you use AI-Noether in your research, please cite:
+If you use AI-Noether in your research, please cite the paper:
 
 ```bibtex
-@misc{srivastava2025ainoether,
-      title={AI Noether -- Bridging the Gap Between Scientific Laws Derived by AI Systems and Canonical Knowledge via Abductive Inference}, 
-      author={Karan Srivastava and Sanjeeb Dash and Ryan Cory-Wright and Barry Trager and Lior Horesh},
-      year={2025},
-      eprint={2509.23004},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2509.23004}, 
+@article{srivastava2026ainoether,
+  title   = {Bridging the Gap Between Scientific Laws Derived by {AI} Systems and Canonical Knowledge via Abductive Inference with {AI-Noether}},
+  author  = {Srivastava, Karan and Dash, Sanjeeb and Cory-Wright, Ryan and Trager, Barry and Cornelio, Cristina and Horesh, Lior},
+  journal = {Nature Communications},
+  year    = {2026},
+  note    = {Accepted; in press}
 }
 ```
+
+The preprint is available as [arXiv:2509.23004](https://arxiv.org/abs/2509.23004). GitHub's "Cite this repository" button gives citation metadata for both the paper and this software, generated from [`CITATION.cff`](CITATION.cff).
+
+## Authors
+
+- Karan Srivastava (University of Wisconsin-Madison; IBM Research), corresponding author
+- Sanjeeb Dash (IBM Research)
+- Ryan Cory-Wright (Imperial Business School)
+- Barry Trager (IBM Research)
+- Cristina Cornelio (Samsung AI, Cambridge)
+- Lior Horesh (IBM Research)
+
+Karan Srivastava wrote the codebase during his 2025 graduate research internship at IBM Research. Cristina Cornelio designed the formal-logic verification framework and its KeYmaera X code.
 
 ## License
 
@@ -282,6 +315,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Related Work
 
-- **AI-Descartes**: Combining data and theory for derivable scientific discovery
-- **AI-Hilbert**: Unifying data and background knowledge for automated scientific discovery
-- **AI-Feynman**: Physics-inspired symbolic regression
+- **AI-Descartes**: C. Cornelio et al., "Combining data and theory for derivable scientific discovery with AI-Descartes," *Nature Communications* 14, 1777 (2023). [doi:10.1038/s41467-023-37236-y](https://doi.org/10.1038/s41467-023-37236-y)
+- **AI-Hilbert**: R. Cory-Wright et al., "Evolving scientific discovery by unifying data and background knowledge with AI Hilbert," *Nature Communications* 15, 5922 (2024). [doi:10.1038/s41467-024-50074-w](https://doi.org/10.1038/s41467-024-50074-w)
+- **AI Feynman**: S.-M. Udrescu and M. Tegmark, "AI Feynman: A physics-inspired method for symbolic regression," *Science Advances* 6, eaay2631 (2020). [doi:10.1126/sciadv.aay2631](https://doi.org/10.1126/sciadv.aay2631)
