@@ -25,7 +25,7 @@ from .projection import run_projection
 from .dimensionality import run_dimensionality_check
 from .templates import generate_keymaera_content
 
-__version__ = "2.1.0"
+__version__ = "2.1.1"
 __all__ = [
     "Config",
     "load_config",
