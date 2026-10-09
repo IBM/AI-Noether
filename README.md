@@ -1,5 +1,7 @@
 # AI-Noether: Abductive Inference for Scientific Discovery
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23264836.svg)](https://doi.org/10.5281/zenodo.23264836)
+
 A system for discovering missing axioms in physics and mathematics through algebraic and numerical methods. Given a set of known axioms (with some missing) and target consequences, AI-Noether identifies which axioms are needed to derive the targets.
 
 This repository accompanies the paper *Bridging the Gap Between Scientific Laws Derived by AI Systems and Canonical Knowledge via Abductive Inference with AI-Noether*, accepted for publication in **Nature Communications** (see [Citation](#citation)). The accepted manuscript is in [`AI-Noether.pdf`](AI-Noether.pdf) and the Supplementary Information in [`AI-Noether-SI.pdf`](AI-Noether-SI.pdf).
@@ -295,6 +297,8 @@ If you use AI-Noether in your research, please cite the paper:
   note    = {Accepted; in press}
 }
 ```
+
+To cite the software itself, use its Zenodo DOI, [10.5281/zenodo.23264836](https://doi.org/10.5281/zenodo.23264836), which always points to the latest release.
 
 The preprint is available as [arXiv:2509.23004](https://arxiv.org/abs/2509.23004). GitHub's "Cite this repository" button gives citation metadata for both the paper and this software, generated from [`CITATION.cff`](CITATION.cff).
 
