@@ -311,7 +311,7 @@ The preprint is available as [arXiv:2509.23004](https://arxiv.org/abs/2509.23004
 - Cristina Cornelio (Samsung AI, Cambridge)
 - Lior Horesh (IBM Research)
 
-Karan Srivastava wrote the codebase during his 2025 graduate research internship at IBM Research. Cristina Cornelio designed the formal-logic verification framework and its KeYmaera X code.
+Karan Srivastava wrote the codebase. Cristina Cornelio designed the formal-logic verification framework and its KeYmaera X code.
 
 ## License
 
