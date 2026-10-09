@@ -2,7 +2,7 @@
 -- Computes numerical irreducible decomposition and samples points
 
 needsPackage("NumericalAlgebraicGeometry", Reload => true)
-needsPackage("Bertini", Reload => true, Configuration => {"BERTINIexecutable" => "/Users/ksrivastava/opt/bertini-1.7-openmpi/BertiniApple_OpenMPI_v1.7/bertini"})
+needsPackage("Bertini", Reload => true, Configuration => {"BERTINIexecutable" => "bertini"})
 
 -- Work over CC for numerical algebraic geometry
 R = CC[d, dt, dt0, L, c, F0, F, v, MonomialOrder => Lex];

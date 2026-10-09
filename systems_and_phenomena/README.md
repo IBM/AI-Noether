@@ -13,10 +13,10 @@ systems_and_phenomena/
 │   ├── system_noise_1e-5.txt     # Noisy variant (ε = 1e-5)
 │   └── system_noise_1e-8.txt     # Noisy variant (ε = 1e-8)
 ├── time_dilation/
-│   └── system.txt
-├── pendulum/
-│   └── system.txt
-└── ...
+│   └── ...
+├── simple_harmonic_oscillator/
+│   └── ...
+└── ...                           # 12 systems in total
 ```
 
 ## Input File Format
@@ -28,7 +28,7 @@ Each `system.txt` file must contain four sections:
 A comma-separated list of all variable names in the polynomial ring:
 
 ```
-Variables: [T, a, G, M, r, v, Pi]
+Variables: [Fc, Fg, w, m1, d1, m2, d2, p]
 ```
 
 **Important**: Variable names must be valid polynomial ring identifiers:
@@ -42,10 +42,11 @@ One polynomial equation per line. Each equation is implicitly set equal to zero:
 
 ```
 Equations:
-T^2*v^3 - 4*Pi^2*a^3
-a - r
-v^2*r - G*M
-T*v - 2*Pi*r
+m1*d1 - m2*d2
+Fg*(d1+d2)^2 - m1*m2
+Fc - m2*d2*w^2
+Fc - Fg
+w*p - 1
 ```
 
 **Polynomial syntax**:
@@ -60,7 +61,7 @@ T*v - 2*Pi*r
 Variables that can be directly observed/measured. These are NOT eliminated during projection:
 
 ```
-Measured Variables: [T, a, G, M, Pi]
+Measured Variables: [m1, d1, m2, d2, p]
 ```
 
 Non-measured variables are computed as: `Variables - Measured Variables`
@@ -71,30 +72,33 @@ The consequence(s) to be derived from the axioms. Can be multi-line for multiple
 
 ```
 Target Polynomial:
-T^2*G*M - 4*Pi^2*a^3
+m1*m2*p^2 - m1*d1*d2^2 - m2*d1^2*d2 - 2*m2*d1*d2^2
 ```
 
 ## Complete Example: Kepler's Third Law
 
+This is `kepler/system.txt` as shipped:
+
 ```
-Variables: [T, a, G, M, r, v, Pi]
-
+Variables: ["Fc", "Fg", "w", "m1", "d1", "m2", "d2", "p"]
 Equations:
-T^2*v^3 - 4*Pi^2*a^3
-a - r
-v^2*r - G*M
-T*v - 2*Pi*r
+m1*d1-m2*d2
+Fg*(d1+d2)^2 - m1*m2
+Fc - m2*d2*w^2
+Fc - Fg
+w*p - 1
 
-Measured Variables: [T, a, G, M, Pi]
+Measured Variables: ["m1", "d1", "m2", "d2", "p"]
 
 Target Polynomial:
-T^2*G*M - 4*Pi^2*a^3
+m1*m2*p^2-m1*d1*d2^2-m2*d1^2*d2-2*m2*d1*d2^2
 ```
 
-**Interpretation**:
-- Variables: orbital period (T), semi-major axis (a), gravitational constant (G), mass (M), radius (r), velocity (v), π (Pi)
-- Axioms encode: Kepler's law, r=a for circular orbit, centripetal force = gravity, circumference relation
-- Target: Kepler's third law T² ∝ a³
+**Interpretation** (units chosen so that G = 1 and 2π is absorbed into the period):
+- Variables: centripetal force (Fc), gravitational force (Fg), angular frequency (w), the two masses (m1, m2), their distances from the centre of mass (d1, d2), orbital period (p)
+- Axioms encode: the centre of mass, Newton's law of gravitation, the centripetal force, the force balance Fc = Fg, and w = 1/p
+- Target: Kepler's third law for a two-body orbit
+- Variable lists may be written with or without quotes
 
 ## Noisy Input Files
 
@@ -153,7 +157,10 @@ Avoid these names as they conflict with external tools:
 
 ## Example Problems
 
-### Simple Harmonic Pendulum
+### Simple Harmonic Oscillator (pendulum)
+
+A Bertini-safe variant of `simple_harmonic_oscillator/system.txt` (the shipped file names π `Pi`):
+
 ```
 Variables: [ad, T, omega, theta, sintheta, d, g, L, j, Piconst, Tj]
 
